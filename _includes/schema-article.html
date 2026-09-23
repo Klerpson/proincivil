@@ -1,0 +1,20 @@
+{%- assign _autor = site.equipo | where: "slug", page.author | first -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.layout == 'post' %}BlogPosting{% else %}TechArticle{% endif %}",
+  "@id": "{{ page.url | absolute_url }}#article",
+  "headline": {{ page.h1 | default: page.title | strip_html | jsonify }},
+  "description": {{ page.description | strip_html | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  "inLanguage": "es-CO",
+  "image": "{{ page.image | default: '/img/og-proincivil.jpg' | absolute_url }}",
+  "datePublished": "{{ page.datePublished | default: page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.dateModified | default: page.datePublished | default: page.date | date: '%Y-%m-%d' }}",
+  "author": {% if _autor %}{ "@type": "Person", "@id": "{{ site.url }}/nosotros/equipo/#{{ _autor.ancla }}", "name": "{{ _autor.nombre }}", "jobTitle": "{{ _autor.cargo }}" }{% else %}{ "@id": "{{ site.url }}/#organization" }{% endif %},
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "about": {{ page.about | default: page.titulo_corto | default: page.h1 | strip_html | jsonify }},
+  "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", "#en-resumen"] }
+}
+</script>

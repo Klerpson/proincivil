@@ -1,0 +1,25 @@
+{%- comment -%}
+  Imagen responsive desde /img/fotos/. Los anchos disponibles de cada foto están en
+  _data/fotos.yml (generado desde disco), así que nunca se pide un tamaño que no existe.
+  Parámetros: nombre (base, sin ancho ni extensión), alt, sizes, clase, ratio (4x3|3x4|16x10|1x1),
+  eager (true para el hero).
+{%- endcomment -%}
+{%- assign _anchos = site.data.fotos[include.nombre] -%}
+{%- if _anchos -%}
+{%- assign _max = _anchos | last -%}
+{%- assign _ratio = include.ratio | default: "4x3" -%}
+{%- case _ratio -%}
+  {%- when "3x4" -%}{%- assign _w = 900 -%}{%- assign _h = 1200 -%}
+  {%- when "16x10" -%}{%- assign _w = 1600 -%}{%- assign _h = 1000 -%}
+  {%- when "1x1" -%}{%- assign _w = 1000 -%}{%- assign _h = 1000 -%}
+  {%- else -%}{%- assign _w = 1200 -%}{%- assign _h = 900 -%}
+{%- endcase -%}
+<picture{% if include.clase %} class="{{ include.clase }}"{% endif %}>
+  <source type="image/webp" sizes="{{ include.sizes | default: '100vw' }}" srcset="{% for a in _anchos %}{{ '/img/fotos/' | append: include.nombre | append: '-' | append: a | append: '.webp' | relative_url }} {{ a }}w{% unless forloop.last %}, {% endunless %}{% endfor %}">
+  <img src="{{ '/img/fotos/' | append: include.nombre | append: '-' | append: _max | append: '.jpg' | relative_url }}"
+       sizes="{{ include.sizes | default: '100vw' }}"
+       srcset="{% for a in _anchos %}{{ '/img/fotos/' | append: include.nombre | append: '-' | append: a | append: '.jpg' | relative_url }} {{ a }}w{% unless forloop.last %}, {% endunless %}{% endfor %}"
+       alt="{{ include.alt }}" width="{{ _w }}" height="{{ _h }}"
+       loading="{% if include.eager %}eager{% else %}lazy{% endif %}"{% if include.eager %} fetchpriority="high"{% endif %} decoding="async">
+</picture>
+{%- endif -%}

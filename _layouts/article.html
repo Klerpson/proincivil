@@ -1,0 +1,63 @@
+---
+layout: default
+---
+{%- comment -%}
+  Guías normativas y términos de glosario: texto largo con índice, FAQ y CTA a servicio.
+  Front matter opcional: resumen, indice[{id,title}], servicios[slugs], relacionados[slugs de la misma colección], faqs.
+{%- endcomment -%}
+<section class="section">
+  <div class="wrapper">
+    <div class="articulo">
+      <div class="articulo__cuerpo contenido flow">
+        {% if page.resumen %}
+        <div class="resumen" id="en-resumen">
+          <p class="resumen__eyebrow">En resumen</p>
+          <p class="resumen__texto">{{ page.resumen }}</p>
+        </div>
+        {% endif %}
+        {{ content }}
+      </div>
+      <aside class="articulo__lateral">
+        {% if page.indice %}
+        <nav class="indice" aria-label="En esta página">
+          <p class="indice__titulo">En esta página</p>
+          <ol>
+            {% for s in page.indice %}<li><a href="#{{ s.id }}">{{ s.title }}</a></li>{% endfor %}
+          </ol>
+        </nav>
+        {% endif %}
+        {% if page.servicios %}
+        <div class="lateral-cta flow">
+          <p class="indice__titulo">Servicio relacionado</p>
+          {% for slug in page.servicios %}
+            {% assign s = site.servicios | where: "slug", slug | first %}
+            {% if s %}<p><a href="{{ s.url | relative_url }}">{{ s.titulo_corto | default: s.h1 }}</a></p>{% endif %}
+          {% endfor %}
+          {% include button.html texto="Consultar por WhatsApp" data_location="articulo-lateral" %}
+        </div>
+        {% endif %}
+        {% if page.dateModified %}
+        <p class="lateral-fecha">Actualizado: {% include date-es.html date=page.dateModified %}</p>
+        {% endif %}
+      </aside>
+    </div>
+  </div>
+</section>
+
+{% if page.faqs %}
+<section class="section section--crema"><div class="wrapper">{% include faqs.html %}</div></section>
+{% endif %}
+
+{% include cta-final.html %}
+
+{% if page.relacionados %}
+<section class="section">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Siga leyendo</p>
+      <h2 class="section-header__titulo">Guías relacionadas</h2>
+    </div>
+    {% include relacionados.html coleccion=page.collection slugs=page.relacionados %}
+  </div>
+</section>
+{% endif %}

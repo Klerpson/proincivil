@@ -1,0 +1,40 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ProfessionalService", "LocalBusiness", "Organization"],
+  "@id": "{{ site.url }}/#organization",
+  "name": "{{ site.empresa.razon_social }}",
+  "alternateName": ["PROINCIVIL", "Proincivil Ingeniería Estructural"],
+  "legalName": "{{ site.empresa.razon_social }}",
+  "taxID": "{{ site.empresa.nit }}",
+  "slogan": "{{ site.empresa.tagline }}",
+  "description": {{ site.site_meta.description | jsonify }},
+  "url": "{{ site.url }}/",
+  "logo": { "@type": "ImageObject", "url": "{{ '/img/logo-proincivil.png' | absolute_url }}", "width": "558", "height": "408" },
+  "image": "{{ '/img/og-proincivil.jpg' | absolute_url }}",
+  "telephone": "+{{ site.contact.whatsapp }}",
+  "email": "{{ site.contact.email }}",
+  "foundingDate": "{{ site.empresa.fundacion }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.empresa.direccion }}",
+    "addressLocality": "{{ site.empresa.ciudad }}",
+    "addressRegion": "{{ site.empresa.departamento }}",
+    "addressCountry": "CO"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": "{{ site.empresa.geo_lat }}", "longitude": "{{ site.empresa.geo_lng }}" },
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }],
+  "areaServed": [
+    { "@type": "City", "name": "Envigado" },
+    { "@type": "City", "name": "Medellín" },
+    { "@type": "AdministrativeArea", "name": "Antioquia" },
+    { "@type": "Country", "name": "Colombia" }
+  ],
+  "knowsAbout": ["Ingeniería estructural", "Diseño sismorresistente", "NSR-10", "Patología estructural", "Vulnerabilidad sísmica", "Geotecnia", "Estudios de suelos", "Interventoría", "Supervisión técnica independiente", "BIM"],
+  "contactPoint": [{ "@type": "ContactPoint", "telephone": "+{{ site.contact.whatsapp }}", "contactType": "sales", "availableLanguage": ["Spanish"], "areaServed": "CO" }],
+  "sameAs": [{% assign _s = "" | split: "" %}{% if site.social.instagram != "" %}{% assign _s = _s | push: site.social.instagram %}{% endif %}{% if site.social.linkedin != "" %}{% assign _s = _s | push: site.social.linkedin %}{% endif %}{% if site.social.facebook != "" %}{% assign _s = _s | push: site.social.facebook %}{% endif %}{% if site.social.google_business != "" %}{% assign _s = _s | push: site.social.google_business %}{% endif %}{% for u in _s %}"{{ u }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "employee": [
+    {% for m in site.equipo %}{ "@type": "Person", "@id": "{{ site.url }}/nosotros/equipo/#{{ m.ancla }}", "name": "{{ m.nombre }}", "jobTitle": "{{ m.cargo }}" }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
+</script>

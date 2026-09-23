@@ -1,0 +1,227 @@
+# Configuración principal — PROINCIVIL S.A.S.
+# Sitio estático Jekyll alojado en GitHub Pages (solo plugins de la lista blanca).
+#
+# ── MODO VISTA PREVIA ────────────────────────────────────────────────────────
+# Mientras el cliente no apruebe el contenido y no exista el dominio, el sitio vive en
+# GitHub Pages con `vista_previa: true`: todas las páginas salen con noindex y robots.txt
+# bloquea el rastreo. AL PASAR A PRODUCCIÓN: poner `vista_previa: false`, cambiar `url` a
+# https://www.proincivil.com, dejar `baseurl` vacío y restaurar el archivo CNAME.
+vista_previa: true
+url: "https://klerpson.github.io"
+baseurl: "/proincivil"
+
+# Secciones que se publican hoy. Las demás quedan escritas en el repositorio pero fuera del
+# sitio (contenido de la fase SEO). La navegación, el pie y los CTA se filtran con esta lista:
+# basta añadir una sección aquí y volver a compilar para que aparezca en todo el sitio.
+secciones_publicadas: ["servicios", "proyectos", "blog", "nosotros", "como-cotizar", "contacto", "politica-de-datos"]
+name: PROINCIVIL
+title: PROINCIVIL · Seguridad estructural
+description: "Ingeniería estructural sismorresistente, evaluación, geotecnia e interventoría en Envigado, Antioquia."
+author: PROINCIVIL S.A.S.
+# Repositorio de GitHub Pages (usuario/repo). PENDIENTE: ajustar al crear el repo del cliente.
+repository: proincivil/proincivil.com
+lang: es-CO
+# Sin `timezone`: en Windows exige la gema tzinfo-data (no disponible offline) y GitHub Pages compila en UTC.
+
+# Verificación de Search Console (solo el valor "content"). Vacío = no se imprime.
+google_site_verification: ""
+# GA4 (G-XXXXXXX). Vacío = no se carga analítica. Solo se inyecta con JEKYLL_ENV=production.
+ga4_id: ""
+
+# Formulario: endpoint de Formspree/Web3Forms/Getform. GitHub Pages no procesa formularios.
+# Vacío = el formulario muestra el aviso y deriva a WhatsApp.
+form_endpoint: ""
+
+site_meta:
+  title: "PROINCIVIL · Ingeniería estructural sismorresistente en Envigado, Antioquia"
+  description: "Firma de ingeniería estructural en Envigado. Diseño sismorresistente NSR-10, evaluación y reforzamiento, geotecnia, interventoría y acompañamiento ante curadurías. No ejecutamos obra: consultoría independiente con BIM."
+
+# ─── Identidad y contacto — ÚNICA fuente de verdad (nunca escribir estos datos a mano) ───
+empresa:
+  razon_social: "PROINCIVIL S.A.S."
+  nit: "901.697.902-8"
+  tagline: "Seguridad estructural"
+  fundacion: "2019"          # PENDIENTE confirmar con el cliente (flyer: +7 años)
+  direccion: "Calle 23 Sur # 44-36"
+  ciudad: "Envigado"
+  departamento: "Antioquia"
+  pais: "Colombia"
+  geo_lat: "6.1690"
+  geo_lng: "-75.5900"
+  horario: "Lunes a viernes, 8:00 a. m. – 6:00 p. m."
+
+contact:
+  whatsapp: "573226270723"            # Ing. Camilo Tamayo — canal principal
+  whatsapp_display: "+57 322 627 0723"
+  whatsapp_2: "573194976516"          # Andrea Palacio — gerencia
+  whatsapp_2_display: "+57 319 497 6516"
+  email: "gerenciaproincivil@gmail.com"   # PENDIENTE: migrar a proyectos@proincivil.com cuando el cliente confirme
+  respuesta: "Respondemos en menos de 24 horas hábiles"
+
+social:
+  instagram: "https://www.instagram.com/proincivil/"
+  linkedin: "https://co.linkedin.com/in/proincivil-sas"   # PENDIENTE: página de empresa
+  facebook: "https://www.facebook.com/profile.php?id=61576150617135"
+  google_business: ""   # URL del perfil de Google Business cuando exista
+
+# Cifras de prueba social. PENDIENTE: el cliente debe fijar UNA versión (flyer vs portafolio vs sitio viejo).
+cifras:
+  anios: "+7"
+  proyectos: "+100"
+  m2_disenados: "+41.000"
+  aprobacion_curadurias: "100 %"
+  m2_supervisados: "+20.000"
+  m2_educacion: "+13.000"
+  m2_fotovoltaico: "+3.000"
+
+equipo:
+  - slug: camilo-tamayo
+    nombre: "Ing. Camilo Tamayo"
+    cargo: "Ingeniero civil, especialista en ingeniería sismorresistente"
+    rol: "Dirección técnica y diseño estructural"
+    foto: "/img/equipo-placeholder.svg"
+    ancla: "camilo-tamayo"
+  - slug: andrea-palacio
+    nombre: "Kateryn Andrea Palacio Zuluaga"
+    cargo: "CEO y representante legal"
+    rol: "Gerencia, coordinación de proyectos y relación con clientes"
+    foto: "/img/equipo-placeholder.svg"
+    ancla: "andrea-palacio"
+
+# ─── Jekyll ───
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+encoding: utf-8
+strict_front_matter: true
+future: true
+permalink: /:slug/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+
+feed:
+  path: feed.xml
+  posts_limit: 20
+
+include: [".well-known"]
+exclude:
+  - "*.tmp"
+  - "*.bak"
+  - "Gemfile*"
+  - "README.md"
+  - "AGENTS.md"
+  - "node_modules"
+  - "package*.json"
+  - ".jekyll-cache"
+  - ".claude"
+  - ".remember"
+  - "_plans"
+  - "_scripts"
+  - "_site"
+  - "tmp"
+  - "vendor"
+
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+  endings: [li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+# ─── Colecciones ───
+collections:
+  servicios:
+    output: true
+    permalink: /servicios/:slug/
+  proyectos:
+    output: true
+    permalink: /proyectos/:slug/
+  # ── Retenidas para la fase SEO (escritas y versionadas, fuera del sitio publicado) ──
+  cuanto-cuesta:
+    output: false
+    permalink: /cuanto-cuesta/:slug/
+  edificaciones:
+    output: false
+    permalink: /edificaciones/:slug/
+  zonas:
+    output: false
+    permalink: /zonas/:slug/
+  normativa:
+    output: false
+    permalink: /normativa/:path/
+  glosario:
+    output: false
+    permalink: /glosario/:slug/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+      lang: "es"
+      image: "/img/og-proincivil.jpg"
+  - scope:
+      path: ""
+      type: "servicios"
+    values:
+      layout: "service"
+      schemaType: "Service"
+      breadcrumb_enabled: true
+  - scope:
+      path: ""
+      type: "cuanto-cuesta"
+    values:
+      layout: "service"
+      schemaType: "Service"
+      breadcrumb_enabled: true
+  - scope:
+      path: ""
+      type: "edificaciones"
+    values:
+      layout: "service"
+      schemaType: "Service"
+      breadcrumb_enabled: true
+  - scope:
+      path: ""
+      type: "zonas"
+    values:
+      layout: "service"
+      schemaType: "Service"
+      breadcrumb_enabled: true
+  - scope:
+      path: ""
+      type: "normativa"
+    values:
+      layout: "article"
+      schemaType: "Article"
+      breadcrumb_enabled: true
+  - scope:
+      path: ""
+      type: "glosario"
+    values:
+      layout: "article"
+      schemaType: "Article"
+      breadcrumb_enabled: true
+  - scope:
+      path: ""
+      type: "proyectos"
+    values:
+      layout: "project"
+      schemaType: "Project"
+      breadcrumb_enabled: true
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      schemaType: "Article"
+      permalink: /blog/:slug/
+      author: "camilo-tamayo"

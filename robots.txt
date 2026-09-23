@@ -1,0 +1,35 @@
+---
+layout: none
+sitemap: false
+permalink: /robots.txt
+---
+{%- if site.vista_previa -%}
+# Vista previa privada para aprobación del cliente: no indexar.
+# Al pasar a producción (vista_previa: false en _config.yml) se emite el robots.txt real.
+User-agent: *
+Disallow: /
+{%- else -%}
+User-agent: *
+Allow: /
+Disallow: /_site/
+Disallow: /.jekyll-cache/
+
+# Bots de IA: acceso completo (citas en AI Overviews, ChatGPT, Perplexity)
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+{%- endif -%}

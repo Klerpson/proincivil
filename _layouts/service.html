@@ -1,0 +1,178 @@
+---
+layout: default
+---
+{%- comment -%}
+  Página de servicio en 8 bloques (patrón Engical/Ingek, ver _plans/research/benchmarks-internacionales.md).
+  El header (H1, excerpt, badges, breadcrumb) lo pinta header.html.
+  Bloques que salen del front matter, todos opcionales:
+    resumen        → definición citable (40-60 palabras), bloque "En resumen" arriba del todo
+    cuando         → lista de disparadores "¿Cuándo lo necesita?"
+    entregables    → lista "Qué entregamos"
+    despues        → párrafo/lista "Qué pasa después"
+    factores       → lista de factores de precio (+ enlace cuanto_cuesta)
+    audiencias     → lista "A quién servimos"
+    proyectos      → slugs de _proyectos relacionados
+    relacionados   → slugs de _servicios relacionados
+    normativa      → slugs de _normativa relacionados
+    faqs           → preguntas frecuentes (schema FAQPage automático)
+  El cuerpo Markdown (content) es el bloque "Qué es / metodología".
+{%- endcomment -%}
+{% if page.resumen %}
+<section class="section section--tight">
+  <div class="wrapper">
+    <div class="resumen" id="en-resumen">
+      <p class="resumen__eyebrow">En resumen</p>
+      <p class="resumen__texto">{{ page.resumen }}</p>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrapper contenido flow">
+    {{ content }}
+  </div>
+</section>
+
+{% if page.cuando %}
+<section class="section section--crema">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Disparadores</p>
+      <h2 class="section-header__titulo">{{ page.cuando_titulo | default: "¿Cuándo lo necesita?" }}</h2>
+    </div>
+    <ul class="list_check list_check--dos">
+      {% for c in page.cuando %}<li>{{ c }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+{% if page.entregables or page.despues %}
+<section class="section">
+  <div class="wrapper">
+    <div class="dos_columnas">
+      {% if page.entregables %}
+      <div class="flow">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Entregables</p>
+          <h2 class="section-header__titulo">{{ page.entregables_titulo | default: "Qué entregamos" }}</h2>
+        </div>
+        <ul class="list_check">
+          {% for e in page.entregables %}<li>{{ e }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% if page.despues %}
+      <div class="flow">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Siguiente paso</p>
+          <h2 class="section-header__titulo">{{ page.despues_titulo | default: "Qué pasa después" }}</h2>
+        </div>
+        {% if page.despues.first %}
+        <ul class="list_check list_check--flecha">
+          {% for d in page.despues %}<li>{{ d }}</li>{% endfor %}
+        </ul>
+        {% else %}
+        <p>{{ page.despues }}</p>
+        {% endif %}
+        {% include independencia-nota.html %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.proyectos %}
+<section class="section section--bosque">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Casos</p>
+      <h2 class="section-header__titulo">{{ page.proyectos_titulo | default: "Proyectos donde lo hemos aplicado" }}</h2>
+    </div>
+    {% include proyectos-relacionados.html slugs=page.proyectos %}
+  </div>
+</section>
+{% endif %}
+
+{% if page.factores %}
+<section class="section section--crema">
+  <div class="wrapper">
+    <div class="dos_columnas">
+      <div class="flow">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Inversión</p>
+          <h2 class="section-header__titulo">{{ page.factores_titulo | default: "De qué depende el costo" }}</h2>
+        </div>
+        <ul class="list_check">
+          {% for f in page.factores %}<li>{{ f }}</li>{% endfor %}
+        </ul>
+        {%- if page.cuanto_cuesta -%}
+          {%- assign _cc_seg = page.cuanto_cuesta | remove_first: "/" | split: "/" | first -%}
+          {%- if site.secciones_publicadas contains _cc_seg -%}
+        <p><a href="{{ page.cuanto_cuesta | relative_url }}" class="boton_secundario">Ver cuánto cuesta y ejemplos</a></p>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+      <div class="flow">
+        {% include como-cotizar-nota.html %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.audiencias %}
+<section class="section">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">A quién servimos</p>
+      <h2 class="section-header__titulo">{{ page.audiencias_titulo | default: "Para quién es este servicio" }}</h2>
+    </div>
+    <div class="grid" style="--grid-min: 240px">
+      {% for a in page.audiencias %}
+      <div class="tile tile--texto">
+        <h3 class="tile__title">{{ a.rol }}</h3>
+        <p>{{ a.texto }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.faqs %}
+<section class="section section--crema">
+  <div class="wrapper">
+    {% include faqs.html %}
+  </div>
+</section>
+{% endif %}
+
+{% include cta-final.html %}
+
+{%- assign _ver_rel = false -%}
+{%- if page.relacionados and site.secciones_publicadas contains "servicios" -%}{%- assign _ver_rel = true -%}{%- endif -%}
+{%- assign _ver_norm = false -%}
+{%- if page.normativa and site.secciones_publicadas contains "normativa" -%}{%- assign _ver_norm = true -%}{%- endif -%}
+{% if _ver_rel or _ver_norm %}
+<section class="section">
+  <div class="wrapper flow">
+    {% if _ver_rel %}
+    <div class="section-header">
+      <p class="section-header__eyebrow">Relacionado</p>
+      <h2 class="section-header__titulo">Servicios que suelen ir juntos</h2>
+    </div>
+    {% include relacionados.html coleccion="servicios" slugs=page.relacionados %}
+    {% endif %}
+    {% if _ver_norm %}
+    <div class="section-header">
+      <p class="section-header__eyebrow">Normativa</p>
+      <h2 class="section-header__titulo">Marco normativo aplicable</h2>
+    </div>
+    {% include relacionados.html coleccion="normativa" slugs=page.normativa %}
+    {% endif %}
+  </div>
+</section>
+{% endif %}

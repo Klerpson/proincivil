@@ -1,0 +1,48 @@
+{%- case page.layout -%}
+{%- when "home" -%}
+<header class="hero">
+  <div class="hero__fondo">
+    {% include picture.html nombre=page.hero alt=page.hero_alt ratio="16x10" sizes="100vw" eager=true %}
+  </div>
+  <div class="hero__copy">
+    <p class="hero__eyebrow">{{ page.eyebrow | default: "Ingeniería estructural · Envigado, Antioquia" }}</p>
+    <h1 class="hero__titulo">{{ page.h1 }}</h1>
+    <p class="hero__texto">{{ page.excerpt }}</p>
+    <div class="hero__acciones">
+      {% include button.html texto="Hablemos de su proyecto" data_location="hero" %}
+      <a href="{{ '/servicios/' | relative_url }}" class="boton_secundario">Ver servicios</a>
+    </div>
+    {%- if page.badges -%}
+    <ul class="badges">{% for b in page.badges %}<li>{{ b }}</li>{% endfor %}</ul>
+    {%- endif -%}
+  </div>
+</header>
+{%- else -%}
+<header class="cabecera{% if page.hero %} cabecera--media{% else %} cabecera--sin-media{% endif %}">
+  <div class="cabecera__copy">
+    {%- if page.breadcrumb_enabled != false and page.url != "/" -%}{% include breadcrumb.html %}{%- endif -%}
+    {%- if page.eyebrow -%}<p class="cabecera__eyebrow">{{ page.eyebrow }}</p>{%- endif -%}
+    <h1>{{ page.h1 | default: page.title }}</h1>
+    {%- if page.excerpt -%}<p class="cabecera__texto">{{ page.excerpt }}</p>{%- endif -%}
+    {%- unless page.sin_cta_cabecera -%}
+    <div class="hero__acciones">
+      {% include button.html texto=page.cta_texto data_location="cabecera" %}
+      {%- if page.cta_secundario -%}
+        {%- assign _cta_seg = page.cta_secundario.url | remove_first: "/" | split: "/" | first -%}
+        {%- if site.secciones_publicadas contains _cta_seg -%}
+      <a href="{{ page.cta_secundario.url | relative_url }}" class="boton_secundario">{{ page.cta_secundario.texto }}</a>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+    {%- endunless -%}
+    {%- if page.badges -%}
+    <ul class="badges">{% for b in page.badges %}<li>{{ b }}</li>{% endfor %}</ul>
+    {%- endif -%}
+  </div>
+  {%- if page.hero -%}
+  <div class="cabecera__media">
+    {% include picture.html nombre=page.hero alt=page.hero_alt ratio="4x3" sizes="(max-width: 900px) 100vw, 45vw" eager=true %}
+  </div>
+  {%- endif -%}
+</header>
+{%- endcase -%}

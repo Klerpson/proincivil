@@ -1,0 +1,43 @@
+---
+layout: page
+permalink: /contacto/
+title: "Contacto · Cotice su diseño o evaluación estructural | PROINCIVIL Envigado"
+description: "Contacte a PROINCIVIL en Envigado, Antioquia: WhatsApp +57 322 627 0723, correo y formulario. Respuesta en menos de 24 horas hábiles para diseño estructural, evaluación, geotecnia e interventoría."
+h1: "Hablemos de su proyecto"
+titulo_corto: "Contacto"
+eyebrow: "Contacto"
+excerpt: "WhatsApp es el canal más rápido. Si prefiere, use el formulario o el correo: respondemos en menos de 24 horas hábiles con una propuesta o con las preguntas que necesitemos resolver."
+cta_texto: "Escribir por WhatsApp"
+sin_cta: true
+datePublished: 2026-09-22
+dateModified: 2026-09-22
+schemaType: "ContactPage"
+---
+<section class="section">
+  <div class="wrapper">
+    <div class="dos_columnas">
+      <div class="flow">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Canales</p>
+          <h2 class="section-header__titulo">Dónde encontrarnos</h2>
+        </div>
+        <ul class="list_check">
+          <li>WhatsApp técnico: <a href="https://wa.me/{{ site.contact.whatsapp }}" class="lead-whatsapp" data-location="contacto-lista" rel="nofollow noopener" target="_blank">{{ site.contact.whatsapp_display }}</a> (Ing. Camilo Tamayo)</li>
+          <li>Gerencia: <a href="tel:+{{ site.contact.whatsapp_2 }}">{{ site.contact.whatsapp_2_display }}</a> (Andrea Palacio)</li>
+          <li>Correo: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+          <li>{{ site.empresa.direccion }}, {{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, {{ site.empresa.pais }}</li>
+          <li>{{ site.empresa.horario }}</li>
+        </ul>
+        <p>{{ site.empresa.razon_social }} · NIT {{ site.empresa.nit }}</p>
+        {% include como-cotizar-nota.html %}
+      </div>
+      <div class="flow">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Formulario</p>
+          <h2 class="section-header__titulo">Cuéntenos el alcance</h2>
+        </div>
+        {% include form.html %}
+      </div>
+    </div>
+  </div>
+</section>

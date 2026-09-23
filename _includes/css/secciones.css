@@ -1,0 +1,57 @@
+/* ============================================================
+   SECCIONES CON IMAGEN — formas nuevas del rediseño 2026-09-22.
+   Anotadas aquí según la regla 3 de la compuerta de CSS.
+   ============================================================ */
+
+/* ── Trío de accesos con foto (foto + etiqueta + flecha) ──────────── */
+.trio { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: var(--space-lg); }
+.trio__item { position: relative; display: grid; gap: 0.65rem; text-decoration: none; color: inherit; }
+.trio__item picture, .trio__item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-md); transition: transform 0.4s var(--ease); }
+.trio__item:hover img { transform: scale(1.02); }
+.trio__marco { overflow: hidden; border-radius: var(--radius-md); }
+.trio__pie { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); }
+.trio__titulo { font-family: var(--fuenteTitulos); font-size: 1.22rem; font-weight: 600; line-height: 1.2; }
+.trio__item:hover .trio__titulo { color: var(--color-oliva-texto); }
+.trio__flecha { color: var(--color-oliva-texto); flex-shrink: 0; transition: transform 0.25s var(--ease); }
+.trio__item:hover .trio__flecha { transform: translateX(4px); }
+.trio__texto { font-size: var(--text-small); color: var(--color-gris); }
+
+/* ── Banda partida: foto a sangre de un lado, texto del otro ──────── */
+.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); align-items: stretch; }
+.split__media { position: relative; min-height: 340px; }
+.split__media picture, .split__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.split__copy { padding: clamp(2rem, 5vw, 4.5rem) clamp(1.5rem, 5vw, 4.5rem); display: grid; gap: var(--space-md); align-content: center; }
+.split__copy h2 { max-width: 20ch; }
+.split--invertido .split__media { order: 2; }
+@media (max-width: 860px) { .split--invertido .split__media { order: -1; } .split__media { min-height: 260px; } }
+
+/* ── Tira de galería a sangre completa ────────────────────────────── */
+.tira { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 3px; background: var(--color-crema); }
+.tira picture, .tira img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.tira__item { position: relative; overflow: hidden; }
+.tira__item img { transition: transform 0.5s var(--ease); }
+.tira__item:hover img { transform: scale(1.04); }
+@media (max-width: 860px) { .tira { grid-auto-flow: row; grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Testimonio grande centrado ───────────────────────────────────── */
+.testimonio { max-width: 46rem; margin-inline: auto; text-align: center; display: grid; gap: var(--space-md); justify-items: center; }
+.testimonio__cita { font-family: var(--fuenteTitulos); font-size: clamp(1.35rem, 1rem + 1.7vw, 2.15rem); line-height: 1.28; max-width: 26ch; margin-inline: auto; }
+.testimonio__texto { color: var(--color-gris); max-width: 52ch; margin-inline: auto; }
+.testimonio__autor { font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-oliva-texto); }
+.testimonio__marca { width: 26px; height: 2px; background: var(--color-oliva); }
+
+/* ── Bloque de cifras sobre foto ──────────────────────────────────── */
+.cifras--lamina { padding-block: clamp(1.5rem, 3vw, 2.5rem); border-block: var(--elev-1-border); }
+
+/* ── Tarjeta con imagen (usa .tile) ───────────────────────────────── */
+.tile--media .tile__media { display: block; overflow: hidden; border-radius: var(--radius-md) var(--radius-md) 0 0; }
+.tile--media .tile__media picture, .tile--media .tile__media img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 0.4s var(--ease); }
+.tile--media:hover .tile__media img { transform: scale(1.03); }
+
+/* ── Pie de proyecto con dato técnico sobre la foto ───────────────── */
+.tile__cinta { position: absolute; top: var(--space-sm); left: var(--space-sm); z-index: 1; background: rgba(18, 22, 18, 0.78); color: var(--color-crema); font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.06em; padding: 0.3rem 0.6rem; border-radius: var(--radius-sm); backdrop-filter: blur(4px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .trio__item img, .tile--media .tile__media img, .tira__item img, .trio__flecha { transition: none; }
+  .trio__item:hover img, .tile--media:hover .tile__media img, .tira__item:hover img { transform: none; }
+}

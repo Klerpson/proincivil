@@ -1,0 +1,71 @@
+---
+layout: default
+---
+{%- comment -%}
+  Ficha de proyecto con los datos que pide un comité de compras.
+  Front matter: ficha{cliente, ubicacion, anio, sector, servicio, sistema, area, niveles, normativa, plazo, rol, resultado},
+  reto, solucion, resultado (Markdown en cuerpo con H2), galeria[{src,alt}], servicios[slugs], edificacion (slug), zona (slug).
+{%- endcomment -%}
+<section class="section section--tight">
+  <div class="wrapper">
+    <dl class="ficha">
+      {% for par in page.ficha %}
+      <div class="ficha__item"><dt>{{ par[0] | replace: "_", " " | capitalize }}</dt><dd>{{ par[1] }}</dd></div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper contenido flow">
+    {{ content }}
+  </div>
+</section>
+
+{% if page.galeria %}
+<section class="section section--crema">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Imágenes</p>
+      <h2 class="section-header__titulo">Registro del proyecto</h2>
+    </div>
+    <div class="grid" style="--grid-min: 280px">
+      {% for g in page.galeria %}
+      <figure class="figura">
+        <img src="{{ g.src | relative_url }}" alt="{{ g.alt }}" width="800" height="600" loading="lazy" decoding="async">
+        {% if g.pie %}<figcaption>{{ g.pie }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.testimonio %}
+<section class="section section--bosque">
+  <div class="wrapper">
+    <blockquote class="cita">
+      <p>{{ page.testimonio.texto }}</p>
+      <footer>{{ page.testimonio.autor }}{% if page.testimonio.cargo %}, {{ page.testimonio.cargo }}{% endif %}</footer>
+    </blockquote>
+  </div>
+</section>
+{% endif %}
+
+{% include cta-final.html titulo="¿Tiene un proyecto similar?" texto="Cuéntenos el alcance y le enviamos una propuesta técnica y económica en menos de 24 horas hábiles." %}
+
+{% if page.servicios or page.edificacion %}
+<section class="section">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Relacionado</p>
+      <h2 class="section-header__titulo">Servicios aplicados en este proyecto</h2>
+    </div>
+    {% include relacionados.html coleccion="servicios" slugs=page.servicios %}
+    {% if page.edificacion and site.secciones_publicadas contains "edificaciones" %}
+      {% assign _ed = site.edificaciones | where: "slug", page.edificacion | first %}
+      {% if _ed %}<p>Ver más proyectos de este tipo: <a href="{{ _ed.url | relative_url }}">{{ _ed.h1 }}</a></p>{% endif %}
+    {% endif %}
+  </div>
+</section>
+{% endif %}

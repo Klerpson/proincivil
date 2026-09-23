@@ -1,0 +1,38 @@
+---
+layout: page
+permalink: /blog/
+title: "Blog de ingeniería estructural: NSR-10, sismos, suelos y curadurías | PROINCIVIL"
+description: "Artículos de PROINCIVIL sobre NSR-10, evaluación después de sismos en Antioquia, estudios de suelos, licencias de construcción, costos de diseño estructural y casos reales."
+h1: "Blog: criterio de ingeniería, sin relleno"
+titulo_corto: "Blog"
+eyebrow: "Blog"
+excerpt: "Guías, análisis de sismos en Antioquia, costos y casos reales escritos por el equipo técnico. Cada artículo responde una pregunta concreta y enlaza al servicio que la resuelve."
+cta_texto: "Consultar con un ingeniero"
+sin_cta_cabecera: true
+datePublished: 2026-09-22
+dateModified: 2026-09-22
+---
+<section class="section">
+  <div class="wrapper flow">
+    {% assign _cats = "sismos,normativa,costos,casos" | split: "," %}
+    <ul class="sectores">
+      {% for c in _cats %}<li><a href="#cat-{{ c }}">{{ c | capitalize }}</a></li>{% endfor %}
+    </ul>
+    {% if site.posts.size > 0 %}
+    <div class="grid" style="--grid-min: 300px">
+      {% for post in site.posts %}{% include tarjeta.html item=post %}{% endfor %}
+    </div>
+    {% else %}
+    <p>Estamos preparando los primeros artículos. Mientras tanto, puede ver los <a href="{{ '/servicios/' | relative_url }}">servicios</a> y los <a href="{{ '/proyectos/' | relative_url }}">proyectos</a>.</p>
+    {% endif %}
+    {% for c in _cats %}
+      {% assign _pc = site.posts | where_exp: "p", "p.categories contains c" %}
+      {% if _pc.size > 0 %}
+      <div class="section-header" id="cat-{{ c }}"><h2 class="section-header__titulo">{{ c | capitalize }}</h2></div>
+      <ul class="list_check list_check--flecha">
+        {% for p in _pc %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>{% endfor %}
+      </ul>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

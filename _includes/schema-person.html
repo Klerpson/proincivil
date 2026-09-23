@@ -1,0 +1,14 @@
+{%- for m in site.equipo -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/nosotros/equipo/#{{ m.ancla }}",
+  "name": "{{ m.nombre }}",
+  "jobTitle": "{{ m.cargo }}",
+  "description": "{{ m.rol }}",
+  "url": "{{ site.url }}/nosotros/equipo/#{{ m.ancla }}",
+  "worksFor": { "@id": "{{ site.url }}/#organization" }
+}
+</script>
+{%- endfor -%}

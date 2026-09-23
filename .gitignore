@@ -1,0 +1,23 @@
+# Jekyll
+_site
+.jekyll-metadata
+.jekyll-cache
+.sass-cache
+.bundle/
+vendor/
+
+# Temporales
+tmp/
+output/
+*.log
+.DS_Store
+Thumbs.db
+.env
+
+# Memoria de sesiones de Claude (local)
+.remember/
+
+# Documentación interna del proyecto: contratos, RUT, investigación de mercado y estrategia SEO,
+# mockups de referencia y pendientes del cliente. Contiene datos personales y comerciales, así que
+# NO se versiona mientras el repositorio sea público. Vive solo en la máquina del contratista.
+_plans/

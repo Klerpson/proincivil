@@ -1,0 +1,9 @@
+/* EQUIPO */
+Empresa: PROINCIVIL S.A.S. — Envigado, Antioquia, Colombia
+Dirección técnica: Ing. Camilo Tamayo, especialista en ingeniería sismorresistente
+Gerencia: Kateryn Andrea Palacio Zuluaga
+
+/* SITIO */
+Diseño y desarrollo: Julián Franco — juli.com.co
+Tecnología: Jekyll, HTML semántico, CSS moderno, sin frameworks
+Tipografía: Fraunces, Inter, JetBrains Mono

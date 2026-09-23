@@ -1,0 +1,59 @@
+{%- comment -%}
+  Formulario de contacto. GitHub Pages no procesa formularios: el envío va al
+  endpoint de site.form_endpoint (Formspree / Web3Forms / Getform). Si está vacío,
+  se muestra el aviso y el CTA de WhatsApp. Selector de tipo de proyecto = dato que
+  el asesor necesita para cotizar.
+{%- endcomment -%}
+<div class="formulario" id="formulario">
+  {%- if site.form_endpoint != "" -%}
+  <form class="formulario__form flow" method="POST" action="{{ site.form_endpoint }}" accept-charset="UTF-8">
+    <input type="hidden" name="_subject" value="Nueva solicitud desde proincivil.com">
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <div class="dos_columnas dos_columnas--form">
+      <div class="campo"><label for="f-nombre">Nombre y apellido *</label><input id="f-nombre" name="nombre" type="text" required autocomplete="name"></div>
+      <div class="campo"><label for="f-empresa">Empresa o proyecto</label><input id="f-empresa" name="empresa" type="text" autocomplete="organization"></div>
+    </div>
+    <div class="dos_columnas dos_columnas--form">
+      <div class="campo"><label for="f-tel">WhatsApp / teléfono *</label><input id="f-tel" name="telefono" type="tel" required autocomplete="tel" placeholder="3XX XXX XXXX"></div>
+      <div class="campo"><label for="f-email">Correo electrónico *</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="dos_columnas dos_columnas--form">
+      <div class="campo">
+        <label for="f-tipo">Tipo de proyecto *</label>
+        <select id="f-tipo" name="tipo_proyecto" required>
+          <option value="">Seleccione una opción</option>
+          <option>Diseño estructural de edificación nueva</option>
+          <option>Estructura metálica, cubierta o carport fotovoltaico</option>
+          <option>Evaluación, patología o peritaje estructural</option>
+          <option>Evaluación después de un sismo</option>
+          <option>Vulnerabilidad sísmica o reforzamiento</option>
+          <option>Estudio de suelos o geotecnia</option>
+          <option>Cimentaciones, muros de contención o taludes</option>
+          <option>Interventoría o revisión independiente de diseños</option>
+          <option>Supervisión técnica independiente</option>
+          <option>Subsanación de observaciones de curaduría</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="campo"><label for="f-ciudad">Municipio del proyecto</label><input id="f-ciudad" name="municipio" type="text" placeholder="Envigado, Medellín, Rionegro…"></div>
+    </div>
+    <div class="campo"><label for="f-msg">Cuéntenos el alcance *</label><textarea id="f-msg" name="mensaje" rows="5" required placeholder="Área aproximada, número de niveles, uso, plazo y si ya tiene planos o estudio de suelos."></textarea></div>
+    <div class="campo campo--check">
+      <input id="f-datos" name="autoriza_datos" type="checkbox" required>
+      <label for="f-datos">Autorizo el tratamiento de mis datos según la <a href="{{ '/politica-de-datos/' | relative_url }}">política de tratamiento de datos</a>. *</label>
+    </div>
+    <div class="hero__acciones">
+      <button type="submit" class="boton">Enviar solicitud</button>
+      <span class="formulario__nota">{{ site.contact.respuesta }}.</span>
+    </div>
+  </form>
+  {%- else -%}
+  <div class="nota flow">
+    <p><strong>Formulario en configuración.</strong> Mientras tanto, escríbanos por WhatsApp o correo y le respondemos en menos de 24 horas hábiles.</p>
+    <div class="hero__acciones">
+      {% include button.html texto="Escribir por WhatsApp" data_location="form-fallback" %}
+      <a href="mailto:{{ site.contact.email }}" class="boton_secundario">{{ site.contact.email }}</a>
+    </div>
+  </div>
+  {%- endif -%}
+</div>

@@ -1,0 +1,22 @@
+---
+layout: none
+sitemap: false
+permalink: /llms.txt
+---
+# PROINCIVIL S.A.S.
+
+> Firma de ingeniería estructural en Envigado, Antioquia (Colombia). Diseño sismorresistente NSR-10, evaluación y patología estructural, vulnerabilidad sísmica, reforzamiento, geotecnia y estudios de suelos, interventoría y revisión independiente de diseños, supervisión técnica independiente, acompañamiento ante curadurías y coordinación BIM. Consultoría independiente: no ejecuta obras de construcción.
+
+## Servicios
+{% for s in site.servicios %}- [{{ s.titulo_corto | default: s.h1 }}]({{ s.url | absolute_url }}): {{ s.description | strip_html }}
+{% endfor %}
+## Proyectos
+{% for p in site.proyectos %}- [{{ p.titulo_corto | default: p.h1 }}]({{ p.url | absolute_url }})
+{% endfor %}
+## Blog
+{% for post in site.posts %}- [{{ post.title }}]({{ post.url | absolute_url }})
+{% endfor %}
+## Contacto
+- WhatsApp: {{ site.contact.whatsapp_display }}
+- Correo: {{ site.contact.email }}
+- [Cómo cotizar]({{ '/como-cotizar/' | absolute_url }})

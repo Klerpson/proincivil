@@ -1,0 +1,4 @@
+{% capture critical_css %}{% include critical-css/base.css %}{% include critical-css/hero.css %}{% endcapture %}
+<style>{{ critical_css }}</style>
+<link rel="preload" href="{{ '/css/style.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}"></noscript>

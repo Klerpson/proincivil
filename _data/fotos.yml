@@ -1,0 +1,16 @@
+# Generado desde /img/fotos. Ancho disponible por foto (jpg + webp).
+# Uso: {% include picture.html nombre="hero-estructura" alt="..." %}
+carport-1: [440]
+carport-2: [440]
+carport-3: [440]
+carport-4: [440]
+carport-aereo-ancho: [440]
+carport-metalico: [330]
+cubierta-metalica: [440]
+detalle-concreto: [440]
+estructura-metalica: [440, 768, 1200]
+estructura-obra: [380]
+fachada-ancha: [440, 768, 1100]
+fachada-vidrio: [440, 768, 1024]
+hero-estructura: [768, 1200, 1440, 1920]
+institucion-educativa: [440]

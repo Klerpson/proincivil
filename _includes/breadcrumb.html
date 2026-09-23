@@ -1,0 +1,18 @@
+{%- assign _partes = page.url | split: "/" | compact -%}
+<nav aria-label="Ruta de navegación" class="breadcrumb">
+  <ol>
+    <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+    {%- assign _ruta = "" -%}
+    {%- for parte in _partes -%}
+      {%- if parte == "" or parte == "index.html" -%}{%- continue -%}{%- endif -%}
+      {%- assign _ruta = _ruta | append: "/" | append: parte -%}
+      {%- assign _nombre = site.data.breadcrumb_names[parte] -%}
+      {%- unless _nombre -%}{%- assign _nombre = parte | replace: "-", " " | capitalize -%}{%- endunless -%}
+      {%- if forloop.last -%}
+      <li aria-current="page">{{ page.titulo_corto | default: page.h1 | default: _nombre | strip_html }}</li>
+      {%- else -%}
+      <li><a href="{{ _ruta | append: '/' | relative_url }}">{{ _nombre }}</a></li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ol>
+</nav>

@@ -1,0 +1,17 @@
+{%- assign _faqs = include.faqs | default: page.faqs -%}
+{%- if _faqs and _faqs.size > 0 -%}
+<section class="faqs" aria-label="Preguntas frecuentes">
+  <div class="section-header">
+    <p class="section-header__eyebrow">Preguntas frecuentes</p>
+    <h2 class="section-header__titulo">{{ include.titulo | default: page.faqs_titulo | default: "Lo que suelen preguntarnos" }}</h2>
+  </div>
+  <div class="faqs__lista">
+    {%- for faq in _faqs -%}
+    <details class="faq"{% if forloop.first %} open{% endif %}>
+      <summary class="faq__pregunta"><h3>{{ faq.question }}</h3><span class="faq__icono" aria-hidden="true"></span></summary>
+      <div class="faq__respuesta flow">{{ faq.answer | markdownify }}</div>
+    </details>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}

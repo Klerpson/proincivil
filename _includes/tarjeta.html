@@ -1,0 +1,13 @@
+{%- comment -%} Tarjeta de colección (servicio, edificación, zona, guía, proyecto, post). Parámetro: item, sin_imagen. {%- endcomment -%}
+{%- assign it = include.item -%}
+<article class="tile tile--enlace{% if it.hero and site.data.fotos[it.hero] and include.sin_imagen != true %} tile--media{% endif %}">
+  {%- if it.hero and site.data.fotos[it.hero] and include.sin_imagen != true -%}
+  <div class="tile__media">{% include picture.html nombre=it.hero alt="" ratio="4x3" sizes="(max-width: 700px) 100vw, 30vw" %}</div>
+  {%- endif -%}
+  <div class="tile__body flow">
+    {%- if it.eyebrow or it.sector -%}<p class="tile__eyebrow">{{ it.eyebrow | default: it.sector }}</p>{%- endif -%}
+    <h3 class="tile__title"><a href="{{ it.url | relative_url }}">{{ it.titulo_corto | default: it.h1 | default: it.title | strip_html }}</a></h3>
+    <p>{{ it.excerpt | default: it.description | strip_html | truncate: 150 }}</p>
+    <span class="tile__link" aria-hidden="true">Ver más →</span>
+  </div>
+</article>

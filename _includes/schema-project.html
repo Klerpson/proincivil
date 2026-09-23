@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "additionalType": "https://schema.org/Project",
+  "@id": "{{ page.url | absolute_url }}#project",
+  "name": {{ page.h1 | strip_html | jsonify }},
+  "description": {{ page.description | strip_html | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "creator": { "@id": "{{ site.url }}/#organization" },
+  "locationCreated": { "@type": "Place", "name": {{ page.ficha.ubicacion | jsonify }} },
+  {% if page.ficha.anio %}"dateCreated": "{{ page.ficha.anio }}",{% endif %}
+  "keywords": {{ page.ficha.servicio | jsonify }},
+  "inLanguage": "es-CO"
+}
+</script>

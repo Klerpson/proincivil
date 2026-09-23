@@ -1,0 +1,14 @@
+{%- if page.url == "/" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ site.url }}/#website",
+  "name": "PROINCIVIL · Seguridad estructural",
+  "url": "{{ site.url }}/",
+  "inLanguage": "es-CO",
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "potentialAction": { "@type": "ContactAction", "target": "{{ site.url }}/contacto/" }
+}
+</script>
+{%- endif -%}

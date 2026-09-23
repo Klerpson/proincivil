@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ page.url | absolute_url }}#service",
+  "name": {{ page.h1 | default: page.title | strip_html | jsonify }},
+  "serviceType": {{ page.serviceType | default: page.titulo_corto | default: page.h1 | strip_html | jsonify }},
+  "description": {{ page.description | strip_html | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "provider": { "@id": "{{ site.url }}/#organization" },
+  "areaServed": [{% if page.area_servida %}{{ page.area_servida | jsonify }}{% else %}{ "@type": "AdministrativeArea", "name": "Antioquia" }, { "@type": "Country", "name": "Colombia" }{% endif %}],
+  "audience": { "@type": "BusinessAudience", "audienceType": {{ page.audiencia_meta | default: "Arquitectos, constructoras, promotores, administradores de propiedad horizontal, aseguradoras y entidades públicas" | jsonify }} },
+  "category": {{ page.categoria | default: "Ingeniería estructural" | jsonify }},
+  "termsOfService": "{{ site.url }}/como-cotizar/"
+}
+</script>

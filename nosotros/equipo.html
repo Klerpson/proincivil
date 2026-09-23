@@ -1,0 +1,40 @@
+---
+layout: page
+permalink: /nosotros/equipo/
+title: "Equipo PROINCIVIL: ingeniero especialista en sismorresistencia y gerencia de proyectos | Envigado"
+description: "Conozca al equipo de PROINCIVIL: Ing. Camilo Tamayo, especialista en ingeniería sismorresistente, y Andrea Palacio, CEO. Diseño, evaluación e interventoría estructural en Envigado, Antioquia."
+h1: "El equipo que firma sus diseños"
+titulo_corto: "Equipo"
+eyebrow: "Equipo"
+excerpt: "Cada memoria y cada plano lleva la firma y la matrícula profesional de quien lo calculó. Estas son las personas detrás de PROINCIVIL."
+cta_texto: "Hablar con el equipo"
+datePublished: 2026-09-22
+dateModified: 2026-09-22
+persona: true
+---
+<section class="section">
+  <div class="wrapper flow">
+    {% for m in site.equipo %}
+    <div class="persona" id="{{ m.ancla }}">
+      <img src="{{ m.foto | relative_url }}" alt="{{ m.nombre }}" width="120" height="120" loading="lazy">
+      <div class="flow">
+        <h2>{{ m.nombre }}</h2>
+        <p class="persona__cargo">{{ m.cargo }}</p>
+        <p>{{ m.rol }}</p>
+        {% if m.slug == "camilo-tamayo" %}
+        <p>Responsable de la dirección técnica de los diseños estructurales, las evaluaciones y las interventorías de diseño. Firma las memorias y los planos que PROINCIVIL radica ante curadurías. Especialización en ingeniería sismorresistente; experiencia en pórticos de disipación especial, estructuras metálicas con conexiones precalificadas, evaluación post-sismo ATC-20 y coordinación BIM.</p>
+        <p><small>Formación, matrícula profesional y trayectoria detallada: pendientes de confirmación por el cliente para publicación.</small></p>
+        {% else %}
+        <p>Dirige la empresa, coordina los proyectos con clientes, curadurías y constructores, y garantiza que cada entregable llegue a tiempo y en el formato que exige cada entidad.</p>
+        <p><small>Formación y trayectoria detallada: pendientes de confirmación por el cliente para publicación.</small></p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    <div class="section-header">
+      <p class="section-header__eyebrow">Equipo ampliado</p>
+      <h2 class="section-header__titulo">Especialidades que integramos por proyecto</h2>
+    </div>
+    <p>Según el alcance, PROINCIVIL integra geotecnistas, modeladores BIM, ingenieros de vías y pavimentos, topógrafos y arquitectos con los que trabaja de forma recurrente. El cliente siempre sabe quién es responsable de cada entregable.</p>
+  </div>
+</section>

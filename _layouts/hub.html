@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{%- comment -%}
+  Hub de colección. Front matter:
+    coleccion: servicios | edificaciones | zonas | normativa | glosario | proyectos | cuanto-cuesta
+    grupos: (opcional) lista de {titulo, slugs:[...]} para agrupar tarjetas
+{%- endcomment -%}
+{%- assign _items = site[page.coleccion] | sort: "orden" -%}
+<section class="section">
+  <div class="wrapper flow">
+    {{ content }}
+  </div>
+</section>
+{%- if page.grupos -%}
+  {%- for grupo in page.grupos -%}
+  <section class="section{% cycle ' section--crema', '' %}">
+    <div class="wrapper flow">
+      <div class="section-header">
+        <h2 class="section-header__titulo">{{ grupo.titulo }}</h2>
+        {%- if grupo.texto -%}<p class="section-header__texto">{{ grupo.texto }}</p>{%- endif -%}
+      </div>
+      <div class="grid" style="--grid-min: 300px">
+        {%- for slug in grupo.slugs -%}
+          {%- assign item = _items | where: "slug", slug | first -%}
+          {%- if item -%}{% include tarjeta.html item=item %}{%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+  {%- endfor -%}
+{%- else -%}
+  <section class="section section--crema">
+    <div class="wrapper">
+      <div class="grid" style="--grid-min: 300px">
+        {%- for item in _items -%}{% include tarjeta.html item=item %}{%- endfor -%}
+      </div>
+    </div>
+  </section>
+{%- endif -%}
+{% if page.faqs %}
+<section class="section"><div class="wrapper">{% include faqs.html %}</div></section>
+{% endif %}
+{% include cta-final.html %}

@@ -1,0 +1,70 @@
+---
+layout: default
+---
+{%- assign _autor = site.equipo | where: "slug", page.author | first -%}
+<section class="section">
+  <div class="wrapper">
+    <article class="articulo">
+      <div class="articulo__cuerpo contenido flow">
+        <p class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}">{% include date-es.html date=page.date %}</time>
+          {% if page.readingTime %} · {{ page.readingTime }}{% endif %}
+          {% if page.categories %} · {{ page.categories | join: ", " }}{% endif %}
+        </p>
+        {% if page.resumen %}
+        <div class="resumen" id="en-resumen">
+          <p class="resumen__eyebrow">En resumen</p>
+          <p class="resumen__texto">{{ page.resumen }}</p>
+        </div>
+        {% endif %}
+        {{ content }}
+      </div>
+      <aside class="articulo__lateral">
+        {% if page.indice %}
+        <nav class="indice" aria-label="En esta página">
+          <p class="indice__titulo">En esta página</p>
+          <ol>{% for s in page.indice %}<li><a href="#{{ s.id }}">{{ s.title }}</a></li>{% endfor %}</ol>
+        </nav>
+        {% endif %}
+        {% if _autor %}
+        <div class="autor">
+          <p class="indice__titulo">Escrito por</p>
+          <p class="autor__nombre"><a href="{{ '/nosotros/equipo/#' | append: _autor.ancla | relative_url }}">{{ _autor.nombre }}</a></p>
+          <p class="autor__cargo">{{ _autor.cargo }}</p>
+        </div>
+        {% endif %}
+        {% if page.servicios %}
+        <div class="lateral-cta flow">
+          <p class="indice__titulo">Servicio relacionado</p>
+          {% for slug in page.servicios %}
+            {% assign s = site.servicios | where: "slug", slug | first %}
+            {% if s %}<p><a href="{{ s.url | relative_url }}">{{ s.titulo_corto | default: s.h1 }}</a></p>{% endif %}
+          {% endfor %}
+          {% include button.html texto="Consultar por WhatsApp" data_location="post-lateral" %}
+        </div>
+        {% endif %}
+      </aside>
+    </article>
+  </div>
+</section>
+
+{% if page.faqs %}
+<section class="section section--crema"><div class="wrapper">{% include faqs.html %}</div></section>
+{% endif %}
+
+{% include cta-final.html %}
+
+{%- assign _rel = site.posts | where_exp: "p", "p.url != page.url" | slice: 0, 3 -%}
+{% if _rel.size > 0 %}
+<section class="section">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Blog</p>
+      <h2 class="section-header__titulo">Otros artículos</h2>
+    </div>
+    <div class="grid" style="--grid-min: 280px">
+      {% for p in _rel %}{% include tarjeta.html item=p %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

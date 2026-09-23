@@ -1,0 +1,89 @@
+---
+layout: page
+permalink: /nosotros/
+title: "PROINCIVIL S.A.S. · Ingenieros estructurales en Envigado, Antioquia"
+description: "PROINCIVIL es una firma de ingeniería estructural y consultoría técnica en Envigado, Antioquia, especializada en diseño sismorresistente, evaluación estructural, geotecnia e interventoría. Independiente: no ejecuta obra."
+h1: "Una firma de ingeniería independiente, con criterio y sin conflicto de interés"
+titulo_corto: "Nosotros"
+eyebrow: "Quiénes somos"
+excerpt: "Consultoría estructural fundada en Envigado por un ingeniero especialista en sismorresistencia y una gerencia dedicada a que cada proyecto se apruebe, se construya y se entregue como se diseñó."
+hero: "/img/placeholder-plano.svg"
+hero_alt: "Planta estructural con ejes y columnas, dibujo de línea"
+cta_texto: "Hablemos de su proyecto"
+datePublished: 2026-09-22
+dateModified: 2026-09-22
+persona: true
+---
+<section class="section">
+  <div class="wrapper">
+    <div class="dos_columnas">
+      <div class="flow">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Qué hacemos</p>
+          <h2 class="section-header__titulo">Diseñamos, evaluamos y supervisamos</h2>
+        </div>
+        <p>PROINCIVIL S.A.S. es una firma de consultoría en ingeniería civil con enfoque en la modelación, el diseño y la revisión de edificaciones sismorresistentes e infraestructura. Trabajamos para arquitectos, constructoras, promotores, administraciones de propiedad horizontal, aseguradoras, entidades públicas y empresas de energía que necesitan un especialista estructural con criterio propio.</p>
+        <p>Nuestra propuesta de valor es concreta: reducir sobrecostos y blindar técnicamente los proyectos mediante ingeniería de alto criterio, rigurosidad normativa (NSR-10) y coordinación técnica integral con BIM.</p>
+      </div>
+      <div class="flow">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Qué no hacemos</p>
+          <h2 class="section-header__titulo">No ejecutamos obra</h2>
+        </div>
+        <p>No construimos, no vendemos materiales ni tenemos participación en constructoras. Esa decisión define la empresa: nuestro único producto es el criterio técnico, y por eso podemos revisar diseños de terceros, supervisar obras e interventar contratos sin interés en el resultado comercial de la construcción.</p>
+        <p><a href="{{ '/nosotros/independencia-tecnica/' | relative_url }}" class="boton_secundario">Por qué la independencia protege su inversión</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--crema">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Equipo</p>
+      <h2 class="section-header__titulo">Quién firma y quién responde</h2>
+    </div>
+    <div class="grid" style="--grid-min: 320px">
+      {% for m in site.equipo %}
+      <div class="persona" id="{{ m.ancla }}">
+        <img src="{{ m.foto | relative_url }}" alt="{{ m.nombre }}" width="120" height="120" loading="lazy">
+        <div class="flow">
+          <h3>{{ m.nombre }}</h3>
+          <p class="persona__cargo">{{ m.cargo }}</p>
+          <p>{{ m.rol }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p><a href="{{ '/nosotros/equipo/' | relative_url }}">Ver el equipo completo y sus credenciales →</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper">
+    <div class="grid" style="--grid-min: 280px">
+      <div class="tile tile--texto"><h3 class="tile__title">Misión</h3><p>Brindar servicios especializados de ingeniería civil a entidades públicas y privadas, con un equipo humano calificado, comprometido con la excelencia técnica y con soluciones eficientes, responsables y de alta calidad.</p></div>
+      <div class="tile tile--texto"><h3 class="tile__title">Visión</h3><p>Ser una empresa reconocida por la calidad de sus servicios, la entrega a tiempo, el servicio al cliente y la experiencia de su gente, consolidándose como referente de la ingeniería estructural en Colombia.</p></div>
+      <div class="tile tile--texto"><h3 class="tile__title">Política de calidad</h3><p>Ofrecer servicios de consultoría, diseño, evaluación e interventoría con altos estándares, mediante comunicación permanente, transparente y efectiva con nuestros clientes.</p></div>
+      <div class="tile tile--texto"><h3 class="tile__title">Cómo trabajamos</h3><p>Modelación BIM en cada proyecto, optimización de diseños sin comprometer seguridad y un equipo multidisciplinario que acompaña desde el análisis hasta la aprobación.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--crema">
+  <div class="wrapper flow">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Cobertura y datos</p>
+      <h2 class="section-header__titulo">Sede en Envigado, proyectos en toda Antioquia y Colombia</h2>
+    </div>
+    <div class="dos_columnas">
+      <ul class="list_check">
+        <li>{{ site.empresa.razon_social }} · NIT {{ site.empresa.nit }}</li>
+        <li>{{ site.empresa.direccion }}, {{ site.empresa.ciudad }}, {{ site.empresa.departamento }}</li>
+        <li>{{ site.empresa.horario }}</li>
+        <li>Proyectos en Mutatá, Puerto Triunfo, Betulia, Puerto Perales, Área Metropolitana de Medellín y sedes comerciales a nivel nacional</li>
+      </ul>
+      <p><a href="{{ '/contacto/' | relative_url }}" class="boton_secundario">Consultar por su municipio</a></p>
+    </div>
+  </div>
+</section>

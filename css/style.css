@@ -1,0 +1,11 @@
+---
+layout: compress
+sitemap: false
+---
+/* Compilador: un solo CSS minificado a partir de los módulos de _includes/css/.
+   El orden de capas ya está declarado en critical-css/base.css (inline). */
+@layer reset, primitivas, componentes, utilidades;
+{% include css/primitivas.css %}
+{% include css/secciones.css %}
+{% include css/componentes.css %}
+{% include css/footer.css %}

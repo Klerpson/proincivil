@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& C:\\Ruby33-x64\\bin\\bundle.bat exec jekyll build*)",
+      "PowerShell(& C:\\Ruby33-x64\\bin\\bundle.bat exec jekyll serve*)",
+      "Bash(python _scripts/validar-site.py*)",
+      "Bash(python _scripts/lint-frontmatter.py*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ]
+  }
+}

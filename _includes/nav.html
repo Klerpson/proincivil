@@ -1,0 +1,56 @@
+{%- comment -%}
+  Navegación. Los enlaces se filtran con site.secciones_publicadas: el menú completo vive en
+  _data/navegacion.yml y las secciones retenidas para la fase SEO desaparecen solas del menú,
+  del pie y de los CTA sin tocar el YAML. Para publicarlas, añadir la sección en _config.yml.
+{%- endcomment -%}
+{%- assign nav = site.data.navegacion -%}
+<nav class="nav" aria-label="Navegación principal">
+  <input id="nav-toggle" type="checkbox" aria-hidden="true">
+  <a href="{{ '/' | relative_url }}" class="nav__logo" title="PROINCIVIL · Inicio">
+    <img class="nav__logo--oscuro" src="{{ '/img/logo-proincivil.png' | relative_url }}" alt="PROINCIVIL · Seguridad estructural" width="132" height="96" loading="eager" decoding="async">
+    <img class="nav__logo--claro" src="{{ '/img/logo-proincivil-blanco.png' | relative_url }}" alt="" aria-hidden="true" width="132" height="96" loading="eager" decoding="async">
+  </a>
+  <ul class="nav__lista">
+    {%- for item in nav.principal -%}
+      {%- assign _seg = item.url | remove_first: "/" | split: "/" | first -%}
+      {%- assign _item_ok = false -%}
+      {%- if item.url == nil or site.secciones_publicadas contains _seg -%}{%- assign _item_ok = true -%}{%- endif -%}
+      {%- if item.grupos -%}
+        {%- comment -%} ¿Le queda algún enlace publicado a este desplegable? {%- endcomment -%}
+        {%- assign _hay = false -%}
+        {%- for grupo in item.grupos -%}{%- for e in grupo.enlaces -%}
+          {%- assign _s = e.url | remove_first: "/" | split: "/" | first -%}
+          {%- if site.secciones_publicadas contains _s -%}{%- assign _hay = true -%}{%- endif -%}
+        {%- endfor -%}{%- endfor -%}
+        {%- if _hay -%}
+    <li class="nav__item nav__item--desplegable">
+      <input type="checkbox" id="nav-sub-{{ forloop.index }}" class="nav__sub-toggle" aria-hidden="true">
+      <label for="nav-sub-{{ forloop.index }}" class="nav__enlace" aria-haspopup="true">{{ item.texto }}<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></label>
+      <div class="nav__panel">
+        {%- for grupo in item.grupos -%}
+          {%- assign _grupo_hay = false -%}
+          {%- for e in grupo.enlaces -%}{%- assign _s = e.url | remove_first: "/" | split: "/" | first -%}{%- if site.secciones_publicadas contains _s -%}{%- assign _grupo_hay = true -%}{%- endif -%}{%- endfor -%}
+          {%- if _grupo_hay -%}
+        <div class="nav__grupo">
+          {%- if grupo.titulo -%}<p class="nav__grupo-titulo">{{ grupo.titulo }}</p>{%- endif -%}
+          {%- for enlace in grupo.enlaces -%}
+            {%- assign _s = enlace.url | remove_first: "/" | split: "/" | first -%}
+            {%- if site.secciones_publicadas contains _s -%}
+          <a href="{{ enlace.url | relative_url }}"{% if enlace.url == page.url %} aria-current="page"{% endif %}>{{ enlace.texto }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if item.url and _item_ok -%}<a href="{{ item.url | relative_url }}" class="nav__ver-todo">{{ item.ver_todo | default: "Ver todo" }} →</a>{%- endif -%}
+      </div>
+    </li>
+        {%- endif -%}
+      {%- elsif _item_ok -%}
+    <li class="nav__item"><a href="{{ item.url | relative_url }}" class="nav__enlace"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.texto }}</a></li>
+      {%- endif -%}
+    {%- endfor -%}
+    <li class="nav__item nav__item--cta">{% include button.html texto="Cotizar" data_location="nav" %}</li>
+  </ul>
+  <label for="nav-toggle" class="nav__hamburguesa" aria-label="Abrir o cerrar el menú"><span></span><span></span><span></span></label>
+</nav>

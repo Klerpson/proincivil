@@ -1,0 +1,15 @@
+# Normalización de fin de línea: evita que Windows deje CRLF y git marque cientos de archivos.
+* text=auto eol=lf
+
+# Binarios
+*.avif  binary
+*.webp  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.woff  binary
+*.woff2 binary
+*.xlsx  binary

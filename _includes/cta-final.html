@@ -1,0 +1,21 @@
+<section class="section section--bosque cta-final">
+  <div class="wrapper">
+    <div class="cta-final__grid">
+      <div class="flow">
+        <p class="section-header__eyebrow">Siguiente paso</p>
+        <h2>{{ include.titulo | default: page.cta_titulo | default: "Hablemos de su proyecto" }}</h2>
+        <p>{{ include.texto | default: page.cta_texto_final | default: "Envíenos planos, ubicación y uso previsto. Le respondemos con una propuesta técnica y económica en menos de 24 horas hábiles. Diseñamos, evaluamos y supervisamos; la obra la ejecuta el constructor que usted elija." }}</p>
+        <div class="hero__acciones">
+          {% include button.html texto=include.boton data_location="cta-final" %}
+          <a href="{{ '/como-cotizar/' | relative_url }}" class="boton_secundario">Cómo cotizar</a>
+        </div>
+      </div>
+      <ul class="cta-final__datos">
+        <li><strong>{{ site.cifras.aprobacion_curadurias }}</strong><span>aprobación en primera radicación ante curadurías</span></li>
+        <li><strong>{{ site.cifras.m2_disenados }} m²</strong><span>diseñados en arquitectura y estructuras</span></li>
+        <li><strong>{{ site.cifras.m2_supervisados }} m²</strong><span>supervisados en interventoría y control técnico</span></li>
+        <li><strong>24 h</strong><span>de respuesta a su solicitud</span></li>
+      </ul>
+    </div>
+  </div>
+</section>

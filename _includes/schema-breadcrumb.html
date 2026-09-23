@@ -1,0 +1,23 @@
+{%- assign _partes = page.url | split: "/" | compact -%}
+{%- if _partes.size >= 1 and page.url != "/" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "{{ page.url | absolute_url }}#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "{{ site.url }}/" }
+    {%- assign _pos = 2 -%}{%- assign _ruta = "" -%}
+    {%- for parte in _partes -%}
+      {%- if parte == "" or parte == "index.html" -%}{%- continue -%}{%- endif -%}
+      {%- assign _ruta = _ruta | append: "/" | append: parte -%}
+      {%- assign _nombre = site.data.breadcrumb_names[parte] -%}
+      {%- if forloop.last -%}{%- assign _nombre = page.titulo_corto | default: page.h1 | default: _nombre | default: parte | strip_html -%}{%- endif -%}
+      {%- unless _nombre -%}{%- assign _nombre = parte | replace: "-", " " | capitalize -%}{%- endunless -%},
+    { "@type": "ListItem", "position": {{ _pos }}, "name": {{ _nombre | jsonify }}, "item": "{{ site.url }}{{ _ruta }}/" }
+      {%- assign _pos = _pos | plus: 1 -%}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif -%}

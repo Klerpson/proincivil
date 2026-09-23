@@ -1,0 +1,57 @@
+/* ── FAQ (details/summary, sin JS obligatorio) ───────────── */
+.faqs { display: grid; gap: var(--space-lg); max-width: 56rem; }
+.faqs__lista { display: grid; gap: var(--space-sm); }
+.faq { border: var(--elev-1-border); border-radius: var(--radius-md); background: var(--color-blanco); }
+.faq[open] { border-color: var(--color-oliva); }
+.faq__pregunta { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); padding: 1.1rem 1.25rem; }
+.faq__pregunta::-webkit-details-marker { display: none; }
+.faq__pregunta h3 { font-family: var(--fuenteTexto); font-size: 1.02rem; font-weight: 500; max-width: none; }
+.faq__icono { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; border: var(--elev-1-border); position: relative; }
+.faq__icono::before, .faq__icono::after { content: ""; position: absolute; background: var(--color-tinta); top: 50%; left: 50%; }
+.faq__icono::before { width: 10px; height: 1.5px; transform: translate(-50%, -50%); }
+.faq__icono::after { width: 1.5px; height: 10px; transform: translate(-50%, -50%); transition: transform 0.2s var(--ease); }
+.faq[open] .faq__icono::after { transform: translate(-50%, -50%) rotate(90deg); }
+.faq__respuesta { padding: 0 1.25rem 1.25rem; color: var(--color-gris); font-size: var(--text-small); }
+.faq__respuesta a { color: var(--color-oliva-texto); }
+
+/* ── CTA final ──────────────────────────────────────────── */
+.cta-final__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: var(--space-2xl); align-items: center; }
+.cta-final__datos { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-lg); }
+.cta-final__datos li { border-top: 1px solid var(--color-linea-clara); padding-top: var(--space-sm); max-width: none; display: grid; gap: 0.25rem; }
+.cta-final__datos strong { font-family: var(--fuenteTitulos); font-size: var(--text-stat); line-height: 1; font-weight: 600; }
+.cta-final__datos span { font-size: var(--text-small); color: color-mix(in srgb, var(--color-crema) 75%, var(--color-bosque)); }
+
+/* ── Formulario ─────────────────────────────────────────── */
+.formulario__form { display: grid; gap: var(--space-md); }
+.campo { display: grid; gap: 0.35rem; }
+.campo label { font-size: var(--text-small); font-weight: 500; }
+.campo :is(input, select, textarea) { width: 100%; padding: 0.75rem 0.9rem; border: var(--elev-1-border); border-radius: var(--radius-sm); background: var(--color-blanco); transition: border-color 0.2s; }
+.campo :is(input, select, textarea):focus { outline: 2px solid var(--color-oliva); outline-offset: 1px; border-color: var(--color-oliva); }
+.campo--check { grid-template-columns: auto 1fr; align-items: start; gap: 0.6rem; }
+.campo--check input { width: 18px; height: 18px; margin-top: 0.2rem; }
+.campo--check label { font-weight: 400; color: var(--color-gris); }
+.formulario__nota { font-size: var(--text-small); color: var(--color-gris); }
+
+/* ── Sticky CTA móvil ───────────────────────────────────── */
+.sticky-cta { display: none; }
+@media (max-width: 900px) {
+  .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--color-linea); border-top: var(--elev-1-border); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .sticky-cta__btn { display: flex; align-items: center; justify-content: center; padding: 0.95rem; background: var(--color-oliva); color: var(--color-crema); text-decoration: none; font-weight: 600; font-size: var(--text-small); }
+  .sticky-cta__btn--sec { background: var(--color-crema); color: var(--color-tinta); }
+  body { padding-bottom: 3.6rem; }
+}
+
+/* ── Equipo ─────────────────────────────────────────────── */
+.persona { display: grid; grid-template-columns: 120px 1fr; gap: var(--space-lg); align-items: start; padding: var(--space-lg); border: var(--elev-1-border); border-radius: var(--radius-md); background: var(--color-blanco); }
+.persona img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; filter: grayscale(1); }
+.persona__cargo { color: var(--color-oliva-texto); font-size: var(--text-small); font-weight: 500; }
+@media (max-width: 560px) { .persona { grid-template-columns: 1fr; } }
+
+/* ── Comparativa (tablas anchas) ────────────────────────── */
+.tabla { overflow-x: auto; border: var(--elev-1-border); border-radius: var(--radius-md); background: var(--color-blanco); }
+.tabla table { min-width: 560px; }
+.tabla th, .tabla td { padding: 0.8rem 1rem; }
+
+/* ── Sectores / logos de aliados (placeholder) ──────────── */
+.sectores { display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 0; }
+.sectores li { max-width: none; font-size: var(--text-small); padding: 0.5rem 0.9rem; border: var(--elev-1-border); border-radius: var(--radius-pill); background: var(--color-blanco); }

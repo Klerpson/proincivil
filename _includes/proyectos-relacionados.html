@@ -1,0 +1,17 @@
+{%- if include.slugs -%}
+<div class="grid" style="--grid-min: 280px">
+  {%- for slug in include.slugs -%}
+    {%- assign p = site.proyectos | where: "slug", slug | first -%}
+    {%- if p -%}
+    <article class="tile tile--oscuro">
+      <div class="tile__body flow">
+        <p class="tile__eyebrow">{{ p.ficha.sector }} · {{ p.ficha.ubicacion }}</p>
+        <h3 class="tile__title"><a href="{{ p.url | relative_url }}">{{ p.titulo_corto | default: p.h1 }}</a></h3>
+        <p>{{ p.excerpt | strip_html | truncate: 150 }}</p>
+        <p class="tile__dato">{{ p.ficha.area }}{% if p.ficha.niveles %} · {{ p.ficha.niveles }}{% endif %}</p>
+      </div>
+    </article>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+{%- endif -%}

@@ -1,0 +1,80 @@
+/* ── Héroe de la home: foto a sangre completa, texto encima ───────── */
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: min(94dvh, 900px);
+  display: flex;
+  align-items: flex-end;
+  padding: calc(var(--nav-alto) + clamp(3rem, 8vw, 7rem)) var(--wrapper-inset) clamp(4rem, 9vw, 7.5rem);
+  color: var(--color-crema);
+  background: var(--color-bosque);
+}
+.hero__fondo { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.hero__fondo picture, .hero__fondo img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.hero__fondo::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(18, 22, 18, 0.74) 0%, rgba(18, 22, 18, 0.30) 42%, rgba(18, 22, 18, 0.88) 100%),
+    linear-gradient(90deg, rgba(18, 22, 18, 0.62) 0%, rgba(18, 22, 18, 0) 62%);
+}
+.hero__copy { position: relative; max-width: 44rem; display: grid; gap: var(--space-md); }
+.hero__titulo { color: var(--color-crema); font-size: var(--text-display); line-height: 1.02; letter-spacing: -0.025em; max-width: 15ch; }
+.hero__titulo em { font-style: italic; color: color-mix(in srgb, var(--color-crema) 78%, var(--color-oliva)); }
+.hero__texto { color: color-mix(in srgb, var(--color-crema) 84%, var(--color-bosque)); font-size: clamp(1.05rem, 1rem + 0.35vw, 1.22rem); max-width: 46ch; }
+.hero__acciones { display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center; }
+.hero .boton_secundario { color: var(--color-crema); border-color: color-mix(in srgb, var(--color-crema) 55%, transparent); }
+.hero .boton_secundario:hover { background: var(--color-crema); color: var(--color-bosque); border-color: var(--color-crema); }
+
+.hero__eyebrow, .cabecera__eyebrow, .section-header__eyebrow, .tile__eyebrow, .resumen__eyebrow, .indice__titulo, .trio__etiqueta {
+  font-family: var(--fuenteMono); font-size: var(--text-eyebrow); text-transform: uppercase;
+  letter-spacing: 0.14em; color: var(--color-oliva-texto); font-weight: 500;
+}
+.hero__eyebrow { color: color-mix(in srgb, var(--color-crema) 72%, var(--color-oliva)); }
+
+.badges { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.badges li {
+  font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.04em;
+  padding: 0.38rem 0.75rem; border-radius: var(--radius-pill); max-width: none;
+  border: 1px solid var(--color-linea); background: var(--color-blanco); color: var(--color-tinta);
+}
+.badges li::before { content: "✓ "; color: var(--color-oliva-texto); }
+.hero .badges li { border-color: color-mix(in srgb, var(--color-crema) 34%, transparent); background: rgba(251, 250, 247, 0.08); color: var(--color-crema); backdrop-filter: blur(4px); }
+.hero .badges li::before { color: color-mix(in srgb, var(--color-crema) 75%, var(--color-oliva)); }
+
+/* ── Lámina: el contenido sube sobre el héroe ─────────────────────── */
+.lamina {
+  position: relative; z-index: 2; margin-top: clamp(-5rem, -6vw, -3rem);
+  background: var(--color-crema); border-radius: 22px 22px 0 0;
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+/* ── Cabecera de páginas interiores ───────────────────────────────── */
+.cabecera {
+  display: grid; gap: var(--space-xl); align-items: center;
+  padding: clamp(2rem, 5vw, 3.5rem) var(--wrapper-inset) clamp(2rem, 5vw, 3.5rem);
+}
+.cabecera--media { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
+.cabecera__copy { display: grid; gap: var(--space-md); max-width: 44rem; }
+.cabecera h1 em { font-style: italic; color: var(--color-oliva-texto); }
+.cabecera__texto { color: var(--color-gris); font-size: clamp(1.02rem, 1rem + 0.3vw, 1.16rem); max-width: 52ch; }
+.cabecera__media { position: relative; }
+.cabecera__media picture, .cabecera__media img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-md); }
+.cabecera--sin-media { border-bottom: var(--elev-1-border); }
+
+/* ── Migas de pan ─────────────────────────────────────────────────── */
+.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.35rem; font-size: var(--text-eyebrow); font-family: var(--fuenteMono); letter-spacing: 0.04em; color: var(--color-gris); }
+.breadcrumb li { max-width: none; list-style: none; }
+.breadcrumb li:not(:last-child)::after { content: "›"; margin-left: 0.35rem; }
+.breadcrumb a { color: var(--color-gris); text-decoration: none; }
+.breadcrumb a:hover { color: var(--color-oliva-texto); }
+
+@media (max-width: 900px) {
+  .hero { min-height: min(86dvh, 720px); padding-bottom: clamp(3rem, 8vw, 5rem); }
+  /* En móvil el degradado lateral tapaba la foto entera: solo se mantiene el vertical. */
+  .hero__fondo::after { background: linear-gradient(180deg, rgba(18, 22, 18, 0.66) 0%, rgba(18, 22, 18, 0.34) 38%, rgba(18, 22, 18, 0.86) 100%); }
+  .hero__fondo img { object-position: 70% center; }
+  .cabecera--media { grid-template-columns: 1fr; gap: var(--space-lg); }
+  .cabecera__media { order: -1; }
+  .cabecera__media picture, .cabecera__media img { aspect-ratio: 16 / 10; }
+  .lamina { margin-top: -2.5rem; border-radius: 16px 16px 0 0; }
+}

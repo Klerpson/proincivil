@@ -1,0 +1,14 @@
+{%- comment -%}
+  Rejilla de tarjetas a partir de slugs. Parámetros: coleccion (nombre), slugs (array).
+  Si la colección está retenida para la fase SEO (no figura en site.secciones_publicadas)
+  no se pinta nada: sus documentos existen en el repositorio pero no tienen página.
+{%- endcomment -%}
+{%- if include.slugs and site.secciones_publicadas contains include.coleccion -%}
+{%- assign _col = site[include.coleccion] -%}
+<div class="grid" style="--grid-min: 260px">
+  {%- for slug in include.slugs -%}
+    {%- assign it = _col | where: "slug", slug | first -%}
+    {%- if it -%}{% include tarjeta.html item=it %}{%- endif -%}
+  {%- endfor -%}
+</div>
+{%- endif -%}

@@ -1,0 +1,7 @@
+{%- comment -%} Tira de fotos a sangre completa. Parámetro: fotos (csv de nombres de _data/fotos.yml). {%- endcomment -%}
+{%- assign _f = include.fotos | default: "carport-1,institucion-educativa,fachada-vidrio,detalle-concreto,cubierta-metalica,carport-3" | split: "," -%}
+<div class="tira">
+  {%- for n in _f -%}
+  <div class="tira__item">{% include picture.html nombre=n alt=include.alt ratio="1x1" sizes="(max-width: 860px) 50vw, 17vw" %}</div>
+  {%- endfor -%}
+</div>

@@ -1,0 +1,99 @@
+# Navegación principal y footer — única fuente de verdad para menús.
+principal:
+  - texto: Servicios
+    url: /servicios/
+    ver_todo: Todos los servicios
+    grupos:
+      - titulo: Diseño
+        enlaces:
+          - { texto: "Diseño estructural sismorresistente", url: /servicios/diseno-estructural/ }
+          - { texto: "Estructuras metálicas y carports", url: /servicios/estructuras-metalicas/ }
+          - { texto: "Cimentaciones", url: /servicios/cimentaciones/ }
+          - { texto: "Muros de contención y taludes", url: /servicios/muros-de-contencion-y-taludes/ }
+      - titulo: Evaluación
+        enlaces:
+          - { texto: "Evaluación y patología estructural", url: /servicios/evaluacion-estructural/ }
+          - { texto: "Vulnerabilidad sísmica", url: /servicios/vulnerabilidad-sismica/ }
+          - { texto: "Evaluación después de un sismo", url: /servicios/evaluacion-post-sismo/ }
+          - { texto: "Reforzamiento estructural", url: /servicios/reforzamiento-estructural/ }
+      - titulo: Suelos y control
+        enlaces:
+          - { texto: "Geotecnia y estudios de suelos", url: /servicios/geotecnia-estudio-de-suelos/ }
+          - { texto: "Interventoría de diseños", url: /servicios/interventoria-de-disenos/ }
+          - { texto: "Revisión independiente de diseños", url: /servicios/revision-independiente-de-disenos/ }
+          - { texto: "Supervisión técnica independiente", url: /servicios/supervision-tecnica-independiente/ }
+      - titulo: Trámites y BIM
+        enlaces:
+          - { texto: "Curadurías y licencias", url: /servicios/curadurias-y-licencias/ }
+          - { texto: "BIM y topografía", url: /servicios/bim-y-topografia/ }
+          - { texto: "¿Cuánto cuesta?", url: /cuanto-cuesta/ }
+  - texto: Proyectos
+    url: /proyectos/
+  - texto: Edificaciones
+    url: /edificaciones/
+    ver_todo: Todos los tipos de edificación
+    grupos:
+      - enlaces:
+          - { texto: "Propiedad horizontal", url: /edificaciones/propiedad-horizontal/ }
+          - { texto: "Instituciones educativas", url: /edificaciones/instituciones-educativas/ }
+          - { texto: "Hoteles", url: /edificaciones/hoteles/ }
+          - { texto: "Carports y cubiertas fotovoltaicas", url: /edificaciones/carports-y-cubiertas-fotovoltaicas/ }
+      - enlaces:
+          - { texto: "Bodegas y naves industriales", url: /edificaciones/bodegas-y-naves-industriales/ }
+          - { texto: "Vivienda de 1 y 2 pisos", url: /edificaciones/vivienda-1-y-2-pisos/ }
+          - { texto: "Sedes comerciales y retail", url: /edificaciones/sedes-comerciales-y-retail/ }
+  - texto: Normativa
+    url: /normativa/
+    ver_todo: Todas las guías
+    grupos:
+      - titulo: NSR-10
+        enlaces:
+          - { texto: "Guía NSR-10", url: /normativa/nsr-10/ }
+          - { texto: "Título A · Requisitos sísmicos", url: /normativa/nsr-10/titulo-a/ }
+          - { texto: "Título B · Cargas", url: /normativa/nsr-10/titulo-b/ }
+          - { texto: "Título H · Geotecnia", url: /normativa/nsr-10/titulo-h/ }
+      - titulo: Leyes y trámites
+        enlaces:
+          - { texto: "Ley 400 de 1997", url: /normativa/ley-400-de-1997/ }
+          - { texto: "Ley 1796 de 2016", url: /normativa/ley-1796-de-2016/ }
+          - { texto: "Licencia de construcción", url: /normativa/licencia-de-construccion-colombia/ }
+          - { texto: "Glosario estructural", url: /glosario/ }
+  - texto: Nosotros
+    url: /nosotros/
+    ver_todo: Conozca la firma
+    grupos:
+      - enlaces:
+          - { texto: "Quiénes somos", url: /nosotros/ }
+          - { texto: "Equipo", url: /nosotros/equipo/ }
+          - { texto: "Independencia técnica", url: /nosotros/independencia-tecnica/ }
+          - { texto: "Zonas de cobertura", url: /zonas/ }
+          - { texto: "Cómo cotizar", url: /como-cotizar/ }
+          - { texto: "Blog", url: /blog/ }
+          - { texto: "Contacto", url: /contacto/ }
+
+footer:
+  - titulo: Servicios
+    enlaces:
+      - { texto: "Diseño estructural", url: /servicios/diseno-estructural/ }
+      - { texto: "Evaluación estructural", url: /servicios/evaluacion-estructural/ }
+      - { texto: "Reforzamiento", url: /servicios/reforzamiento-estructural/ }
+      - { texto: "Estudios de suelos", url: /servicios/geotecnia-estudio-de-suelos/ }
+      - { texto: "Interventoría", url: /servicios/interventoria-de-disenos/ }
+      - { texto: "Curadurías y licencias", url: /servicios/curadurias-y-licencias/ }
+      - { texto: "Todos los servicios", url: /servicios/ }
+  - titulo: Recursos
+    enlaces:
+      - { texto: "Proyectos", url: /proyectos/ }
+      - { texto: "Tipos de edificación", url: /edificaciones/ }
+      - { texto: "Guía NSR-10", url: /normativa/nsr-10/ }
+      - { texto: "Normativa", url: /normativa/ }
+      - { texto: "Glosario", url: /glosario/ }
+      - { texto: "Blog", url: /blog/ }
+      - { texto: "Cómo cotizar", url: /como-cotizar/ }
+  - titulo: Empresa
+    enlaces:
+      - { texto: "Quiénes somos", url: /nosotros/ }
+      - { texto: "Equipo", url: /nosotros/equipo/ }
+      - { texto: "Independencia técnica", url: /nosotros/independencia-tecnica/ }
+      - { texto: "Zonas de cobertura", url: /zonas/ }
+      - { texto: "Contacto", url: /contacto/ }

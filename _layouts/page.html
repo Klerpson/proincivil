@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{{ content }}
+{% if page.faqs %}
+<section class="section">
+  <div class="wrapper">
+    {% include faqs.html %}
+  </div>
+</section>
+{% endif %}
+{% unless page.sin_cta %}
+{% include cta-final.html %}
+{% endunless %}
