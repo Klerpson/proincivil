@@ -18,8 +18,9 @@ name: PROINCIVIL
 title: PROINCIVIL · Seguridad estructural
 description: "Ingeniería estructural sismorresistente, evaluación, geotecnia e interventoría en Envigado, Antioquia."
 author: PROINCIVIL S.A.S.
-# Repositorio de GitHub Pages (usuario/repo). PENDIENTE: ajustar al crear el repo del cliente.
-repository: proincivil/proincivil.com
+# Repositorio de GitHub Pages (usuario/repo). Hoy vive en la cuenta del contratista; al entregar el
+# proyecto se transfiere a la cuenta de PROINCIVIL y se actualiza este valor.
+repository: Klerpson/proincivil
 lang: es-CO
 # Sin `timezone`: en Windows exige la gema tzinfo-data (no disponible offline) y GitHub Pages compila en UTC.
 
