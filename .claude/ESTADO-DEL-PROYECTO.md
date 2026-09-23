@@ -9,7 +9,9 @@
 | Investigación de mercado, keywords y arquitectura | ✅ Cerrada 2026-09-22 | `_plans/investigacion-web-seo-proincivil.md` (v2) + `_plans/research/` |
 | Construcción del sitio Jekyll (82 URLs) | ✅ Compila y valida 2026-09-22 | Todo el contenido escrito como borrador; falta aprobación del cliente, fotografía real y publicación |
 | Aprobación de contenido por el cliente | ⏳ No iniciada | Todo el contenido es borrador hasta aprobación escrita (contrato) |
-| Publicación en GitHub Pages + dominio | ⏳ No iniciada | Crear repo, configurar `repository:` y CNAME, DNS apex → www |
+| Publicación en GitHub Pages | ✅ 2026-09-22 | https://klerpson.github.io/proincivil/ · repo https://github.com/Klerpson/proincivil (público) |
+| Dominio propio + indexación | ⏳ Bloqueada | Falta que PROINCIVIL compre `proincivil.com`; hasta entonces `vista_previa: true` |
+| Entrega de pendientes al cliente | ✅ 2026-09-22 | `_plans/PENDIENTES-Y-PREGUNTAS-PROINCIVIL.md` y `.pdf` (5 páginas, 11 preguntas) |
 | Fase SEO mensual | ⏳ Arranca al entregar el sitio | Plan de 12 meses en la sección 13 de la investigación |
 
 ## Pendientes del cliente (bloquean publicación)
@@ -46,6 +48,32 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-09-22 (cierre) — Publicación en GitHub Pages con alcance recortado
+**Contexto:** el usuario pidió publicar el núcleo comercial y retener el contenido SEO como palanca
+para vender el servicio mensual, más un documento de pendientes para el cliente.
+- **Repositorio:** https://github.com/Klerpson/proincivil (público, rama `main`, 231 archivos, 8 MB).
+  `_plans/` queda **fuera del repositorio** (contratos, RUT, investigación y pendientes: datos
+  personales y comerciales) vía `.gitignore`. `.claude/` sí se versiona, sin cifras de contrato.
+- **Pages:** https://klerpson.github.io/proincivil/ · build `legacy` desde `main` / raíz. Verificado:
+  36 URLs en 200, las 5 secciones retenidas en 404, `noindex` en todas y robots.txt con `Disallow: /`.
+- **Alcance publicado (36 URLs):** inicio, servicios (hub + 14), proyectos (hub + 9), corporativas (6)
+  y blog (hub + 3 artículos). **Retenidas (45):** normativa, glosario, edificaciones, zonas y
+  cuanto-cuesta — `output: false` en las colecciones y `published: false` en sus hubs.
+- **Mecanismo reversible:** `secciones_publicadas` en `_config.yml` filtra menú, pie, CTA de cabecera,
+  botón de «cuánto cuesta» y bloques de relacionados. Añadir una sección a esa lista y recompilar la
+  devuelve a todo el sitio; no hay enlaces sueltos que arreglar.
+- **Modo vista previa:** `vista_previa: true` → noindex global + robots bloqueado. `url` y `baseurl`
+  apuntan a github.io/proincivil; `CNAME` eliminado hasta que exista el dominio.
+- **Corregido en el camino:** 105 enlaces internos en prosa llevaban `/ruta/` sin `baseurl` y se
+  romperían bajo GitHub Pages; ahora usan `{{ site.baseurl }}` (inocuo cuando baseurl esté vacío).
+  `validar-site.py` aprende `baseurl` desde `_config.yml`. `repository:` pasó de marcador a
+  `Klerpson/proincivil` (jekyll-github-metadata aborta el build si no resuelve).
+- **Entregable al cliente:** `_plans/PENDIENTES-Y-PREGUNTAS-PROINCIVIL.md` + PDF de 5 páginas generado
+  con `_scripts/md-a-pdf.py`. Consolida los cinco archivos de `_plans/pendientes/` y cierra con **11
+  preguntas numeradas** con espacio para responder.
+- Pendiente de decisión comercial: qué parte de las 36 URLs se factura como contrato web y qué queda
+  como adicional; y transferir el repositorio a la cuenta de PROINCIVIL al entregar.
 
 ### 2026-09-22 (noche) — Rediseño con fotografía real: el sitio deja de parecer un documento
 **Contexto:** el cliente señaló que el diseño se leía como un artículo de blog y no como la referencia
