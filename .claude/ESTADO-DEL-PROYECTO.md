@@ -1,6 +1,6 @@
 # Estado del proyecto — PROINCIVIL
 
-**Última actualización:** 2026-09-22
+**Última actualización:** 2026-10-01
 
 ## Iniciativas activas
 
@@ -48,6 +48,14 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-10-01 — Pie de página corregido
+- Causa: `repeat(auto-fit, …)` detrás de otra pista en `grid-template-columns` es CSS inválido; el
+  navegador descartaba la regla y todo el pie caía en una columna (1.451 px de alto en escritorio).
+- Ahora `.footer__grid` (marca | columnas) y `.footer__columnas` en flex con `.footer__columna--contacto`
+  más ancha: 534 px de alto en escritorio. Sin desborde a 390 ni 320 px; `validar-site.py` en 0.
+- Retirado `#fff` fijo, `<small>` y la repetición de «no ejecutamos obras» en la línea legal (sigue en el
+  texto de marca); borde superior para separarlo del bloque CTA, del mismo verde.
 
 ### 2026-09-22 (cierre) — Publicación en GitHub Pages con alcance recortado
 **Contexto:** el usuario pidió publicar el núcleo comercial y retener el contenido SEO como palanca

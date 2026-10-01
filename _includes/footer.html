@@ -13,6 +13,7 @@
           {%- if site.social.facebook != "" -%}<a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook de PROINCIVIL">Facebook</a>{%- endif -%}
         </div>
       </div>
+      <div class="footer__columnas">
       {%- comment -%} Igual que el menú: solo se listan las secciones de site.secciones_publicadas. {%- endcomment -%}
       {%- for col in site.data.navegacion.footer -%}
         {%- assign _col_hay = false -%}
@@ -29,7 +30,7 @@
       </div>
         {%- endif -%}
       {%- endfor -%}
-      <div class="footer__columna">
+      <div class="footer__columna footer__columna--contacto">
         <p class="footer__titulo">Contacto</p>
         <address>
           <p>{{ site.empresa.direccion }}<br>{{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, {{ site.empresa.pais }}</p>
@@ -38,10 +39,11 @@
           <p>{{ site.empresa.horario }}</p>
         </address>
       </div>
+      </div>
     </div>
     <div class="footer__legal">
-      <p>© {{ site.time | date: "%Y" }} {{ site.empresa.razon_social }}. Consultoría, diseño y evaluación estructural. No ejecutamos obras de construcción.</p>
-      <p><a href="{{ '/politica-de-datos/' | relative_url }}">Política de tratamiento de datos</a> · <a href="{{ '/como-cotizar/' | relative_url }}">Cómo cotizar</a>{% if page.url == "/" %} · <small>Sitio web por <a href="https://juli.com.co" target="_blank" rel="noopener">juli.com.co</a></small>{% endif %}</p>
+      <p>© {{ site.time | date: "%Y" }} {{ site.empresa.razon_social }} Consultoría, diseño y evaluación estructural.</p>
+      <p><a href="{{ '/politica-de-datos/' | relative_url }}">Política de tratamiento de datos</a> · <a href="{{ '/como-cotizar/' | relative_url }}">Cómo cotizar</a>{% if page.url == "/" %} · Sitio web por <a href="https://juli.com.co" target="_blank" rel="noopener">juli.com.co</a>{% endif %}</p>
     </div>
   </div>
 </footer>
