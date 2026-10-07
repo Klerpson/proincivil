@@ -113,6 +113,9 @@ include: [".well-known"]
 exclude:
   - "*.tmp"
   - "*.bak"
+  - "*.pyc"
+  - "__pycache__"
+  - "Python"
   - "Gemfile*"
   - "README.md"
   - "AGENTS.md"

@@ -14,6 +14,13 @@ output/
 Thumbs.db
 .env
 
+# Intérpretes o paquetes instalados por error dentro del proyecto. Jekyll copia a _site cualquier
+# carpeta de la raíz que no esté en `exclude`, así que una copia de Python aquí se publica entera.
+Python/
+__pycache__/
+*.pyc
+node_modules/
+
 # Memoria de sesiones de Claude (local)
 .remember/
 

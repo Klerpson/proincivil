@@ -32,10 +32,9 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 
 ## Problemas abiertos
 
-- 🟠 Imágenes: todas son SVG provisionales de línea (`img/placeholder-*.svg`). Sustituir por fotografía
-  B/N del cliente manteniendo `width/height/alt`.
-- 🟡 `repository: proincivil/proincivil.com` en `_config.yml` es un marcador (jekyll-feed lo exige para
-  compilar); ajustar al repo real.
+- 🟠 Imágenes: 14 juegos de fotografía recuperados del PDF del portafolio para ~40 páginas, así que
+  algunas fichas de proyecto muestran una foto **referencial** de otro proyecto (documentado en
+  `_plans/pendientes/README.md`). Falta la fotografía B/N propia del cliente.
 - 🟡 Formulario inactivo hasta configurar `form_endpoint` (muestra aviso + WhatsApp).
 - 🟡 Nav de escritorio con paneles por `:hover`; en pantallas táctiles grandes (tablet horizontal) el
   panel se abre con el checkbox. Verificar en iPad.
@@ -48,6 +47,27 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-10-07 — Limpieza del repositorio: 162 MB → 12 MB
+- **`Python/` (151 MB, 2.253 archivos)** se había copiado por error en la raíz y entró en el commit
+  `21aca48`. Jekyll copia a `_site` cualquier carpeta de la raíz que no esté en `exclude`, así que
+  GitHub Pages estaba publicando un intérprete completo. Borrada; la instalación real vive en
+  `%LOCALAPPDATA%\Python` y sigue intacta.
+- **`img/_extraidas/`** (12 PNG, 6,3 MB: originales en color recortados del PDF del portafolio) pasó a
+  `_plans/fotos-originales/`. Es material fuente, no activo del sitio: fuera del build y fuera del
+  repositorio público, pero disponible para recortar fotos nuevas.
+- **Borrados los 9 SVG provisionales de línea** (`placeholder-*.svg`, `hero-portico.svg`): sin uso desde
+  el rediseño con fotografía. Quedan `equipo-placeholder.svg` (lo usa `site.equipo[].foto`) y los logos.
+- **Corregido:** `nosotros.html` seguía con `hero: "/img/placeholder-plano.svg"`. Tras el rediseño,
+  `hero` es un **nombre base de foto** que `picture.html` busca en `_data/fotos.yml`; una ruta no
+  resuelve y la cabecera `cabecera--media` se pintaba con el hueco de imagen vacío. Ahora
+  `fachada-vidrio`.
+- **Prevención:** `Python/`, `__pycache__/`, `*.pyc` y `node_modules/` en `.gitignore`, y `Python`,
+  `__pycache__`, `*.pyc` en el `exclude` de `_config.yml` (`.gitignore` no lo evita: Jekyll no lo lee).
+- Verificado: build de 37 páginas, `lint-frontmatter.py` y `validar-site.py` en 0. `_site` pesa 4 MB.
+- Falso positivo en el camino: `critical-css/critical.html` parecía huérfano porque `default.html` lo
+  incluye con ruta de subcarpeta, no por nombre de archivo. Al buscar includes sin uso hay que buscar
+  `carpeta/archivo.html`, no solo el basename.
 
 ### 2026-10-01 — Pie de página corregido
 - Causa: `repeat(auto-fit, …)` detrás de otra pista en `grid-template-columns` es CSS inválido; el
