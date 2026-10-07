@@ -1,0 +1,23 @@
+# Alt por defecto de cada foto de /img/fotos. `picture.html` lo usa cuando quien la llama no pasa
+# un `alt` propio (tarjetas de colección, tira de la home), así que ninguna imagen queda sin texto
+# alternativo ni repite el mismo alt seis veces.
+#
+# Describen SOLO lo que se ve. No atribuyen autoría ni nombran clientes: parte de estas fotos son
+# referenciales (ver _plans/pendientes/README.md) y la autoría de cada proyecto sigue PENDIENTE de
+# confirmación. El `hero_alt` del front matter sí puede ser específico cuando el dato esté confirmado,
+# y tiene prioridad sobre este valor.
+
+carport-1: "Carport fotovoltaico con estructura metálica vista desde abajo"
+carport-2: "Estructura metálica de un carport para paneles solares"
+carport-3: "Vista aérea de un carport fotovoltaico sobre una zona de parqueo"
+carport-4: "Vista aérea de carports fotovoltaicos en una terminal de transporte"
+carport-aereo-ancho: "Hilera de carports fotovoltaicos vista desde el aire"
+carport-metalico: "Cubierta metálica inclinada de soporte para paneles solares"
+cubierta-metalica: "Cubierta metálica de gran luz sobre estructura de acero"
+detalle-concreto: "Encuentro de viga y columna en concreto reforzado"
+estructura-metalica: "Estructura metálica de una edificación en pórticos de acero"
+estructura-obra: "Edificación en construcción con la estructura a la vista"
+fachada-ancha: "Fachada de concreto reforzado de una edificación multinivel"
+fachada-vidrio: "Fachada de concreto y vidrio de una edificación multinivel"
+hero-estructura: "Estructura metálica de una edificación en pórticos de acero"
+institucion-educativa: "Institución educativa de dos niveles en concreto reforzado"

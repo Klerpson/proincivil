@@ -2,7 +2,9 @@
 {%- assign it = include.item -%}
 <article class="tile tile--enlace{% if it.hero and site.data.fotos[it.hero] and include.sin_imagen != true %} tile--media{% endif %}">
   {%- if it.hero and site.data.fotos[it.hero] and include.sin_imagen != true -%}
-  <div class="tile__media">{% include picture.html nombre=it.hero alt="" ratio="4x3" sizes="(max-width: 700px) 100vw, 30vw" %}</div>
+  {%- comment -%} El alt sale del hero_alt de la página enlazada; si falta, queda vacío y el título de
+  la tarjeta describe el enlace (mejor eso que un alt redundante o inventado). {%- endcomment -%}
+  <div class="tile__media">{% include picture.html nombre=it.hero alt=it.hero_alt ratio="4x3" sizes="(max-width: 700px) 100vw, 30vw" %}</div>
   {%- endif -%}
   <div class="tile__body flow">
     {%- if it.eyebrow or it.sector -%}<p class="tile__eyebrow">{{ it.eyebrow | default: it.sector }}</p>{%- endif -%}

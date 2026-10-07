@@ -1,7 +1,13 @@
-{%- comment -%} Tira de fotos a sangre completa. Parámetro: fotos (csv de nombres de _data/fotos.yml). {%- endcomment -%}
+{%- comment -%}
+  Tira de fotos a sangre completa. Parámetros: fotos (csv de nombres de _data/fotos.yml), alt
+  (descripción del conjunto, no de cada foto).
+
+  Cada imagen toma su propio alt de _data/fotos_alt.yml; el `alt` del include describe la tira
+  completa como grupo. Pasarlo a las seis imágenes repetiría el mismo texto seis veces.
+{%- endcomment -%}
 {%- assign _f = include.fotos | default: "carport-1,institucion-educativa,fachada-vidrio,detalle-concreto,cubierta-metalica,carport-3" | split: "," -%}
-<div class="tira">
+<div class="tira" role="group"{% if include.alt %} aria-label="{{ include.alt }}"{% endif %}>
   {%- for n in _f -%}
-  <div class="tira__item">{% include picture.html nombre=n alt=include.alt ratio="1x1" sizes="(max-width: 860px) 50vw, 17vw" %}</div>
+  <div class="tira__item">{% include picture.html nombre=n ratio="1x1" sizes="(max-width: 860px) 50vw, 17vw" %}</div>
   {%- endfor -%}
 </div>

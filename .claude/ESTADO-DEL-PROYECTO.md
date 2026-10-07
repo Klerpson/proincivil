@@ -48,6 +48,30 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 
 ## Bitácora
 
+### 2026-10-07 — Auditoría SEO del build: alt por defecto en cada foto
+- **154 de 267 imágenes salían con `alt=""`.** `tarjeta.html` lo tenía escrito a mano y
+  `galeria-tira.html` repetía el mismo alt en sus seis fotos. Ahora `_data/fotos_alt.yml` da un alt
+  por defecto a cada foto y `picture.html` cae a él cuando quien la llama no pasa uno (el filtro
+  `default` de Liquid trata `""` como falso, así que `alt=""` también cae). Quedan 37: el segundo logo
+  del nav, con `aria-hidden="true"` — correcto.
+- Los alt por defecto **describen solo lo que se ve**, sin atribuir autoría ni nombrar clientes: parte
+  de las fotos son referenciales y la autoría sigue PENDIENTE. El `hero_alt` del front matter manda
+  sobre el valor por defecto cuando el dato esté confirmado.
+- La tira de la home pasa a `role="group"` con `aria-label` para el conjunto; cada foto lleva su alt.
+- Verificado completo: 36 URLs en el sitemap, 0 páginas huérfanas (todas con ≥2 enlaces internos
+  entrantes), 0 imágenes sin `alt` ni sin `width/height`, los 27 enlaces de `llms.txt` apuntan a
+  páginas publicadas, JSON-LD válido en todos los tipos de página (ProfessionalService+LocalBusiness+
+  Organization, WebSite, BreadcrumbList, Service, CreativeWork, BlogPosting, FAQPage, Person).
+
+#### Hueco conocido: `lastmod` del sitemap (decisión pendiente)
+Solo 3 de las 36 URLs llevan `<lastmod>`: jekyll-sitemap lee `page.last_modified_at` o `page.date`, y
+las páginas declaran `dateModified`. Dos salidas, ninguna gratis:
+- Renombrar `dateModified` → `last_modified_at` en los 81 archivos con fecha y ajustar sus cuatro
+  consumidores (`head.html`, `schema-article.html`, `article.html`). Una sola clave, sin duplicar.
+- Escribir un `sitemap.xml` propio en la raíz (tiene prioridad sobre el del plugin) que lea
+  `dateModified`. Un archivo, pero se renuncia al filtrado que el plugin ya hace bien.
+Sin urgencia: el sitio está en `noindex`. Decidir antes de publicar en el dominio.
+
 ### 2026-10-07 — Limpieza del repositorio: 162 MB → 12 MB
 - **`Python/` (151 MB, 2.253 archivos)** se había copiado por error en la raíz y entró en el commit
   `21aca48`. Jekyll copia a `_site` cualquier carpeta de la raíz que no esté en `exclude`, así que
