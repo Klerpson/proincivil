@@ -56,11 +56,12 @@ contact:
   whatsapp_display: "+57 322 627 0723"
   whatsapp_2: "573194976516"          # Andrea Palacio — gerencia
   whatsapp_2_display: "+57 319 497 6516"
-  email: "gerenciaproincivil@gmail.com"   # PENDIENTE: migrar a proyectos@proincivil.com cuando el cliente confirme
+  email: "proyectos@proincivil.com"   # Correo público confirmado en el formulario del cliente, 2026-10-14 (Z2).
   respuesta: "Respondemos en menos de 24 horas hábiles"
 
 social:
   instagram: "https://www.instagram.com/proincivil/"
+  tiktok: "https://www.tiktok.com/@proincivil"   # Usuario enviado por el cliente, 2026-10-16.
   linkedin: "https://co.linkedin.com/in/proincivil-sas"   # PENDIENTE: página de empresa
   facebook: "https://www.facebook.com/profile.php?id=61576150617135"
   google_business: ""   # URL del perfil de Google Business cuando exista
@@ -76,18 +77,60 @@ cifras:
   m2_fotovoltaico: "+3.000"
 
 equipo:
-  - slug: camilo-tamayo
-    nombre: "Ing. Camilo Tamayo"
-    cargo: "Ingeniero civil, especialista en ingeniería sismorresistente"
-    rol: "Dirección técnica y diseño estructural"
-    foto: "/img/equipo-placeholder.svg"
-    ancla: "camilo-tamayo"
+  # Nombres, formación y fotos entregados por el usuario (2026-10-16).
+  # Se conservan slugs y anclas de dirección para mantener los enlaces y autores existentes.
   - slug: andrea-palacio
-    nombre: "Kateryn Andrea Palacio Zuluaga"
-    cargo: "CEO y representante legal"
-    rol: "Gerencia, coordinación de proyectos y relación con clientes"
-    foto: "/img/equipo-placeholder.svg"
+    nombre: "Kateryn Andrea Palacio"
+    cargo: "CEO/CFO de PROINCIVIL"
+    formacion: "Magíster en Business Intelligence and Big Data"
+    especialidad: "FP&A (Planificación y Análisis Financiero)"
+    rol: "Dirección ejecutiva y financiera"
+    foto_nombre: "equipo-kateryn-andrea"
+    foto_retrato: "equipo-kateryn-andrea-hd"
     ancla: "andrea-palacio"
+  - slug: camilo-tamayo
+    nombre: "Camilo Tamayo Restrepo"
+    cargo: "Ingeniero civil, especialista estructural-sismorresistente"
+    rol: "Dirección técnica y diseño estructural"
+    foto_nombre: "equipo-camilo-tamayo"
+    foto_retrato: "equipo-camilo-tamayo-hd"
+    ancla: "camilo-tamayo"
+  - slug: juan-felipe
+    nombre: "Juan Felipe"
+    cargo: "Coordinador de proyectos"
+    formacion: "Ingeniero civil, especialista en estructuras"
+    rol: "Coordinación de proyectos"
+    foto_nombre: "equipo-juan-felipe"
+    foto_retrato: "equipo-juan-felipe-hd"
+    ancla: "juan-felipe"
+  - slug: sebastian
+    nombre: "Sebastián"
+    cargo: "Ingeniero civil, especialista estructural-sismorresistente"
+    rol: "Ingeniería civil y especialización estructural-sismorresistente"
+    foto_nombre: "equipo-sebastian"
+    foto_retrato: "equipo-sebastian-hd"
+    ancla: "sebastian"
+  - slug: yerli
+    nombre: "Yerli"
+    cargo: "Ingeniera civil"
+    rol: "Ingeniería civil"
+    foto_nombre: "equipo-yerli"
+    foto_retrato: "equipo-yerli-hd"
+    ancla: "yerli"
+  - slug: cristian
+    nombre: "Cristian"
+    cargo: "Ingeniero civil"
+    rol: "Ingeniería civil"
+    foto_nombre: "equipo-cristian-v2"
+    foto_retrato: "equipo-cristian-v2"
+    ancla: "cristian"
+  - slug: valentina
+    nombre: "Valentina"
+    cargo: "Arquitecta"
+    rol: "Arquitectura"
+    foto_nombre: "equipo-valentina"
+    foto_retrato: "equipo-valentina-hd"
+    ancla: "valentina"
 
 # ─── Jekyll ───
 markdown: kramdown

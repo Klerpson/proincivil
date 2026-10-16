@@ -1,0 +1,44 @@
+{%- assign equipo_id = include.id | default: 'equipo' -%}
+{%- assign equipo_total = site.equipo.size -%}
+<div class="selector">
+  <div class="selector__intro">
+    <div>
+      <p class="section-header__eyebrow">Nuestro equipo</p>
+      <h2 id="{{ equipo_id }}-titulo">El criterio tiene<br><em>nombre propio.</em></h2>
+    </div>
+    <p>Ingeniería, arquitectura y gestión para acompañar las decisiones de su proyecto.<span>Seleccione una persona para conocer su perfil.</span></p>
+  </div>
+  <fieldset class="selector__galeria" style="--total: {{ equipo_total }}">
+    <legend class="visualmente-oculto">Seleccione una persona del equipo de PROINCIVIL</legend>
+    <div class="selector__indice"><span>Las personas detrás de PROINCIVIL</span><span>{{ equipo_total | prepend: '0' | slice: -2, 2 }}</span></div>
+    {% for m in site.equipo %}
+    {%- assign equipo_mini = m.foto_nombre | append: '-mini' -%}
+    {%- assign equipo_retrato = m.foto_retrato | default: m.foto_nombre -%}
+    <div class="selector__item">
+      <input class="selector__opcion visualmente-oculto" type="radio" name="{{ equipo_id }}-persona" id="{{ equipo_id }}-opcion-{{ m.slug }}" aria-controls="{{ equipo_id }}-perfil-{{ m.slug }}"{% if forloop.first %} checked{% endif %}>
+      <label class="selector__fila" id="{{ m.ancla }}" for="{{ equipo_id }}-opcion-{{ m.slug }}" style="--fila: {{ forloop.index | plus: 1 }}; --orden: {{ forloop.index | times: 2 | minus: 1 }}">
+        <span class="selector__numero">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        {% include picture.html nombre=equipo_mini alt=m.nombre ratio="3x4" width=48 height=64 sizes="48px" clase="selector__mini" %}
+        <span><span class="selector__nombre">{{ m.nombre }}</span><span class="selector__cargo">{% if forloop.index <= 2 %}{{ m.rol }}{% else %}{{ m.cargo }}{% endif %}</span></span>
+        <span class="selector__flecha" aria-hidden="true">↗</span>
+      </label>
+      <article class="selector__perfil" id="{{ equipo_id }}-perfil-{{ m.slug }}" aria-label="Perfil de {{ m.nombre }}" style="--orden: {{ forloop.index | times: 2 }}">
+        <div class="selector__retrato">
+          {% include picture.html nombre=equipo_retrato alt=m.nombre ratio="3x4" width=960 height=1280 sizes="(max-width:600px) min(480px, calc(100vw - 32px)), (max-width:850px) 42vw, min(480px, 44vw)" %}
+          <span class="selector__contador">{{ forloop.index | prepend: '0' | slice: -2, 2 }} / {{ equipo_total | prepend: '0' | slice: -2, 2 }}</span>
+        </div>
+        <div class="selector__detalle">
+          <h3>{{ m.nombre }}</h3>
+          <p>{{ m.cargo }}</p>
+          {% if m.formacion %}<p class="selector__formacion">{{ m.formacion }}</p>{% endif %}
+          {% if m.especialidad %}<p class="selector__formacion">{{ m.especialidad }}</p>{% endif %}
+        </div>
+      </article>
+    </div>
+    {% endfor %}
+  </fieldset>
+  <div class="selector__pie">
+    <p>Diseñamos, evaluamos y supervisamos.<br>La independencia técnica empieza por no ejecutar obra.</p>
+    {% unless include.detalle %}<a href="{{ '/nosotros/equipo/' | relative_url }}">Conocer al equipo completo <span aria-hidden="true">↗</span></a>{% endunless %}
+  </div>
+</div>

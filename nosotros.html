@@ -11,7 +11,7 @@ hero: "fachada-vidrio"
 hero_alt: "Fachada de concreto y vidrio de una edificación diseñada por PROINCIVIL"
 cta_texto: "Hablemos de su proyecto"
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 persona: true
 ---
 <section class="section">
@@ -39,23 +39,7 @@ persona: true
 
 <section class="section section--crema">
   <div class="wrapper flow">
-    <div class="section-header">
-      <p class="section-header__eyebrow">Equipo</p>
-      <h2 class="section-header__titulo">Quién firma y quién responde</h2>
-    </div>
-    <div class="grid" style="--grid-min: 320px">
-      {% for m in site.equipo %}
-      <div class="persona" id="{{ m.ancla }}">
-        <img src="{{ m.foto | relative_url }}" alt="{{ m.nombre }}" width="120" height="120" loading="lazy">
-        <div class="flow">
-          <h3>{{ m.nombre }}</h3>
-          <p class="persona__cargo">{{ m.cargo }}</p>
-          <p>{{ m.rol }}</p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <p><a href="{{ '/nosotros/equipo/' | relative_url }}">Ver el equipo completo y sus credenciales →</a></p>
+    {% include equipo.html %}
   </div>
 </section>
 

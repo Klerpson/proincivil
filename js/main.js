@@ -2,6 +2,21 @@
 (function () {
   "use strict";
 
+  /* Conserva la fila pulsada al cerrar el retrato anterior en móvil. */
+  document.querySelectorAll(".selector__galeria").forEach(function (galeria) {
+    galeria.addEventListener("click", function (ev) {
+      var fila = ev.target.closest(".selector__fila");
+      if (!fila || !window.matchMedia("(max-width: 600px)").matches) { return; }
+      var opcion = document.getElementById(fila.htmlFor);
+      var top = fila.getBoundingClientRect().top;
+      ev.preventDefault();
+      opcion.checked = true;
+      opcion.focus({ preventScroll: true });
+      window.scrollBy({ top: fila.getBoundingClientRect().top - top, behavior: "instant" });
+      opcion.dispatchEvent(new Event("change", { bubbles: true }));
+    });
+  });
+
   /* Clics a WhatsApp → evento de conversión en GA4 (si existe gtag) */
   document.addEventListener("click", function (ev) {
     var a = ev.target.closest("a.lead-whatsapp");

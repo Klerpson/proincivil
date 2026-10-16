@@ -91,3 +91,11 @@ CTA final. Las páginas interiores usan `.cabecera--media` (texto + foto 4:3).
 `ol li { list-style: decimal }` del reset numeraba las migas de pan y los pasos en móvil; se corrigió con
 `list-style: none` en `.breadcrumb li` y `.pasos li`. Lección: cualquier `<ol>` nuevo debe declarar su
 propio `list-style`.
+
+## Selector de perfiles (2026-10-16)
+
+`_includes/equipo.html` y `.selector` en `_includes/css/componentes.css`: forma con comportamiento propio de selección nativa por radios, retrato protagonista y directorio. Datos exclusivamente de `site.equipo`. Un único include en Home, Nosotros y Equipo. Escritorio usa grid y `display: contents`; en móvil cada persona tiene una caja posicionada que contiene etiqueta, radio y perfil. Sin reglas generadas por cada persona ni dependencia de `:has`. `js/main.js` añade únicamente la estabilización de posición al pulsar una fila móvil.
+
+`picture.html` acepta `width` y `height` opcionales (sin cambiar sus valores por defecto): retratos 960×1280, miniaturas 48×64; `_data/fotos.yml` declara resoluciones reales (360/720/960 y 48/96). El retrato se muestra con máximo 480 CSS px y altura automática; miniaturas con ancho 48 px y altura automática. Las anclas existentes de los perfiles se conservan en sus etiquetas visibles.
+
+Caso móvil: un radio oculto absoluto bajo `display: contents` puede recibir foco en el inicio del fieldset. Posicionarlo dentro de su fila evita ese salto. Además, cerrar un perfil anterior mueve las filas inferiores: el listener móvil conserva el rectángulo de la etiqueta y compensa solo esa diferencia, con foco `preventScroll`. Las pruebas de regresión deben medir la posición tras una pulsación real, sin llamar a `scrollIntoView` después del clic.

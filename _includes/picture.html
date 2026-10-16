@@ -19,6 +19,8 @@
   {%- when "1x1" -%}{%- assign _w = 1000 -%}{%- assign _h = 1000 -%}
   {%- else -%}{%- assign _w = 1200 -%}{%- assign _h = 900 -%}
 {%- endcase -%}
+{%- assign _w = include.width | default: _w -%}
+{%- assign _h = include.height | default: _h -%}
 <picture{% if include.clase %} class="{{ include.clase }}"{% endif %}>
   <source type="image/webp" sizes="{{ include.sizes | default: '100vw' }}" srcset="{% for a in _anchos %}{{ '/img/fotos/' | append: include.nombre | append: '-' | append: a | append: '.webp' | relative_url }} {{ a }}w{% unless forloop.last %}, {% endunless %}{% endfor %}">
   <img src="{{ '/img/fotos/' | append: include.nombre | append: '-' | append: _max | append: '.jpg' | relative_url }}"
