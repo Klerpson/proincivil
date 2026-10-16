@@ -9,7 +9,7 @@ servicios: [interventoria-de-disenos, supervision-tecnica-independiente, revisio
 image: "/img/fotos/estructura-obra-380.jpg"
 readingTime: "9 min de lectura"
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 resumen: "La interventoría es el seguimiento técnico, administrativo, financiero y jurídico que un tercero independiente hace al cumplimiento de un contrato de obra o de consultoría. En contratación estatal es obligatoria en los casos que fija la Ley 1474 de 2011; en obra privada la exige el contrato o el propietario. No debe confundirse con la supervisión técnica independiente ni con la revisión independiente de diseños, que regulan la Ley 400 de 1997 y la Ley 1796 de 2016."
 indice:
   - { id: "que-es", title: "Qué es la interventoría" }
@@ -28,7 +28,7 @@ faqs:
   - question: "¿Puede el mismo ingeniero diseñar y hacer la interventoría de la obra?"
     answer: "Para la supervisión técnica independiente y la revisión independiente de diseños, la Ley 1796 de 2016 exige que el profesional sea independiente del diseñador y del constructor. Para la interventoría de obra privada no hay una prohibición legal general, pero contratar como interventor a quien diseñó o a quien construye elimina el control que la figura pretende dar."
   - question: "¿Cuánto cuesta una interventoría de obra civil?"
-    answer: "Depende del valor y la duración de la obra, de la dedicación del equipo (residente permanente o visitas), de las especialidades que cubra y de si incluye ensayos de laboratorio. Suele expresarse como porcentaje del valor de la obra o como honorario mensual por dedicación. PROINCIVIL cotiza cada caso por escrito en menos de 24 horas hábiles."
+    answer: "Depende del valor y la duración de la obra, de la dedicación del equipo (residente permanente o visitas), de las especialidades que cubra y de si incluye ensayos de laboratorio. Suele expresarse como porcentaje del valor de la obra o como honorario mensual por dedicación. PROINCIVIL revisa los documentos y acuerda el alcance antes de preparar la propuesta por escrito."
 ---
 
 **Interventoría** es una de las palabras más buscadas del sector de la construcción en Colombia y una de las peor entendidas. Se usa para nombrar cosas distintas —el control de una obra pública, la revisión de unos planos, la supervisión de la estructura— que la ley regula por separado y que conviene no mezclar cuando se contrata.
@@ -114,4 +114,4 @@ Cuatro criterios separan una interventoría que protege al dueño de una que sol
 
 Si su proyecto es una obra privada, pregúntese primero qué figura necesita: revisión independiente de diseños antes de la licencia, supervisión técnica durante la estructura, interventoría integral del contrato, o las tres. Si es un contrato estatal, la ley y el pliego ya lo definen; lo que queda por elegir es quién la ejerce.
 
-PROINCIVIL presta interventoría de diseños, revisión independiente y supervisión técnica en Envigado, Medellín y el resto de Antioquia, con más de 20.000 m² supervisados. Diseñamos, revisamos y supervisamos; no ejecutamos obra, y por eso podemos ser interventores de verdad. [Cuéntenos el alcance]({{ site.baseurl }}/como-cotizar/) y recibirá una propuesta en menos de 24 horas hábiles.
+PROINCIVIL presta interventoría de diseños, revisión independiente y supervisión técnica en Envigado, Medellín y el resto de Antioquia, con más de 20.000 m² supervisados. Diseñamos, revisamos y supervisamos; no ejecutamos obra, y por eso podemos ser interventores de verdad. [Cuéntenos el alcance]({{ site.baseurl }}/como-cotizar/) para definir la dedicación y los entregables de la propuesta.

@@ -4,16 +4,16 @@ titulo_corto: "Diseño estructural"
 orden: 1
 grupo: diseno
 title: "Diseño estructural sismorresistente NSR-10 en Envigado | PROINCIVIL"
-description: "Diseño estructural NSR-10 para edificios, colegios, hoteles y estructuras metálicas. Memorias, planos y BIM firmados por especialista. 100 % aprobación en curaduría."
+description: "Diseño estructural NSR-10 en Envigado para edificios, colegios y sedes comerciales. Memorias, planos y coordinación BIM con acompañamiento ante curaduría."
 h1: "Diseño estructural sismorresistente conforme a NSR-10"
 eyebrow: "Servicio · Diseño"
-excerpt: "Memorias de cálculo, planos estructurales y modelo BIM para que su proyecto se apruebe en curaduría a la primera y se construya sin sobrecostos. Firmado por ingeniero especialista en sismorresistencia."
+excerpt: "Memorias de cálculo, planos estructurales y coordinación BIM para justificar la solución de su proyecto, preparar la radicación y reducir interferencias antes de construir."
 hero: "estructura-metalica"
 hero_alt: "Estructura metálica de un proyecto diseñado por PROINCIVIL"
 image: "/img/fotos/estructura-metalica-1200.jpg"
 badges:
   - "NSR-10 · ACI 318 · AISC 360"
-  - "100 % aprobación en primera radicación"
+  - "Acompañamiento ante curaduría"
   - "Modelo BIM incluido"
   - "No ejecutamos obra"
 cta_texto: "Cotizar diseño estructural"
@@ -21,7 +21,7 @@ cta_secundario: { url: "/proyectos/", texto: "Ver proyectos diseñados" }
 serviceType: "Diseño estructural sismorresistente"
 resumen: "El diseño estructural define el sistema resistente de una edificación (cimentación, columnas, vigas, muros y losas) para que soporte cargas de uso y sismo según la NSR-10. PROINCIVIL entrega memorias, planos, especificaciones y modelo BIM firmados por un ingeniero especialista en sismorresistencia, listos para radicar en curaduría."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Va a radicar una licencia de construcción y la curaduría exige planos y memorias firmados por ingeniero estructural"
   - "Tiene el proyecto arquitectónico y necesita el sistema estructural que lo haga viable sin sobredimensionar"
@@ -50,7 +50,7 @@ factores:
   - "Plazo: un diseño urgente exige más horas en paralelo"
 cuanto_cuesta: /cuanto-cuesta/diseno-estructural/
 audiencias:
-  - { rol: "Arquitectos y estudios de diseño", texto: "Reciben un estructural que respeta la arquitectura y pasa curaduría sin devoluciones." }
+  - { rol: "Arquitectos y estudios de diseño", texto: "Reciben un diseño coordinado con la arquitectura y soporte durante la revisión de curaduría." }
   - { rol: "Constructoras y promotores", texto: "Obtienen cantidades reales y detalles construibles que evitan reprocesos en obra." }
   - { rol: "Entidades públicas", texto: "Diseños de infraestructura educativa y deportiva con soporte normativo completo." }
   - { rol: "Empresas de energía solar", texto: "Carports y cubiertas metálicas con conexiones precalificadas y memorias para el cliente final." }
@@ -65,7 +65,7 @@ faqs:
   - question: "¿Cuánto tarda un diseño estructural?"
     answer: "Depende del área y la complejidad. Una vivienda o local de uno o dos niveles suele tomar de dos a tres semanas; una edificación de cuatro a seis niveles, entre cuatro y ocho semanas incluyendo coordinación BIM. El plazo se fija en la propuesta y empieza a contar cuando recibimos el estudio de suelos y la arquitectura definitiva."
   - question: "¿Cuánto vale un diseño estructural en Colombia?"
-    answer: "Se cotiza por metro cuadrado construido, ajustado por sistema estructural, niveles, regularidad y grupo de uso. No publicamos una tarifa única porque dos edificios de igual área pueden diferir mucho en trabajo. Enviamos una propuesta cerrada en menos de 24 horas hábiles a partir de sus planos arquitectónicos; en la página de costos explicamos los factores y ejemplos."
+    answer: "Se cotiza por metro cuadrado construido, ajustado por sistema estructural, niveles, regularidad y grupo de uso. No publicamos una tarifa única porque dos edificios de igual área pueden diferir mucho en trabajo. Revisamos sus planos arquitectónicos y acordamos alcance, entregables y plazo antes de preparar la propuesta."
   - question: "¿Diseñan casas de uno y dos pisos?"
     answer: "Sí, cuando el arquitecto, el constructor o el propietario necesitan planos firmados para licencia o para construir con seguridad. Aplicamos el Título E de la NSR-10 cuando la vivienda cumple sus condiciones y el diseño completo por Títulos A a C cuando no."
   - question: "¿Necesito un estudio de suelos antes del diseño estructural?"
@@ -86,7 +86,7 @@ En Antioquia el reto es doble. El Área Metropolitana está en zona de amenaza s
 
 Trabajamos sobre el proyecto arquitectónico definitivo y el estudio de suelos. A partir de ahí seguimos una secuencia que deja trazabilidad en cada paso:
 
-1. **Definición del sistema estructural.** Pórticos de concreto, muros, sistema dual, acero o mixto, según la arquitectura, el uso y la economía del proyecto. Aquí se decide el 60 % del costo de la estructura.
+1. **Definición del sistema estructural.** Pórticos de concreto, muros, sistema dual, acero o mixto, según la arquitectura, el uso y la economía del proyecto. Esta elección condiciona las cantidades de materiales y la forma de construir.
 2. **Análisis sísmico conforme a la NSR-10.** Espectro de diseño del municipio, tipo de suelo del estudio geotécnico, grupo de uso y coeficiente de importancia, irregularidades en planta y altura, y capacidad de disipación de energía (DMI, DMO o DES) según la zona.
 3. **Modelo tridimensional y verificación de derivas.** Modelamos la estructura completa, verificamos derivas, torsión e interacción suelo-estructura cuando la cimentación lo exige.
 4. **Diseño de elementos y detallado.** Cimentación, columnas, vigas, losas, muros, escaleras y conexiones, con el detallado de refuerzo que exige el Título C (concreto) o el Título F (acero), incluidas conexiones precalificadas en estructuras metálicas.
@@ -108,6 +108,11 @@ En la I.E. Pavarandó Grande (Mutatá) diseñamos pórticos especiales de disipa
 ## Lo que diferencia un diseño de PROINCIVIL
 
 - **Optimización sin comprometer seguridad.** Buscamos la sección y la cuantía que cumplen la norma con holgura razonable, no la más grande. Eso se ve en el presupuesto del constructor.
-- **Cero devoluciones evitables.** Conocemos lo que revisan las curadurías de Envigado, Medellín y los municipios de Antioquia; nuestros proyectos se han aprobado el 100 % de las veces en la primera radicación.
+- **Radicación con sustento.** Preparamos memorias y planos coherentes y acompañamos la revisión. El histórico de aprobación en primera radicación comunicado por PROINCIVIL es del {{ site.cifras.aprobacion_curadurias }}; no es una garantía de aprobación para cada proyecto.
 - **Detalles construibles.** Los planos los dibuja quien calculó, con el residente de obra en mente: despieces claros, longitudes de desarrollo, traslapos y anclajes resueltos.
 - **Independencia.** No vendemos construcción, así que nuestro criterio no depende de la obra que venga después.
+
+
+## Optimizar sin sobredimensionar
+
+Comparamos sistemas, secciones y cantidades que satisfacen los requisitos del proyecto. La optimización se justifica con cálculos y coordinación; no prometemos un porcentaje fijo de ahorro antes de estudiar la arquitectura, el suelo y las cargas. Puede conocer al [equipo de PROINCIVIL]({{ site.baseurl }}/nosotros/equipo/) y revisar los casos de infraestructura educativa en nuestro portafolio.

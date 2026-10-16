@@ -20,7 +20,7 @@ cta_secundario: { url: "/servicios/reforzamiento-estructural/", texto: "Ver refo
 serviceType: "Estudio de vulnerabilidad sísmica"
 resumen: "El estudio de vulnerabilidad sísmica evalúa si una edificación existente cumple los requisitos de la NSR-10 frente al sismo de diseño y cuantifica su déficit de resistencia y rigidez. Conforme al Título A.10, define el índice de sobreesfuerzo y de flexibilidad de la estructura y concluye si requiere reforzamiento. Lo exige la ley para edificaciones indispensables y lo piden aseguradoras y copropiedades."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Su edificación fue construida antes de la NSR-98 o de la NSR-10 y nadie ha verificado cómo se comportaría en un sismo"
   - "Administra un colegio, un hospital, una estación o una edificación de atención a la comunidad que la ley obliga a evaluar"
@@ -51,7 +51,7 @@ audiencias:
   - { rol: "Colegios, clínicas y entidades públicas", texto: "Cumplimiento de la obligación legal de evaluar edificaciones indispensables y de atención a la comunidad." }
   - { rol: "Aseguradoras", texto: "Información técnica para suscribir y tarifar el riesgo sísmico." }
   - { rol: "Inversionistas y promotores", texto: "Saber qué compra antes de reconvertir o ampliar un edificio existente." }
-proyectos: [tacuara-club-residencial, super-motos-honda]
+proyectos: [tacuara-club-residencial, artico-arquitectura]
 relacionados: [evaluacion-estructural, reforzamiento-estructural, evaluacion-post-sismo, revision-independiente-de-disenos]
 normativa: [titulo-a, ley-400-de-1997, nsr-10, titulo-c]
 faqs:
@@ -75,7 +75,7 @@ faqs:
 
 La **vulnerabilidad sísmica** de una edificación es su propensión a sufrir daño ante un sismo dado. No depende del sismo, que es la amenaza, sino de cómo fue diseñada y construida: el sistema estructural, el detallado del refuerzo, las irregularidades, la calidad de los materiales y las modificaciones que ha sufrido. Dos edificios vecinos, con la misma amenaza, pueden tener vulnerabilidades muy distintas.
 
-En el Área Metropolitana de Medellín la amenaza sísmica es intermedia, pero la vulnerabilidad del parque construido es alta: investigaciones recientes estiman que cerca de la mitad de las viviendas de Antioquia presenta alta vulnerabilidad por su sistema estructural. Buena parte se construyó antes de la NSR-98 o sin licencia, con mampostería no reforzada, columnas cortas y pisos blandos en primer nivel.
+La edad de una edificación o la ausencia de fisuras no permiten concluir cómo responderá ante un sismo. El estudio necesita conocer su sistema resistente, las propiedades de sus materiales, el suelo y las modificaciones realizadas. Con esa información se define el análisis que corresponde a la edificación y a su uso.
 
 ## El estudio de vulnerabilidad según el Título A.10 de la NSR-10
 
@@ -104,8 +104,13 @@ El Título A.10 fija el procedimiento para evaluar edificaciones existentes. En 
 
 El estudio termina con un esquema de reforzamiento cuando hace falta: encamisados de columnas, muros nuevos de concreto, arriostramientos metálicos, refuerzo con fibras o mejora de uniones. Presentamos alternativas con su orden de magnitud para que la copropiedad o la entidad decida con información. El diseño detallado es el servicio de [reforzamiento estructural]({{ site.baseurl }}/servicios/reforzamiento-estructural/); la obra la ejecuta el constructor que usted elija bajo nuestra supervisión si lo desea.
 
-En Tacuara Club Residencial el estudio de vulnerabilidad de seis torres se hizo a partir del diagnóstico post-sismo, con priorización por torre para ordenar la inversión. Diseñamos, evaluamos y supervisamos; no ejecutamos obra, y por eso el concepto de vulnerabilidad que firmamos no tiene ningún interés en la magnitud del reforzamiento que recomienda.
+En [Tacuara Club Residencial P.H.]({{ site.baseurl }}/proyectos/tacuara-club-residencial/), Dosquebradas, el diagnóstico patológico ya fue concluido y el estudio de vulnerabilidad de las seis torres está en proceso como base del plan de repotenciación. Son fases distintas: el diagnóstico entregado no equivale a un estudio de vulnerabilidad terminado ni a una obra ejecutada. Diseñamos, evaluamos y supervisamos; no ejecutamos obra.
 
 ## Vulnerabilidad sísmica en propiedad horizontal: cómo se decide en asamblea
 
 En un conjunto residencial el estudio no es solo técnico: es el documento con el que el consejo de administración lleva una decisión de inversión a la asamblea. Por eso lo estructuramos para ese uso: un resumen ejecutivo por torre con el resultado en lenguaje claro, una tabla de deficiencias ordenada por gravedad, las alternativas de reforzamiento con su orden de magnitud y una propuesta de fases que permita aprobar la intervención por etapas y financiarla con cuotas extraordinarias razonables. Acompañamos la presentación a la asamblea cuando el administrador lo solicita, y respondemos las preguntas de los copropietarios con el mismo criterio con el que firmamos el informe. La responsabilidad de conocer una deficiencia y no actuar recae sobre la copropiedad; la de explicarla de forma que se pueda decidir, sobre nosotros.
+
+
+## Cuándo pasar del diagnóstico al estudio de vulnerabilidad
+
+La [evaluación estructural]({{ site.baseurl }}/servicios/evaluacion-estructural/) identifica lesiones y sus posibles causas; el estudio de vulnerabilidad cuantifica la respuesta de la estructura frente al sismo de diseño. Si la decisión requiere comprobar la capacidad del conjunto, acordamos ese alcance con sus levantamientos, ensayos y modelo de análisis. Una inspección visual no reemplaza este estudio.

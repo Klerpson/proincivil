@@ -16,7 +16,7 @@ ESPERADOS = {
     "edificaciones": ["propiedad-horizontal","instituciones-educativas","hoteles","carports-y-cubiertas-fotovoltaicas","bodegas-y-naves-industriales","vivienda-1-y-2-pisos","sedes-comerciales-y-retail"],
     "zonas": ["envigado","medellin","area-metropolitana","oriente-antioqueno","antioquia","colombia"],
     "normativa": ["nsr-10","titulo-a","titulo-b","titulo-c","titulo-e","titulo-f","titulo-h","titulo-i","ley-400-de-1997","ley-1796-de-2016","licencia-de-construccion-colombia"],
-    "proyectos": ["tacuara-club-residencial","ie-pavarando-grande-mutata","ie-puerto-perales","ie-yerbal-y-educacion-publica","hotel-aldea-puerto-triunfo","hotel-the-one-laureles","carports-fotovoltaicos","super-motos-honda","infraestructura-deportiva-betulia"],
+    "proyectos": ["tacuara-club-residencial","ie-pavarando-grande-mutata","ie-puerto-perales","ie-yerbal-y-educacion-publica","hotel-aldea-puerto-triunfo","hotel-the-one-laureles","carports-fotovoltaicos","super-motos-honda","infraestructura-deportiva-betulia","artico-arquitectura"],
 }
 OBLIG = {
     "servicios": ["titulo_corto","orden","title","description","h1","excerpt","hero","hero_alt","resumen","cuando","entregables","faqs","datePublished","dateModified"],
@@ -25,7 +25,7 @@ OBLIG = {
     "zonas": ["titulo_corto","orden","title","description","h1","excerpt","hero","hero_alt","resumen","faqs","datePublished","dateModified"],
     "normativa": ["titulo_corto","orden","title","description","h1","excerpt","resumen","indice","servicios","faqs","datePublished","dateModified"],
     "glosario": ["titulo_corto","title","description","h1","excerpt","resumen","servicios","datePublished","dateModified"],
-    "proyectos": ["titulo_corto","orden","eyebrow","title","description","h1","excerpt","hero","hero_alt","ficha","servicios","datePublished","dateModified"],
+    "proyectos": ["titulo_corto","orden","eyebrow","title","description","h1","excerpt","ficha","servicios","datePublished","dateModified"],
     "posts": ["title","description","h1","excerpt","categories","servicios","datePublished","dateModified"],
 }
 
@@ -70,6 +70,7 @@ for p in sorted(archivos):
     if d and not 120 <= len(d) <= 170: e(f"description de {len(d)} caracteres (ideal 150-160)")
     # `hero` es el nombre base de una foto de /img/fotos (ver _data/fotos.yml), no una ruta.
     if fm.get("hero"):
+        if not fm.get("hero_alt"): e("hero presente sin hero_alt")
         h = str(fm["hero"])
         if h.startswith("/") or h.endswith((".svg", ".jpg", ".png", ".webp")):
             e(f"hero debe ser el nombre base de la foto, no una ruta: {h}")

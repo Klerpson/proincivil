@@ -10,6 +10,7 @@
 | Construcción del sitio Jekyll (82 URLs) | ✅ Compila y valida 2026-09-22 | Todo el contenido escrito como borrador; falta aprobación del cliente, fotografía real y publicación |
 | Equipo real y retratos con camiseta | 🟡 Implementación local 2026-10-16 | Diseño aprobado en Home, Nosotros y Equipo; siete perfiles, Liquid + CSS y ajuste mínimo de posición móvil. `_plans/equipo-2026-10-16/` |
 | Comparación con formulario comercial del cliente | 🟡 Revisada 2026-10-16 | Redes y correo integrados localmente; propuesta editorial por página en `_plans/comparacion-brief-proincivil-2026-10-16.md`; pendientes porcentajes, Tacuara y alcance Perú |
+| Validación SEO de prioridades y solapamientos | 🟡 Auditada 2026-10-16, implementación pendiente | Ranki: 31 keywords CO, 9 PE y 5 SERP; mapa de intenciones y competencia en `_plans/seo-prioridades-2026-10-16/estrategia-seo.md` |
 | Aprobación de contenido por el cliente | ⏳ No iniciada | Todo el contenido es borrador hasta aprobación escrita (contrato) |
 | Publicación en GitHub Pages | ✅ 2026-09-22 | https://klerpson.github.io/proincivil/ · repo https://github.com/Klerpson/proincivil (público) |
 | Dominio propio + indexación | ⏳ Bloqueada | Falta que PROINCIVIL compre `proincivil.com`; hasta entonces `vista_previa: true` |
@@ -34,6 +35,8 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 
 ## Problemas abiertos
 
+- 🟡 SEO editorial: title del servicio de interventoría y blog coinciden en «cuándo es obligatoria». Separar enfoque comercial e informativo. Zonas y glosario siguen retenidos; revisar Home/Envigado y evaluación/glosario de patología antes de activarlos. No hay diagnóstico de canibalización real con GSC en esta revisión.
+
 - 🟠 Nuevo formulario (2026-10-14): declara 97 % de aprobación en primera radicación, mientras el sitio aún mantiene 100 % en Home, diseño y curadurías. Segunda tanda editorial debe reconciliar el dato y las menciones repetidas; no extrapolar el porcentaje global a casos individuales.
 - 🟠 Tacuara: R2 del formulario ubica el caso en Dosquebradas, Risaralda y distingue diagnóstico terminado/vulnerabilidad en curso; la ficha local aún dice Antioquia y necesita revisión de alcance, descripción y clasificación territorial.
 - 🟡 Enfoque comercial del formulario: diseño como principal, patología/vulnerabilidad como segundo foco, cobertura Colombia–Perú y diagnóstico con información previa. Propuesta por página documentada; no aplicada durante la comparación. Revisar promesas de propuesta/diagnóstico en 24 h.
@@ -53,6 +56,14 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-10-16 — Validación SEO de prioridades del formulario con Ranki
+**Contexto:** el usuario pidió contrastar la comparación anterior con búsqueda, competencia e intenciones, usando Ranki desde su navegador.
+- Ranki autenticado en Brave: Bulk Search Volume de 31 consultas Colombia y 9 Perú; cinco SERP con país Colombia/Spanish. Volúmenes CO mostrados: diseño 320, patología estructural 480, vulnerabilidad 40, reforzamiento 210, suelos 1.000. No se interpreta LOW del módulo como dificultad orgánica ni guion como cero demanda; no se comparan con cifras antiguas de Ubersuggest como si fueran una tendencia.
+- `_plans/seo-prioridades-2026-10-16/estrategia-seo.md`: mapa de intención para Home, hub y 14 servicios; fronteras entre evaluación/vulnerabilidad/post-sismo/reforzamiento, casos y contenido retenido. Fotografías de las SERP y métricas en JSON, captura Ranki y `inventario-build.json` en la misma carpeta.
+- Competidores revisados en sus sitios: Ingenil, SIO/JH, PMT, DOING, AIT, AVe, Ingetecho y Wilkatek. SERP generales de patología/vulnerabilidad mezclan academia e información; diseño local también mezcla empleo/cursos. Local Pack observado en las consultas locales; no se atribuyen tráfico, DA, CWV o conversiones a competidores.
+- Refinamiento de propuesta anterior: Home conserva paraguas de firma y deriva a diseño, patología/evaluación y vulnerabilidad. No crear nuevas landing por sinónimos; reforzar las existentes y enlazar casos. Solapamiento concreto de interventoría: title comercial para servicio, obligatoriedad para blog. Revisión previa a habilitar zonas/glosario/sectores; expansión Perú depende de alcance real y contenido diferenciado, no clonación de países.
+- Build local disponible: 37 HTML con noindex, sin title/canonical duplicadas ni H1 múltiples. No se consultó GSC de PROINCIVIL: no afirmar canibalización real ni ausencia absoluta. Se conserva vista previa y todas las URLs; no se reescriben páginas durante esta auditoría. La consulta Ranki de patología localizada no devolvió tabla; límites documentados. Sin publicación remota.
 
 ### 2026-10-16 — Salto de selección reproducido y corregido en escritorio y móvil
 **Contexto:** el usuario volvió a reportar saltos al seleccionar los últimos perfiles, ahora también en computador. La corrección anterior solo interceptaba las pulsaciones móviles.

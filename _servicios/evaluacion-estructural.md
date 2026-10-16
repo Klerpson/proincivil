@@ -2,9 +2,9 @@
 titulo_corto: "Evaluación y patología estructural"
 orden: 3
 grupo: evaluacion
-title: "Evaluación estructural, patología y peritaje | PROINCIVIL Medellín"
+title: "Evaluación y patología estructural en Medellín | PROINCIVIL"
 description: "Evaluación estructural, patología y peritaje de edificaciones en Medellín y Antioquia: fisuras, asentamientos, cambio de uso y reclamaciones. Informe firmado."
-h1: "Evaluación estructural, patología y peritaje de edificaciones"
+h1: "Evaluación estructural de edificaciones"
 eyebrow: "Servicio · Evaluación"
 excerpt: "Un informe que dice qué le pasa a su edificación, qué tan grave es y qué hacer, firmado por un ingeniero que no va a venderle la reparación."
 hero: "fachada-vidrio"
@@ -20,7 +20,7 @@ cta_secundario: { url: "/servicios/evaluacion-post-sismo/", texto: "¿Hubo un si
 serviceType: "Evaluación y diagnóstico estructural"
 resumen: "La evaluación estructural es el estudio técnico que determina el estado real de una edificación existente: identifica daños, establece su causa y gravedad, verifica la capacidad de la estructura y recomienda qué hacer. PROINCIVIL entrega un informe de patología y un concepto de seguridad firmados por ingeniero especialista, útiles ante curadurías, aseguradoras y copropietarios."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Aparecieron fisuras en muros, vigas, columnas o losas y no sabe si son estéticas o estructurales"
   - "Hay asentamientos, puertas que no cierran o pisos desnivelados"
@@ -53,7 +53,7 @@ audiencias:
   - { rol: "Aseguradoras y ajustadores", texto: "Informes con metodología reconocida para valorar siniestros y reclamaciones." }
   - { rol: "Compradores e inversionistas", texto: "Debida diligencia estructural antes de una compra o un cambio de uso." }
   - { rol: "Empresas con sedes propias", texto: "Diagnóstico y repotenciación de locales y bodegas en operación." }
-proyectos: [tacuara-club-residencial, super-motos-honda]
+proyectos: [tacuara-club-residencial, artico-arquitectura, super-motos-honda]
 relacionados: [evaluacion-post-sismo, vulnerabilidad-sismica, reforzamiento-estructural, geotecnia-estudio-de-suelos]
 normativa: [titulo-a, ley-400-de-1997, nsr-10]
 faqs:
@@ -79,7 +79,7 @@ faqs:
 
 La **evaluación estructural** responde tres preguntas sobre una edificación que ya existe: qué le pasa, por qué le pasa y qué tan grave es. A partir de ahí se decide si se repara, se refuerza, se restringe el uso o simplemente se vigila. Es el paso previo obligado a cualquier intervención seria y el documento que curadurías, aseguradoras y asambleas de copropietarios piden cuando hay un conflicto o un daño.
 
-En Antioquia la demanda de evaluaciones crece por tres razones: el parque de vivienda construido antes de la NSR-98 y de la NSR-10, los suelos de ladera que producen asentamientos diferenciales y los sismos que cada cierto tiempo dejan fisuras nuevas en miles de apartamentos. Cerca de la mitad de las viviendas del departamento presenta alta vulnerabilidad sísmica según estudios universitarios recientes, y la mayoría de sus propietarios no lo sabe.
+El punto de partida es la decisión que necesita tomar: entender una fisura, revisar una ampliación, documentar daños o valorar un cambio de uso. Recibimos ubicación, antecedentes, planos y fotografías para definir el alcance. Las fotografías ayudan a preparar la visita; por sí solas no permiten emitir un concepto de seguridad.
 
 ## Patología estructural: diagnosticar antes de reparar
 
@@ -103,7 +103,7 @@ Con eso separamos lo estructural de lo no estructural, que es la distinción que
 | Verificación de capacidad | Modelo de la estructura existente con los materiales medidos | NSR-10 Títulos A, B y C |
 | Concepto y recomendaciones | Seguridad actual, intervención, prioridades y orden de magnitud | Informe firmado |
 
-En el conjunto Tacuara Club Residencial evaluamos seis torres y más de 780 apartamentos tras un sismo, con conceptos de seguridad por torre y un informe patológico que separó el daño estructural del daño en elementos no estructurales, y que sirvió de soporte ante la aseguradora. Para Grupo Super Motos hicimos la evaluación diagnóstica de sedes comerciales existentes como base para su repotenciación.
+En [Tacuara Club Residencial P.H.]({{ site.baseurl }}/proyectos/tacuara-club-residencial/), en Dosquebradas, Risaralda, concluimos el diagnóstico patológico de un conjunto de seis torres y más de 780 apartamentos. Ese diagnóstico sustentó la solicitud de anticipo ante la aseguradora; el estudio de vulnerabilidad sísmica sigue en proceso. La alianza con [ARTICO Arquitectura]({{ site.baseurl }}/proyectos/artico-arquitectura/) muestra otro uso del diagnóstico: apoyar decisiones sobre cambios de uso y repotenciación de sedes.
 
 ## Lo que diferencia una evaluación de PROINCIVIL
 
@@ -115,3 +115,19 @@ En el conjunto Tacuara Club Residencial evaluamos seis torres y más de 780 apar
 ## Evaluación estructural para compraventa y cambio de uso
 
 Dos situaciones sin daño visible también exigen evaluación. La primera es la compra de una edificación existente: un concepto independiente antes de firmar evita heredar una estructura sin licencia, con modificaciones no calculadas o con una cimentación que se está moviendo; es la debida diligencia que un inversionista hace con los títulos y rara vez con la estructura. La segunda es el cambio de uso: convertir una vivienda en local, un local en bodega o una oficina en archivo aumenta las cargas vivas y puede cambiar el grupo de uso de la NSR-10. La curaduría exige demostrar que la estructura existente soporta el nuevo uso, y esa demostración es una evaluación con verificación de capacidad. En ambos casos el informe termina en una de tres conclusiones: cumple, cumple con restricciones, o requiere reforzamiento, con el orden de magnitud de lo que implica cada una.
+
+
+## Qué estudio necesita y qué decisión permite tomar
+
+| Situación | Alcance que conviene revisar |
+|---|---|
+| Fisuras, deterioro, asentamientos o una compra | Evaluación y diagnóstico patológico para identificar causas y recomendaciones |
+| Conocer la respuesta frente al sismo de diseño | [Estudio de vulnerabilidad sísmica]({{ site.baseurl }}/servicios/vulnerabilidad-sismica/) para cuantificar deficiencias de capacidad y rigidez |
+| Daños después de un evento sísmico | [Evaluación post-sismo]({{ site.baseurl }}/servicios/evaluacion-post-sismo/) para revisar la condición de seguridad y las medidas iniciales |
+| Una deficiencia ya identificada requiere intervención | [Diseño de reforzamiento]({{ site.baseurl }}/servicios/reforzamiento-estructural/) con planos y especificaciones de la solución |
+
+## Informe técnico para copropiedades y aseguradoras
+
+Antes de contratar, acordamos quién utilizará el informe y para qué decisión: una asamblea, una reclamación o la preparación de una intervención. Esto define los antecedentes que se deben revisar, los ensayos y los entregables. El informe aporta evidencia técnica; no garantiza el reconocimiento de una indemnización ni sustituye las decisiones de la aseguradora.
+
+Nuestro [equipo técnico]({{ site.baseurl }}/nosotros/equipo/) diseña, evalúa y supervisa; no ejecutamos obra. Esa independencia permite recomendar la intervención que sustenta el diagnóstico.

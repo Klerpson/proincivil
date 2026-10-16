@@ -20,7 +20,7 @@ cta_secundario: { url: "/servicios/diseno-estructural/", texto: "Ver diseño est
 serviceType: "Modelado y coordinación BIM, levantamientos topográficos"
 resumen: "BIM (Building Information Modeling) es la metodología que representa un proyecto en un modelo tridimensional con información de cada elemento. PROINCIVIL modela la estructura en BIM, la coordina con arquitectura e instalaciones para detectar interferencias antes de la obra y extrae de ella planos y cantidades. Complementa el modelo con levantamientos topográficos que fijan el terreno y las estructuras existentes."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Su proyecto tiene varias disciplinas y las interferencias aparecen en obra, no en el diseño"
   - "Necesita cantidades de obra confiables para presupuestar la estructura"
@@ -98,6 +98,10 @@ El terreno real casi nunca coincide con el plano del lote. Realizamos levantamie
 | Modelo digital del terreno | Superficie tridimensional del lote | Movimiento de tierras y muros de contención |
 | Levantamiento de existentes | Geometría de la edificación actual | Evaluación, reforzamiento o ampliación |
 | Replanteo | Ejes y niveles marcados en sitio | Arranque de obra sobre el terreno correcto |
+
+## Mediciones de verticalidad para el diagnóstico
+
+La medición de verticalidad aporta información sobre la geometría de una edificación existente. En [Tacuara Club Residencial]({{ site.baseurl }}/proyectos/tacuara-club-residencial/) se utilizó junto con ensayos y exploración geotécnica como parte del diagnóstico. Se interpreta con los demás antecedentes; una medición aislada no equivale a un concepto de seguridad. El alcance se coordina con la [evaluación estructural]({{ site.baseurl }}/servicios/evaluacion-estructural/).
 
 ## Estructuras metálicas y fabricación
 

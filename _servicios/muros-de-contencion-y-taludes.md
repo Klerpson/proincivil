@@ -20,7 +20,7 @@ cta_secundario: { url: "/servicios/geotecnia-estudio-de-suelos/", texto: "Ver es
 serviceType: "Diseño de muros de contención y estabilidad de taludes"
 resumen: "Un muro de contención retiene el suelo cuando el terreno no se sostiene por sí mismo; su diseño depende del tipo de suelo, la altura, el agua y el sismo. PROINCIVIL analiza la estabilidad del talud, calcula los empujes según la NSR-10 y diseña muros en concreto reforzado, gaviones, pantallas ancladas o suelo reforzado con memorias y planos firmados."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Su lote está en ladera y necesita un corte o un lleno para construir la casa, el edificio o el parqueadero"
   - "Un muro existente presenta grietas, inclinación o humedad y quiere saber si es seguro"
@@ -60,7 +60,7 @@ faqs:
   - question: "¿Qué tipos de muros de contención existen y cuál conviene?"
     answer: "Los más usados en Antioquia son el muro en voladizo de concreto reforzado, el muro de gravedad en concreto ciclópeo, los gaviones, las pantallas ancladas y el suelo reforzado con geosintéticos. La elección depende de la altura, el espacio disponible para excavar, el suelo, el agua y el costo del acceso de maquinaria. Un muro de tres metros en un jardín y uno de nueve metros junto a una vía no se resuelven con la misma solución."
   - question: "¿Cuánto cuesta un muro de contención por metro cuadrado?"
-    answer: "El costo de construcción lo define el constructor según el sistema y los materiales. Lo que sí controlamos es el costo del diseño, que depende de la altura, la longitud, el suelo y la carga sobre la corona. Un diseño ajustado al suelo real suele ahorrar más en concreto y acero de lo que cuesta el estudio. Cotizamos en menos de 24 horas hábiles."
+    answer: "El costo de construcción lo define el constructor según el sistema y los materiales. Lo que sí controlamos es el costo del diseño, que depende de la altura, la longitud, el suelo y la carga sobre la corona. Un diseño ajustado al suelo real suele ahorrar más en concreto y acero de lo que cuesta el estudio. Definimos el alcance y el plazo de la propuesta después de revisar la información disponible."
   - question: "¿Qué exige la NSR-10 para muros de contención?"
     answer: "El Título H de la NSR-10 fija los requisitos geotécnicos: cómo calcular empujes, qué factores de seguridad cumplir contra volcamiento, deslizamiento y capacidad portante, y cómo considerar el sismo y el agua. El diseño del concreto y el refuerzo sigue el Título C. Ambos se citan en nuestras memorias."
   - question: "¿Mi muro agrietado o inclinado es peligroso?"

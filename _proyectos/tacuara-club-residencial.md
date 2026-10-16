@@ -2,51 +2,54 @@
 # ── Esquema de ficha de proyecto ──
 titulo_corto: "Tacuara Club Residencial"
 orden: 1
-eyebrow: "Propiedad horizontal · Evaluación post-sismo"
-title: "Tacuara Club Residencial: evaluación post-sismo de 6 torres | PROINCIVIL"
-description: "Caso: diagnóstico estructural y patológico de 6 torres y +780 apartamentos tras un sismo, con evaluaciones ATC-20 y soporte técnico ante la aseguradora. Antioquia."
-h1: "Tacuara Club Residencial P.H.: diagnóstico estructural de 6 torres tras un sismo"
-excerpt: "Más de 780 apartamentos evaluados con metodología ATC-20 en tiempo récord para responder a los propietarios y sustentar la reclamación ante la aseguradora."
+eyebrow: "Propiedad horizontal · Diagnóstico patológico"
+title: "Tacuara en Dosquebradas: diagnóstico de seis torres | PROINCIVIL"
+description: "Diagnóstico patológico de Tacuara en Dosquebradas, Risaralda: seis torres y más de 780 apartamentos. Diagnóstico concluido y vulnerabilidad sísmica en proceso."
+h1: "Tacuara Club Residencial P.H.: diagnóstico de seis torres"
+excerpt: "Diagnóstico patológico concluido tras afectaciones sísmicas. El estudio de vulnerabilidad está en proceso como base para el plan de repotenciación."
 hero: "fachada-vidrio"
 hero_alt: "Fachada de concreto y vidrio de una edificación evaluada"
 image: "/img/fotos/fachada-vidrio-1024.jpg"
 sin_cta_cabecera: true
 ficha:
   cliente: "Tacuara Club Residencial P.H."
-  ubicacion: "Antioquia, Colombia"
-  anio: "PENDIENTE"
+  ubicacion: "Dosquebradas, Risaralda, Colombia"
   sector: "Propiedad horizontal"
   servicio: "Evaluación post-sismo, patología y vulnerabilidad estructural"
   sistema: "Torres de concreto reforzado"
   area: "6 torres · +780 apartamentos"
-  niveles: "PENDIENTE"
-  normativa: "ATC-20 · NSR-10 Título A.10"
+  normativa: "NSR-10 Título A.10 para el estudio de vulnerabilidad"
   rol: "Consultor estructural independiente"
-  resultado: "Concepto técnico por torre y soporte a la reclamación"
+  resultado: "Diagnóstico concluido y soporte a la solicitud de anticipo"
 servicios: [evaluacion-post-sismo, evaluacion-estructural, vulnerabilidad-sismica]
 edificacion: propiedad-horizontal
-zona: antioquia
+zona: colombia
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 ---
 
-## El reto: 780 familias, un sismo y una aseguradora esperando
+## El reto: documentar las afectaciones y definir los siguientes estudios
 
-Tras un evento sísmico, la administración del conjunto necesitaba tres cosas al mismo tiempo: saber si las torres eran seguras para seguir habitadas, documentar los daños con rigor para la reclamación ante la aseguradora y responder a cientos de propietarios que veían fisuras en sus apartamentos y zonas comunes.
+Tacuara Club Residencial P.H. se encuentra en **Dosquebradas, Risaralda**. El caso comprende seis torres y más de 780 apartamentos afectados después de un evento sísmico. La administración necesitaba sustento técnico para comprender los daños y avanzar en su gestión ante la aseguradora.
 
-Un diagnóstico apresurado habría generado dos riesgos opuestos: evacuar torres que estaban en condiciones de uso, o declarar habitables estructuras con daño real. La aseguradora, por su parte, exigía un informe técnico con metodología reconocida, no una lista de fotos.
+El alcance exige distinguir dos preguntas: qué lesiones presenta la edificación y cómo responde su estructura frente a la demanda sísmica. Contestar la primera no significa que el análisis de vulnerabilidad ya esté terminado. Por eso la información del caso se presenta por fases y con su estado actual.
 
-## La solución: inspección ATC-20 torre por torre y diagnóstico patológico
+## Diagnóstico patológico concluido
 
-Aplicamos la metodología **ATC-20** de evaluación de seguridad post-sismo, que clasifica cada edificación según el daño observado y define si es de uso permitido, restringido o prohibido. Sobre esa base, hicimos el diagnóstico patológico: origen de cada fisura (estructural, no estructural, por asentamiento, por sismo o preexistente), gravedad y recomendación de intervención.
+PROINCIVIL realizó el diagnóstico patológico con actividades de extracción de núcleos, esclerometría, regatas, exploración geotécnica, mediciones de verticalidad y registro aéreo con dron. Las diferentes fuentes de información permiten estudiar el estado de los materiales y la geometría junto con las lesiones observadas.
 
-El trabajo se organizó por torre para entregar conceptos parciales que la administración pudiera comunicar de inmediato, sin esperar el informe consolidado de las seis.
+El diagnóstico ya fue concluido y sirvió de soporte para la **solicitud de anticipo ante la aseguradora**. Esto describe el uso del informe técnico: no equivale a confirmar que la aseguradora haya reconocido o pagado una indemnización.
 
-## El resultado
+Puede consultar qué comprende una [evaluación estructural y diagnóstico patológico]({{ site.baseurl }}/servicios/evaluacion-estructural/) y cómo se define la documentación para una copropiedad.
 
-- Concepto técnico de seguridad por torre, con la clasificación ATC-20 y su sustento fotográfico y de mediciones.
-- Informe patológico consolidado que separa daño estructural de daño en elementos no estructurales, con priorización de reparaciones.
-- Soporte técnico ante la aseguradora durante el proceso de reclamación.
-- Tranquilidad para los propietarios: cada decisión de uso quedó respaldada por un criterio de ingeniería independiente.
+## Estudio de vulnerabilidad en proceso
 
-> Datos de fecha, número de niveles y alcance final pendientes de confirmación por el cliente antes de publicar.
+El estudio de vulnerabilidad sísmica continúa en desarrollo como base para un plan de repotenciación. Esta fase busca sustentar las decisiones posteriores sobre la estructura; no se presenta como un estudio terminado, un reforzamiento diseñado por completo ni una obra ejecutada.
+
+La página de [vulnerabilidad sísmica]({{ site.baseurl }}/servicios/vulnerabilidad-sismica/) explica el alcance de ese análisis y su relación con el diseño de una intervención. Separar las fases permite a la administración entender qué información recibió y qué conclusiones aún dependen del estudio en curso.
+
+## Nuestro papel
+
+PROINCIVIL diseña, evalúa y supervisa; **no ejecuta obra**. En este caso actuamos como consultor estructural para aportar evidencia al diagnóstico y a las decisiones de la copropiedad. La construcción de una eventual intervención corresponde al contratista que se seleccione.
+
+La imagen de cabecera es referencial; no corresponde a una fotografía identificada de Tacuara.

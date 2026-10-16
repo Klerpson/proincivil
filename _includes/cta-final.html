@@ -3,18 +3,19 @@
     <div class="cta-final__grid">
       <div class="flow">
         <p class="section-header__eyebrow">Siguiente paso</p>
-        <h2>{{ include.titulo | default: page.cta_titulo | default: "Hablemos de su proyecto" }}</h2>
-        <p>{{ include.texto | default: page.cta_texto_final | default: "Envíenos planos, ubicación y uso previsto. Le respondemos con una propuesta técnica y económica en menos de 24 horas hábiles. Diseñamos, evaluamos y supervisamos; la obra la ejecuta el constructor que usted elija." }}</p>
+        <h2>{{ include.titulo | default: page.cta_titulo | default: "Conversemos sobre su proyecto" }}</h2>
+        <p>{{ include.texto | default: page.cta_texto_final | default: "Comparta la ubicación, el uso previsto y los planos disponibles. Revisamos la información y acordamos una conversación para definir alcance, entregables y plazo. Diseñamos, evaluamos y supervisamos; no ejecutamos obra." }}</p>
         <div class="hero__acciones">
-          {% include button.html texto=include.boton data_location="cta-final" %}
+          {% assign _texto_cta = include.boton | default: "Conversemos sobre su proyecto" %}
+          {% include button.html texto=_texto_cta data_location="cta-final" %}
           <a href="{{ '/como-cotizar/' | relative_url }}" class="boton_secundario">Cómo cotizar</a>
         </div>
       </div>
       <ul class="cta-final__datos">
-        <li><strong>{{ site.cifras.aprobacion_curadurias }}</strong><span>aprobación en primera radicación ante curadurías</span></li>
+        <li><strong>{{ site.cifras.aprobacion_curadurias }}</strong><span>histórico de aprobación en primera radicación informado por la empresa</span></li>
         <li><strong>{{ site.cifras.m2_disenados }} m²</strong><span>diseñados en arquitectura y estructuras</span></li>
         <li><strong>{{ site.cifras.m2_supervisados }} m²</strong><span>supervisados en interventoría y control técnico</span></li>
-        <li><strong>24 h</strong><span>de respuesta a su solicitud</span></li>
+        <li><strong>Alcance claro</strong><span>entregables y plazo acordados según la información del proyecto</span></li>
       </ul>
     </div>
   </div>

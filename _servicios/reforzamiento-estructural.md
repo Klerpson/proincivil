@@ -2,7 +2,7 @@
 titulo_corto: "Reforzamiento estructural"
 orden: 6
 grupo: evaluacion
-title: "Reforzamiento estructural de edificaciones y viviendas | PROINCIVIL"
+title: "Diseño de reforzamiento estructural de edificaciones | PROINCIVIL"
 description: "Diseño de reforzamiento y repotenciación estructural conforme a NSR-10: encamisados, muros, arriostramientos y fibras de carbono para edificios en Antioquia."
 h1: "Diseño de reforzamiento y repotenciación estructural"
 eyebrow: "Servicio · Evaluación"
@@ -20,7 +20,7 @@ cta_secundario: { url: "/servicios/vulnerabilidad-sismica/", texto: "Primero, el
 serviceType: "Diseño de reforzamiento estructural"
 resumen: "El reforzamiento estructural es la intervención que aumenta la resistencia, la rigidez o la ductilidad de una edificación existente para que cumpla la NSR-10 o soporte nuevas cargas. PROINCIVIL diseña la solución (encamisados, muros, arriostramientos, fibras de carbono, cimentación) a partir del estudio de vulnerabilidad, la tramita ante curaduría y supervisa su ejecución sin ejecutar la obra."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Un estudio de vulnerabilidad concluyó que la edificación no cumple la NSR-10"
   - "Un sismo dejó daño estructural que hay que reparar y prevenir"
@@ -88,6 +88,10 @@ Es obligatorio para edificaciones indispensables y de atención a la comunidad q
 | Fibras de carbono (FRP) | Flexión y cortante en vigas, losas y columnas | Liviano, poco invasivo, obra rápida | No aporta rigidez; sensible al fuego y a la humedad |
 | Recalce de cimentaciones | Asentamientos y aumento de carga | Resuelve el origen de muchos daños | Obra delicada; exige estudio geotécnico |
 | Mejora de uniones viga-columna | Falta de confinamiento en nudos antiguos | Ataca la deficiencia más crítica en sismo | Intervención localizada pero laboriosa |
+
+## Del diagnóstico a los planos de intervención
+
+Primero se identifica y cuantifica la deficiencia; después se diseña la intervención. Son alcances que se pueden contratar por fases, con entregables y plazos definidos. La experiencia con [ARTICO Arquitectura]({{ site.baseurl }}/proyectos/artico-arquitectura/) incluye diagnósticos y revisiones para apoyar decisiones de repotenciación. No todas las edificaciones requieren la misma solución. PROINCIVIL diseña, evalúa y supervisa; no ejecuta obra.
 
 ## Cómo diseñamos un reforzamiento
 

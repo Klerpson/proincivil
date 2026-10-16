@@ -2,7 +2,7 @@
 titulo_corto: "Interventoría de diseños"
 orden: 10
 grupo: control
-title: "Interventoría de diseños y de obras: cuándo es obligatoria | PROINCIVIL"
+title: "Interventoría técnica de diseños y proyectos | PROINCIVIL"
 description: "Interventoría de diseños estructurales y geotécnicos e interventoría de obras civiles en Antioquia. Más de 20.000 m² supervisados. Independientes: no ejecutamos obra."
 h1: "Interventoría técnica de diseños y proyectos"
 eyebrow: "Servicio · Control técnico"
@@ -20,7 +20,7 @@ cta_secundario: { url: "/cuanto-cuesta/interventoria/", texto: "Ver qué define 
 serviceType: "Interventoría técnica de diseños y obras"
 resumen: "La interventoría es el control técnico, administrativo y contractual que un tercero independiente ejerce sobre un diseño o una obra en nombre de quien la contrata. PROINCIVIL presta interventoría de diseños estructurales, arquitectónicos y geotécnicos, e interventoría de obras civiles, verificando que lo que se entrega cumple la norma, el contrato y el presupuesto."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Contrató un diseño estructural o un estudio de suelos y quiere que alguien independiente lo verifique antes de pagar o de construir"
   - "Es una entidad pública y el contrato de consultoría u obra exige interventoría por ley"
@@ -57,14 +57,14 @@ normativa: [ley-1796-de-2016, titulo-i, nsr-10, ley-400-de-1997]
 faqs:
   - question: "¿Qué es la interventoría?"
     answer: "Es el seguimiento técnico, administrativo, financiero y jurídico que un tercero ejerce sobre la ejecución de un contrato de consultoría o de obra, en representación de quien contrata. En obras civiles, la interventoría verifica que se construya lo diseñado, con la calidad pactada, en el plazo y por el valor acordado."
-  - question: "¿Cuándo es obligatoria la interventoría en Colombia?"
-    answer: "En contratación estatal, la ley exige interventoría cuando el seguimiento requiere conocimiento especializado o cuando la complejidad o extensión del contrato lo justifica, y en la práctica en casi toda obra pública. En el sector privado no es obligatoria por ley general, pero la exigen bancos, aseguradoras y propietarios que no quieren depender de la palabra del constructor. Distinta es la supervisión técnica independiente, que sí es obligatoria por la NSR-10 y la Ley 1796 para las edificaciones que superan los umbrales vigentes."
+  - question: "¿Qué información necesitan para cotizar la interventoría?"
+    answer: "La ubicación, el tipo de proyecto, los estudios y diseños disponibles, el contrato o alcance a verificar, el cronograma y la dedicación esperada. Con esa información definimos disciplinas, visitas e informes incluidos en la propuesta."
   - question: "¿Cuál es la diferencia entre interventoría, supervisión técnica y revisión independiente?"
     answer: "La revisión independiente de diseños verifica los planos y memorias antes de la licencia. La supervisión técnica independiente verifica en obra que la estructura se construya según esos diseños, con ensayos. La interventoría abarca el contrato completo: técnica, administrativa y financiera. PROINCIVIL presta las tres, siempre como tercero que no ejecuta obra."
   - question: "¿Qué es la interventoría de diseños?"
     answer: "Es la revisión, por un consultor distinto del diseñador, de los estudios y diseños de un proyecto: estructural, arquitectónico, geotécnico e instalaciones. Verifica cumplimiento normativo, coherencia entre disciplinas, constructibilidad y coherencia con el presupuesto. Detectar un error en planos cuesta horas; detectarlo en obra cuesta semanas."
   - question: "¿Cuánto cuesta una interventoría de obra civil?"
-    answer: "Depende de la dedicación (visitas periódicas o residente permanente), la duración y el alcance. En obra pública suele fijarse como porcentaje del valor del contrato; en privada, como honorario mensual por dedicación. Explicamos los factores en la página de costos y cotizamos en menos de 24 horas hábiles."
+    answer: "Depende de la dedicación (visitas periódicas o residente permanente), la duración y el alcance. En obra pública suele fijarse como porcentaje del valor del contrato; en privada, como honorario mensual por dedicación. Explicamos los factores en la página de costos y definimos la propuesta después de revisar el alcance y la dedicación requerida."
   - question: "¿La interventoría revisa los ensayos de laboratorio?"
     answer: "Sí. Revisamos los resultados de resistencia del concreto, calidad del acero, compactación de rellenos y ensayos de suelos, y verificamos que cumplan la NSR-10 y las especificaciones del diseño. Si un resultado no cumple, exigimos las acciones correctivas y dejamos registro."
   - question: "¿Ustedes construyen o supervisan?"
@@ -105,3 +105,10 @@ Durante la construcción, el interventor verifica calidad, avance, cumplimiento 
 ## Cómo se contrata
 
 La interventoría se pacta por alcance y dedicación: revisión de diseños como entrega única, o interventoría de obra con visitas programadas o residente permanente según el tamaño. Para entidades públicas trabajamos con los formatos, comités e informes que exige cada contrato. Diseñamos, evaluamos y supervisamos; no ejecutamos obra, y ese es el argumento central de nuestra interventoría.
+
+
+## Definir el alcance antes de contratar
+
+Una revisión puntual de planos y una interventoría con seguimiento durante meses requieren dedicaciones diferentes. Envíe los documentos disponibles y el cronograma mediante [cómo cotizar]({{ site.baseurl }}/como-cotizar/). Acordamos responsabilidades, periodicidad de visitas y entregables antes de iniciar.
+
+Si su pregunta es sobre la obligación de contratar este control, consulte la guía [cuándo es obligatoria la interventoría en Colombia]({{ site.baseurl }}/blog/cuando-es-obligatoria-la-interventoria-en-colombia/).

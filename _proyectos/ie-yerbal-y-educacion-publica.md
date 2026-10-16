@@ -26,7 +26,7 @@ servicios: [diseno-estructural, geotecnia-estudio-de-suelos, bim-y-topografia]
 edificacion: instituciones-educativas
 zona: antioquia
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 ---
 
 ## El reto: repetir el mismo nivel de seguridad en sedes muy distintas
@@ -54,7 +54,7 @@ Para la I.E. Yerbal y las demás sedes que suman más de 13.000 m², PROINCIVIL 
 
 ## El resultado: 13.000 m² diseñados y aprobados sin devoluciones
 
-Todas las sedes se radicaron y aprobaron en la primera presentación. Ese indicador, que PROINCIVIL mantiene en el 100 % de sus proyectos, es el que más importa a una entidad pública: cada devolución de una curaduría son semanas de retraso y riesgo de perder vigencias presupuestales.
+Todas las sedes se radicaron y aprobaron en la primera presentación. Ese resultado del caso ayuda a una entidad pública: cada devolución de una curaduría son semanas de retraso y riesgo de perder vigencias presupuestales.
 
 La experiencia en la I.E. Pavarandó Grande (pórticos DES y pilas con campana en suelo tipo C) y en la I.E. Puerto Perales (3.600 m² modulados) muestra cómo el mismo método produce respuestas diferentes cuando el suelo y la amenaza lo exigen. Diseñamos y acompañamos la aprobación; no ejecutamos obra.
 

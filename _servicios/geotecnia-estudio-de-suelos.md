@@ -20,7 +20,7 @@ cta_secundario: { url: "/cuanto-cuesta/estudio-de-suelos/", texto: "¿Cuánto cu
 serviceType: "Estudio de suelos y geotecnia"
 resumen: "El estudio de suelos, o estudio geotécnico, determina las propiedades del terreno donde se va a construir: estratigrafía, resistencia, nivel freático, tipo de suelo para el análisis sísmico y comportamiento ante cargas. Conforme al Título H de la NSR-10, PROINCIVIL entrega el informe con la recomendación de cimentación, los parámetros de diseño y las medidas para excavaciones y taludes."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Va a radicar una licencia de construcción y la curaduría exige el estudio geotécnico"
   - "Necesita definir la cimentación de una edificación nueva y no sabe si el suelo permite zapatas o exige pilas"
@@ -65,7 +65,7 @@ faqs:
   - question: "¿Cuánto tarda un estudio de suelos?"
     answer: "Para una vivienda o un lote pequeño, entre dos y tres semanas: unos días de campo, una a dos semanas de laboratorio y el informe. Proyectos grandes o en ladera pueden tomar cuatro a seis semanas por el número de sondeos y los análisis de estabilidad."
   - question: "¿Cuánto vale un estudio de suelos en Colombia?"
-    answer: "Depende del número y la profundidad de los sondeos que exige el Título H para el tamaño del proyecto, de los ensayos de laboratorio y del acceso al lote. Un estudio para una casa cuesta mucho menos que uno para un edificio de seis niveles en ladera. Cotizamos en 24 horas con la ubicación, el área y los niveles previstos; en la página de costos explicamos los factores."
+    answer: "Depende del número y la profundidad de los sondeos que exige el Título H para el tamaño del proyecto, de los ensayos de laboratorio y del acceso al lote. Un estudio para una casa cuesta mucho menos que uno para un edificio de seis niveles en ladera. Revisamos la ubicación, el área y los niveles previstos para definir el alcance de la propuesta; en la página de costos explicamos los factores."
   - question: "¿Cuál es la diferencia entre estudio de suelos y estudio geotécnico?"
     answer: "En la práctica se usan como sinónimos. El estudio geotécnico es el término técnico del Título H de la NSR-10; el estudio de suelos es el nombre común. Ambos describen la misma investigación del terreno para fines de cimentación."
   - question: "¿Cómo interpretar un estudio de suelos?"

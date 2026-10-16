@@ -6,7 +6,7 @@ title: "Diseño de estructuras metálicas, cubiertas y carports | PROINCIVIL"
 description: "Diseño de estructuras metálicas conforme a NSR-10 Título F y AISC: cubiertas, cerchas, naves y carports fotovoltaicos con conexiones precalificadas en Antioquia."
 h1: "Diseño de estructuras metálicas: cubiertas, cerchas, naves y carports"
 eyebrow: "Servicio · Diseño"
-excerpt: "Estructuras de acero calculadas para que pesen lo justo, se fabriquen sin sorpresas y pasen curaduría a la primera. Con conexiones precalificadas y planos de taller listos para el fabricante."
+excerpt: "Estructuras de acero con cantidades justificadas, conexiones y detalles coordinados para el fabricante. Diseño y documentación para acompañar la revisión ante curaduría."
 hero: "cubierta-metalica"
 hero_alt: "Cubierta metálica de gran luz sobre estructura de acero"
 image: "/img/fotos/cubierta-metalica-440.jpg"
@@ -20,7 +20,7 @@ cta_secundario: { url: "/proyectos/carports-fotovoltaicos/", texto: "Ver carport
 serviceType: "Diseño de estructuras metálicas"
 resumen: "El diseño de estructuras metálicas define perfiles, conexiones y anclajes de acero para cubiertas, cerchas, naves industriales, mezanines y carports, conforme al Título F de la NSR-10 y a los estándares AISC. PROINCIVIL entrega memorias, planos de diseño y de taller y modelo BIM, con conexiones precalificadas cuando la zona sísmica lo exige."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Necesita una cubierta metálica para un colegio, un coliseo, una bodega o un parqueadero y la curaduría pide memorias firmadas"
   - "Va a instalar paneles solares sobre un carport o una cubierta y el proveedor de energía exige el diseño estructural del soporte"
@@ -64,7 +64,7 @@ faqs:
   - question: "¿Cuánto pesa una estructura metálica por metro cuadrado?"
     answer: "Depende de la luz, la carga y el sistema. Una cubierta liviana con cerchas puede estar entre 15 y 30 kg/m²; un carport con paneles, algo más; una nave con puente grúa, bastante más. Optimizar ese peso es el objetivo del diseño y la razón por la que un cálculo hecho a la medida ahorra acero."
   - question: "¿Cómo se cotiza el diseño de una estructura metálica?"
-    answer: "Con el área a cubrir, las luces deseadas, la ubicación (para viento y sismo), el uso y las cargas especiales. Con eso enviamos una propuesta con alcance, entregables y plazo en menos de 24 horas hábiles."
+    answer: "Con el área a cubrir, las luces deseadas, la ubicación (para viento y sismo), el uso y las cargas especiales. Con esa información revisamos el alcance y acordamos los entregables y el plazo de la propuesta."
   - question: "¿Entregan planos de taller o solo de diseño?"
     answer: "Ambos, según lo que acordemos. El plano de diseño define la estructura; el de taller detalla cada pieza para fabricación. Cuando el fabricante hace sus propios planos de taller, los revisamos contra el diseño antes de que corte acero."
   - question: "¿Ustedes fabrican o montan la estructura?"

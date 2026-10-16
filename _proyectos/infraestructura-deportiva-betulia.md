@@ -1,63 +1,52 @@
 ---
-titulo_corto: "Infraestructura deportiva de Betulia"
+titulo_corto: "Betulia e Hispania"
 orden: 9
-eyebrow: "Infraestructura pública · Geotecnia y contenciones"
-title: "Infraestructura deportiva de Betulia: geotecnia, contenciones y cubierta"
-description: "Caso: estudios geotécnicos, diseño de muros de contención y cubierta metálica para un escenario deportivo en Betulia, Antioquia, municipio de ladera del Suroeste."
-h1: "Infraestructura deportiva de Betulia: estudios geotécnicos, contenciones y cubiertas metálicas en ladera"
-excerpt: "Un escenario deportivo en un municipio de montaña exige resolver primero el terreno: estudio de suelos, muros de contención y estabilidad de taludes, y después una cubierta metálica de gran luz."
+eyebrow: "Infraestructura pública · Diseños y formulación"
+title: "Betulia e Hispania: diseños educativos y deportivos | PROINCIVIL"
+description: "Diseños para infraestructura educativa y deportiva en Betulia e Hispania, Antioquia: contenciones, canchas, cubiertas y formulación técnica presentada al SGR."
+h1: "Betulia e Hispania: diseños para educación y deporte"
+excerpt: "Diseños de contenciones, canchas y cubiertas metálicas, con documentación técnica para la formulación de proyectos ante el Sistema General de Regalías."
 hero: "carport-metalico"
 hero_alt: "Cubierta metálica inclinada para paneles solares"
 image: "/img/fotos/carport-metalico-330.jpg"
 sin_cta_cabecera: true
 ficha:
-  cliente: "PENDIENTE (Municipio de Betulia u entidad contratante)"
-  ubicacion: "Betulia, Antioquia"
-  anio: "PENDIENTE"
-  sector: "Infraestructura pública y deportiva"
-  servicio: "Estudios geotécnicos, diseño de contenciones y de cubiertas metálicas"
+  cliente: "Proyectos municipales de Betulia e Hispania"
+  ubicacion: "Betulia e Hispania, Antioquia"
+  sector: "Infraestructura educativa y deportiva"
+  servicio: "Diseños estructurales y formulación técnica para el SGR"
   sistema: "Muros de contención en concreto reforzado · cubierta en estructura metálica"
-  area: "PENDIENTE"
   niveles: "No aplica"
   normativa: "NSR-10 Títulos A, B, C, F y H"
-  rol: "Consultor geotécnico y diseñador estructural"
-  resultado: "Terreno estabilizado y cubierta diseñada para gran luz"
-servicios: [geotecnia-estudio-de-suelos, muros-de-contencion-y-taludes, estructuras-metalicas]
-edificacion: bodegas-y-naves-industriales
+  rol: "Diseñador estructural y consultor para la formulación"
+  resultado: "Diseños y formulación técnica presentados ante el SGR"
+servicios: [diseno-estructural, muros-de-contencion-y-taludes, estructuras-metalicas]
+edificacion: instituciones-educativas
 zona: antioquia
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 ---
 
-## El reto: construir un escenario deportivo donde el terreno no es plano
+## El reto: convertir necesidades de infraestructura en proyectos formulados
 
-Betulia, en el Suroeste antioqueño, es un municipio de montaña. Un escenario deportivo necesita una superficie plana grande, y conseguirla en ladera significa cortar el terreno por un lado y rellenar por el otro. El resultado son taludes y desniveles que, sin un sistema de contención bien diseñado, se convierten en el problema más costoso del proyecto: deslizamientos, asentamientos de la placa y muros que se inclinan con las lluvias.
+Los proyectos de educación y deporte necesitan más que una propuesta de espacios: requieren diseños y documentos que permitan revisar su viabilidad técnica y preparar la solicitud de recursos. En Betulia e Hispania, Antioquia, PROINCIVIL participó en diseños de infraestructura educativa y deportiva y en su formulación para el Sistema General de Regalías (SGR).
 
-Encima de esa plataforma iba una **cubierta metálica de gran luz**, sin columnas intermedias, para no interrumpir el área de juego.
+La experiencia comunicada por el cliente comprende tres instituciones educativas y escenarios deportivos. Esta ficha presenta el alcance conjunto de ambos municipios; no asigna cantidades de sedes a cada uno sin documentación que permita distinguirlas.
 
-## La solución: entender el suelo antes de dibujar el primer muro
+## La solución: diseños y documentación coordinados
 
-PROINCIVIL abordó el proyecto desde la geotecnia:
+El trabajo incluyó diseños de muros de contención, canchas y cubiertas metálicas. La formulación reunió documentación técnica, presupuestos y estudios de soporte para presentar los proyectos ante el SGR. Cada componente aporta información distinta: los planos definen la solución, los presupuestos organizan sus cantidades y los estudios dan sustento a las decisiones del proyecto.
 
-**Estudio geotécnico** con exploración del subsuelo, ensayos de laboratorio y caracterización de los estratos en la zona de corte y en la de relleno, conforme al Título H de la NSR-10. El estudio definió los parámetros de resistencia del suelo, el nivel freático y las recomendaciones de cimentación para muros y columnas.
+Puede revisar los alcances de [diseño estructural]({{ site.baseurl }}/servicios/diseno-estructural/), [muros de contención]({{ site.baseurl }}/servicios/muros-de-contencion-y-taludes/) y [estructuras metálicas]({{ site.baseurl }}/servicios/estructuras-metalicas/). En una formulación pública, la coordinación entre estos documentos permite presentar un expediente técnico coherente para su revisión.
 
-**Diseño de sistemas de contención** en concreto reforzado, dimensionados con los empujes reales del suelo y las sobrecargas del escenario, con verificación de estabilidad al volcamiento, al deslizamiento y a la capacidad portante, y con drenaje incorporado, que es la diferencia entre un muro que dura y uno que falla en la primera temporada de lluvias.
+## El resultado: formulación presentada, sin atribuir obra ejecutada
 
-**Estabilidad de taludes** de corte y relleno, con las pendientes y las obras de protección necesarias para que el terreno no dependa solo de los muros.
+Los proyectos fueron formulados y presentados ante el Sistema General de Regalías. Ese es el hito confirmado por el cliente. La presentación no permite afirmar que los recursos ya fueron aprobados, que se adjudicó la construcción o que las instalaciones están construidas y en servicio.
 
-**Cubierta metálica** diseñada según el Título F de la NSR-10 y AISC, con cerchas o pórticos de gran luz y cimentación individual por apoyo, coordinada con la plataforma y las contenciones.
+La etapa de consultoría deja información para las decisiones posteriores de las entidades responsables. Los resultados de financiación y ejecución son etapas diferentes y no se presentan aquí como logros concluidos.
 
-| Aspecto | Decisión |
-|---|---|
-| Geotecnia | Exploración, laboratorio e informe según NSR-10 Título H |
-| Contenciones | Muros en concreto reforzado con drenaje y verificación de estabilidad |
-| Taludes | Análisis de estabilidad de cortes y rellenos |
-| Cubierta | Estructura metálica de gran luz (NSR-10 Título F · AISC) |
+## Nuestro papel
 
-## El resultado: una plataforma estable y una cubierta construible
+PROINCIVIL diseña, evalúa y supervisa; **no ejecuta obra**. Su participación en estos proyectos corresponde a los diseños y al soporte técnico de la formulación. Para un proyecto educativo o deportivo similar, el primer paso es revisar ubicación, necesidad de infraestructura, documentos existentes y estado de la formulación antes de acordar los entregables.
 
-El municipio recibió un paquete técnico completo —estudio de suelos, planos de contenciones y taludes, y diseño de la cubierta— coherente entre sí, que permitió licitar la construcción sin las adiciones por "imprevistos de terreno" que suelen encarecer las obras en ladera.
-
-En Antioquia, buena parte de los sobrecostos de obra pública nace del suelo que nadie estudió. Este caso muestra la secuencia correcta: geotecnia, contención, estructura. PROINCIVIL diseña y acompaña; no ejecuta obra.
-
-> Entidad contratante, fecha y áreas pendientes de confirmación por el cliente antes de publicar.
+La imagen de cabecera es referencial y no identifica una cubierta construida en estos municipios.

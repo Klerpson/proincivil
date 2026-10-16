@@ -9,7 +9,7 @@ servicios: [diseno-estructural, curadurias-y-licencias, revision-independiente-d
 image: "/img/fotos/detalle-concreto-440.jpg"
 readingTime: "7 min de lectura"
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 resumen: "El diseño estructural determina la partida más costosa de una edificación: la estructura. Un diseño hecho con menos horas de ingeniería tiende a sobredimensionar por seguridad, a incoherencias entre documentos que la curaduría devuelve y a detalles que el constructor tiene que resolver en obra. Cada uno de esos efectos cuesta más que la diferencia de honorarios entre un diseño barato y uno hecho con criterio."
 indice:
   - { id: "proporcion", title: "La proporción que nadie calcula" }
@@ -26,7 +26,7 @@ faqs:
   - question: "¿Un diseño más caro garantiza menos concreto y acero?"
     answer: "No por sí solo. Lo que reduce cantidades es el tiempo de ingeniería dedicado a elegir el sistema, modelar la estructura completa y ajustar cada elemento, y la ausencia de incentivo para especificar de más. Un diseñador que también construye o vende materiales tiene ese incentivo; uno independiente, no."
   - question: "¿Qué pasa si la curaduría devuelve el diseño?"
-    answer: "Se pierde entre dos semanas y dos meses por cada ronda de observaciones, más el costo de corregir. Si el diseñador original no responde, hay que contratar a otro para subsanar. PROINCIVIL ofrece ese servicio de acompañamiento ante curadurías y, en sus propios diseños, mantiene el 100 % de aprobación en primera radicación."
+    answer: "Se pierde entre dos semanas y dos meses por cada ronda de observaciones, más el costo de corregir. Si el diseñador original no responde, hay que contratar a otro para subsanar. PROINCIVIL ofrece ese servicio de acompañamiento ante curadurías con revisión del expediente y respuesta técnica a las observaciones."
   - question: "¿Cómo comparo dos propuestas de diseño estructural?"
     answer: "Compare alcance antes que precio: qué entregables incluye, si el modelo es tridimensional completo, si incluye coordinación BIM y cantidades, si acompaña la curaduría y la obra, quién firma y con qué experiencia, y si el diseñador tiene interés en la construcción posterior."
 ---
@@ -67,7 +67,7 @@ La segunda fuente de costo oculto es el trámite. Las curadurías urbanas de Env
 
 Cada ronda de observaciones cuesta entre dos semanas y dos meses, según la curaduría y la respuesta del diseñador. Si el diseñador ya cobró y no responde, el promotor tiene que contratar a un tercero para [subsanar las observaciones]({{ site.baseurl }}/servicios/curadurias-y-licencias/), pagando dos veces por el mismo diseño. En proyectos con crédito constructor o con vigencias presupuestales, ese tiempo tiene además un costo financiero directo.
 
-Un diseño hecho con criterio se radica una sola vez. En PROINCIVIL, el 100 % de nuestros diseños se ha aprobado en la primera presentación.
+Un diseño coordinado reduce las causas evitables de devolución. El histórico de aprobación en primera radicación comunicado por PROINCIVIL es del {{ site.cifras.aprobacion_curadurias }}; no garantiza la decisión de una curaduría en cada expediente.
 
 ## Reprocesos en obra {#obra}
 
@@ -103,4 +103,4 @@ Si una propuesta no dice cuál de esos puntos incluye, asuma que no lo incluye. 
 
 El diseño estructural es la decisión que más pesa en el costo de una obra y la que menos cuesta tomar bien. Un honorario razonable, pagado a un diseñador independiente que dedique las horas que el proyecto exige, se recupera en la primera radicación aprobada y en cada metro cúbico que no se fundió de más.
 
-PROINCIVIL diseña estructuras en Envigado, Medellín y el resto de Antioquia con modelo BIM, memorias del modelo real y acompañamiento hasta la licencia. Diseñamos y acompañamos; no ejecutamos obra. [Vea cómo cotizamos]({{ site.baseurl }}/como-cotizar/) y reciba una propuesta con alcance completo en menos de 24 horas hábiles.
+PROINCIVIL diseña estructuras en Envigado, Medellín y el resto de Antioquia con modelo BIM, memorias del modelo real y acompañamiento hasta la licencia. Diseñamos y acompañamos; no ejecutamos obra. [Vea cómo cotizamos]({{ site.baseurl }}/como-cotizar/) para preparar la información y acordar el alcance de su propuesta.

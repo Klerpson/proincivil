@@ -3,7 +3,7 @@ titulo_corto: "Curadurías y licencias"
 orden: 13
 grupo: tramites
 title: "Subsanación de observaciones y licencias ante curadurías | PROINCIVIL"
-description: "Acompañamiento ante curadurías de Envigado, Medellín y Antioquia: revisión previa y subsanación de observaciones estructurales. 100 % aprobación en primera radicación."
+description: "Acompañamiento ante curadurías de Envigado, Medellín y Antioquia: revisión del expediente estructural y geotécnico, radicación y respuesta a observaciones."
 h1: "Acompañamiento técnico ante curadurías y entidades públicas"
 eyebrow: "Servicio · Trámites"
 excerpt: "La curaduría devolvió su proyecto con observaciones estructurales o quiere radicar sin devoluciones. Revisamos, corregimos y sustentamos el componente técnico de la licencia de construcción hasta que quede aprobada."
@@ -11,16 +11,16 @@ hero: "institucion-educativa"
 hero_alt: "Institución educativa de dos niveles diseñada por PROINCIVIL"
 image: "/img/fotos/institucion-educativa-440.jpg"
 badges:
-  - "100 % aprobación en primera radicación"
+  - "Revisión previa a la radicación"
   - "Curadurías de Envigado, Medellín y Antioquia"
   - "Subsanación estructural y geotécnica"
   - "No ejecutamos obra"
 cta_texto: "Enviar observaciones de curaduría"
 cta_secundario: { url: "/normativa/licencia-de-construccion-colombia/", texto: "Requisitos de la licencia" }
 serviceType: "Acompañamiento normativo ante curadurías y subsanación de observaciones"
-resumen: "Las curadurías urbanas revisan el componente estructural y geotécnico de cada solicitud de licencia de construcción y devuelven el proyecto cuando encuentran inconsistencias con la NSR-10. PROINCIVIL revisa el paquete antes de radicar, responde las observaciones con sustento técnico y corrige o complementa los diseños hasta obtener la licencia. Nuestros diseños se han aprobado en primera radicación el 100 % de las veces."
+resumen: "Las curadurías urbanas revisan el componente estructural y geotécnico de cada solicitud de licencia de construcción y devuelven el proyecto cuando encuentran inconsistencias con la NSR-10. PROINCIVIL revisa el paquete antes de radicar, responde las observaciones con sustento técnico y corrige o complementa los diseños hasta obtener la licencia. El alcance se define según el estado del expediente."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-16
 cuando:
   - "Recibió un acta de observaciones de la curaduría con reparos al diseño estructural o al estudio de suelos"
   - "Va a radicar una licencia y quiere una revisión previa que evite la devolución"
@@ -66,18 +66,18 @@ faqs:
   - question: "¿Qué planos exige la curaduría para una licencia de construcción?"
     answer: "Planos arquitectónicos y planos estructurales firmados, memorias de cálculo, estudio de suelos y los documentos jurídicos del predio, según el decreto de licencias urbanísticas. Los planos estructurales deben cubrir cimentación, columnas, vigas, losas, muros y detalles, con el cuadro de materiales y las notas de la NSR-10."
   - question: "¿La revisión previa garantiza la aprobación?"
-    answer: "Ninguna revisión puede garantizar la decisión de una curaduría, pero elimina las causas de devolución que sí dependen del diseño. Nuestros proyectos se han aprobado en primera radicación el 100 % de las veces porque se radican después de esa revisión."
+    answer: "Ninguna revisión puede garantizar la decisión de una curaduría, pero elimina las causas de devolución que sí dependen del diseño. Preparamos el expediente y atendemos las observaciones; la aprobación depende de la revisión de la autoridad competente."
 ---
 
 ## La observación de curaduría que se repite proyecto tras proyecto
 
 Cada semana llega a alguna curaduría de Antioquia un proyecto que vuelve con el mismo tipo de acta: el estudio de suelos no tiene sondeos suficientes, el espectro sísmico se calculó con coeficientes de otro municipio, los planos estructurales no coinciden con la arquitectura radicada o las memorias no muestran las combinaciones de carga. Ninguna de esas observaciones es un capricho del revisor; todas son incumplimientos de la NSR-10 que cuestan semanas de trámite y, a veces, el vencimiento de la solicitud.
 
-El **acompañamiento ante curadurías** de PROINCIVIL existe para evitar ese ciclo. Ningún competidor de la región lo ofrece como servicio con nombre propio; nosotros lo hacemos porque es la etapa donde más proyectos se atascan.
+El **acompañamiento ante curadurías** de PROINCIVIL existe para evitar ese ciclo. Revisamos los documentos y damos seguimiento a las observaciones con el responsable del proyecto.
 
 ## Dos formas de trabajar: antes o después de la observación
 
-**Revisión previa a radicación.** Antes de que el arquitecto radique, revisamos el componente estructural y geotécnico contra la lista de chequeo de la curaduría correspondiente: coherencia entre disciplinas, parámetros del municipio, alcance del estudio de suelos, completitud de planos y memorias, firmas y matrículas. Es la razón por la que nuestros diseños han obtenido el 100 % de aprobación en primera presentación.
+**Revisión previa a radicación.** Antes de que el arquitecto radique, revisamos el componente estructural y geotécnico contra la lista de chequeo de la curaduría correspondiente: coherencia entre disciplinas, parámetros del municipio, alcance del estudio de suelos, completitud de planos y memorias, firmas y matrículas. El histórico de aprobación en primera radicación comunicado por PROINCIVIL es del {{ site.cifras.aprobacion_curadurias }}. Este antecedente no garantiza la aprobación de un expediente futuro.
 
 **Subsanación de observaciones.** Cuando el acta ya llegó, respondemos cada observación por escrito con el sustento técnico, corregimos o complementamos lo que haga falta y coordinamos con el arquitecto para que el paquete vuelva a radicarse coherente. Si el diseño original es de otro ingeniero que no responde, evaluamos si se puede complementar bajo nuestra firma o si hay que rehacerlo.
 
