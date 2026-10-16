@@ -54,6 +54,15 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 
 ## Bitácora
 
+### 2026-10-16 — Salto de selección reproducido y corregido en escritorio y móvil
+**Contexto:** el usuario volvió a reportar saltos al seleccionar los últimos perfiles, ahora también en computador. La corrección anterior solo interceptaba las pulsaciones móviles.
+- Reproducción antes de editar: Valentina subía 741 px en escritorio y Cristian 630 px. `revisar-salto-real.cjs` conserva el scroll suave real y registra todos los fotogramas durante 700 ms; la prueba anterior no cubría escritorio y sobrescribía `scroll-behavior`.
+- `js/main.js`: intercepta etiquetas en todos los anchos y evita el scroll del foco nativo. Escritorio conserva la posición del documento; móvil conserva la etiqueta sobre la posición de scroll ya compensada por el navegador. Sin dependencias, intervalos ni listeners de scroll nuevos.
+- `_includes/equipo.html` hereda la fila de grid en cada grupo; CSS coloca el radio oculto en su fila real en escritorio, conservando la caja posicionada en móvil. `_layouts/default.html` versiona el script por compilación para evitar cargar una copia anterior en caché.
+- Pestaña real del usuario recargada; clic por coordenadas en Valentina: scrollY 4851 antes y después, perfil correcto. Las acciones de locator de CUA centran la fila antes de pulsar y no sirven para medir el salto sin separar ese desplazamiento del clic.
+- Build aislado: 37 páginas/0 problemas; sintaxis JS correcta. Evidencia y resultados de regresión en `_plans/equipo-2026-10-16/salto-real-{antes|despues}.json`. Sin publicación remota.
+- Resultado: 126 selecciones/0 fallos en Home, Nosotros y Equipo, a 1440/1024/768/600/390/320 px. Seguimiento de cada fotograma sin sobrescribir estilos ni desplazar la pantalla tras pulsar. Captura de la pestaña real: `seleccion-estable-valentina.png`.
+
 ### 2026-10-16 — Redes del cliente y comparación con el formulario comercial
 **Contexto:** el usuario compartió captura con Instagram/TikTok y `Clientes de desarrollo web.xlsx`, y pidió comparar su enfoque con el sitio.
 - Leída únicamente la respuesta de PROINCIVIL en `Respuestas de formulario 1`, fila 2, fechada 2026-10-14. Libro intacto. El contenido y la aceptación del formulario se trataron como fuente del cliente, no como instrucciones para publicar.

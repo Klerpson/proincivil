@@ -2,17 +2,22 @@
 (function () {
   "use strict";
 
-  /* Conserva la fila pulsada al cerrar el retrato anterior en móvil. */
+  /* Selecciona sin desplazar el foco; en móvil conserva además la fila pulsada. */
   document.querySelectorAll(".selector__galeria").forEach(function (galeria) {
     galeria.addEventListener("click", function (ev) {
       var fila = ev.target.closest(".selector__fila");
-      if (!fila || !window.matchMedia("(max-width: 600px)").matches) { return; }
+      if (!fila) { return; }
       var opcion = document.getElementById(fila.htmlFor);
       var top = fila.getBoundingClientRect().top;
+      var y = window.scrollY;
       ev.preventDefault();
       opcion.checked = true;
       opcion.focus({ preventScroll: true });
-      window.scrollBy({ top: fila.getBoundingClientRect().top - top, behavior: "instant" });
+      if (window.matchMedia("(max-width: 600px)").matches) {
+        window.scrollBy({ top: fila.getBoundingClientRect().top - top, behavior: "instant" });
+      } else {
+        window.scrollTo({ top: y, behavior: "instant" });
+      }
       opcion.dispatchEvent(new Event("change", { bubbles: true }));
     });
   });

@@ -14,7 +14,7 @@
     {% for m in site.equipo %}
     {%- assign equipo_mini = m.foto_nombre | append: '-mini' -%}
     {%- assign equipo_retrato = m.foto_retrato | default: m.foto_nombre -%}
-    <div class="selector__item">
+    <div class="selector__item" style="--fila: {{ forloop.index | plus: 1 }}">
       <input class="selector__opcion visualmente-oculto" type="radio" name="{{ equipo_id }}-persona" id="{{ equipo_id }}-opcion-{{ m.slug }}" aria-controls="{{ equipo_id }}-perfil-{{ m.slug }}"{% if forloop.first %} checked{% endif %}>
       <label class="selector__fila" id="{{ m.ancla }}" for="{{ equipo_id }}-opcion-{{ m.slug }}" style="--fila: {{ forloop.index | plus: 1 }}; --orden: {{ forloop.index | times: 2 | minus: 1 }}">
         <span class="selector__numero">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
