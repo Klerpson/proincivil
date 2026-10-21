@@ -68,4 +68,4 @@ El F.4 regula los perfiles de lámina delgada (C, Z, omega, panel colaborante) q
 
 ## Fabricación, montaje y supervisión {#fabricacion}
 
-El Título F no termina en el cálculo: exige planos de taller, soldadores calificados según AWS, inspección de soldaduras, pernos apretados según procedimiento y tolerancias de montaje. La [supervisión técnica]({{ site.baseurl }}/servicios/supervision-tecnica-independiente/) verifica todo eso en obra y en taller. PROINCIVIL diseña la estructura y la supervisa; la fabricación y el montaje los ejecuta el taller y el constructor que usted elija.
+El Título F no termina en el cálculo: exige planos de taller, soldadores calificados según AWS, inspección de soldaduras, pernos apretados según procedimiento y tolerancias de montaje. La [supervisión técnica]({{ site.baseurl }}/servicios/supervision-tecnica-independiente/) verifica todo eso en obra y en taller. PROINCIVIL diseña la estructura y la supervisa; la fabricación y el montaje los ejecuta el taller y el constructor que elijas.

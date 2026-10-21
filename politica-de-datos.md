@@ -13,8 +13,8 @@ noindex: false
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 ---
-<section class="section">
-<div class="wrapper contenido flow" markdown="1">
+<section class="seccion">
+<div class="marco texto-largo flujo" markdown="1">
 
 **Responsable del tratamiento:** {{ site.empresa.razon_social }}, NIT {{ site.empresa.nit }}, con domicilio en {{ site.empresa.direccion }}, {{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, Colombia. Correo: {{ site.contact.email }}. Teléfono: {{ site.contact.whatsapp_display }}.
 

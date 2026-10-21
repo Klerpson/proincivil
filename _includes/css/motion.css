@@ -1,22 +1,226 @@
-/* ============================================================
-   MOTION — capa de interacción "Pliego". Nivel 1 CSS puro con @supports;
-   nunca en el héroe; m-halo/m-sello/m-wordmark viven junto a su primitiva
-   (secciones.css, primitivas.css, footer.css) porque son parte de la forma,
-   no de esta capa. Aquí solo el reveal al entrar en viewport.
-   Ver .claude/skills/interactividad-wow-seo.
-   ============================================================ */
+/* Plano vivo Â· capa de animaciÃ³n inmersiva.
+   Las escenas van ligadas al scroll con animation-timeline (CSS nativo, sin librerÃ­as). El contenido estÃ¡
+   siempre en el HTML: sin soporte (Firefox) o con prefers-reduced-motion se ve estÃ¡tico y completo.
+   La firma de la portada vive en critical-css/hero.css para no parpadear al cargar. */
 @layer utilidades {
-  @supports (animation-timeline: view()) {
-    @media (prefers-reduced-motion: no-preference) {
-      .tile--enlace, .pasos li, .lateral-cta, .nota, .resumen, .persona, .testimonio, .ficha {
-        animation: m-reveal linear both;
-        animation-timeline: view();
-        animation-range: entry 0% cover 30%;
+  /* Hover de tarjetas enlazadas: cotas que se dibujan. */
+  .pieza--enlace { transition: transform 200ms var(--curva); }
+  .pieza--enlace::before, .pieza--enlace::after {
+    content: ""; position: absolute; z-index: 2; pointer-events: none; background: var(--azul);
+    transition: transform 260ms var(--curva);
+  }
+  .pieza--enlace::before { inset-inline: -1px; inset-block-start: -1px; block-size: 2px; transform: scaleX(0); transform-origin: left; }
+  .pieza--enlace::after { inset-block: -1px; inset-inline-start: -1px; inline-size: 2px; transform: scaleY(0); transform-origin: top; }
+  .pieza--oscura::before, .pieza--oscura::after { background: var(--trazo); }
+  .pieza--enlace:hover, .pieza--enlace:focus-within { transform: translateY(-4px); }
+  .pieza--enlace:hover::before, .pieza--enlace:focus-within::before { transform: scaleX(1); }
+  .pieza--enlace:hover::after, .pieza--enlace:focus-within::after { transform: scaleY(1); }
+  .pieza--enlace .pieza__media img { transition: transform 240ms var(--curva); }
+  .pieza--enlace:hover .pieza__media img { transform: scale(1.06); }
+  .pieza--enlace:focus-within { outline: none; }
+  .pieza--enlace .pieza__titulo a:focus-visible { outline: none; }
+  .pieza--enlace:has(.pieza__titulo a:focus-visible) { outline: 2px solid var(--azul); outline-offset: 3px; }
+  .pieza--oscura:has(.pieza__titulo a:focus-visible) { outline-color: var(--ambar); }
+
+  /* BotÃ³n principal del cierre: pulso de luz que invita al clic. */
+  .cierre .boton { position: relative; isolation: isolate; }
+  .cierre .boton::after { content: ""; position: absolute; inset: -6px; z-index: -1; border: 2px solid var(--ambar); opacity: 0; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .cierre .boton::after { animation: boton-pulso 2.4s var(--curva) infinite; }
+
+    @supports (animation-timeline: view()) {
+      /* 1. Encabezados: el rÃ³tulo traza su lÃ­nea y el tÃ­tulo entra con barrido. */
+      .encabezado .rotulo::before, .flujo > .rotulo::before {
+        transform-origin: left; animation: trazo-x linear both; animation-timeline: view(); animation-range: entry 10% cover 30%;
       }
-      @keyframes m-reveal {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: none; }
+      .encabezado__titulo, .seccion .flujo > h2 { animation: titulo-barrido linear both; animation-timeline: view(); animation-range: entry 5% cover 28%; }
+      .encabezado__texto { animation: subir linear both; animation-timeline: view(); animation-range: entry 15% cover 32%; }
+
+      /* 2. Secciones oscuras y pie: la lÃ¡mina azul se abre desde una ventana. */
+      .seccion--oscura, .pie { animation: ventana linear both; animation-timeline: view(); animation-range: entry 0% entry 70%; }
+
+      /* 3. Cifras: la cota se dibuja y el nÃºmero sube. */
+      .cifra::before { transform-origin: left; animation: trazo-x linear both; animation-timeline: view(); animation-range: entry 10% cover 35%; }
+      .cifra__valor { animation: subir-fuerte linear both; animation-timeline: view(); animation-range: entry 10% cover 35%; }
+
+      /* 4. Tarjetas, datos y listas: suben en cascada. */
+      .rejilla > *, .datos__item, .lista li, .pasos li {
+        animation: pieza-entrada linear both; animation-timeline: view(); animation-range: entry 0% cover 30%;
+      }
+      .rejilla > :nth-child(3n+2), .datos__item:nth-child(3n+2), .lista li:nth-child(2n), .pasos li:nth-child(2) { animation-range: entry 8% cover 36%; }
+      .rejilla > :nth-child(3n), .datos__item:nth-child(3n), .pasos li:nth-child(3) { animation-range: entry 16% cover 42%; }
+      .pasos li:nth-child(4) { animation-range: entry 24% cover 48%; }
+
+      /* 5. Fotos: se revelan como un plano que se imprime. */
+      .pieza__media img, .lamina img, .figura img { animation: foto-revelado linear both; animation-timeline: view(); animation-range: entry 0% cover 45%; }
+      .lamina::before, .lamina::after { animation: aparecer linear both; animation-timeline: view(); animation-range: entry 40% cover 50%; }
+
+      /* 6. Proceso: la lÃ­nea de tiempo se traza y cada rombo aparece en su paso. */
+      .pasos { position: relative; }
+      .pasos li { border-block-start-color: transparent; }
+      .pasos::before {
+        content: ""; position: absolute; inset-inline: 0; inset-block-start: 0; block-size: 1.5px; background: var(--azul);
+        transform-origin: left; animation: trazo-x linear both; animation-timeline: view(); animation-range: entry 20% cover 55%;
+      }
+      .pasos li::after { animation: rombo linear both; animation-timeline: view(); animation-range: entry 25% cover 45%; }
+
+      /* 7. Equipo: los retratos se imprimen y pasan de gris a color. */
+      .persona__foto { overflow: hidden; }
+      .persona__foto img { animation: retrato linear both; animation-timeline: view(); animation-range: entry 0% cover 45%; }
+
+      /* 8. Tira de fotos: se desliza en horizontal con el scroll. */
+      .tira { overflow: hidden; }
+      .tira__foto { animation: tira-deslizar linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+      .tira__foto:nth-child(even) { animation-name: tira-deslizar-inverso; }
+
+      /* 9. Cierre: escena a pantalla completa con luz que gira mientras bajas. */
+      .cierre { position: relative; overflow: hidden; isolation: isolate; }
+      .cierre::before {
+        content: ""; position: absolute; inset: -50%; z-index: -1; pointer-events: none;
+        background: conic-gradient(from 0deg at 50% 50%, transparent 0 62%, rgb(217 142 42 / 0.26) 76%, rgb(157 180 217 / 0.18) 84%, transparent 92%);
+        animation: luz-giro linear both; animation-timeline: view(); animation-range: entry 0% exit 100%;
+      }
+      .cierre__titulo { animation: cierre-titulo linear both; animation-timeline: view(); animation-range: entry 0% cover 40%; }
+      .cierre .acciones { animation: subir-fuerte linear both; animation-timeline: view(); animation-range: entry 20% cover 45%; }
+
+      /* 10. Cabecera interior: la foto se acerca y sube al salir. CajetÃ­n: entra con la cascada. */
+      .cabecera__media img { animation: cabecera-foto linear both; animation-timeline: view(); animation-range: exit 0% exit 100%; }
+      .cajetin { animation: pieza-entrada linear both; animation-timeline: view(); animation-range: entry 0% cover 25%; }
+    }
+  }
+
+  @keyframes trazo-x { from { transform: scaleX(0); } }
+  @keyframes titulo-barrido { from { clip-path: inset(0 0 100% 0); transform: translateY(0.6em); } to { clip-path: inset(-10% -10% -20% -10%); transform: none; } }
+  @keyframes subir { from { opacity: 0; transform: translateY(1.5rem); } }
+  @keyframes subir-fuerte { from { opacity: 0; transform: translateY(3rem) scale(0.94); } }
+  @keyframes ventana { from { clip-path: inset(6% 5% round 28px); } to { clip-path: inset(0 0 round 0); } }
+  @keyframes pieza-entrada { from { opacity: 0; transform: translateY(4rem) scale(0.95); } }
+  @keyframes foto-revelado { from { clip-path: inset(0 0 100% 0); transform: scale(1.25); filter: contrast(1.4) brightness(1.3); } 60% { clip-path: inset(0); } to { clip-path: inset(0); transform: scale(1); filter: none; } }
+  @keyframes aparecer { from { opacity: 0; } }
+  @keyframes rombo { from { transform: scale(0) rotate(0deg); } to { transform: scale(1) rotate(45deg); } }
+  @keyframes retrato { from { clip-path: inset(100% 0 0 0); filter: grayscale(1) contrast(1.2); transform: scale(1.15); } 55% { clip-path: inset(0); filter: grayscale(1); } to { clip-path: inset(0); filter: none; transform: scale(1); } }
+  @keyframes tira-deslizar { from { transform: translateX(-12%) scale(1.1); } to { transform: translateX(12%) scale(1.1); } }
+  @keyframes tira-deslizar-inverso { from { transform: translateX(12%) scale(1.1); } to { transform: translateX(-12%) scale(1.1); } }
+  @keyframes luz-giro { from { transform: rotate(-60deg); } to { transform: rotate(150deg); } }
+  @keyframes cierre-titulo { from { opacity: 0; transform: scale(0.8) translateY(2rem); } }
+  @keyframes cabecera-foto { to { transform: scale(1.12) translateY(6%); } }
+  @keyframes boton-pulso { 0% { opacity: 0.9; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.12, 1.6); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pieza--enlace:hover, .pieza--enlace:focus-within { transform: none; }
+    .pieza--enlace:hover .pieza__media img { transform: none; }
+  }
+}
+
+/* Escenas inspiradas en 21st.dev (Stacking Cards, Horizontal Scroll Gallery, Scroll Text Marquee,
+   Text Reveal Mask, Magnetic Button); reimplementadas en CSS/JS nativo. */
+@layer utilidades {
+  /* BotÃ³n magnÃ©tico con foco de luz (motion.js fija --tx, --ty, --bx, --by). */
+  .boton { translate: var(--tx, 0) var(--ty, 0); }
+  .boton:not(.boton--contorno) { background-image: radial-gradient(circle at var(--bx, 50%) var(--by, 50%), rgb(255 255 255 / 0.4), transparent 60%); background-size: 100% 100%; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .marquesina__pista { animation: marquesina 38s linear infinite; }
+    .marquesina__fila--inversa .marquesina__pista { animation-direction: reverse; animation-duration: 30s; }
+
+    @supports (animation-timeline: view()) {
+      .marquesina__fila { animation: marquesina-empuje linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+      .marquesina__fila--inversa { animation-name: marquesina-empuje-inverso; }
+
+      /* Paneles apilados: cada uno se encoge y se oscurece cuando el siguiente lo tapa. */
+      .apilado { view-timeline-name: --apilado; }
+      .panel { animation: panel-hundir linear both; animation-timeline: --apilado; }
+      .panel:nth-child(1) { animation-range: contain 0% contain 20%; }
+      .panel:nth-child(2) { animation-range: contain 20% contain 40%; }
+      .panel:nth-child(3) { animation-range: contain 40% contain 60%; }
+      .panel:nth-child(4) { animation-range: contain 60% contain 80%; }
+      .panel:nth-child(5) { animation-range: contain 80% contain 100%; }
+      .panel:nth-child(6) { animation: none; }
+      .panel__foto img { animation: panel-foto linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
+      .panel__numero { animation: panel-numero linear both; animation-timeline: view(); animation-range: entry 35% entry 80%; }
+      .panel .rotulo::before { transform-origin: left; animation: trazo-x linear both; animation-timeline: view(); animation-range: entry 40% entry 85%; }
+      .panel .rotulo { animation: aparecer linear both; animation-timeline: view(); animation-range: entry 40% entry 75%; }
+      .panel__texto { animation: panel-texto linear both; animation-timeline: view(); animation-range: entry 55% entry 100%; }
+      .panel__enlaces li { animation: panel-enlace linear both; animation-timeline: view(); animation-range: entry 60% entry 100%; }
+      .panel__enlaces li:nth-child(2) { animation-range: entry 65% cover 52%; }
+      .panel__enlaces li:nth-child(3) { animation-range: entry 70% cover 54%; }
+      .panel__enlaces li:nth-child(4) { animation-range: entry 75% cover 56%; }
+      .panel__enlaces li:nth-child(5) { animation-range: entry 80% cover 58%; }
+
+      /* GalerÃ­a: la escena se fija y la pista avanza de lado con el scroll vertical. */
+      .galeria { block-size: 320vh; view-timeline-name: --galeria; }
+      .galeria__escena { position: sticky; inset-block-start: var(--barra-alto); display: flex; flex-direction: column; justify-content: center; min-block-size: calc(100svh - var(--barra-alto)); overflow: hidden; padding-block: 2rem; }
+      .galeria__pista { overflow: visible; inline-size: max-content; scroll-snap-type: none; animation: galeria-mover linear both; animation-timeline: --galeria; animation-range: contain 5% contain 95%; }
+      .galeria__item:nth-child(odd) .galeria__foto { animation: galeria-inclinar linear both; animation-timeline: --galeria; animation-range: contain 0% contain 100%; }
+      .galeria__item:nth-child(even) .galeria__foto { animation: galeria-inclinar-inverso linear both; animation-timeline: --galeria; animation-range: contain 0% contain 100%; }
+
+      /* Zoom a travÃ©s de la palabra: la foto vive dentro de las letras y la palabra se atraviesa. */
+      .zoom { block-size: 280vh; view-timeline-name: --zoom; }
+      .zoom__escena { position: sticky; inset-block-start: 0; block-size: 100svh; }
+      .zoom__palabra {
+        will-change: transform, opacity; color: transparent; -webkit-text-stroke: 0;
+        background: var(--zoom-textura) center / cover; -webkit-background-clip: text; background-clip: text;
+        animation: zoom-palabra linear both; animation-timeline: --zoom; animation-range: contain 0% contain 55%;
+      }
+      .zoom__foto { animation: zoom-foto linear both; animation-timeline: --zoom; animation-range: contain 25% contain 60%; }
+      .zoom__cta { animation: zoom-cta linear both; animation-timeline: --zoom; animation-range: contain 55% contain 80%; }
+      .zoom__escena { background: var(--azul); background-image: var(--cuadricula-oscura); background-size: var(--cuadricula-medida); }
+
+      /* Casos: nÃºmero que se desliza, resultado que se enfoca y datos en cascada al entrar cada caso. */
+      .caso__numero { animation: panel-numero linear both; animation-timeline: view(); animation-range: entry 0% entry 100%; }
+      .caso__resultado { animation: panel-texto linear both; animation-timeline: view(); animation-range: entry 10% entry 100%; }
+      .caso__datos li { animation: panel-enlace linear both; animation-timeline: view(); animation-range: entry 10% entry 100%; }
+      .caso__datos li:nth-child(2) { animation-range: entry 30% cover 20%; }
+      .caso__datos li:nth-child(3) { animation-range: entry 50% cover 25%; }
+      .casos__medios { animation: casos-marco linear both; animation-timeline: view(); animation-range: entry 0% entry 60%; }
+
+      /* Lista en foco: cada frase se enciende al cruzar el centro y se apaga al salir. */
+      .foco__lista li { animation: foco linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+
+      /* Enlaces mayores: entran barriendo desde la izquierda. */
+      .enlace-mayor { animation: enlace-mayor linear both; animation-timeline: view(); animation-range: entry 10% entry 90%; }
+
+      /* TÃ­tulos palabra por palabra (motion.js envuelve cada palabra y fija --i). */
+      .encabezado__titulo.dividido, .zoom__titulo.dividido, .panel__titulo.dividido, .cierre__titulo.dividido { animation: none; }
+      .dividido .palabra__interior {
+        animation: palabra-sube linear both; animation-timeline: view();
+        animation-range: entry calc(10% + var(--i, 0) * 2.5%) cover calc(25% + var(--i, 0) * 2.5%);
       }
     }
   }
+
+  @keyframes marquesina { to { transform: translateX(-50%); } }
+  @keyframes marquesina-empuje { from { transform: translateX(8%); } to { transform: translateX(-8%); } }
+  @keyframes marquesina-empuje-inverso { from { transform: translateX(-8%); } to { transform: translateX(8%); } }
+  @keyframes panel-hundir { to { transform: scale(0.9); filter: brightness(0.35); border-radius: 24px; } }
+  @keyframes panel-foto { from { transform: scale(1.25) translateY(-4%); } to { transform: scale(1.05) translateY(4%); } }
+  @keyframes galeria-mover { from { transform: translateX(0); } to { transform: translateX(calc(-100% + 100vw)); } }
+  @keyframes galeria-inclinar { from { transform: rotate(-1.5deg) scale(0.94); } 50% { transform: rotate(0) scale(1); } to { transform: rotate(1.5deg) scale(0.94); } }
+  @keyframes galeria-inclinar-inverso { from { transform: rotate(1.5deg) scale(0.94); } 50% { transform: rotate(0) scale(1); } to { transform: rotate(-1.5deg) scale(0.94); } }
+  @keyframes zoom-palabra { 0% { transform: scale(1); opacity: 1; } 55% { opacity: 1; } 100% { transform: scale(4); opacity: 0; } }
+  @keyframes zoom-foto { from { clip-path: circle(0% at 50% 50%); } to { clip-path: circle(75% at 50% 50%); } }
+  @keyframes zoom-cta { from { opacity: 0; transform: translateY(4rem); } }
+  @keyframes panel-numero { from { opacity: 0; transform: translateX(-3rem); letter-spacing: 0.4em; } }
+  @keyframes panel-texto { from { opacity: 0; filter: blur(10px); transform: translateY(1rem); } }
+  @keyframes panel-enlace { from { opacity: 0; transform: translateX(3rem); } }
+  @keyframes casos-marco { from { clip-path: inset(12%); } }
+  @keyframes enlace-mayor { from { clip-path: inset(0 100% 0 0); } }
+  @keyframes foco { 0%, 100% { opacity: 0.55; } 38%, 62% { opacity: 1; } }
+  @keyframes palabra-sube { from { transform: translateY(110%) rotate(6deg); } }
+}
+
+/* Equipo: inclinaciÃ³n 3D segÃºn el cursor (motion.js fija --rx/--ry), escaneo del retrato y subrayado del nombre. */
+@layer utilidades {
+  .persona__foto, .inclinable { transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform 300ms var(--curva); }
+  .persona__foto::before {
+    content: ""; position: absolute; inset-inline: 0; inset-block-start: 0; z-index: 1; block-size: 30%; pointer-events: none; opacity: 0;
+    background: linear-gradient(180deg, transparent, rgb(157 180 217 / 0.45) 85%, var(--trazo) 100%);
+  }
+  .persona__nombre { background: linear-gradient(var(--azul), var(--azul)) 0 100% / 0% 2px no-repeat; transition: background-size 300ms var(--curva); }
+  .persona:hover .persona__nombre { background-size: 100% 2px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .persona:hover .persona__foto::before { animation: escaneo 1100ms var(--curva) both; }
+  }
+  @keyframes escaneo { 0% { opacity: 1; transform: translateY(-100%); } 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(340%); } }
 }

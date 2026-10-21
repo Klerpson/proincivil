@@ -19,15 +19,21 @@ cta_texto: "Cotizar supervisión técnica"
 cta_secundario: { url: "/normativa/ley-1796-de-2016/", texto: "Cuándo es obligatoria" }
 serviceType: "Supervisión técnica independiente"
 resumen: "La supervisión técnica independiente es la verificación, durante la construcción, de que la estructura de una edificación se ejecuta conforme a los diseños aprobados y a la NSR-10, realizada por un profesional sin vínculo con el constructor. La exigen el Título I de la NSR-10 y la Ley 1796 de 2016 para las edificaciones que superan los umbrales vigentes, y es requisito para la certificación técnica de ocupación."
+zoom:
+  palabra: "VERIFICAR"
+  textura: "acero"
+  titulo: "Supervisión técnica independiente: verificamos que la obra se construya según los diseños"
 datePublished: 2026-09-22
 dateModified: 2026-09-22
+cuando_titulo: "Seis casos en los que necesitas supervisión técnica independiente (Ley 1796 y NSR-10)"
 cuando:
-  - "Su edificación supera los umbrales de la Ley 1796 y la NSR-10 y la supervisión técnica independiente es obligatoria"
-  - "Necesita la certificación técnica de ocupación al terminar la obra y sin supervisión no la expedirán"
-  - "Es propietario o promotor y no quiere depender solo del control de calidad del constructor"
+  - "Tu edificación supera los umbrales de la Ley 1796 y la NSR-10 y la supervisión técnica independiente es obligatoria"
+  - "Necesitas la certificación técnica de ocupación al terminar la obra y sin supervisión no la expedirán"
+  - "Eres propietario o promotor y no quieres depender solo del control de calidad del constructor"
   - "El banco, la fiduciaria o la aseguradora exigen informes de un supervisor independiente"
-  - "La obra ya empezó sin supervisión y necesita regularizarla con registros y ensayos"
-  - "Es una entidad pública y el contrato de obra exige supervisión técnica además de la interventoría"
+  - "La obra ya empezó sin supervisión y necesitas regularizarla con registros y ensayos"
+  - "Eres una entidad pública y el contrato de obra exige supervisión técnica además de la interventoría"
+entregables_titulo: "Del plan de supervisión al expediente para la certificación técnica de ocupación"
 entregables:
   - "Plan de supervisión con frecuencia de visitas, ensayos y puntos de inspección obligatorios"
   - "Verificación de refuerzo, formaletas y geometría antes de cada fundida"
@@ -35,24 +41,29 @@ entregables:
   - "Registro de no conformidades y verificación de su cierre"
   - "Informes periódicos al propietario y bitácora de supervisión"
   - "Informe final y documentos para la certificación técnica de ocupación"
+despues_titulo: "Con el informe final tramitas la certificación técnica de ocupación"
 despues:
   - "Con el informe final y los registros, el propietario tramita la certificación técnica de ocupación"
   - "El expediente queda como soporte ante aseguradoras, compradores y autoridades"
   - "Si en el futuro hay que evaluar la edificación, existe un historial de cómo se construyó"
+factores_titulo: "Cinco factores que definen el valor de la supervisión técnica independiente"
 factores:
   - "Área construida, número de niveles y sistema estructural"
   - "Duración de la obra y frecuencia de visitas requerida"
   - "Ensayos de laboratorio: quién los contrata y cuántos exige el plan"
   - "Distancia de la obra a Envigado"
   - "Estado de la obra al iniciar la supervisión (desde cero o regularización)"
+audiencias_titulo: "Supervisión técnica independiente para promotores, constructoras, entidades públicas y P.H."
 audiencias:
   - { rol: "Promotores y propietarios", texto: "Cumplen la obligación legal y obtienen la certificación de ocupación sin sobresaltos." }
   - { rol: "Constructoras", texto: "Un supervisor externo que documenta la calidad y protege al constructor frente a reclamaciones injustificadas." }
   - { rol: "Entidades públicas", texto: "Supervisión técnica de infraestructura educativa y deportiva con registros verificables." }
   - { rol: "Administraciones de P.H. en construcción", texto: "Evidencia de que las torres se construyeron como se diseñaron." }
+proyectos_titulo: "Hotel The One Laureles en Medellín (interventoría de diseño) e I.E. Puerto Perales en Antioquia (diseño estructural)"
 proyectos: [hotel-the-one-laureles, ie-puerto-perales]
 relacionados: [interventoria-de-disenos, revision-independiente-de-disenos, diseno-estructural, evaluacion-estructural]
 normativa: [titulo-i, ley-1796-de-2016, nsr-10, ley-400-de-1997]
+faqs_titulo: "Preguntas sobre supervisión técnica independiente y certificación de ocupación"
 faqs:
   - question: "¿Qué es la supervisión técnica independiente?"
     answer: "Es la verificación, por parte de un profesional facultado y sin vínculo con el constructor, de que la construcción de la estructura se ejecuta de acuerdo con los planos, las especificaciones y la NSR-10. Incluye inspecciones antes de cada etapa crítica, control de ensayos y registros que soportan la certificación técnica de ocupación."
@@ -74,7 +85,7 @@ Un diseño estructural correcto no garantiza una estructura correcta. Entre el p
 
 En PROINCIVIL la supervisión la ejerce el mismo equipo que diseña y revisa estructuras, con una condición que la norma exige y que cumplimos por principio: no construimos ni tenemos vínculo con el constructor.
 
-## Puntos de inspección obligatorios
+## Seis puntos de inspección obligatorios, de la cimentación a los rellenos
 
 El plan de supervisión define en qué momentos la obra no puede avanzar sin nuestra verificación:
 
@@ -87,7 +98,7 @@ El plan de supervisión define en qué momentos la obra no puede avanzar sin nue
 
 Cada inspección deja registro fotográfico, medición y firma. Cada no conformidad queda abierta hasta que se corrige y se verifica.
 
-## Ensayos: el dato que reemplaza la opinión
+## Ensayos de concreto, acero y rellenos que exige la NSR-10
 
 La supervisión técnica no se basa en lo que dice el maestro de obra sino en lo que dice el laboratorio. Coordinamos el programa de ensayos que exige la NSR-10 según el volumen de concreto y la clase de obra, revisamos cada resultado contra la resistencia de diseño y, si un resultado falla, aplicamos el procedimiento del Título C: nuevos ensayos, extracción de núcleos o refuerzo del elemento.
 
@@ -98,10 +109,10 @@ La supervisión técnica no se basa en lo que dice el maestro de obra sino en lo
 | Compactación de rellenos | Por capa y por área | Si el relleno soporta lo que va encima |
 | Ultrasonido o esclerometría | Cuando hay duda sobre concreto endurecido | Si se requieren núcleos |
 
-## Certificación técnica de ocupación
+## Sin supervisión técnica no hay certificación técnica de ocupación
 
 Al terminar la obra, el propietario necesita la certificación técnica de ocupación, y esa certificación solo existe cuando hubo supervisión técnica con registros completos. Entregamos el informe final y el expediente en el formato que exige el trámite. Un edificio sin esa certificación tiene problemas para escriturar unidades, asegurarse y demostrar ante una autoridad que se construyó como se diseñó.
 
-## Por qué la independencia lo cambia todo
+## Supervisor sin vínculo con el constructor: PROINCIVIL no ejecuta obra
 
 Un supervisor que depende del constructor firma lo que le pongan enfrente. Uno que responde al propietario detiene una fundida cuando el refuerzo está mal, exige núcleos cuando el concreto no cumple y lo deja por escrito. Diseñamos, evaluamos y supervisamos; no ejecutamos obra. Esa es la única forma de que una supervisión sea independiente de verdad.

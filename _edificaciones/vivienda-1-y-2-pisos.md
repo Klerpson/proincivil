@@ -3,7 +3,7 @@ titulo_corto: "Vivienda de 1 y 2 pisos"
 orden: 6
 title: "Diseño estructural de casas de 1 y 2 pisos: planos para licencia NSR-10"
 description: "Planos estructurales de casas de uno o dos pisos según el Título E de la NSR-10, ampliaciones de segundo piso y viviendas en ladera. Firmados para licencia."
-h1: "Diseño estructural de casas de 1 y 2 pisos: planos firmados para su licencia"
+h1: "Diseño estructural de casas de 1 y 2 pisos: planos firmados para tu licencia"
 eyebrow: "Edificaciones · Vivienda"
 excerpt: "Una casa de dos pisos también necesita ingeniero: la curaduría exige planos estructurales firmados y la NSR-10 define, en su Título E, cómo se diseña una vivienda de baja altura. Trabajamos con arquitectos, constructores y propietarios que construyen con licencia."
 hero: "detalle-concreto"
@@ -22,12 +22,12 @@ resumen: "Toda vivienda de uno o dos pisos que se construye con licencia necesit
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Va a radicar la licencia de construcción de una casa nueva y la curaduría pide planos estructurales firmados"
-  - "Quiere construir un segundo piso sobre una casa existente y no sabe si la estructura lo soporta"
+  - "Vas a radicar la licencia de construcción de una casa nueva y la curaduría pide planos estructurales firmados"
+  - "Quieres construir un segundo piso sobre una casa existente y no sabes si la estructura lo soporta"
   - "El lote está en ladera y necesita muros de contención además de la estructura de la casa"
   - "El arquitecto entregó el proyecto y falta el componente estructural"
   - "La curaduría devolvió el proyecto por observaciones en el estudio de suelos o en los planos estructurales"
-  - "Compró una casa construida sin licencia y necesita legalizarla o evaluarla"
+  - "Compraste una casa construida sin licencia y necesitas legalizarla o evaluarla"
 entregables:
   - "Planos estructurales de cimentación, columnas o muros, vigas, losas y cubierta"
   - "Memorias de cálculo conforme al Título E o a los títulos A, B y C/D según el caso"
@@ -47,7 +47,7 @@ factores:
   - "Estudio de suelos existente o por realizar"
 cuanto_cuesta: /cuanto-cuesta/diseno-estructural/
 audiencias:
-  - { rol: "Arquitectos", texto: "El componente estructural coordinado con su diseño y listo para curaduría." }
+  - { rol: "Arquitectos", texto: "El componente estructural coordinado con tu diseño y listo para curaduría." }
   - { rol: "Constructores de vivienda", texto: "Planos claros y cuadros de refuerzo que el maestro de obra entiende." }
   - { rol: "Propietarios", texto: "Una casa que cumple la norma, con licencia y sin sorpresas en obra." }
   - { rol: "Dueños de casas existentes", texto: "Verificación antes de construir un segundo piso o legalizar." }
@@ -60,7 +60,7 @@ faqs:
   - question: "¿Qué es el Título E de la NSR-10?"
     answer: "Es el capítulo que fija requisitos simplificados para casas de uno y dos pisos con mampostería confinada o estructural, siempre que cumplan límites de área, regularidad, luces y zona sísmica. Cuando la casa tiene voladizos grandes, plantas irregulares o luces amplias, debe diseñarse con los títulos generales."
   - question: "¿Cuánto vale el diseño estructural de una casa?"
-    answer: "Se cotiza por metro cuadrado y depende de si aplica el Título E, de la pendiente del lote y de si hay muros de contención. Enviamos una propuesta cerrada en menos de 24 horas hábiles con los planos arquitectónicos; en la página de costos explicamos los factores."
+    answer: "Se cotiza por metro cuadrado y depende de si aplica el Título E, de la pendiente del lote y de si hay muros de contención. Preparamos una propuesta cerrada con los planos arquitectónicos; en la página de costos explicamos los factores."
   - question: "¿Puedo construir un segundo piso sobre mi casa?"
     answer: "Depende de la cimentación, las columnas y las vigas existentes. Primero verificamos la estructura actual; si soporta la ampliación, diseñamos el segundo piso; si no, diseñamos el refuerzo necesario. Construir sin verificar es la causa más común de fisuras y asentamientos en casas ampliadas."
   - question: "¿Qué pasa con las casas en ladera?"
@@ -68,7 +68,7 @@ faqs:
   - question: "¿Necesito estudio de suelos para una casa?"
     answer: "Sí, la NSR-10 (Título H) lo exige para toda edificación. Para casas de uno y dos pisos el alcance es menor que para un edificio, pero es obligatorio y define la cimentación."
   - question: "¿Ustedes construyen la casa?"
-    answer: "No. Diseñamos y acompañamos la licencia; la obra la ejecuta el constructor o maestro que usted elija. Podemos explicarle los planos y atender consultas durante la construcción."
+    answer: "No. Diseñamos y acompañamos la licencia; la obra la ejecuta el constructor o maestro que elijas. Podemos explicarte los planos y atender consultas durante la construcción."
 ---
 
 ## Qué exige la NSR-10 a una casa de uno y dos pisos
@@ -91,4 +91,4 @@ La licencia de construcción en la modalidad que corresponda (obra nueva, amplia
 
 ## Cómo lo abordamos
 
-Revisamos la arquitectura y el lote, definimos si aplica el Título E, hacemos o revisamos el estudio de suelos, diseñamos estructura, cimentación y contenciones, y entregamos planos que un maestro de obra pueda leer sin ambigüedad. Acompañamos la radicación en la curaduría de su municipio. La construcción la hace usted con quien elija: PROINCIVIL diseña, no construye.
+Revisamos la arquitectura y el lote, definimos si aplica el Título E, hacemos o revisamos el estudio de suelos, diseñamos estructura, cimentación y contenciones, y entregamos planos que un maestro de obra pueda leer sin ambigüedad. Acompañamos la radicación en la curaduría de tu municipio. La construcción la haces tú con quien elijas: PROINCIVIL diseña, no construye.

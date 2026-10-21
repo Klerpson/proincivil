@@ -4,32 +4,38 @@ layout: default
 {%- comment -%}
   Ficha de proyecto con los datos que pide un comité de compras.
   Front matter: ficha{cliente, ubicacion, anio, sector, servicio, sistema, area, niveles, normativa, plazo, rol, resultado},
-  reto, solucion, resultado (Markdown en cuerpo con H2), galeria[{src,alt}], servicios[slugs], edificacion (slug), zona (slug).
+  galeria[{src,alt,pie}], testimonio{texto,autor,cargo}, servicios[slugs], edificacion (slug).
 {%- endcomment -%}
-<section class="section section--tight">
-  <div class="wrapper">
-    <dl class="ficha">
+<section class="seccion seccion--compacta">
+  <div class="marco flujo">
+    {%- if page.ficha.resultado %}
+    <div class="resumen">
+      <p class="rotulo">Resultado</p>
+      <p class="resumen__texto">{{ page.ficha.resultado }}</p>
+    </div>
+    {%- endif %}
+    <dl class="datos">
       {% for par in page.ficha %}
-      <div class="ficha__item"><dt>{{ par[0] | replace: "_", " " | capitalize }}</dt><dd>{{ par[1] }}</dd></div>
+      <div class="datos__item"><dt>{{ par[0] | replace: "_", " " | capitalize }}</dt><dd>{{ par[1] }}</dd></div>
       {% endfor %}
     </dl>
   </div>
 </section>
 
-<section class="section">
-  <div class="wrapper contenido flow">
+<section class="seccion">
+  <div class="marco texto-largo flujo">
     {{ content }}
   </div>
 </section>
 
 {% if page.galeria %}
-<section class="section section--crema">
-  <div class="wrapper flow">
-    <div class="section-header">
-      <p class="section-header__eyebrow">Imágenes</p>
-      <h2 class="section-header__titulo">Registro del proyecto</h2>
+<section class="seccion seccion--papel">
+  <div class="marco flujo">
+    <div class="encabezado">
+      <p class="rotulo">Imágenes</p>
+      <h2 class="encabezado__titulo">Registro fotográfico de {{ page.titulo_corto | default: page.h1 | strip_html }}</h2>
     </div>
-    <div class="grid" style="--grid-min: 280px">
+    <div class="rejilla rejilla--3">
       {% for g in page.galeria %}
       <figure class="figura">
         <img src="{{ g.src | relative_url }}" alt="{{ g.alt }}" width="800" height="600" loading="lazy" decoding="async">
@@ -42,8 +48,8 @@ layout: default
 {% endif %}
 
 {% if page.testimonio %}
-<section class="section section--bosque">
-  <div class="wrapper">
+<section class="seccion seccion--oscura">
+  <div class="marco">
     <blockquote class="cita">
       <p>{{ page.testimonio.texto }}</p>
       <footer>{{ page.testimonio.autor }}{% if page.testimonio.cargo %}, {{ page.testimonio.cargo }}{% endif %}</footer>
@@ -52,20 +58,30 @@ layout: default
 </section>
 {% endif %}
 
-{% include cta-final.html titulo="¿Tiene un proyecto similar?" texto="Comparta su necesidad y la información disponible. Acordamos una conversación para definir el alcance, los entregables y el plazo de la propuesta." %}
+{%- assign _otros = site.proyectos.size | minus: 1 -%}
+{%- assign _t_otros = _otros | append: " proyectos más de ingeniería estructural, patología e interventoría" %}
+{% include escenas/galeria.html titulo=_t_otros rotulo="Otros proyectos" excluir=page.slug id="otros-proyectos" %}
+
+{%- assign _servicio_min = page.ficha.servicio | downcase -%}
+{%- assign _cta_proy = "¿Necesitas " | append: _servicio_min | append: " como en " | append: page.titulo_corto | append: "?" -%}
+{% include cta-final.html titulo=_cta_proy texto="Cuéntanos tu necesidad y la información disponible. Acordamos una llamada de diagnóstico para definir el alcance, los entregables y el plazo." %}
 
 {% if page.servicios or page.edificacion %}
-<section class="section">
-  <div class="wrapper flow">
-    <div class="section-header">
-      <p class="section-header__eyebrow">Relacionado</p>
-      <h2 class="section-header__titulo">Servicios aplicados en este proyecto</h2>
+<section class="seccion">
+  <div class="marco flujo">
+    <div class="encabezado">
+      <p class="rotulo">Relacionado</p>
+      <h2 class="encabezado__titulo">Servicios aplicados en {{ page.titulo_corto | default: page.h1 | strip_html }}</h2>
     </div>
     {% include relacionados.html coleccion="servicios" slugs=page.servicios %}
     {% if page.edificacion and site.secciones_publicadas contains "edificaciones" %}
       {% assign _ed = site.edificaciones | where: "slug", page.edificacion | first %}
-      {% if _ed %}<p>Ver más proyectos de este tipo: <a href="{{ _ed.url | relative_url }}">{{ _ed.h1 }}</a></p>{% endif %}
+      {% if _ed %}<p><a href="{{ _ed.url | relative_url }}" class="enlace-flecha">Más proyectos de {{ _ed.titulo_corto | default: _ed.h1 | downcase }}</a></p>{% endif %}
     {% endif %}
   </div>
 </section>
 {% endif %}
+
+{%- assign _n = site.proyectos.size -%}
+{%- assign _t = "Ver los " | append: _n | append: " proyectos con sus datos técnicos" %}
+{% include escenas/enlace-mayor.html url="/proyectos/" numero=_n texto=_t banda=true %}

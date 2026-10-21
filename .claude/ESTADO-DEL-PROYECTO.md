@@ -1,6 +1,6 @@
 # Estado del proyecto — PROINCIVIL
 
-**Última actualización:** 2026-10-20
+**Última actualización:** 2026-10-21
 
 ## Iniciativas activas
 
@@ -16,7 +16,7 @@
 | Dominio propio + indexación | ⏳ Bloqueada | Falta que PROINCIVIL compre `proincivil.com`; hasta entonces `vista_previa: true` |
 | Entrega de pendientes al cliente | ✅ 2026-09-22 | `_plans/PENDIENTES-Y-PREGUNTAS-PROINCIVIL.md` y `.pdf` (5 páginas, 11 preguntas) |
 | Fase SEO mensual | ⏳ Arranca al entregar el sitio | Plan de 12 meses en la sección 13 de la investigación |
-| Rediseño visual completo "Pliego" | 🟡 Implementado localmente 2026-10-20, sin commitear | El cliente rechazó el diseño crema/oliva. Nueva dirección en `_plans/direccion-diseno-pliego-2026-10-20.md`; reemplaza `investigacion-web-seo-proincivil.md §10` |
+| Rediseño total «Plano vivo» + contenido según el formulario del 14-10 | 🟡 Home y piloto implementados localmente 2026-10-21, sin commitear | Borrado todo el CSS/JS/markup visual anterior (Pliego y Plano sellado descartados). Dirección: `_plans/direccion-diseno-plano-vivo-2026-10-21.md`; fuente de contenido: `_plans/brief-contenido-2026-10-21.md`. Falta: aprobación visual del cliente, diseño fino de hub/article/project/post y tuteo de la prosa de las colecciones retenidas |
 
 ## Pendientes del cliente (bloquean publicación)
 
@@ -48,10 +48,11 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - 🟡 Formulario inactivo hasta configurar `form_endpoint` (muestra aviso + WhatsApp).
 - 🟡 Nav de escritorio con paneles por `:hover`; en pantallas táctiles grandes (tablet horizontal) el
   panel se abre con el checkbox. Verificar en iPad.
-- 🟡 Rediseño "Pliego" sin capturas antes/después mostradas al cliente; implementado en working tree,
-  nada commiteado. Lighthouse corrido 2026-10-20 (20 páginas, Performance 91/Acc 91/BP 96/SEO 66 — el
-  SEO bajo es `noindex` intencional por `vista_previa: true`, no un defecto). Ver
-  `_plans/direccion-diseno-pliego-2026-10-20.md`.
+- 🟡 Colecciones retenidas (normativa, glosario, zonas, edificaciones, cuánto cuesta): listas de disparadores y datos corregidos, pero la prosa sigue en usted. Pasar a tuteo antes de activarlas.
+- 🟡 Política de datos queda en usted (texto legal). Confirmar con el usuario si también va en tuteo.
+- 🟡 `Portafolio.pdf` y `Flyer Proincivil.pdf` de `_plans/` pesan 0 bytes: pedir de nuevo los archivos al cliente.
+- 🟡 Por confirmar con la clienta: nombre oficial del CEC, si COPNIA se refiere a matrículas del equipo, "Diseño integral" del Hotel Aldea, afirmaciones "15–30 %" y "cero colapsos", testimonio de Energética (viene del sitio anterior, el formulario no trae testimonios).
+- 🟡 Las fotos `hero-estructura` (home) y `estructura-metalica` (piloto) parecen la misma toma: conviene otra foto real para el piloto.
 
 ## Backlog
 
@@ -61,6 +62,60 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-10-21 — Lavado de cara total «Plano vivo» y contenido según el formulario del cliente
+**Contexto:** el usuario pidió borrar todo el diseño (CSS, JS y markup visual), conservar la investigación y estructura SEO, el equipo y las fotos reales, buscar dirección en 21st.dev y reordenar el contenido según `_plans/datos-cliente.csv` (formulario del 14-10), la investigación y `_plans/research/`.
+- Decisiones del usuario: dirección «Plano vivo» (de 4 propuestas), descartar sin guardar la capa sin commitear de Plano sellado, piloto `/servicios/diseno-estructural/`, **tuteo** en todo el sitio, WhatsApp principal +57 319 497 6516 (Kateryn), 14 URLs agrupadas en las 6 familias del formulario, medir antes de crear URLs.
+- Ubersuggest (CO, 21-10): peritaje estructural 20/mes, regalías 30 (informacional), concepto técnico, grietas en columnas y repotenciación sin datos; reforzamiento 170. **Ninguna URL nueva**: todo como H2/FAQ.
+- Diseño reescrito desde cero: tokens azul plano/marfil/ámbar (ámbar solo en conversión, texto azul sobre ámbar 5,96:1), Inter + JetBrains Mono (fuera Playfair y peso 900), barra fija logo + CTA, menú en barra secundaria que se oculta al bajar, portada con ejes de plano que se trazan al cargar y derivan con `animation-timeline` (firma), cotas en tarjetas (apoyo), cajetín sticky en servicio. Todos los layouts e includes con markup nuevo; cero `style=` (honeypot con `hidden`), FAQ exclusivo con `<details name>`. JS nuevo sin dependencias.
+- Contenido: home reordenada (6 familias, 3 diferenciadores, 3 casos del formulario, resultados, equipo, con quién sí/no, normas NSR-10/E.030/AISC 358, CEC). Piloto con E.030/Perú, AISC 358, regalías y 15–30 % desde `_config.yml` (`cifras.ahorro_sobrecostos`). Datos corregidos: 100 % → 97 %, Tacuara (patología multiinstrumento para el anticipo, vulnerabilidad en curso, sin ATC-20 atribuido), promesas de 24 h/horas, frases ambiguas sobre obra, ARTICO y Betulia ampliados, Perú en schema, `email_gerencia` y `cobertura` en `_config.yml`.
+- Corrección de bitácora: los documentos `_plans/direccion-diseno-pliego-2026-10-20.md`, `_plans/direccion-diseno-plano-sellado-2026-10-20.md`, `_plans/seo-prioridades-2026-10-16/` y `_plans/comparacion-brief-proincivil-2026-10-16.md` citados abajo **no existen en este checkout**.
+- Verificado: lint 67/0, build 38 páginas, `validar-site.py` 0, sin clases en HTML sin CSS, 0 `style=`, 0 «100 %» y 0 frases afirmativas de obra en el texto publicado; sin desborde a 390/320 px en 10 páginas de todas las plantillas; `getComputedStyle` de tokens; movimiento reducido deja el plano estático. Lighthouse: ver resultado en la sesión.
+- Lighthouse 20 páginas (móvil): Performance 91 (igual), Accesibilidad 100 (antes 91), Buenas prácticas 96, SEO 66 por `noindex`; 0 links rotos. Corregido después: CLS por fuentes (respaldos con métricas y Google Fonts sin bloquear), `sizes` de retratos, manifest con rutas relativas, reflow en `main.js`.
+- Flujos multiagente: tuteo verificado de las 45 páginas retenidas; revisión adversarial en 5 frentes (33 hallazgos confirmados por 2 escépticos, aplicados: foco azul/ámbar según fondo, Escape devuelve el foco, menú no se oculta con foco dentro, H1 dentro de `<main>`, flotante oculto hasta que JS lo muestra, etiquetas de cifras autónomas, matiz «según PROINCIVIL» en resultados, COPNIA retirado hasta confirmar matrículas, Perú como «atención», aliados como «te referimos empresas con las que hemos trabajado»); subtítulos con dato en los 13 servicios y cifras desde `site.cifras`. Lección: los verificadores compararon contra 8afb6da y revirtieron cambios intencionales; se restauraron a mano.
+- **Feedback del usuario al cierre:** el diseño sigue siendo «básico, un blog bonito». Quiere escenas inmersivas coreografiadas con el scroll que persuadan (ej.: letras de un título que se vuelven fotos y se funden en un CTA a pantalla completa). Propuesta pendiente de aprobación: guion por escenas de home y Diseño estructural + prototipo de 2-3 escenas antes de integrar. La capa actual queda como base técnica (contenido, SEO, accesibilidad).
+- **Animaciones (respuesta al reclamo «no las veo»):** diagnóstico: nada las bloqueaba (Windows con animaciones activas, `prefers-reduced-motion` = no); simplemente casi no existían (ejes de la portada 1,1 s al cargar + hovers). Se reescribió `_includes/css/motion.css` con escenas ligadas al scroll (`animation-timeline`): barrido de títulos, trazo de rótulos y cotas, secciones oscuras que se abren desde una ventana, cascada de tarjetas, fotos que se revelan como plano impreso, retratos de gris a color, línea de proceso que se dibuja, tira que se desliza, cierre a pantalla completa con luz giratoria y botón con pulso. Portada: H1 que se asienta, subrayado que se traza, foto que se abre y crece con el scroll, resplandor que sigue el cursor. 130 animaciones activas en la home (antes ~5). Firefox y movimiento reducido: estático. Video: `_plans/animaciones-home-2026-10-21.mp4`. Corregido bug Liquid: `| append` en títulos por defecto pegaba texto a títulos explícitos (FAQ de la home, servicios).
+- **Escenas inspiradas en 21st.dev (el usuario: «mucho mejor», pidió más):** marquesina gigante de normas y servicios (Scroll Text Marquee), las 6 familias como paneles a pantalla completa que se apilan y se hunden (Stacking Cards/Services Stack), galería horizontal fija de los 10 proyectos (Horizontal Scroll Gallery), escena «ESTRUCTURA» con foto dentro de las letras que se atraviesa hasta un CTA a pantalla completa (idea del usuario), títulos palabra por palabra (Text Reveal Mask) y botón magnético con foco de luz. 322 animaciones en la home; sin desborde a 390/320. Lección: escalar ×28 la palabra con foto tumbó la pestaña de pruebas (capa gigante); se cambió a ×4 + revelado circular.
+- **Fotos de archivo:** 7 imágenes del Historic American Engineering Record (Library of Congress, dominio público) vía Wikimedia Commons, a escala de grises y con el borde del negativo recortado (`img/fotos/stock-*`, 768/1200/1920, JPG+WebP). Solo como ambiente; nunca como proyectos de PROINCIVIL. Créditos en `_plans/stock/creditos.md`. Unsplash (401) y Openverse (timeout) no respondieron. Requieren aprobación de la clienta. Video: `_plans/escenas-home-2026-10-21.mp4`.
+- **Ajustes pedidos tras «¡lo lograste!»:** (1) desborde horizontal en móvil (420 px en 390): lo causaba la foto de «Independencia técnica» escalada 1,25× por la animación de revelado en un contenedor sin recorte, y 5 px más por la foto de la cabecera interior; se recorta dentro de `<picture>` y `body { overflow-x: clip }` queda como red de seguridad (no rompe sticky). Verificado: 0 px de exceso en 10 páginas a 390 y 320. (2) Paneles de servicios en escritorio: texto centrado en vertical sobre sombra lateral, con entradas individuales (número desde la izquierda, rótulo que se traza, título palabra por palabra, párrafo de desenfocado a nítido, enlaces en cascada). (3) Galería de proyectos: más separación, fotos en 4:3 (proporción real de las fuentes), inclinación más suave, encabezado alineado. La foto del Hotel The One (`estructura-obra`, 380 px) se ve borrosa: pedir una de mayor resolución. (4) Equipo: inclinación 3D según el cursor, línea de escaneo y subrayado del nombre.
+- **Imágenes con IA desde Canva Pro (pedido del usuario):** 5 imágenes de ambiente (`img/fotos/ia-*`): Valle de Aburrá al atardecer (fondo del CTA final en todas las páginas), mesa con planos y modelo 3D («Cómo trabajamos» y cabecera del piloto Diseño estructural), conexión de acero, grieta en columna con regleta y ladera con muro (paneles 1, 2 y 4; el arriostramiento HAER pasó al panel de vulnerabilidad). Saturación −18 % para convivir con la paleta. Créditos y advertencia en `_plans/stock/creditos.md`: son ilustraciones, no proyectos; revisar condiciones de uso comercial de Canva y aprobación de la clienta. Quedan sin uso `stock-arco-concreto`, `stock-plano-cercha` y `stock-pila-cimentacion`.
+- **Casos y enlaces de salida (pedido: «saturado de texto y sin animación»):** la sección de casos de la home pasa a escena dividida (referencia 21st: Sticky Content Wrapper / Scroll 01). En escritorio, la foto queda fija a la izquierda y cambia con un barrido `clip-path` al caso activo (IntersectionObserver en `js/motion.js`, clases `caso--activo`, `casos__medio--activo`, `casos--vivo`). Cada caso muestra número, lugar, título enlazado, el resultado en grande y 3 datos; Situación / Qué hicimos / Resultado van en `<details>` «Ver el caso completo» (siguen en el HTML). En móvil, cada caso lleva su foto encima. Fotos: Tacuara `fachada-vidrio`, ARTICO `stock-plano-cercha` y Betulia `institucion-educativa`, todas rotuladas «Imagen de referencia». «Ver los 14 servicios» y «Ver todos los proyectos» pasan a `.enlace-mayor` (referencia: Arrow Fill Button / Flip Links): banda con contador `site.servicios.size` / `site.proyectos.size`, texto grande, flecha en círculo y relleno al pasar, en `--trazo`/azul y nunca en ámbar. Corregido: el `\s` del JS que divide palabras cortaba en el espacio duro («97 / %»).
+- **Escenas en todo el sitio (pedido: «haz lo que aprendiste en el resto de la web… reutilizables»):** las escenas de la home pasan a `_includes/escenas/` (paneles, galería, casos, zoom, marquesina, foco y enlace mayor), con CSS en `_includes/css/escenas.css` y datos en `_data/familias.yml` (6 familias, fuente única para la home y `/servicios/`), `_data/marquesinas.yml` y el front matter. La home se reescribió con los includes y sale igual. Uso:
+  - cabecera interior con los ejes del plano (`plano-ejes.html`, antes `portada__plano`), entrada del H1 y apertura de la foto;
+  - `/servicios/` con los paneles (H2 largos) y la marquesina;
+  - los 14 servicios con «cuándo» en lista en foco, entregables en pasos, casos con foto fija si hay 2 o más proyectos, zoom con una palabra por servicio (`zoom:` en el front matter, títulos sacados del propio contenido; las cifras salen de `site.cifras` con `{clave}`) y banda hacia el hub;
+  - `/proyectos/` con galería, casos (bloque `caso:` en Tacuara, ARTICO y Betulia; los demás usan su ficha) y marquesina de normas;
+  - fichas con el resultado destacado, galería de los otros proyectos y banda;
+  - nosotros con marquesina, misión con inclinación 3D (`.inclinable`) y banda hacia independencia; independencia técnica con zoom «INDEPENDENCIA»;
+  - posts y artículos con barra de progreso de lectura solo CSS (`.progreso`).
+
+  La marquesina de credenciales no menciona COPNIA ni el CEC (pendientes de confirmar). Borradas las clases muertas `.familias`, `.pieza--destacada`, `.pieza__enlaces` y `.lista--dos`. Corregido: el título del cierre de las fichas salía en minúscula («¿necesitas…»). Documentado en la skill `dev-jekyll` (catálogo de escenas) y en `.claude/docs/frontmatter-variables.md`. Pendiente: fotos de baja resolución (Hotel Aldea `estructura-metalica`, Hotel The One) se ven ampliadas en la foto fija de los casos.
+- Sin commit (pendiente de revisión del usuario).
+
+### 2026-10-20 — Rediseño "Plano sellado": interactividad con 21st.dev como referencia visual
+**Contexto:** el usuario pidió borrar el diseño CSS/JS existente conservando contenido, datos e imágenes,
+y rehacerlo a mano usando el conector de 21st.dev como inspiración ("inmersivo e interactivo"), acorde a
+la temática de ingeniería estructural. Detalle completo, piezas de 21st usadas y lo descartado en
+`_plans/direccion-diseno-plano-sellado-2026-10-20.md`.
+- Checkpoint de seguridad commiteado antes de tocar nada (`8afb6da`): rediseño "Pliego" + parallax +
+  motion.css/js que estaban sin commitear desde sesiones anteriores. `.impeccable/` añadido a
+  `.gitignore` (caché de herramienta, no contenido del proyecto).
+- Capa de interacción nueva, Nivel 1 CSS + Nivel 2 JS mínimo (sin dependencias): resplandor que sigue el
+  cursor + cuatro marcas de registro de esquina (mismo trazo que `.ficha`) en `.tile--enlace`
+  (`_includes/css/secciones.css`, propaga a las 14 fichas de servicio + 9 de proyectos vía
+  `tarjeta.html`) y en `.trio__item` de la home; revelado de tinta del wordmark fantasma del pie
+  (`_includes/css/footer.css`). Un único listener genérico en `js/main.js`
+  (`[data-spotlight]` + `pointermove`, activo solo con puntero fino).
+- Paleta y tipografía de "Pliego" (crema + acento rojo, Inter 900 + Playfair itálica) se conservaron sin
+  rehacer: el usuario no pidió explícitamente cambiar el color, solo la interactividad. Pendiente
+  confirmar si el rechazo del cliente a "Pliego" incluía eso.
+- Comparador antes/después (patrón de 21st) documentado pero **no implementado**: no hay fotografía
+  antes/después real en `_data/fotos.yml` (pendiente #4 de este archivo); se evitó inventar el contenido.
+- Verificado: build 38 páginas, `validar-site.py` 0 problemas, mecanismo de revelado confirmado por
+  `getComputedStyle` y forzado visual, sin errores de consola propios. **Sin verificar en navegador real
+  a 390/320 px**: la ventana del automatizador de Chrome de esta sesión no bajó de 500 px de ancho
+  (límite de la herramienta); repetir antes de dar el lote por cerrado.
+- Sin commitear (pendiente de revisión visual del usuario).
 
 ### 2026-10-20 — Rediseño visual completo "Pliego" (reemplaza crema/oliva)
 **Contexto:** el cliente dijo que el diseño actual (crema/oliva/bosque, serif editorial, inspirado en

@@ -6,9 +6,9 @@ title: "Betulia e Hispania: diseños educativos y deportivos | PROINCIVIL"
 description: "Diseños para infraestructura educativa y deportiva en Betulia e Hispania, Antioquia: contenciones, canchas, cubiertas y formulación técnica presentada al SGR."
 h1: "Betulia e Hispania: diseños para educación y deporte"
 excerpt: "Diseños de contenciones, canchas y cubiertas metálicas, con documentación técnica para la formulación de proyectos ante el Sistema General de Regalías."
-hero: "carport-metalico"
-hero_alt: "Cubierta metálica inclinada para paneles solares"
-image: "/img/fotos/carport-metalico-330.jpg"
+hero: "institucion-educativa"
+hero_alt: "Institución educativa de dos niveles en concreto reforzado"
+image: "/img/fotos/institucion-educativa-440.jpg"
 sin_cta_cabecera: true
 ficha:
   cliente: "Proyectos municipales de Betulia e Hispania"
@@ -19,12 +19,22 @@ ficha:
   niveles: "No aplica"
   normativa: "NSR-10 Títulos A, B, C, F y H"
   rol: "Diseñador estructural y consultor para la formulación"
-  resultado: "Diseños y formulación técnica presentados ante el SGR"
+  resultado: "Diseños aprobados desde la primera versión y formulación presentada ante el SGR"
+caso:
+  lugar: "Betulia e Hispania, Antioquia"
+  foto: "institucion-educativa"
+  foto_nota: "Imagen de referencia"
+  titulo: "Infraestructura educativa y deportiva"
+  resultado: "Proyectos formulados ante Regalías con diseños aprobados desde la primera versión"
+  datos: ["3 colegios", "Canchas y muros", "Formulación SGR"]
+  situacion: "Tres instituciones educativas y equipamiento deportivo municipal financiados con regalías, con diseños que debían pasar los filtros de viabilidad del SGR."
+  hicimos: "Diseño de muros de contención, canchas y cubiertas metálicas, y formulación técnica completa ante el SGR: memoria técnica, presupuestos y estudios de soporte."
+  logro: "Proyectos formulados y presentados ante Regalías, con diseños aprobados desde la primera versión."
 servicios: [diseno-estructural, muros-de-contencion-y-taludes, estructuras-metalicas]
 edificacion: instituciones-educativas
 zona: antioquia
 datePublished: 2026-09-22
-dateModified: 2026-10-16
+dateModified: 2026-10-21
 ---
 
 ## El reto: convertir necesidades de infraestructura en proyectos formulados
@@ -37,16 +47,16 @@ La experiencia comunicada por el cliente comprende tres instituciones educativas
 
 El trabajo incluyó diseños de muros de contención, canchas y cubiertas metálicas. La formulación reunió documentación técnica, presupuestos y estudios de soporte para presentar los proyectos ante el SGR. Cada componente aporta información distinta: los planos definen la solución, los presupuestos organizan sus cantidades y los estudios dan sustento a las decisiones del proyecto.
 
-Puede revisar los alcances de [diseño estructural]({{ site.baseurl }}/servicios/diseno-estructural/), [muros de contención]({{ site.baseurl }}/servicios/muros-de-contencion-y-taludes/) y [estructuras metálicas]({{ site.baseurl }}/servicios/estructuras-metalicas/). En una formulación pública, la coordinación entre estos documentos permite presentar un expediente técnico coherente para su revisión.
+Puedes revisar los alcances de [diseño estructural]({{ site.baseurl }}/servicios/diseno-estructural/), [muros de contención]({{ site.baseurl }}/servicios/muros-de-contencion-y-taludes/) y [estructuras metálicas]({{ site.baseurl }}/servicios/estructuras-metalicas/). En una formulación pública, la coordinación entre estos documentos permite presentar un expediente técnico coherente para su revisión.
 
-## El resultado: formulación presentada, sin atribuir obra ejecutada
+## El resultado: diseños aprobados desde la primera versión y proyectos presentados ante el SGR
 
-Los proyectos fueron formulados y presentados ante el Sistema General de Regalías. Ese es el hito confirmado por el cliente. La presentación no permite afirmar que los recursos ya fueron aprobados, que se adjudicó la construcción o que las instalaciones están construidas y en servicio.
+Los proyectos fueron formulados y presentados ante el Sistema General de Regalías, con toda la ingeniería de respaldo. Según PROINCIVIL, los diseños se aprobaron con criterio técnico y normativo desde la primera versión, e hicieron llegar ingeniería estructural certificada a comunidades que de otro modo no acceden a ella. La presentación no permite afirmar que los recursos ya fueron aprobados, que se adjudicó la construcción o que las instalaciones están construidas y en servicio.
 
 La etapa de consultoría deja información para las decisiones posteriores de las entidades responsables. Los resultados de financiación y ejecución son etapas diferentes y no se presentan aquí como logros concluidos.
 
-## Nuestro papel
+## Diseñador estructural y formulador ante el SGR; la obra no la ejecuta PROINCIVIL
 
 PROINCIVIL diseña, evalúa y supervisa; **no ejecuta obra**. Su participación en estos proyectos corresponde a los diseños y al soporte técnico de la formulación. Para un proyecto educativo o deportivo similar, el primer paso es revisar ubicación, necesidad de infraestructura, documentos existentes y estado de la formulación antes de acordar los entregables.
 
-La imagen de cabecera es referencial y no identifica una cubierta construida en estos municipios.
+La imagen de cabecera es referencial y no identifica una institución de estos municipios.

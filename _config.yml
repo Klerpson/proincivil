@@ -52,12 +52,14 @@ empresa:
   horario: "Lunes a viernes, 8:00 a. m. – 6:00 p. m."
 
 contact:
-  whatsapp: "573226270723"            # Ing. Camilo Tamayo — canal principal
-  whatsapp_display: "+57 322 627 0723"
-  whatsapp_2: "573194976516"          # Andrea Palacio — gerencia
-  whatsapp_2_display: "+57 319 497 6516"
+  whatsapp: "573194976516"            # Kateryn Andrea Palacio — canal principal (formulario 2026-10-14, primer número)
+  whatsapp_display: "+57 319 497 6516"
+  whatsapp_2: "573226270723"          # Ing. Camilo Tamayo — dirección técnica
+  whatsapp_2_display: "+57 322 627 0723"
   email: "proyectos@proincivil.com"   # Correo público confirmado en el formulario del cliente, 2026-10-14 (Z2).
-  respuesta: "Revisamos su información y acordamos el alcance y los plazos"
+  email_gerencia: "gerencia@proincivil.com"   # Contacto principal según el formulario (E2).
+  respuesta: "Revisamos tu información y acordamos el alcance y los plazos"
+  cobertura: ["Colombia", "Perú"]     # Formulario: posicionamiento Colombia y Perú, servicio internacional.
 
 social:
   instagram: "https://www.instagram.com/proincivil/"
@@ -71,10 +73,11 @@ cifras:
   anios: "+7"
   proyectos: "+100"
   m2_disenados: "+41.000"
-  aprobacion_curadurias: "97 %"   # Histórico comunicado por el cliente en M2/O2 del formulario, 2026-10-14.
+  aprobacion_curadurias: "97 %"   # Histórico comunicado por el cliente en M2/O2 del formulario, 2026-10-14.
   m2_supervisados: "+20.000"
   m2_educacion: "+13.000"
   m2_fotovoltaico: "+3.000"
+  ahorro_sobrecostos: "15–30 %"   # Formulario 2026-10-14 (resultados): reducción de sobrecostos estructurales. Afirmación del cliente, PENDIENTE aprobación escrita.
 
 equipo:
   # Nombres, formación y fotos entregados por el usuario (2026-10-16).

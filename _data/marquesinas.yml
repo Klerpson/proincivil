@@ -1,0 +1,8 @@
+# Textos de las marquesinas (decorativas, aria-hidden: lo que dicen ya está en el HTML de la página).
+# fila1 grande alterna relleno y contorno; fila2 pequeña va en sentido contrario.
+normas:
+  fila1: ["Diseño estructural NSR-10", "E.030 Perú", "AISC 358", "Patología estructural", "Vulnerabilidad sísmica", "Geotecnia", "Interventoría", "BIM"]
+  fila2: ["Diseñamos", "Evaluamos", "Supervisamos", "No ejecutamos obra", "Colombia y Perú"]
+credenciales:
+  fila1: ["NSR-10 Colombia", "E.030 Perú", "AISC 358", "Título A.10", "Ley 1796 de 2016"]
+  fila2: ["Independencia técnica", "Sin conflicto de interés", "No ejecutamos obra", "Colombia y Perú"]

@@ -24,7 +24,7 @@ faqs:
   - question: "¿Qué es la supervisión técnica según la NSR-10?"
     answer: "Es la verificación de que la construcción de la estructura se realice conforme a los planos, las especificaciones y el reglamento, ejercida por un profesional con la experiencia que exige el Título I. Incluye control de materiales mediante ensayos, control de procesos constructivos y registro documental de todo lo verificado."
   - question: "¿Cuándo es obligatoria la supervisión técnica?"
-    answer: "La Ley 400 de 1997 y la NSR-10 la exigían para edificaciones que superaran cierta área construida; la Ley 1796 de 2016 amplió su obligatoriedad a más edificaciones y exigió que sea independiente del constructor. Los umbrales por área y número de pisos están en la ley y su reglamentación; verifíquelos para su proyecto, porque muchas edificaciones medianas que antes no la requerían ahora sí."
+    answer: "La Ley 400 de 1997 y la NSR-10 la exigían para edificaciones que superaran cierta área construida; la Ley 1796 de 2016 amplió su obligatoriedad a más edificaciones y exigió que sea independiente del constructor. Los umbrales por área y número de pisos están en la ley y su reglamentación; verifícalos para tu proyecto, porque muchas edificaciones medianas que antes no la requerían ahora sí."
   - question: "¿Quién puede ser supervisor técnico?"
     answer: "Un ingeniero civil o arquitecto con matrícula profesional y la experiencia mínima en construcción o supervisión que fija el Título I, que no tenga vínculo con el constructor de la obra. Puede apoyarse en un equipo de residentes e inspectores bajo su responsabilidad."
   - question: "¿La supervisión técnica es lo mismo que la interventoría?"
@@ -41,7 +41,7 @@ No sustituye al director de obra del constructor ni al interventor del contrato;
 
 ## Cuándo es obligatoria {#obligatoria}
 
-La Ley 400 de 1997 y la versión original del Título I hacían obligatoria la supervisión técnica para edificaciones que superaran cierta área construida, y voluntaria para el resto. La [Ley 1796 de 2016]({{ site.baseurl }}/normativa/ley-1796-de-2016/), reglamentada por el Decreto 945 de 2017 que modificó este título, amplió su obligatoriedad y exigió que sea **independiente**: el supervisor no puede tener vínculo con el constructor. Los umbrales se expresan en área construida y número de pisos y tienen excepciones; verifíquelos para su proyecto antes de iniciar obra, porque la ausencia de supervisión cuando era obligatoria bloquea la certificación de ocupación.
+La Ley 400 de 1997 y la versión original del Título I hacían obligatoria la supervisión técnica para edificaciones que superaran cierta área construida, y voluntaria para el resto. La [Ley 1796 de 2016]({{ site.baseurl }}/normativa/ley-1796-de-2016/), reglamentada por el Decreto 945 de 2017 que modificó este título, amplió su obligatoriedad y exigió que sea **independiente**: el supervisor no puede tener vínculo con el constructor. Los umbrales se expresan en área construida y número de pisos y tienen excepciones; verifícalos para tu proyecto antes de iniciar obra, porque la ausencia de supervisión cuando era obligatoria bloquea la certificación de ocupación.
 
 ## Quién puede ejercerla {#quien}
 

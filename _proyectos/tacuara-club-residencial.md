@@ -21,6 +21,16 @@ ficha:
   normativa: "NSR-10 Título A.10 para el estudio de vulnerabilidad"
   rol: "Consultor estructural independiente"
   resultado: "Diagnóstico concluido y soporte a la solicitud de anticipo"
+caso:
+  lugar: "Dosquebradas, Risaralda"
+  foto: "fachada-vidrio"
+  foto_nota: "Imagen de referencia"
+  titulo: "Tacuara Club Residencial P.H."
+  resultado: "Diagnóstico patológico completo para pedir el anticipo a la aseguradora"
+  datos: ["6 torres", "+780 apartamentos", "Ensayos y dron"]
+  situacion: "Conjunto de 6 torres y más de 780 apartamentos afectado por un sismo. La administración necesitaba soporte técnico para pedir el anticipo a la aseguradora."
+  hicimos: "Patología estructural con pruebas de núcleo, esclerometría, regatas, exploración geotécnica, verticalidad de las torres y levantamiento con dron."
+  logro: "Diagnóstico completo para la gestión ante la aseguradora. El estudio de vulnerabilidad sísmica para el plan de repotenciación está en curso."
 servicios: [evaluacion-post-sismo, evaluacion-estructural, vulnerabilidad-sismica]
 edificacion: propiedad-horizontal
 zona: colombia
@@ -40,7 +50,7 @@ PROINCIVIL realizó el diagnóstico patológico con actividades de extracción d
 
 El diagnóstico ya fue concluido y sirvió de soporte para la **solicitud de anticipo ante la aseguradora**. Esto describe el uso del informe técnico: no equivale a confirmar que la aseguradora haya reconocido o pagado una indemnización.
 
-Puede consultar qué comprende una [evaluación estructural y diagnóstico patológico]({{ site.baseurl }}/servicios/evaluacion-estructural/) y cómo se define la documentación para una copropiedad.
+Puedes consultar qué comprende una [evaluación estructural y diagnóstico patológico]({{ site.baseurl }}/servicios/evaluacion-estructural/) y cómo se define la documentación para una copropiedad.
 
 ## Estudio de vulnerabilidad en proceso
 

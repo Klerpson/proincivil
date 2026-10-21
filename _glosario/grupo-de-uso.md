@@ -29,7 +29,7 @@ La NSR-10 parte de una idea simple: después de un sismo, hay edificaciones que 
 
 Los criterios exactos de cada grupo están en el [Título A]({{ site.baseurl }}/normativa/nsr-10/titulo-a/).
 
-## Por qué importa en su proyecto
+## Por qué importa en tu proyecto
 
 Un colegio de grupo III se diseña para un 25 % más de fuerza sísmica que una vivienda con la misma geometría y suelo, y un hospital para un 50 % más. Además, los grupos III y IV tienen exigencias adicionales: mayor control de [deriva]({{ site.baseurl }}/glosario/deriva/), diseño obligatorio de elementos no estructurales para que no bloqueen salidas ni dañen equipos, y, en el caso de las edificaciones indispensables existentes, la obligación de haber sido evaluadas y reforzadas según la Ley 400.
 
@@ -39,4 +39,4 @@ El grupo de uso también puede cambiar con el tiempo: convertir una bodega en sa
 
 Los más de 13.000 m² de infraestructura educativa pública que hemos diseñado en Antioquia —Pavarandó Grande, Puerto Perales, Yerbal— son edificaciones de grupo III. Eso significó coeficiente de importancia 1,25, control de derivas más estricto y, en Pavarandó, pórticos de disipación especial con chequeo de ductilidad. Un colegio no puede ser la edificación más débil del municipio: suele ser el refugio después del sismo.
 
-Si no sabe en qué grupo cae su edificación, es la primera pregunta que respondemos al cotizar un [diseño estructural]({{ site.baseurl }}/servicios/diseno-estructural/).
+Si no sabes en qué grupo cae tu edificación, es la primera pregunta que respondemos al cotizar un [diseño estructural]({{ site.baseurl }}/servicios/diseno-estructural/).

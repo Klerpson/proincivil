@@ -21,7 +21,7 @@ Un material dúctil, como el acero, se estira mucho antes de romperse; uno frág
 
 En un sismo eso marca la diferencia entre un edificio dañado y uno colapsado: la estructura dúctil disipa la energía deformándose; la frágil la acumula hasta romperse.
 
-## Por qué importa en su proyecto
+## Por qué importa en tu proyecto
 
 La NSR-10 no diseña las edificaciones para resistir el sismo severo en el rango elástico —sería prohibitivo—. Las diseña para fuerzas reducidas por un coeficiente R que depende de la ductilidad del sistema, a cambio de exigir que esa ductilidad exista de verdad. Por eso el [Título A]({{ site.baseurl }}/normativa/nsr-10/titulo-a/) define tres niveles de capacidad de disipación de energía —[DMI, DMO y DES]({{ site.baseurl }}/glosario/des-dmo-dmi/)— y los Títulos C y F fijan para cada uno el detallado que la garantiza: confinamiento con [estribos]({{ site.baseurl }}/glosario/estribos/), relación columna fuerte-viga débil, longitudes de anclaje, conexiones precalificadas.
 
@@ -31,4 +31,4 @@ La ductilidad no se compra con más concreto: se construye con el acero bien col
 
 En la I.E. Pavarandó Grande (Mutatá), en zona de amenaza alta y suelo tipo C, diseñamos pórticos de disipación especial (DES) con **chequeo explícito de ductilidad** en vigas y columnas: verificamos que las articulaciones plásticas se formaran en las vigas y que las columnas tuvieran el confinamiento para acompañar esa rotación. Es un colegio, grupo de uso III: debe seguir en pie y operativo después del sismo de diseño.
 
-Si su edificación ya está construida y no sabe con qué ductilidad se detalló, una [evaluación de vulnerabilidad sísmica]({{ site.baseurl }}/servicios/vulnerabilidad-sismica/) lo determina; el reforzamiento, cuando hace falta, lo diseñamos nosotros y lo ejecuta el constructor que usted elija.
+Si tu edificación ya está construida y no sabes con qué ductilidad se detalló, una [evaluación de vulnerabilidad sísmica]({{ site.baseurl }}/servicios/vulnerabilidad-sismica/) lo determina; el reforzamiento, cuando hace falta, lo diseñamos nosotros y lo ejecuta el constructor que elijas.

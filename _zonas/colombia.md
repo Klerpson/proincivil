@@ -7,7 +7,7 @@ h1: "Ingeniería estructural en toda Colombia: coordinación remota, criterio lo
 eyebrow: "Zonas · Colombia"
 excerpt: "Diseñamos sedes comerciales en varias ciudades para una misma marca y carports fotovoltaicos para empresas solares con proyectos en todo el país. El diseño y la revisión se coordinan de forma remota; las visitas se programan donde hacen falta."
 hero: "hero-estructura"
-hero_alt: "Estructura metálica de un proyecto diseñado por PROINCIVIL"
+hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 image: "/img/fotos/hero-estructura-1200.jpg"
 badges:
   - "Sedes comerciales a nivel nacional"
@@ -27,7 +27,7 @@ cuando:
   - "Una empresa de energía solar necesita diseños de carports y cubiertas para proyectos en distintas regiones"
   - "Un proyecto en Bogotá, la Costa, el Eje Cafetero o el Tolima necesita revisión independiente o interventoría de diseño"
   - "La curaduría de otra ciudad exige un ajuste estructural y el diseñador original no responde"
-  - "Busca una segunda opinión técnica independiente para un proyecto fuera de Antioquia"
+  - "Buscas una segunda opinión técnica independiente para un proyecto fuera de Antioquia"
 entregables:
   - "Diseño estructural con los parámetros sísmicos y de viento del municipio del proyecto"
   - "Diseños tipo replicables para cadenas y proyectos fotovoltaicos multi-sede"
@@ -76,4 +76,4 @@ Diseño de sedes tipo para cadenas, diseño de estructuras fotovoltaicas, revisi
 
 ## Cómo trabajamos
 
-Envíenos la ubicación, los planos y el alcance; en 24 horas hábiles recibe una propuesta que incluye las visitas necesarias. La obra la ejecuta el constructor que usted elija en su ciudad: PROINCIVIL diseña, evalúa y supervisa, no construye.
+Envíanos la ubicación, los planos y el alcance; acordamos una llamada de diagnóstico y una propuesta que incluye las visitas necesarias. La obra la ejecuta el constructor que elijas en tu ciudad: PROINCIVIL diseña, evalúa y supervisa, no construye.

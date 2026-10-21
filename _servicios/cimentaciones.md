@@ -6,7 +6,7 @@ title: "Diseño de cimentaciones: zapatas, pilotes, losas y pilas | PROINCIVIL"
 description: "Diseño de cimentaciones conforme a NSR-10: zapatas, losas, pilas con campana, pilotes y micropilotes para edificaciones en Medellín y Antioquia. Del suelo al plano."
 h1: "Diseño de cimentaciones superficiales y profundas"
 eyebrow: "Servicio · Diseño"
-excerpt: "Zapatas, losas, pilas y pilotes dimensionados con el suelo real de su lote y la carga real de su estructura: ni la cimentación heroica que dispara el presupuesto ni la que se asienta a los dos años."
+excerpt: "Zapatas, losas, pilas y pilotes dimensionados con el suelo real de tu lote y la carga real de tu estructura: ni la cimentación heroica que dispara el presupuesto ni la que se asienta a los dos años."
 hero: "detalle-concreto"
 hero_alt: "Encuentro de viga y columna en concreto reforzado"
 image: "/img/fotos/detalle-concreto-440.jpg"
@@ -15,19 +15,25 @@ badges:
   - "Zapatas, losas, pilas, pilotes, micropilotes"
   - "Suelos de ladera y suelos blandos"
   - "No ejecutamos obra"
-cta_texto: "Cotizar diseño de cimentación"
+cta_texto: "Conversemos sobre tu cimentación"
 cta_secundario: { url: "/servicios/geotecnia-estudio-de-suelos/", texto: "Primero, el estudio de suelos" }
 serviceType: "Diseño de cimentaciones"
 resumen: "El diseño de cimentaciones define cómo la estructura transmite sus cargas al suelo: zapatas aisladas o corridas y losas cuando el suelo es competente cerca de la superficie; pilas, pilotes o micropilotes cuando hay que buscar un estrato firme en profundidad. PROINCIVIL lo diseña a partir del estudio geotécnico y conforme a los Títulos H y C de la NSR-10."
+zoom:
+  palabra: "CIMIENTO"
+  textura: "ladera"
+  titulo: "Cimentaciones diseñadas con el estudio de suelos de tu lote, sin sobredimensionar"
 datePublished: 2026-09-22
 dateModified: 2026-09-22
+cuando_titulo: "Pilas, ladera o recalce: seis casos en los que necesitas diseñar la cimentación"
 cuando:
-  - "El estudio de suelos recomienda cimentación profunda y necesita el diseño de pilas o pilotes"
-  - "Va a construir en ladera o sobre llenos y las zapatas convencionales no son viables"
-  - "Amplía en altura una edificación existente y la cimentación actual debe verificarse o recalzarse"
+  - "El estudio de suelos recomienda cimentación profunda y necesitas el diseño de pilas o pilotes"
+  - "Vas a construir en ladera o sobre llenos y las zapatas convencionales no son viables"
+  - "Amplías en altura una edificación existente y la cimentación actual debe verificarse o recalzarse"
   - "Una estructura muestra asentamientos diferenciales y hay que diseñar el recalce"
-  - "Diseña una nave, un carport o un equipo pesado con cargas concentradas en el suelo"
-  - "Quiere comparar zapatas, losa y pilas para decidir la opción más económica con el suelo de su lote"
+  - "Diseñas una nave, un carport o un equipo pesado con cargas concentradas en el suelo"
+  - "Quieres comparar zapatas, losa y pilas para decidir la opción más económica con el suelo de tu lote"
+entregables_titulo: "Planos, memorias y cantidades de cimentación conforme a los Títulos H y C de la NSR-10"
 entregables:
   - "Diseño de la cimentación seleccionada con memorias de cálculo geotécnico y estructural"
   - "Planos de cimentación: plantas, secciones, refuerzo, cotas de desplante y detalles de unión con columnas"
@@ -35,25 +41,30 @@ entregables:
   - "Diseño de vigas de amarre, muros de sótano y elementos de contención asociados"
   - "Especificaciones de excavación, concreto, refuerzo y control de calidad de pilas o pilotes"
   - "Cantidades de obra de la cimentación"
+despues_titulo: "Curaduría y obra: verificamos el suelo y controlamos pilas y pilotes sin ejecutar la obra"
 despues:
   - "Radicación con el diseño estructural completo ante la curaduría"
   - "Verificación en obra de que el suelo encontrado corresponde al estudiado"
   - "Control de calidad de pilas y pilotes durante la ejecución, sin ejecutar la obra"
   - "Ajustes de diseño si el suelo real difiere del previsto"
+factores_titulo: "Cinco factores que definen el alcance del diseño de cimentaciones"
 factores:
   - "Tipo de cimentación: superficial o profunda"
   - "Cargas de la estructura y número de niveles"
   - "Complejidad del suelo: estratos blandos, nivel freático, ladera"
   - "Número de elementos y variedad de tipos de cimentación en el proyecto"
   - "Interacción con sótanos, vecinos y contenciones"
+audiencias_titulo: "Cimentaciones para constructoras, arquitectos, propietarios en ladera e industria y energía"
 audiencias:
   - { rol: "Constructoras y promotores", texto: "La cimentación es la partida más incierta del presupuesto; un diseño ajustado la vuelve predecible." }
   - { rol: "Arquitectos y diseñadores", texto: "Cimentación coordinada con sótanos, tanques y niveles del proyecto." }
   - { rol: "Propietarios en ladera", texto: "Pilas y contenciones diseñadas para el suelo real del lote." }
   - { rol: "Empresas industriales y de energía", texto: "Cimentaciones para naves, equipos y estructuras fotovoltaicas." }
+proyectos_titulo: "Pilas con campana en Mutatá, un hotel en Puerto Triunfo y escenarios deportivos en Betulia"
 proyectos: [ie-pavarando-grande-mutata, hotel-aldea-puerto-triunfo, infraestructura-deportiva-betulia]
 relacionados: [geotecnia-estudio-de-suelos, diseno-estructural, muros-de-contencion-y-taludes, reforzamiento-estructural]
 normativa: [titulo-h, titulo-c, titulo-a, nsr-10]
+faqs_titulo: "Preguntas sobre zapatas, pilas, pilotes y losas de cimentación"
 faqs:
   - question: "¿Qué tipos de cimentación existen?"
     answer: "Las superficiales transmiten la carga a estratos cercanos a la superficie: zapatas aisladas, zapatas corridas, zapatas combinadas y losas de cimentación. Las profundas buscan un estrato firme en profundidad: pilas, pilotes hincados o preexcavados, micropilotes y caissons. La elección depende del suelo, de la carga y de la economía del proyecto."
@@ -68,7 +79,7 @@ faqs:
   - question: "¿Puedo construir sin estudio de suelos y diseñar la cimentación por experiencia?"
     answer: "No en un proyecto con licencia: la NSR-10 exige el estudio geotécnico como base del diseño. Y en la práctica, diseñar sin conocer el suelo es la causa más frecuente de asentamientos y de cimentaciones sobredimensionadas."
   - question: "¿Ustedes construyen la cimentación?"
-    answer: "No. Diseñamos la cimentación, verificamos el suelo en obra y controlamos la calidad de pilas o pilotes si lo desea; la ejecución la realiza el constructor que usted elija. No ejecutamos obra."
+    answer: "No. Diseñamos la cimentación, verificamos el suelo en obra y controlamos la calidad de pilas o pilotes si lo necesitas; la ejecución la realiza el constructor que elijas. No ejecutamos obra."
 ---
 
 ## Qué es el diseño de cimentaciones y por qué es la partida más incierta de una obra
@@ -90,7 +101,7 @@ En Antioquia la decisión rara vez es trivial. Las laderas del Valle de Aburrá 
 
 La comparación entre alternativas es parte del diseño: en muchos proyectos una losa resulta más económica que zapatas que casi se tocan, y en otros unas pocas pilas resuelven lo que exigiría una losa gruesa y una excavación profunda.
 
-## Cómo diseñamos una cimentación
+## Del estudio de suelos a los planos: seis pasos del diseño de una cimentación
 
 1. **Leemos el estudio geotécnico** —propio o de terceros, revisado— para extraer capacidad admisible, asentamientos, nivel freático y profundidad del estrato firme.
 2. **Bajamos las cargas** del modelo estructural: combinaciones de gravedad y sismo por columna y muro, incluidos los momentos de volcamiento.
@@ -107,7 +118,7 @@ En la I.E. Pavarandó Grande (Mutatá), la combinación de suelo tipo C y pórti
 
 Cuando una edificación se amplía o se asienta, la cimentación existente debe verificarse con las cargas nuevas y, si no cumple, recalzarse: ampliación de zapatas, micropilotes, vigas de transferencia. Es un diseño delicado que conecta con el [reforzamiento estructural]({{ site.baseurl }}/servicios/reforzamiento-estructural/) y con la [evaluación de asentamientos]({{ site.baseurl }}/servicios/evaluacion-estructural/).
 
-## Lo que diferencia una cimentación de PROINCIVIL
+## Geotecnista y estructural en el mismo equipo: alternativas comparadas y suelo verificado en obra
 
 - **Suelo y estructura en el mismo equipo.** El geotecnista y el estructural trabajan sobre el mismo modelo; no hay parámetros perdidos entre dos informes.
 - **Alternativas comparadas.** El constructor ve por qué se eligió una pila y no una losa, y qué costaría lo contrario.

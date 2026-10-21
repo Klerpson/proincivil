@@ -15,19 +15,25 @@ badges:
   - "Conexiones precalificadas"
   - "+3.000 m² en carports fotovoltaicos"
   - "No ejecutamos obra"
-cta_texto: "Cotizar estructura metálica"
+cta_texto: "Conversemos sobre tu estructura metálica"
 cta_secundario: { url: "/proyectos/carports-fotovoltaicos/", texto: "Ver carports diseñados" }
 serviceType: "Diseño de estructuras metálicas"
 resumen: "El diseño de estructuras metálicas define perfiles, conexiones y anclajes de acero para cubiertas, cerchas, naves industriales, mezanines y carports, conforme al Título F de la NSR-10 y a los estándares AISC. PROINCIVIL entrega memorias, planos de diseño y de taller y modelo BIM, con conexiones precalificadas cuando la zona sísmica lo exige."
+zoom:
+  palabra: "ACERO"
+  textura: "acero"
+  titulo: "Estructura metálica con conexiones precalificadas AISC 358 para tu carport, nave o cubierta"
 datePublished: 2026-09-22
 dateModified: 2026-10-16
+cuando_titulo: "Seis casos en los que tu cubierta, nave o carport necesita diseño metálico"
 cuando:
-  - "Necesita una cubierta metálica para un colegio, un coliseo, una bodega o un parqueadero y la curaduría pide memorias firmadas"
-  - "Va a instalar paneles solares sobre un carport o una cubierta y el proveedor de energía exige el diseño estructural del soporte"
-  - "Amplía una planta industrial con un mezanine o una nave y quiere saber cuánto acero necesita realmente"
-  - "El fabricante le pidió planos de taller y detalles de conexión que el diseño arquitectónico no trae"
-  - "Tiene una estructura metálica existente que va a recibir más carga o un cambio de uso"
-  - "Quiere comparar concreto contra acero para decidir el sistema de su edificación"
+  - "Necesitas una cubierta metálica para un colegio, un coliseo, una bodega o un parqueadero y la curaduría pide memorias firmadas"
+  - "Vas a instalar paneles solares sobre un carport o una cubierta y el proveedor de energía exige el diseño estructural del soporte"
+  - "Amplías una planta industrial con un mezanine o una nave y quieres saber cuánto acero necesitas realmente"
+  - "El fabricante te pidió planos de taller y detalles de conexión que el diseño arquitectónico no trae"
+  - "Tienes una estructura metálica existente que va a recibir más carga o un cambio de uso"
+  - "Quieres comparar concreto contra acero para decidir el sistema de tu edificación"
+entregables_titulo: "Memorias NSR-10 Título F, planos de taller y modelo BIM para el fabricante"
 entregables:
   - "Memorias de cálculo con cargas de viento, granizo, uso y sismo según NSR-10 Títulos B y F"
   - "Planos de diseño con perfiles, ejes, niveles y anclajes a cimentación"
@@ -35,25 +41,30 @@ entregables:
   - "Planos de taller y listado de materiales para cotizar la fabricación"
   - "Modelo BIM de la estructura coordinado con cubierta, canales e instalaciones"
   - "Especificaciones de acero, soldadura, pintura y protección contra corrosión"
+despues_titulo: "Después del diseño: curaduría, revisión de planos de taller y montaje"
 despues:
   - "Radicación en curaduría cuando la estructura hace parte de una licencia"
   - "Revisión de los planos de taller del fabricante contra el diseño"
   - "Atención de consultas durante fabricación y montaje, sin ejecutar la obra"
   - "Supervisión técnica del montaje si el proyecto la requiere"
+factores_titulo: "Luces, paneles solares y zona sísmica: lo que define el alcance del diseño en acero"
 factores:
   - "Área cubierta, luces libres y altura de columnas"
   - "Cargas especiales: paneles solares, puentes grúa, equipos, granizo"
   - "Zona de amenaza sísmica y tipo de conexiones exigidas"
   - "Complejidad geométrica y número de detalles de taller"
   - "Nivel de coordinación BIM con otras disciplinas"
+audiencias_titulo: "Para empresas de energía solar, fabricantes, constructoras y entidades públicas"
 audiencias:
   - { rol: "Empresas de energía solar", texto: "Carports y cubiertas fotovoltaicas con memorias para el cliente final y el operador de red." }
   - { rol: "Fabricantes y montadores", texto: "Planos de taller y detalles de conexión que evitan reprocesos en planta y en obra." }
   - { rol: "Constructoras y promotores", texto: "Cubiertas y naves con cantidades de acero reales para presupuestar sin margen oculto." }
   - { rol: "Entidades públicas", texto: "Cubiertas deportivas y escolares con soporte normativo completo." }
+proyectos_titulo: "Carports fotovoltaicos, el Hotel Aldea en Puerto Triunfo y diseños deportivos en Betulia e Hispania"
 proyectos: [carports-fotovoltaicos, hotel-aldea-puerto-triunfo, infraestructura-deportiva-betulia]
 relacionados: [diseno-estructural, cimentaciones, supervision-tecnica-independiente, revision-independiente-de-disenos]
 normativa: [titulo-f, titulo-b, titulo-a, nsr-10]
+faqs_titulo: "Preguntas sobre estructuras metálicas, NSR-10 Título F y carports solares"
 faqs:
   - question: "¿Qué exige la NSR-10 para estructuras metálicas?"
     answer: "El Título F de la NSR-10 regula el diseño de estructuras de acero: perfiles laminados, armados y de lámina delgada, conexiones, estabilidad y requisitos sísmicos. Remite a los estándares AISC 360 (diseño) y AISC 341 (provisiones sísmicas). En zonas de amenaza intermedia y alta, las conexiones de los pórticos resistentes a momento deben ser precalificadas o ensayadas."
@@ -68,7 +79,7 @@ faqs:
   - question: "¿Entregan planos de taller o solo de diseño?"
     answer: "Ambos, según lo que acordemos. El plano de diseño define la estructura; el de taller detalla cada pieza para fabricación. Cuando el fabricante hace sus propios planos de taller, los revisamos contra el diseño antes de que corte acero."
   - question: "¿Ustedes fabrican o montan la estructura?"
-    answer: "No. Diseñamos, evaluamos y supervisamos; no ejecutamos obra ni fabricamos. Eso nos permite revisar con independencia el trabajo del fabricante y del montador que usted elija."
+    answer: "No. Diseñamos, evaluamos y supervisamos; no ejecutamos obra ni fabricamos. Eso nos permite revisar con independencia el trabajo del fabricante y del montador que elijas."
 ---
 
 ## Diseño de estructuras metálicas: por qué el acero exige un cálculo a la medida
@@ -87,7 +98,7 @@ El acero se comporta distinto del concreto: es más liviano, más rápido de mon
 | Mezanines y entrepisos metálicos | Ampliaciones comerciales e industriales | Vibraciones, cargas vivas de bodega, anclaje a estructura existente |
 | Estructuras mixtas | Edificaciones con columnas de acero y losas de concreto | Interacción, conectores de cortante, sismo |
 
-En estructuras fotovoltaicas llevamos más de 3.000 m² diseñados, entre ellos un carport de 1.366 m² en un centro comercial y otro de 715 m² en una terminal de transporte, ambos en estructura metálica con conexiones precalificadas. En el Hotel Aldea, en Puerto Triunfo, la optimización de la estructura metálica y de las cimentaciones fue parte del diseño integral de más de 5.000 m².
+En estructuras fotovoltaicas llevamos {{ site.cifras.m2_fotovoltaico }} m² diseñados, entre ellos un carport de 1.366 m² en un centro comercial y otro de 715 m² en una terminal de transporte, ambos en estructura metálica con conexiones precalificadas. En el Hotel Aldea, en Puerto Triunfo, la optimización de la estructura metálica y de las cimentaciones fue parte del diseño integral de más de 5.000 m².
 
 ## Cómo diseñamos una estructura metálica conforme a NSR-10
 
@@ -98,7 +109,7 @@ En estructuras fotovoltaicas llevamos más de 3.000 m² diseñados, entre ellos 
 5. **Detalles de taller y BIM.** Detallamos piezas, cortes, perforaciones y placas, y coordinamos el modelo con cubierta, canales, instalaciones y cimentación.
 6. **Protección.** Especificamos la preparación de superficie, la pintura o el galvanizado según el ambiente y, si aplica, la protección contra el fuego del Título J.
 
-## Lo que diferencia nuestro diseño de acero
+## Acero optimizado, planos de taller revisados y sismo resuelto en cubiertas livianas
 
 - **Peso optimizado con criterio.** Comparamos alternativas de sistema y perfil antes de fijar la geometría; el ahorro aparece en la cotización del fabricante.
 - **Planos que el taller entiende.** Detallamos como si fuéramos a fabricar, y revisamos los planos de taller del fabricante antes de que corte acero.

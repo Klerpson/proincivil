@@ -27,10 +27,10 @@ resumen: "El Oriente antioqueño (Rionegro, La Ceja, El Retiro, Marinilla, Guarn
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Construye vivienda campestre, condominio o multifamiliar en Rionegro, La Ceja, El Retiro o Guarne"
-  - "Desarrolla una bodega o nave logística en el corredor del aeropuerto o la autopista Medellín-Bogotá"
-  - "Necesita un estudio de suelos en Rionegro o municipios vecinos para licencia"
-  - "La curaduría de Rionegro u otra oficina del Oriente devolvió su proyecto con observaciones"
+  - "Construyes vivienda campestre, condominio o multifamiliar en Rionegro, La Ceja, El Retiro o Guarne"
+  - "Desarrollas una bodega o nave logística en el corredor del aeropuerto o la autopista Medellín-Bogotá"
+  - "Necesitas un estudio de suelos en Rionegro o municipios vecinos para licencia"
+  - "La curaduría de Rionegro u otra oficina del Oriente devolvió tu proyecto con observaciones"
   - "Un municipio contrata diseño de infraestructura educativa, deportiva o de equipamiento"
 entregables:
   - "Estudios de suelos con exploración adecuada a suelos residuales y perfiles profundos de meteorización"
@@ -79,4 +79,4 @@ Estudios de suelos para vivienda y bodegas, diseño estructural de condominios y
 
 ## Cómo trabajamos en el Oriente
 
-Visita técnica y exploración geotécnica programadas, propuesta en 24 horas hábiles, diseño coordinado en BIM y radicación con acompañamiento. La obra la ejecuta el constructor que usted elija: PROINCIVIL diseña, evalúa y supervisa, no construye.
+Visita técnica y exploración geotécnica programadas, llamada de diagnóstico, diseño coordinado en BIM y radicación con acompañamiento. La obra la ejecuta el constructor que elijas: PROINCIVIL diseña, evalúa y supervisa, no construye.

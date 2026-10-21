@@ -29,7 +29,7 @@ faqs:
   - question: "¿Aplica el Título E en cualquier suelo?"
     answer: "No en suelos especiales. El reglamento limita el procedimiento simplificado a sitios sin problemas geotécnicos particulares; en laderas, suelos blandos, expansivos o con nivel freático alto se requiere estudio de suelos y diseño de cimentación específico. En Antioquia, con tantos lotes en pendiente, esta excepción es frecuente."
   - question: "¿Qué pasa con las casas de uno y dos pisos ya construidas sin norma?"
-    answer: "Alrededor de la mitad de las viviendas de Antioquia presentan alta vulnerabilidad sísmica según estudios universitarios recientes. Una evaluación estructural determina si la casa cumple lo esencial del Título E y qué reforzamiento requiere; la ejecución la hace el constructor que usted elija."
+    answer: "Alrededor de la mitad de las viviendas de Antioquia presentan alta vulnerabilidad sísmica según estudios universitarios recientes. Una evaluación estructural determina si la casa cumple lo esencial del Título E y qué reforzamiento requiere; la ejecución la hace el constructor que elijas."
 ---
 
 ## Qué regula el Título E {#que-regula}

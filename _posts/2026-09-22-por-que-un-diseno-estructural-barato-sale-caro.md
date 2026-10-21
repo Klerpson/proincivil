@@ -28,7 +28,7 @@ faqs:
   - question: "¿Qué pasa si la curaduría devuelve el diseño?"
     answer: "Se pierde entre dos semanas y dos meses por cada ronda de observaciones, más el costo de corregir. Si el diseñador original no responde, hay que contratar a otro para subsanar. PROINCIVIL ofrece ese servicio de acompañamiento ante curadurías con revisión del expediente y respuesta técnica a las observaciones."
   - question: "¿Cómo comparo dos propuestas de diseño estructural?"
-    answer: "Compare alcance antes que precio: qué entregables incluye, si el modelo es tridimensional completo, si incluye coordinación BIM y cantidades, si acompaña la curaduría y la obra, quién firma y con qué experiencia, y si el diseñador tiene interés en la construcción posterior."
+    answer: "Compara el alcance antes que el precio: qué entregables incluye, si el modelo es tridimensional completo, si incluye coordinación BIM y cantidades, si acompaña la curaduría y la obra, quién firma y con qué experiencia, y si el diseñador tiene interés en la construcción posterior."
 ---
 
 Cuando un promotor compara dos propuestas de **diseño estructural**, la diferencia de honorarios suele ser de unos pocos millones de pesos. Cuando compara las cantidades de obra que cada diseño produce, la diferencia puede ser de cientos. El primer número se ve en la cotización; el segundo, meses después, en las actas de obra. Por eso el diseño barato casi nunca es el barato.
@@ -85,7 +85,7 @@ La optimización de cimentaciones y estructuras metálicas redujo las cantidades
 
 ## Qué debe incluir una propuesta seria {#propuesta}
 
-Comparar propuestas de diseño estructural por precio es comparar dos cifras que no miden lo mismo. Compare alcance. Una propuesta que protege su inversión incluye, por escrito:
+Comparar propuestas de diseño estructural por precio es comparar dos cifras que no miden lo mismo. Compara el alcance. Una propuesta que protege tu inversión incluye, por escrito:
 
 - **Modelo tridimensional completo** de la estructura, no cálculos elemento por elemento.
 - **Análisis sísmico** con los parámetros del municipio y del estudio de suelos del predio.
@@ -97,7 +97,7 @@ Comparar propuestas de diseño estructural por precio es comparar dos cifras que
 - **Quién firma**, con qué especialización y qué experiencia en proyectos comparables.
 - **Ausencia de interés en la construcción posterior.**
 
-Si una propuesta no dice cuál de esos puntos incluye, asuma que no lo incluye. Y si el diseñador va a construir la obra, pregúntese quién revisará su diseño; la ley, para ciertos proyectos, ya lo respondió con la [revisión independiente de diseños]({{ site.baseurl }}/servicios/revision-independiente-de-disenos/).
+Si una propuesta no dice cuál de esos puntos incluye, asuma que no lo incluye. Y si el diseñador va a construir la obra, pregúntate quién revisará su diseño; la ley, para ciertos proyectos, ya lo respondió con la [revisión independiente de diseños]({{ site.baseurl }}/servicios/revision-independiente-de-disenos/).
 
 ## Lo que cuesta de verdad
 

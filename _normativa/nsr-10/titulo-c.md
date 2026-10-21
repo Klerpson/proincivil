@@ -67,8 +67,8 @@ La I.E. Pavarandó Grande (Mutatá) se diseñó con pórticos DES y chequeo de d
 
 Un plano estructural cumple el Título C solo si el detallado es construible: longitudes de desarrollo y de empalme calculadas, ganchos con el ángulo y la extensión correctos, separación de estribos que permita vibrar el concreto, refuerzo de nudos dibujado y no solo mencionado. Los despieces incompletos son la causa más común de que en obra se "resuelva" el refuerzo de otra forma, y esa improvisación es la que un sismo encuentra primero.
 
-Nuestros planos los dibuja quien calculó, con el residente de obra en mente. Es una de las razones del 100 % de aprobación en primera radicación.
+Nuestros planos los dibuja quien calculó, con el residente de obra en mente. Es una de las razones del {{ site.cifras.aprobacion_curadurias }} de aprobación en primera radicación que comunica PROINCIVIL.
 
 ## Del plano a la obra {#obra}
 
-El Título C no termina en el diseño. Exige control de calidad de materiales, tolerancias de colocación del refuerzo y curado del concreto, y el Título I asigna a la supervisión técnica la verificación de que todo eso ocurra. PROINCIVIL diseña y supervisa; la ejecución la realiza el constructor que usted elija. Cuando una estructura de concreto ya construida muestra fisuras, deformaciones o refuerzo expuesto, el mismo título es la referencia para el [diagnóstico y el reforzamiento]({{ site.baseurl }}/servicios/reforzamiento-estructural/).
+El Título C no termina en el diseño. Exige control de calidad de materiales, tolerancias de colocación del refuerzo y curado del concreto, y el Título I asigna a la supervisión técnica la verificación de que todo eso ocurra. PROINCIVIL diseña y supervisa; la ejecución la realiza el constructor que elijas. Cuando una estructura de concreto ya construida muestra fisuras, deformaciones o refuerzo expuesto, el mismo título es la referencia para el [diagnóstico y el reforzamiento]({{ site.baseurl }}/servicios/reforzamiento-estructural/).

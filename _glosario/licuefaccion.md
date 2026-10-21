@@ -31,4 +31,4 @@ El [Título H de la NSR-10]({{ site.baseurl }}/normativa/nsr-10/titulo-h/) exige
 
 Las soluciones van del suelo a la estructura: densificar o mejorar el terreno, drenar, cimentar en profundidad hasta estratos no licuables mediante pilotes o pilas, o rigidizar la cimentación con una [losa]({{ site.baseurl }}/glosario/losa-de-cimentacion/) que reparta asentamientos. La elección depende del estudio de suelos y del costo relativo; es una de las decisiones donde más vale un geotecnista y un estructural trabajando juntos.
 
-Si su lote está en zona aluvial o sobre relleno, pídanos un [estudio de suelos]({{ site.baseurl }}/servicios/geotecnia-estudio-de-suelos/) que incluya la evaluación de licuefacción antes de diseñar la cimentación.
+Si tu lote está en zona aluvial o sobre relleno, pídenos un [estudio de suelos]({{ site.baseurl }}/servicios/geotecnia-estudio-de-suelos/) que incluya la evaluación de licuefacción antes de diseñar la cimentación.

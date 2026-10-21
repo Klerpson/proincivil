@@ -12,14 +12,14 @@ sin_cta_cabecera: true
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 ---
-<section class="section">
-  <div class="wrapper flow">
+<section class="seccion">
+  <div class="marco flujo">
     {% assign _cats = "sismos,normativa,costos,casos" | split: "," %}
-    <ul class="sectores">
+    <ul class="sellos">
       {% for c in _cats %}<li><a href="#cat-{{ c }}">{{ c | capitalize }}</a></li>{% endfor %}
     </ul>
     {% if site.posts.size > 0 %}
-    <div class="grid" style="--grid-min: 300px">
+    <div class="rejilla rejilla--3">
       {% for post in site.posts %}{% include tarjeta.html item=post %}{% endfor %}
     </div>
     {% else %}
@@ -28,8 +28,8 @@ dateModified: 2026-09-22
     {% for c in _cats %}
       {% assign _pc = site.posts | where_exp: "p", "p.categories contains c" %}
       {% if _pc.size > 0 %}
-      <div class="section-header" id="cat-{{ c }}"><h2 class="section-header__titulo">{{ c | capitalize }}</h2></div>
-      <ul class="list_check list_check--flecha">
+      <div class="encabezado" id="cat-{{ c }}"><h2 class="encabezado__titulo">{{ c | capitalize }}</h2></div>
+      <ul class="lista lista--flecha">
         {% for p in _pc %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>{% endfor %}
       </ul>
       {% endif %}

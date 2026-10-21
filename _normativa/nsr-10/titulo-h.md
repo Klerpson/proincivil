@@ -3,7 +3,7 @@ titulo_corto: "Título H · Estudios geotécnicos"
 orden: 7
 title: "Título H NSR-10: estudios geotécnicos y estudio de suelos | PROINCIVIL"
 description: "Guía del Título H de la NSR-10: cuándo es obligatorio el estudio de suelos, cuántos sondeos exige, qué contiene el informe geotécnico y qué regula en cimentaciones."
-h1: "Título H de la NSR-10: qué exige el estudio geotécnico de su proyecto"
+h1: "Título H de la NSR-10: qué exige el estudio geotécnico de tu proyecto"
 eyebrow: "Normativa · NSR-10"
 excerpt: "El estudio de suelos no es un trámite: es el título del reglamento que define cuántos sondeos hacer, qué ensayos correr, cómo clasificar el sitio para el sismo y cómo diseñar la cimentación y las obras de contención."
 cta_texto: "Cotizar un estudio de suelos"
@@ -39,7 +39,7 @@ El **Título H de la NSR-10** es el que convierte el terreno en un dato de dise�
 
 ## Cuándo es obligatorio {#obligatorio}
 
-Siempre. El título exige un estudio geotécnico definitivo para toda edificación, ampliación o intervención que afecte la cimentación, firmado por un ingeniero civil con matrícula y experiencia en geotecnia. Lo que cambia con el proyecto es el alcance mínimo, no la obligación. Los estudios "de referencia" tomados de un lote vecino o de un proyecto anterior no sustituyen el estudio del predio; la curaduría los rechaza y, más importante, no representan el suelo real bajo su edificación.
+Siempre. El título exige un estudio geotécnico definitivo para toda edificación, ampliación o intervención que afecte la cimentación, firmado por un ingeniero civil con matrícula y experiencia en geotecnia. Lo que cambia con el proyecto es el alcance mínimo, no la obligación. Los estudios "de referencia" tomados de un lote vecino o de un proyecto anterior no sustituyen el estudio del predio; la curaduría los rechaza y, más importante, no representan el suelo real bajo tu edificación.
 
 ## Cuántos sondeos y a qué profundidad {#sondeos}
 
@@ -68,4 +68,4 @@ En la I.E. Pavarandó Grande el estudio clasificó el sitio como suelo tipo C y 
 
 ## Lo que revisa la curaduría {#curaduria}
 
-En el componente geotécnico, la curaduría verifica que el estudio corresponda al predio, que cumpla el alcance mínimo de la categoría, que clasifique el perfil de suelo, que recomiende tipo y nivel de cimentación con parámetros, y que esté firmado con matrícula vigente. Cuando un proyecto llega con un estudio de terceros incompleto, lo revisamos y complementamos antes de radicar. PROINCIVIL realiza y revisa estudios de suelos y diseña las cimentaciones; la ejecución la realiza el constructor que usted elija.
+En el componente geotécnico, la curaduría verifica que el estudio corresponda al predio, que cumpla el alcance mínimo de la categoría, que clasifique el perfil de suelo, que recomiende tipo y nivel de cimentación con parámetros, y que esté firmado con matrícula vigente. Cuando un proyecto llega con un estudio de terceros incompleto, lo revisamos y complementamos antes de radicar. PROINCIVIL realiza y revisa estudios de suelos y diseña las cimentaciones; la ejecución la realiza el constructor que elijas.

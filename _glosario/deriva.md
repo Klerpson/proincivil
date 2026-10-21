@@ -1,7 +1,7 @@
 ---
 titulo_corto: "Deriva"
 orden: 11
-title: "Deriva de piso: qué es y por qué limita su diseño | Glosario PROINCIVIL"
+title: "Deriva de piso: qué es y por qué limita tu diseño | Glosario PROINCIVIL"
 description: "La deriva es el desplazamiento relativo entre dos pisos durante el sismo de diseño. Qué límite fija la NSR-10, por qué gobierna tantos diseños y cómo se controla."
 h1: "Deriva de piso"
 eyebrow: "Glosario"
@@ -21,7 +21,7 @@ Cuando un edificio se mueve en un sismo, cada piso se desplaza un poco más que 
 
 No mide si la estructura resiste, sino cuánto se deforma. Dos edificios pueden soportar la misma fuerza sísmica y uno deformarse el doble que el otro. El que se deforma más rompe muros divisorios, fachadas, ventanería e instalaciones, y en casos extremos entra en inestabilidad por el peso que se desplaza con él.
 
-## Por qué importa en su proyecto
+## Por qué importa en tu proyecto
 
 La NSR-10 fija en el [Título A]({{ site.baseurl }}/normativa/nsr-10/titulo-a/) un límite de deriva del 1 % de la altura de piso para concreto, acero y sistemas mixtos, y del 0,5 % para mampostería estructural, calculada con las derivas elásticas amplificadas. En la práctica es el requisito que gobierna muchos diseños: los pórticos de concreto cumplen resistencia con columnas moderadas, pero no cumplen deriva, y hay que agrandarlas, añadir muros o cambiar a un [sistema combinado]({{ site.baseurl }}/glosario/sistema-aporticado/). Ese ajuste es costo directo de obra, y por eso conviene resolverlo en el anteproyecto, no en la curaduría.
 
@@ -31,4 +31,4 @@ La deriva también es la variable con la que se evalúa una edificación existen
 
 Modelamos la estructura completa, verificamos la deriva en cada piso y en cada dirección, y revisamos los efectos de irregularidad torsional, que concentran la deriva en un extremo de la planta. En el Hotel The One (Laureles), 15 niveles con sistemas combinados de pórticos, la interventoría al diseño estructural incluyó precisamente la verificación de derivas y de la distribución de rigidez entre pórticos y muros.
 
-Si su proyecto está en anteproyecto, una consulta temprana sobre el sistema estructural evita rediseños; si ya está construido, la evaluación determina si la deriva es aceptable. Diseñamos y evaluamos; no ejecutamos obra.
+Si tu proyecto está en anteproyecto, una consulta temprana sobre el sistema estructural evita rediseños; si ya está construido, la evaluación determina si la deriva es aceptable. Diseñamos y evaluamos; no ejecutamos obra.

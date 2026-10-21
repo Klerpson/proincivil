@@ -1,41 +1,42 @@
 ---
 layout: page
 permalink: /contacto/
-title: "Contacto · Cotice su diseño o evaluación estructural | PROINCIVIL Envigado"
-description: "Contacte a PROINCIVIL en Envigado por WhatsApp o correo. Comparta sus planos y su necesidad para definir el alcance de diseño, evaluación o vulnerabilidad sísmica."
-h1: "Hablemos de su proyecto"
+title: "Contacto · Diseño y evaluación estructural en Envigado | PROINCIVIL"
+description: "Escribe a PROINCIVIL en Envigado por WhatsApp o correo. Comparte tus planos y tu necesidad para definir el alcance de diseño, patología o vulnerabilidad sísmica."
+h1: "Conversemos sobre tu proyecto"
 titulo_corto: "Contacto"
 eyebrow: "Contacto"
-excerpt: "Escríbanos por WhatsApp o correo con la ubicación y el motivo de su consulta. Revisamos la información disponible y acordamos una conversación para definir el alcance y los plazos."
+excerpt: "Escríbenos por WhatsApp o correo con la ubicación y el motivo de tu consulta. Revisamos la información disponible y acordamos una llamada de diagnóstico para definir el alcance y los plazos."
 cta_texto: "Escribir por WhatsApp"
 sin_cta: true
 datePublished: 2026-09-22
 dateModified: 2026-10-16
 schemaType: "ContactPage"
 ---
-<section class="section">
-  <div class="wrapper">
-    <div class="dos_columnas">
-      <div class="flow">
-        <div class="section-header">
-          <p class="section-header__eyebrow">Canales</p>
-          <h2 class="section-header__titulo">Dónde encontrarnos</h2>
+<section class="seccion">
+  <div class="marco">
+    <div class="dos-columnas">
+      <div class="flujo">
+        <div class="encabezado">
+          <p class="rotulo">Canales</p>
+          <h2 class="encabezado__titulo">WhatsApp, correo y oficina en {{ site.empresa.ciudad }}</h2>
         </div>
-        <ul class="list_check">
-          <li>WhatsApp técnico: <a href="https://wa.me/{{ site.contact.whatsapp }}" class="lead-whatsapp" data-location="contacto-lista" rel="nofollow noopener" target="_blank">{{ site.contact.whatsapp_display }}</a> (Ing. Camilo Tamayo)</li>
-          <li>Gerencia: <a href="tel:+{{ site.contact.whatsapp_2 }}">{{ site.contact.whatsapp_2_display }}</a> (Andrea Palacio)</li>
-          <li>Correo: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+        <ul class="lista">
+          <li>WhatsApp: <a href="https://wa.me/{{ site.contact.whatsapp }}" class="lead-whatsapp" data-location="contacto-lista" rel="nofollow noopener" target="_blank">{{ site.contact.whatsapp_display }}</a> (Kateryn Andrea Palacio, gerencia)</li>
+          <li>Dirección técnica: <a href="https://wa.me/{{ site.contact.whatsapp_2 }}" class="lead-whatsapp" data-location="contacto-tecnico" rel="nofollow noopener" target="_blank">{{ site.contact.whatsapp_2_display }}</a> (Ing. Camilo Tamayo)</li>
+          <li>Proyectos: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+          <li>Gerencia: <a href="mailto:{{ site.contact.email_gerencia }}">{{ site.contact.email_gerencia }}</a></li>
           <li>{{ site.empresa.direccion }}, {{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, {{ site.empresa.pais }}</li>
           <li>{{ site.empresa.horario }}</li>
         </ul>
         <p>{{ site.empresa.razon_social }} · NIT {{ site.empresa.nit }}</p>
-        <p>Síganos en <a href="{{ site.social.instagram }}" target="_blank" rel="noopener">Instagram</a> y <a href="{{ site.social.tiktok }}" target="_blank" rel="noopener">TikTok</a>.</p>
+        <p>Síguenos en <a href="{{ site.social.instagram }}" target="_blank" rel="noopener">Instagram</a> y <a href="{{ site.social.tiktok }}" target="_blank" rel="noopener">TikTok</a>.</p>
         {% include como-cotizar-nota.html %}
       </div>
-      <div class="flow">
-        <div class="section-header">
-          <p class="section-header__eyebrow">Formulario</p>
-          <h2 class="section-header__titulo">Cuéntenos el alcance</h2>
+      <div class="flujo">
+        <div class="encabezado">
+          <p class="rotulo">Formulario</p>
+          <h2 class="encabezado__titulo">Cuéntanos el alcance de tu proyecto</h2>
         </div>
         {% include form.html %}
       </div>

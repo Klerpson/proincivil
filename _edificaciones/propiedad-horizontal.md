@@ -86,7 +86,7 @@ Distinguir un síntoma cosmético de uno estructural es la primera decisión, y 
 
 ## Evaluación después de un sismo
 
-Cuando ocurre un sismo, el consejo de administración recibe en horas decenas de reportes de fisuras. La respuesta técnica correcta es una evaluación de seguridad con metodología ATC-20, torre por torre, que clasifica el uso y prioriza dónde mirar con más detalle. En Tacuara Club Residencial P.H. aplicamos ese esquema en seis torres con más de 780 apartamentos: conceptos parciales por torre para que la administración pudiera comunicar de inmediato, un informe patológico consolidado que separó daño estructural de daño en elementos no estructurales y soporte técnico durante la reclamación ante la aseguradora.
+Cuando ocurre un sismo, el consejo de administración recibe en horas decenas de reportes de fisuras. La respuesta técnica correcta es una evaluación de seguridad con metodología ATC-20, torre por torre, que clasifica el uso y prioriza dónde mirar con más detalle. En Tacuara Club Residencial P.H. (Dosquebradas, Risaralda), con seis torres y más de 780 apartamentos, hicimos patología estructural con pruebas de núcleo, esclerometría, regatas, exploración geotécnica, verificación de verticalidad de las torres y levantamiento con dron para respaldar la solicitud de anticipo ante la aseguradora; el estudio de vulnerabilidad sísmica para la repotenciación está en curso.
 
 ## Vulnerabilidad sísmica y reforzamiento
 

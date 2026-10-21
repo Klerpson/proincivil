@@ -21,3 +21,19 @@ fachada-ancha: "Fachada de concreto reforzado de una edificación multinivel"
 fachada-vidrio: "Fachada de concreto y vidrio de una edificación multinivel"
 hero-estructura: "Estructura metálica de una edificación en pórticos de acero"
 institucion-educativa: "Institución educativa de dos niveles en concreto reforzado"
+
+# Archivo histórico de ingeniería (dominio público): describen la imagen, no la atribuyen a PROINCIVIL.
+stock-arriostramiento: "Pórtico de acero con arriostramiento en X visto desde abajo"
+stock-arco-concreto: "Arco de concreto reforzado de un puente, con el desgaste del material a la vista"
+stock-plano-cercha: "Plano técnico histórico con la elevación de una cercha y sus anotaciones"
+stock-pila-cimentacion: "Pila de cimentación de un puente metálico apoyada en el lecho de un río"
+stock-nave-cerchas: "Interior de una nave industrial con cubierta de cerchas metálicas"
+stock-plano-detalles: "Plano técnico histórico con detalles de una cercha de acero"
+stock-diagonales: "Diagonales de una cercha de acero en contraluz"
+
+# Imágenes generadas con IA (ambiente): describen la escena, no un proyecto real.
+ia-valle-aburra: "Vista del Valle de Aburrá al atardecer, con la ciudad entre montañas"
+ia-mesa-planos: "Planos estructurales impresos, escalímetro y una tableta con el modelo 3D de una estructura"
+ia-conexion-acero: "Conexión apernada entre una viga y una columna de acero"
+ia-grieta-columna: "Grieta diagonal en una columna de concreto medida con una regleta de fisuras"
+ia-ladera-muro: "Muro de contención de concreto sobre una ladera verde con viviendas arriba"

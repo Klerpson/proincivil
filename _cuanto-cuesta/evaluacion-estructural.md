@@ -11,19 +11,19 @@ hero_alt: "Fachada de concreto y vidrio de una edificación evaluada"
 image: "/img/fotos/fachada-vidrio-1024.jpg"
 badges:
   - "Tres niveles de evaluación"
-  - "Propuesta en 24 h hábiles"
+  - "Llamada de diagnóstico sin costo"
   - "Informes con metodología reconocida"
 cta_texto: "Pedir propuesta de evaluación"
 cta_secundario: { url: "/servicios/evaluacion-estructural/", texto: "Ver el servicio" }
 serviceType: "Cotización de evaluación y peritaje estructural"
-resumen: "El costo de una evaluación estructural depende del nivel requerido: inspección visual con concepto, diagnóstico con mediciones y ensayos no destructivos, o peritaje completo con ensayos de laboratorio y análisis de capacidad. Lo mueven el área y el número de edificaciones, la finalidad del informe, los ensayos, el acceso y la urgencia. PROINCIVIL define el nivel adecuado y cotiza en menos de 24 horas hábiles."
+resumen: "El costo de una evaluación estructural depende del nivel requerido: inspección visual con concepto, diagnóstico con mediciones y ensayos no destructivos, o peritaje completo con ensayos de laboratorio y análisis de capacidad. Lo mueven el área y el número de edificaciones, la finalidad del informe, los ensayos, el acceso y la urgencia. PROINCIVIL define el nivel adecuado y lo acuerda contigo en una llamada de diagnóstico."
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Ve fisuras o deformaciones y quiere saber si necesita una inspección o un peritaje completo"
-  - "Una aseguradora, un juzgado o una autoridad pide un informe y necesita saber su alcance y costo"
-  - "Administra una propiedad horizontal y debe presentar a la asamblea el presupuesto de una evaluación"
-  - "Va a comprar o cambiar el uso de una edificación existente"
+  - "Ves fisuras o deformaciones y quieres saber si necesitas una inspección o un peritaje completo"
+  - "Una aseguradora, un juzgado o una autoridad pide un informe y necesitas saber su alcance y costo"
+  - "Administras una propiedad horizontal y debes presentar a la asamblea el presupuesto de una evaluación"
+  - "Vas a comprar o cambiar el uso de una edificación existente"
 entregables:
   - "Nivel de evaluación recomendado y por qué"
   - "Actividades de campo: inspección, mediciones, ensayos no destructivos, extracción de muestras"
@@ -31,7 +31,7 @@ entregables:
   - "Contenido y formato del informe según su finalidad (interna, aseguradora, judicial)"
   - "Plazo de campo, laboratorio e informe, y valor con forma de pago"
 despues:
-  - "Con el informe, sabrá si la edificación es segura, qué reparar y en qué orden"
+  - "Con el informe, sabrás si la edificación es segura, qué reparar y en qué orden"
   - "Si hace falta reforzar, la evaluación es la base del diseño de reforzamiento"
   - "Si hay reclamación, el informe sirve de soporte técnico ante la aseguradora o el proceso"
 factores:
@@ -41,22 +41,22 @@ factores:
   - "Ensayos: esclerometría, detección de refuerzo, ultrasonido, extracción de núcleos y ensayos de laboratorio"
   - "Disponibilidad de planos originales: sin planos hay que levantar la estructura"
   - "Acceso: apartamentos ocupados, alturas, zonas confinadas"
-  - "Urgencia: una evaluación post-sismo inmediata moviliza al equipo en horas"
+  - "Urgencia: una evaluación post-sismo inmediata exige movilizar al equipo con prioridad"
 audiencias:
   - { rol: "Administradores de P.H.", texto: "Para presentar a la asamblea un alcance y un costo justificados." }
   - { rol: "Aseguradoras y ajustadores", texto: "Para dimensionar el peritaje que sustente la reclamación." }
   - { rol: "Compradores y propietarios", texto: "Para saber qué evaluación necesitan antes de comprar, ampliar o cambiar el uso." }
 faqs:
   - question: "¿Cuánto cuesta un peritaje estructural?"
-    answer: "Depende del nivel: una inspección visual con concepto escrito es la más económica; un diagnóstico con ensayos no destructivos cuesta más; un peritaje completo con laboratorio, análisis de capacidad e informe para reclamación o proceso es el de mayor alcance. El área, el número de edificaciones y la finalidad definen el resto. Cotizamos con fotos, dirección y uso en menos de 24 horas hábiles."
+    answer: "Depende del nivel: una inspección visual con concepto escrito es la más económica; un diagnóstico con ensayos no destructivos cuesta más; un peritaje completo con laboratorio, análisis de capacidad e informe para reclamación o proceso es el de mayor alcance. El área, el número de edificaciones y la finalidad definen el resto. Cotizamos con fotos, dirección y uso después de una llamada de diagnóstico."
   - question: "¿Qué incluye una evaluación estructural?"
     answer: "Inspección en sitio, registro y clasificación de daños, mediciones, ensayos según el nivel, análisis del origen de los daños, concepto sobre seguridad y recomendaciones de intervención. En peritajes, además, análisis de capacidad estructural y soporte para la reclamación."
   - question: "¿Cuánto tarda una evaluación estructural?"
     answer: "Una inspección con concepto puede entregarse en una semana; un diagnóstico con ensayos, en dos a tres; un peritaje completo con laboratorio, en cuatro a seis. Las evaluaciones post-sismo se atienden con prioridad y entregan conceptos parciales por edificación."
   - question: "¿Cómo se cobra una evaluación de propiedad horizontal?"
-    answer: "Por el conjunto de torres, con un alcance que aprovecha lo común entre ellas, y con entregas por torre cuando la administración necesita comunicar resultados sin esperar el informe consolidado. Así trabajamos en Tacuara Club Residencial con seis torres y más de 780 apartamentos."
+    answer: "Por el conjunto de torres, con un alcance que aprovecha lo común entre ellas, y con entregas por torre cuando la administración necesita comunicar resultados sin esperar el informe consolidado. Así trabajamos el diagnóstico de Tacuara Club Residencial, con seis torres y más de 780 apartamentos."
   - question: "¿Por qué varía tanto el precio entre ingenieros?"
-    answer: "Porque el alcance varía. Un concepto de una visita sin ensayos no es comparable con un peritaje con núcleos de concreto y análisis. Pida que le describan las actividades y el contenido del informe antes de comparar cifras."
+    answer: "Porque el alcance varía. Un concepto de una visita sin ensayos no es comparable con un peritaje con núcleos de concreto y análisis. Pide que te describan las actividades y el contenido del informe antes de comparar cifras."
   - question: "¿La evaluación incluye el diseño del reforzamiento?"
     answer: "No; son etapas distintas. La evaluación diagnostica y recomienda; el diseño de reforzamiento se cotiza aparte con base en ella, porque su alcance solo se conoce cuando el diagnóstico está hecho."
 ---
@@ -79,8 +79,8 @@ Los ensayos son la partida más variable. La esclerometría y la detección de r
 
 ## Evaluaciones post-sismo
 
-Después de un sismo el orden de prioridades cambia: primero la seguridad de uso con metodología ATC-20, torre por torre, y después el diagnóstico detallado. La urgencia tiene un costo de movilización, pero la evaluación inicial es más acotada que un peritaje completo. En Tacuara Club Residencial ese esquema permitió entregar conceptos parciales por torre mientras avanzaba el informe consolidado para la aseguradora.
+Después de un sismo el orden de prioridades cambia: primero la seguridad de uso con metodología ATC-20, torre por torre, y después el diagnóstico detallado. La urgencia tiene un costo de movilización, pero la evaluación inicial es más acotada que un peritaje completo. En Tacuara Club Residencial el diagnóstico patológico por torre dio el soporte técnico para la solicitud de anticipo ante la aseguradora.
 
 ## Qué necesitamos para cotizar
 
-Dirección y uso de la edificación, fotos de los daños, planos originales si existen, la finalidad del informe (interna, aseguradora, autoridad, compraventa) y el plazo. Con eso definimos el nivel y enviamos la propuesta en menos de 24 horas hábiles. Diseñamos, evaluamos y supervisamos; no ejecutamos obra, así que nuestro diagnóstico no depende de vender la reparación.
+Dirección y uso de la edificación, fotos de los daños, planos originales si existen, la finalidad del informe (interna, aseguradora, autoridad, compraventa) y el plazo. Con eso definimos el nivel y preparamos la propuesta. Diseñamos, evaluamos y supervisamos; no ejecutamos obra, así que nuestro diagnóstico no depende de vender la reparación.

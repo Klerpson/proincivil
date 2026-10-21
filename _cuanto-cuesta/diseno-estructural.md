@@ -7,27 +7,27 @@ h1: "¿Cuánto vale un diseño estructural en Colombia?"
 eyebrow: "Inversión · Diseño estructural"
 excerpt: "No hay una tarifa única porque dos edificios de igual área pueden exigir el doble de trabajo uno que el otro. Aquí explicamos qué mueve el precio, qué incluye el honorario y cómo pedir una propuesta cerrada."
 hero: "estructura-metalica"
-hero_alt: "Estructura metálica de un proyecto diseñado por PROINCIVIL"
+hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 image: "/img/fotos/estructura-metalica-1200.jpg"
 badges:
-  - "Propuesta cerrada en 24 h hábiles"
+  - "Llamada de diagnóstico sin costo"
   - "Sin costo ni compromiso"
   - "Alcance y exclusiones por escrito"
 cta_texto: "Pedir propuesta de diseño"
 cta_secundario: { url: "/servicios/diseno-estructural/", texto: "Ver el servicio" }
 serviceType: "Cotización de diseño estructural"
-resumen: "El costo de un diseño estructural en Colombia se calcula por metro cuadrado construido y se ajusta por sistema estructural, número de niveles, regularidad, grupo de uso, tipo de suelo, nivel de detalle BIM y plazo. El honorario incluye memorias, planos, especificaciones, modelo y acompañamiento en curaduría. PROINCIVIL entrega una propuesta cerrada en menos de 24 horas hábiles a partir de los planos arquitectónicos."
+resumen: "El costo de un diseño estructural en Colombia se calcula por metro cuadrado construido y se ajusta por sistema estructural, número de niveles, regularidad, grupo de uso, tipo de suelo, nivel de detalle BIM y plazo. El honorario incluye memorias, planos, especificaciones, modelo y acompañamiento en curaduría. PROINCIVIL prepara una propuesta cerrada a partir de los planos arquitectónicos y una llamada de diagnóstico."
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Tiene el anteproyecto arquitectónico y quiere saber cuánto reservar para el estructural antes de avanzar"
-  - "Recibió dos cotizaciones muy distintas y no entiende por qué"
-  - "Es arquitecto y necesita incluir el diseño estructural en el presupuesto de honorarios de su cliente"
-  - "Va a licitar o presentar un proyecto a una entidad y necesita el orden de magnitud del diseño"
+  - "Tienes el anteproyecto arquitectónico y quieres saber cuánto reservar para el estructural antes de avanzar"
+  - "Recibiste dos cotizaciones muy distintas y no entiendes por qué"
+  - "Eres arquitecto y necesitas incluir el diseño estructural en el presupuesto de honorarios de tu cliente"
+  - "Vas a licitar o presentar un proyecto a una entidad y necesitas el orden de magnitud del diseño"
 entregables:
   - "Alcance detallado: qué elementos se diseñan y hasta qué nivel de detalle"
   - "Lista de entregables: memorias, planos, especificaciones, modelo BIM, cantidades"
-  - "Cronograma con hitos y qué necesitamos de usted en cada uno"
+  - "Cronograma con hitos y qué necesitamos de ti en cada uno"
   - "Valor total, forma de pago y validez de la oferta"
   - "Exclusiones explícitas: qué no cubre el honorario"
   - "Responsable que firma y normativa aplicable"
@@ -50,26 +50,26 @@ audiencias:
   - { rol: "Constructoras y promotores", texto: "Para separar el costo del diseño del costo de la obra que ese diseño determina." }
 faqs:
   - question: "¿Cuánto vale un diseño estructural en Colombia?"
-    answer: "Depende del área, el sistema estructural, los niveles, la regularidad, el grupo de uso, el suelo y el plazo. Se cobra por metro cuadrado construido con ajustes por esos factores, y el costo por metro baja cuando el área sube. No publicamos cifras porque sin ver el proyecto serían engañosas; enviamos una propuesta cerrada en menos de 24 horas hábiles."
+    answer: "Depende del área, el sistema estructural, los niveles, la regularidad, el grupo de uso, el suelo y el plazo. Se cobra por metro cuadrado construido con ajustes por esos factores, y el costo por metro baja cuando el área sube. No publicamos cifras porque sin ver el proyecto serían engañosas; preparamos una propuesta cerrada después de revisar tus planos."
   - question: "¿Cómo se cobra un diseño estructural?"
     answer: "Por metro cuadrado construido, ajustado por complejidad, o por un valor global cuando el proyecto es atípico. El pago suele ser un anticipo al aceptar y el saldo contra entregables. En proyectos grandes se pactan hitos: anteproyecto estructural, diseño para radicación y planos de construcción."
   - question: "¿Qué incluye el honorario de diseño estructural?"
     answer: "Análisis sísmico, diseño de todos los elementos, memorias de cálculo, planos estructurales completos, especificaciones, modelo BIM, cantidades de obra de la estructura, firma con matrícula profesional y acompañamiento de la revisión en curaduría. Lo que no incluye —estudio de suelos, diseño arquitectónico, revisión independiente— se lista como exclusión."
   - question: "¿Por qué varía tanto el precio entre ingenieros?"
-    answer: "Porque el alcance varía. Un honorario bajo suele excluir el modelo BIM, las cantidades, el detallado completo o la subsanación de observaciones, y termina costando más en obra o en trámite. Compare alcances antes de comparar cifras."
+    answer: "Porque el alcance varía. Un honorario bajo suele excluir el modelo BIM, las cantidades, el detallado completo o la subsanación de observaciones, y termina costando más en obra o en trámite. Compara alcances antes de comparar cifras."
   - question: "¿Cuánto tarda un diseño estructural?"
     answer: "Una vivienda de uno o dos niveles suele tomar de dos a tres semanas; una edificación de cuatro a seis niveles, entre cuatro y ocho semanas con coordinación BIM. El plazo corre desde que hay arquitectura definitiva y estudio de suelos."
   - question: "¿Un diseño más barato sale más caro?"
     answer: "Con frecuencia. Un diseño sin optimización sobredimensiona y el sobrecosto se paga en concreto y acero; uno incompleto vuelve de la curaduría y se paga en semanas. El honorario del diseño es una fracción pequeña del costo de la estructura que define."
   - question: "¿La propuesta tiene costo?"
-    answer: "No. Es sin costo y sin compromiso. Necesitamos planos arquitectónicos, municipio, uso y niveles; si ya tiene estudio de suelos, mejor."
+    answer: "No. Es sin costo y sin compromiso. Necesitamos planos arquitectónicos, municipio, uso y niveles; si ya tienes estudio de suelos, mejor."
 ---
 
 ## Por qué no hay un precio por metro cuadrado universal
 
 Preguntar cuánto vale un **diseño estructural** sin describir el proyecto es como preguntar cuánto vale un vehículo. Una vivienda de dos niveles en mampostería confinada y un edificio de ocho niveles con sótano sobre suelo blando tienen áreas distintas, pero sobre todo tienen exigencias distintas: el segundo requiere análisis sísmico completo, cimentación profunda, diseño de muros de sótano, coordinación con varias disciplinas y probablemente revisión independiente por ley.
 
-Por eso PROINCIVIL cotiza cada proyecto con sus planos a la vista y responde en menos de 24 horas hábiles con una propuesta cerrada. Lo que sí puede saber antes de pedirla es qué mueve el precio.
+Por eso PROINCIVIL cotiza cada proyecto con sus planos a la vista y entrega una propuesta cerrada. Lo que sí puedes saber antes de pedirla es qué mueve el precio.
 
 ## Lo que encarece y lo que abarata un diseño estructural
 
@@ -91,8 +91,8 @@ Incluye todo lo necesario para radicar y construir la estructura: análisis, dis
 
 ## Cómo comparar dos cotizaciones
 
-Compare alcance antes que cifra. Pregunte si incluye modelo BIM, cantidades de obra, planos de detalle de refuerzo, la subsanación de observaciones de curaduría y la firma de un ingeniero especialista. Un honorario que excluye esas partidas no es más barato: traslada el costo a la obra o al trámite.
+Compara alcance antes que cifra. Pregunta si incluye modelo BIM, cantidades de obra, planos de detalle de refuerzo, la subsanación de observaciones de curaduría y la firma de un ingeniero especialista. Un honorario que excluye esas partidas no es más barato: traslada el costo a la obra o al trámite.
 
 ## Pedir la propuesta
 
-Envíe los planos arquitectónicos, el municipio, el uso previsto y el número de niveles. Si tiene [estudio de suelos]({{ site.baseurl }}/servicios/geotecnia-estudio-de-suelos/), inclúyalo; si no, lo cotizamos aparte. Diseñamos, evaluamos y supervisamos; no ejecutamos obra, así que la propuesta describe honorarios de ingeniería, no costos de construcción.
+Envía los planos arquitectónicos, el municipio, el uso previsto y el número de niveles. Si tienes [estudio de suelos]({{ site.baseurl }}/servicios/geotecnia-estudio-de-suelos/), inclúyelo; si no, lo cotizamos aparte. Diseñamos, evaluamos y supervisamos; no ejecutamos obra, así que la propuesta describe honorarios de ingeniería, no costos de construcción.

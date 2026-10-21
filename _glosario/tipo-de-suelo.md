@@ -30,7 +30,7 @@ Las ondas sísmicas viajan por la roca y, al llegar a los depósitos de suelo qu
 
 La clasificación se hace con la velocidad de onda de cortante, el número de golpes del ensayo SPT o la resistencia no drenada de los primeros 30 metros, según el [Título A]({{ site.baseurl }}/normativa/nsr-10/titulo-a/), y sale del estudio geotécnico exigido por el Título H.
 
-## Por qué importa en su proyecto
+## Por qué importa en tu proyecto
 
 El perfil fija los coeficientes Fa y Fv que multiplican el espectro de diseño. Entre un perfil B y uno E, las fuerzas sísmicas en periodos largos pueden más que duplicarse. Eso se traduce en columnas, muros y cimentaciones más grandes, o en la necesidad de cambiar de sistema estructural. Por eso el [estudio de suelos]({{ site.baseurl }}/servicios/geotecnia-estudio-de-suelos/) no es un requisito de la curaduría que se cumple al final: es el primer dato del diseño, y diseñar "suponiendo" un perfil es la observación más cara que puede recibir un proyecto.
 

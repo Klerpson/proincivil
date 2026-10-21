@@ -39,4 +39,4 @@ Un error frecuente es diseñarla como una losa de entrepiso invertida, sin inter
 
 ## En Antioquia
 
-Las losas de cimentación son comunes en los depósitos aluviales del Valle de Aburrá y en edificaciones con sótano; en las laderas, con suelos residuales y roca cercana, suelen ganar las zapatas o las pilas. En Hotel Aldea (Puerto Triunfo) la optimización de la cimentación fue una de las partidas donde más ahorró el proyecto. Si su edificación tiene columnas muy juntas o el estudio de suelos reporta baja capacidad, pídanos evaluar la [cimentación]({{ site.baseurl }}/servicios/cimentaciones/) antes de fijar el presupuesto.
+Las losas de cimentación son comunes en los depósitos aluviales del Valle de Aburrá y en edificaciones con sótano; en las laderas, con suelos residuales y roca cercana, suelen ganar las zapatas o las pilas. En Hotel Aldea (Puerto Triunfo) la optimización de la cimentación fue una de las partidas donde más ahorró el proyecto. Si tu edificación tiene columnas muy juntas o el estudio de suelos reporta baja capacidad, pídenos evaluar la [cimentación]({{ site.baseurl }}/servicios/cimentaciones/) antes de fijar el presupuesto.

@@ -1,0 +1,11 @@
+{%- comment -%}
+  Ejes de plano estructural decorativos (aria-hidden) para la portada y las cabeceras.
+  Parámetros: v (marcas de los ejes verticales, separadas por coma), h (marcas de los horizontales).
+  Las posiciones las fija el CSS del contenedor (.portada o .cabecera) por orden de aparición.
+{%- endcomment -%}
+{%- assign _v = include.v | default: "A,B,C" | split: "," -%}
+{%- assign _h = include.h | default: "1,2" | split: "," -%}
+<div class="plano" aria-hidden="true">
+  {%- for m in _v %}<span class="plano__eje plano__eje--v"><span class="plano__marca">{{ m }}</span></span>{% endfor -%}
+  {%- for m in _h %}<span class="plano__eje plano__eje--h"><span class="plano__marca">{{ m }}</span></span>{% endfor -%}
+</div>

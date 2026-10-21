@@ -3,7 +3,7 @@ titulo_corto: "Hoteles"
 orden: 3
 title: "Diseño e interventoría estructural de hoteles y torres de hospedaje"
 description: "Diseño estructural e interventoría de diseños para hoteles: torres de hasta 15 niveles, sistemas combinados de pórticos y cimentaciones optimizadas. Antioquia."
-h1: "Ingeniería estructural para hoteles: torres en altura y hospedaje que se construye a tiempo"
+h1: "Ingeniería estructural para hoteles: torres en altura y diseños listos a tiempo para la obra"
 eyebrow: "Edificaciones · Hotelería"
 excerpt: "Un hotel combina torres esbeltas, plantas de habitaciones repetitivas, zonas sociales de grandes luces y cronogramas de apertura que no admiten reprocesos. Diseñamos y revisamos estructuras hoteleras de hasta 15 niveles."
 hero: "fachada-ancha"

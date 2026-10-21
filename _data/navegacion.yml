@@ -4,28 +4,32 @@ principal:
     url: /servicios/
     ver_todo: Todos los servicios
     grupos:
-      - titulo: Diseño
+      - titulo: Ingeniería estructural y sismorresistencia
         enlaces:
           - { texto: "Diseño estructural sismorresistente", url: /servicios/diseno-estructural/ }
           - { texto: "Estructuras metálicas y carports", url: /servicios/estructuras-metalicas/ }
+          - { texto: "Reforzamiento y repotenciación", url: /servicios/reforzamiento-estructural/ }
           - { texto: "Cimentaciones", url: /servicios/cimentaciones/ }
           - { texto: "Muros de contención y taludes", url: /servicios/muros-de-contencion-y-taludes/ }
-      - titulo: Evaluación
+      - titulo: Patología y diagnóstico
         enlaces:
           - { texto: "Evaluación y patología estructural", url: /servicios/evaluacion-estructural/ }
-          - { texto: "Vulnerabilidad sísmica", url: /servicios/vulnerabilidad-sismica/ }
           - { texto: "Evaluación después de un sismo", url: /servicios/evaluacion-post-sismo/ }
-          - { texto: "Reforzamiento estructural", url: /servicios/reforzamiento-estructural/ }
-      - titulo: Suelos y control
+      - titulo: Vulnerabilidad estructural
+        enlaces:
+          - { texto: "Vulnerabilidad sísmica", url: /servicios/vulnerabilidad-sismica/ }
+      - titulo: Geotecnia y suelos
         enlaces:
           - { texto: "Geotecnia y estudios de suelos", url: /servicios/geotecnia-estudio-de-suelos/ }
-          - { texto: "Interventoría de diseños", url: /servicios/interventoria-de-disenos/ }
+      - titulo: Interventoría y supervisión técnica
+        enlaces:
+          - { texto: "Interventoría de diseños y obra", url: /servicios/interventoria-de-disenos/ }
           - { texto: "Revisión independiente de diseños", url: /servicios/revision-independiente-de-disenos/ }
           - { texto: "Supervisión técnica independiente", url: /servicios/supervision-tecnica-independiente/ }
-      - titulo: Trámites y BIM
-        enlaces:
           - { texto: "Curadurías y licencias", url: /servicios/curadurias-y-licencias/ }
-          - { texto: "BIM y topografía", url: /servicios/bim-y-topografia/ }
+      - titulo: Topografía y coordinación BIM
+        enlaces:
+          - { texto: "BIM, topografía y verticalidad", url: /servicios/bim-y-topografia/ }
           - { texto: "¿Cuánto cuesta?", url: /cuanto-cuesta/ }
   - texto: Proyectos
     url: /proyectos/
@@ -60,7 +64,7 @@ principal:
           - { texto: "Glosario estructural", url: /glosario/ }
   - texto: Nosotros
     url: /nosotros/
-    ver_todo: Conozca la firma
+    ver_todo: Conoce la firma
     grupos:
       - enlaces:
           - { texto: "Quiénes somos", url: /nosotros/ }
@@ -75,7 +79,8 @@ footer:
   - titulo: Servicios
     enlaces:
       - { texto: "Diseño estructural", url: /servicios/diseno-estructural/ }
-      - { texto: "Evaluación estructural", url: /servicios/evaluacion-estructural/ }
+      - { texto: "Patología estructural", url: /servicios/evaluacion-estructural/ }
+      - { texto: "Vulnerabilidad sísmica", url: /servicios/vulnerabilidad-sismica/ }
       - { texto: "Reforzamiento", url: /servicios/reforzamiento-estructural/ }
       - { texto: "Estudios de suelos", url: /servicios/geotecnia-estudio-de-suelos/ }
       - { texto: "Interventoría", url: /servicios/interventoria-de-disenos/ }

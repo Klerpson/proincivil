@@ -1,30 +1,30 @@
-.footer { position: relative; overflow: hidden; background: var(--color-bosque); color: var(--color-crema); padding-block: var(--space-2xl) var(--space-lg); margin-top: 0; border-top: 1px solid var(--color-linea-clara); }
-/* Wordmark fantasma (m-wordmark): 100% CSS, decorativo, nunca sustituye al logo real del marcado. */
-.footer::after {
-  content: "PROINCIVIL"; position: absolute; left: 50%; bottom: -0.34em; z-index: 0; pointer-events: none;
-  transform: translateX(-50%); font-family: var(--fuenteTitulos); font-weight: 900; letter-spacing: -0.02em;
-  font-size: min(18vw, 13rem); line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(251, 250, 247, 0.07);
-  white-space: nowrap;
+/* Pie: lámina azul con el NAP, enlaces filtrados por secciones publicadas y datos legales. */
+@layer componentes {
+  .pie {
+    padding-block: clamp(3rem, 6vw, 5rem) 2rem;
+    background-color: var(--azul); background-image: var(--cuadricula-oscura); background-size: var(--cuadricula-medida);
+    color: rgb(246 243 236 / 0.85); font-size: 0.9375rem;
+  }
+  .pie a { color: var(--marfil); text-decoration-color: var(--linea-clara); }
+  .pie a:hover { text-decoration-color: var(--trazo); }
+  .pie__rejilla { display: grid; gap: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); }
+  .pie__marca { grid-column: 1 / -1; max-inline-size: 26rem; }
+  .pie__logo img { inline-size: 8.5rem; block-size: auto; }
+  .pie__dato { font-family: var(--fuente-mono); font-size: 0.75rem; color: var(--trazo); }
+  .pie__redes { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; padding: 0; list-style: none; }
+  .pie__titulo {
+    margin-block-end: 0.875rem; padding-block-end: 0.5rem; border-block-end: 1px solid var(--linea-clara);
+    font-family: var(--fuente-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--trazo);
+  }
+  .pie__columna ul { display: grid; gap: 0.5rem; padding: 0; list-style: none; }
+  .pie__columna address { --flujo: 0.75rem; font-style: normal; }
+  .pie__legal {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem;
+    margin-block-start: 3rem; padding-block-start: 1.5rem; border-block-start: 1px solid var(--linea-clara);
+    font-size: 0.8125rem; color: rgb(246 243 236 / 0.65);
+  }
+  @media (min-width: 64em) {
+    .pie__rejilla { grid-template-columns: minmax(0, 1.4fr) repeat(4, minmax(0, 1fr)); }
+    .pie__marca { grid-column: auto; }
+  }
 }
-.footer > .wrapper { position: relative; z-index: 1; }
-.footer__grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 2.4fr); gap: var(--space-2xl) var(--space-3xl); align-items: start; }
-.footer__columnas { display: flex; flex-wrap: wrap; gap: var(--space-xl) var(--space-lg); }
-.footer__columna { flex: 1 1 9.5rem; min-width: 0; }
-.footer__columna--contacto { flex-grow: 1.8; flex-basis: 14rem; }
-.footer__marca img { width: 150px; height: auto; margin-bottom: var(--space-md); }
-.footer__marca p, .footer address p { font-size: var(--text-small); color: color-mix(in srgb, var(--color-crema) 78%, var(--color-bosque)); }
-.footer__marca p + p { margin-top: 0.6rem; }
-.footer__nit { text-wrap: balance; font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.06em; }
-.footer__social a { font-size: var(--text-small); }
-.footer__social { display: flex; gap: var(--space-sm); margin-top: var(--space-md); flex-wrap: wrap; }
-.footer a { color: var(--color-crema); text-decoration: none; }
-.footer a:hover { color: var(--color-blanco); text-decoration: underline; }
-.footer__titulo { font-family: var(--fuenteMono); font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.12em; color: color-mix(in srgb, var(--color-crema) 65%, var(--color-acento)); margin-bottom: var(--space-sm); }
-.footer__columna ul { padding: 0; display: grid; gap: 0.45rem; }
-.footer__columna li { font-size: var(--text-small); max-width: none; }
-.footer address { font-style: normal; display: grid; gap: 0.5rem; }
-.footer__legal { margin-top: var(--space-2xl); padding-top: var(--space-md); border-top: 1px solid var(--color-linea-clara); display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-sm); }
-.footer__legal p { font-size: var(--text-eyebrow); color: color-mix(in srgb, var(--color-crema) 65%, var(--color-bosque)); max-width: none; }
-.footer__legal a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
-.footer__legal a:hover { color: var(--color-blanco); }
-@media (max-width: 900px) { .footer__grid { grid-template-columns: 1fr; gap: var(--space-xl); } }

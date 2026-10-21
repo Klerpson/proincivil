@@ -62,7 +62,7 @@ faqs:
   - question: "¿Qué son las conexiones precalificadas?"
     answer: "Son uniones viga-columna cuyo comportamiento sísmico está validado por ensayos y normas (AISC 358), de modo que se pueden usar en pórticos resistentes a momento sin ensayarlas de nuevo. Las aplicamos en carports y cubiertas para garantizar ductilidad con detalles que cualquier taller puede fabricar."
   - question: "¿Pueden verificar si mi cubierta actual soporta paneles?"
-    answer: "Sí. Levantamos la estructura existente, estimamos su capacidad y comparamos con las cargas nuevas. Si no alcanza, diseñamos el refuerzo o proponemos una distribución de módulos que sí sea viable."
+    answer: "Sí. Hacemos el levantamiento de la estructura existente, estimamos su capacidad y comparamos con las cargas nuevas. Si no alcanza, diseñamos el refuerzo o proponemos una distribución de módulos que sí sea viable."
   - question: "¿Cuánto tarda el diseño de un carport?"
     answer: "Un diseño tipo para un proyecto con estructuras repetidas toma de dos a tres semanas, incluyendo cimentación. La verificación de una cubierta existente, de una a dos semanas después de la visita."
   - question: "¿Diseñan la estructura y también la fabrican o la montan?"

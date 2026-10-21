@@ -26,7 +26,7 @@ preguntas reales del autocompletado) → CTA → `relacionados` y `normativa`.
 
 ## Reglas de contenido (contrato + criterio)
 - **Nunca** "construimos", "nuestras obras", "ejecutamos". Siempre: diseñamos, evaluamos y supervisamos; la
-  obra la ejecuta el constructor que usted elija.
+  obra la ejecuta el constructor que elijas o una de nuestras empresas constructoras aliadas.
 - **Nunca** cifras en COP, ni datos de clientes, fechas, niveles o matrículas no confirmados → `PENDIENTE`
   y registro en `_plans/pendientes/`.
 - **Nunca** garantizar resultados de posicionamiento ni de aprobación futura; la cifra "100 % de aprobación en
@@ -38,7 +38,7 @@ preguntas reales del autocompletado) → CTA → `relacionados` y `normativa`.
   conexiones precalificadas), Super Motos/Honda (repotenciación), Betulia (geotecnia y contenciones).
 
 ## Estilo
-- Español de Colombia, trato de usted, mayúscula solo en la primera palabra de títulos y nombres propios.
+- Español de Colombia, **tuteo** (decisión del 2026-10-21; fuente de datos: `_plans/brief-contenido-2026-10-21.md`), mayúscula solo en la primera palabra de títulos y nombres propios.
 - Arranques directos con el dato o el problema; sin "en este artículo", "todo lo que necesita saber",
   "es importante destacar", "en conclusión".
 - H2 con keyword y contenido específico ("Qué revisa la curaduría en el componente estructural"), nunca

@@ -5,7 +5,7 @@ title: "DES, DMO y DMI: capacidad de disipación de energía NSR-10 | Glosario"
 description: "Qué significan DES, DMO y DMI en la NSR-10: niveles de capacidad de disipación de energía sísmica, qué zona de amenaza exige cada uno y cómo cambian el refuerzo."
 h1: "DES, DMO y DMI: capacidad de disipación de energía"
 eyebrow: "Glosario"
-excerpt: "Tres siglas que aparecen en toda memoria de cálculo y definen cuánto acero de confinamiento lleva su estructura y cuánto sismo puede absorber."
+excerpt: "Tres siglas que aparecen en toda memoria de cálculo y definen cuánto acero de confinamiento lleva tu estructura y cuánto sismo puede absorber."
 resumen: "DES, DMO y DMI son los tres niveles de capacidad de disipación de energía que define la NSR-10 para los sistemas estructurales: especial, moderada y mínima. La zona de amenaza sísmica fija el nivel mínimo exigido (alta exige DES, intermedia al menos DMO, baja admite DMI). A mayor nivel, más ductilidad, más detallado de refuerzo y mayor coeficiente de reducción R de las fuerzas sísmicas."
 datePublished: 2026-09-22
 dateModified: 2026-09-22

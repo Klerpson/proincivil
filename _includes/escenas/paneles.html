@@ -1,0 +1,35 @@
+{%- comment -%}
+  Escena: paneles a pantalla completa que se apilan con el scroll (foto, número, título, texto, enlaces).
+  Parámetros:
+    items  lista de familias (por defecto site.data.familias): rotulo, titulo, titulo_largo, texto, foto,
+           enlaces[{slug, texto}] a servicios.
+    largo  true → usa titulo_largo como h2 (hub /servicios/); por defecto titulo corto como h3 (home).
+  El movimiento vive en motion.css (.apilado/.panel); sin soporte se ven como bloques fijos uno tras otro.
+{%- endcomment -%}
+{%- assign _items = include.items | default: site.data.familias -%}
+{%- assign _total = _items.size | prepend: "0" | slice: -2, 2 -%}
+<ol class="apilado">
+  {%- for f in _items %}
+  <li class="panel">
+    <div class="panel__foto">{% include picture.html nombre=f.foto ratio="16x10" sizes="100vw" %}</div>
+    <div class="marco panel__cuerpo flujo">
+      <p class="panel__numero" aria-hidden="true">{{ forloop.index | prepend: "0" | slice: -2, 2 }} / {{ _total }}</p>
+      <p class="rotulo rotulo--claro">{{ f.rotulo }}</p>
+      {%- if include.largo %}
+      <h2 class="panel__titulo">{{ f.titulo_largo | default: f.titulo }}</h2>
+      {%- else %}
+      <h3 class="panel__titulo">{{ f.titulo }}</h3>
+      {%- endif %}
+      <p class="panel__texto">{{ f.texto }}</p>
+      <ul class="panel__enlaces">
+        {%- for e in f.enlaces -%}
+          {%- assign _s = site.servicios | where: "slug", e.slug | first -%}
+          {%- if _s %}
+        <li><a href="{{ _s.url | relative_url }}" class="enlace-flecha enlace-flecha--claro">{{ e.texto | default: _s.titulo_corto }}</a></li>
+          {%- endif -%}
+        {%- endfor %}
+      </ul>
+    </div>
+  </li>
+  {%- endfor %}
+</ol>

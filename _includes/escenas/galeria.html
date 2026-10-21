@@ -1,0 +1,37 @@
+{%- comment -%}
+  Escena: cinta horizontal de proyectos que avanza de lado mientras se baja (la sección se fija).
+  Parámetros:
+    slugs    lista de proyectos (por defecto todos, por campo orden)
+    excluir  slug a omitir (la ficha actual)
+    rotulo, titulo (h2), id (único por página)
+  Sin soporte de animation-timeline queda como carrusel con scroll horizontal y snap.
+{%- endcomment -%}
+{%- assign _todos = site.proyectos | sort: "orden" -%}
+{%- if include.slugs -%}
+  {%- assign _lista = "" | split: "" -%}
+  {%- assign _slugs = include.slugs | join: "," | split: "," -%}
+  {%- for s in _slugs -%}{%- assign _p = _todos | where: "slug", s | first -%}{%- if _p -%}{%- assign _lista = _lista | push: _p -%}{%- endif -%}{%- endfor -%}
+{%- else -%}
+  {%- assign _lista = _todos -%}
+{%- endif -%}
+{%- if include.excluir -%}{%- assign _excluir = include.excluir -%}{%- assign _lista = _lista | where_exp: "p", "p.slug != _excluir" -%}{%- endif -%}
+{%- assign _id = include.id | default: "galeria-titulo" -%}
+<section class="galeria" aria-labelledby="{{ _id }}">
+  <div class="galeria__escena">
+    <div class="marco encabezado galeria__encabezado">
+      <p class="rotulo rotulo--claro">{{ include.rotulo | default: "Proyectos" }}</p>
+      <h2 class="encabezado__titulo" id="{{ _id }}">{{ include.titulo }}</h2>
+    </div>
+    <ul class="galeria__pista">
+      {%- for p in _lista %}
+      <li class="galeria__item">
+        <a href="{{ p.url | relative_url }}" class="galeria__enlace">
+          {%- if p.hero and site.data.fotos[p.hero] -%}<span class="galeria__foto">{% include picture.html nombre=p.hero alt=p.hero_alt ratio="4x3" sizes="(max-width: 700px) 82vw, 27rem" %}</span>{%- else -%}<span class="galeria__foto galeria__foto--plano" aria-hidden="true"></span>{%- endif -%}
+          <span class="galeria__dato">{{ p.ficha.sector }} · {{ p.ficha.ubicacion }}</span>
+          <span class="galeria__titulo">{{ p.titulo_corto | default: p.h1 }}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

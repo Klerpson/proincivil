@@ -112,6 +112,6 @@ Cuatro criterios separan una interventoría que protege al dueño de una que sol
 
 ## Antes de contratar
 
-Si su proyecto es una obra privada, pregúntese primero qué figura necesita: revisión independiente de diseños antes de la licencia, supervisión técnica durante la estructura, interventoría integral del contrato, o las tres. Si es un contrato estatal, la ley y el pliego ya lo definen; lo que queda por elegir es quién la ejerce.
+Si tu proyecto es una obra privada, pregúntate primero qué figura necesita: revisión independiente de diseños antes de la licencia, supervisión técnica durante la estructura, interventoría integral del contrato, o las tres. Si es un contrato estatal, la ley y el pliego ya lo definen; lo que queda por elegir es quién la ejerce.
 
-PROINCIVIL presta interventoría de diseños, revisión independiente y supervisión técnica en Envigado, Medellín y el resto de Antioquia, con más de 20.000 m² supervisados. Diseñamos, revisamos y supervisamos; no ejecutamos obra, y por eso podemos ser interventores de verdad. [Cuéntenos el alcance]({{ site.baseurl }}/como-cotizar/) para definir la dedicación y los entregables de la propuesta.
+PROINCIVIL presta interventoría de diseños, revisión independiente y supervisión técnica en Envigado, Medellín y el resto de Antioquia, con más de 20.000 m² supervisados. Diseñamos, revisamos y supervisamos; no ejecutamos obra, y por eso podemos ser interventores de verdad. [Cuéntanos el alcance]({{ site.baseurl }}/como-cotizar/) para definir la dedicación y los entregables de la propuesta.

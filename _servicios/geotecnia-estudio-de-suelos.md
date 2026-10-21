@@ -6,7 +6,7 @@ title: "Estudio de suelos y geotecnia para construcción en Medellín y Antioqui
 description: "Estudios de suelos y geotecnia conforme a NSR-10 Título H para cimentaciones y licencias en Medellín, Envigado y Antioquia. Exploración, laboratorio e informe."
 h1: "Estudios de suelos y geotecnia para cimentaciones seguras"
 eyebrow: "Servicio · Suelos"
-excerpt: "El estudio que la curaduría exige y que decide cuánto cuesta su cimentación: exploración, laboratorio e informe conforme al Título H de la NSR-10, con la recomendación de cimentación que su estructura necesita."
+excerpt: "El estudio que la curaduría exige y que decide cuánto cuesta tu cimentación: exploración, laboratorio e informe conforme al Título H de la NSR-10, con la recomendación de cimentación que tu estructura necesita."
 hero: "detalle-concreto"
 hero_alt: "Encuentro de viga y columna en concreto reforzado"
 image: "/img/fotos/detalle-concreto-440.jpg"
@@ -15,20 +15,26 @@ badges:
   - "Exploración, laboratorio e informe"
   - "Suelos de ladera y suelos blandos"
   - "No ejecutamos obra"
-cta_texto: "Cotizar estudio de suelos"
+cta_texto: "Conversemos sobre tu estudio de suelos"
 cta_secundario: { url: "/cuanto-cuesta/estudio-de-suelos/", texto: "¿Cuánto cuesta un estudio de suelos?" }
 serviceType: "Estudio de suelos y geotecnia"
 resumen: "El estudio de suelos, o estudio geotécnico, determina las propiedades del terreno donde se va a construir: estratigrafía, resistencia, nivel freático, tipo de suelo para el análisis sísmico y comportamiento ante cargas. Conforme al Título H de la NSR-10, PROINCIVIL entrega el informe con la recomendación de cimentación, los parámetros de diseño y las medidas para excavaciones y taludes."
+zoom:
+  palabra: "SUELO"
+  textura: "ladera"
+  titulo: "Un estudio de suelos con exploración, laboratorio e informe para cimentar tu proyecto"
 datePublished: 2026-09-22
 dateModified: 2026-10-16
+cuando_titulo: "Siete situaciones en las que necesitas un estudio de suelos"
 cuando:
-  - "Va a radicar una licencia de construcción y la curaduría exige el estudio geotécnico"
-  - "Necesita definir la cimentación de una edificación nueva y no sabe si el suelo permite zapatas o exige pilas"
+  - "Vas a radicar una licencia de construcción y la curaduría exige el estudio geotécnico"
+  - "Necesitas definir la cimentación de una edificación nueva y no sabes si el suelo permite zapatas o exige pilas"
   - "El lote está en ladera o cerca de una quebrada y hay que evaluar estabilidad"
-  - "Va a hacer una excavación profunda junto a vecinos y necesita diseñar la contención"
+  - "Vas a hacer una excavación profunda junto a vecinos y necesitas diseñar la contención"
   - "Una edificación existente se está asentando y hay que saber por qué"
-  - "Un diseño estructural o una curaduría le pide revisar un estudio de suelos hecho por terceros"
-  - "Diseña vías, pavimentos o canchas y necesita la capacidad de la subrasante"
+  - "Un diseño estructural o una curaduría te pide revisar un estudio de suelos hecho por terceros"
+  - "Diseñas vías, pavimentos o canchas y necesitas la capacidad de la subrasante"
+entregables_titulo: "Seis entregables del estudio geotécnico, del sondeo al informe para curaduría"
 entregables:
   - "Programa de exploración: sondeos, apiques y ensayos de campo según el área y el número de niveles"
   - "Ensayos de laboratorio: clasificación, humedad, límites, resistencia, consolidación y compresión"
@@ -36,11 +42,13 @@ entregables:
   - "Clasificación del tipo de suelo para el análisis sísmico (perfiles A a F de la NSR-10)"
   - "Recomendación de cimentación con capacidad portante, asentamientos y profundidad de desplante"
   - "Informe firmado por ingeniero especialista, listo para curaduría, con recomendaciones de excavación, contención y drenaje"
+despues_titulo: "Después del estudio de suelos: cimentación, curaduría y verificación en obra"
 despues:
   - "El diseñador estructural usa los parámetros del informe para dimensionar la cimentación"
   - "Diseño de cimentaciones, muros de contención o estabilización de taludes cuando se requieren"
   - "Radicación en curaduría junto con el diseño estructural"
   - "Verificación en obra de que el suelo encontrado corresponde al estudiado, sin ejecutar la obra"
+factores_titulo: "Seis factores que definen el costo de un estudio de suelos"
 factores:
   - "Área del lote y área construida prevista"
   - "Número de niveles y cargas de la edificación: definen la profundidad de exploración"
@@ -49,14 +57,17 @@ factores:
   - "Acceso al lote, pendiente y necesidad de análisis de estabilidad"
   - "Ubicación y distancia para movilizar equipos"
 cuanto_cuesta: /cuanto-cuesta/estudio-de-suelos/
+audiencias_titulo: "Estudios de suelos para arquitectos, constructoras, lotes en ladera y entidades públicas"
 audiencias:
   - { rol: "Arquitectos y diseñadores", texto: "El insumo que necesitan para que el estructural defina la cimentación y la curaduría no devuelva el proyecto." }
   - { rol: "Constructoras y promotores", texto: "Saber antes de comprar o presupuestar si el lote exige pilas, contenciones o mejoramiento." }
   - { rol: "Propietarios de lotes en ladera", texto: "Estabilidad, drenaje y cimentación resueltos antes de invertir." }
   - { rol: "Entidades públicas", texto: "Estudios geotécnicos para infraestructura educativa, deportiva y vial." }
+proyectos_titulo: "Suelos estudiados para un colegio en Mutatá, canchas en Betulia y un hotel en Puerto Triunfo"
 proyectos: [ie-pavarando-grande-mutata, infraestructura-deportiva-betulia, hotel-aldea-puerto-triunfo]
 relacionados: [cimentaciones, muros-de-contencion-y-taludes, diseno-estructural, curadurias-y-licencias]
 normativa: [titulo-h, titulo-a, nsr-10, licencia-de-construccion-colombia]
+faqs_titulo: "Preguntas sobre estudios de suelos: plazos, costo y quién los firma"
 faqs:
   - question: "¿Cuándo se requiere un estudio de suelos?"
     answer: "Siempre que se vaya a construir una edificación nueva, ampliar en altura, cambiar la cimentación o solicitar licencia de construcción. El Título H de la NSR-10 lo exige como base del diseño de cimentaciones y del análisis sísmico, y la curaduría lo revisa junto con el diseño estructural."
@@ -69,14 +80,14 @@ faqs:
   - question: "¿Cuál es la diferencia entre estudio de suelos y estudio geotécnico?"
     answer: "En la práctica se usan como sinónimos. El estudio geotécnico es el término técnico del Título H de la NSR-10; el estudio de suelos es el nombre común. Ambos describen la misma investigación del terreno para fines de cimentación."
   - question: "¿Cómo interpretar un estudio de suelos?"
-    answer: "Los datos clave para su proyecto son la capacidad portante admisible, la profundidad de desplante recomendada, el tipo de cimentación propuesto, el tipo de suelo para sismo, el nivel freático y las recomendaciones de excavación y contención. Si el informe es de un tercero, lo revisamos y le explicamos qué implica para su estructura y su presupuesto."
+    answer: "Los datos clave para tu proyecto son la capacidad portante admisible, la profundidad de desplante recomendada, el tipo de cimentación propuesto, el tipo de suelo para sismo, el nivel freático y las recomendaciones de excavación y contención. Si el informe es de un tercero, lo revisamos y te explicamos qué implica para tu estructura y tu presupuesto."
   - question: "¿Quién hace y firma un estudio de suelos?"
     answer: "Un ingeniero civil con matrícula profesional y experiencia en geotecnia, según la Ley 400 de 1997. En PROINCIVIL lo dirige y firma un ingeniero especialista, y el informe se entrega en el formato que exige la curaduría."
   - question: "¿Hacen estudios de suelos en Rionegro y el Oriente antioqueño?"
     answer: "Sí. Trabajamos en todo el Área Metropolitana, el Oriente antioqueño y el resto del departamento, con equipos de exploración que se movilizan al lote."
 ---
 
-## Qué es un estudio de suelos y por qué define su cimentación
+## Qué es un estudio de suelos y por qué define tu cimentación
 
 El **estudio de suelos** es la investigación del terreno donde se va a construir. Sin él nadie puede saber si la cimentación será una zapata a un metro de profundidad o una pila a doce, si el lote necesita un muro de contención, si el nivel freático va a inundar el sótano ni qué tipo de suelo debe usarse en el análisis sísmico. Es, por eso, el estudio que más influye en el costo real de una obra y el primero que la curaduría revisa cuando llega un diseño estructural.
 
@@ -94,17 +105,17 @@ El Título H fija el alcance mínimo del **estudio geotécnico** según la categ
 | Análisis | Capacidad portante, asentamientos, estabilidad, empujes, sismo | Recomendar la cimentación y las medidas de excavación |
 | Informe | Documento firmado con planos de exploración, perfiles, resultados y recomendaciones | Base del diseño estructural y requisito de la curaduría |
 
-## Lo que el informe le entrega a su estructura
+## El informe de suelos fija cimentación, capacidad portante y tipo de suelo sísmico
 
 La recomendación de cimentación es el corazón del informe: zapatas aisladas o corridas, losa de cimentación, pilas o pilotes, con su profundidad de desplante, su capacidad admisible y los asentamientos totales y diferenciales esperados. En la I.E. Pavarandó Grande, en Mutatá, el estudio identificó un suelo tipo C que llevó a cimentar sobre pilas con campana; en Betulia, los estudios geotécnicos definieron los sistemas de contención de la infraestructura deportiva; en el Hotel Aldea, en Puerto Triunfo, permitieron optimizar la cimentación de más de 5.000 m².
 
 El informe también define el tipo de suelo para el análisis sísmico, que cambia el espectro de diseño y, con él, las fuerzas que la estructura debe resistir. Un suelo blando amplifica el sismo; ignorarlo es una de las causas de diseños subdimensionados.
 
-## Revisión de estudios de terceros
+## Revisión de estudios de suelos de terceros contra el Título H
 
 Muchos proyectos llegan con un estudio de suelos ya hecho. Lo revisamos contra el Título H antes de usarlo en el diseño: alcance de la exploración, coherencia entre laboratorio y recomendaciones, profundidad frente a la carga del edificio y clasificación sísmica. Cuando el estudio es insuficiente, lo complementamos en lugar de repetirlo. Es una de las revisiones que más devoluciones de curaduría evita.
 
-## Lo que diferencia un estudio de PROINCIVIL
+## Un estudio de suelos hecho por quien diseña la cimentación y no ejecuta obra
 
 - **Pensado para el diseñador estructural.** El mismo equipo que hará la cimentación decide qué exploración necesita; el informe trae los parámetros en la forma en que el cálculo los usa.
 - **Ladera y suelos difíciles.** Experiencia en pilas con campana, contenciones y estabilidad en municipios de Antioquia.

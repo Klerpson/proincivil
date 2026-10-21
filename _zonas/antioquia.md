@@ -25,10 +25,10 @@ datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
   - "Una alcaldía o entidad departamental contrata diseño de colegios, escenarios deportivos o equipamientos en un municipio de Antioquia"
-  - "Desarrolla un hotel, condominio o proyecto turístico en el Magdalena Medio, el suroeste o Urabá"
-  - "Su proyecto está en zona de amenaza sísmica alta y el diseño convencional no aplica"
-  - "Necesita estudio de suelos en un municipio sin laboratorios ni consultores locales"
-  - "Requiere interventoría o supervisión técnica de una obra fuera del Valle de Aburrá"
+  - "Desarrollas un hotel, condominio o proyecto turístico en el Magdalena Medio, el suroeste o Urabá"
+  - "Tu proyecto está en zona de amenaza sísmica alta y el diseño convencional no aplica"
+  - "Necesitas estudio de suelos en un municipio sin laboratorios ni consultores locales"
+  - "Requieres interventoría o supervisión técnica de una obra fuera del Valle de Aburrá"
 entregables:
   - "Diseño estructural con los parámetros sísmicos del municipio (amenaza alta o intermedia)"
   - "Estudios de suelos con exploración adaptada a aluviones, laderas o suelos residuales"

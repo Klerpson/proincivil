@@ -13,10 +13,20 @@ ficha:
   sector: "Arquitectura y edificaciones existentes"
   servicio: "Diagnóstico patológico, vulnerabilidad y revisión estructural"
   rol: "Consultor estructural"
-  resultado: "Conceptos técnicos para decisiones de diseño e intervención"
+  resultado: "Proyectos desbloqueados en 3 ciudades y alianza técnica continua"
+caso:
+  lugar: "Barranquilla · Pereira · Bogotá"
+  foto: "stock-plano-cercha"
+  foto_nota: "Imagen de referencia"
+  titulo: "ARTICO Arquitectura"
+  resultado: "Proyectos desbloqueados en 3 ciudades con decisiones de repotenciar o demoler"
+  datos: ["3 ciudades", "Cambios de uso", "Alianza continua"]
+  situacion: "Cambios de uso comercial, obras nuevas y estructuras existentes que necesitaban diagnóstico y concepto técnico para avanzar en diseño o licencia."
+  hicimos: "Alianza técnica continua: patologías, vulnerabilidad sísmica y revisiones estructurales bajo NSR-10, con presencia técnica en cada ciudad."
+  logro: "Proyectos desbloqueados en 3 ciudades y decisiones de repotenciar o demoler tomadas con criterio técnico. ARTICO nos incluye como socios estructurales en sus proyectos."
 servicios: [evaluacion-estructural, vulnerabilidad-sismica]
 datePublished: 2026-10-16
-dateModified: 2026-10-16
+dateModified: 2026-10-21
 ---
 
 ## El reto: definir qué admite una edificación antes de transformarla
@@ -33,8 +43,12 @@ La [evaluación estructural]({{ site.baseurl }}/servicios/evaluacion-estructural
 
 En esta alianza, los conceptos técnicos han servido para evaluar alternativas de repotenciación o demolición y para apoyar el desarrollo de proyectos en las tres ciudades. La recomendación depende de las condiciones de cada inmueble; la experiencia no implica que todos requieran reforzamiento o sustitución.
 
-## El resultado y el alcance de la alianza
+## El resultado: proyectos desbloqueados en 3 ciudades
 
-ARTICO cuenta con un interlocutor estructural para coordinar sus decisiones de arquitectura con la revisión de las edificaciones. El valor del acompañamiento está en incorporar el criterio técnico antes de comprometer una intervención, con continuidad entre las consultas del equipo y el trabajo en sitio.
+- **Proyectos desbloqueados en Barranquilla, Pereira y Bogotá** de forma simultánea, todo bajo NSR-10.
+- **Decisiones de repotenciar o demoler** tomadas con criterio técnico: decisiones de alto impacto económico respaldadas por diagnóstico, no por suposición.
+- **Continuidad de la alianza:** ARTICO incluye a PROINCIVIL como socio técnico estructural en su cartera de proyectos.
 
-PROINCIVIL diseña, evalúa y supervisa; **no ejecuta obra**. Este caso documenta una relación de consultoría y apoyo a decisiones, no una contratación para construir. Para plantear un alcance similar, consulte [qué información preparar para cotizar]({{ site.baseurl }}/como-cotizar/).
+El valor del acompañamiento está en incorporar el criterio técnico antes de comprometer una intervención, con continuidad entre las consultas del equipo y el trabajo en sitio.
+
+PROINCIVIL diseña, evalúa y supervisa; **no ejecuta obra**. Este caso documenta una relación de consultoría y apoyo a decisiones, no una contratación para construir. Para plantear un alcance similar, revisa [qué información preparar para empezar]({{ site.baseurl }}/como-cotizar/).

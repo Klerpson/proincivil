@@ -41,10 +41,11 @@
 <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
 <link rel="alternate" type="application/rss+xml" title="Blog PROINCIVIL" href="{{ '/feed.xml' | absolute_url }}">
 <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | absolute_url }}">
-{%- comment %} Fuentes: Inter (titulares negros + cuerpo) + JetBrains Mono (datos técnicos) + Playfair Display itálica (acento editorial en <em>). {% endcomment %}
+{%- comment %} Fuentes Plano vivo: Inter (titulares y cuerpo) + JetBrains Mono (ejes, cotas, rótulos y cifras). {% endcomment %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=JetBrains+Mono:wght@500;600&family=Playfair+Display:ital@1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"></noscript>
 {% include critical-css/critical.html %}
 {%- comment %} El hero no se precarga aquí: picture.html ya lo emite con fetchpriority="high". {% endcomment -%}
 {% include schema-organization.html %}

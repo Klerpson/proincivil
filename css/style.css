@@ -6,7 +6,8 @@ sitemap: false
    El orden de capas ya está declarado en critical-css/base.css (inline). */
 @layer reset, primitivas, componentes, utilidades;
 {% include css/primitivas.css %}
-{% include css/secciones.css %}
 {% include css/componentes.css %}
+{% include css/secciones.css %}
+{% include css/escenas.css %}
 {% include css/footer.css %}
 {% include css/motion.css %}

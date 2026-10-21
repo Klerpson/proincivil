@@ -3,10 +3,10 @@ titulo_corto: "Vulnerabilidad sísmica"
 orden: 4
 grupo: evaluacion
 title: "Estudio de vulnerabilidad sísmica NSR-10 A.10 | PROINCIVIL"
-description: "Estudio de vulnerabilidad sísmica conforme al Título A.10 de la NSR-10 para edificios, propiedad horizontal y colegios. Sepa si resiste el sismo de diseño."
+description: "Estudio de vulnerabilidad sísmica conforme al Título A.10 de la NSR-10 para edificios, propiedad horizontal y colegios. Descubre si resiste el sismo de diseño."
 h1: "Estudio de vulnerabilidad sísmica de edificaciones existentes"
 eyebrow: "Servicio · Evaluación"
-excerpt: "Saber si su edificación resistiría el sismo de diseño antes de que ocurra, con un estudio conforme al Título A.10 de la NSR-10 y un plan de reforzamiento con prioridades."
+excerpt: "Saber si tu edificación resistiría el sismo de diseño antes de que ocurra, con un estudio conforme al Título A.10 de la NSR-10 y un plan de reforzamiento con prioridades."
 hero: "institucion-educativa"
 hero_alt: "Institución educativa de dos niveles diseñada por PROINCIVIL"
 image: "/img/fotos/institucion-educativa-440.jpg"
@@ -15,19 +15,25 @@ badges:
   - "Ley 400 de 1997"
   - "Propiedad horizontal y edificaciones indispensables"
   - "No ejecutamos obra"
-cta_texto: "Solicitar estudio de vulnerabilidad"
+cta_texto: "Conversemos sobre tu estudio de vulnerabilidad"
 cta_secundario: { url: "/servicios/reforzamiento-estructural/", texto: "Ver reforzamiento estructural" }
 serviceType: "Estudio de vulnerabilidad sísmica"
 resumen: "El estudio de vulnerabilidad sísmica evalúa si una edificación existente cumple los requisitos de la NSR-10 frente al sismo de diseño y cuantifica su déficit de resistencia y rigidez. Conforme al Título A.10, define el índice de sobreesfuerzo y de flexibilidad de la estructura y concluye si requiere reforzamiento. Lo exige la ley para edificaciones indispensables y lo piden aseguradoras y copropiedades."
+zoom:
+  palabra: "RIESGO"
+  textura: "acero"
+  titulo: "Conoce cómo respondería tu edificación ante un sismo, conforme al Título A.10 de la NSR-10"
 datePublished: 2026-09-22
 dateModified: 2026-10-16
+cuando_titulo: "Seis casos en los que tu edificación necesita un estudio de vulnerabilidad sísmica"
 cuando:
-  - "Su edificación fue construida antes de la NSR-98 o de la NSR-10 y nadie ha verificado cómo se comportaría en un sismo"
-  - "Administra un colegio, un hospital, una estación o una edificación de atención a la comunidad que la ley obliga a evaluar"
-  - "Va a cambiar el uso o a ampliar en altura y la curaduría exige demostrar que la estructura existente cumple"
+  - "Tu edificación fue construida antes de la NSR-98 o de la NSR-10 y nadie ha verificado cómo se comportaría en un sismo"
+  - "Administras un colegio, un hospital, una estación o una edificación de atención a la comunidad que la ley obliga a evaluar"
+  - "Vas a cambiar el uso o a ampliar en altura y la curaduría exige demostrar que la estructura existente cumple"
   - "Una aseguradora condiciona la póliza o la prima a un estudio de vulnerabilidad"
   - "La copropiedad quiere saber si invertir en reforzamiento o en qué orden"
   - "Una evaluación estructural detectó deficiencias que ameritan cuantificarse"
+entregables_titulo: "Seis entregables con índices de sobreesfuerzo y flexibilidad según NSR-10 A.10"
 entregables:
   - "Levantamiento estructural y de materiales de la edificación existente"
   - "Modelo de análisis con las propiedades reales medidas"
@@ -35,25 +41,30 @@ entregables:
   - "Diagnóstico de deficiencias: irregularidades, detallado, columnas cortas, pisos blandos, uniones"
   - "Concepto de vulnerabilidad y nivel de intervención requerido"
   - "Esquema de reforzamiento con alternativas y orden de magnitud"
+despues_titulo: "Si cumple, certificación; si no cumple, diseño del reforzamiento"
 despues:
   - "Si cumple: certificación del resultado para la copropiedad, la aseguradora o la autoridad"
   - "Si no cumple: diseño detallado del reforzamiento estructural"
   - "Priorización por torre, bloque o sede cuando el estudio cubre varias edificaciones"
-  - "Supervisión técnica de la intervención, ejecutada por el constructor que usted elija"
+  - "Supervisión técnica de la intervención, ejecutada por el constructor que elijas"
+factores_titulo: "Cinco factores que definen el alcance del estudio de vulnerabilidad sísmica"
 factores:
   - "Área, número de niveles y número de edificaciones"
   - "Disponibilidad de planos originales o necesidad de levantamiento completo"
   - "Ensayos de materiales requeridos"
   - "Grupo de uso: las edificaciones indispensables exigen más análisis"
   - "Nivel de detalle del esquema de reforzamiento"
+audiencias_titulo: "Para propiedad horizontal, colegios, clínicas, aseguradoras e inversionistas"
 audiencias:
   - { rol: "Administradores y consejos de propiedad horizontal", texto: "Un estudio por torre que ordena la inversión en reforzamiento y responde a los copropietarios." }
   - { rol: "Colegios, clínicas y entidades públicas", texto: "Cumplimiento de la obligación legal de evaluar edificaciones indispensables y de atención a la comunidad." }
   - { rol: "Aseguradoras", texto: "Información técnica para suscribir y tarifar el riesgo sísmico." }
-  - { rol: "Inversionistas y promotores", texto: "Saber qué compra antes de reconvertir o ampliar un edificio existente." }
+  - { rol: "Inversionistas y promotores", texto: "Saber qué compras antes de reconvertir o ampliar un edificio existente." }
+proyectos_titulo: "Seis torres en Dosquebradas y una alianza en Barranquilla, Pereira y Bogotá"
 proyectos: [tacuara-club-residencial, artico-arquitectura]
 relacionados: [evaluacion-estructural, reforzamiento-estructural, evaluacion-post-sismo, revision-independiente-de-disenos]
 normativa: [titulo-a, ley-400-de-1997, nsr-10, titulo-c]
+faqs_titulo: "Preguntas sobre el estudio de vulnerabilidad sísmica y el Título A.10"
 faqs:
   - question: "¿Qué es un estudio de vulnerabilidad sísmica?"
     answer: "Es el análisis que compara la capacidad real de una edificación existente con la demanda del sismo de diseño que fija la NSR-10 para su municipio y su uso. El resultado son índices que dicen cuánto le falta a cada elemento en resistencia (sobreesfuerzo) y a cada piso en rigidez (flexibilidad), y con ellos se decide si hay que reforzar."
@@ -68,7 +79,7 @@ faqs:
   - question: "¿Si el estudio dice que no cumple, tengo que reforzar de inmediato?"
     answer: "El estudio clasifica la deficiencia y su gravedad. Hay casos que exigen medidas inmediatas y otros que permiten programar el reforzamiento por etapas. Lo que no conviene es ignorar el resultado: en un sismo la responsabilidad recae sobre quien conocía la deficiencia."
   - question: "¿Ustedes ejecutan el reforzamiento?"
-    answer: "No. Diseñamos el reforzamiento y supervisamos su ejecución si lo desea; la obra la realiza el constructor que usted elija. No ejecutamos obra."
+    answer: "No. Diseñamos el reforzamiento y supervisamos su ejecución si lo necesitas; la obra la realiza el constructor que elijas. No ejecutamos obra."
 ---
 
 ## Qué es la vulnerabilidad sísmica y por qué importa en Antioquia
@@ -92,7 +103,7 @@ El Título A.10 fija el procedimiento para evaluar edificaciones existentes. En 
 | Sobreesfuerzo | Relación entre la solicitación del sismo de diseño y la resistencia real del elemento | Cuando supera el valor que la norma permite para edificaciones existentes |
 | Flexibilidad | Relación entre la deriva del piso y la deriva máxima permitida | Cuando el piso se desplaza más de lo tolerable y compromete elementos no estructurales y la estabilidad |
 
-## Qué encontramos con más frecuencia
+## Cinco deficiencias frecuentes: mampostería no reforzada, pisos blandos y columnas cortas
 
 - **Mampostería no reforzada** que en el diseño original se tomó como simple relleno pero que en un sismo trabaja, se agrieta y falla.
 - **Pisos blandos** en primer nivel por parqueaderos o locales sin muros, con columnas que concentran toda la deformación.
@@ -100,9 +111,9 @@ El Título A.10 fija el procedimiento para evaluar edificaciones existentes. En 
 - **Uniones viga-columna sin confinamiento**, típicas de construcciones anteriores a los años noventa.
 - **Modificaciones posteriores**: muros retirados, entrepisos añadidos, tanques y equipos en cubierta que nadie calculó.
 
-## De la vulnerabilidad al reforzamiento
+## Del estudio de vulnerabilidad al reforzamiento: alternativas con orden de magnitud
 
-El estudio termina con un esquema de reforzamiento cuando hace falta: encamisados de columnas, muros nuevos de concreto, arriostramientos metálicos, refuerzo con fibras o mejora de uniones. Presentamos alternativas con su orden de magnitud para que la copropiedad o la entidad decida con información. El diseño detallado es el servicio de [reforzamiento estructural]({{ site.baseurl }}/servicios/reforzamiento-estructural/); la obra la ejecuta el constructor que usted elija bajo nuestra supervisión si lo desea.
+El estudio termina con un esquema de reforzamiento cuando hace falta: encamisados de columnas, muros nuevos de concreto, arriostramientos metálicos, refuerzo con fibras o mejora de uniones. Presentamos alternativas con su orden de magnitud para que la copropiedad o la entidad decida con información. El diseño detallado es el servicio de [reforzamiento estructural]({{ site.baseurl }}/servicios/reforzamiento-estructural/); la obra la ejecuta el constructor que elijas bajo nuestra supervisión si lo necesitas.
 
 En [Tacuara Club Residencial P.H.]({{ site.baseurl }}/proyectos/tacuara-club-residencial/), Dosquebradas, el diagnóstico patológico ya fue concluido y el estudio de vulnerabilidad de las seis torres está en proceso como base del plan de repotenciación. Son fases distintas: el diagnóstico entregado no equivale a un estudio de vulnerabilidad terminado ni a una obra ejecutada. Diseñamos, evaluamos y supervisamos; no ejecutamos obra.
 

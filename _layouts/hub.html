@@ -4,23 +4,43 @@ layout: default
 {%- comment -%}
   Hub de colección. Front matter:
     coleccion: servicios | edificaciones | zonas | normativa | glosario | proyectos | cuanto-cuesta
-    grupos: (opcional) lista de {titulo, slugs:[...]} para agrupar tarjetas
+    paneles: true → las familias de _data/familias.yml como paneles apilados (h2), antes del contenido
+    galeria: {titulo} → cinta horizontal fija con todos los proyectos
+    casos: {slugs, titulo} → escena de casos con foto fija
+    marquesina: clave de _data/marquesinas.yml
+    grupos: (opcional) lista de {rotulo, titulo, texto, slugs:[...]} para agrupar tarjetas
+  Sin paneles, galería ni grupos, la colección se muestra en una rejilla de tarjetas.
 {%- endcomment -%}
 {%- assign _items = site[page.coleccion] | sort: "orden" -%}
-<section class="section">
-  <div class="wrapper flow">
+{%- if page.paneles -%}
+{% include escenas/paneles.html largo=true %}
+{%- endif -%}
+{%- if page.galeria -%}
+{% include escenas/galeria.html titulo=page.galeria.titulo rotulo=page.galeria.rotulo %}
+{%- endif -%}
+{%- if content != "" -%}
+<section class="seccion">
+  <div class="marco flujo">
     {{ content }}
   </div>
 </section>
+{%- endif -%}
+{%- if page.casos -%}
+{% include escenas/casos.html slugs=page.casos.slugs titulo=page.casos.titulo rotulo=page.casos.rotulo clase="seccion--papel" %}
+{%- endif -%}
+{%- if page.marquesina -%}
+{% include escenas/marquesina.html cual=page.marquesina %}
+{%- endif -%}
 {%- if page.grupos -%}
   {%- for grupo in page.grupos -%}
-  <section class="section{% cycle ' section--crema', '' %}">
-    <div class="wrapper flow">
-      <div class="section-header">
-        <h2 class="section-header__titulo">{{ grupo.titulo }}</h2>
-        {%- if grupo.texto -%}<p class="section-header__texto">{{ grupo.texto }}</p>{%- endif -%}
+  <section class="seccion{% cycle ' seccion--papel', '' %}">
+    <div class="marco flujo">
+      <div class="encabezado">
+        {%- if grupo.rotulo -%}<p class="rotulo">{{ grupo.rotulo }}</p>{%- endif -%}
+        <h2 class="encabezado__titulo">{{ grupo.titulo }}</h2>
+        {%- if grupo.texto -%}<p class="encabezado__texto">{{ grupo.texto }}</p>{%- endif -%}
       </div>
-      <div class="grid" style="--grid-min: 300px">
+      <div class="rejilla rejilla--3">
         {%- for slug in grupo.slugs -%}
           {%- assign item = _items | where: "slug", slug | first -%}
           {%- if item -%}{% include tarjeta.html item=item %}{%- endif -%}
@@ -29,16 +49,16 @@ layout: default
     </div>
   </section>
   {%- endfor -%}
-{%- else -%}
-  <section class="section section--crema">
-    <div class="wrapper">
-      <div class="grid" style="--grid-min: 300px">
+{%- elsif page.paneles == nil and page.galeria == nil -%}
+  <section class="seccion seccion--papel">
+    <div class="marco">
+      <div class="rejilla rejilla--3">
         {%- for item in _items -%}{% include tarjeta.html item=item %}{%- endfor -%}
       </div>
     </div>
   </section>
 {%- endif -%}
 {% if page.faqs %}
-<section class="section"><div class="wrapper">{% include faqs.html %}</div></section>
+<section class="seccion seccion--papel"><div class="marco">{% include faqs.html %}</div></section>
 {% endif %}
 {% include cta-final.html %}

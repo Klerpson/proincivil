@@ -1,7 +1,7 @@
 ---
-title: "Qué revisar en su edificio después de un sismo en Antioquia (ATC-20)"
+title: "Qué revisar en tu edificio después de un sismo en Antioquia (ATC-20)"
 description: "Señales de alarma tras un sismo, qué no hacer, cuándo llamar a un ingeniero estructural y cómo funciona la evaluación de seguridad post-sismo ATC-20 en Antioquia."
-h1: "Qué revisar en su edificio después de un sismo en Antioquia: guía de evaluación ATC-20"
+h1: "Qué revisar en tu edificio después de un sismo en Antioquia: guía de evaluación ATC-20"
 excerpt: "Tras un sismo sentido en Medellín o Antioquia, la pregunta no es si el edificio se movió, sino si puede seguir habitándose. Esta guía explica qué señales importan, qué no hacer y cómo un ingeniero decide con la metodología ATC-20."
 categories: [sismos]
 tags: [evaluación post-sismo, ATC-20, sismo Medellín, propiedad horizontal, aseguradoras, fisuras]
@@ -20,7 +20,7 @@ indice:
   - { id: "caso-tacuara", title: "Caso: Tacuara Club Residencial" }
 faqs:
   - question: "¿Tengo que evacuar mi edificio después de un sismo?"
-    answer: "No necesariamente. La mayoría de las edificaciones bien diseñadas resisten sismos moderados con daños reparables en elementos no estructurales. Evacúe de inmediato si hay grietas diagonales anchas en columnas o muros de carga, si el piso o las losas se desnivelaron, si las puertas dejaron de cerrar por deformación del marco o si hay olor a gas. En cualquier otro caso, pida una evaluación antes de decidir."
+    answer: "No necesariamente. La mayoría de las edificaciones bien diseñadas resisten sismos moderados con daños reparables en elementos no estructurales. Evacúe de inmediato si hay grietas diagonales anchas en columnas o muros de carga, si el piso o las losas se desnivelaron, si las puertas dejaron de cerrar por deformación del marco o si hay olor a gas. En cualquier otro caso, pide una evaluación antes de decidir."
   - question: "¿Las fisuras en las paredes son peligrosas?"
     answer: "Las fisuras finas en muros divisorios, acabados o uniones entre muro y columna son lo más frecuente después de un sismo y casi nunca comprometen la estructura. Las que sí importan son las grietas diagonales o en X en columnas, vigas y muros estructurales, las que atraviesan el elemento y las que aumentan de tamaño en los días siguientes."
   - question: "¿Qué es la evaluación ATC-20?"
@@ -28,7 +28,7 @@ faqs:
   - question: "¿Quién paga la evaluación en una propiedad horizontal?"
     answer: "Normalmente la copropiedad, a través de la administración y con cargo al fondo de imprevistos o a una cuota extraordinaria aprobada en asamblea. Si el conjunto tiene póliza de zonas comunes, el informe técnico es el soporte para la reclamación y en algunos casos la aseguradora asume o reembolsa el costo del peritaje."
   - question: "¿Cuánto tarda una evaluación post-sismo?"
-    answer: "La inspección ATC-20 de una torre o edificio puede hacerse en horas; el concepto preliminar de habitabilidad se entrega en uno o dos días. El informe patológico completo, con clasificación de daños y recomendaciones de reparación, tarda de una a tres semanas según el tamaño de la edificación y si se requieren ensayos."
+    answer: "Depende del tamaño de la edificación y de los ensayos que haga falta. Primero se inspecciona la seguridad de uso y después se hace el diagnóstico detallado; el plazo de cada entrega se acuerda con la administración según la información disponible y el levantamiento necesario."
   - question: "¿La evaluación incluye el reforzamiento?"
     answer: "No. La evaluación determina el estado de la estructura y recomienda intervenciones. El diseño del reforzamiento es un servicio posterior, que se contrata si el diagnóstico lo exige. PROINCIVIL diseña la evaluación y el reforzamiento; la ejecución la hace el contratista que el cliente elija."
 ---
@@ -102,12 +102,12 @@ Si el diagnóstico concluye que la estructura tiene vulnerabilidad de fondo, ind
 
 ## Caso: Tacuara Club Residencial {#caso-tacuara}
 
-Tras un evento sísmico, la administración de Tacuara Club Residencial P.H. necesitaba responder a más de 780 apartamentos en seis torres y sustentar la reclamación ante su aseguradora. PROINCIVIL aplicó la evaluación ATC-20 torre por torre, entregando conceptos parciales que la administración comunicó de inmediato, y consolidó un informe patológico que separó daño estructural de daño en elementos no estructurales, con priorización de reparaciones.
+El caso no está en Antioquia sino en Dosquebradas (Risaralda), pero muestra el método. Tras un sismo, la administración de Tacuara Club Residencial P.H. necesitaba un diagnóstico técnico riguroso para respaldar la solicitud de anticipo ante su aseguradora, con más de 780 apartamentos en seis torres. PROINCIVIL hizo patología estructural con pruebas de núcleo, esclerometría, regatas, exploración geotécnica, verificación de verticalidad de las torres y levantamiento con dron.
 
-El resultado fue que cada decisión de uso quedó respaldada por un criterio de ingeniería independiente y la aseguradora recibió un soporte técnico con metodología reconocida. El [caso completo]({{ site.baseurl }}/proyectos/tacuara-club-residencial/) está en nuestra sección de proyectos.
+El diagnóstico patológico quedó completo y con respaldo técnico suficiente para la gestión ante la aseguradora; el estudio de vulnerabilidad sísmica para el plan de repotenciación está en curso. El [caso completo]({{ site.baseurl }}/proyectos/tacuara-club-residencial/) está en nuestra sección de proyectos.
 
 ## Cuándo llamar y qué preparar
 
-Si su edificación muestra cualquiera de las señales de alarma estructural, contacte un ingeniero el mismo día. Si solo ve fisuras en acabados, programe la evaluación en los días siguientes; no es urgente, pero sí conveniente para dejar constancia. En ambos casos tenga a mano las fotos, los planos si existen y el número de la póliza.
+Si tu edificación muestra cualquiera de las señales de alarma estructural, contacta a un ingeniero el mismo día. Si solo ves fisuras en acabados, programa la evaluación en los días siguientes; no es urgente, pero sí conveniente para dejar constancia. En ambos casos ten a mano las fotos, los planos si existen y el número de la póliza.
 
-PROINCIVIL realiza [evaluaciones estructurales]({{ site.baseurl }}/servicios/evaluacion-estructural/) después de sismos en Envigado, Medellín, el Área Metropolitana y el resto de Antioquia, con concepto preliminar de habitabilidad en uno o dos días. Diseñamos la evaluación y, si hace falta, el reforzamiento; la obra la ejecuta el contratista que usted elija.
+PROINCIVIL realiza [evaluaciones estructurales]({{ site.baseurl }}/servicios/evaluacion-estructural/) después de sismos en Envigado, Medellín, el Área Metropolitana, el resto de Antioquia y otras regiones de Colombia. Diseñamos la evaluación y, si hace falta, el reforzamiento; la obra la ejecuta el constructor que tú contrates.

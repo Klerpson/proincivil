@@ -3,9 +3,9 @@ titulo_corto: "Título A · Requisitos sísmicos"
 orden: 2
 title: "Título A NSR-10: amenaza sísmica, grupos de uso y derivas | PROINCIVIL"
 description: "Guía del Título A de la NSR-10: zonas de amenaza sísmica, perfiles de suelo, grupos de uso, coeficiente de importancia, derivas e irregularidades estructurales."
-h1: "Título A de la NSR-10: los requisitos sísmicos que definen su estructura"
+h1: "Título A de la NSR-10: los requisitos sísmicos que definen tu estructura"
 eyebrow: "Normativa · NSR-10"
-excerpt: "El título que decide cuánta fuerza sísmica debe resistir su edificación, con qué holgura y con qué sistema estructural: zona de amenaza, tipo de suelo, grupo de uso, derivas e irregularidades."
+excerpt: "El título que decide cuánta fuerza sísmica debe resistir tu edificación, con qué holgura y con qué sistema estructural: zona de amenaza, tipo de suelo, grupo de uso, derivas e irregularidades."
 cta_texto: "Consultar sobre mi proyecto"
 resumen: "El Título A de la NSR-10 fija los requisitos generales de diseño sismo resistente: define la zona de amenaza sísmica del municipio, el perfil de suelo, el grupo de uso y su coeficiente de importancia, el espectro de diseño, las derivas máximas y el nivel de capacidad de disipación de energía exigido. También regula la evaluación y el reforzamiento de edificaciones existentes en su capítulo A.10."
 datePublished: 2026-09-22
@@ -25,7 +25,7 @@ faqs:
   - question: "¿Qué son los grupos de uso de la NSR-10?"
     answer: "Son cuatro categorías que clasifican las edificaciones según la importancia de que sigan funcionando después de un sismo. Grupo I: ocupación normal (vivienda, oficinas, comercio). Grupo II: ocupación especial (edificios con más de 200 personas, colegios universitarios, almacenes con más de 500 m²). Grupo III: atención a la comunidad (colegios, guarderías, estaciones de bomberos, cuarteles). Grupo IV: indispensables (hospitales, centrales de emergencia). Cada grupo tiene un coeficiente de importancia que amplifica la fuerza sísmica de diseño."
   - question: "¿En qué zona de amenaza sísmica está Medellín?"
-    answer: "Medellín, Envigado y el Área Metropolitana están clasificados en zona de amenaza sísmica intermedia según el mapa de la NSR-10, con coeficientes Aa y Av definidos en el apéndice A-4 para cada municipio. Otras regiones de Antioquia, como el Urabá, están en zona alta. Verifique siempre el valor exacto del municipio en la tabla del reglamento; es el primer dato del análisis sísmico."
+    answer: "Medellín, Envigado y el Área Metropolitana están clasificados en zona de amenaza sísmica intermedia según el mapa de la NSR-10, con coeficientes Aa y Av definidos en el apéndice A-4 para cada municipio. Otras regiones de Antioquia, como el Urabá, están en zona alta. Verifica siempre el valor exacto del municipio en la tabla del reglamento; es el primer dato del análisis sísmico."
   - question: "¿Qué es la deriva y cuál es el máximo permitido?"
     answer: "La deriva es el desplazamiento horizontal relativo entre dos pisos consecutivos durante el sismo de diseño. La NSR-10 limita la deriva máxima al 1 % de la altura del piso para estructuras de concreto, acero y sistemas mixtos, y al 0,5 % para mampostería estructural. Controlar la deriva protege los elementos no estructurales y evita daños en fachadas, muros divisorios e instalaciones."
   - question: "¿Qué son DMI, DMO y DES?"
@@ -81,4 +81,4 @@ Las **irregularidades** en planta (torsión, retrocesos, diafragmas discontinuos
 
 El capítulo A.10 regula la **evaluación de vulnerabilidad sísmica y el reforzamiento** de edificaciones ya construidas. Aplica cuando cambia el uso o el grupo de uso, cuando se amplía la edificación, cuando es indispensable o de atención a la comunidad y no se ha actualizado, o cuando ha sufrido daño por sismo u otra causa. El procedimiento compara la capacidad de cada elemento con la demanda del sismo de diseño mediante índices de sobreesfuerzo y de flexibilidad, y define el nivel de reforzamiento requerido.
 
-Es el marco de nuestros servicios de [vulnerabilidad sísmica]({{ site.baseurl }}/servicios/vulnerabilidad-sismica/) y de [evaluación después de un sismo]({{ site.baseurl }}/servicios/evaluacion-post-sismo/), como el diagnóstico de las seis torres de Tacuara Club Residencial. Diseñamos la evaluación y el reforzamiento; la ejecución la realiza el constructor que usted elija.
+Es el marco de nuestros servicios de [vulnerabilidad sísmica]({{ site.baseurl }}/servicios/vulnerabilidad-sismica/) y de [evaluación después de un sismo]({{ site.baseurl }}/servicios/evaluacion-post-sismo/), como el diagnóstico de las seis torres de Tacuara Club Residencial. Diseñamos la evaluación y el reforzamiento; la ejecución la realiza el constructor que elijas.

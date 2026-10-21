@@ -7,7 +7,7 @@ description: "Caso: diseño integral y estructural de más de 5.000 m² de hotel
 h1: "Hotel Aldea (Puerto Triunfo): diseño integral y estructural con cimentaciones optimizadas"
 excerpt: "Más de 5.000 m² de hotel diseñados con un sistema mixto de concreto y acero, en el que la optimización de la cimentación y de las estructuras metálicas se tradujo en menos concreto, menos acero y menos días de obra."
 hero: "estructura-metalica"
-hero_alt: "Estructura metálica de un proyecto diseñado por PROINCIVIL"
+hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 image: "/img/fotos/estructura-metalica-1200.jpg"
 sin_cta_cabecera: true
 ficha:

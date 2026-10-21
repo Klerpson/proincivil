@@ -1,17 +1,19 @@
 {%- assign _faqs = include.faqs | default: page.faqs -%}
+{%- assign _tema_faq = page.titulo_corto | default: page.h1 | strip_html | downcase -%}
+{%- assign _faq_def = "Preguntas sobre " | append: _tema_faq -%}
 {%- if _faqs and _faqs.size > 0 -%}
-<section class="faqs" aria-label="Preguntas frecuentes">
-  <div class="section-header">
-    <p class="section-header__eyebrow">Preguntas frecuentes</p>
-    <h2 class="section-header__titulo">{{ include.titulo | default: page.faqs_titulo | default: "Lo que suelen preguntarnos" }}</h2>
+<div class="preguntas flujo">
+  <div class="encabezado">
+    <p class="rotulo">Preguntas frecuentes</p>
+    <h2 class="encabezado__titulo">{{ include.titulo | default: page.faqs_titulo | default: _faq_def }}</h2>
   </div>
-  <div class="faqs__lista">
+  <div class="preguntas__lista">
     {%- for faq in _faqs -%}
-    <details class="faq"{% if forloop.first %} open{% endif %}>
-      <summary class="faq__pregunta"><h3>{{ faq.question }}</h3><span class="faq__icono" aria-hidden="true"></span></summary>
-      <div class="faq__respuesta flow">{{ faq.answer | markdownify }}</div>
+    <details class="pregunta" name="preguntas"{% if forloop.first %} open{% endif %}>
+      <summary class="pregunta__titulo"><h3>{{ faq.question }}</h3></summary>
+      <div class="pregunta__respuesta flujo">{{ faq.answer | markdownify }}</div>
     </details>
     {%- endfor -%}
   </div>
-</section>
+</div>
 {%- endif -%}

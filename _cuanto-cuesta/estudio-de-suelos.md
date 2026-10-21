@@ -11,7 +11,7 @@ hero_alt: "Encuentro de viga y columna en concreto reforzado"
 image: "/img/fotos/detalle-concreto-440.jpg"
 badges:
   - "Alcance según NSR-10 Título H"
-  - "Propuesta en 24 h hábiles"
+  - "Llamada de diagnóstico sin costo"
   - "Exploración, laboratorio e informe"
 cta_texto: "Pedir propuesta de estudio de suelos"
 cta_secundario: { url: "/servicios/geotecnia-estudio-de-suelos/", texto: "Ver el servicio" }
@@ -20,10 +20,10 @@ resumen: "El costo de un estudio de suelos en Colombia depende del número y la 
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Va a radicar una licencia y la curaduría exige el estudio de suelos firmado"
-  - "Va a diseñar la estructura y el ingeniero estructural necesita los parámetros del suelo"
-  - "Tiene un lote en ladera y quiere saber si es construible y con qué cimentación"
-  - "Recibió una cotización y quiere entender qué incluye antes de aceptarla"
+  - "Vas a radicar una licencia y la curaduría exige el estudio de suelos firmado"
+  - "Vas a diseñar la estructura y el ingeniero estructural necesita los parámetros del suelo"
+  - "Tienes un lote en ladera y quieres saber si es construible y con qué cimentación"
+  - "Recibiste una cotización y quieres entender qué incluye antes de aceptarla"
 entregables:
   - "Número, profundidad y ubicación de los sondeos propuestos, con la justificación normativa"
   - "Lista de ensayos de campo y laboratorio incluidos"
@@ -33,7 +33,7 @@ entregables:
 despues:
   - "Con el informe, el diseño estructural puede definir la cimentación y el análisis sísmico"
   - "El estudio se radica junto con el diseño estructural en la curaduría"
-  - "Si el suelo obliga a cimentación profunda o contenciones, lo sabrá antes de comprometer el presupuesto"
+  - "Si el suelo obliga a cimentación profunda o contenciones, lo sabrás antes de comprometer el presupuesto"
 factores:
   - "Número de sondeos: la NSR-10 fija mínimos según el área y la categoría del proyecto; más área, más sondeos"
   - "Profundidad de exploración: depende de los niveles y las cargas; un edificio exige sondeos más profundos que una casa"
@@ -49,7 +49,7 @@ audiencias:
   - { rol: "Municipios", texto: "Para dimensionar estudios de infraestructura educativa, deportiva y vial." }
 faqs:
   - question: "¿Cuánto cuesta un estudio de suelos para construcción?"
-    answer: "Depende del número y la profundidad de los sondeos, de los ensayos de laboratorio y del acceso al lote. Un estudio para una vivienda en lote plano con dos sondeos y ensayos básicos cuesta una fracción de uno para un edificio en ladera con exploración profunda. Cotizamos con la ubicación, el área y los niveles del proyecto en menos de 24 horas hábiles."
+    answer: "Depende del número y la profundidad de los sondeos, de los ensayos de laboratorio y del acceso al lote. Un estudio para una vivienda en lote plano con dos sondeos y ensayos básicos cuesta una fracción de uno para un edificio en ladera con exploración profunda. Cotizamos con la ubicación, el área y los niveles del proyecto."
   - question: "¿Cuánto tarda un estudio de suelos?"
     answer: "Entre dos y cuatro semanas: unos días de campo, dos a tres semanas de laboratorio según los ensayos, y el análisis e informe. Los ensayos de consolidación son los que más tiempo toman."
   - question: "¿Qué incluye un estudio de suelos según la NSR-10?"
@@ -87,8 +87,8 @@ Estratigrafía por sondeo, parámetros de resistencia y deformación de cada est
 
 ## Cuándo pedirlo
 
-Antes del diseño estructural, no después. Sin el estudio el ingeniero estructural no puede definir la cimentación ni el tipo de suelo del análisis sísmico; con un estudio tardío, el diseño se rehace. Si va a comprar un lote en ladera, un estudio previo puede evitar comprar un terreno cuya cimentación cueste más que la casa.
+Antes del diseño estructural, no después. Sin el estudio el ingeniero estructural no puede definir la cimentación ni el tipo de suelo del análisis sísmico; con un estudio tardío, el diseño se rehace. Si vas a comprar un lote en ladera, un estudio previo puede evitar comprar un terreno cuya cimentación cueste más que la casa.
 
 ## Pedir la propuesta
 
-Necesitamos la ubicación exacta, el área y los niveles previstos, el uso y, si existen, los planos arquitectónicos. Con eso definimos el alcance que exige la norma y enviamos la propuesta en menos de 24 horas hábiles. Diseñamos, evaluamos y supervisamos; no ejecutamos obra: cotizamos ingeniería, no excavación.
+Necesitamos la ubicación exacta, el área y los niveles previstos, el uso y, si existen, los planos arquitectónicos. Con eso definimos el alcance que exige la norma y preparamos la propuesta. Diseñamos, evaluamos y supervisamos; no ejecutamos obra: cotizamos ingeniería, no excavación.

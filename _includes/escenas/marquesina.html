@@ -1,0 +1,10 @@
+{%- comment -%}
+  Marquesina gigante decorativa (aria-hidden): dos filas que corren en sentidos opuestos.
+  Parámetro: cual (clave de _data/marquesinas.yml; por defecto "normas"). Cada lista se repite dos
+  veces para que el bucle sea continuo.
+{%- endcomment -%}
+{%- assign _m = site.data.marquesinas[include.cual] | default: site.data.marquesinas.normas -%}
+<div class="marquesina" aria-hidden="true">
+  <div class="marquesina__fila"><div class="marquesina__pista">{% for v in (1..2) %}{% for t in _m.fila1 %}<span>{{ t }}</span>{% endfor %}{% endfor %}</div></div>
+  <div class="marquesina__fila marquesina__fila--inversa"><div class="marquesina__pista">{% for v in (1..2) %}{% for t in _m.fila2 %}<span>{{ t }}</span>{% endfor %}{% endfor %}</div></div>
+</div>

@@ -12,7 +12,7 @@ image: "/img/fotos/institucion-educativa-440.jpg"
 badges:
   - "+13.000 m² de infraestructura educativa"
   - "Grupo de uso III · Pórticos DES"
-  - "100 % aprobación en primera radicación"
+  - "Diseños aprobados en primera radicación"
   - "No ejecutamos obra"
 cta_texto: "Cotizar diseño de institución educativa"
 cta_secundario: { url: "/proyectos/ie-pavarando-grande-mutata/", texto: "Ver caso Pavarandó Grande" }

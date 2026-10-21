@@ -22,12 +22,12 @@ resumen: "Las bodegas y naves industriales son estructuras metálicas de grandes
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Va a construir una bodega o nave y necesita el diseño estructural para licencia y para cotizar el acero"
-  - "El fabricante de estructura entrega un diseño propio y usted quiere una revisión independiente antes de comprar"
+  - "Vas a construir una bodega o nave y necesitas el diseño estructural para licencia y para cotizar el acero"
+  - "El fabricante de estructura entrega un diseño propio y quieres una revisión independiente antes de comprar"
   - "Se instalará un puente grúa, un mezanine o equipos pesados en una nave existente"
   - "La cubierta actual presenta deformaciones, filtraciones por deflexión o corrosión"
-  - "Cambia el uso de la bodega (de almacenamiento a producción, por ejemplo) y hay que verificar la estructura"
-  - "Necesita cimentaciones para columnas metálicas en suelos blandos o de relleno"
+  - "Cambias el uso de la bodega (de almacenamiento a producción, por ejemplo) y hay que verificar la estructura"
+  - "Necesitas cimentaciones para columnas metálicas en suelos blandos o de relleno"
 entregables:
   - "Memorias de cálculo de la estructura metálica con cargas de viento, sismo, cubierta y operación"
   - "Planos de fabricación y montaje: cerchas, pórticos, correas, arriostramientos y conexiones"
@@ -61,13 +61,13 @@ faqs:
   - question: "¿Qué cargas se consideran en una nave industrial?"
     answer: "Peso propio de la estructura y la cubierta, carga viva de cubierta y mantenimiento, viento (que suele gobernar en cubiertas ligeras), sismo, cargas de puentes grúa con impacto, mezanines, equipos colgados y, cada vez más, paneles solares. El Título B de la NSR-10 define las combinaciones."
   - question: "¿Puedo instalar un puente grúa en mi bodega actual?"
-    answer: "Solo después de verificar que las columnas, las vigas carrileras y las cimentaciones soportan las cargas del puente con su impacto. Levantamos la estructura, la modelamos con las cargas nuevas y definimos si necesita refuerzo."
+    answer: "Solo después de verificar que las columnas, las vigas carrileras y las cimentaciones soportan las cargas del puente con su impacto. Hacemos el levantamiento de la estructura, la modelamos con las cargas nuevas y definimos si necesita refuerzo."
   - question: "¿El diseño del fabricante de la estructura es suficiente para la licencia?"
     answer: "La curaduría exige memorias y planos firmados por ingeniero estructural con matrícula, y el diseño debe cubrir también cimentaciones y placa. Muchos fabricantes entregan solo la superestructura. Revisamos o completamos ese diseño como firma independiente que no vende acero."
   - question: "¿Cuánto tarda el diseño de una bodega?"
     answer: "Una nave de 1.000 a 3.000 m² sin cargas especiales toma de tres a cinco semanas desde el estudio de suelos y el esquema arquitectónico. Con puentes grúa o mezanines, entre cinco y ocho."
   - question: "¿Fabrican o montan la estructura?"
-    answer: "No. Diseñamos y revisamos los planos de taller; la fabricación y el montaje los contrata usted con el proveedor que prefiera. Así nuestro diseño no se acomoda al interés de vender más toneladas."
+    answer: "No. Diseñamos y revisamos los planos de taller; la fabricación y el montaje los contratas tú con el proveedor que prefieras. Así nuestro diseño no se acomoda al interés de vender más toneladas."
 ---
 
 ## Qué exige la NSR-10 a una bodega o nave
@@ -88,4 +88,4 @@ Licencia de construcción con diseños firmados de superestructura, cimentacione
 
 ## Cómo lo abordamos
 
-Empezamos por la operación: qué se almacena o produce, qué equipos hay y cuáles vendrán. Con eso, el estudio de suelos y el esquema arquitectónico, definimos el sistema y la luz óptima, modelamos con cargas de viento y sismo del sitio y diseñamos hasta el nivel de planos de fabricación. Revisamos los planos de taller del fabricante antes de que corte acero. Fabricación y montaje los ejecuta el proveedor que usted elija: PROINCIVIL diseña y supervisa, no construye.
+Empezamos por la operación: qué se almacena o produce, qué equipos hay y cuáles vendrán. Con eso, el estudio de suelos y el esquema arquitectónico, definimos el sistema y la luz óptima, modelamos con cargas de viento y sismo del sitio y diseñamos hasta el nivel de planos de fabricación. Revisamos los planos de taller del fabricante antes de que corte acero. Fabricación y montaje los ejecuta el proveedor que elijas: PROINCIVIL diseña y supervisa, no construye.

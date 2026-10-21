@@ -47,7 +47,7 @@ conflicto de interés.
   factores, alcance y plazos.
 - **"Patología estructural"** es keyword secundaria (H2, FAQ, glosario), no H1 de servicio: el bigrama
   tiene 170 búsquedas/mes limpias, pero la palabra suelta es médica (reserva del contrato SEO).
-- Tono: técnico, sobrio, trato de usted, mayúscula solo inicial en títulos, sin clichés de IA, 60-70 %
+- Tono: técnico, sobrio, **tuteo** (decisión del 2026-10-21, como escribe la clienta: «Conversemos sobre tu proyecto»), mayúscula solo inicial en títulos, sin clichés de IA, 60-70 %
   prosa, tablas cuando aporten. Ver skill `copywriter`.
 - Keywords, competencia, arquitectura y plan de contenidos: `_plans/investigacion-web-seo-proincivil.md`
   (v2) y `_plans/research/*.md`. No re-investigar lo que ya está ahí.
@@ -78,11 +78,15 @@ Navegación y footer: `_data/navegacion.yml`. Migas de pan: `_data/breadcrumb_na
 
 - **CSS:** `_includes/critical-css/base.css` + `hero.css` van inline en todas las páginas; el resto se
   compila en `css/style.css` desde `_includes/css/*.css`. Capas: `@layer reset, primitivas, componentes,
-  utilidades`. **Antes de escribir CSS nuevo, usa una primitiva de `primitivas.css`** (`.section`,
-  `.wrapper`, `.flow`, `.grid`, `.dos_columnas`, `.tile`, `.list_check`, `.cifras`, `.resumen`, `.nota`,
-  `.ficha`, `.pasos`, `.articulo`). Misma forma con otra piel = modificador `--variante`. Una clase
+  utilidades`. Sistema visual «Plano vivo» (`_plans/direccion-diseno-plano-vivo-2026-10-21.md`).
+  **Antes de escribir CSS nuevo, usa una primitiva** (`.marco`, `.flujo`, `.seccion` y variantes,
+  `.encabezado`, `.rejilla--3/--4`, `.dos-columnas`, `.pieza`, `.lista`, `.cifras`, `.pasos`, `.resumen`,
+  `.nota`, `.datos`, `.texto-largo`, `.articulo`, `.cita`). Cero `style=`, ni con variables. Misma forma con otra piel = modificador `--variante`. Una clase
   describe una forma, nunca un tema. Ver skill `dev-jekyll`.
-- **CTA de WhatsApp:** siempre `{% include button.html texto="…" data_location="…" %}`. Nunca `wa.me` a
+- **Escenas inmersivas:** `_includes/escenas/` (paneles, galería, casos, zoom, marquesina, foco, enlace
+  mayor), alimentadas por `_data/familias.yml`, `_data/marquesinas.yml` y el front matter (`zoom:`, `caso:`,
+  `paneles:`, `galeria:`, `casos:`). Nunca se copia su markup a mano. Catálogo en la skill `dev-jekyll`.
+- **CTA de WhatsApp:** siempre `{% include button.html texto="…" data_location="…" %}` (un solo botón sólido por pantalla; los demás con `variante="contorno"` o `variante="enlace"`). Nunca `wa.me` a
   mano. El mensaje prellenado se deriva del H1 o de `wa_mensaje`.
 - **Schema:** lo emiten los includes según `schemaType` y `faqs:` del front matter. Nunca JSON-LD a mano
   en una página.

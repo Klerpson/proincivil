@@ -1,27 +1,26 @@
-<footer class="footer">
-  <div class="wrapper">
-    <div class="footer__grid">
-      <div class="footer__marca">
-        <a href="{{ '/' | relative_url }}" aria-label="PROINCIVIL · Inicio">
-          <img src="{{ '/img/logo-proincivil-blanco.png' | relative_url }}" alt="PROINCIVIL · Seguridad estructural" width="160" height="117" loading="lazy" decoding="async">
+<footer class="pie">
+  <div class="marco">
+    <div class="pie__rejilla">
+      <div class="pie__marca flujo">
+        <a href="{{ '/' | relative_url }}" class="pie__logo">
+          <img src="{{ '/img/logo-proincivil-blanco.png' | relative_url }}" alt="PROINCIVIL · Seguridad estructural · Inicio" width="558" height="408" loading="lazy" decoding="async">
         </a>
-        <p>Firma de ingeniería estructural y consultoría técnica en {{ site.empresa.ciudad }}, {{ site.empresa.departamento }}. Diseñamos, evaluamos y supervisamos; <strong>no ejecutamos obra</strong>.</p>
-        <p class="footer__nit">{{ site.empresa.razon_social }} · NIT {{ site.empresa.nit }}</p>
-        <div class="footer__social">
-          {%- if site.social.instagram != "" -%}<a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Instagram de PROINCIVIL">Instagram</a>{%- endif -%}
-          {%- if site.social.tiktok and site.social.tiktok != "" -%}<a href="{{ site.social.tiktok }}" target="_blank" rel="noopener" aria-label="TikTok de PROINCIVIL">TikTok</a>{%- endif -%}
-          {%- if site.social.linkedin != "" -%}<a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn de PROINCIVIL">LinkedIn</a>{%- endif -%}
-          {%- if site.social.facebook != "" -%}<a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook de PROINCIVIL">Facebook</a>{%- endif -%}
-        </div>
+        <p>Firma de ingeniería estructural y consultoría técnica en {{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, con atención en {{ site.contact.cobertura | join: " y " }}. Diseñamos, evaluamos y supervisamos; <strong>no ejecutamos obra</strong>.</p>
+        <p class="pie__dato">{{ site.empresa.razon_social }} · NIT {{ site.empresa.nit }}</p>
+        <ul class="pie__redes">
+          {%- if site.social.instagram != "" -%}<li><a href="{{ site.social.instagram }}" target="_blank" rel="noopener">Instagram</a></li>{%- endif -%}
+          {%- if site.social.tiktok and site.social.tiktok != "" -%}<li><a href="{{ site.social.tiktok }}" target="_blank" rel="noopener">TikTok</a></li>{%- endif -%}
+          {%- if site.social.linkedin != "" -%}<li><a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{%- endif -%}
+          {%- if site.social.facebook != "" -%}<li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener">Facebook</a></li>{%- endif -%}
+        </ul>
       </div>
-      <div class="footer__columnas">
       {%- comment -%} Igual que el menú: solo se listan las secciones de site.secciones_publicadas. {%- endcomment -%}
       {%- for col in site.data.navegacion.footer -%}
         {%- assign _col_hay = false -%}
         {%- for e in col.enlaces -%}{%- assign _s = e.url | remove_first: "/" | split: "/" | first -%}{%- if site.secciones_publicadas contains _s -%}{%- assign _col_hay = true -%}{%- endif -%}{%- endfor -%}
         {%- if _col_hay -%}
-      <div class="footer__columna">
-        <p class="footer__titulo">{{ col.titulo }}</p>
+      <div class="pie__columna">
+        <p class="pie__titulo">{{ col.titulo }}</p>
         <ul>
           {%- for e in col.enlaces -%}
             {%- assign _s = e.url | remove_first: "/" | split: "/" | first -%}
@@ -31,18 +30,17 @@
       </div>
         {%- endif -%}
       {%- endfor -%}
-      <div class="footer__columna footer__columna--contacto">
-        <p class="footer__titulo">Contacto</p>
-        <address>
+      <div class="pie__columna">
+        <p class="pie__titulo">Contacto</p>
+        <address class="flujo">
           <p>{{ site.empresa.direccion }}<br>{{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, {{ site.empresa.pais }}</p>
           <p><a href="https://wa.me/{{ site.contact.whatsapp }}" class="lead-whatsapp" data-location="footer" rel="nofollow noopener" target="_blank">WhatsApp {{ site.contact.whatsapp_display }}</a><br><a href="tel:+{{ site.contact.whatsapp_2 }}">{{ site.contact.whatsapp_2_display }}</a></p>
           <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
           <p>{{ site.empresa.horario }}</p>
         </address>
       </div>
-      </div>
     </div>
-    <div class="footer__legal">
+    <div class="pie__legal">
       <p>© {{ site.time | date: "%Y" }} {{ site.empresa.razon_social }} Consultoría, diseño y evaluación estructural.</p>
       <p><a href="{{ '/politica-de-datos/' | relative_url }}">Política de tratamiento de datos</a> · <a href="{{ '/como-cotizar/' | relative_url }}">Cómo cotizar</a>{% if page.url == "/" %} · Sitio web por <a href="https://juli.com.co" target="_blank" rel="noopener">juli.com.co</a>{% endif %}</p>
     </div>

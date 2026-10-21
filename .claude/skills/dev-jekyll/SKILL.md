@@ -13,38 +13,42 @@ Layouts, includes, páginas HTML, CSS, Liquid, componentes. No para redactar (�
 on-page (→ `seo-onpage`), ni auditorías técnicas (→ `seo-technical`).
 
 ## Compuerta antes de escribir CSS
-1. Abre `_includes/css/primitivas.css` y `secciones.css`. Si la forma existe (`.section`,
-   `.section--crema`, `.section--bosque`, `.wrapper`, `.flow`, `.grid` con `--grid-min`, `.dos_columnas`,
-   `.section-header`, `.tile` y variantes, `.list_check`, `.cifras`, `.resumen`, `.nota`, `.ficha`,
-   `.figura`, `.cita`, `.articulo`/`.indice`, `.contenido`, `.pasos`, `.sectores`; y con imagen:
-   `.hero`, `.lamina`, `.trio`, `.split`, `.tira`, `.testimonio`, `.tile--media`), úsala. No escribas
-   CSS nuevo.
+1. Abre `_includes/critical-css/base.css` y `_includes/css/primitivas.css`. Si la forma existe, úsala:
+   `.marco`, `.flujo`, `.rotulo`, `.acciones`, `.seccion` (`--compacta`, `--papel`, `--plano`, `--oscura`),
+   `.encabezado`, `.rejilla` (`--3`, `--4`), `.dos-columnas` (`--centro`, `--aparte`), `.pieza` (`--enlace`,
+   `--oscura`), `.lista` (`--flecha`, `--no`), `.cifras`/`.cifra`, `.pasos` (`--texto`),
+   `.resumen`, `.nota` (`--sello`), `.datos`, `.texto-largo`, `.tabla`, `.articulo`, `.figura`, `.lamina`,
+   `.cita`. Componentes: `.barra`, `.menu`, `.boton` (`--contorno`), `.enlace-flecha`, `.portada`,
+   `.cabecera`, `.migas`, `.sellos`, `.cajetin`, `.preguntas`, `.cierre`, `.formulario`, `.flotante`,
+   `.razones`, `.equipo`/`.persona`, `.tira`, `.pie`, `.progreso`, `.plano` (ejes). Escenas: ver
+   «Escenas reutilizables». No escribas CSS nuevo.
 2. Misma forma con otra piel → modificador `--variante` en la primitiva.
-3. Componente irreducible con comportamiento propio → clase nueva en `_includes/css/componentes.css`,
-   documentada en este archivo.
-4. Una clase describe una FORMA, nunca un TEMA (`.tile`, no `.tarjeta-servicio`).
-5. Escribir la regla no es aplicarla: el reset y las reglas de elemento viven en `@layer reset`; las
-   primitivas en `@layer primitivas`. Una regla SIN capa gana siempre a una con capa — si algo no se
-   aplica, revisa la capa antes que la especificidad, y mide con `getComputedStyle` sobre el build.
+3. Componente irreducible con comportamiento propio → clase nueva en `_includes/css/componentes.css`
+   (o `secciones.css` si es de la home), documentada en este archivo.
+4. Una clase describe una FORMA, nunca un TEMA (`.pieza`, no `.tarjeta-servicio`).
+5. Todo el CSS va en capas (`reset, primitivas, componentes, utilidades`). Si algo no se aplica, revisa
+   la capa antes que la especificidad y mide con `getComputedStyle` sobre el build.
 
-## Arquitectura CSS real
+## Arquitectura CSS real (Plano vivo, 2026-10-21)
 ```
-_includes/critical-css/base.css   tokens (:root), @layer reset, nav, botones — inline en <head>, todas las páginas
-_includes/critical-css/hero.css   hero home, cabecera interior, migas, badges — inline
+_includes/critical-css/base.css   tokens, reset, primitivas de base, barra, menú, botones — inline
+_includes/critical-css/hero.css   portada (firma: ejes del plano), cabecera, migas, sellos — inline
 _includes/critical-css/critical.html   arma el <style> + preload de /css/style.css
-_includes/css/primitivas.css      @layer primitivas
-_includes/css/componentes.css     faq, cta-final, formulario, sticky, persona, tabla, sectores
-_includes/css/footer.css
+_includes/css/primitivas.css      formas reutilizables
+_includes/css/componentes.css     cajetín, preguntas, cierre, formulario, flotante
+_includes/css/secciones.css       razones, equipo, tira (piezas propias de la home)
+_includes/css/escenas.css         escenas reutilizables (_includes/escenas/*.html)
+_includes/css/footer.css          pie
+_includes/css/motion.css          todo el movimiento (animation-timeline dentro de @supports y
+                                  prefers-reduced-motion); la firma de la portada vive en hero.css
 css/style.css                     compilador ({% include %} de los módulos), layout: compress
 ```
 No hay carga condicional por layout. No usar `@import`. `{% render %}` no existe en Jekyll: `{% include %}`.
 
 ## Tokens (usar estos, no inventar)
-`--color-crema --color-blanco --color-tinta --color-bosque --color-oliva --color-oliva-texto
---color-oliva-claro --color-gris --color-linea --color-linea-clara` · `--fuenteTitulos` (Fraunces)
-`--fuenteTexto` (Inter) `--fuenteMono` (JetBrains Mono) · `--text-display/h1/h2/h3/body/small/eyebrow/stat`
-· `--space-xs…3xl`, `--section-padding`, `--content-width`, `--wrapper-inset` · `--radius-sm/md/pill` ·
-`--elev-1-border`, `--elev-2`, `--ease`.
+`--azul --azul-2 --marfil --papel --tinta --tinta-suave --trazo --ambar --linea --linea-fuerte
+--linea-clara --cuadricula-oscura --cuadricula-clara --cuadricula-medida --fuente --fuente-mono --margen
+--barra-alto --menu-alto --curva`. El ámbar solo en conversión (botón sólido y flotante).
 
 ## Estándares
 - HTML semántico (`header/nav/main/section/article/aside/footer`), un solo H1 por página.
@@ -58,15 +62,43 @@ No hay carga condicional por layout. No usar `@import`. `{% render %}` no existe
   el script de procesado (blanco y negro, contraste, anchos, JPG+WebP) vive en el scratchpad de la
   sesión y se documenta aquí. Al añadir fotos: procesar a `/img/fotos/<nombre>-<ancho>.jpg|webp`,
   regenerar `_data/fotos.yml` y apuntar `hero:`/`image:` de la página.
-- JS mínimo (`js/main.js`): tracking de WhatsApp, cierre de nav, un FAQ abierto, enlaces externos. Nav y FAQ
-  funcionan sin JS (checkbox / `<details>`). **Solo comentarios de bloque en JS dentro de HTML.**
+- JS mínimo (`js/main.js`): evento GA4 de WhatsApp, botón del menú móvil, menú que se oculta al bajar,
+  flotante oculto sobre la portada, enlaces externos. `js/motion.js`: contador `m-count`. FAQ exclusivo con
+  `<details name>` nativo; sin JS el menú queda como fila desplazable. **Solo comentarios de bloque en JS dentro de HTML.**
 - CTA WhatsApp: `{% include button.html texto="…" data_location="…" %}`; enlaces internos con
   `{{ '/ruta/' | relative_url }}`; nunca `wa.me` a mano.
 - Front matter no procesa Liquid: rutas estáticas dentro de `faqs`, `excerpt`, etc.
 
+## Escenas reutilizables (`_includes/escenas/`, 2026-10-21)
+
+Cada escena de la home es un include con parámetros y datos de `_config.yml`, `_data` o el front matter.
+Nunca se copia su markup a mano. CSS en `escenas.css`, movimiento en `motion.css`, JS en `js/motion.js`.
+
+| Include | Qué hace | Parámetros | Dónde se usa |
+|---|---|---|---|
+| `paneles.html` | paneles a pantalla completa que se apilan | `items` (def. `site.data.familias`), `largo` (h2 + `titulo_largo`) | home (h3), hub `/servicios/` (`paneles: true`) |
+| `galeria.html` | cinta horizontal fija de proyectos | `slugs`, `excluir`, `rotulo`, `titulo`, `id` | home, hub `/proyectos/` (`galeria:`), ficha (otros proyectos) |
+| `casos.html` | casos con foto fija que cambia con el caso activo | `slugs`, `rotulo`, `titulo`, `id`, `clase`, `enlace` | home, hub `/proyectos/` (`casos:`), servicios con 2+ `proyectos` |
+| `zoom.html` | palabra con foto dentro que se atraviesa hasta un CTA a pantalla completa | `palabra`, `textura` (acero/concreto/plano/ladera), `foto`, `alt`, `rotulo`, `titulo`, `texto`, `boton`, `data_location`; `{clave}` → `site.cifras.clave` | home, servicios con `zoom:`, independencia técnica |
+| `marquesina.html` | marquesina gigante decorativa | `cual` (clave de `_data/marquesinas.yml`) | home, `/servicios/`, `/proyectos/`, nosotros |
+| `foco.html` | lista de frases que se iluminan al cruzar el centro | `items`, `rotulo`, `titulo`, `id`, `clase` | «cuándo» de cada servicio |
+| `enlace-mayor.html` | banda con contador, texto grande y flecha en círculo | `url`, `texto`, `numero`, `variante` (`claro`), `banda` | home, servicios, fichas, nosotros, posts |
+
+Además: `plano-ejes.html` (ejes del plano en `.portada` y `.cabecera`, parámetros `v` y `h`), `.progreso`
+(barra de lectura en `post` y `article`, solo CSS) e `.inclinable` (inclinación 3D según el cursor,
+reutiliza el JS de los retratos).
+
+Datos de los casos: el bloque `caso:` del proyecto (`lugar`, `foto`, `foto_nota`, `titulo`, `resultado`,
+`datos[]`, `situacion`, `hicimos`, `logro`); si falta, la `ficha`. Los valores `PENDIENTE` no se muestran.
+
+Reglas: máximo una escena fija o de pantalla completa por cada tres secciones; un `data_location` único
+por zoom (`zoom-<slug>`); el texto de cada escena vive en el HTML (la palabra del zoom y la marquesina son
+`aria-hidden` y repiten lo que ya dice la página). Sin soporte de `animation-timeline` (Firefox) o con
+movimiento reducido, todo queda estático y legible.
+
 ## Layouts e includes
 Ver `.claude/docs/frontmatter-variables.md` para lo que consume cada layout. `header.html` pinta la
-cabecera según `page.layout` (`home` → `.hero`; resto → `.cabecera`). Los hubs (`layout: hub`) listan
+cabecera según `page.layout` (`home` → `.portada`; resto → `.cabecera`). Los hubs (`layout: hub`) listan
 colecciones por `orden` o por `grupos`.
 
 ## Build y validación (obligatorio)
@@ -79,13 +111,13 @@ python _scripts/lint-frontmatter.py    # antes de compilar contenido nuevo
 `… exec jekyll serve --port 4001`; captura con Chrome DevTools MCP y comprueba
 `document.documentElement.scrollWidth === clientWidth`.
 
-## Estructura visual de la home (referencia de diseño aprobada)
+## Estructura visual de la home (Plano vivo)
 
-Héroe a sangre completa con foto y barra transparente → `.lamina` (panel crema con esquinas superiores
-redondeadas que sube sobre el héroe) con intro + cifras → `.trio` de accesos con foto → rejilla de
-servicios con `.tile--media` → `.split` dentro de `.section--bosque` (foto a sangre de un lado, texto del
-otro) → proyectos → pasos → `.testimonio` centrado → audiencias → FAQ → `.tira` de galería a sangre →
-CTA final. Las páginas interiores usan `.cabecera--media` (texto + foto 4:3).
+`.portada` azul con cuadrícula y ejes A–C/1–2 (texto arriba, foto real debajo con cota de normas) →
+cifras en `.seccion--plano` → marquesina → paneles (6 familias) + enlace mayor → `.razones` →
+independencia en `.seccion--oscura` con `.lamina` → casos → galería → resultados → `.equipo` → `.pasos` →
+con quién sí/no → `.datos` de normas → `.cita` → zoom → FAQ → `.tira` → `.cierre`. Las páginas interiores
+usan `.cabecera` con ejes del plano (`--media` si hay `hero`).
 
 ## Caso documentado (2026-09-22)
 `ol li { list-style: decimal }` del reset numeraba las migas de pan y los pasos en móvil; se corrigió con

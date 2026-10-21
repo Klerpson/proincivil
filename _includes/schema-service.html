@@ -8,7 +8,7 @@
   "description": {{ page.description | strip_html | jsonify }},
   "url": "{{ page.url | absolute_url }}",
   "provider": { "@id": "{{ site.url }}/#organization" },
-  "areaServed": [{% if page.area_servida %}{{ page.area_servida | jsonify }}{% else %}{ "@type": "AdministrativeArea", "name": "Antioquia" }, { "@type": "Country", "name": "Colombia" }{% endif %}],
+  "areaServed": [{% if page.area_servida %}{{ page.area_servida | jsonify }}{% else %}{ "@type": "AdministrativeArea", "name": "Antioquia" }, { "@type": "Country", "name": "Colombia" }, { "@type": "Country", "name": "Perú" }{% endif %}],
   "audience": { "@type": "BusinessAudience", "audienceType": {{ page.audiencia_meta | default: "Arquitectos, constructoras, promotores, administradores de propiedad horizontal, aseguradoras y entidades públicas" | jsonify }} },
   "category": {{ page.categoria | default: "Ingeniería estructural" | jsonify }},
   "termsOfService": "{{ site.url }}/como-cotizar/"

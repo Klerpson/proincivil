@@ -7,7 +7,7 @@ h1: "Sedes comerciales y retail: diseño de sedes nuevas y repotenciación de lo
 eyebrow: "Edificaciones · Comercio"
 excerpt: "Una cadena que abre sedes en varias ciudades necesita el mismo criterio estructural en todas: evaluar el local que va a arrendar, repotenciarlo para su operación o diseñar la sede nueva, con plazos de apertura que no se negocian."
 hero: "estructura-metalica"
-hero_alt: "Estructura metálica de un proyecto diseñado por PROINCIVIL"
+hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 image: "/img/fotos/estructura-metalica-1200.jpg"
 badges:
   - "Sedes comerciales a nivel nacional"
@@ -22,7 +22,7 @@ resumen: "Las sedes comerciales combinan locales arrendados que deben evaluarse 
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Va a arrendar o comprar un local y necesita saber si la estructura soporta su operación antes de firmar"
+  - "Vas a arrendar o comprar un local y necesitas saber si la estructura soporta tu operación antes de firmar"
   - "Un cambio de uso (de bodega a sala de ventas, de oficina a taller) exige verificar la estructura y tramitar licencia"
   - "Se instalarán mezanines, entrepisos, equipos pesados o cubiertas nuevas en una sede existente"
   - "La marca abre sedes en varias ciudades y quiere un estándar estructural replicable"
@@ -57,7 +57,7 @@ relacionados: [evaluacion-estructural, reforzamiento-estructural, diseno-estruct
 normativa: [nsr-10, titulo-a, licencia-de-construccion-colombia]
 faqs:
   - question: "¿Debo evaluar la estructura de un local antes de arrendarlo?"
-    answer: "Sí, si su operación implica cargas o usos distintos a los del local original: mezanines, exhibición pesada, vehículos, equipos o cambio de uso. Una evaluación diagnóstica de pocos días evita descubrir después de firmar que la adecuación exige un reforzamiento costoso."
+    answer: "Sí, si tu operación implica cargas o usos distintos a los del local original: mezanines, exhibición pesada, vehículos, equipos o cambio de uso. Una evaluación diagnóstica de pocos días evita descubrir después de firmar que la adecuación exige un reforzamiento costoso."
   - question: "¿Qué es una repotenciación estructural?"
     answer: "Es la intervención que aumenta la capacidad de una estructura existente para recibir cargas o usos nuevos: refuerzo de columnas y vigas, nuevas cimentaciones para mezanines, sustitución de cubiertas. Se diseña a partir de una evaluación diagnóstica y se tramita con licencia."
   - question: "¿Un cambio de uso requiere licencia?"

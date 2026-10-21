@@ -1,0 +1,13 @@
+{%- comment -%}
+  Enlace mayor: banda ancha con contador, texto grande y flecha en círculo; se rellena al pasar.
+  Parámetros: url (ruta sin baseurl), texto, numero (opcional, decorativo), variante ("claro" sobre
+  fondo marfil), banda (true → envuelto en la banda azul que continúa los paneles).
+  Nunca usa ámbar: es navegación, no conversión.
+{%- endcomment -%}
+{%- if include.banda %}<div class="banda-enlace">{% endif %}
+<a href="{{ include.url | relative_url }}" class="marco enlace-mayor{% if include.variante %} enlace-mayor--{{ include.variante }}{% endif %}">
+  {%- if include.numero %}<span class="enlace-mayor__numero" aria-hidden="true">{{ include.numero }}</span>{% endif %}
+  <span class="enlace-mayor__texto">{{ include.texto }}</span>
+  <span class="enlace-mayor__flecha" aria-hidden="true"></span>
+</a>
+{%- if include.banda %}</div>{% endif %}

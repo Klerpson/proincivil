@@ -5,7 +5,7 @@ title: "Licencia de construcción en Colombia: requisitos, documentos y costo"
 description: "Guía de la licencia de construcción en Colombia: modalidades, documentos que exige la curaduría, revisión estructural, costo, vigencia y obras que no la requieren."
 h1: "Licencia de construcción en Colombia: qué exige la curaduría y cómo evitar observaciones"
 eyebrow: "Normativa · Trámite"
-excerpt: "Qué modalidad necesita, qué documentos radicar, qué revisa la curaduría en planos y memorias estructurales, cuánto cuesta y cuánto dura. Y las obras que no requieren licencia."
+excerpt: "Qué modalidad necesitas, qué documentos radicar, qué revisa la curaduría en planos y memorias estructurales, cuánto cuesta y cuánto dura. Y las obras que no requieren licencia."
 cta_texto: "Ayuda con mi licencia"
 resumen: "La licencia de construcción es la autorización previa que expide la curaduría urbana o la autoridad municipal para desarrollar obras en un predio, en las modalidades de obra nueva, ampliación, adecuación, modificación, restauración, reforzamiento estructural, demolición, reconstrucción y cerramiento. Requiere planos arquitectónicos y estructurales, memorias, estudio de suelos y demás documentos del Decreto 1077 de 2015, tiene vigencia de veinticuatro meses prorrogables y su costo depende del área y el estrato."
 datePublished: 2026-09-22
@@ -67,7 +67,7 @@ El Decreto 1077 fija la lista, y cada curaduría la detalla. En general: formula
 
 La curaduría no rediseña, pero verifica cumplimiento. Las observaciones que más veces devuelven un proyecto son: estudio de suelos ausente, incompleto o de otro predio ([Título H]({{ site.baseurl }}/normativa/nsr-10/titulo-h/)); espectro sísmico con coeficientes de otro municipio o perfil de suelo sin justificar; incoherencia entre plantas arquitectónicas y estructurales (columnas que no coinciden, niveles distintos); cargas vivas que no corresponden al uso; detallado de refuerzo incompleto para el nivel de disipación exigido; planos sin firma o sin matrícula; y uso del Título E en viviendas que no cumplen sus condiciones.
 
-Nuestro servicio de [acompañamiento ante curadurías]({{ site.baseurl }}/servicios/curadurias-y-licencias/) nace de esa lista: revisar antes de radicar y subsanar rápido cuando la observación llega. Los diseños de PROINCIVIL se han aprobado el 100 % de las veces en primera radicación.
+Nuestro servicio de [acompañamiento ante curadurías]({{ site.baseurl }}/servicios/curadurias-y-licencias/) nace de esa lista: revisar antes de radicar y subsanar rápido cuando la observación llega. El histórico de aprobación en primera radicación comunicado por PROINCIVIL es del {{ site.cifras.aprobacion_curadurias }}.
 
 ## Cuánto vale y cuánto tarda {#costo}
 

@@ -6,7 +6,7 @@ title: "Evaluación y patología estructural en Medellín | PROINCIVIL"
 description: "Evaluación estructural, patología y peritaje de edificaciones en Medellín y Antioquia: fisuras, asentamientos, cambio de uso y reclamaciones. Informe firmado."
 h1: "Evaluación estructural de edificaciones"
 eyebrow: "Servicio · Evaluación"
-excerpt: "Un informe que dice qué le pasa a su edificación, qué tan grave es y qué hacer, firmado por un ingeniero que no va a venderle la reparación."
+excerpt: "Un informe que dice qué le pasa a tu edificación, qué tan grave es y qué hacer, firmado por un ingeniero que no va a venderte la reparación."
 hero: "fachada-vidrio"
 hero_alt: "Fachada de concreto y vidrio de una edificación evaluada"
 image: "/img/fotos/fachada-vidrio-1024.jpg"
@@ -15,20 +15,26 @@ badges:
   - "Informe firmado por especialista"
   - "Soporte ante aseguradoras"
   - "No ejecutamos obra"
-cta_texto: "Solicitar una evaluación"
-cta_secundario: { url: "/servicios/evaluacion-post-sismo/", texto: "¿Hubo un sismo? Vea este servicio" }
+cta_texto: "Conversemos sobre tu edificación"
+cta_secundario: { url: "/servicios/evaluacion-post-sismo/", texto: "¿Hubo un sismo? Mira este servicio" }
 serviceType: "Evaluación y diagnóstico estructural"
 resumen: "La evaluación estructural es el estudio técnico que determina el estado real de una edificación existente: identifica daños, establece su causa y gravedad, verifica la capacidad de la estructura y recomienda qué hacer. PROINCIVIL entrega un informe de patología y un concepto de seguridad firmados por ingeniero especialista, útiles ante curadurías, aseguradoras y copropietarios."
+zoom:
+  palabra: "GRIETA"
+  textura: "concreto"
+  titulo: "Conoce la causa de las grietas de tu edificación antes de decidir cómo intervenirla"
 datePublished: 2026-09-22
 dateModified: 2026-10-16
+cuando_titulo: "Siete casos para pedir una evaluación estructural: de fisuras a cambio de uso"
 cuando:
-  - "Aparecieron fisuras en muros, vigas, columnas o losas y no sabe si son estéticas o estructurales"
+  - "Aparecieron fisuras en muros, vigas, columnas o losas y no sabes si son estéticas o estructurales"
   - "Hay asentamientos, puertas que no cierran o pisos desnivelados"
-  - "Va a comprar o vender una edificación y quiere un concepto independiente antes de firmar"
-  - "Cambia el uso de un local o bodega y necesita saber si la estructura soporta las nuevas cargas"
+  - "Vas a comprar o vender una edificación y quieres un concepto independiente antes de firmar"
+  - "Cambias el uso de un local o bodega y necesitas saber si la estructura soporta las nuevas cargas"
   - "Una aseguradora, una curaduría o una autoridad exige un concepto técnico"
   - "La copropiedad discute si una reparación es responsabilidad del constructor"
-  - "Planea ampliar en altura y necesita saber si la estructura actual lo permite"
+  - "Planeas ampliar en altura y necesitas saber si la estructura actual lo permite"
+entregables_titulo: "Seis entregables: del mapa de lesiones en planos al concepto de seguridad firmado"
 entregables:
   - "Informe de inspección con registro fotográfico y localización de daños en planos"
   - "Diagnóstico patológico: causa, mecanismo y gravedad de cada lesión"
@@ -36,11 +42,13 @@ entregables:
   - "Verificación de capacidad de los elementos afectados"
   - "Concepto de seguridad y recomendaciones de intervención priorizadas"
   - "Documento firmado por ingeniero especialista para trámites y reclamaciones"
+despues_titulo: "Cuatro salidas del informe: cierre, reforzamiento, reclamación o medidas inmediatas"
 despues:
   - "Si la estructura está bien: cierre del caso con recomendaciones de mantenimiento"
-  - "Si requiere reparación: diseño del reforzamiento o de la reparación, que ejecuta el constructor que usted elija"
+  - "Si requiere reparación: diseño del reforzamiento o de la reparación, que ejecuta el constructor que elijas"
   - "Si hay reclamación: acompañamiento técnico ante la aseguradora o el constructor original"
   - "Si el riesgo es alto: medidas inmediatas y estudio de vulnerabilidad sísmica"
+factores_titulo: "Cinco factores que definen el alcance y el valor de una evaluación estructural"
 factores:
   - "Área y número de niveles a inspeccionar"
   - "Existencia de planos originales o necesidad de levantamiento"
@@ -48,14 +56,17 @@ factores:
   - "Finalidad del informe: uso interno, curaduría, aseguradora o proceso judicial"
   - "Urgencia y ubicación"
 cuanto_cuesta: /cuanto-cuesta/evaluacion-estructural/
+audiencias_titulo: "Para administraciones de P.H., aseguradoras, compradores y empresas con sedes propias"
 audiencias:
   - { rol: "Administradores de propiedad horizontal", texto: "Un concepto que ordena la discusión entre copropietarios y sustenta decisiones de asamblea." }
   - { rol: "Aseguradoras y ajustadores", texto: "Informes con metodología reconocida para valorar siniestros y reclamaciones." }
   - { rol: "Compradores e inversionistas", texto: "Debida diligencia estructural antes de una compra o un cambio de uso." }
   - { rol: "Empresas con sedes propias", texto: "Diagnóstico y repotenciación de locales y bodegas en operación." }
+proyectos_titulo: "Seis torres en Dosquebradas, sedes de Super Motos (Honda) y diagnósticos con ARTICO en tres ciudades"
 proyectos: [tacuara-club-residencial, artico-arquitectura, super-motos-honda]
 relacionados: [evaluacion-post-sismo, vulnerabilidad-sismica, reforzamiento-estructural, geotecnia-estudio-de-suelos]
 normativa: [titulo-a, ley-400-de-1997, nsr-10]
+faqs_titulo: "Peritaje estructural, fisuras y reclamaciones: preguntas sobre la evaluación"
 faqs:
   - question: "¿Qué es un peritaje estructural?"
     answer: "Es una evaluación técnica de la condición de una edificación, hecha por un ingeniero estructural, que identifica daños, determina sus causas y establece si la estructura es segura y qué intervención necesita. Cuando se hace para un proceso legal o una reclamación, el informe se redacta con el rigor probatorio que exige ese uso."
@@ -72,16 +83,16 @@ faqs:
   - question: "¿La evaluación sirve para reclamar al constructor o a la aseguradora?"
     answer: "Sí. El informe se redacta con la metodología y el sustento que esos procesos exigen, y acompañamos técnicamente la reclamación. Al no ejecutar obra, nuestro concepto es independiente de cualquier interés en la reparación."
   - question: "¿Ustedes hacen la reparación?"
-    answer: "No. Diseñamos la intervención y la ejecuta el constructor que usted elija; si lo desea, la supervisamos. No ejecutamos obra."
+    answer: "No. Diseñamos la intervención y la ejecuta el constructor que elijas; si lo necesitas, la supervisamos. No ejecutamos obra."
 ---
 
-## Qué es una evaluación estructural y cuándo pedirla
+## Evaluación estructural: qué le pasa a tu edificación, por qué y qué tan grave es
 
 La **evaluación estructural** responde tres preguntas sobre una edificación que ya existe: qué le pasa, por qué le pasa y qué tan grave es. A partir de ahí se decide si se repara, se refuerza, se restringe el uso o simplemente se vigila. Es el paso previo obligado a cualquier intervención seria y el documento que curadurías, aseguradoras y asambleas de copropietarios piden cuando hay un conflicto o un daño.
 
-El punto de partida es la decisión que necesita tomar: entender una fisura, revisar una ampliación, documentar daños o valorar un cambio de uso. Recibimos ubicación, antecedentes, planos y fotografías para definir el alcance. Las fotografías ayudan a preparar la visita; por sí solas no permiten emitir un concepto de seguridad.
+El punto de partida es la decisión que necesitas tomar: entender una fisura, revisar una ampliación, documentar daños o valorar un cambio de uso. Recibimos ubicación, antecedentes, planos y fotografías para definir el alcance. Las fotografías ayudan a preparar la visita; por sí solas no permiten emitir un concepto de seguridad.
 
-## Patología estructural: diagnosticar antes de reparar
+## Patología estructural: tres fuentes para diagnosticar la causa de cada fisura
 
 La **patología estructural** estudia las lesiones de una edificación como un médico estudia síntomas: la fisura es el síntoma; la causa puede ser un asentamiento del suelo, una sobrecarga, un error de detallado, corrosión del refuerzo, retracción del concreto o un sismo. Tratar el síntoma sin diagnosticar la causa es la forma más cara de reparar, porque la lesión vuelve.
 
@@ -93,7 +104,7 @@ Nuestro diagnóstico combina tres fuentes de información:
 
 Con eso separamos lo estructural de lo no estructural, que es la distinción que más dinero ahorra: buena parte de las fisuras que alarman a los propietarios están en acabados, mampostería no portante o juntas, y no comprometen la seguridad.
 
-## Cómo evaluamos: metodología y normativa
+## Cinco etapas de evaluación estructural según NSR-10: A.10 y Títulos A, B y C
 
 | Etapa | Qué hacemos | Referencia |
 |---|---|---|
@@ -105,7 +116,7 @@ Con eso separamos lo estructural de lo no estructural, que es la distinción que
 
 En [Tacuara Club Residencial P.H.]({{ site.baseurl }}/proyectos/tacuara-club-residencial/), en Dosquebradas, Risaralda, concluimos el diagnóstico patológico de un conjunto de seis torres y más de 780 apartamentos. Ese diagnóstico sustentó la solicitud de anticipo ante la aseguradora; el estudio de vulnerabilidad sísmica sigue en proceso. La alianza con [ARTICO Arquitectura]({{ site.baseurl }}/proyectos/artico-arquitectura/) muestra otro uso del diagnóstico: apoyar decisiones sobre cambios de uso y repotenciación de sedes.
 
-## Lo que diferencia una evaluación de PROINCIVIL
+## Un concepto sin interés en la reparación: evaluamos y diseñamos, no ejecutamos obra
 
 - **Sin interés en la reparación.** Diseñamos, evaluamos y supervisamos; no ejecutamos obra. Nuestro informe no recomienda más intervención de la necesaria porque no la vamos a construir.
 - **Informe utilizable.** Cada lesión está localizada en un plano, clasificada por gravedad y con una recomendación concreta; el administrador o el ajustador puede tomar decisiones sin traductor.
@@ -117,7 +128,7 @@ En [Tacuara Club Residencial P.H.]({{ site.baseurl }}/proyectos/tacuara-club-res
 Dos situaciones sin daño visible también exigen evaluación. La primera es la compra de una edificación existente: un concepto independiente antes de firmar evita heredar una estructura sin licencia, con modificaciones no calculadas o con una cimentación que se está moviendo; es la debida diligencia que un inversionista hace con los títulos y rara vez con la estructura. La segunda es el cambio de uso: convertir una vivienda en local, un local en bodega o una oficina en archivo aumenta las cargas vivas y puede cambiar el grupo de uso de la NSR-10. La curaduría exige demostrar que la estructura existente soporta el nuevo uso, y esa demostración es una evaluación con verificación de capacidad. En ambos casos el informe termina en una de tres conclusiones: cumple, cumple con restricciones, o requiere reforzamiento, con el orden de magnitud de lo que implica cada una.
 
 
-## Qué estudio necesita y qué decisión permite tomar
+## Evaluación, vulnerabilidad, post-sismo o reforzamiento: qué estudio pide tu caso
 
 | Situación | Alcance que conviene revisar |
 |---|---|
@@ -126,7 +137,7 @@ Dos situaciones sin daño visible también exigen evaluación. La primera es la 
 | Daños después de un evento sísmico | [Evaluación post-sismo]({{ site.baseurl }}/servicios/evaluacion-post-sismo/) para revisar la condición de seguridad y las medidas iniciales |
 | Una deficiencia ya identificada requiere intervención | [Diseño de reforzamiento]({{ site.baseurl }}/servicios/reforzamiento-estructural/) con planos y especificaciones de la solución |
 
-## Informe técnico para copropiedades y aseguradoras
+## Peritaje estructural para aseguradoras y copropiedades: alcance según la decisión
 
 Antes de contratar, acordamos quién utilizará el informe y para qué decisión: una asamblea, una reclamación o la preparación de una intervención. Esto define los antecedentes que se deben revisar, los ensayos y los entregables. El informe aporta evidencia técnica; no garantiza el reconocimiento de una indemnización ni sustituye las decisiones de la aseguradora.
 

@@ -7,7 +7,7 @@ h1: "Ingeniería estructural en el Área Metropolitana: Itagüí, Sabaneta, Bell
 eyebrow: "Zonas · Área Metropolitana"
 excerpt: "Diez municipios comparten un valle, una amenaza sísmica intermedia y suelos que cambian de la zona plana industrial a las laderas. Cada uno tiene su curaduría o su oficina de planeación con reglas propias."
 hero: "estructura-metalica"
-hero_alt: "Estructura metálica de un proyecto diseñado por PROINCIVIL"
+hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 image: "/img/fotos/estructura-metalica-1200.jpg"
 badges:
   - "Sur y norte del Valle de Aburrá"
@@ -28,11 +28,11 @@ resumen: "Los municipios del Área Metropolitana del Valle de Aburrá comparten 
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Construye una bodega o nave en Itagüí, Sabaneta o la zona industrial del sur y necesita diseño estructural y de cimentaciones"
-  - "Desarrolla vivienda multifamiliar en Sabaneta, La Estrella, Bello o Copacabana"
-  - "Su proyecto está en un municipio sin curaduría y no sabe qué exige la oficina de planeación"
-  - "Administra un conjunto en cualquiera de estos municipios con fisuras o después de un sismo"
-  - "Necesita estudio de suelos en zona plana industrial con posibles rellenos o en ladera"
+  - "Construyes una bodega o nave en Itagüí, Sabaneta o la zona industrial del sur y necesitas diseño estructural y de cimentaciones"
+  - "Desarrollas vivienda multifamiliar en Sabaneta, La Estrella, Bello o Copacabana"
+  - "Tu proyecto está en un municipio sin curaduría y no sabes qué exige la oficina de planeación"
+  - "Administras un conjunto en cualquiera de estos municipios con fisuras o después de un sismo"
+  - "Necesitas estudio de suelos en zona plana industrial con posibles rellenos o en ladera"
 entregables:
   - "Diseño estructural y geotécnico adaptado al suelo y al sector del municipio"
   - "Documentación conforme a los requisitos de la curaduría u oficina de planeación correspondiente"
@@ -80,4 +80,4 @@ Diseño estructural de vivienda multifamiliar, diseño de bodegas y naves con ci
 
 ## Cómo trabajamos en el Área Metropolitana
 
-Visita técnica al predio u obra, propuesta en 24 horas hábiles, diseño coordinado en BIM y acompañamiento al trámite del municipio. La obra la ejecuta el constructor que usted elija: PROINCIVIL diseña, evalúa y supervisa, no construye.
+Visita técnica al predio u obra, llamada de diagnóstico, diseño coordinado en BIM y acompañamiento al trámite del municipio. La obra la ejecuta el constructor que elijas: PROINCIVIL diseña, evalúa y supervisa, no construye.

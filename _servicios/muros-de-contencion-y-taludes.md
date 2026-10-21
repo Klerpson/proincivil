@@ -15,19 +15,25 @@ badges:
   - "Concreto, gaviones, pantallas ancladas"
   - "Análisis sísmico de contenciones"
   - "No ejecutamos obra"
-cta_texto: "Cotizar muro o talud"
+cta_texto: "Conversemos sobre tu muro o talud"
 cta_secundario: { url: "/servicios/geotecnia-estudio-de-suelos/", texto: "Ver estudios de suelos" }
 serviceType: "Diseño de muros de contención y estabilidad de taludes"
 resumen: "Un muro de contención retiene el suelo cuando el terreno no se sostiene por sí mismo; su diseño depende del tipo de suelo, la altura, el agua y el sismo. PROINCIVIL analiza la estabilidad del talud, calcula los empujes según la NSR-10 y diseña muros en concreto reforzado, gaviones, pantallas ancladas o suelo reforzado con memorias y planos firmados."
+zoom:
+  palabra: "TALUD"
+  textura: "ladera"
+  titulo: "Muros de contención y estabilización de taludes diseñados para la ladera de tu proyecto"
 datePublished: 2026-09-22
 dateModified: 2026-10-16
+cuando_titulo: "Seis casos en los que necesitas diseñar un muro de contención o un talud"
 cuando:
-  - "Su lote está en ladera y necesita un corte o un lleno para construir la casa, el edificio o el parqueadero"
-  - "Un muro existente presenta grietas, inclinación o humedad y quiere saber si es seguro"
+  - "Tu lote está en ladera y necesitas un corte o un lleno para construir la casa, el edificio o el parqueadero"
+  - "Un muro existente presenta grietas, inclinación o humedad y quieres saber si es seguro"
   - "La curaduría exige el diseño de contención firmado por ingeniero para expedir la licencia"
   - "Un talud se deslizó o muestra grietas en la corona después de lluvias fuertes"
-  - "Va a construir una vía, una urbanización o una cancha con terraplenes y cortes"
-  - "Necesita separar su predio del vecino con diferencia de nivel sin poner en riesgo ninguna de las dos propiedades"
+  - "Vas a construir una vía, una urbanización o una cancha con terraplenes y cortes"
+  - "Necesitas separar tu predio del vecino con diferencia de nivel sin poner en riesgo ninguna de las dos propiedades"
+entregables_titulo: "Estabilidad del talud, empujes NSR-10 y planos del muro listos para curaduría"
 entregables:
   - "Análisis de estabilidad del talud en condición estática y sísmica, con factores de seguridad"
   - "Cálculo de empujes de suelo y agua según el estudio geotécnico y la NSR-10"
@@ -35,10 +41,12 @@ entregables:
   - "Planos de construcción con detalles de refuerzo, filtros, lloraderos y juntas"
   - "Especificaciones de materiales y proceso constructivo recomendado"
   - "Documentos listos para radicar en curaduría o entidad pública"
+despues_titulo: "Después del diseño: entrega al constructor, observaciones de curaduría y supervisión del muro"
 despues:
-  - "Le entregamos el diseño al constructor que usted elija y explicamos los puntos críticos: drenaje, compactación del relleno y secuencia de excavación"
+  - "Entregamos el diseño al constructor que elijas y explicamos los puntos críticos: drenaje, compactación del relleno y secuencia de excavación"
   - "Si aparecen observaciones de curaduría, las subsanamos"
   - "Podemos hacer la supervisión técnica de la construcción del muro para verificar que se ejecute como se diseñó"
+factores_titulo: "Seis factores que definen el costo y el alcance del diseño de tu muro: altura, suelo, agua, carga y sismo"
 factores:
   - "Altura del muro y longitud total"
   - "Tipo de suelo, nivel freático y resultados del estudio geotécnico"
@@ -46,14 +54,17 @@ factores:
   - "Sistema elegido: concreto en voladizo, gaviones, pantalla anclada, suelo reforzado"
   - "Condición sísmica del municipio y consecuencias de una falla"
   - "Si existe o no estudio de suelos previo"
+audiencias_titulo: "Para propietarios con lote en ladera, constructoras, administraciones de P.H. y municipios"
 audiencias:
   - { rol: "Propietarios y arquitectos con lote en ladera", texto: "El muro que hace viable el lote sin comprometer la casa ni la del vecino." }
   - { rol: "Constructoras y urbanizadores", texto: "Contenciones para vías internas, sótanos y terrazas con memorias que pasan curaduría." }
   - { rol: "Administraciones de P.H.", texto: "Diagnóstico de muros existentes agrietados o inclinados y diseño de su reparación o reemplazo." }
   - { rol: "Municipios", texto: "Estabilización de taludes y contenciones para infraestructura deportiva y vial." }
+proyectos_titulo: "Infraestructura deportiva en Betulia e Hispania y la I.E. Pavarandó Grande en Mutatá"
 proyectos: [infraestructura-deportiva-betulia, ie-pavarando-grande-mutata]
 relacionados: [geotecnia-estudio-de-suelos, cimentaciones, diseno-estructural, evaluacion-estructural]
 normativa: [nsr-10, titulo-h, titulo-a, licencia-de-construccion-colombia]
+faqs_titulo: "Preguntas sobre muros de contención: NSR-10, costo, grietas y estudio de suelos"
 faqs:
   - question: "¿Quién hace el diseño de un muro de contención?"
     answer: "Un ingeniero civil con matrícula profesional, con base en un estudio de suelos. El muro es una estructura y, cuando hace parte de una licencia de construcción, la curaduría exige que su diseño esté firmado por ingeniero. En PROINCIVIL el diseño lo hace un ingeniero estructural con apoyo geotécnico."
@@ -77,13 +88,13 @@ Medellín, Envigado y los municipios del Valle de Aburrá y del Oriente crecen s
 
 El resultado se ve después de cada temporada de lluvias: muros inclinados, grietas horizontales, lloraderos secos mientras el relleno está saturado, y en los casos graves, deslizamientos que arrastran lo que estaba arriba. El agua es la causa más frecuente de falla, no la falta de concreto.
 
-## Qué analizamos antes de dibujar el primer plano
+## Empujes, sismo y cuatro chequeos de estabilidad antes del primer plano
 
 El diseño de una contención empieza en el suelo, no en el muro. Con el estudio geotécnico definimos los parámetros de resistencia, el nivel freático y la estratigrafía; con ellos calculamos los empujes activos, en reposo o pasivos según el caso, la sobrecarga que actúa sobre la corona y el incremento sísmico que exige la NSR-10.
 
 Luego verificamos el talud en su estado actual y con la intervención propuesta: factores de seguridad contra deslizamiento global en condición estática y sísmica, y para el muro, contra volcamiento, deslizamiento en la base y falla por capacidad portante. Solo cuando la solución cumple esos cuatro chequeos pasamos al diseño del elemento.
 
-## Sistemas de contención que diseñamos
+## Seis sistemas de contención y la altura típica de cada uno
 
 | Sistema | Alturas típicas | Cuándo conviene |
 |---|---|---|
@@ -96,14 +107,14 @@ Luego verificamos el talud en su estado actual y con la intervención propuesta:
 
 En la infraestructura deportiva de Betulia diseñamos sistemas de contención y estudios geotécnicos para cubiertas y canchas sobre terreno de ladera: la combinación de contención y drenaje evitó muros más altos y costosos.
 
-## El drenaje es la mitad del diseño
+## Drenaje del muro: filtro, lloraderos y tubería colectora resueltos en los planos
 
 Cada muro que diseñamos lleva un sistema de drenaje resuelto en los planos: filtro granular o geodrén detrás del muro, lloraderos a distancias definidas, tubería colectora en la base y manejo del agua superficial en la corona. Un muro sin drenaje puede recibir el doble de empuje del que se calculó; con drenaje, el suelo trabaja como se supuso en la memoria.
 
-## Muros existentes: evaluar antes de demoler
+## Muro agrietado o inclinado: evaluación en sitio antes de demoler
 
-Cuando un muro ya construido se agrieta o se inclina, primero evaluamos. Medimos la inclinación, la abertura de las grietas y su evolución, revisamos el drenaje y, si hace falta, ejecutamos sondeos detrás del muro. Muchos casos se resuelven con drenaje y anclajes; otros exigen reemplazo. El concepto lo damos con la información, no con la apariencia.
+Cuando un muro ya construido se agrieta o se inclina, primero evaluamos. Medimos la inclinación, la abertura de las grietas y su evolución, revisamos el drenaje y, si hace falta, programamos sondeos detrás del muro. Muchos casos se resuelven con drenaje y anclajes; otros exigen reemplazo. El concepto lo damos con la información, no con la apariencia.
 
-## Qué hace diferente el diseño de PROINCIVIL
+## Sin ejecutar obra, sin incentivo para sobredimensionar tu muro
 
 Diseñamos, evaluamos y supervisamos; no ejecutamos obra. Por eso no tenemos incentivo para especificar un muro más grande del necesario ni para recomendar demolición cuando basta con reparar. El diseño sale con memorias verificables, planos que el constructor puede ejecutar y el drenaje resuelto, y lo defendemos ante la curaduría hasta que quede aprobado.

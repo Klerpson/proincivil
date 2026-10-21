@@ -1,22 +1,20 @@
-<section class="section section--bosque cta-final">
-  <div class="wrapper">
-    <div class="cta-final__grid">
-      <div class="flow">
-        <p class="section-header__eyebrow">Siguiente paso</p>
-        <h2>{{ include.titulo | default: page.cta_titulo | default: "Conversemos sobre su proyecto" }}</h2>
-        <p>{{ include.texto | default: page.cta_texto_final | default: "Comparta la ubicación, el uso previsto y los planos disponibles. Revisamos la información y acordamos una conversación para definir alcance, entregables y plazo. Diseñamos, evaluamos y supervisamos; no ejecutamos obra." }}</p>
-        <div class="hero__acciones">
-          {% assign _texto_cta = include.boton | default: "Conversemos sobre su proyecto" %}
-          {% include button.html texto=_texto_cta data_location="cta-final" %}
-          <a href="{{ '/como-cotizar/' | relative_url }}" class="boton_secundario">Cómo cotizar</a>
-        </div>
+<section class="seccion seccion--oscura cierre">
+  <div class="cierre__foto" aria-hidden="true">{% include picture.html nombre="ia-valle-aburra" alt="" ratio="16x10" sizes="100vw" %}</div>
+  <div class="marco cierre__rejilla">
+    <div class="flujo">
+      <p class="rotulo rotulo--claro">Siguiente paso</p>
+      <h2 class="cierre__titulo">{{ include.titulo | default: page.cta_titulo | default: "Conversemos sobre tu proyecto" }}</h2>
+      <p>{{ include.texto | default: page.cta_texto_final | default: "Cuéntanos la ubicación, el uso previsto y los planos que tienes. Revisamos la información y acordamos una llamada de diagnóstico para definir alcance, entregables y plazo. Diseñamos, evaluamos y supervisamos; no ejecutamos obra." }}</p>
+      <div class="acciones">
+        {%- assign _texto_cta = include.boton | default: "Conversemos sobre tu proyecto" -%}
+        {% include button.html texto=_texto_cta data_location="cta-final" %}
+        <a href="{{ '/como-cotizar/' | relative_url }}" class="enlace-flecha enlace-flecha--claro">Qué necesitamos para empezar</a>
       </div>
-      <ul class="cta-final__datos">
-        <li><strong>{{ site.cifras.aprobacion_curadurias }}</strong><span>histórico de aprobación en primera radicación informado por la empresa</span></li>
-        <li><strong>{{ site.cifras.m2_disenados }} m²</strong><span>diseñados en arquitectura y estructuras</span></li>
-        <li><strong>{{ site.cifras.m2_supervisados }} m²</strong><span>supervisados en interventoría y control técnico</span></li>
-        <li><strong>Alcance claro</strong><span>entregables y plazo acordados según la información del proyecto</span></li>
-      </ul>
     </div>
+    <dl class="cifras cifras--claras">
+      <div class="cifra"><dt class="cifra__etiqueta">Aprobación en primera radicación ante curaduría</dt><dd class="cifra__valor">{{ site.cifras.aprobacion_curadurias }}</dd></div>
+      <div class="cifra"><dt class="cifra__etiqueta">Metros cuadrados diseñados en arquitectura y estructuras</dt><dd class="cifra__valor">{{ site.cifras.m2_disenados }} m²</dd></div>
+      <div class="cifra"><dt class="cifra__etiqueta">Metros cuadrados supervisados en interventoría y control técnico</dt><dd class="cifra__valor">{{ site.cifras.m2_supervisados }} m²</dd></div>
+    </dl>
   </div>
 </section>

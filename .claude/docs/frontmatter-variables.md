@@ -35,7 +35,9 @@ Referencia de las variables que leen `head.html`, `header.html`, los layouts y l
 `factores_titulo` · `cuanto_cuesta` (URL) · `audiencias` (`[{rol, texto}]`) · `proyectos` (slugs de
 `_proyectos`) · `proyectos_titulo` · `relacionados` (slugs de `_servicios`) · `normativa` (slugs de
 `_normativa`) · `serviceType`, `categoria`, `area_servida`, `audiencia_meta` (schema Service) · `orden`
-(orden en hubs) · `grupo`.
+(orden en hubs) · `grupo` · `zoom` (`{palabra, textura, titulo, texto}`: escena de zoom antes del
+FAQ; reemplaza al cierre. `textura`: acero | concreto | plano | ladera. En `titulo` y `texto`, `{clave}` se
+reemplaza por `site.cifras.clave`). Con 2 o más `proyectos`, la sección de casos usa la escena con foto fija.
 
 ## layout: article (normativa, glosario)
 
@@ -46,7 +48,9 @@ Referencia de las variables que leen `head.html`, `header.html`, los layouts y l
 
 `ficha` (mapa: cliente, ubicacion, anio, sector, servicio, sistema, area, niveles, normativa, rol,
 resultado — se imprime tal cual, `PENDIENTE` cuando falte) · `galeria` (`[{src, alt, pie}]`) · `testimonio`
-(`{texto, autor, cargo}`) · `servicios` (slugs) · `edificacion` (slug) · `zona` (slug) · `eyebrow`.
+(`{texto, autor, cargo}`) · `servicios` (slugs) · `edificacion` (slug) · `zona` (slug) · `eyebrow` · `caso`
+(`{lugar, foto, foto_nota, titulo, resultado, datos[], situacion, hicimos, logro}`: cómo se cuenta el
+proyecto en la escena de casos; si falta, se arma con la `ficha`).
 
 ## layout: post (_posts)
 
@@ -55,8 +59,10 @@ defecto `camilo-tamayo`) · `readingTime` · `resumen` · `indice` · `servicios
 
 ## layout: hub
 
-`coleccion` (nombre de la colección) · `grupos` (`[{titulo, texto, slugs}]`; sin grupos lista todo por
-`orden`).
+`coleccion` (nombre de la colección) · `paneles: true` (familias de `_data/familias.yml` como paneles
+apilados) · `galeria` (`{rotulo, titulo}`) · `casos` (`{rotulo, titulo, slugs}`) · `marquesina` (clave de
+`_data/marquesinas.yml`) · `grupos` (`[{rotulo, titulo, texto, slugs}]`; sin paneles, galería ni grupos lista
+todo por `orden`).
 
 ## Reglas
 

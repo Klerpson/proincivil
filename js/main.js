@@ -1,82 +1,113 @@
-/* PROINCIVIL — JS mínimo. Solo comentarios de bloque: layout compress une líneas. */
+/* PROINCIVIL · Plano vivo. JS mínimo, sin dependencias. Todo el contenido está en el HTML;
+   esto solo añade comportamiento. Comentarios de bloque: layout compress une líneas. */
 (function () {
-  "use strict";
+  var doc = document;
+  var ultimo = window.scrollY;
 
-  /* Selecciona sin desplazar el foco; en móvil conserva además la fila pulsada. */
-  document.querySelectorAll(".selector__galeria").forEach(function (galeria) {
-    galeria.addEventListener("click", function (ev) {
-      var fila = ev.target.closest(".selector__fila");
-      if (!fila) { return; }
-      var opcion = document.getElementById(fila.htmlFor);
-      var top = fila.getBoundingClientRect().top;
-      var y = window.scrollY;
-      ev.preventDefault();
-      opcion.checked = true;
-      opcion.focus({ preventScroll: true });
-      if (window.matchMedia("(max-width: 600px)").matches) {
-        window.scrollBy({ top: fila.getBoundingClientRect().top - top, behavior: "instant" });
-      } else {
-        window.scrollTo({ top: y, behavior: "instant" });
-      }
-      opcion.dispatchEvent(new Event("change", { bubbles: true }));
-    });
-  });
-
-  /* Clics a WhatsApp → evento de conversión en GA4 (si existe gtag) */
-  document.addEventListener("click", function (ev) {
-    var a = ev.target.closest("a.lead-whatsapp");
-    if (!a) { return; }
-    if (typeof window.gtag === "function") {
-      window.gtag("event", "whatsapp_click", {
-        location: a.getAttribute("data-location") || "sin-ubicacion",
-        page_path: window.location.pathname
-      });
+  /* 1. Evento de conversión en GA4 para cada enlace de WhatsApp (data-location identifica el CTA). */
+  doc.addEventListener('click', function (e) {
+    var a = e.target.closest('a.lead-whatsapp');
+    if (a && typeof window.gtag === 'function') {
+      window.gtag('event', 'whatsapp_click', { location: a.getAttribute('data-location') || 'sin-ubicacion', page_path: location.pathname });
     }
   });
 
-  /* En la home la barra es transparente sobre el héroe y se vuelve opaca al bajar */
-  var nav = document.querySelector(".nav");
-  if (document.body.dataset.layout === "home" && nav) {
-    var marcar = function () {
-      nav.classList.toggle("nav--solido", window.scrollY > 60);
-    };
-    marcar();
-    window.addEventListener("scroll", marcar, { passive: true });
+  /* 2. Menú: botón móvil, cierre con Escape y un solo desplegable abierto. */
+  var menu = doc.querySelector('.menu');
+  var boton = menu && menu.querySelector('.menu__boton');
+  var desplegables = menu ? menu.querySelectorAll('.menu__desplegable') : [];
+
+  function cerrarDesplegables(excepto) {
+    for (var i = 0; i < desplegables.length; i++) {
+      if (desplegables[i] !== excepto) desplegables[i].removeAttribute('open');
+    }
+  }
+  function cerrarMenu() {
+    if (boton) boton.setAttribute('aria-expanded', 'false');
+    cerrarDesplegables(null);
   }
 
-  /* La barra se oculta al bajar y reaparece al subir, en todas las páginas; nunca con el menú móvil abierto. */
-  if (nav) {
-    var navToggle = document.getElementById("nav-toggle");
-    var ultimoY = window.scrollY;
-    var ocultar = function () {
-      var y = window.scrollY;
-      if (navToggle && navToggle.checked) { ultimoY = y; return; }
-      if (y > ultimoY && y > nav.offsetHeight) { nav.classList.add("nav--oculto"); }
-      else if (y < ultimoY) { nav.classList.remove("nav--oculto"); }
-      ultimoY = y;
-    };
-    window.addEventListener("scroll", ocultar, { passive: true });
-  }
-
-  /* Cierra el menú móvil al navegar por anclas */
-  var toggle = document.getElementById("nav-toggle");
-  if (toggle) {
-    document.querySelectorAll(".nav__panel a, .nav__enlace[href]").forEach(function (link) {
-      link.addEventListener("click", function () { toggle.checked = false; });
+  if (boton) {
+    boton.hidden = false;
+    boton.addEventListener('click', function () {
+      var abierto = boton.getAttribute('aria-expanded') === 'true';
+      boton.setAttribute('aria-expanded', abierto ? 'false' : 'true');
     });
   }
-
-  /* Un solo FAQ abierto a la vez dentro de cada lista */
-  document.querySelectorAll(".faqs__lista").forEach(function (lista) {
-    lista.addEventListener("toggle", function (ev) {
-      var d = ev.target;
-      if (d.tagName !== "DETAILS" || !d.open) { return; }
-      lista.querySelectorAll("details[open]").forEach(function (o) { if (o !== d) { o.open = false; } });
-    }, true);
+  for (var i = 0; i < desplegables.length; i++) {
+    desplegables[i].addEventListener('toggle', function (e) {
+      if (e.target.open) cerrarDesplegables(e.target);
+    });
+  }
+  doc.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape' || !menu) return;
+    var activo = doc.activeElement;
+    var desplegable = activo && activo.closest ? activo.closest('.menu__desplegable[open]') : null;
+    var listaAbierta = boton && boton.getAttribute('aria-expanded') === 'true' && menu.contains(activo);
+    cerrarMenu();
+    if (desplegable) desplegable.querySelector('summary').focus();
+    else if (listaAbierta) boton.focus();
+  });
+  if (menu) {
+    menu.addEventListener('focusin', function () { menu.classList.remove('menu--oculto'); });
+    menu.addEventListener('focusout', function (e) {
+      if (!e.relatedTarget || !menu.contains(e.relatedTarget)) cerrarMenu();
+    });
+  }
+  doc.addEventListener('click', function (e) {
+    if (menu && !menu.contains(e.target)) cerrarMenu();
+    if (e.target.closest('.menu a')) cerrarMenu();
   });
 
-  /* Enlaces externos en pestaña nueva */
-  document.querySelectorAll('a[href^="http"]:not([href*="proincivil.com"])').forEach(function (a) {
-    if (!a.target) { a.target = "_blank"; a.rel = (a.rel ? a.rel + " " : "") + "noopener"; }
-  });
+  /* 3. La barra secundaria del menú se oculta al bajar y vuelve al subir. */
+  if (menu) {
+    var pendiente = false;
+    window.addEventListener('scroll', function () {
+      if (pendiente) return;
+      pendiente = true;
+      window.requestAnimationFrame(function () {
+        var y = window.scrollY;
+        var bajando = y > ultimo && y > 160;
+        var abierto = boton && boton.getAttribute('aria-expanded') === 'true';
+        if (!abierto && !menu.querySelector('.menu__desplegable[open]')) menu.classList.toggle('menu--oculto', bajando);
+        ultimo = y;
+        pendiente = false;
+      });
+    }, { passive: true });
+  }
+
+  /* 4. El botón flotante se oculta mientras se ve la portada o la cabecera. */
+  var flotante = doc.querySelector('.flotante');
+  var cabecera = doc.querySelector('.portada, .cabecera');
+  if (flotante && cabecera && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (entradas) {
+      flotante.classList.toggle('flotante--oculto', entradas[0].isIntersecting);
+    }).observe(cabecera);
+  }
+
+  /* 5. Resplandor que sigue al cursor sobre la cuadrícula de la portada (solo puntero fino). */
+  var portada = doc.querySelector('.portada');
+  if (portada && window.matchMedia('(pointer: fine) and (prefers-reduced-motion: no-preference)').matches) {
+    var marco = null;
+    portada.addEventListener('pointermove', function (e) {
+      if (marco) return;
+      marco = window.requestAnimationFrame(function () {
+        var r = portada.getBoundingClientRect();
+        portada.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        portada.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        marco = null;
+      });
+    });
+    portada.addEventListener('pointerenter', function () { portada.classList.add('portada--puntero'); });
+    portada.addEventListener('pointerleave', function () { portada.classList.remove('portada--puntero'); });
+  }
+
+  /* 6. Enlaces externos en pestaña nueva y sin acceso a window.opener. */
+  var enlaces = doc.querySelectorAll('a[href^="http"]');
+  for (var j = 0; j < enlaces.length; j++) {
+    if (enlaces[j].hostname !== location.hostname) {
+      enlaces[j].target = '_blank';
+      if (!/noopener/.test(enlaces[j].rel)) enlaces[j].rel = (enlaces[j].rel + ' noopener').trim();
+    }
+  }
 })();

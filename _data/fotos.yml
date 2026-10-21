@@ -40,3 +40,20 @@ equipo-cristian-hd: [720, 960]
 equipo-cristian-v2: [360, 720, 960]
 equipo-cristian-v2-mini: [48, 96]
 equipo-valentina-hd: [720, 960]
+
+# Archivo HAER (Library of Congress) vía Wikimedia Commons, dominio público. Imágenes de ambiente:
+# nunca se presentan como proyectos de PROINCIVIL. Créditos en _plans/stock/creditos.md.
+stock-arriostramiento: [768, 1200, 1920]
+stock-arco-concreto: [768, 1200, 1920]
+stock-plano-cercha: [768, 1200, 1920]
+stock-pila-cimentacion: [768, 1200, 1920]
+stock-nave-cerchas: [768, 1200, 1920]
+stock-plano-detalles: [768, 1200, 1920]
+stock-diagonales: [768, 1200, 1920]
+
+# Imágenes de ambiente generadas con IA en Canva (2026-10-21). No muestran proyectos de PROINCIVIL.
+ia-valle-aburra: [768, 1200, 1600, 1920]
+ia-mesa-planos: [768, 1200, 1600, 1920]
+ia-conexion-acero: [768, 1200, 1600]
+ia-grieta-columna: [768, 1200, 1600]
+ia-ladera-muro: [768, 1200, 1600, 1920]

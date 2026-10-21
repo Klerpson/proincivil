@@ -1,0 +1,53 @@
+# Las 6 familias de servicio del formulario de la clienta (14-10-2026). Fuente única para los paneles
+# de la home (titulo corto, h3) y del hub /servicios/ (titulo_largo, h2). Cada enlace lleva su propio
+# texto ancla. Orden comercial: diseño primero; patología y vulnerabilidad después.
+- rotulo: "Línea principal"
+  titulo: "Ingeniería estructural y sismorresistencia"
+  titulo_largo: "Ingeniería estructural y sismorresistencia: concreto NSR-10 y E.030, acero AISC 358 y repotenciación"
+  texto: "Diseño en concreto reforzado conforme a NSR-10 y E.030, estructura metálica con conexiones precalificadas (AISC 358) y repotenciación de estructuras existentes para cumplir la norma o cambiar su uso."
+  foto: "ia-conexion-acero"
+  enlaces:
+    - { slug: diseno-estructural, texto: "Diseño estructural sismorresistente" }
+    - { slug: estructuras-metalicas, texto: "Estructuras metálicas y carports" }
+    - { slug: reforzamiento-estructural, texto: "Reforzamiento y repotenciación" }
+    - { slug: cimentaciones, texto: "Cimentaciones" }
+    - { slug: muros-de-contencion-y-taludes, texto: "Muros de contención y taludes" }
+- rotulo: "Edificaciones existentes"
+  titulo: "Patología estructural y diagnóstico"
+  titulo_largo: "Patología estructural y diagnóstico de fallas, grietas y daños por sismo"
+  texto: "Evaluación, diagnóstico y soluciones técnicas para fallas y deterioros: grietas, asentamientos y daños por sismo."
+  foto: "ia-grieta-columna"
+  enlaces:
+    - { slug: evaluacion-estructural, texto: "Evaluación y patología estructural" }
+    - { slug: evaluacion-post-sismo, texto: "Evaluación después de un sismo" }
+- rotulo: "Riesgo sísmico"
+  titulo: "Vulnerabilidad estructural"
+  titulo_largo: "Vulnerabilidad estructural conforme al Título A.10 de la NSR-10"
+  texto: "Vulnerabilidad sísmica, diagnóstico de riesgo y planes de intervención conforme a NSR-10."
+  foto: "stock-arriostramiento"
+  enlaces:
+    - { slug: vulnerabilidad-sismica, texto: "Estudio de vulnerabilidad sísmica" }
+- rotulo: "Suelo"
+  titulo: "Geotecnia y suelos"
+  titulo_largo: "Geotecnia y estudios de suelos para cimentaciones seguras"
+  texto: "Estudios geotécnicos y análisis de suelos para cimentaciones seguras y eficientes."
+  foto: "ia-ladera-muro"
+  enlaces:
+    - { slug: geotecnia-estudio-de-suelos, texto: "Geotecnia y estudios de suelos" }
+- rotulo: "Control técnico"
+  titulo: "Interventoría y supervisión técnica"
+  titulo_largo: "Interventoría, revisión independiente, supervisión técnica y curadurías"
+  texto: "Control técnico de diseños, cumplimiento normativo y gestión de riesgos, sin conflicto de interés: no ejecutamos obra."
+  foto: "stock-nave-cerchas"
+  enlaces:
+    - { slug: interventoria-de-disenos, texto: "Interventoría de diseños y obra" }
+    - { slug: revision-independiente-de-disenos, texto: "Revisión independiente de diseños" }
+    - { slug: supervision-tecnica-independiente, texto: "Supervisión técnica independiente" }
+    - { slug: curadurias-y-licencias, texto: "Curadurías y licencias" }
+- rotulo: "Medición y modelo"
+  titulo: "Topografía y coordinación BIM"
+  titulo_largo: "Topografía, verticalidad y coordinación BIM"
+  texto: "Levantamientos topográficos, chequeos de verticalidad, modelado y coordinación integral BIM."
+  foto: "stock-plano-detalles"
+  enlaces:
+    - { slug: bim-y-topografia, texto: "BIM, topografía y verticalidad" }

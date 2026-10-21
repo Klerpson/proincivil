@@ -1,0 +1,78 @@
+{%- comment -%}
+  Escena: casos con foto fija. En escritorio la foto queda a la izquierda y cambia (barrido clip-path)
+  con el caso que ocupa el centro de la pantalla (js/motion.js); en móvil cada caso lleva su foto.
+  Parámetros: slugs (proyectos, en orden), rotulo, titulo (h2), id (único por página), clase (extra
+  para la sección, p. ej. "seccion--papel").
+  Datos de cada proyecto: bloque `caso:` del front matter si existe (lugar, foto, foto_nota, titulo,
+  resultado, datos[], situacion, hicimos, logro); si no, la ficha (ubicacion, hero, resultado, sector,
+  niveles, rol, servicio, sistema, area, normativa). Los valores PENDIENTE no se muestran.
+{%- endcomment -%}
+{%- assign _lista = "" | split: "" -%}
+{%- assign _slugs = include.slugs | join: "," | split: "," -%}
+{%- for s in _slugs -%}{%- assign _p = site.proyectos | where: "slug", s | first -%}{%- if _p -%}{%- assign _lista = _lista | push: _p -%}{%- endif -%}{%- endfor -%}
+{%- assign _id = include.id | default: "casos-titulo" -%}
+{%- if _lista.size > 0 -%}
+<section class="seccion casos{% if include.clase %} {{ include.clase }}{% endif %}" aria-labelledby="{{ _id }}">
+  <div class="marco flujo">
+    <div class="encabezado">
+      <p class="rotulo">{{ include.rotulo | default: "Casos" }}</p>
+      <h2 class="encabezado__titulo" id="{{ _id }}">{{ include.titulo }}</h2>
+    </div>
+  </div>
+  <div class="marco casos__rejilla">
+    <div class="casos__medios" aria-hidden="true">
+      {%- for p in _lista -%}
+      {%- assign c = p.caso -%}
+      {%- assign _foto = c.foto | default: p.hero -%}
+      {%- assign _num = forloop.index | prepend: "0" | slice: -2, 2 %}
+      <figure class="casos__medio{% if forloop.first %} casos__medio--activo{% endif %}" data-caso="{{ forloop.index0 }}">{% include picture.html nombre=_foto alt=p.hero_alt ratio="4x3" sizes="(max-width: 960px) 100vw, 50vw" %}<figcaption>{{ _num }} · {{ c.lugar | default: p.ficha.ubicacion }}{% if c.foto_nota %} · {{ c.foto_nota }}{% endif %}</figcaption></figure>
+      {%- endfor %}
+    </div>
+    <div class="casos__lista">
+      {%- for p in _lista -%}
+      {%- assign c = p.caso -%}
+      {%- assign f = p.ficha -%}
+      {%- assign _foto = c.foto | default: p.hero %}
+      <article class="caso" data-caso="{{ forloop.index0 }}">
+        <figure class="caso__medio">{% include picture.html nombre=_foto alt=p.hero_alt ratio="4x3" sizes="100vw" %}{% if c.foto_nota %}<figcaption>{{ c.foto_nota }}</figcaption>{% endif %}</figure>
+        <p class="caso__numero" aria-hidden="true">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</p>
+        <p class="rotulo">{{ c.lugar | default: f.ubicacion }}</p>
+        <h3 class="caso__titulo"><a href="{{ p.url | relative_url }}">{{ c.titulo | default: p.titulo_corto | default: p.h1 }}</a></h3>
+        <p class="caso__resultado">{{ c.resultado | default: f.resultado }}</p>
+        <ul class="caso__datos">
+          {%- if c.datos -%}
+            {%- for d in c.datos %}<li>{{ d }}</li>{% endfor -%}
+          {%- else -%}
+            {%- for v in (1..3) -%}
+              {%- case v -%}{%- when 1 -%}{%- assign _d = f.sector -%}{%- when 2 -%}{%- assign _d = f.niveles -%}{%- else -%}{%- assign _d = f.rol -%}{%- endcase -%}
+              {%- if _d and _d.size < 40 -%}{%- unless _d contains "PENDIENTE" %}<li>{{ _d }}</li>{% endunless -%}{%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </ul>
+        <details class="caso__detalle">
+          <summary>Ver el caso completo</summary>
+          <dl class="caso__fases">
+            {%- if c.situacion %}
+            <div><dt>Situación</dt><dd>{{ c.situacion }}</dd></div>
+            <div><dt>Qué hicimos</dt><dd>{{ c.hicimos }}</dd></div>
+            <div><dt>Resultado</dt><dd>{{ c.logro }}</dd></div>
+            {%- else %}
+            <div><dt>Situación</dt><dd>{{ p.excerpt | strip_html }}</dd></div>
+            {%- if f.servicio %}<div><dt>Servicio</dt><dd>{{ f.servicio }}</dd></div>{% endif -%}
+            {%- if f.sistema %}<div><dt>Sistema estructural</dt><dd>{{ f.sistema }}</dd></div>{% endif -%}
+            {%- if f.area %}<div><dt>Área</dt><dd>{{ f.area }}</dd></div>{% endif -%}
+            {%- if f.normativa %}<div><dt>Normativa</dt><dd>{{ f.normativa }}</dd></div>{% endif -%}
+            {%- endif %}
+          </dl>
+        </details>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- if include.enlace %}
+  {%- assign _n = site.proyectos.size %}
+  {%- assign _t = "Ver los " | append: _n | append: " proyectos con sus datos técnicos" %}
+  {% include escenas/enlace-mayor.html url="/proyectos/" numero=_n texto=_t variante="claro" %}
+  {%- endif %}
+</section>
+{%- endif -%}

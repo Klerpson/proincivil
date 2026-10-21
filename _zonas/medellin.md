@@ -24,11 +24,11 @@ resumen: "Medellín está en zona de amenaza sísmica intermedia y cuenta con mi
 datePublished: 2026-09-22
 dateModified: 2026-09-22
 cuando:
-  - "Desarrolla una torre residencial u hotelera en Medellín y necesita diseño o interventoría independiente del diseño"
-  - "Su proyecto está en ladera (nororiental, centroccidental, San Antonio de Prado) y el suelo condiciona la cimentación"
+  - "Desarrollas una torre residencial u hotelera en Medellín y necesitas diseño o interventoría independiente del diseño"
+  - "Tu proyecto está en ladera (nororiental, centroccidental, San Antonio de Prado) y el suelo condiciona la cimentación"
   - "Una de las curadurías de Medellín devolvió el expediente con observaciones estructurales"
-  - "Administra un edificio en la ciudad que presenta fisuras o sufrió un sismo"
-  - "La Ley 1796 le exige revisor independiente o supervisión técnica y busca una firma sin conflicto de interés"
+  - "Administras un edificio en la ciudad que presenta fisuras o sufrió un sismo"
+  - "La Ley 1796 te exige revisor independiente o supervisión técnica y buscas una firma sin conflicto de interés"
 entregables:
   - "Diseño estructural con parámetros de la microzonificación sísmica de Medellín cuando aplica"
   - "Interventoría y revisión independiente de diseños de terceros"
@@ -43,7 +43,7 @@ relacionados: [diseno-estructural, interventoria-de-disenos, revision-independie
 normativa: [nsr-10, titulo-a, ley-1796-de-2016, licencia-de-construccion-colombia]
 faqs:
   - question: "¿Cuál curaduría me corresponde en Medellín?"
-    answer: "Medellín tiene cuatro curadurías urbanas (Primera, Segunda, Tercera y Cuarta) y el solicitante puede radicar en cualquiera de ellas. Cada una tiene formatos y revisores propios; preparamos el expediente para la que usted elija y acompañamos la subsanación."
+    answer: "Medellín tiene cuatro curadurías urbanas (Primera, Segunda, Tercera y Cuarta) y el solicitante puede radicar en cualquiera de ellas. Cada una tiene formatos y revisores propios; preparamos el expediente para la que elijas y acompañamos la subsanación."
   - question: "¿Medellín tiene microzonificación sísmica?"
     answer: "Sí. El Valle de Aburrá cuenta con estudios de microzonificación sísmica que definen espectros de diseño por zonas según las condiciones locales del suelo. Verificamos en cada proyecto si el municipio exige aplicarla y la incorporamos en las memorias junto con los parámetros de la NSR-10."
   - question: "¿Qué suelos hay en Medellín?"
@@ -76,4 +76,4 @@ Diseño estructural de torres residenciales y hoteleras, interventoría y revisi
 
 ## Cómo trabajamos en Medellín
 
-Nuestra sede en Envigado está a veinte minutos de cualquier punto del sur y el centro de la ciudad. Visitamos el predio o la obra, revisamos planos, enviamos propuesta en 24 horas hábiles y trabajamos con modelo BIM compartido. La obra la ejecuta el constructor que usted elija: PROINCIVIL no construye, y por eso su interventoría y su revisión de diseños no tienen conflicto de interés.
+Nuestra sede en Envigado está a veinte minutos de cualquier punto del sur y el centro de la ciudad. Visitamos el predio o la obra, revisamos planos, acordamos una llamada de diagnóstico y trabajamos con modelo BIM compartido. La obra la ejecuta el constructor que elijas: PROINCIVIL no construye, y por eso su interventoría y su revisión de diseños no tienen conflicto de interés.

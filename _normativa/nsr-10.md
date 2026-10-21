@@ -3,10 +3,10 @@
 titulo_corto: "NSR-10"
 orden: 1
 title: "NSR-10: guía práctica del reglamento sismo resistente | PROINCIVIL"
-description: "Qué es la NSR-10, qué exige cada título (A a K), a qué edificaciones aplica, sus actualizaciones y cómo afecta su licencia de construcción. Por ingenieros estructurales."
+description: "Qué es la NSR-10, qué exige cada título (A a K), a qué edificaciones aplica, sus actualizaciones y cómo afecta tu licencia de construcción. Por ingenieros estructurales."
 h1: "NSR-10: qué es y qué exige el Reglamento Colombiano de Construcción Sismo Resistente"
 eyebrow: "Normativa · Guía"
-excerpt: "La norma que rige el diseño y la construcción de toda edificación en Colombia, título por título, en lenguaje de proyecto: qué le pide a su diseño, a su suelo, a su obra y a su licencia."
+excerpt: "La norma que rige el diseño y la construcción de toda edificación en Colombia, título por título, en lenguaje de proyecto: qué le pide a tu diseño, a tu suelo, a tu obra y a tu licencia."
 cta_texto: "Consultar sobre mi proyecto"
 resumen: "La NSR-10 (Decreto 926 de 2010 y modificaciones) es el Reglamento Colombiano de Construcción Sismo Resistente. Fija los requisitos mínimos de diseño y construcción para que las edificaciones resistan sismos menores sin daño, sismos moderados con daño reparable y sismos severos sin colapso. Aplica a toda edificación nueva, ampliación o cambio de uso en el país y es requisito para obtener licencia de construcción."
 datePublished: 2026-09-22
@@ -39,7 +39,7 @@ Para un proyecto concreto la norma se traduce en cuatro obligaciones: un estudio
 
 ## Los 11 títulos explicados {#titulos}
 
-| Título | Tema | Qué significa para su proyecto |
+| Título | Tema | Qué significa para tu proyecto |
 |---|---|---|
 | A | Requisitos generales de diseño y construcción sismo resistente | Zona de amenaza, tipo de suelo, grupo de uso, espectro de diseño, derivas, irregularidades y evaluación de edificaciones existentes (A.10) |
 | B | Cargas | Cargas muertas, vivas, de viento, empujes y combinaciones que la estructura debe resistir |
