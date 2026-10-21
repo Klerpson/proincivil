@@ -15,7 +15,7 @@
   .encabezado__titulo { font-size: clamp(1.75rem, 2vw + 1rem, 2.75rem); }
   .flujo > .encabezado + * { margin-block-start: clamp(1.75rem, 3vw, 2.75rem); }
   .encabezado__texto { font-size: 1.0625rem; color: var(--tinta-suave); }
-  .seccion--oscura .encabezado__texto { color: rgb(246 243 236 / 0.78); }
+  .seccion--oscura .encabezado__texto { color: rgb(232 232 232 / 0.78); }
 
   .rejilla {
     --columna: 15rem;
@@ -49,7 +49,7 @@
   .pieza__flecha::after { content: " →"; }
   .pieza--enlace .pieza__titulo a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
   .pieza--oscura { background: var(--azul-2); border-color: var(--linea-clara); color: var(--marfil); }
-  .pieza--oscura .pieza__cuerpo > p:not(.rotulo) { color: rgb(246 243 236 / 0.78); }
+  .pieza--oscura .pieza__cuerpo > p:not(.rotulo) { color: rgb(232 232 232 / 0.78); }
 
   .lista { --flujo: 0.625rem; display: grid; gap: 0.625rem; padding: 0; list-style: none; }
   .lista li { position: relative; padding-inline-start: 1.75rem; }
@@ -73,7 +73,7 @@
   .cifras--claras .cifra__valor { font-size: clamp(1.75rem, 1.5vw + 1rem, 2.25rem); }
   .cifras--claras .cifra { color: var(--marfil); }
   .cifras--claras .cifra::before { color: var(--trazo); }
-  .cifras--claras .cifra__etiqueta { color: rgb(246 243 236 / 0.75); }
+  .cifras--claras .cifra__etiqueta { color: rgb(232 232 232 / 0.75); }
 
   .pasos { counter-reset: paso; display: grid; gap: 0; padding: 0; list-style: none; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
   .pasos li { counter-increment: paso; position: relative; display: grid; gap: 0.5rem; align-content: start; padding: 2.75rem 1.5rem 1.5rem 0; border-block-start: 1.5px solid var(--azul); }

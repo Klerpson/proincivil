@@ -2,36 +2,38 @@
    Dirección: _plans/direccion-diseno-plano-vivo-2026-10-21.md */
 @layer reset, primitivas, componentes, utilidades;
 
-/* Respaldo con métricas ajustadas: evita el salto de diseño (CLS) cuando llega la fuente web. */
-@font-face { font-family: "Inter respaldo"; src: local("Arial"); size-adjust: 107.4%; ascent-override: 90.2%; descent-override: 22.48%; line-gap-override: 0%; }
-@font-face { font-family: "JetBrains Mono respaldo"; src: local("Courier New"); size-adjust: 100%; ascent-override: 102%; descent-override: 30%; line-gap-override: 0%; }
+/* Identidad 2026-10: fuentes de marca autoalojadas (Manrope principal, Garet Book secundaria) y respaldos con métricas ajustadas para evitar el salto de diseño (CLS). */
+@font-face { font-family: "Manrope"; src: url("{{ '/fonts/manrope-var.woff2' | relative_url }}") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Garet"; src: url("{{ '/fonts/garet-book.woff2' | relative_url }}") format("woff2"); font-weight: 400 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Manrope respaldo"; src: local("Arial"); size-adjust: 105.3%; ascent-override: 101.22%; descent-override: 28.49%; line-gap-override: 0%; }
+@font-face { font-family: "Garet respaldo"; src: local("Arial"); size-adjust: 119.6%; ascent-override: 89.49%; descent-override: 31.78%; line-gap-override: 0%; }
 
 @layer reset {
   :root {
-    --azul: #14213d;
-    --azul-2: #1b2a4a;
-    --marfil: #f6f3ec;
-    --papel: #fff;
-    --tinta: #14213d;
-    --tinta-suave: #47506a;
-    --trazo: #9db4d9;
-    --ambar: #d98e2a;
-    --linea: rgb(20 33 61 / 0.16);
-    --linea-fuerte: rgb(20 33 61 / 0.42);
-    --linea-clara: rgb(246 243 236 / 0.18);
+    --azul: #1E2221;      /* negro verdoso (marca) */
+    --azul-2: #2A2F2D;    /* negro verdoso aclarado, para superficies oscuras */
+    --marfil: #E8E8E8;    /* blanco grisáceo (marca) */
+    --papel: #F4F5F4;     /* tinte claro del blanco grisáceo, para tarjetas */
+    --tinta: #1E2221;
+    --tinta-suave: #565955;   /* 5,8:1 sobre blanco grisáceo */
+    --trazo: #929C93;     /* verde grisáceo (marca) */
+    --ambar: #25D366;     /* acento de conversión: verde WhatsApp (fuera de la paleta de marca, elegido por el usuario 2026-10-21); texto #1E2221 encima (8,5:1) */
+    --linea: rgb(30 34 33 / 0.16);
+    --linea-fuerte: rgb(30 34 33 / 0.42);
+    --linea-clara: rgb(232 232 232 / 0.18);
     --cuadricula-oscura:
-      linear-gradient(rgb(157 180 217 / 0.07) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(157 180 217 / 0.07) 1px, transparent 1px),
-      linear-gradient(rgb(157 180 217 / 0.14) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(157 180 217 / 0.14) 1px, transparent 1px);
+      linear-gradient(rgb(146 156 147 / 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(146 156 147 / 0.07) 1px, transparent 1px),
+      linear-gradient(rgb(146 156 147 / 0.14) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(146 156 147 / 0.14) 1px, transparent 1px);
     --cuadricula-clara:
-      linear-gradient(rgb(20 33 61 / 0.035) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(20 33 61 / 0.035) 1px, transparent 1px),
-      linear-gradient(rgb(20 33 61 / 0.07) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(20 33 61 / 0.07) 1px, transparent 1px);
+      linear-gradient(rgb(30 34 33 / 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(30 34 33 / 0.035) 1px, transparent 1px),
+      linear-gradient(rgb(30 34 33 / 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(30 34 33 / 0.07) 1px, transparent 1px);
     --cuadricula-medida: 8px 8px, 8px 8px, 40px 40px, 40px 40px;
-    --fuente: "Inter", "Inter respaldo", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --fuente-mono: "JetBrains Mono", "JetBrains Mono respaldo", ui-monospace, "SFMono-Regular", Consolas, monospace;
+    --fuente: "Manrope", "Manrope respaldo", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --fuente-mono: "Garet", "Garet respaldo", "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
     --margen: clamp(1rem, 4vw, 2rem);
     --barra-alto: 4rem;
     --menu-alto: 2.875rem;

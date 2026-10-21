@@ -3,7 +3,7 @@
   .pie {
     padding-block: clamp(3rem, 6vw, 5rem) 2rem;
     background-color: var(--azul); background-image: var(--cuadricula-oscura); background-size: var(--cuadricula-medida);
-    color: rgb(246 243 236 / 0.85); font-size: 0.9375rem;
+    color: rgb(232 232 232 / 0.85); font-size: 0.9375rem;
   }
   .pie a { color: var(--marfil); text-decoration-color: var(--linea-clara); }
   .pie a:hover { text-decoration-color: var(--trazo); }
@@ -21,7 +21,7 @@
   .pie__legal {
     display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem;
     margin-block-start: 3rem; padding-block-start: 1.5rem; border-block-start: 1px solid var(--linea-clara);
-    font-size: 0.8125rem; color: rgb(246 243 236 / 0.65);
+    font-size: 0.8125rem; color: rgb(232 232 232 / 0.65);
   }
   @media (min-width: 64em) {
     .pie__rejilla { grid-template-columns: minmax(0, 1.4fr) repeat(4, minmax(0, 1fr)); }

@@ -16,6 +16,7 @@
 | Dominio propio + indexación | ⏳ Bloqueada | Falta que PROINCIVIL compre `proincivil.com`; hasta entonces `vista_previa: true` |
 | Entrega de pendientes al cliente | ✅ 2026-09-22 | `_plans/PENDIENTES-Y-PREGUNTAS-PROINCIVIL.md` y `.pdf` (5 páginas, 11 preguntas) |
 | Fase SEO mensual | ⏳ Arranca al entregar el sitio | Plan de 12 meses en la sección 13 de la investigación |
+| Nueva identidad de marca (Estudio dositres) sobre «Plano vivo» | 🟡 Aplicada local 2026-10-21, compila y valida, sin commitear | Paleta, Manrope/Garet y logos en tokens y archivos, sin tocar reglas CSS/JS. Falta aprobación visual. Ver bitácora |
 | Rediseño total «Plano vivo» + contenido según el formulario del 14-10 | 🟡 Home y piloto implementados localmente 2026-10-21, sin commitear | Borrado todo el CSS/JS/markup visual anterior (Pliego y Plano sellado descartados). Dirección: `_plans/direccion-diseno-plano-vivo-2026-10-21.md`; fuente de contenido: `_plans/brief-contenido-2026-10-21.md`. Falta: aprobación visual del cliente, diseño fino de hub/article/project/post y tuteo de la prosa de las colecciones retenidas |
 
 ## Pendientes del cliente (bloquean publicación)
@@ -32,7 +33,7 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 8. Umbrales vigentes de Ley 1796 / Decreto 945 confirmados por el Ing. Tamayo.
 9. Endpoint de formulario (Formspree/Web3Forms) → `form_endpoint` en `_config.yml`; GA4 → `ga4_id`;
    verificación de Search Console → `google_site_verification`; Google Business Profile → `social.google_business`.
-10. Logo vectorial (el actual es un recorte del PDF del portafolio, `img/logo-proincivil*.png`).
+10. Logo vectorial: el estudio entregó variantes PNG del logo nuevo (2026-10-21) y están en `img/logo-proincivil*.png`; sigue pendiente el vectorial (SVG/AI).
 
 ## Problemas abiertos
 
@@ -62,6 +63,14 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-10-21 — Nueva identidad de marca (carpeta «Identidad New Branding», Estudio dositres) sobre «Plano vivo»
+**Contexto:** el usuario pidió aplicar la identidad (colores, fuentes, logos) sin cambiar reglas de CSS ni JS. Antes se trajo `origin/main` (rediseño «Plano vivo», `d5b8df9`); un primer parche sobre el sistema anterior se descartó y se rehízo sobre los tokens nuevos.
+- **Paleta de marca:** blanco grisáceo `#E8E8E8`, verde grisáceo `#929C93`, gris oscuro verdoso `#6E706D`, negro verdoso `#1E2221`. En `_includes/critical-css/base.css` cambian solo los **valores** de los tokens (los nombres `--azul`, `--marfil`, `--ambar`… se conservan): `--azul`/`--tinta` → `#1E2221`, `--azul-2` → `#2A2F2D`, `--marfil` → `#E8E8E8`, `--papel` → `#F4F5F4`, `--tinta-suave` → `#565955` (5,8:1), `--trazo` → `#929C93`. **Botones de conversión:** `--ambar` → verde WhatsApp `#25D366` con texto `#1E2221` (8,5:1); es el único color fuera de la paleta de marca (la identidad es monocromática verde/gris). El usuario lo eligió entre rojo coral, naranja de seguridad, rojo vivo, verde grisáceo y verde WhatsApp. Si el cliente lo rechaza, basta cambiar ese valor (y el `rgb(37 211 102 / …)` del resplandor en `motion.css`). Los `rgb()` literales de hero, componentes, escenas, footer, motion y primitivas se convirtieron a los RGB de marca. El gris `#6E706D` solo da 4,1:1 con texto claro, por eso no se usó como fondo de botón.
+- **Fuentes:** Manrope (principal) para titulares y cuerpo; Garet Book (secundaria) en `--fuente-mono` (rótulos, cotas y cifras). woff2 con subconjunto latino en `fonts/`, `@font-face` y respaldos con métricas ajustadas (reemplazan «Inter respaldo» y «JetBrains Mono respaldo») al inicio de `base.css`, `preload` de Manrope en `head.html`; sin Google Fonts. Garet solo existe en Book: el `@font-face` declara 400–800 para que el navegador no simule negrita.
+- **Logos e íconos:** `img/logo-proincivil.png` y `-blanco.png` = variante vertical con «Seguridad estructural» (475×351; ancho/alto actualizados en `nav.html`, `footer.html` y `schema-organization.html`). Favicons, apple-touch y Android regenerados con el símbolo sobre `#1E2221`; `og-proincivil.jpg` rehecho; `theme-color`, `manifest.json` y `humans.txt` actualizados.
+- **Jekyll local:** instalado en la sesión (Jekyll 3.10.0 como GitHub Pages + sitemap, feed, redirect-from, kramdown-parser-gfm) sin permisos de administrador; se compila con `JEKYLL_NO_BUNDLER_REQUIRE=1` porque el `Gemfile.lock` es de Windows. Build 38 páginas, `lint-frontmatter.py` 0 errores, `validar-site.py` 0 problemas. Verificado con capturas a 1440 y 390 px: fuentes cargadas, sin desborde horizontal.
+- **A revisar:** el brandbook usa «Transformamos ideas en obras» y «Diseño y Construcción», que chocan con la regla contractual (no ejecutamos obra); no se llevó nada de eso al sitio. Manrope no tiene cursiva real. `img/equipo-placeholder.svg` y `_scripts/md-a-pdf.py` conservan colores viejos. Sin commit.
 
 ### 2026-10-21 — Lavado de cara total «Plano vivo» y contenido según el formulario del cliente
 **Contexto:** el usuario pidió borrar todo el diseño (CSS, JS y markup visual), conservar la investigación y estructura SEO, el equipo y las fotos reales, buscar dirección en 21st.dev y reordenar el contenido según `_plans/datos-cliente.csv` (formulario del 14-10), la investigación y `_plans/research/`.

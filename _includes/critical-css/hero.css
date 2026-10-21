@@ -11,7 +11,7 @@
   .plano { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
   .portada::after {
     content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0;
-    background: radial-gradient(32rem circle at var(--mx, 50%) var(--my, 30%), rgb(157 180 217 / 0.22), transparent 65%);
+    background: radial-gradient(32rem circle at var(--mx, 50%) var(--my, 30%), rgb(146 156 147 / 0.22), transparent 65%);
     transition: opacity 400ms var(--curva);
   }
   .portada--puntero::after { opacity: 1; }
@@ -41,7 +41,7 @@
   .portada__copy { display: grid; gap: 1.25rem; justify-items: start; }
   .portada__titulo { max-inline-size: 18ch; font-size: clamp(2.375rem, 4.6vw + 1rem, 4.75rem); line-height: 1.02; letter-spacing: -0.035em; }
   .portada__titulo em { font-style: normal; color: var(--trazo); }
-  .portada__texto { max-inline-size: 40rem; font-size: clamp(1.0625rem, 0.5vw + 1rem, 1.25rem); color: rgb(246 243 236 / 0.82); }
+  .portada__texto { max-inline-size: 40rem; font-size: clamp(1.0625rem, 0.5vw + 1rem, 1.25rem); color: rgb(232 232 232 / 0.82); }
   .portada__garantia {
     display: flex; align-items: center; gap: 0.625rem;
     font-family: var(--fuente-mono); font-size: 0.8125rem; color: var(--trazo);

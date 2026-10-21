@@ -15,7 +15,7 @@
 <meta name="geo.region" content="CO-ANT">
 <meta name="geo.placename" content="{{ site.empresa.ciudad }}, {{ site.empresa.departamento }}">
 <meta name="geo.position" content="{{ site.empresa.geo_lat }};{{ site.empresa.geo_lng }}">
-<meta name="theme-color" content="#14160F">
+<meta name="theme-color" content="#1E2221">
 <link rel="canonical" href="{{ page.canonical | default: page.url | absolute_url }}">
 {%- if page.layout == "post" %}
 <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
@@ -41,11 +41,8 @@
 <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
 <link rel="alternate" type="application/rss+xml" title="Blog PROINCIVIL" href="{{ '/feed.xml' | absolute_url }}">
 <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | absolute_url }}">
-{%- comment %} Fuentes Plano vivo: Inter (titulares y cuerpo) + JetBrains Mono (ejes, cotas, rótulos y cifras). {% endcomment %}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"></noscript>
+{%- comment %} Fuentes de marca autoalojadas (@font-face en critical-css/base.css): Manrope (principal: titulares y cuerpo) + Garet Book (secundaria: rótulos, cotas y cifras). {% endcomment %}
+<link rel="preload" href="{{ '/fonts/manrope-var.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 {% include critical-css/critical.html %}
 {%- comment %} El hero no se precarga aquí: picture.html ya lo emite con fetchpriority="high". {% endcomment -%}
 {% include schema-organization.html %}
