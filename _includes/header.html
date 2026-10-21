@@ -4,6 +4,7 @@
   <div class="hero__fondo">
     {% include picture.html nombre=page.hero alt=page.hero_alt ratio="16x10" sizes="100vw" eager=true %}
   </div>
+  <p class="hero__tab" aria-hidden="true">{{ site.empresa.razon_social }} · {{ site.empresa.tagline }}</p>
   <div class="hero__copy">
     <p class="hero__eyebrow">{{ page.eyebrow | default: "Ingeniería estructural · Envigado, Antioquia" }}</p>
     <h1 class="hero__titulo">{{ page.h1 }}</h1>

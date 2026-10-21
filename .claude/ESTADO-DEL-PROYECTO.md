@@ -1,6 +1,6 @@
 # Estado del proyecto — PROINCIVIL
 
-**Última actualización:** 2026-10-16
+**Última actualización:** 2026-10-20
 
 ## Iniciativas activas
 
@@ -16,6 +16,7 @@
 | Dominio propio + indexación | ⏳ Bloqueada | Falta que PROINCIVIL compre `proincivil.com`; hasta entonces `vista_previa: true` |
 | Entrega de pendientes al cliente | ✅ 2026-09-22 | `_plans/PENDIENTES-Y-PREGUNTAS-PROINCIVIL.md` y `.pdf` (5 páginas, 11 preguntas) |
 | Fase SEO mensual | ⏳ Arranca al entregar el sitio | Plan de 12 meses en la sección 13 de la investigación |
+| Rediseño visual completo "Pliego" | 🟡 Implementado localmente 2026-10-20, sin commitear | El cliente rechazó el diseño crema/oliva. Nueva dirección en `_plans/direccion-diseno-pliego-2026-10-20.md`; reemplaza `investigacion-web-seo-proincivil.md §10` |
 
 ## Pendientes del cliente (bloquean publicación)
 
@@ -47,6 +48,10 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - 🟡 Formulario inactivo hasta configurar `form_endpoint` (muestra aviso + WhatsApp).
 - 🟡 Nav de escritorio con paneles por `:hover`; en pantallas táctiles grandes (tablet horizontal) el
   panel se abre con el checkbox. Verificar en iPad.
+- 🟡 Rediseño "Pliego" sin capturas antes/después mostradas al cliente; implementado en working tree,
+  nada commiteado. Lighthouse corrido 2026-10-20 (20 páginas, Performance 91/Acc 91/BP 96/SEO 66 — el
+  SEO bajo es `noindex` intencional por `vista_previa: true`, no un defecto). Ver
+  `_plans/direccion-diseno-pliego-2026-10-20.md`.
 
 ## Backlog
 
@@ -56,6 +61,40 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-10-20 — Rediseño visual completo "Pliego" (reemplaza crema/oliva)
+**Contexto:** el cliente dijo que el diseño actual (crema/oliva/bosque, serif editorial, inspirado en
+"Northline Atelier", documentado en `investigacion-web-seo-proincivil.md §10`) no lo convenció. Pidió
+empezar de cero el diseño visual de todo el sitio a la vez, conservando contenido y SEO, usando como
+referencia la estética (no el código) de un template Next.js de portafolio en `_plans/final/`.
+Especificación completa, decisiones descartadas y verificación en
+`_plans/direccion-diseno-pliego-2026-10-20.md`.
+- Tokens renombrados `--color-oliva*` → `--color-acento*` (rojo `#9D2127`) y recoloreados
+  `--color-tinta`/`--color-bosque`; tipografía de titulares Fraunces → Inter 900, con Playfair Display
+  itálica como acento puntual en `<em>`. Archivos: `_includes/critical-css/base.css`,
+  `_includes/critical-css/hero.css`, `_includes/css/primitivas.css`, `_includes/css/secciones.css`,
+  `_includes/css/componentes.css`, `_includes/css/footer.css`, `_includes/head.html`.
+- Nuevo `_includes/css/motion.css` (reveal Nivel 1) y `js/motion.js` (contador `m-count`), cargados desde
+  `css/style.css` y `_layouts/default.html`. `js/main.js` extendido (no reemplazado): la barra de
+  navegación ahora se oculta al bajar y reaparece al subir en todas las páginas.
+- Verificado: build limpio, `validar-site.py` 38/0, cero `--color-oliva` suelto, todos los tokens nuevos
+  con uso real, `motion.css` 526 B y `main.js+motion.js` 1,9 KB gzip (dentro de presupuesto),
+  sin desborde a 390/320 px en home/servicios/proyecto, sin errores de consola, contraste del acento
+  9,34:1 y 7,51:1 (AAA) sobre crema/blanco.
+- Sin commitear. Falta Lighthouse (`auditar-sitio`) y mostrar capturas antes/después al cliente.
+
+### 2026-10-20 — Parallax del héroe de home con CSS puro (sin dependencias)
+**Contexto:** se pidió adaptar un componente React de ejemplo (GSAP + Lenis + shadcn, imágenes de stock)
+a este sitio. Jekyll/GitHub Pages no tiene pipeline de build para npm, y las fotos de stock no son
+admisibles (dato del negocio). Se acordó con el usuario: héroe de home, foto real ya procesada, sin JS.
+- `_includes/critical-css/hero.css`: `.hero__fondo img` escala 1.12 y se desplaza ±4% en `translate` con
+  `animation-timeline: view()` nativo (sin JS, sin librerías). Envuelto en `@supports (animation-timeline:
+  view())`; sin soporte, la foto queda fija como antes. `@media (prefers-reduced-motion: reduce)` lo
+  desactiva. Usa `hero-estructura`, la foto real ya asignada al héroe — no se añadieron imágenes nuevas.
+- Verificado: build, `validar-site.py` (0), `CSS.supports` + `Animation.getAnimations()` en consola
+  confirman el `ViewTimeline` corriendo, 390 px y 320 px sin desborde horizontal (`scrollWidth ===
+  clientWidth`), capturas en ambos anchos.
+- Sin commitear.
 
 ### 2026-10-16 — Validación SEO de prioridades del formulario con Ranki
 **Contexto:** el usuario pidió contrastar la comparación anterior con búsqueda, competencia e intenciones, usando Ranki desde su navegador.

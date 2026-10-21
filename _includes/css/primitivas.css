@@ -9,7 +9,7 @@
   .section--crema { background: var(--color-blanco); border-block: var(--elev-1-border); }
   .section--bosque { background: var(--color-bosque); color: var(--color-crema); }
   .section--bosque :is(h1, h2, h3, h4) { color: var(--color-crema); }
-  .section--bosque .section-header__eyebrow, .section--bosque .tile__eyebrow { color: color-mix(in srgb, var(--color-crema) 70%, var(--color-oliva)); }
+  .section--bosque .section-header__eyebrow, .section--bosque .tile__eyebrow { color: color-mix(in srgb, var(--color-crema) 70%, var(--color-acento)); }
   .section--bosque a:not(.boton):not(.boton_secundario) { color: var(--color-crema); }
   .section--bosque p { color: color-mix(in srgb, var(--color-crema) 82%, var(--color-bosque)); }
 
@@ -34,7 +34,7 @@
   .section-header { display: flex; flex-direction: column; gap: var(--space-xs); }
   .section-header--centro { text-align: center; align-items: center; }
   .section-header__titulo { position: relative; padding-bottom: var(--space-sm); }
-  .section-header__titulo::after { content: ""; position: absolute; left: 0; bottom: 0; width: 44px; height: 2px; background: var(--color-oliva); }
+  .section-header__titulo::after { content: ""; position: absolute; left: 0; bottom: 0; width: 44px; height: 2px; background: var(--color-acento); }
   .section-header--centro .section-header__titulo::after { left: 50%; transform: translateX(-50%); }
   .section-header__texto { color: var(--color-gris); max-width: 58ch; }
 
@@ -48,8 +48,8 @@
   .tile__title { font-size: 1.25rem; }
   .tile__title a::after { content: ""; position: absolute; inset: 0; }
   .tile--enlace { position: relative; }
-  .tile__link { font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.06em; color: var(--color-oliva-texto); margin-top: var(--space-sm); }
-  .tile__dato { font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.04em; color: var(--color-oliva-texto) !important; }
+  .tile__link { font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.06em; color: var(--color-acento-texto); margin-top: var(--space-sm); }
+  .tile__dato { font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.04em; color: var(--color-acento-texto) !important; }
   .tile--texto { padding: var(--space-md); gap: var(--space-xs); }
   .tile--texto p { font-size: var(--text-small); color: var(--color-gris); }
   .tile--oscuro { background: rgba(251, 250, 247, 0.05); border-color: var(--color-linea-clara); position: relative; }
@@ -60,28 +60,35 @@
   /* listas con marca */
   .list_check { display: flex; flex-direction: column; gap: 0.6rem; padding: 0; }
   .list_check li { display: flex; gap: 0.7rem; align-items: flex-start; line-height: 1.55; max-width: none; }
-  .list_check li::before { content: "✓"; color: var(--color-oliva-texto); font-weight: 700; flex-shrink: 0; margin-top: 0.05em; }
+  .list_check li::before { content: "✓"; color: var(--color-acento-texto); font-weight: 700; flex-shrink: 0; margin-top: 0.05em; }
   .list_check--flecha li::before { content: "→"; }
   .list_check--dos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 0.7rem var(--space-xl); }
 
   /* cifras */
   .cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: var(--space-lg); }
-  .cifras__item { border-left: 2px solid var(--color-oliva); padding-left: var(--space-md); }
-  .cifras__numero { font-family: var(--fuenteTitulos); font-size: var(--text-stat); line-height: 1; font-weight: 600; letter-spacing: -0.02em; }
+  .cifras__item { border-left: 2px solid var(--color-acento); padding-left: var(--space-md); }
+  .cifras__numero { font-family: var(--fuenteTitulos); font-size: var(--text-stat); line-height: 1; font-weight: 900; letter-spacing: -0.02em; }
   .cifras__label { font-size: var(--text-small); color: var(--color-gris); margin-top: 0.4rem; }
   .section--bosque .cifras__label { color: color-mix(in srgb, var(--color-crema) 75%, var(--color-bosque)); }
 
   /* resumen citable */
-  .resumen { border: var(--elev-1-border); border-left: 3px solid var(--color-oliva); background: var(--color-blanco); padding: var(--space-md) var(--space-lg); border-radius: 0 var(--radius-md) var(--radius-md) 0; max-width: 62rem; }
+  .resumen { border: var(--elev-1-border); border-left: 3px solid var(--color-acento); background: var(--color-blanco); padding: var(--space-md) var(--space-lg); border-radius: 0 var(--radius-md) var(--radius-md) 0; max-width: 62rem; }
   .resumen__texto { font-family: var(--fuenteTitulos); font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem); line-height: 1.4; margin-top: 0.4rem; max-width: 60ch; }
 
   /* nota lateral */
   .nota { border: var(--elev-1-border); border-radius: var(--radius-md); padding: var(--space-md); background: var(--color-blanco); }
-  .nota--independencia { background: var(--color-oliva-claro); border-color: transparent; }
+  .nota--independencia { background: var(--color-acento-claro); border-color: transparent; }
   .nota p { font-size: var(--text-small); }
 
-  /* ficha técnica (proyectos) */
-  .ficha { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: var(--space-md); border: var(--elev-1-border); border-radius: var(--radius-md); padding: var(--space-md); background: var(--color-blanco); }
+  /* ficha técnica (proyectos): m-sello, corner-tabs del acento, como un plano sellado */
+  .ficha {
+    position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr));
+    gap: var(--space-md); border: var(--elev-1-border); border-radius: var(--radius-md); padding: var(--space-md);
+    background-color: var(--color-blanco);
+    background-image: linear-gradient(var(--color-acento), var(--color-acento)), linear-gradient(var(--color-acento), var(--color-acento)), linear-gradient(var(--color-acento), var(--color-acento)), linear-gradient(var(--color-acento), var(--color-acento));
+    background-size: 9px 9px; background-repeat: no-repeat;
+    background-position: top 7px left 7px, top 7px right 7px, bottom 7px left 7px, bottom 7px right 7px;
+  }
   .ficha__item dt { font-family: var(--fuenteMono); font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gris); }
   .ficha__item dd { font-family: var(--fuenteTitulos); font-size: 1.15rem; margin-top: 0.2rem; }
 
@@ -109,7 +116,7 @@
   .contenido { max-width: 62rem; }
   .contenido :is(h2, h3) { scroll-margin-top: calc(var(--nav-alto) + 1rem); }
   .contenido ul:not(.list_check) li { list-style: none; position: relative; padding-left: 1.2em; }
-  .contenido ul:not(.list_check) li::before { content: "—"; position: absolute; left: 0; color: var(--color-oliva-texto); }
+  .contenido ul:not(.list_check) li::before { content: "—"; position: absolute; left: 0; color: var(--color-acento-texto); }
   .contenido ul:not(.list_check) { padding-left: 0; display: grid; gap: 0.4rem; }
   .contenido table { margin-block: var(--space-sm); display: block; overflow-x: auto; }
   .contenido table td, .contenido table th { max-width: none; }
@@ -117,8 +124,8 @@
 
   /* proceso en pasos */
   .pasos { counter-reset: paso; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: var(--space-lg); padding: 0; }
-  .pasos li { counter-increment: paso; list-style: none; border-top: 2px solid var(--color-oliva); padding-top: var(--space-sm); max-width: none; }
-  .pasos li::before { content: counter(paso, decimal-leading-zero); font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.1em; color: var(--color-oliva-texto); display: block; margin-bottom: 0.4rem; }
+  .pasos li { counter-increment: paso; list-style: none; border-top: 2px solid var(--color-acento); padding-top: var(--space-sm); max-width: none; }
+  .pasos li::before { content: counter(paso, decimal-leading-zero); font-family: var(--fuenteMono); font-size: var(--text-eyebrow); letter-spacing: 0.1em; color: var(--color-acento-texto); display: block; margin-bottom: 0.4rem; }
   .pasos h3 { font-size: 1.15rem; margin-bottom: 0.35rem; }
   .pasos p { font-size: var(--text-small); color: var(--color-gris); }
 

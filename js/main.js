@@ -35,13 +35,27 @@
   });
 
   /* En la home la barra es transparente sobre el héroe y se vuelve opaca al bajar */
-  if (document.body.dataset.layout === "home") {
-    var nav = document.querySelector(".nav");
+  var nav = document.querySelector(".nav");
+  if (document.body.dataset.layout === "home" && nav) {
     var marcar = function () {
-      if (nav) { nav.classList.toggle("nav--solido", window.scrollY > 60); }
+      nav.classList.toggle("nav--solido", window.scrollY > 60);
     };
     marcar();
     window.addEventListener("scroll", marcar, { passive: true });
+  }
+
+  /* La barra se oculta al bajar y reaparece al subir, en todas las páginas; nunca con el menú móvil abierto. */
+  if (nav) {
+    var navToggle = document.getElementById("nav-toggle");
+    var ultimoY = window.scrollY;
+    var ocultar = function () {
+      var y = window.scrollY;
+      if (navToggle && navToggle.checked) { ultimoY = y; return; }
+      if (y > ultimoY && y > nav.offsetHeight) { nav.classList.add("nav--oculto"); }
+      else if (y < ultimoY) { nav.classList.remove("nav--oculto"); }
+      ultimoY = y;
+    };
+    window.addEventListener("scroll", ocultar, { passive: true });
   }
 
   /* Cierra el menú móvil al navegar por anclas */
