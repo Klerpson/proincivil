@@ -178,6 +178,34 @@
       /* Lista en foco: cada frase se enciende al cruzar el centro y se apaga al salir. */
       .foco__lista li { animation: foco linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
 
+      /* Zonas · protocolo: la línea se traza con el scroll y cada nodo se enciende al cruzar el centro. */
+      .protocolo__pasos::after { animation: trazo-y linear both; animation-timeline: view(); animation-range: cover 10% cover 80%; }
+      .protocolo__nodo { animation: nodo-encender linear both; animation-timeline: view(); animation-range: cover 38% cover 50%; }
+      .protocolo__cuerpo { animation: panel-texto linear both; animation-timeline: view(); animation-range: entry 20% cover 35%; }
+      .protocolo__ensayos div { animation: pieza-entrada linear both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+
+      /* Zonas · árbol de decisión: tronco, travesaño y ramas se dibujan; las tarjetas suben en cascada. */
+      .decision__origen { animation: subir linear both; animation-timeline: view(); animation-range: entry 10% cover 25%; }
+      .decision__origen::after { animation: trazo-y linear both; animation-timeline: view(); animation-range: entry 20% cover 35%; }
+      .decision__rama::before { animation: trazo-x linear both; animation-timeline: view(); animation-range: entry 20% cover 35%; }
+      .decision__ramas::before { animation: trazo-y linear both; animation-timeline: view(); animation-range: entry 10% cover 45%; }
+      @media (min-width: 60em) {
+        .decision__rama::before { animation-name: trazo-y; }
+        .decision__ramas::before { animation-name: trazo-x; }
+      }
+      .decision__rama { animation: pieza-entrada linear both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+      .decision__rama:nth-child(2) { animation-range: entry 8% cover 36%; }
+      .decision__rama:nth-child(3) { animation-range: entry 16% cover 42%; }
+
+      /* Zonas · corte geológico: los estratos se imprimen de arriba abajo y el sondeo perfora. */
+      .corte__estrato { animation: estrato-revelado linear both; animation-timeline: view(); animation-range: entry 10% cover 40%; }
+      .corte__estrato--2 { animation-range: entry 30% cover 50%; }
+      .corte__sondeo { animation: trazo-y linear both; animation-timeline: view(); animation-range: entry 30% cover 60%; }
+
+      /* Zonas · mapa: el plano se abre como ventana; la retícula aparece. */
+      .mapa__plano, .mapa--mini { animation: casos-marco linear both; animation-timeline: view(); animation-range: entry 0% entry 60%; }
+      .mapa__reticula { animation: aparecer linear both; animation-timeline: view(); animation-range: entry 10% cover 30%; }
+
       /* Enlaces mayores: entran barriendo desde la izquierda. */
       .enlace-mayor { animation: enlace-mayor linear both; animation-timeline: view(); animation-range: entry 10% entry 90%; }
 
@@ -198,7 +226,8 @@
   @keyframes galeria-mover { from { transform: translateX(0); } to { transform: translateX(calc(-100% + 100vw)); } }
   @keyframes galeria-inclinar { from { transform: rotate(-1.5deg) scale(0.94); } 50% { transform: rotate(0) scale(1); } to { transform: rotate(1.5deg) scale(0.94); } }
   @keyframes galeria-inclinar-inverso { from { transform: rotate(1.5deg) scale(0.94); } 50% { transform: rotate(0) scale(1); } to { transform: rotate(-1.5deg) scale(0.94); } }
-  @keyframes zoom-palabra { 0% { transform: scale(1); opacity: 1; } 55% { opacity: 1; } 100% { transform: scale(4); opacity: 0; } }
+  /* El primer 35 % deja la palabra quieta y entera con la escena ya fija; luego se atraviesa. */
+  @keyframes zoom-palabra { 0%, 35% { transform: scale(1); opacity: 1; } 70% { opacity: 1; } 100% { transform: scale(4); opacity: 0; } }
   @keyframes zoom-foto { from { clip-path: circle(0% at 50% 50%); } to { clip-path: circle(75% at 50% 50%); } }
   @keyframes zoom-cta { from { opacity: 0; transform: translateY(4rem); } }
   @keyframes panel-numero { from { opacity: 0; transform: translateX(-3rem); letter-spacing: 0.4em; } }
@@ -208,6 +237,15 @@
   @keyframes enlace-mayor { from { clip-path: inset(0 100% 0 0); } }
   @keyframes foco { 0%, 100% { opacity: 0.55; } 38%, 62% { opacity: 1; } }
   @keyframes palabra-sube { from { transform: translateY(110%) rotate(6deg); } }
+  @keyframes trazo-y { from { transform: scaleY(0); } }
+  @keyframes nodo-encender { from { background-color: var(--marfil); color: var(--azul); transform: scale(0.85); } }
+  @keyframes estrato-revelado { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0); } }
+  @keyframes onda { from { opacity: 0.9; transform: scale(0.4); } to { opacity: 0; transform: scale(1.6); } }
+
+  /* Punto activo del mapa: onda que late (independiente del scroll). */
+  @media (prefers-reduced-motion: no-preference) {
+    .mapa__punto--activo .mapa__onda { animation: onda 1.8s var(--curva) infinite; }
+  }
 }
 
 /* Equipo: inclinaciÃ³n 3D segÃºn el cursor (motion.js fija --rx/--ry), escaneo del retrato y subrayado del nombre. */

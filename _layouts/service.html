@@ -69,6 +69,8 @@ layout: default
     <ol class="pasos pasos--texto">
       {% for e in page.entregables %}<li>{{ e }}</li>{% endfor %}
     </ol>
+    {%- assign _cta_ent = page.cta_texto | default: "Pedir propuesta por WhatsApp" %}
+    <div class="acciones">{% include button.html texto=_cta_ent data_location="entregables" %}</div>
     {% endif %}
     {% if page.despues %}
     <div class="dos-columnas dos-columnas--aparte">
@@ -185,14 +187,14 @@ layout: default
     {% if _ver_rel %}
     <div class="encabezado">
       <p class="rotulo">Relacionado</p>
-      <h2 class="encabezado__titulo">Servicios que suelen ir junto a {{ page.titulo_corto | default: page.h1 | strip_html | downcase }}</h2>
+      <h2 class="encabezado__titulo">{% if page.relacionados_titulo %}{{ page.relacionados_titulo }}{% else %}Servicios que suelen ir junto a {{ page.titulo_corto | default: page.h1 | strip_html | downcase }}{% endif %}</h2>
     </div>
     {% include relacionados.html coleccion="servicios" slugs=page.relacionados %}
     {% endif %}
     {% if _ver_norm %}
     <div class="encabezado">
       <p class="rotulo">Normativa</p>
-      <h2 class="encabezado__titulo">Normas que aplicamos en {{ page.titulo_corto | default: page.h1 | strip_html | downcase }}</h2>
+      <h2 class="encabezado__titulo">{% if page.normativa_titulo %}{{ page.normativa_titulo }}{% else %}Normas que aplicamos en {{ page.titulo_corto | default: page.h1 | strip_html | downcase }}{% endif %}</h2>
     </div>
     {% include relacionados.html coleccion="normativa" slugs=page.normativa %}
     {% endif %}

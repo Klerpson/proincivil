@@ -22,7 +22,7 @@ ficha:
   normativa: "NSR-10 Títulos A, B, C, F y H"
   rol: "Diseñador integral y estructural"
   resultado: "Cimentaciones y estructuras metálicas optimizadas · diseño aprobado"
-servicios: [diseno-estructural, cimentaciones, estructuras-metalicas, bim-y-topografia]
+servicios: [diseno-estructural, cimentaciones, estructuras-metalicas]
 edificacion: hoteles
 zona: antioquia
 datePublished: 2026-09-22

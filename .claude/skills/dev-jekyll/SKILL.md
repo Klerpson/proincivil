@@ -83,6 +83,15 @@ Nunca se copia su markup a mano. CSS en `escenas.css`, movimiento en `motion.css
 | `marquesina.html` | marquesina gigante decorativa | `cual` (clave de `_data/marquesinas.yml`) | home, `/servicios/`, `/proyectos/`, nosotros |
 | `foco.html` | lista de frases que se iluminan al cruzar el centro | `items`, `rotulo`, `titulo`, `id`, `clase` | «cuándo» de cada servicio |
 | `enlace-mayor.html` | banda con contador, texto grande y flecha en círculo | `url`, `texto`, `numero`, `variante` (`claro`), `banda` | home, servicios, fichas, nosotros, posts |
+| `mapa.html` | plano de levantamiento con retícula y puntos reales (`_data/ciudades.yml`); lista grande sincronizada con el plano (JS en `motion.js`) | `modo` (`completo`/`mini`), `activa`, `rotulo`, `titulo`, `texto` | hub `/zonas/` (`mapa:`), ficha de cada zona (mini con cruz de replanteo) |
+| `ficha-zona.html` | ubicador mini + cajetín de datos con fuente (`.datos--cajetin`) | `ficha{rotulo, titulo, items[{etiqueta, valor, nota, fuente, url}]}`, `activa` | layout `zona` |
+| `protocolo.html` | pasos sobre una línea que se traza con el scroll; nodos que se encienden | `protocolo{rotulo, titulo, texto, pasos[{titulo, texto, ensayos[{nombre, que}]}]}` | layout `zona` |
+| `decision.html` | árbol: origen que se abre en ramas A/B/C con quién ejecuta la obra | `decision{rotulo, titulo, origen, ramas[{resultado, sigue}], ejecuta, nota}`, `clase` | layout `zona` |
+| `corte.html` | corte geológico (punteado = depósito, rayado = roca) con sondeo que perfora | `suelo{rotulo, titulo, parrafos[], estratos[{nombre, espesor}], sondeo, fuente, url, enlace}` | layout `zona` |
+
+CTA dentro de escenas (2026-10-27): `protocolo` (por paso), `decision`, `corte`, `foco`, `ficha-zona` y `mapa` aceptan `boton{texto, mensaje, variante}` y pintan `button.html` con data-location propio; `faqs.html` cierra siempre con un botón contorno. El CTA de la barra es sólido verde.
+
+Layout `zona` (`_layouts/zona.html`, 2026-10-27): página de ciudad armada solo con escenas desde el front matter (ejemplo completo: `_zonas/pereira.md`). Nunca prosa larga de artículo en una zona: cada dato va en su escena. Lección: un contenedor con `overflow: hidden` se vuelve contenedor de scroll y `animation-timeline: view()` se mide contra él (la animación queda a medias); usar `overflow: clip`. Y con `writing-mode: vertical-*` las propiedades lógicas del propio elemento giran: usar físicas.
 
 Además: `plano-ejes.html` (ejes del plano en `.portada` y `.cabecera`, parámetros `v` y `h`), `.progreso`
 (barra de lectura en `post` y `article`, solo CSS) e `.inclinable` (inclinación 3D según el cursor,

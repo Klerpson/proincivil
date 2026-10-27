@@ -33,8 +33,9 @@ Referencia de las variables que leen `head.html`, `header.html`, los layouts y l
 `resumen` (40-60 palabras, bloque "En resumen" + speakable) · `cuando` (lista) · `cuando_titulo` ·
 `entregables` · `entregables_titulo` · `despues` (lista o texto) · `despues_titulo` · `factores` ·
 `factores_titulo` · `cuanto_cuesta` (URL) · `audiencias` (`[{rol, texto}]`) · `proyectos` (slugs de
-`_proyectos`) · `proyectos_titulo` · `relacionados` (slugs de `_servicios`) · `normativa` (slugs de
-`_normativa`) · `serviceType`, `categoria`, `area_servida`, `audiencia_meta` (schema Service) · `orden`
+`_proyectos`) · `proyectos_titulo` · `relacionados` (slugs de `_servicios`) · `relacionados_titulo` ·
+`normativa` (slugs de `_normativa`) · `normativa_titulo` · `audiencias_titulo` · `faqs_titulo` (en zonas
+son obligatorios en la práctica: los títulos por defecto ponen el nombre de la ciudad en minúscula) · `serviceType`, `categoria`, `area_servida`, `audiencia_meta` (schema Service) · `orden`
 (orden en hubs) · `grupo` · `zoom` (`{palabra, textura, titulo, texto}`: escena de zoom antes del
 FAQ; reemplaza al cierre. `textura`: acero | concreto | plano | ladera. En `titulo` y `texto`, `{clave}` se
 reemplaza por `site.cifras.clave`). Con 2 o más `proyectos`, la sección de casos usa la escena con foto fija.

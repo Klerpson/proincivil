@@ -1,0 +1,82 @@
+# Ciudades con trabajo real de PROINCIVIL (fuente: _proyectos/*.md y datos-cliente.csv del 2026-10-14).
+# Alimenta el mapa de cobertura del hub /zonas/ y el ubicador de cada zona (_includes/escenas/mapa.html).
+# lat/lon: coordenadas aproximadas del casco urbano (grados decimales), solo para ubicar el punto.
+# zona: slug de _zonas/ al que enlaza · proyectos: slugs de _proyectos/ · tipo: sede | proyecto.
+# lado: posición de la etiqueta en el plano (derecha por defecto | izquierda | arriba | abajo).
+# amenaza: según la tabla A.2.3-2 de la NSR-10; se deja vacía si no está verificada.
+- nombre: "Envigado"
+  depto: "Antioquia"
+  lat: 6.17
+  lon: -75.59
+  tipo: sede
+  zona: envigado
+  amenaza: intermedia
+  nota: "Sede de PROINCIVIL"
+  proyectos: []
+- nombre: "Medellín"
+  lado: arriba
+  depto: "Antioquia"
+  lat: 6.25
+  lon: -75.57
+  tipo: proyecto
+  zona: medellin
+  amenaza: intermedia
+  nota: "Interventoría al diseño del Hotel The One, 15 pisos"
+  proyectos: [hotel-the-one-laureles]
+- nombre: "Betulia e Hispania"
+  lado: abajo
+  depto: "Antioquia"
+  lat: 6.11
+  lon: -75.98
+  tipo: proyecto
+  zona: antioquia
+  amenaza: ""
+  nota: "Diseños educativos y deportivos"
+  proyectos: [infraestructura-deportiva-betulia]
+- nombre: "Mutatá"
+  depto: "Antioquia"
+  lat: 7.24
+  lon: -76.44
+  tipo: proyecto
+  zona: antioquia
+  amenaza: ""
+  nota: "I.E. Pavarandó Grande, pórticos DES"
+  proyectos: [ie-pavarando-grande-mutata]
+- nombre: "Puerto Triunfo"
+  depto: "Antioquia"
+  lat: 5.87
+  lon: -74.64
+  tipo: proyecto
+  zona: antioquia
+  amenaza: ""
+  nota: "Hotel Aldea e I.E. Puerto Perales"
+  proyectos: [hotel-aldea-puerto-triunfo, ie-puerto-perales]
+- nombre: "Pereira y Dosquebradas"
+  lado: izquierda
+  depto: "Risaralda"
+  lat: 4.81
+  lon: -75.69
+  tipo: proyecto
+  zona: pereira
+  amenaza: alta
+  nota: "Tacuara (6 torres) y alianza con ARTICO"
+  proyectos: [tacuara-club-residencial, artico-arquitectura]
+- nombre: "Bogotá"
+  lado: abajo
+  depto: "Cundinamarca"
+  lat: 4.71
+  lon: -74.07
+  tipo: proyecto
+  zona: colombia
+  amenaza: intermedia
+  nota: "Alianza técnica con ARTICO Arquitectura"
+  proyectos: [artico-arquitectura]
+- nombre: "Barranquilla"
+  depto: "Atlántico"
+  lat: 10.96
+  lon: -74.80
+  tipo: proyecto
+  zona: colombia
+  amenaza: baja
+  nota: "Alianza técnica con ARTICO Arquitectura"
+  proyectos: [artico-arquitectura]

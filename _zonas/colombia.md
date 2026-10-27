@@ -1,6 +1,6 @@
 ---
 titulo_corto: "Colombia"
-orden: 6
+orden: 7
 title: "Ingeniería estructural en toda Colombia con coordinación remota"
 description: "Diseño estructural, evaluación e interventoría en toda ciudad de Colombia: sedes comerciales, estructuras fotovoltaicas y proyectos en Bogotá con coordinación remota."
 h1: "Ingeniería estructural en toda Colombia: coordinación remota, criterio local"
@@ -38,6 +38,13 @@ audiencias:
   - { rol: "Cadenas con expansión nacional", texto: "Un solo interlocutor estructural para todas las sedes." }
   - { rol: "Empresas EPC solares", texto: "Diseños de estructuras fotovoltaicas para cualquier ciudad, con viento y sismo locales." }
   - { rol: "Promotores fuera de Antioquia", texto: "Revisión independiente y diseño con coordinación remota." }
+cuando_titulo: "Cuándo llamar a un ingeniero estructural en otras ciudades de Colombia"
+entregables_titulo: "Entregables para proyectos en otras ciudades de Colombia"
+proyectos_titulo: "Proyectos de PROINCIVIL en otras ciudades de Colombia"
+audiencias_titulo: "Para quién trabajamos en otras ciudades de Colombia"
+faqs_titulo: "Preguntas sobre proyectos en otras ciudades de Colombia"
+relacionados_titulo: "Servicios para proyectos en otras ciudades de Colombia"
+normativa_titulo: "Normas que aplicamos en otras ciudades de Colombia"
 proyectos: [super-motos-honda, carports-fotovoltaicos]
 relacionados: [diseno-estructural, estructuras-metalicas, revision-independiente-de-disenos, interventoria-de-disenos, evaluacion-estructural]
 normativa: [nsr-10, titulo-a, titulo-b, ley-1796-de-2016]

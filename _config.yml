@@ -13,10 +13,10 @@ baseurl: ""
 # Secciones que se publican hoy. Las demás quedan escritas en el repositorio pero fuera del
 # sitio (contenido de la fase SEO). La navegación, el pie y los CTA se filtran con esta lista:
 # basta añadir una sección aquí y volver a compilar para que aparezca en todo el sitio.
-secciones_publicadas: ["servicios", "proyectos", "blog", "nosotros", "como-cotizar", "contacto", "politica-de-datos"]
+secciones_publicadas: ["servicios", "proyectos", "zonas", "blog", "nosotros", "como-cotizar", "contacto", "politica-de-datos"]
 name: PROINCIVIL
 title: PROINCIVIL · Seguridad estructural
-description: "Ingeniería estructural sismorresistente, evaluación, geotecnia e interventoría en Envigado, Antioquia."
+description: "Ingenieros estructurales en Colombia y Perú desde 2019: diseño sismorresistente, evaluación, suelos e interventoría. Sede en Envigado, Antioquia."
 author: PROINCIVIL S.A.S.
 # Repositorio de GitHub Pages (usuario/repo). Hoy vive en la cuenta del contratista; al entregar el
 # proyecto se transfiere a la cuenta de PROINCIVIL y se actualiza este valor.
@@ -34,15 +34,15 @@ ga4_id: ""
 form_endpoint: ""
 
 site_meta:
-  title: "PROINCIVIL · Ingeniería estructural sismorresistente en Envigado, Antioquia"
-  description: "Firma de ingeniería estructural en Envigado. Diseño sismorresistente NSR-10, evaluación y reforzamiento, geotecnia, interventoría y acompañamiento ante curadurías. No ejecutamos obra: consultoría independiente con BIM."
+  title: "PROINCIVIL · Ingenieros estructurales en Colombia y Perú"
+  description: "Firma de ingeniería estructural desde 2019, con sede en Envigado y proyectos en toda Colombia. Diseño sismorresistente NSR-10, patología, vulnerabilidad sísmica, suelos, interventoría y curadurías. No ejecutamos obra."
 
 # ─── Identidad y contacto — ÚNICA fuente de verdad (nunca escribir estos datos a mano) ───
 empresa:
   razon_social: "PROINCIVIL S.A.S."
   nit: "901.697.902-8"
   tagline: "Seguridad estructural"
-  fundacion: "2019"          # PENDIENTE confirmar con el cliente (flyer: +7 años)
+  fundacion: "2019"          # Confirmado por la clienta, 2026-10-27 (cuadra con cifras.anios «+7»)
   direccion: "Calle 23 Sur # 44-36"
   ciudad: "Envigado"
   departamento: "Antioquia"
@@ -202,7 +202,7 @@ collections:
     output: false
     permalink: /edificaciones/:slug/
   zonas:
-    output: false
+    output: true
     permalink: /zonas/:slug/
   normativa:
     output: false

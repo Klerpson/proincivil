@@ -1,9 +1,9 @@
 ---
 titulo_corto: "Cimentaciones"
-orden: 8
+orden: 11
 grupo: diseno
 title: "Diseño de cimentaciones: zapatas, pilotes, losas y pilas | PROINCIVIL"
-description: "Diseño de cimentaciones conforme a NSR-10: zapatas, losas, pilas con campana, pilotes y micropilotes para edificaciones en Medellín y Antioquia. Del suelo al plano."
+description: "Del estudio de suelos al diseño de la cimentación conforme a NSR-10: zapatas, losas, pilas con campana, pilotes y micropilotes para edificaciones en Colombia."
 h1: "Diseño de cimentaciones superficiales y profundas"
 eyebrow: "Servicio · Diseño"
 excerpt: "Zapatas, losas, pilas y pilotes dimensionados con el suelo real de tu lote y la carga real de tu estructura: ni la cimentación heroica que dispara el presupuesto ni la que se asienta a los dos años."
@@ -24,7 +24,7 @@ zoom:
   textura: "ladera"
   titulo: "Cimentaciones diseñadas con el estudio de suelos de tu lote, sin sobredimensionar"
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-27
 cuando_titulo: "Pilas, ladera o recalce: seis casos en los que necesitas diseñar la cimentación"
 cuando:
   - "El estudio de suelos recomienda cimentación profunda y necesitas el diseño de pilas o pilotes"
@@ -82,11 +82,11 @@ faqs:
     answer: "No. Diseñamos la cimentación, verificamos el suelo en obra y controlamos la calidad de pilas o pilotes si lo necesitas; la ejecución la realiza el constructor que elijas. No ejecutamos obra."
 ---
 
-## Qué es el diseño de cimentaciones y por qué es la partida más incierta de una obra
+## Del estudio de suelos al diseño de la cimentación: la partida más incierta de una obra
 
 La **cimentación** es la parte de la estructura que transmite todas las cargas al suelo. Es también la partida de mayor incertidumbre en un presupuesto: lo que hay bajo tierra no se ve, y las diferencias entre una zapata y una pila de doce metros se cuentan en múltiplos, no en porcentajes. El **diseño de cimentaciones** convierte esa incertidumbre en una decisión fundamentada: con el [estudio de suelos]({{ site.baseurl }}/servicios/geotecnia-estudio-de-suelos/) y la carga real de la estructura, se elige el tipo, se dimensiona y se detalla conforme a los Títulos H y C de la NSR-10.
 
-En Antioquia la decisión rara vez es trivial. Las laderas del Valle de Aburrá combinan suelos residuales, depósitos de vertiente y llenos; el Oriente tiene suelos volcánicos de alta humedad; el Magdalena Medio, depósitos aluviales blandos. El mismo edificio puede resolverse con zapatas en un lote y exigir pilas en el de al lado.
+En Colombia la decisión rara vez es trivial, y en Antioquia menos: las laderas del Valle de Aburrá combinan suelos residuales, depósitos de vertiente y llenos; el Oriente tiene suelos volcánicos de alta humedad; el Magdalena Medio, depósitos aluviales blandos. El mismo edificio puede resolverse con zapatas en un lote y exigir pilas en el de al lado.
 
 ## Cimentaciones superficiales y profundas: cuál conviene
 

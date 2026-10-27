@@ -1,20 +1,83 @@
 ---
 layout: hub
-published: false   # Retenida para la fase SEO — ver `secciones_publicadas` en _config.yml
 permalink: /zonas/
 coleccion: zonas
-title: "Zonas de cobertura: Envigado, Medellín, Área Metropolitana, Oriente antioqueño y Colombia | PROINCIVIL"
-description: "PROINCIVIL presta servicios de ingeniería estructural, geotecnia e interventoría en Envigado, Medellín, el Área Metropolitana, el Oriente antioqueño, el resto de Antioquia y, con coordinación remota, en toda Colombia."
-h1: "Dónde trabajamos"
+title: "Zonas de cobertura: Antioquia, Pereira, Bogotá y Barranquilla"
+description: "Dónde trabaja PROINCIVIL: sede en Envigado y proyectos en Antioquia, Pereira y Dosquebradas, Bogotá y Barranquilla, con la amenaza sísmica y la curaduría de cada zona."
+h1: "Dónde trabajamos: de Envigado a Pereira, Bogotá y Barranquilla"
 titulo_corto: "Zonas de cobertura"
-eyebrow: "Cobertura"
-excerpt: "Sede en Envigado y proyectos en todo el departamento. Cada zona tiene su curaduría, su amenaza sísmica y sus suelos; en estas páginas explicamos qué cambia en cada una."
-cta_texto: "Consultar por mi municipio"
+eyebrow: "Zonas de cobertura"
+excerpt: "Sede en Envigado y proyectos en cuatro departamentos. En cada ciudad cambian la amenaza sísmica, el suelo y la curaduría; el criterio de diseño es el mismo."
+hero: "ia-valle-aburra"
+hero_alt: "Valle de Aburrá al atardecer con edificios en las laderas (ilustración)"
+image: "/img/fotos/ia-valle-aburra-1200.jpg"
+badges:
+  - "Sede en Envigado, Antioquia"
+  - "Proyectos en 4 departamentos"
+  - "No ejecutamos obra"
+cta_texto: "Consultar por mi ciudad"
+mapa:
+  rotulo: "Mapa de proyectos"
+  titulo: "Ocho lugares donde PROINCIVIL ya diseñó, evaluó o revisó estructuras"
+  texto: "Cada punto es un proyecto real o la sede. Pasa por una ciudad para verla en el plano."
+  boton:
+    texto: "Consultar por mi ciudad"
+    variante: contorno
+    mensaje: "Hola, PROINCIVIL. Tengo un proyecto en otra ciudad de Colombia y quiero saber si lo pueden atender."
+grupos:
+  - rotulo: "Páginas de zona"
+    titulo: "Siete zonas, cada una con su curaduría, su suelo y su amenaza sísmica"
+    slugs: [pereira, envigado, medellin, area-metropolitana, oriente-antioqueno, antioquia, colombia]
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-27
 ---
+{%- assign _c = site.data.ciudades -%}
 <div class="encabezado">
-  <p class="rotulo">Alcance</p>
-  <h2 class="encabezado__titulo">Presencia local, coordinación nacional</h2>
+  <p class="rotulo">Amenaza sísmica · NSR-10</p>
+  <h2 class="encabezado__titulo">Alta, intermedia o baja: lo que exige la NSR-10 en cada ciudad donde trabajamos</h2>
+  <p class="encabezado__texto">La norma es nacional; la exigencia cambia con la zona de amenaza del municipio. Estas son las ciudades del mapa con la zona verificada en la tabla A.2.3-2.</p>
 </div>
-<p>La mayor parte del trabajo de diseño, evaluación y revisión se coordina de forma remota con reuniones virtuales y modelo BIM compartido; las visitas técnicas, ensayos y supervisiones se programan en sitio. Hemos trabajado en Mutatá, Puerto Triunfo, Betulia, Puerto Perales, el Área Metropolitana y sedes comerciales a nivel nacional.</p>
+<div class="rejilla rejilla--3">
+  {%- assign _zonas_amenaza = "alta|intermedia|baja" | split: "|" -%}
+  {%- for z in _zonas_amenaza %}
+  {%- assign _lista = _c | where: "amenaza", z %}
+  <article class="pieza{% if z == 'alta' %} pieza--oscura{% endif %}">
+    <div class="pieza__cuerpo flujo">
+      <p class="rotulo{% if z == 'alta' %} rotulo--claro{% endif %}">Amenaza {{ z }}</p>
+      <h3 class="pieza__titulo">{% for c in _lista %}{{ c.nombre }}{% unless forloop.last %} · {% endunless %}{% endfor %}</h3>
+      <p class="pieza__valor">{% case z %}{% when "alta" %}DES{% when "intermedia" %}DMO{% else %}DMI{% endcase %}</p>
+      <p>{% case z %}{% when "alta" %}Capacidad especial de disipación de energía: el detallado más exigente para pórticos de concreto.{% when "intermedia" %}Capacidad moderada de disipación de energía como mínimo para pórticos de concreto.{% else %}Capacidad mínima de disipación de energía permitida; el diseño sísmico sigue siendo obligatorio.{% endcase %}</p>
+    </div>
+  </article>
+  {%- endfor %}
+</div>
+
+<div class="dos-columnas dos-columnas--aparte">
+  <div class="flujo">
+    <div class="encabezado">
+      <p class="rotulo">A distancia</p>
+      <h2 class="encabezado__titulo">Diseño y revisión de planos desde Envigado, para cualquier ciudad</h2>
+    </div>
+    <ul class="lista lista--flecha">
+      <li>Diseño estructural con los parámetros sísmicos y el suelo del municipio</li>
+      <li>Revisión independiente e interventoría de diseños de terceros</li>
+      <li>Respuesta a observaciones de la curaduría local</li>
+      <li>Modelo BIM compartido con arquitectura e instalaciones</li>
+    </ul>
+  </div>
+  <div class="flujo">
+    <div class="encabezado">
+      <p class="rotulo">En sitio</p>
+      <h2 class="encabezado__titulo">Ensayos, visitas y supervisión en el inmueble</h2>
+    </div>
+    <ul class="lista lista--flecha">
+      <li>Evaluación después de un sismo y patología con ensayos</li>
+      <li>Estudio de vulnerabilidad con núcleos, regatas y esclerometría</li>
+      <li>Levantamientos topográficos y verticalidad</li>
+      <li>Supervisión técnica independiente durante la obra</li>
+    </ul>
+  </div>
+</div>
+<div class="acciones">
+  {% include button.html texto="Consultar por un proyecto en mi ciudad" data_location="modalidad" mensaje="Hola, PROINCIVIL. Quiero saber si pueden atender mi proyecto y qué se haría a distancia o en sitio." %}
+</div>

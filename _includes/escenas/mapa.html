@@ -1,0 +1,101 @@
+{%- comment -%}
+  Escena: mapa de cobertura como plano de levantamiento (inspirada en Interactive Globe Explorer de
+  21st.dev). Los puntos salen de _data/ciudades.yml con coordenadas reales sobre una retícula de
+  meridianos y paralelos; no se dibuja el contorno del país.
+  Parámetros:
+    modo     "completo" (por defecto): lista grande de ciudades + plano fijo; la ciudad activa se
+             enciende en el plano (hover, foco o scroll, js/motion.js).
+             "mini": solo el plano, con la zona `activa` resaltada (ficha de cada zona).
+    activa   slug de _zonas/ que se resalta en modo mini
+    rotulo, titulo (h2), texto, id, boton{texto, mensaje, variante}: encabezado en modo completo
+  El SVG es decorativo (aria-hidden); los nombres, datos y enlaces están en la lista HTML.
+{%- endcomment -%}
+{%- assign _ciudades = site.data.ciudades -%}
+{%- assign _mini = false -%}{%- if include.modo == "mini" -%}{%- assign _mini = true -%}{%- endif -%}
+{%- assign _caja = "0 0 360 740" -%}
+{%- if _mini -%}
+  {%- assign _act = _ciudades | where: "zona", include.activa | first -%}
+  {%- if _act -%}
+    {%- assign _ax = _act.lon | plus: 77.2 | times: 100 | round: 1 -%}
+    {%- assign _ay = 11.4 | minus: _act.lat | times: 100 | round: 1 -%}
+    {%- assign _cx = _ax | minus: 120 -%}{%- assign _cy = _ay | minus: 190 -%}
+    {%- assign _caja = _cx | append: " " | append: _cy | append: " 320 260" -%}
+  {%- endif -%}
+{%- endif -%}
+{%- capture _svg -%}
+<svg class="mapa__svg" viewBox="{{ _caja }}" aria-hidden="true" focusable="false">
+  {%- if _mini and _act %}
+  <g class="mapa__replanteo">
+    <line x1="{{ _ax | minus: 120 }}" y1="{{ _ay }}" x2="{{ _ax | plus: 200 }}" y2="{{ _ay }}"/>
+    <line x1="{{ _ax }}" y1="{{ _ay | minus: 190 }}" x2="{{ _ax }}" y2="{{ _ay | plus: 70 }}"/>
+    <text x="{{ _ax | plus: 8 }}" y="{{ _ay | plus: 22 }}">{{ _act.lat | replace: ".", "," }}°N · {{ _act.lon | abs | replace: ".", "," }}°O</text>
+  </g>
+  {%- endif %}
+  <g class="mapa__reticula">
+    {%- for lon in (74..77) %}
+    {%- assign _x = 77.2 | minus: lon | times: 100 | round: 1 %}
+    <line x1="{{ _x }}" y1="0" x2="{{ _x }}" y2="740"/>
+    <text x="{{ _x | plus: 4 }}" y="730">{{ lon }}°O</text>
+    {%- endfor %}
+    {%- for lat in (5..11) %}
+    {%- assign _y = 11.4 | minus: lat | times: 100 | round: 1 %}
+    <line x1="0" y1="{{ _y }}" x2="360" y2="{{ _y }}"/>
+    <text x="4" y="{{ _y | minus: 5 }}">{{ lat }}°N</text>
+    {%- endfor %}
+  </g>
+  {%- for c in _ciudades %}
+  {%- assign _x = c.lon | plus: 77.2 | times: 100 | round: 1 %}
+  {%- assign _y = 11.4 | minus: c.lat | times: 100 | round: 1 %}
+  {%- assign _activa = false -%}{%- if _mini and c.zona == include.activa -%}{%- assign _activa = true -%}{%- endif %}
+  <g transform="translate({{ _x }} {{ _y }})">
+    <g class="mapa__punto{% if c.tipo == "sede" %} mapa__punto--sede{% endif %}{% if _activa %} mapa__punto--activo{% endif %}" data-ciudad="{{ forloop.index }}">
+      <circle class="mapa__onda" r="16"/>
+      <circle class="mapa__nucleo" r="{% if c.tipo == 'sede' %}6{% else %}4.5{% endif %}"/>
+      {%- assign _lado = c.lado -%}{%- if _activa -%}{%- assign _lado = "arriba" -%}{%- endif -%}
+      {%- case _lado -%}
+        {%- when "izquierda" -%}{%- assign _tx = -12 -%}{%- assign _ty = 4 -%}{%- assign _ancla = "end" -%}
+        {%- when "arriba" -%}{%- assign _tx = 0 -%}{%- assign _ty = -18 -%}{%- assign _ancla = "middle" -%}
+        {%- when "abajo" -%}{%- assign _tx = 0 -%}{%- assign _ty = 22 -%}{%- assign _ancla = "middle" -%}
+        {%- else -%}{%- assign _tx = 12 -%}{%- assign _ty = 4 -%}{%- assign _ancla = "start" -%}
+      {%- endcase %}
+      <text class="mapa__etiqueta" x="{{ _tx }}" y="{{ _ty }}" text-anchor="{{ _ancla }}">{{ c.nombre }}</text>
+    </g>
+  </g>
+  {%- endfor %}
+</svg>
+{%- endcapture -%}
+{%- if _mini -%}
+<figure class="mapa mapa--mini">
+  {{ _svg }}
+  <figcaption class="mapa__leyenda">Ubicación aproximada · retícula en grados</figcaption>
+</figure>
+{%- else -%}
+<section class="seccion seccion--oscura mapa" id="{{ include.id | default: 'mapa' }}">
+  <div class="marco mapa__rejilla">
+    <div class="encabezado mapa__encabezado">
+      <p class="rotulo rotulo--claro">{{ include.rotulo | default: "Cobertura" }}</p>
+      <h2 class="encabezado__titulo">{{ include.titulo }}</h2>
+      {%- if include.texto %}<p class="encabezado__texto">{{ include.texto }}</p>{% endif %}
+      {%- if include.boton %}
+      <div class="acciones">{% include button.html texto=include.boton.texto mensaje=include.boton.mensaje variante=include.boton.variante data_location="mapa" %}</div>
+      {%- endif %}
+    </div>
+    <figure class="mapa__plano">
+      {{ _svg }}
+      <figcaption class="mapa__leyenda"><span class="mapa__clave mapa__clave--sede">Sede</span><span class="mapa__clave">Proyectos</span><span>Coordenadas aproximadas</span></figcaption>
+    </figure>
+    <ol class="mapa__lista">
+      {%- for c in _ciudades %}
+      {%- assign _z = site.zonas | where: "slug", c.zona | first %}
+      <li class="mapa__ciudad" data-ciudad="{{ forloop.index }}">
+        <a class="mapa__enlace" href="{{ _z.url | default: '/zonas/' | relative_url }}">
+          <span class="mapa__nombre">{{ c.nombre }}</span>
+          <span class="mapa__dato">{{ c.depto }}{% if c.tipo == "sede" %} · Sede{% endif %}{% if c.amenaza != "" %} · Amenaza sísmica {{ c.amenaza }}{% endif %}</span>
+          <span class="mapa__nota">{{ c.nota }}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+{%- endif -%}

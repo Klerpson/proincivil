@@ -25,13 +25,13 @@ zoom:
   textura: "plano"
   titulo: "Un diseño que no sobredimensiona y llega a curaduría con {aprobacion_curadurias} de aprobación al primer intento"
 datePublished: 2026-09-22
-dateModified: 2026-10-21
+dateModified: 2026-10-27
 cuando_titulo: "Seis situaciones en las que necesitas un diseño estructural firmado"
 cuando:
   - "Vas a radicar una licencia de construcción y la curaduría exige planos y memorias firmados por ingeniero estructural"
   - "Tienes el proyecto arquitectónico y necesitas el sistema estructural que lo haga viable sin sobredimensionar"
   - "Diseñas un colegio, hotel, edificio de apartamentos o sede comercial que debe cumplir el grupo de uso de la NSR-10"
-  - "Necesitas una estructura metálica, cubierta o carport con conexiones precalificadas (AISC 358)"
+  - "Necesitas una estructura metálica o una cubierta con conexiones precalificadas (AISC 358)"
   - "Un diseño existente te está generando sobrecostos y quieres una optimización con criterio"
   - "Amplías o cambias el uso de una edificación y hay que verificar o repotenciar la estructura actual"
 entregables_titulo: "Seis entregables listos para radicar en curaduría"
@@ -62,10 +62,10 @@ audiencias:
   - { rol: "Arquitectos y estudios de diseño", texto: "Reciben un diseño coordinado con la arquitectura y soporte durante la revisión de curaduría." }
   - { rol: "Constructoras y promotores", texto: "Obtienen cantidades reales y detalles construibles que evitan reprocesos en obra." }
   - { rol: "Entidades públicas", texto: "Diseños de infraestructura educativa y deportiva con soporte normativo y formulación técnica ante el SGR." }
-  - { rol: "Empresas de energía solar", texto: "Carports y cubiertas metálicas con conexiones precalificadas y memorias para el cliente final." }
+  - { rol: "Empresas de energía solar", texto: "Estructuras metálicas para paneles solares con conexiones precalificadas y memorias para el cliente final." }
 proyectos_titulo: "Un colegio en Mutatá, un hotel en Puerto Triunfo y carports fotovoltaicos"
 proyectos: [ie-pavarando-grande-mutata, hotel-aldea-puerto-triunfo, carports-fotovoltaicos]
-relacionados: [geotecnia-estudio-de-suelos, cimentaciones, estructuras-metalicas, curadurias-y-licencias, bim-y-topografia]
+relacionados: [geotecnia-estudio-de-suelos, cimentaciones, estructuras-metalicas, curadurias-y-licencias, levantamiento-topografico]
 normativa: [nsr-10, titulo-a, titulo-b, ley-1796-de-2016]
 faqs_titulo: "Preguntas sobre diseño estructural en Colombia y Perú"
 faqs:
@@ -77,14 +77,14 @@ faqs:
     answer: "Son los planos que muestran la geometría, el refuerzo y los detalles de cada elemento resistente: plantas de cimentación, columnas, vigas, losas, muros, escaleras y conexiones. Van acompañados de las memorias de cálculo que justifican cada dimensión y del cuadro de materiales con las resistencias exigidas."
   - question: "¿Cuánto tarda un diseño estructural?"
     answer: "Depende del área, la complejidad, la coordinación BIM y la información disponible. El plazo se fija en la propuesta y empieza a contar cuando recibimos el estudio de suelos y la arquitectura definitiva."
-  - question: "¿Cuánto vale un diseño estructural en Colombia?"
+  - question: "¿Cuánto cobra un ingeniero estructural por un diseño en Colombia?"
     answer: "Se cotiza por metro cuadrado construido, ajustado por sistema estructural, niveles, regularidad y grupo de uso. No publicamos una tarifa única porque dos edificios de igual área pueden diferir mucho en trabajo. Revisamos tus planos arquitectónicos en una llamada de diagnóstico y acordamos alcance, entregables y plazo antes de preparar la propuesta."
   - question: "¿Diseñan casas de uno y dos pisos?"
     answer: "Sí, cuando el arquitecto, el constructor o el propietario necesitan planos firmados para licencia o para construir con seguridad. Aplicamos el Título E de la NSR-10 cuando la vivienda cumple sus condiciones y el diseño completo por Títulos A a C cuando no."
   - question: "¿Necesito un estudio de suelos antes del diseño estructural?"
     answer: "Sí. La NSR-10 (Título H) lo exige y sin él no es posible definir la cimentación ni el tipo de suelo para el análisis sísmico. Si no lo tienes, lo hacemos nosotros o revisamos el de un tercero antes de empezar."
   - question: "¿Incluyen el modelo BIM?"
-    answer: "Sí. Modelamos la estructura en BIM para coordinarla con arquitectura e instalaciones, detectar interferencias antes de la obra y extraer cantidades. Entregamos el modelo y los planos derivados de él."
+    answer: "Sí. Modelamos la estructura en BIM para coordinarla con arquitectura e instalaciones, detectar interferencias antes de la obra y extraer cantidades. Entregamos el modelo en formato nativo e IFC y los planos derivados de él."
   - question: "¿Ustedes construyen?"
     answer: "No. PROINCIVIL diseña, evalúa y supervisa; no ejecuta obras. La obra la ejecuta el constructor que tú contrates; si no tienes uno, te referimos empresas constructoras con las que hemos trabajado. Esa independencia es la que permite dar un criterio sin conflicto de interés."
 ---
@@ -93,7 +93,7 @@ faqs:
 
 El **diseño estructural** es el conjunto de cálculos, planos y especificaciones que determina cómo una edificación resiste su propio peso, las cargas de uso y, en Colombia y Perú, el sismo. Cada decisión —el sistema estructural, la sección de una columna, la cuantía de acero de una viga, el tipo de cimentación— se traduce en metros cúbicos de concreto, kilos de acero y días de obra. Por eso el diseño protege vidas y, a la vez, define la partida que más pesa en el presupuesto y la que más reprocesos evita.
 
-En Antioquia el reto es doble. El Área Metropolitana está en zona de amenaza sísmica intermedia y buena parte de los lotes están en ladera, con suelos que cambian de un predio al siguiente. Un diseño que copia soluciones de otro proyecto sin estudiar el suelo y la respuesta sísmica del sitio termina sobredimensionado —y caro— o subdimensionado —y observado por la curaduría—.
+En Colombia el reto cambia de una ciudad a otra. Según el Apéndice A-4 de la NSR-10, Pereira, Cali y Bucaramanga están en zona de amenaza sísmica alta, Bogotá y Medellín en intermedia y Barranquilla en baja; y en las ciudades andinas buena parte de los lotes están en ladera, con suelos que cambian de un predio al siguiente. Un diseño que copia soluciones de otro proyecto sin estudiar el suelo y la respuesta sísmica del sitio termina sobredimensionado —y caro— o subdimensionado —y observado por la curaduría—.
 
 ## Cómo diseñamos: seis pasos del modelo al plano firmado
 
@@ -106,13 +106,31 @@ Trabajamos sobre el proyecto arquitectónico definitivo y el estudio de suelos. 
 5. **Coordinación BIM.** Cruzamos el modelo estructural con arquitectura e instalaciones para eliminar interferencias antes de que aparezcan en obra.
 6. **Memorias, planos y radicación.** Entregamos el paquete completo en el formato que pide cada curaduría y acompañamos la revisión.
 
+## Cada diseño nace en un modelo BIM coordinado con arquitectura e instalaciones
+
+En PROINCIVIL la estructura se modela en BIM desde el primer cálculo: cada columna, viga, losa o cimentación tiene geometría e información (material, refuerzo, resistencia), y de ese modelo salen los planos y las cantidades. La coordinación cruza tres frentes antes de radicar:
+
+- **Arquitectura contra estructura:** columnas donde la arquitectura tenía vanos, vigas que bajan más de lo que admite la altura libre, muros estructurales que cortan circulaciones.
+- **Instalaciones contra estructura:** ductos y tuberías que atraviesan vigas o losas en zonas prohibidas, pases no previstos, equipos pesados sobre losas no diseñadas para ellos.
+- **Estructura contra terreno:** cimentaciones que chocan con los niveles reales del lote, con redes existentes o con linderos, detectadas con el [levantamiento topográfico]({{ site.baseurl }}/servicios/levantamiento-topografico/).
+
+Cada interferencia se documenta, se asigna a la disciplina responsable y se cierra en un informe de coordinación. Del modelo extraemos volúmenes de concreto por elemento, kilos de acero por diámetro y áreas de formaleta, y lo entregamos en formato nativo e IFC con el nivel de desarrollo pactado.
+
+## Diseño en concreto reforzado y en acero: Títulos C y F de la NSR-10
+
+El concreto reforzado sigue siendo el sistema de la mayoría de edificaciones en Colombia: pórticos, muros y losas se diseñan con el Título C de la NSR-10, que adapta el ACI 318. Cuando la luz, el peso o el plazo lo justifican, la estructura pasa a acero con el Título F y los estándares AISC 360 y 341, o a un sistema mixto con columnas metálicas y losas de concreto. La elección se compara con cantidades, no por costumbre, y el detalle de las cubiertas, naves y mezanines está en [diseño de estructuras metálicas]({{ site.baseurl }}/servicios/estructuras-metalicas/).
+
+## Ingeniero calculista y cálculo estructural: qué firma y qué revisa la curaduría
+
+«Ingeniero calculista» es el nombre con el que muchos arquitectos y propietarios buscan al diseñador estructural. El cálculo estructural es una parte del diseño: el análisis de cargas y sismo y el dimensionamiento de cada elemento. La curaduría recibe el paquete completo (memorias, planos y especificaciones) firmado por un ingeniero civil con matrícula vigente, como exige la Ley 400 de 1997, y revisa que el análisis sísmico, el tipo de suelo y el detallado del refuerzo correspondan a la NSR-10.
+
 ## Cinco sistemas estructurales que diseñamos y su norma
 
 | Sistema | Casos típicos | Norma de referencia |
 |---|---|---|
 | Pórticos de concreto reforzado | Colegios, edificios de apartamentos, sedes comerciales | NSR-10 Títulos A, B, C · ACI 318 · E.030 en Perú |
 | Muros y sistema dual | Torres de propiedad horizontal, hoteles en altura | NSR-10 Título C |
-| Estructuras metálicas | Cubiertas, naves, carports fotovoltaicos, mezanines | NSR-10 Título F · AISC 360, 341 y 358 |
+| Estructuras metálicas | Cubiertas, naves, mezanines, estructuras para paneles solares | NSR-10 Título F · AISC 360, 341 y 358 |
 | Mampostería estructural y confinada | Vivienda de uno a cinco niveles | NSR-10 Títulos D y E |
 | Pórticos con disipación especial (DES) | Edificaciones en zonas de amenaza alta o de grupo de uso III y IV | NSR-10 Título A.3 y C.21 |
 

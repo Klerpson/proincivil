@@ -1,6 +1,6 @@
 ---
 titulo_corto: "Muros de contención y taludes"
-orden: 9
+orden: 4
 grupo: diseno
 title: "Diseño de muros de contención y taludes NSR-10 | PROINCIVIL"
 description: "Diseño de muros de contención en concreto, gaviones, pantallas ancladas y suelo reforzado, y estabilidad de taludes en laderas. Planos firmados para curaduría."

@@ -34,7 +34,8 @@
         <p class="pie__titulo">Contacto</p>
         <address class="flujo">
           <p>{{ site.empresa.direccion }}<br>{{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, {{ site.empresa.pais }}</p>
-          <p><a href="https://wa.me/{{ site.contact.whatsapp }}" class="lead-whatsapp" data-location="footer" rel="nofollow noopener" target="_blank">WhatsApp {{ site.contact.whatsapp_display }}</a><br><a href="tel:+{{ site.contact.whatsapp_2 }}">{{ site.contact.whatsapp_2_display }}</a></p>
+          {%- assign _pie_wa = "WhatsApp " | append: site.contact.whatsapp_display -%}
+          <p>{% include button.html texto=_pie_wa variante="texto" data_location="footer" %}<br><a href="tel:+{{ site.contact.whatsapp_2 }}">{{ site.contact.whatsapp_2_display }}</a></p>
           <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
           <p>{{ site.empresa.horario }}</p>
         </address>

@@ -1,18 +1,6 @@
 ---
 layout: compress
 ---
-{%- comment -%}
-  Mensaje prellenado de WhatsApp para el botón flotante. Con `wa_mensaje` en el front matter
-  se personaliza por página; si no, se deriva del H1 (misma regla que button.html).
-{%- endcomment -%}
-{%- assign _tema = page.h1 | default: page.title | strip_html | strip -%}
-{%- if page.wa_mensaje -%}
-  {%- assign _wa_msg = page.wa_mensaje -%}
-{%- elsif page.url == "/" -%}
-  {%- assign _wa_msg = "Hola, PROINCIVIL. Vi el sitio web y quiero conversar sobre un proyecto de ingeniería estructural." -%}
-{%- else -%}
-  {%- assign _wa_msg = "Hola, PROINCIVIL. Vi la página «" | append: _tema | append: "» y quiero conversar sobre mi proyecto." -%}
-{%- endif -%}
 <!DOCTYPE html>
 <html lang="es-CO">
   <head>

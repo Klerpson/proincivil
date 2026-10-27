@@ -1,9 +1,9 @@
 ---
 titulo_corto: "Interventoría de diseños"
-orden: 10
+orden: 12
 grupo: control
 title: "Interventoría técnica de diseños y proyectos | PROINCIVIL"
-description: "Interventoría de diseños estructurales y geotécnicos e interventoría de obras civiles en Antioquia. Más de 20.000 m² supervisados. Independientes: no ejecutamos obra."
+description: "Interventoría de diseños estructurales y geotécnicos e interventoría de obras civiles en Colombia. Más de 20.000 m² supervisados. Independientes: no ejecutamos obra."
 h1: "Interventoría técnica de diseños y proyectos"
 eyebrow: "Servicio · Control técnico"
 excerpt: "Revisamos y verificamos diseños, estudios de suelo y resultados de laboratorio antes de que se conviertan en obra, y vigilamos el cumplimiento técnico y contractual durante la construcción. Respondemos al dueño del proyecto, no al contratista."

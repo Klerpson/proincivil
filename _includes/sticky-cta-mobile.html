@@ -1,2 +1,3 @@
-{%- comment -%} Botón flotante en móvil. js/main.js lo oculta mientras se ve la portada o la cabecera. {%- endcomment -%}
-<a href="https://wa.me/{{ site.contact.whatsapp }}?text={{ _wa_msg | url_encode }}" class="flotante flotante--oculto lead-whatsapp" data-location="flotante-movil" rel="nofollow noopener noreferrer" target="_blank">Conversemos por WhatsApp</a>
+{%- comment -%} Botón flotante en móvil, con la URL de wa-href.html. js/main.js lo oculta mientras se ve la portada o la cabecera. {%- endcomment -%}
+{%- include wa-href.html -%}
+<a href="{{ _wa_href }}" class="flotante flotante--oculto lead-whatsapp" data-location="flotante-movil" rel="nofollow noopener noreferrer" target="_blank">Conversemos por WhatsApp</a>

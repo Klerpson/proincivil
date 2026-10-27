@@ -2,7 +2,7 @@
   Escena: una palabra gigante con foto dentro de las letras; al bajar se atraviesa y se abre un CTA a
   pantalla completa. La palabra es decorativa (aria-hidden); el H2 y el botón están en el HTML.
   Parámetros:
-    palabra        en mayúsculas, corta (máx. ~10 letras para que quepa a 320 px)
+    palabra        en mayúsculas, máx. 13 letras; desde 10 letras el cuerpo baja para que quepa a 320 px
     textura        acero | concreto | plano | ladera (foto dentro de las letras; por defecto acero)
     foto, alt      foto de fondo que se revela en círculo (por defecto hero-estructura)
     rotulo, titulo, texto, boton, data_location (único por página: zoom-<slug>)
@@ -12,6 +12,8 @@
 {%- assign _foto = include.foto | default: "hero-estructura" -%}
 {%- assign _titulo = include.titulo -%}
 {%- assign _texto = include.texto | default: "Cuéntanos qué vas a construir o qué le pasa a tu edificación. Revisamos la información y acordamos una llamada de diagnóstico." -%}
+{%- assign _letras = include.palabra | size -%}
+{%- if _letras >= 12 -%}{%- assign _largo = " zoom__palabra--muy-larga" -%}{%- elsif _letras >= 10 -%}{%- assign _largo = " zoom__palabra--larga" -%}{%- else -%}{%- assign _largo = "" -%}{%- endif -%}
 {%- for c in site.cifras -%}
   {%- assign _tok = "{" | append: c[0] | append: "}" -%}
   {%- assign _titulo = _titulo | replace: _tok, c[1] -%}
@@ -20,7 +22,7 @@
 <section class="zoom" aria-labelledby="{{ _id }}">
   <div class="zoom__escena">
     <div class="zoom__foto">{% include picture.html nombre=_foto alt=include.alt ratio="16x10" sizes="100vw" %}</div>
-    <p class="zoom__palabra zoom__palabra--{{ include.textura | default: 'acero' }}" aria-hidden="true">{{ include.palabra }}</p>
+    <p class="zoom__palabra zoom__palabra--{{ include.textura | default: 'acero' }}{{ _largo }}" aria-hidden="true">{{ include.palabra }}</p>
     <div class="marco zoom__cta flujo">
       <p class="rotulo rotulo--claro">{{ include.rotulo | default: "Tu proyecto" }}</p>
       <h2 class="zoom__titulo" id="{{ _id }}">{{ _titulo }}</h2>

@@ -1,6 +1,6 @@
 ---
 titulo_corto: "Revisión independiente de diseños"
-orden: 11
+orden: 13
 grupo: control
 title: "Revisión independiente de diseños estructurales (Ley 1796) | PROINCIVIL"
 description: "Revisor independiente de diseños estructurales según la Ley 1796 y la NSR-10: verificamos memorias, planos y estudio de suelos antes de la licencia. No ejecutamos obra."

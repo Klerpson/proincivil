@@ -37,6 +37,13 @@ audiencias:
   - { rol: "Arquitectos y constructores de Envigado", texto: "Un aliado estructural a minutos de la obra y de la curaduría." }
   - { rol: "Administradores de P.H.", texto: "Evaluación de fisuras y post-sismo en conjuntos del municipio." }
   - { rol: "Propietarios de lotes en ladera", texto: "Suelos, contención y estructura resueltos por un mismo equipo." }
+cuando_titulo: "Cuándo llamar a un ingeniero estructural en Envigado"
+entregables_titulo: "Entregables para proyectos en Envigado"
+proyectos_titulo: "Proyectos de PROINCIVIL en Envigado"
+audiencias_titulo: "Para quién trabajamos en Envigado"
+faqs_titulo: "Preguntas sobre proyectos en Envigado"
+relacionados_titulo: "Servicios para proyectos en Envigado"
+normativa_titulo: "Normas que aplicamos en Envigado"
 proyectos: []
 relacionados: [diseno-estructural, geotecnia-estudio-de-suelos, muros-de-contencion-y-taludes, curadurias-y-licencias, evaluacion-estructural]
 normativa: [nsr-10, titulo-a, titulo-h, licencia-de-construccion-colombia]

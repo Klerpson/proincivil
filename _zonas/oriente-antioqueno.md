@@ -41,6 +41,13 @@ audiencias:
   - { rol: "Constructoras y promotores del Oriente", texto: "Diseño estructural y geotécnico con visitas programadas y coordinación remota." }
   - { rol: "Empresas logísticas", texto: "Bodegas y naves en el corredor del aeropuerto con cimentaciones bien resueltas." }
   - { rol: "Alcaldías del Oriente", texto: "Infraestructura educativa y deportiva con soporte normativo completo." }
+cuando_titulo: "Cuándo llamar a un ingeniero estructural en el Oriente antioqueño"
+entregables_titulo: "Entregables para proyectos en el Oriente antioqueño"
+proyectos_titulo: "Proyectos de PROINCIVIL en el Oriente antioqueño"
+audiencias_titulo: "Para quién trabajamos en el Oriente antioqueño"
+faqs_titulo: "Preguntas sobre proyectos en el Oriente antioqueño"
+relacionados_titulo: "Servicios para proyectos en el Oriente antioqueño"
+normativa_titulo: "Normas que aplicamos en el Oriente antioqueño"
 proyectos: []
 relacionados: [geotecnia-estudio-de-suelos, diseno-estructural, cimentaciones, estructuras-metalicas, curadurias-y-licencias]
 normativa: [nsr-10, titulo-a, titulo-h, licencia-de-construccion-colombia]

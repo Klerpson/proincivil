@@ -1,9 +1,9 @@
 ---
 titulo_corto: "Curadurías y licencias"
-orden: 13
+orden: 15
 grupo: tramites
 title: "Subsanación de observaciones y licencias ante curadurías | PROINCIVIL"
-description: "Acompañamiento ante curadurías de Envigado, Medellín y Antioquia: revisión del expediente estructural y geotécnico, radicación y respuesta a observaciones."
+description: "Acompañamiento ante curadurías urbanas de Colombia: revisión del expediente estructural y geotécnico, radicación y respuesta a observaciones de la licencia."
 h1: "Acompañamiento técnico ante curadurías y entidades públicas"
 eyebrow: "Servicio · Trámites"
 excerpt: "La curaduría devolvió tu proyecto con observaciones estructurales o quieres radicar sin devoluciones. Revisamos, corregimos y sustentamos el componente técnico de la licencia de construcción hasta que quede aprobada."
@@ -12,7 +12,7 @@ hero_alt: "Institución educativa de dos niveles diseñada por PROINCIVIL"
 image: "/img/fotos/institucion-educativa-440.jpg"
 badges:
   - "Revisión previa a la radicación"
-  - "Curadurías de Envigado, Medellín y Antioquia"
+  - "Curadurías urbanas de Colombia"
   - "Subsanación estructural y geotécnica"
   - "No ejecutamos obra"
 cta_texto: "Enviar observaciones de curaduría"
@@ -24,7 +24,7 @@ zoom:
   textura: "plano"
   titulo: "Radica tu licencia con el respaldo de {aprobacion_curadurias} de aprobación en primera radicación"
 datePublished: 2026-09-22
-dateModified: 2026-10-16
+dateModified: 2026-10-27
 cuando_titulo: "Seis casos en los que necesitas acompañamiento ante curaduría para tu licencia"
 cuando:
   - "Recibiste un acta de observaciones de la curaduría con reparos al diseño estructural o al estudio de suelos"
@@ -72,8 +72,8 @@ faqs:
     answer: "El plazo lo fija el acta de observaciones conforme al procedimiento de licencias urbanísticas vigente; si no se subsana a tiempo, el trámite se archiva y hay que volver a radicar. Por eso trabajamos con el plazo del acta como fecha límite y avisamos desde el primer día si el alcance de las correcciones no cabe en él."
   - question: "¿Pueden subsanar un diseño que hizo otro ingeniero?"
     answer: "Sí. Revisamos el diseño original, respondemos las observaciones y, si el diseñador no está disponible, asumimos el diseño con nuestra firma previa revisión completa, porque quien firma responde. Cuando el diseño original es rescatable, lo complementamos; cuando no, lo rehacemos y lo informamos con claridad."
-  - question: "¿Trabajan con las curadurías de Envigado y Medellín?"
-    answer: "Sí. Conocemos las listas de chequeo y los formatos de las curadurías de Envigado, de Medellín y de los municipios del Área Metropolitana y del Oriente antioqueño, y también los procedimientos de las secretarías de planeación de municipios sin curaduría."
+  - question: "¿Trabajan con curadurías fuera de Antioquia?"
+    answer: "Sí. El componente estructural y geotécnico que revisa una curaduría sigue la NSR-10 en todo el país. Conocemos las listas de chequeo de las curadurías de Envigado, de Medellín y de los municipios del Área Metropolitana y del Oriente antioqueño; en otras ciudades revisamos la lista y los formatos de la curaduría que corresponda antes de radicar."
   - question: "¿Qué planos exige la curaduría para una licencia de construcción?"
     answer: "Planos arquitectónicos y planos estructurales firmados, memorias de cálculo, estudio de suelos y los documentos jurídicos del predio, según el decreto de licencias urbanísticas. Los planos estructurales deben cubrir cimentación, columnas, vigas, losas, muros y detalles, con el cuadro de materiales y las notas de la NSR-10."
   - question: "¿La revisión previa garantiza la aprobación?"
@@ -103,9 +103,9 @@ El **acompañamiento ante curadurías** de PROINCIVIL existe para evitar ese cic
 | Coherencia | Arquitectura, estructura e instalaciones radicadas coinciden | Cambios de arquitectura no llevados a la estructura |
 | Firmas | Matrículas profesionales vigentes y experiencia acreditada | Firmas de profesionales no facultados |
 
-## Curadurías de Envigado, Medellín y los municipios de Antioquia
+## Curadurías de Envigado, Medellín y el resto de Colombia: la misma NSR-10, formatos distintos
 
-Envigado cuenta con curadurías urbanas propias, Medellín con varias, y muchos municipios del Oriente y del resto del departamento tramitan las licencias en sus secretarías de planeación. Cada una tiene formatos, listas de chequeo y prácticas propias. Conocerlas evita devoluciones por forma que retrasan tanto como las de fondo. En la I.E. Pavarandó Grande y en Puerto Perales trabajamos con entidades públicas cuyos procesos de aprobación tienen exigencias adicionales, y en el Hotel Aldea el diseño integral se aprobó sin devoluciones.
+Envigado cuenta con curadurías urbanas propias, Medellín con varias, y muchos municipios del Oriente y del resto del departamento tramitan las licencias en sus secretarías de planeación. Cada una tiene formatos, listas de chequeo y prácticas propias. Conocerlas evita devoluciones por forma que retrasan tanto como las de fondo. Fuera de Antioquia el componente técnico es el mismo, porque la NSR-10 es nacional, y lo que cambia son los formatos: antes de radicar en otra ciudad revisamos la lista de chequeo de su curaduría. En la I.E. Pavarandó Grande y en Puerto Perales trabajamos con entidades públicas cuyos procesos de aprobación tienen exigencias adicionales, y en el Hotel Aldea el diseño integral se aprobó sin devoluciones.
 
 ## Fuera del alcance: el trámite jurídico de la licencia y la ejecución de obra
 

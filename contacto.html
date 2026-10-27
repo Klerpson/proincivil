@@ -1,13 +1,14 @@
 ---
 layout: page
 permalink: /contacto/
-title: "Contacto · Diseño y evaluación estructural en Envigado | PROINCIVIL"
-description: "Escribe a PROINCIVIL en Envigado por WhatsApp o correo. Comparte tus planos y tu necesidad para definir el alcance de diseño, patología o vulnerabilidad sísmica."
+title: "Contacto · Ingenieros estructurales en Colombia | PROINCIVIL"
+description: "Escribe a PROINCIVIL por WhatsApp o correo desde cualquier ciudad de Colombia o Perú. Comparte tus planos y tu necesidad para definir el alcance de diseño, patología o vulnerabilidad sísmica."
 h1: "Conversemos sobre tu proyecto"
 titulo_corto: "Contacto"
 eyebrow: "Contacto"
 excerpt: "Escríbenos por WhatsApp o correo con la ubicación y el motivo de tu consulta. Revisamos la información disponible y acordamos una llamada de diagnóstico para definir el alcance y los plazos."
 cta_texto: "Escribir por WhatsApp"
+wa_mensaje: "Hola, PROINCIVIL. Quiero conversar sobre mi proyecto. Les cuento la ubicación y lo que necesito."
 sin_cta: true
 datePublished: 2026-09-22
 dateModified: 2026-10-16
@@ -22,8 +23,8 @@ schemaType: "ContactPage"
           <h2 class="encabezado__titulo">WhatsApp, correo y oficina en {{ site.empresa.ciudad }}</h2>
         </div>
         <ul class="lista">
-          <li>WhatsApp: <a href="https://wa.me/{{ site.contact.whatsapp }}" class="lead-whatsapp" data-location="contacto-lista" rel="nofollow noopener" target="_blank">{{ site.contact.whatsapp_display }}</a> (Kateryn Andrea Palacio, gerencia)</li>
-          <li>Dirección técnica: <a href="https://wa.me/{{ site.contact.whatsapp_2 }}" class="lead-whatsapp" data-location="contacto-tecnico" rel="nofollow noopener" target="_blank">{{ site.contact.whatsapp_2_display }}</a> (Ing. Camilo Tamayo)</li>
+          <li>WhatsApp: {% include button.html texto=site.contact.whatsapp_display variante="texto" data_location="contacto-lista" %} (Kateryn Andrea Palacio, gerencia)</li>
+          <li>Dirección técnica: {% include button.html texto=site.contact.whatsapp_2_display numero=site.contact.whatsapp_2 mensaje="Hola, Ing. Camilo. Escribo desde el sitio de PROINCIVIL por una consulta técnica sobre mi proyecto." variante="texto" data_location="contacto-tecnico" %} (Ing. Camilo Tamayo)</li>
           <li>Proyectos: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
           <li>Gerencia: <a href="mailto:{{ site.contact.email_gerencia }}">{{ site.contact.email_gerencia }}</a></li>
           <li>{{ site.empresa.direccion }}, {{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, {{ site.empresa.pais }}</li>

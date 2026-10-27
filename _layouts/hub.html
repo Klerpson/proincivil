@@ -8,6 +8,7 @@ layout: default
     galeria: {titulo} → cinta horizontal fija con todos los proyectos
     casos: {slugs, titulo} → escena de casos con foto fija
     marquesina: clave de _data/marquesinas.yml
+    mapa: {rotulo, titulo, texto} → mapa de cobertura con _data/ciudades.yml, antes del contenido
     grupos: (opcional) lista de {rotulo, titulo, texto, slugs:[...]} para agrupar tarjetas
   Sin paneles, galería ni grupos, la colección se muestra en una rejilla de tarjetas.
 {%- endcomment -%}
@@ -17,6 +18,9 @@ layout: default
 {%- endif -%}
 {%- if page.galeria -%}
 {% include escenas/galeria.html titulo=page.galeria.titulo rotulo=page.galeria.rotulo %}
+{%- endif -%}
+{%- if page.mapa -%}
+{% include escenas/mapa.html rotulo=page.mapa.rotulo titulo=page.mapa.titulo texto=page.mapa.texto boton=page.mapa.boton %}
 {%- endif -%}
 {%- if content != "" -%}
 <section class="seccion">

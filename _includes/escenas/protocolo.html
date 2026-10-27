@@ -1,0 +1,40 @@
+{%- comment -%}
+  Escena: protocolo por pasos con una línea que se traza al bajar (inspirada en Timeline de
+  Aceternity, 21st.dev, reimplementada con animation-timeline). Cada nodo se enciende al cruzar el
+  centro de la pantalla. En escritorio el encabezado queda fijo a la izquierda.
+  Parámetros: protocolo (rotulo, titulo, texto, pasos[{titulo, texto, ensayos[{nombre, que}],
+  boton{texto, mensaje, variante}}]), id. El botón de un paso lleva data-location protocolo-paso-N.
+  Sin soporte de animation-timeline la línea se ve completa y todos los nodos encendidos.
+{%- endcomment -%}
+{%- assign p = include.protocolo -%}
+<section class="seccion protocolo" id="{{ include.id | default: 'protocolo' }}">
+  <div class="marco protocolo__rejilla">
+    <div class="encabezado protocolo__encabezado">
+      <p class="rotulo">{{ p.rotulo }}</p>
+      <h2 class="encabezado__titulo">{{ p.titulo }}</h2>
+      {%- if p.texto %}<p class="encabezado__texto">{{ p.texto }}</p>{% endif %}
+    </div>
+    <ol class="protocolo__pasos">
+      {%- for s in p.pasos %}
+      <li class="protocolo__paso">
+        <span class="protocolo__nodo" aria-hidden="true">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
+        <div class="protocolo__cuerpo">
+          <h3 class="protocolo__titulo">{{ s.titulo }}</h3>
+          <p>{{ s.texto }}</p>
+          {%- if s.ensayos %}
+          <dl class="protocolo__ensayos">
+            {%- for e in s.ensayos %}
+            <div><dt>{{ e.nombre }}</dt><dd>{{ e.que }}</dd></div>
+            {%- endfor %}
+          </dl>
+          {%- endif %}
+          {%- if s.boton %}
+          {%- assign _loc = "protocolo-paso-" | append: forloop.index %}
+          <div class="acciones">{% include button.html texto=s.boton.texto mensaje=s.boton.mensaje variante=s.boton.variante data_location=_loc %}</div>
+          {%- endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>

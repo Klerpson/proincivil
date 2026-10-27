@@ -1,0 +1,90 @@
+---
+layout: default
+---
+{%- comment -%}
+  Página de zona (ciudad). Se arma con escenas y datos del front matter, sin bloque de artículo:
+  resumen → ficha (cajetín + ubicador) → protocolo (línea que se traza) → decisión (árbol) → suelo
+  (corte geológico) → curadurías (lista en foco) → casos → zoom/cierre → FAQ → enlace al hub →
+  servicios relacionados. Todos los bloques son opcionales. El cuerpo Markdown, si existe, va como
+  texto corto después de la ficha. Variables: .claude/docs/frontmatter-variables.md.
+{%- endcomment -%}
+{% if page.resumen %}
+<section class="seccion seccion--compacta">
+  <div class="marco">
+    <div class="resumen" id="en-resumen">
+      <p class="rotulo">En resumen</p>
+      <p class="resumen__texto">{{ page.resumen }}</p>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.ficha %}{% include escenas/ficha-zona.html ficha=page.ficha activa=page.slug %}{% endif %}
+
+{%- assign _cuerpo = content | strip -%}
+{% if _cuerpo != "" %}
+<section class="seccion">
+  <div class="marco texto-largo flujo">
+    {{ content }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.protocolo %}{% include escenas/protocolo.html protocolo=page.protocolo %}{% endif %}
+
+{% if page.decision %}{% include escenas/decision.html decision=page.decision clase="seccion--papel" %}{% endif %}
+
+{% if page.suelo %}{% include escenas/corte.html suelo=page.suelo %}{% endif %}
+
+{% if page.curadurias %}
+{% include escenas/foco.html items=page.curadurias.observaciones rotulo=page.curadurias.rotulo titulo=page.curadurias.titulo texto=page.curadurias.texto boton=page.curadurias.boton id="curadurias" clase="seccion--papel" %}
+{% endif %}
+
+{% if page.proyectos %}
+{%- if page.proyectos.size > 1 %}
+<div id="casos">
+{% include escenas/casos.html slugs=page.proyectos titulo=page.proyectos_titulo %}
+</div>
+{%- else %}
+<section class="seccion seccion--oscura" id="casos">
+  <div class="marco flujo">
+    <div class="encabezado">
+      <p class="rotulo rotulo--claro">Casos</p>
+      <h2 class="encabezado__titulo">{{ page.proyectos_titulo }}</h2>
+    </div>
+    {% include proyectos-relacionados.html slugs=page.proyectos %}
+  </div>
+</section>
+{%- endif %}
+{% endif %}
+
+{% if page.zoom %}
+{%- assign _loc = "zoom-" | append: page.slug %}
+{% include escenas/zoom.html palabra=page.zoom.palabra textura=page.zoom.textura rotulo=page.zoom.rotulo titulo=page.zoom.titulo texto=page.zoom.texto foto=page.hero alt=page.hero_alt boton=page.cta_texto data_location=_loc %}
+{% endif %}
+
+{% if page.faqs %}
+<section class="seccion seccion--papel" id="preguntas">
+  <div class="marco">
+    {% include faqs.html %}
+  </div>
+</section>
+{% endif %}
+
+{% unless page.zoom %}{% include cta-final.html %}{% endunless %}
+
+{%- assign _n = site.zonas.size -%}
+{%- assign _t = "Ver las " | append: _n | append: " zonas donde trabajamos" %}
+{% include escenas/enlace-mayor.html url="/zonas/" numero=_n texto=_t banda=true %}
+
+{% if page.relacionados and site.secciones_publicadas contains "servicios" %}
+<section class="seccion">
+  <div class="marco flujo">
+    <div class="encabezado">
+      <p class="rotulo">Servicios</p>
+      <h2 class="encabezado__titulo">{{ page.relacionados_titulo }}</h2>
+    </div>
+    {% include relacionados.html coleccion="servicios" slugs=page.relacionados %}
+  </div>
+</section>
+{% endif %}

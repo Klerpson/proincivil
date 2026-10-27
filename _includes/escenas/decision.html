@@ -1,0 +1,32 @@
+{%- comment -%}
+  Escena: árbol de decisión. Un origen se abre en ramas (A, B, C) con el resultado, lo que sigue y
+  quién ejecuta la obra; las líneas se trazan al entrar en pantalla. En móvil, árbol vertical.
+  Parámetros: decision (rotulo, titulo, origen, ramas[{resultado, sigue}], ejecuta, nota,
+  boton{texto, mensaje, variante}), id, clase.
+{%- endcomment -%}
+{%- assign d = include.decision -%}
+<section class="seccion decision{% if include.clase %} {{ include.clase }}{% endif %}" id="{{ include.id | default: 'decision' }}">
+  <div class="marco flujo">
+    <div class="encabezado">
+      <p class="rotulo">{{ d.rotulo }}</p>
+      <h2 class="encabezado__titulo">{{ d.titulo }}</h2>
+    </div>
+    <div class="decision__arbol">
+      <p class="decision__origen">{{ d.origen }}</p>
+      <ol class="decision__ramas">
+        {%- for r in d.ramas %}
+        <li class="decision__rama">
+          <span class="decision__letra" aria-hidden="true">{{ "ABCDEF" | slice: forloop.index0 }}</span>
+          <h3 class="decision__resultado">{{ r.resultado }}</h3>
+          <p class="decision__sigue">{{ r.sigue }}</p>
+          {%- if d.ejecuta %}<p class="decision__ejecuta">{{ d.ejecuta }}</p>{% endif %}
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+    {%- if d.nota %}<p class="nota nota--sello">{{ d.nota }}</p>{% endif %}
+    {%- if d.boton %}
+    <div class="acciones">{% include button.html texto=d.boton.texto mensaje=d.boton.mensaje variante=d.boton.variante data_location="decision" %}</div>
+    {%- endif %}
+  </div>
+</section>

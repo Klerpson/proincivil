@@ -1,7 +1,8 @@
 {%- comment -%}
   Escena: lista en foco. Frases grandes numeradas que se iluminan al pasar por el centro de la pantalla
   (solo CSS, animation-timeline); en escritorio el encabezado queda fijo a la izquierda.
-  Parámetros: items (lista de frases), rotulo, titulo (h2), id (ancla de la sección), clase (extra).
+  Parámetros: items (lista de frases), rotulo, titulo (h2), texto (opcional, bajo el título), boton
+  ({texto, mensaje, variante}; data-location = id), id (ancla de la sección), clase (extra).
   Sin soporte, todas las frases se ven al 100 %.
 {%- endcomment -%}
 <section class="seccion foco{% if include.clase %} {{ include.clase }}{% endif %}"{% if include.id %} id="{{ include.id }}"{% endif %}>
@@ -9,6 +10,11 @@
     <div class="encabezado foco__encabezado">
       <p class="rotulo">{{ include.rotulo }}</p>
       <h2 class="encabezado__titulo">{{ include.titulo }}</h2>
+      {%- if include.texto %}<p class="encabezado__texto">{{ include.texto }}</p>{% endif %}
+      {%- if include.boton %}
+      {%- assign _loc = include.id | default: "foco" %}
+      <div class="acciones">{% include button.html texto=include.boton.texto mensaje=include.boton.mensaje variante=include.boton.variante data_location=_loc %}</div>
+      {%- endif %}
     </div>
     <ol class="foco__lista">
       {%- for i in include.items %}

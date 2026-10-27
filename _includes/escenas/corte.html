@@ -1,0 +1,37 @@
+{%- comment -%}
+  Escena: corte geológico del suelo típico de una zona, dibujado como en un informe geotécnico
+  (punteado para depósitos, rayado para roca) con un sondeo que baja al entrar en pantalla.
+  Parámetros: suelo (rotulo, titulo, parrafos[], estratos[{nombre, espesor}], sondeo, fuente, url,
+  enlace{texto, url}, boton{texto, mensaje, variante}), id. Todo el texto está en el HTML; el dibujo es decorativo.
+{%- endcomment -%}
+{%- assign s = include.suelo -%}
+<section class="seccion corte" id="{{ include.id | default: 'suelo' }}">
+  <div class="marco dos-columnas dos-columnas--centro">
+    <div class="flujo">
+      <div class="encabezado">
+        <p class="rotulo">{{ s.rotulo }}</p>
+        <h2 class="encabezado__titulo">{{ s.titulo }}</h2>
+      </div>
+      {%- for t in s.parrafos %}
+      <p>{{ t }}</p>
+      {%- endfor %}
+      <div class="acciones">
+        {%- if s.boton %}{% include button.html texto=s.boton.texto mensaje=s.boton.mensaje variante=s.boton.variante data_location="suelo" %}{% endif %}
+        {%- if s.enlace %}<a href="{{ s.enlace.url | relative_url }}" class="enlace-flecha">{{ s.enlace.texto }}</a>{% endif %}
+      </div>
+    </div>
+    <figure class="corte__figura">
+      <div class="corte__perfil">
+        <p class="corte__superficie">Superficie del terreno</p>
+        {%- for e in s.estratos %}
+        <div class="corte__estrato corte__estrato--{{ forloop.index }}">
+          <span class="corte__nombre">{{ e.nombre }}</span>
+          {%- if e.espesor and e.espesor != "" %}<span class="corte__espesor">{{ e.espesor }}</span>{% endif %}
+        </div>
+        {%- endfor %}
+        <span class="corte__sondeo" aria-hidden="true"></span>
+      </div>
+      <figcaption class="corte__pie">{{ s.sondeo }}{% if s.fuente %} · Fuente: {% if s.url %}<a href="{{ s.url }}" rel="noopener">{{ s.fuente }}</a>{% else %}{{ s.fuente }}{% endif %}{% endif %}</figcaption>
+    </figure>
+  </div>
+</section>

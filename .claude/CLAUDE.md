@@ -56,7 +56,7 @@ conflicto de interés.
 
 ```
 /                           index.html (layout home)
-/servicios/                 servicios.html (hub) + _servicios/*.md (14, layout service)
+/servicios/                 servicios.html (hub) + _servicios/*.md (17, layout service)
 /cuanto-cuesta/             cuanto-cuesta.html + _cuanto-cuesta/*.md (4, layout service)
 /edificaciones/             edificaciones.html + _edificaciones/*.md (7, layout service)
 /zonas/                     zonas.html + _zonas/*.md (6, layout service)
@@ -86,8 +86,9 @@ Navegación y footer: `_data/navegacion.yml`. Migas de pan: `_data/breadcrumb_na
 - **Escenas inmersivas:** `_includes/escenas/` (paneles, galería, casos, zoom, marquesina, foco, enlace
   mayor), alimentadas por `_data/familias.yml`, `_data/marquesinas.yml` y el front matter (`zoom:`, `caso:`,
   `paneles:`, `galeria:`, `casos:`). Nunca se copia su markup a mano. Catálogo en la skill `dev-jekyll`.
-- **CTA de WhatsApp:** siempre `{% include button.html texto="…" data_location="…" %}` (un solo botón sólido por pantalla; los demás con `variante="contorno"` o `variante="enlace"`). Nunca `wa.me` a
-  mano. El mensaje prellenado se deriva del H1 o de `wa_mensaje`.
+- **CTA de WhatsApp:** siempre `{% include button.html texto="…" data_location="…" %}` (un solo botón sólido por pantalla; los demás con `variante="contorno"` o `variante="enlace"`; dentro de un párrafo o una lista,
+  `variante="texto"`; otro número, con `numero=`). Nunca `wa.me` a mano: la URL la arma
+  `_includes/wa-href.html`, también para el botón flotante. El mensaje prellenado se deriva del H1 o de `wa_mensaje`.
 - **Schema:** lo emiten los includes según `schemaType` y `faqs:` del front matter. Nunca JSON-LD a mano
   en una página.
 - **JS dentro de HTML: solo comentarios de bloque** (`layout: compress` une líneas; `//` se come el

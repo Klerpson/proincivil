@@ -22,7 +22,7 @@ ficha:
   normativa: "NSR-10 Títulos A, B, C y H · grupo de uso III"
   rol: "Diseñador estructural"
   resultado: "Diseños aprobados en primera radicación"
-servicios: [diseno-estructural, geotecnia-estudio-de-suelos, bim-y-topografia]
+servicios: [diseno-estructural, geotecnia-estudio-de-suelos]
 edificacion: instituciones-educativas
 zona: antioquia
 datePublished: 2026-09-22

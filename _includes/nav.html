@@ -10,7 +10,7 @@
     <a href="{{ '/' | relative_url }}" class="barra__logo">
       <img src="{{ '/img/logo-proincivil.png' | relative_url }}" alt="PROINCIVIL · Seguridad estructural · Inicio" width="475" height="351" loading="eager" decoding="async">
     </a>
-    {% include button.html texto="Conversemos" data_location="barra" variante="contorno" %}
+    {% include button.html texto="Conversemos" data_location="barra" %}
   </div>
 </header>
 <nav class="menu" aria-label="Navegación principal">
@@ -31,7 +31,7 @@
       <li>
         <details class="menu__desplegable">
           <summary class="menu__enlace">{{ item.texto }}</summary>
-          <div class="menu__panel">
+          <div class="menu__panel{% if item.disposicion == 'columnas' %} menu__panel--columnas{% endif %}">
             {%- for grupo in item.grupos -%}
               {%- assign _grupo_hay = false -%}
               {%- for e in grupo.enlaces -%}{%- assign _s = e.url | remove_first: "/" | split: "/" | first -%}{%- if site.secciones_publicadas contains _s -%}{%- assign _grupo_hay = true -%}{%- endif -%}{%- endfor -%}

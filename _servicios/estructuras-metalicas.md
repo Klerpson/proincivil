@@ -1,10 +1,10 @@
 ---
-titulo_corto: "Estructuras metálicas y carports"
+titulo_corto: "Estructuras metálicas"
 orden: 2
 grupo: diseno
-title: "Diseño de estructuras metálicas, cubiertas y carports | PROINCIVIL"
-description: "Diseño de estructuras metálicas conforme a NSR-10 Título F y AISC: cubiertas, cerchas, naves y carports fotovoltaicos con conexiones precalificadas en Antioquia."
-h1: "Diseño de estructuras metálicas: cubiertas, cerchas, naves y carports"
+title: "Diseño de estructuras metálicas para cubiertas, naves y edificios"
+description: "Diseño de estructuras metálicas conforme a NSR-10 Título F y AISC: cubiertas, cerchas, naves, mezanines y edificios en acero con conexiones precalificadas en Colombia."
+h1: "Diseño de estructuras metálicas: cubiertas, cerchas, naves y edificios en acero"
 eyebrow: "Servicio · Diseño"
 excerpt: "Estructuras de acero con cantidades justificadas, conexiones y detalles coordinados para el fabricante. Diseño y documentación para acompañar la revisión ante curaduría."
 hero: "cubierta-metalica"
@@ -13,19 +13,19 @@ image: "/img/fotos/cubierta-metalica-440.jpg"
 badges:
   - "NSR-10 Título F · AISC 360 y 341"
   - "Conexiones precalificadas"
-  - "+3.000 m² en carports fotovoltaicos"
+  - "+3.000 m² en estructuras fotovoltaicas"
   - "No ejecutamos obra"
 cta_texto: "Conversemos sobre tu estructura metálica"
-cta_secundario: { url: "/proyectos/carports-fotovoltaicos/", texto: "Ver carports diseñados" }
+cta_secundario: { url: "/proyectos/carports-fotovoltaicos/", texto: "Ver estructuras fotovoltaicas diseñadas" }
 serviceType: "Diseño de estructuras metálicas"
-resumen: "El diseño de estructuras metálicas define perfiles, conexiones y anclajes de acero para cubiertas, cerchas, naves industriales, mezanines y carports, conforme al Título F de la NSR-10 y a los estándares AISC. PROINCIVIL entrega memorias, planos de diseño y de taller y modelo BIM, con conexiones precalificadas cuando la zona sísmica lo exige."
+resumen: "El diseño de estructuras metálicas define perfiles, conexiones y anclajes de acero para cubiertas, cerchas, naves industriales, mezanines, edificios y estructuras para paneles solares, conforme al Título F de la NSR-10 y a los estándares AISC. PROINCIVIL entrega memorias, planos de diseño y de taller y modelo BIM, con conexiones precalificadas cuando la zona sísmica lo exige."
 zoom:
   palabra: "ACERO"
   textura: "acero"
-  titulo: "Estructura metálica con conexiones precalificadas AISC 358 para tu carport, nave o cubierta"
+  titulo: "Estructura metálica con conexiones precalificadas AISC 358 para tu cubierta, nave o edificio"
 datePublished: 2026-09-22
-dateModified: 2026-10-16
-cuando_titulo: "Seis casos en los que tu cubierta, nave o carport necesita diseño metálico"
+dateModified: 2026-10-27
+cuando_titulo: "Seis casos en los que tu cubierta, nave o edificio necesita diseño metálico"
 cuando:
   - "Necesitas una cubierta metálica para un colegio, un coliseo, una bodega o un parqueadero y la curaduría pide memorias firmadas"
   - "Vas a instalar paneles solares sobre un carport o una cubierta y el proveedor de energía exige el diseño estructural del soporte"
@@ -64,7 +64,7 @@ proyectos_titulo: "Carports fotovoltaicos, el Hotel Aldea en Puerto Triunfo y di
 proyectos: [carports-fotovoltaicos, hotel-aldea-puerto-triunfo, infraestructura-deportiva-betulia]
 relacionados: [diseno-estructural, cimentaciones, supervision-tecnica-independiente, revision-independiente-de-disenos]
 normativa: [titulo-f, titulo-b, titulo-a, nsr-10]
-faqs_titulo: "Preguntas sobre estructuras metálicas, NSR-10 Título F y carports solares"
+faqs_titulo: "Preguntas sobre estructuras metálicas, NSR-10 Título F y estructuras para paneles solares"
 faqs:
   - question: "¿Qué exige la NSR-10 para estructuras metálicas?"
     answer: "El Título F de la NSR-10 regula el diseño de estructuras de acero: perfiles laminados, armados y de lámina delgada, conexiones, estabilidad y requisitos sísmicos. Remite a los estándares AISC 360 (diseño) y AISC 341 (provisiones sísmicas). En zonas de amenaza intermedia y alta, las conexiones de los pórticos resistentes a momento deben ser precalificadas o ensayadas."
@@ -88,7 +88,7 @@ Una **estructura metálica** bien diseñada pesa lo justo. Cada kilo de acero qu
 
 El acero se comporta distinto del concreto: es más liviano, más rápido de montar y más sensible a la estabilidad, a la fatiga y a la corrosión. Por eso las cubiertas, cerchas, naves, mezanines y carports no se resuelven con una tabla de perfiles: se calculan para el viento del sitio, el sismo del municipio y la carga real que van a recibir.
 
-## Cubiertas, cerchas, naves y carports: qué diseñamos
+## Cubiertas, cerchas, naves, mezanines y edificios en acero: qué diseñamos
 
 | Tipo de estructura | Casos típicos | Lo que más pesa en el diseño |
 |---|---|---|
@@ -96,9 +96,13 @@ El acero se comporta distinto del concreto: es más liviano, más rápido de mon
 | Carports y cubiertas fotovoltaicas | Parqueaderos con paneles solares, centros comerciales, terminales | Succión del viento sobre módulos, sismo, conexiones precalificadas |
 | Naves y galpones industriales | Plantas, bodegas logísticas, talleres | Puentes grúa, arriostramientos, estabilidad de pórticos |
 | Mezanines y entrepisos metálicos | Ampliaciones comerciales e industriales | Vibraciones, cargas vivas de bodega, anclaje a estructura existente |
-| Estructuras mixtas | Edificaciones con columnas de acero y losas de concreto | Interacción, conectores de cortante, sismo |
+| Edificios y estructuras mixtas | Edificaciones con columnas de acero y losas de concreto | Interacción, conectores de cortante, sismo |
 
-En estructuras fotovoltaicas llevamos {{ site.cifras.m2_fotovoltaico }} m² diseñados, entre ellos un carport de 1.366 m² en un centro comercial y otro de 715 m² en una terminal de transporte, ambos en estructura metálica con conexiones precalificadas. En el Hotel Aldea, en Puerto Triunfo, la optimización de la estructura metálica y de las cimentaciones fue parte del diseño integral de más de 5.000 m².
+En el Hotel Aldea, en Puerto Triunfo, la optimización de la estructura metálica y de las cimentaciones fue parte del diseño integral de más de 5.000 m².
+
+## Estructuras para paneles solares y carports: {{ site.cifras.m2_fotovoltaico }} m² con conexiones precalificadas
+
+En estructuras fotovoltaicas llevamos {{ site.cifras.m2_fotovoltaico }} m² diseñados, entre ellos un carport de 1.366 m² en un centro comercial y otro de 715 m² en una terminal de transporte, ambos en estructura metálica con conexiones precalificadas.
 
 ## Cómo diseñamos una estructura metálica conforme a NSR-10
 
@@ -118,6 +122,6 @@ En estructuras fotovoltaicas llevamos {{ site.cifras.m2_fotovoltaico }} m² dise
 
 ## Corrosión, fuego y mantenimiento: lo que el diseño debe prever
 
-El acero no se agrieta como el concreto, pero se oxida. En el clima húmedo de Antioquia y en ambientes industriales, la protección contra la corrosión no es un acabado sino una decisión de diseño: el sistema de pintura o el galvanizado se especifican según la categoría de exposición, y los detalles se dibujan para que el agua no se estanque en uniones ni en perfiles cerrados. Especificamos también el drenaje de cubiertas y canales, que es donde más falla una estructura liviana con el tiempo.
+El acero no se agrieta como el concreto, pero se oxida. En climas húmedos, costeros e industriales, la protección contra la corrosión no es un acabado sino una decisión de diseño: el sistema de pintura o el galvanizado se especifican según la categoría de exposición, y los detalles se dibujan para que el agua no se estanque en uniones ni en perfiles cerrados. Especificamos también el drenaje de cubiertas y canales, que es donde más falla una estructura liviana con el tiempo.
 
 Cuando la edificación lo exige, el Título J de la NSR-10 pide una resistencia al fuego para la estructura; en naves y mezanines comerciales eso se traduce en pinturas intumescentes o recubrimientos que hay que prever desde el cálculo, porque cambian el peso y el costo. Un diseño que lo omite se descubre en la inspección de bomberos, no en la curaduría.

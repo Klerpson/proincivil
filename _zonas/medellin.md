@@ -38,6 +38,13 @@ audiencias:
   - { rol: "Promotores y constructoras", texto: "Diseño e interventoría de torres con cronogramas de obra exigentes." }
   - { rol: "Administradores de P.H.", texto: "Conceptos técnicos para edificios en toda la ciudad." }
   - { rol: "Arquitectos", texto: "Un estructural que conoce lo que revisa cada curaduría de Medellín." }
+cuando_titulo: "Cuándo llamar a un ingeniero estructural en Medellín"
+entregables_titulo: "Entregables para proyectos en Medellín"
+proyectos_titulo: "Proyectos de PROINCIVIL en Medellín"
+audiencias_titulo: "Para quién trabajamos en Medellín"
+faqs_titulo: "Preguntas sobre proyectos en Medellín"
+relacionados_titulo: "Servicios para proyectos en Medellín"
+normativa_titulo: "Normas que aplicamos en Medellín"
 proyectos: [hotel-the-one-laureles]
 relacionados: [diseno-estructural, interventoria-de-disenos, revision-independiente-de-disenos, evaluacion-post-sismo, curadurias-y-licencias]
 normativa: [nsr-10, titulo-a, ley-1796-de-2016, licencia-de-construccion-colombia]

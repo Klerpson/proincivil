@@ -1,0 +1,19 @@
+{%- comment -%}
+  Única fuente de la URL de WhatsApp: deja en `_wa_href` el enlace con número y mensaje prellenado.
+  No imprime nada; lo usan button.html y sticky-cta-mobile.html. Nunca escribir wa.me a mano.
+  Parámetros: numero (por defecto site.contact.whatsapp), mensaje. Sin mensaje, sale de
+  page.wa_mensaje o se deriva del H1 de la página.
+{%- endcomment -%}
+{%- assign _wa_num = include.numero | default: site.contact.whatsapp -%}
+{%- if include.mensaje -%}
+  {%- assign _wa_msg = include.mensaje -%}
+{%- elsif page.wa_mensaje -%}
+  {%- assign _wa_msg = page.wa_mensaje -%}
+{%- elsif page.url == "/" -%}
+  {%- assign _wa_msg = "Hola, PROINCIVIL. Vi el sitio web y quiero conversar sobre un proyecto de ingeniería estructural." -%}
+{%- else -%}
+  {%- assign _wa_tema = page.h1 | default: page.title | strip_html | strip -%}
+  {%- assign _wa_msg = "Hola, PROINCIVIL. Vi la página «" | append: _wa_tema | append: "» y quiero conversar sobre mi proyecto." -%}
+{%- endif -%}
+{%- assign _wa_txt = _wa_msg | url_encode -%}
+{%- assign _wa_href = "https://wa.me/" | append: _wa_num | append: "?text=" | append: _wa_txt -%}

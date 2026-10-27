@@ -1,11 +1,11 @@
 ---
 titulo_corto: "Vulnerabilidad sísmica"
-orden: 4
+orden: 8
 grupo: evaluacion
 title: "Estudio de vulnerabilidad sísmica NSR-10 A.10 | PROINCIVIL"
 description: "Estudio de vulnerabilidad sísmica conforme al Título A.10 de la NSR-10 para edificios, propiedad horizontal y colegios. Descubre si resiste el sismo de diseño."
 h1: "Estudio de vulnerabilidad sísmica de edificaciones existentes"
-eyebrow: "Servicio · Evaluación"
+eyebrow: "Servicio · Patología y diagnóstico"
 excerpt: "Saber si tu edificación resistiría el sismo de diseño antes de que ocurra, con un estudio conforme al Título A.10 de la NSR-10 y un plan de reforzamiento con prioridades."
 hero: "institucion-educativa"
 hero_alt: "Institución educativa de dos niveles diseñada por PROINCIVIL"
@@ -62,7 +62,7 @@ audiencias:
   - { rol: "Inversionistas y promotores", texto: "Saber qué compras antes de reconvertir o ampliar un edificio existente." }
 proyectos_titulo: "Seis torres en Dosquebradas y una alianza en Barranquilla, Pereira y Bogotá"
 proyectos: [tacuara-club-residencial, artico-arquitectura]
-relacionados: [evaluacion-estructural, reforzamiento-estructural, evaluacion-post-sismo, revision-independiente-de-disenos]
+relacionados: [evaluacion-estructural, reforzamiento-estructural, evaluacion-post-sismo, analisis-de-verticalidad]
 normativa: [titulo-a, ley-400-de-1997, nsr-10, titulo-c]
 faqs_titulo: "Preguntas sobre el estudio de vulnerabilidad sísmica y el Título A.10"
 faqs:
@@ -82,11 +82,11 @@ faqs:
     answer: "No. Diseñamos el reforzamiento y supervisamos su ejecución si lo necesitas; la obra la realiza el constructor que elijas. No ejecutamos obra."
 ---
 
-## Qué es la vulnerabilidad sísmica y por qué importa en Antioquia
+## Qué es la vulnerabilidad sísmica y por qué importa en Colombia
 
 La **vulnerabilidad sísmica** de una edificación es su propensión a sufrir daño ante un sismo dado. No depende del sismo, que es la amenaza, sino de cómo fue diseñada y construida: el sistema estructural, el detallado del refuerzo, las irregularidades, la calidad de los materiales y las modificaciones que ha sufrido. Dos edificios vecinos, con la misma amenaza, pueden tener vulnerabilidades muy distintas.
 
-La edad de una edificación o la ausencia de fisuras no permiten concluir cómo responderá ante un sismo. El estudio necesita conocer su sistema resistente, las propiedades de sus materiales, el suelo y las modificaciones realizadas. Con esa información se define el análisis que corresponde a la edificación y a su uso.
+La edad de una edificación o la ausencia de fisuras no permiten concluir cómo responderá ante un sismo. El estudio necesita conocer su sistema resistente, las propiedades de sus materiales, el suelo, las modificaciones realizadas y, en torres existentes, su geometría real, que se mide con un [análisis de verticalidad]({{ site.baseurl }}/servicios/analisis-de-verticalidad/). Con esa información se define el análisis que corresponde a la edificación y a su uso.
 
 ## El estudio de vulnerabilidad según el Título A.10 de la NSR-10
 

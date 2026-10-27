@@ -11,10 +11,10 @@ except ImportError:
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ESPERADOS = {
-    "servicios": ["diseno-estructural","estructuras-metalicas","evaluacion-estructural","vulnerabilidad-sismica","evaluacion-post-sismo","reforzamiento-estructural","geotecnia-estudio-de-suelos","cimentaciones","muros-de-contencion-y-taludes","interventoria-de-disenos","revision-independiente-de-disenos","supervision-tecnica-independiente","curadurias-y-licencias","bim-y-topografia"],
+    "servicios": ["diseno-estructural","estructuras-metalicas","evaluacion-estructural","vulnerabilidad-sismica","evaluacion-post-sismo","reforzamiento-estructural","geotecnia-estudio-de-suelos","cimentaciones","muros-de-contencion-y-taludes","interventoria-de-disenos","revision-independiente-de-disenos","supervision-tecnica-independiente","curadurias-y-licencias","diseno-de-vias-y-pavimentos","refraccion-sismica","levantamiento-topografico","analisis-de-verticalidad"],
     "cuanto-cuesta": ["diseno-estructural","estudio-de-suelos","evaluacion-estructural","interventoria"],
     "edificaciones": ["propiedad-horizontal","instituciones-educativas","hoteles","carports-y-cubiertas-fotovoltaicas","bodegas-y-naves-industriales","vivienda-1-y-2-pisos","sedes-comerciales-y-retail"],
-    "zonas": ["envigado","medellin","area-metropolitana","oriente-antioqueno","antioquia","colombia"],
+    "zonas": ["envigado","medellin","area-metropolitana","oriente-antioqueno","antioquia","colombia","pereira"],
     "normativa": ["nsr-10","titulo-a","titulo-b","titulo-c","titulo-e","titulo-f","titulo-h","titulo-i","ley-400-de-1997","ley-1796-de-2016","licencia-de-construccion-colombia"],
     "proyectos": ["tacuara-club-residencial","ie-pavarando-grande-mutata","ie-puerto-perales","ie-yerbal-y-educacion-publica","hotel-aldea-puerto-triunfo","hotel-the-one-laureles","carports-fotovoltaicos","super-motos-honda","infraestructura-deportiva-betulia","artico-arquitectura"],
 }
@@ -94,7 +94,7 @@ for p in sorted(archivos):
             pass
         palabras = len(re.findall(r"\w+", body))
         minimo = 250 if col == "proyectos" else 350
-        if col in ("servicios","edificaciones","zonas","cuanto-cuesta","normativa","proyectos","posts") and palabras < minimo:
+        if col in ("servicios","edificaciones","zonas","cuanto-cuesta","normativa","proyectos","posts") and palabras < minimo and fm.get("layout") != "zona":
             e(f"cuerpo corto ({palabras} palabras)")
     if fm.get("resumen") and not 30 <= len(str(fm["resumen"]).split()) <= 80:
         e(f"resumen de {len(str(fm['resumen']).split())} palabras (ideal 40-60)")

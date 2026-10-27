@@ -116,7 +116,7 @@
   }
   .barra__marco { display: flex; align-items: center; justify-content: space-between; gap: 1rem; block-size: var(--barra-alto); }
   .barra__logo img { inline-size: auto; block-size: 3.25rem; }
-  .barra .boton { white-space: nowrap; }
+  .barra .boton { white-space: nowrap; min-block-size: 2.5rem; padding: 0.5rem 1rem; }
 
   .menu {
     position: sticky; inset-block-start: var(--barra-alto); z-index: 40;
@@ -147,6 +147,10 @@
   .menu__panel a { text-decoration: none; font-size: 0.9375rem; }
   .menu__panel a:hover, .menu__panel a[aria-current="page"] { text-decoration: underline; }
   .menu__panel > .enlace-flecha { grid-column: 1 / -1; justify-self: start; }
+  /* Grupos de alturas desiguales: columnas que se llenan por altura, sin celdas vacías. */
+  .menu__panel--columnas { display: block; columns: 4 13rem; column-gap: 2rem; }
+  .menu__panel--columnas > .menu__grupo { break-inside: avoid; margin-block-end: 1.5rem; }
+  .menu__panel--columnas > .enlace-flecha { display: flex; inline-size: fit-content; column-span: all; margin-block-start: 1rem; }
   .menu__grupo-titulo {
     margin-block-end: 0.5rem; font-family: var(--fuente-mono); font-size: 0.6875rem;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--tinta-suave);

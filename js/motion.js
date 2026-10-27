@@ -110,6 +110,34 @@
   });
 })();
 
+/* Mapa de cobertura: la ciudad bajo el puntero, con foco o (en escritorio) en el centro de la pantalla
+   se enciende en el plano. Sin JS la lista y el plano se ven completos. */
+(function () {
+  var mapas = document.querySelectorAll('.mapa:not(.mapa--mini)');
+  if (!mapas.length) return;
+  var escritorio = window.matchMedia('(min-width: 60em)');
+  mapas.forEach(function (mapa) {
+    var ciudades = mapa.querySelectorAll('.mapa__ciudad');
+    var puntos = mapa.querySelectorAll('.mapa__punto');
+    function activar(n) {
+      ciudades.forEach(function (c) { c.classList.toggle('mapa__ciudad--activa', c.getAttribute('data-ciudad') === n); });
+      puntos.forEach(function (p) { p.classList.toggle('mapa__punto--activo', p.getAttribute('data-ciudad') === n); });
+    }
+    activar('1');
+    ciudades.forEach(function (c) {
+      var n = c.getAttribute('data-ciudad');
+      c.addEventListener('pointerenter', function () { activar(n); });
+      c.addEventListener('focusin', function () { activar(n); });
+    });
+    if (!('IntersectionObserver' in window) || !escritorio.matches) return;
+    mapa.classList.add('mapa--vivo');
+    var observador = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) { if (e.isIntersecting) activar(e.target.getAttribute('data-ciudad')); });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    ciudades.forEach(function (c) { observador.observe(c); });
+  });
+})();
+
 /* Casos: en cada escena .casos marca el caso que ocupa el centro de la pantalla y muestra su foto en
    el panel fijo. */
 (function () {

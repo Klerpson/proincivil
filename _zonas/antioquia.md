@@ -39,6 +39,13 @@ audiencias:
   - { rol: "Alcaldías y gobernación", texto: "Infraestructura educativa y deportiva con soporte normativo y documental completo." }
   - { rol: "Promotores turísticos", texto: "Hoteles y condominios en el Magdalena Medio, el suroeste y Urabá." }
   - { rol: "Consorcios y constructoras", texto: "Componente estructural y geotécnico para licitaciones departamentales." }
+cuando_titulo: "Cuándo llamar a un ingeniero estructural en Antioquia"
+entregables_titulo: "Entregables para proyectos en Antioquia"
+proyectos_titulo: "Proyectos de PROINCIVIL en Antioquia"
+audiencias_titulo: "Para quién trabajamos en Antioquia"
+faqs_titulo: "Preguntas sobre proyectos en Antioquia"
+relacionados_titulo: "Servicios para proyectos en Antioquia"
+normativa_titulo: "Normas que aplicamos en Antioquia"
 proyectos: [ie-pavarando-grande-mutata, hotel-aldea-puerto-triunfo, infraestructura-deportiva-betulia, ie-puerto-perales, ie-yerbal-y-educacion-publica]
 relacionados: [diseno-estructural, geotecnia-estudio-de-suelos, cimentaciones, interventoria-de-disenos, supervision-tecnica-independiente]
 normativa: [nsr-10, titulo-a, titulo-h, ley-1796-de-2016]

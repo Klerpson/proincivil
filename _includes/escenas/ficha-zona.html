@@ -1,0 +1,34 @@
+{%- comment -%}
+  Escena: ficha técnica de una zona, como el cajetín de un plano. A la izquierda el ubicador (mapa
+  mini con la zona resaltada); a la derecha los datos que cambian el diseño en esa ciudad.
+  Parámetros: ficha (rotulo, titulo, items[{etiqueta, valor, nota, fuente, url}], boton{pregunta,
+  texto, mensaje, variante}), activa (slug de la zona).
+  Cada dato lleva su fuente en el HTML; los que no tienen fuente verificable no se publican.
+{%- endcomment -%}
+{%- assign f = include.ficha -%}
+<section class="seccion seccion--plano ficha-zona" id="ficha">
+  <div class="marco flujo">
+    <div class="encabezado">
+      <p class="rotulo">{{ f.rotulo | default: "Ficha técnica" }}</p>
+      <h2 class="encabezado__titulo">{{ f.titulo }}</h2>
+    </div>
+    <div class="ficha-zona__rejilla">
+      {% include escenas/mapa.html modo="mini" activa=include.activa %}
+      <dl class="datos datos--cajetin">
+        {%- for d in f.items %}
+        <div class="datos__item">
+          <dt>{{ d.etiqueta }}</dt>
+          <dd class="datos__valor">{{ d.valor }}</dd>
+          <dd class="datos__nota">{{ d.nota }}{% if d.fuente %} · {% if d.url %}<a href="{{ d.url }}" rel="noopener">{{ d.fuente }}</a>{% else %}{{ d.fuente }}{% endif %}{% endif %}</dd>
+        </div>
+        {%- endfor %}
+      </dl>
+    </div>
+    {%- if f.boton %}
+    <div class="acciones">
+      {%- if f.boton.pregunta %}<p><strong>{{ f.boton.pregunta }}</strong></p>{% endif %}
+      {% include button.html texto=f.boton.texto mensaje=f.boton.mensaje variante=f.boton.variante data_location="ficha" %}
+    </div>
+    {%- endif %}
+  </div>
+</section>

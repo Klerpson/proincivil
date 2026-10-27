@@ -31,7 +31,7 @@ caso:
   situacion: "Conjunto de 6 torres y más de 780 apartamentos afectado por un sismo. La administración necesitaba soporte técnico para pedir el anticipo a la aseguradora."
   hicimos: "Patología estructural con pruebas de núcleo, esclerometría, regatas, exploración geotécnica, verticalidad de las torres y levantamiento con dron."
   logro: "Diagnóstico completo para la gestión ante la aseguradora. El estudio de vulnerabilidad sísmica para el plan de repotenciación está en curso."
-servicios: [evaluacion-post-sismo, evaluacion-estructural, vulnerabilidad-sismica]
+servicios: [evaluacion-post-sismo, evaluacion-estructural, vulnerabilidad-sismica, analisis-de-verticalidad]
 edificacion: propiedad-horizontal
 zona: colombia
 datePublished: 2026-09-22

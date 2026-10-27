@@ -1,11 +1,11 @@
 ---
-titulo_corto: "Evaluación después de un sismo"
-orden: 5
+titulo_corto: "Evaluación post-sismo"
+orden: 7
 grupo: evaluacion
-title: "Evaluación estructural después de un sismo (ATC-20) | Medellín"
-description: "Evaluación estructural post-sismo con metodología ATC-20 para propiedad horizontal, colegios y hoteles en Medellín y Antioquia. Soporte técnico ante aseguradoras."
-h1: "¿Hubo un sismo? Evaluación estructural de tu edificación"
-eyebrow: "Servicio · Evaluación"
+title: "Evaluación post-sismo de edificaciones (ATC-20) en Colombia | PROINCIVIL"
+description: "Evaluación post-sismo con metodología ATC-20 para propiedad horizontal, colegios y hoteles en Colombia: concepto de seguridad e informe técnico para la aseguradora."
+h1: "Evaluación post-sismo: ¿tu edificación puede seguir ocupándose?"
+eyebrow: "Servicio · Patología y diagnóstico"
 excerpt: "Inspección de seguridad con metodología ATC-20 para saber si tu edificio puede seguir ocupándose, y un informe con respaldo normativo para la gestión ante la aseguradora."
 hero: "hero-estructura"
 hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
@@ -25,7 +25,7 @@ zoom:
   textura: "concreto"
   titulo: "Después de un sismo, un diagnóstico con ensayos y respaldo normativo para tu aseguradora"
 datePublished: 2026-09-22
-dateModified: 2026-09-22
+dateModified: 2026-10-27
 cuando_titulo: "Seis situaciones en las que necesitas una evaluación estructural post-sismo"
 cuando:
   - "Acaba de ocurrir un sismo y aparecieron fisuras, desprendimientos o deformaciones en tu edificio"
@@ -63,9 +63,9 @@ audiencias:
   - { rol: "Alcaldías y entidades públicas", texto: "Inspección de edificaciones indispensables y de atención a la comunidad tras el evento." }
 proyectos_titulo: "Tacuara Club Residencial en Dosquebradas: seis torres diagnosticadas tras un sismo"
 proyectos: [tacuara-club-residencial]
-relacionados: [evaluacion-estructural, vulnerabilidad-sismica, reforzamiento-estructural]
+relacionados: [evaluacion-estructural, vulnerabilidad-sismica, analisis-de-verticalidad, reforzamiento-estructural]
 normativa: [titulo-a, nsr-10, ley-400-de-1997]
-faqs_titulo: "Preguntas sobre la evaluación estructural después de un sismo"
+faqs_titulo: "Preguntas sobre la evaluación post-sismo y qué hacer después de un sismo"
 faqs:
   - question: "¿Qué hacer después de un sismo en mi edificio?"
     answer: "Primero, revisar de forma visual si hay grietas diagonales en columnas o muros, losas descolgadas, elementos desprendidos o puertas y ventanas que dejaron de cerrar. Si hay alguna de esas señales, restringir el acceso a la zona y pedir una inspección profesional. Si no hay daños visibles, documentar el estado con fotos y programar una evaluación para descartar daño oculto."
@@ -83,11 +83,11 @@ faqs:
     answer: "No. Diseñamos la reparación o el reforzamiento y supervisamos su ejecución si lo necesitas; la obra la realiza el constructor que elijas. No ejecutamos obra, y por eso nuestro informe de daños es independiente."
 ---
 
-## Evaluación estructural post-sismo en Medellín: ocupar, restringir o evacuar
+## Evaluación post-sismo en Colombia: ocupar, restringir o evacuar
 
 La **evaluación post-sismo** es la inspección técnica que se hace a una edificación después de un evento sísmico para decidir si puede seguir ocupándose. No es una reparación ni un estudio completo: es una clasificación rápida y fundamentada de la seguridad, seguida de un informe de daños que ordena lo que hay que hacer después.
 
-En Medellín y el Área Metropolitana los sismos sentidos son frecuentes, y cada uno deja miles de propietarios mirando fisuras nuevas. Las búsquedas de ingeniero estructural en la ciudad se multiplican en los días siguientes a un evento. El problema es que las decisiones se toman con miedo o con negación: se evacúan torres que estaban bien o se sigue viviendo en estructuras dañadas. La metodología ATC-20 existe para reemplazar esas dos reacciones por un criterio.
+En Colombia los sismos sentidos son frecuentes, y cada uno deja miles de propietarios mirando fisuras nuevas. Tras el sismo de 7,4 Mw del 10 de agosto de 2026, con epicentro en San José del Palmar (Chocó) según el Servicio Geológico Colombiano, las búsquedas de «ingenieros estructurales» en el país pasaron de 30 a 390 en un mes (Ubersuggest, Colombia). El problema es que las decisiones se toman con miedo o con negación: se evacúan torres que estaban bien o se sigue viviendo en estructuras dañadas. La metodología ATC-20 existe para reemplazar esas dos reacciones por un criterio.
 
 ## Inspección ATC-20 en tres fases: rápida, detallada y de ingeniería
 
@@ -107,7 +107,7 @@ Nuestro informe separa los dos con claridad, localiza cada lesión en planos y p
 
 ## El caso Tacuara: 6 torres, más de 780 apartamentos y la solicitud de anticipo ante la aseguradora
 
-El conjunto Tacuara Club Residencial P.H., en Dosquebradas (Risaralda), quedó afectado por un sismo y su administración necesitaba un diagnóstico técnico riguroso para respaldar la solicitud de anticipo ante la aseguradora. Hicimos patología estructural con pruebas de núcleo, esclerometría, regatas, exploración geotécnica, verificación de verticalidad de las torres y levantamiento con dron. El diagnóstico patológico quedó completo y con respaldo suficiente para la gestión ante la aseguradora; el estudio de vulnerabilidad sísmica que servirá de base para la repotenciación está en curso. [Ver la ficha del proyecto]({{ site.baseurl }}/proyectos/tacuara-club-residencial/).
+El conjunto Tacuara Club Residencial P.H., en Dosquebradas (Risaralda), quedó afectado por un sismo y su administración necesitaba un diagnóstico técnico riguroso para respaldar la solicitud de anticipo ante la aseguradora. Hicimos patología estructural con pruebas de núcleo, esclerometría, regatas, exploración geotécnica, [verificación de verticalidad de las torres]({{ site.baseurl }}/servicios/analisis-de-verticalidad/) y levantamiento con dron. El diagnóstico patológico quedó completo y con respaldo suficiente para la gestión ante la aseguradora; el estudio de vulnerabilidad sísmica que servirá de base para la repotenciación está en curso. [Ver la ficha del proyecto]({{ site.baseurl }}/proyectos/tacuara-club-residencial/).
 
 ## Qué hacer después de un sismo mientras llega la inspección: cinco medidas
 

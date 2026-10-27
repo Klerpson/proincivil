@@ -42,6 +42,13 @@ audiencias:
   - { rol: "Constructoras de vivienda", texto: "Diseños para los municipios del sur y del norte con sus requisitos locales." }
   - { rol: "Empresas industriales", texto: "Bodegas, naves y verificación de estructuras en Itagüí, Sabaneta y La Estrella." }
   - { rol: "Administradores de P.H.", texto: "Evaluación de conjuntos en todo el valle." }
+cuando_titulo: "Cuándo llamar a un ingeniero estructural en el Área Metropolitana"
+entregables_titulo: "Entregables para proyectos en el Área Metropolitana"
+proyectos_titulo: "Proyectos de PROINCIVIL en el Área Metropolitana"
+audiencias_titulo: "Para quién trabajamos en el Área Metropolitana"
+faqs_titulo: "Preguntas sobre proyectos en el Área Metropolitana"
+relacionados_titulo: "Servicios para proyectos en el Área Metropolitana"
+normativa_titulo: "Normas que aplicamos en el Área Metropolitana"
 proyectos: []
 relacionados: [diseno-estructural, geotecnia-estudio-de-suelos, estructuras-metalicas, evaluacion-estructural, curadurias-y-licencias]
 normativa: [nsr-10, titulo-a, titulo-h, licencia-de-construccion-colombia]
