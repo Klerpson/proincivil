@@ -7,8 +7,8 @@
 # bloquea el rastreo. AL PASAR A PRODUCCIÓN: poner `vista_previa: false`, cambiar `url` a
 # https://www.proincivil.com, dejar `baseurl` vacío y restaurar el archivo CNAME.
 vista_previa: true
-url: "https://klerpson.github.io"
-baseurl: "/proincivil"
+url: "https://www.proincivil.com"
+baseurl: ""
 
 # Secciones que se publican hoy. Las demás quedan escritas en el repositorio pero fuera del
 # sitio (contenido de la fase SEO). La navegación, el pie y los CTA se filtran con esta lista:
