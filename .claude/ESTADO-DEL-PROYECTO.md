@@ -1,6 +1,6 @@
 # Estado del proyecto — PROINCIVIL
 
-**Última actualización:** 2026-10-27
+**Última actualización:** 2026-10-28
 
 ## Iniciativas activas
 
@@ -79,6 +79,15 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Editadas: post-sismo (H1, title y menú con «post-sismo»; dato del sismo del 10-08-2026 y salto de búsquedas de 30 a 390), estructuras metálicas (sin carports en H1/title, H2 propio de estructuras para paneles solares), diseño estructural (H2 de concreto y acero, «ingeniero calculista», BIM, amenaza sísmica por ciudad según el Apéndice A-4), geotecnia (título «Geotecnia (estudio de suelos)», enlaces a línea sísmica, vías y cimentaciones), vulnerabilidad, curadurías y descriptions de evaluación, reforzamiento, interventoría y STI sin «Medellín/Antioquia». `orden` renumerado del 1 al 17; slugs en `lint-frontmatter.py`; servicios de Hotel Aldea, IE Yerbal y Tacuara actualizados.
 - Cobertura: home «Ingenieros estructurales en Colombia que optimizan sin comprometer», title «Ingenieros estructurales en Colombia y Perú», eyebrow «Desde 2019 · Sede en Envigado · Colombia y Perú»; `_config.yml` (description, `site_meta`, `fundacion` confirmada), nosotros, equipo, contacto, hub de servicios, eyebrow por defecto de `header.html`, `manifest.json`, `llms.txt`, `knowsAbout` del schema. Envigado queda como sede (NAP). Patrón para las zonas (otro chat): H1 «Ingenieros estructurales en [ciudad]».
 - Verificado: lint 71/0, build 50 páginas, `validar-site.py` 0 problemas, redirect de BIM correcto, 0 `style=` en el HTML servido, sin desborde a 390 y 320 px en 14 páginas, 1 H1 por página, contador de paneles «05», 0 carports y 0 BIM en el menú. `auditoria.py`: CSS crítico 5.039 B gzip (presupuesto 5.120); los avisos de wa.me y clases sin uso ya existían. `revisor-geo` aplicado en las 4 páginas nuevas, solo en lo verificable: vías cita la Resolución 4401 de 2017 (guía de placa huella del INVÍAS) y el Manual de diseño geométrico 2008, con H2 nuevo de vías terciarias; topografía cita la Resolución 462 de 2017 (MAGNA-SIRGAS) y la Ley 70 de 1979, y quita los equipos sin confirmar; refracción corrige la tabla A.2.4-1 (signos y arcilla blanda en E), el procedimiento A.2.4.5, el alcance de ASTM D5777-18 (solo ondas P) y añade la microzonificación; verticalidad cita la tolerancia de ACI 117-10 como referencia de construcción. Borradas del cuerpo las cifras de Ubersuggest. Seis verificaciones técnicas añadidas a los pendientes (13 a 18). Build final: lint 71/0, 50 páginas, 0 problemas. Sin commit.
+
+### 2026-10-28 — Acceso a las zonas desde todo el sitio
+**Contexto:** el usuario preguntó por dónde se llega a las zonas (solo estaban en el submenú Nosotros y en el pie).
+- Menú: «Zonas» pasa a primer nivel (entre Proyectos y Nosotros) con submenú Antioquia (5) / Resto del país (2) y «Mapa de proyectos y zonas»; se quitó de Nosotros. El pie sigue igual.
+- Home: escena `mapa` (id `mapa-proyectos`) después del equipo + banda «Ver las 7 zonas donde trabajamos».
+- Fichas de proyecto: enlace «Ingeniería estructural en {lugar}: amenaza sísmica, suelos y curadurías» según `zona:`. Tacuara pasa de `zona: colombia` a `zona: pereira`.
+- Servicios: bloque «Por ciudad» (`#por-ciudad`) generado con las zonas que listan el servicio en `relacionados`; anclas «Diseño estructural en el Área Metropolitana». Nuevo campo `lugar` en cada zona (forma dentro de una frase). 13 servicios lo muestran.
+- Resultado: cada zona recibe enlaces de 48 páginas. Lint 71/0, build 50 páginas/0 problemas, 390/320 px sin desborde. Sin commit.
+- Pendiente: solo Pereira usa el layout `zona` con ficha, protocolo y mapa; las otras 6 siguen en el layout de servicio, de usted y sin datos con fuente.
 
 ### 2026-10-27 (noche) — Más puntos de WhatsApp y botón verde en la barra
 **Contexto:** el usuario solo veía el botón del hero y pidió el CTA de la barra en el mismo verde del principal.

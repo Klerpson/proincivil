@@ -1,85 +1,113 @@
 ---
+layout: zona
 titulo_corto: "Envigado"
+lugar: "Envigado"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 1
 title: "Ingeniería estructural en Envigado: diseño, evaluación y curadurías"
 description: "Ingenieros estructurales con sede en Envigado: diseño sismorresistente NSR-10, estudios de suelos en ladera y trámite ante las curadurías Primera y Segunda de Envigado."
-h1: "Ingeniería estructural en Envigado: nuestra sede y nuestro terreno"
-eyebrow: "Zonas · Envigado"
-excerpt: "PROINCIVIL tiene su sede en Envigado. Conocemos las laderas del municipio, los requisitos de sus dos curadurías y los suelos que cambian de una manzana a otra entre El Poblado y Loma del Escobero."
+h1: "Ingeniería estructural en Envigado: lotes en ladera, curadurías y visitas desde nuestra sede"
+eyebrow: "Zonas · Envigado, nuestra sede"
+excerpt: "Nuestra sede está en Envigado. Resolvemos suelo, contención y estructura de un lote en ladera en un solo diseño, y lo acompañamos en la curaduría Primera o Segunda."
 hero: "fachada-ancha"
 hero_alt: "Fachada de concreto reforzado de una edificación multinivel"
 image: "/img/fotos/fachada-ancha-1100.jpg"
 badges:
-  - "Sede en Envigado, Antioquia"
-  - "Curadurías Primera y Segunda de Envigado"
-  - "Amenaza sísmica intermedia · suelos de ladera"
+  - "Sede en Envigado"
+  - "Curadurías Primera y Segunda"
   - "No ejecutamos obra"
 cta_texto: "Consultar por mi proyecto en Envigado"
 serviceType: "Ingeniería estructural y geotecnia en Envigado"
 categoria: "Zonas de cobertura"
 area_servida:
   - { "@type": "City", "name": "Envigado" }
-resumen: "Envigado está en zona de amenaza sísmica intermedia según la NSR-10 y buena parte de sus lotes urbanizables están en ladera, sobre depósitos de vertiente y suelos residuales. PROINCIVIL, con sede en el municipio, diseña, evalúa y acompaña proyectos ante las curadurías Primera y Segunda de Envigado con visitas técnicas cercanas."
+resumen: "Envigado está en zona de amenaza sísmica intermedia según la NSR-10 y buena parte de sus lotes urbanizables están en ladera. PROINCIVIL tiene su sede en el municipio: diseña suelo, contención y estructura de forma coordinada, acompaña los proyectos ante las curadurías Primera y Segunda de Envigado y hace visitas técnicas con desplazamientos cortos."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
-cuando:
-  - "Vas a construir en un lote de ladera y necesitas estudio de suelos, muros de contención y diseño estructural coherentes"
-  - "La Curaduría Primera o Segunda de Envigado devolvió tu proyecto con observaciones estructurales o geotécnicas"
-  - "Administras un conjunto en Envigado con fisuras o que sufrió un sismo reciente"
-  - "Quieres ampliar un segundo piso o cambiar el uso de una edificación existente"
-  - "Necesitas un ingeniero estructural que pueda visitar la obra o el predio con rapidez"
-entregables:
-  - "Diseño estructural y geotécnico coordinado para lotes de ladera"
-  - "Documentación en el formato que exigen las curadurías de Envigado"
-  - "Conceptos técnicos para propiedad horizontal y aseguradoras"
-  - "Visitas técnicas y supervisión con desplazamiento inmediato"
-audiencias:
-  - { rol: "Arquitectos y constructores de Envigado", texto: "Un aliado estructural a minutos de la obra y de la curaduría." }
-  - { rol: "Administradores de P.H.", texto: "Evaluación de fisuras y post-sismo en conjuntos del municipio." }
-  - { rol: "Propietarios de lotes en ladera", texto: "Suelos, contención y estructura resueltos por un mismo equipo." }
-cuando_titulo: "Cuándo llamar a un ingeniero estructural en Envigado"
-entregables_titulo: "Entregables para proyectos en Envigado"
-proyectos_titulo: "Proyectos de PROINCIVIL en Envigado"
-audiencias_titulo: "Para quién trabajamos en Envigado"
-faqs_titulo: "Preguntas sobre proyectos en Envigado"
-relacionados_titulo: "Servicios para proyectos en Envigado"
-normativa_titulo: "Normas que aplicamos en Envigado"
-proyectos: []
-relacionados: [diseno-estructural, geotecnia-estudio-de-suelos, muros-de-contencion-y-taludes, curadurias-y-licencias, evaluacion-estructural]
-normativa: [nsr-10, titulo-a, titulo-h, licencia-de-construccion-colombia]
+dateModified: 2026-10-28
+
+ficha:
+  rotulo: "Ficha técnica"
+  titulo: "Envigado en cinco datos que cambian el diseño de un proyecto"
+  items:
+    - etiqueta: "Amenaza sísmica"
+      valor: "Intermedia"
+      nota: "la misma del resto del Valle de Aburrá"
+      fuente: "NSR-10, A.2.3"
+    - etiqueta: "Curadurías urbanas"
+      valor: "2"
+      nota: "Primera y Segunda de Envigado; eliges dónde radicar"
+    - etiqueta: "Sede de PROINCIVIL"
+      valor: "Envigado"
+      nota: "visitas técnicas y reuniones en curaduría con desplazamientos cortos"
+    - etiqueta: "Terreno"
+      valor: "Ladera"
+      nota: "buena parte de los lotes urbanizables suben hacia el oriente del municipio"
+    - etiqueta: "Equipo"
+      valor: "7"
+      nota: "personas en ingeniería, arquitectura y gestión"
+      fuente: "Equipo"
+      url: "/nosotros/equipo/"
+  boton:
+    pregunta: "¿Tu lote o tu edificio está en Envigado?"
+    texto: "Pedir una visita técnica"
+    variante: contorno
+    mensaje: "Hola, PROINCIVIL. Tengo un proyecto en Envigado y quiero agendar una visita técnica."
+
+protocolo:
+  rotulo: "Lote en ladera"
+  titulo: "Suelo, contención y estructura en un solo diseño: cinco pasos para un lote en pendiente"
+  texto: "En ladera, tres consultores sin coordinación producen tres documentos que no encajan. Ese es el origen de buena parte de las observaciones de curaduría."
+  pasos:
+    - titulo: "Visita al lote"
+      texto: "Recorremos el predio con la topografía y el proyecto arquitectónico, a pocos minutos de la sede."
+      boton:
+        texto: "Agendar la visita"
+        mensaje: "Hola, PROINCIVIL. Tengo un lote en ladera en Envigado y quiero agendar una visita."
+    - titulo: "Estudio de suelos con el alcance que pide la pendiente"
+      texto: "Número y profundidad de sondeos según el Título H de la NSR-10, más la estabilidad del talud."
+    - titulo: "Contención y cimentación coordinadas"
+      texto: "Los muros de contención y la cimentación se diseñan con el mismo modelo que la estructura."
+    - titulo: "Diseño estructural NSR-10"
+      texto: "Memorias y planos con los parámetros sísmicos de Envigado y el perfil de suelo del predio."
+    - titulo: "Radicación y observaciones"
+      texto: "Preparamos el componente estructural para la curaduría que elijas y respondemos sus observaciones por escrito."
+
+curadurias:
+  rotulo: "Curadurías Primera y Segunda de Envigado"
+  titulo: "Cuatro observaciones que devuelven un proyecto en ladera en Envigado"
+  texto: "Las dos curadurías exigen coherencia entre planos arquitectónicos, estructurales y estudio de suelos. Estas son las observaciones que preparamos desde el diseño."
+  observaciones:
+    - "Parámetros sísmicos mal tomados para el perfil de suelo del predio"
+    - "Estudio de suelos con alcance insuficiente para un lote en pendiente"
+    - "Muros de contención sin diseño estructural"
+    - "Detallado del refuerzo incompleto en los planos"
+  boton:
+    texto: "Enviar las observaciones"
+    variante: contorno
+    mensaje: "Hola, PROINCIVIL. La curaduría de Envigado devolvió mi proyecto con observaciones y necesito responderlas."
+
+zoom:
+  palabra: "ENVIGADO"
+  textura: ladera
+  foto: "ia-ladera-muro"
+  alt: "Muro de contención de concreto sobre una ladera verde con viviendas arriba (ilustración)"
+  rotulo: "Tu proyecto"
+  titulo: "¿Un lote en ladera o un edificio con fisuras en Envigado?"
+  texto: "Escríbenos con la dirección y fotos. Estamos en el municipio y agendamos la visita contigo."
+
+faqs_titulo: "Preguntas sobre curadurías, suelos y sismo en Envigado"
 faqs:
   - question: "¿Envigado es zona de amenaza sísmica alta?"
-    answer: "No. Envigado, como el resto del Valle de Aburrá, está clasificado en amenaza sísmica intermedia en la NSR-10. Aun así, el diseño sismorresistente es obligatorio y los valores de aceleración pico (Aa y Av) del municipio deben tomarse de la tabla A.2.3-2 de la norma; los verificamos en cada memoria."
+    answer: "No. Envigado, como el resto del Valle de Aburrá, está en zona de amenaza sísmica intermedia según la NSR-10. El diseño sismorresistente es obligatorio y los parámetros se ajustan con el perfil de suelo del predio."
   - question: "¿Cuál curaduría me corresponde en Envigado?"
-    answer: "Envigado cuenta con dos curadurías urbanas, Primera y Segunda, y el solicitante puede radicar en cualquiera de ellas. Cada una tiene su formato y sus revisores; preparamos el expediente según la que elijas y acompañamos la subsanación de observaciones."
-  - question: "¿Qué tipo de suelo hay en Envigado?"
-    answer: "Depende del sector. Las laderas del oriente del municipio presentan depósitos de vertiente y suelos residuales de espesor variable; las zonas bajas cerca del río tienen depósitos aluviales. Por eso el estudio de suelos no se puede copiar de un predio vecino: define la cimentación y el tipo de suelo para el análisis sísmico."
-  - question: "¿Hacen visitas técnicas en Envigado el mismo día?"
-    answer: "Normalmente sí. Nuestra sede está en el municipio, lo que nos permite atender evaluaciones urgentes, visitas de obra y reuniones con curadurías con desplazamientos cortos."
+    answer: "Envigado tiene dos curadurías urbanas, la Primera y la Segunda, y el solicitante elige en cuál radica. Preparamos el expediente estructural según la que elijas y respondemos sus observaciones."
+  - question: "¿Por qué el estudio de suelos es tan importante en ladera?"
+    answer: "Porque en un mismo lote en pendiente el suelo puede cambiar de un extremo a otro: una esquina admite cimentación superficial y la otra necesita pilas. El estudio de suelos define la cimentación, los muros de contención y el perfil de suelo para el análisis sísmico."
+  - question: "¿Hacen visitas técnicas en Envigado?"
+    answer: "Sí. Nuestra sede está en el municipio, así que las evaluaciones, las visitas de obra y las reuniones en curaduría se agendan con desplazamientos cortos."
   - question: "¿Atienden también El Poblado y el sur de Medellín?"
-    answer: "Sí. El límite entre Envigado y Medellín es administrativo, no técnico; atendemos proyectos en El Poblado, Las Palmas y el sur del Valle de Aburrá con la misma disponibilidad."
+    answer: "Sí. Atendemos El Poblado, Las Palmas y el sur del Valle de Aburrá con la misma disponibilidad que Envigado."
+
+relacionados_titulo: "Servicios para proyectos en Envigado"
+relacionados: [diseno-estructural, geotecnia-estudio-de-suelos, muros-de-contencion-y-taludes, curadurias-y-licencias, evaluacion-estructural]
+normativa: [nsr-10, titulo-a, titulo-h, licencia-de-construccion-colombia]
 ---
-
-## Envigado como terreno de trabajo
-
-Nuestra sede está en Envigado y la mayoría de nuestro equipo vive y trabaja en el sur del Valle de Aburrá. Eso tiene una consecuencia práctica: podemos visitar un predio, una obra o una curaduría del municipio en el mismo día, y conocemos de primera mano los problemas que se repiten en sus proyectos.
-
-## Amenaza sísmica y normativa aplicable
-
-Envigado está en zona de amenaza sísmica intermedia según la NSR-10, igual que Medellín y el resto del Área Metropolitana. Los parámetros de diseño (Aa, Av y los coeficientes de sitio que dependen del tipo de suelo) se toman de la tabla A.2.3-2 y del estudio geotécnico del predio. El municipio además cuenta con estudios de microzonificación sísmica del Valle de Aburrá que las curadurías pueden exigir considerar; verificamos en cada proyecto qué parámetros aplican y los citamos en las memorias.
-
-## Suelos de ladera: donde se define el presupuesto
-
-El crecimiento urbano de Envigado ha subido por las laderas hacia el oriente. Allí los lotes presentan depósitos de vertiente, suelos residuales de distinto espesor y, en algunos sectores, rellenos antrópicos. Un mismo proyecto puede tener cimentación superficial en una esquina y necesitar pilas en la otra. El estudio de suelos, los muros de contención y la estructura deben diseñarse juntos: es lo que más observaciones genera en curaduría cuando lo hacen tres consultores distintos sin coordinación.
-
-## Las curadurías de Envigado
-
-El municipio tiene Curaduría Urbana Primera y Curaduría Urbana Segunda. Ambas revisan el componente estructural con rigor y exigen coherencia entre planos arquitectónicos, estructurales y estudio de suelos. Nuestro servicio de acompañamiento ante curadurías existe porque conocemos las observaciones típicas: parámetros sísmicos mal tomados, estudio de suelos con alcance insuficiente para lotes en pendiente, detallado de refuerzo incompleto y muros de contención sin diseño.
-
-## Servicios más demandados en Envigado
-
-Diseño estructural de vivienda multifamiliar y edificios en altura, estudios de suelos y contenciones en ladera, evaluación de fisuras y post-sismo en propiedad horizontal, ampliaciones de segundo piso y subsanación de observaciones de curaduría. También acompañamos a constructores que llegan de otras ciudades y no conocen los requisitos locales.
-
-## Cómo trabajamos en el municipio
-
-Visita técnica, revisión de planos y del predio, llamada de diagnóstico, diseño coordinado en BIM y radicación con acompañamiento. La obra la ejecuta el constructor que elijas: PROINCIVIL diseña, evalúa y supervisa, no construye.

@@ -1,6 +1,7 @@
 ---
 layout: zona
 titulo_corto: "Pereira"
+lugar: "Pereira y Dosquebradas"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 6
 title: "Ingeniería estructural en Pereira: evaluación post-sismo y suelos"
 description: "Ingenieros estructurales para Pereira y Dosquebradas: evaluación después del temblor, informe para la aseguradora, vulnerabilidad, reforzamiento y estudio de suelos."

@@ -18,7 +18,7 @@
   {%- if _act -%}
     {%- assign _ax = _act.lon | plus: 77.2 | times: 100 | round: 1 -%}
     {%- assign _ay = 11.4 | minus: _act.lat | times: 100 | round: 1 -%}
-    {%- assign _cx = _ax | minus: 120 -%}{%- assign _cy = _ay | minus: 190 -%}
+    {%- assign _cx = _ax | minus: 120 | at_least: 0 | at_most: 40 -%}{%- assign _cy = _ay | minus: 190 | at_least: 0 | at_most: 480 -%}
     {%- assign _caja = _cx | append: " " | append: _cy | append: " 320 260" -%}
   {%- endif -%}
 {%- endif -%}

@@ -34,6 +34,21 @@ principal:
           - { texto: "¿Cuánto cuesta?", url: /cuanto-cuesta/ }
   - texto: Proyectos
     url: /proyectos/
+  - texto: Zonas
+    url: /zonas/
+    ver_todo: Mapa de proyectos y zonas
+    grupos:
+      - titulo: Antioquia
+        enlaces:
+          - { texto: "Envigado (sede)", url: /zonas/envigado/ }
+          - { texto: "Medellín", url: /zonas/medellin/ }
+          - { texto: "Área Metropolitana", url: /zonas/area-metropolitana/ }
+          - { texto: "Oriente antioqueño", url: /zonas/oriente-antioqueno/ }
+          - { texto: "Resto de Antioquia", url: /zonas/antioquia/ }
+      - titulo: Resto del país
+        enlaces:
+          - { texto: "Pereira y Dosquebradas", url: /zonas/pereira/ }
+          - { texto: "Otras ciudades de Colombia", url: /zonas/colombia/ }
   - texto: Edificaciones
     url: /edificaciones/
     ver_todo: Todos los tipos de edificación
@@ -71,7 +86,6 @@ principal:
           - { texto: "Quiénes somos", url: /nosotros/ }
           - { texto: "Equipo", url: /nosotros/equipo/ }
           - { texto: "Independencia técnica", url: /nosotros/independencia-tecnica/ }
-          - { texto: "Zonas de cobertura", url: /zonas/ }
           - { texto: "Cómo cotizar", url: /como-cotizar/ }
           - { texto: "Blog", url: /blog/ }
           - { texto: "Contacto", url: /contacto/ }

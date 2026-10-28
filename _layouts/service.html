@@ -177,6 +177,28 @@ layout: default
 {% include escenas/enlace-mayor.html url="/servicios/" numero=_n texto=_t banda=true %}
 {%- endif %}
 
+{%- comment -%} Este servicio por ciudad: zonas que lo listan en sus `relacionados` (fuente única: _zonas/*.md). {%- endcomment -%}
+{%- if page.collection == "servicios" and site.secciones_publicadas contains "zonas" -%}
+  {%- assign _zonas_srv = site.zonas | where_exp: "z", "z.relacionados contains page.slug" | sort: "orden" -%}
+  {%- if _zonas_srv.size > 0 -%}
+  {%- assign _srv = page.titulo_corto | default: page.h1 | strip_html %}
+<section class="seccion seccion--compacta seccion--papel" id="por-ciudad">
+  <div class="marco flujo">
+    <div class="encabezado">
+      <p class="rotulo">Por ciudad</p>
+      <h2 class="encabezado__titulo">{{ _srv }} en {{ _zonas_srv.size }} zonas donde ya trabajamos</h2>
+    </div>
+    <ul class="lista lista--flecha">
+      {%- for z in _zonas_srv %}
+      <li><a href="{{ z.url | relative_url }}">{{ _srv }} en {{ z.lugar | default: z.titulo_corto }}</a></li>
+      {%- endfor %}
+    </ul>
+    <p><a href="{{ '/zonas/' | relative_url }}" class="enlace-flecha">Ver el mapa de proyectos</a></p>
+  </div>
+</section>
+  {%- endif -%}
+{%- endif %}
+
 {%- assign _ver_rel = false -%}
 {%- if page.relacionados and site.secciones_publicadas contains "servicios" -%}{%- assign _ver_rel = true -%}{%- endif -%}
 {%- assign _ver_norm = false -%}

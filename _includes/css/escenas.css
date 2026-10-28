@@ -227,6 +227,8 @@
   .ficha-zona__rejilla { display: grid; gap: 1.5rem; }
   @media (min-width: 60em) {
     .ficha-zona__rejilla { grid-template-columns: minmax(0, 0.55fr) minmax(0, 1.45fr); align-items: stretch; }
+    .ficha-zona__rejilla--sin-mapa { grid-template-columns: 1fr; }
+    .ficha-zona__rejilla--sin-mapa .datos--cajetin { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .ficha-zona .mapa--mini { display: grid; grid-template-rows: minmax(16rem, 1fr) auto; }
     .ficha-zona .mapa--mini .mapa__svg { block-size: 100%; max-block-size: none; }
   }

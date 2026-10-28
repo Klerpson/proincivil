@@ -78,6 +78,10 @@ layout: default
       {% assign _ed = site.edificaciones | where: "slug", page.edificacion | first %}
       {% if _ed %}<p><a href="{{ _ed.url | relative_url }}" class="enlace-flecha">Más proyectos de {{ _ed.titulo_corto | default: _ed.h1 | downcase }}</a></p>{% endif %}
     {% endif %}
+    {%- if page.zona and site.secciones_publicadas contains "zonas" %}
+      {%- assign _zo = site.zonas | where: "slug", page.zona | first %}
+      {%- if _zo %}<p><a href="{{ _zo.url | relative_url }}" class="enlace-flecha">Ingeniería estructural en {{ _zo.lugar | default: _zo.titulo_corto }}: amenaza sísmica, suelos y curadurías</a></p>{% endif %}
+    {%- endif %}
   </div>
 </section>
 {% endif %}

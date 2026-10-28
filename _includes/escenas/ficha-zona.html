@@ -4,6 +4,7 @@
   Parámetros: ficha (rotulo, titulo, items[{etiqueta, valor, nota, fuente, url}], boton{pregunta,
   texto, mensaje, variante}), activa (slug de la zona).
   Cada dato lleva su fuente en el HTML; los que no tienen fuente verificable no se publican.
+  Si la zona no tiene puntos en _data/ciudades.yml, el cajetín ocupa todo el ancho (sin ubicador).
 {%- endcomment -%}
 {%- assign f = include.ficha -%}
 <section class="seccion seccion--plano ficha-zona" id="ficha">
@@ -12,8 +13,9 @@
       <p class="rotulo">{{ f.rotulo | default: "Ficha técnica" }}</p>
       <h2 class="encabezado__titulo">{{ f.titulo }}</h2>
     </div>
-    <div class="ficha-zona__rejilla">
-      {% include escenas/mapa.html modo="mini" activa=include.activa %}
+    {%- assign _puntos = site.data.ciudades | where: "zona", include.activa | size %}
+    <div class="ficha-zona__rejilla{% if _puntos == 0 %} ficha-zona__rejilla--sin-mapa{% endif %}">
+      {%- if _puntos > 0 %}{% include escenas/mapa.html modo="mini" activa=include.activa %}{% endif %}
       <dl class="datos datos--cajetin">
         {%- for d in f.items %}
         <div class="datos__item">

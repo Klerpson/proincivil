@@ -60,7 +60,8 @@ layout: default
 
 {% if page.zoom %}
 {%- assign _loc = "zoom-" | append: page.slug %}
-{% include escenas/zoom.html palabra=page.zoom.palabra textura=page.zoom.textura rotulo=page.zoom.rotulo titulo=page.zoom.titulo texto=page.zoom.texto foto=page.hero alt=page.hero_alt boton=page.cta_texto data_location=_loc %}
+{%- assign _zf = page.zoom.foto | default: page.hero %}{%- assign _za = page.zoom.alt | default: page.hero_alt %}
+{% include escenas/zoom.html palabra=page.zoom.palabra textura=page.zoom.textura rotulo=page.zoom.rotulo titulo=page.zoom.titulo texto=page.zoom.texto foto=_zf alt=_za boton=page.cta_texto data_location=_loc %}
 {% endif %}
 
 {% if page.faqs %}

@@ -1,5 +1,6 @@
 ---
 titulo_corto: "Oriente antioqueño"
+lugar: "el Oriente antioqueño"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 4
 title: "Ingeniería estructural en Rionegro y el Oriente antioqueño"
 description: "Diseño estructural, estudios de suelos y evaluación en Rionegro, La Ceja, El Retiro, Marinilla y Guarne. Suelos del altiplano y curadurías del Oriente. Envigado."

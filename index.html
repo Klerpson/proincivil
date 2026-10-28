@@ -126,6 +126,13 @@ faqs:
   </div>
 </section>
 
+{%- if site.secciones_publicadas contains "zonas" %}
+{% include escenas/mapa.html id="mapa-proyectos" rotulo="Dónde trabajamos" titulo="De Envigado a Barranquilla: ocho lugares con proyectos de PROINCIVIL" texto="Cada punto es un proyecto real o la sede. Entra a una ciudad para ver su amenaza sísmica, su suelo y sus curadurías." %}
+{%- assign _nz = site.zonas.size -%}
+{%- assign _tz = "Ver las " | append: _nz | append: " zonas donde trabajamos" %}
+{% include escenas/enlace-mayor.html url="/zonas/" numero=_nz texto=_tz banda=true %}
+{%- endif %}
+
 <section class="seccion">
   <div class="marco flujo">
     <div class="encabezado">

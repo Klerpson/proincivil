@@ -58,10 +58,10 @@
             <div><dt>Resultado</dt><dd>{{ c.logro }}</dd></div>
             {%- else %}
             <div><dt>Situación</dt><dd>{{ p.excerpt | strip_html }}</dd></div>
-            {%- if f.servicio %}<div><dt>Servicio</dt><dd>{{ f.servicio }}</dd></div>{% endif -%}
-            {%- if f.sistema %}<div><dt>Sistema estructural</dt><dd>{{ f.sistema }}</dd></div>{% endif -%}
-            {%- if f.area %}<div><dt>Área</dt><dd>{{ f.area }}</dd></div>{% endif -%}
-            {%- if f.normativa %}<div><dt>Normativa</dt><dd>{{ f.normativa }}</dd></div>{% endif -%}
+            {%- if f.servicio %}{% unless f.servicio contains "PENDIENTE" %}<div><dt>Servicio</dt><dd>{{ f.servicio }}</dd></div>{% endunless %}{% endif -%}
+            {%- if f.sistema %}{% unless f.sistema contains "PENDIENTE" %}<div><dt>Sistema estructural</dt><dd>{{ f.sistema }}</dd></div>{% endunless %}{% endif -%}
+            {%- if f.area %}{% unless f.area contains "PENDIENTE" %}<div><dt>Área</dt><dd>{{ f.area }}</dd></div>{% endunless %}{% endif -%}
+            {%- if f.normativa %}{% unless f.normativa contains "PENDIENTE" %}<div><dt>Normativa</dt><dd>{{ f.normativa }}</dd></div>{% endunless %}{% endif -%}
             {%- endif %}
           </dl>
         </details>

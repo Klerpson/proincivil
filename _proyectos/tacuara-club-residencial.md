@@ -33,7 +33,7 @@ caso:
   logro: "Diagnóstico completo para la gestión ante la aseguradora. El estudio de vulnerabilidad sísmica para el plan de repotenciación está en curso."
 servicios: [evaluacion-post-sismo, evaluacion-estructural, vulnerabilidad-sismica, analisis-de-verticalidad]
 edificacion: propiedad-horizontal
-zona: colombia
+zona: pereira
 datePublished: 2026-09-22
 dateModified: 2026-10-16
 ---

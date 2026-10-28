@@ -1,5 +1,6 @@
 ---
 titulo_corto: "Área Metropolitana"
+lugar: "el Área Metropolitana"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 3
 title: "Ingeniería estructural en el Área Metropolitana del Valle de Aburrá"
 description: "Diseño estructural, estudios de suelos e interventoría en Itagüí, Sabaneta, Bello, La Estrella, Caldas y Copacabana. Ingenieros de Envigado cerca de cada curaduría."

@@ -1,87 +1,113 @@
 ---
+layout: zona
 titulo_corto: "Antioquia"
+lugar: "el resto de Antioquia"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 5
 title: "Ingeniería estructural en Antioquia: Urabá, Magdalena Medio y municipios"
 description: "Diseño estructural, geotecnia e interventoría en todo Antioquia: Mutatá, Puerto Triunfo, Betulia y Puerto Perales. Colegios y hoteles en zonas de amenaza sísmica."
-h1: "Ingeniería estructural en Antioquia: de Urabá al Magdalena Medio"
+h1: "Ingeniería estructural en Antioquia: colegios, hoteles y escenarios de Urabá al Magdalena Medio"
 eyebrow: "Zonas · Antioquia"
-excerpt: "Hemos diseñado colegios en Mutatá, un hotel en Puerto Triunfo, infraestructura deportiva en Betulia y una institución educativa en Puerto Perales. Antioquia tiene zonas de amenaza sísmica alta e intermedia y suelos que van del aluvión de Urabá a las laderas del suroeste."
+excerpt: "Colegios públicos aprobados en primera radicación, un hotel de más de 5.000 m² en Puerto Triunfo y escenarios formulados ante Regalías: así trabajamos fuera del Valle de Aburrá."
 hero: "institucion-educativa"
-hero_alt: "Institución educativa de dos niveles diseñada por PROINCIVIL"
+hero_alt: "Institución educativa de dos niveles en concreto reforzado"
 image: "/img/fotos/institucion-educativa-440.jpg"
 badges:
-  - "Proyectos en Mutatá, Puerto Triunfo, Betulia y Puerto Perales"
-  - "Amenaza sísmica alta e intermedia"
-  - "Entidades públicas y privadas"
+  - "5 proyectos en municipios de Antioquia"
+  - "Colegios aprobados en primera radicación"
   - "No ejecutamos obra"
 cta_texto: "Consultar por mi proyecto en Antioquia"
-cta_secundario: { url: "/proyectos/", texto: "Ver proyectos en el departamento" }
 serviceType: "Ingeniería estructural y geotecnia en Antioquia"
 categoria: "Zonas de cobertura"
 area_servida:
   - { "@type": "AdministrativeArea", "name": "Antioquia" }
-resumen: "Antioquia combina zonas de amenaza sísmica alta (Urabá, occidente) e intermedia (centro, oriente, Magdalena Medio) con suelos que van de los aluviones blandos de Urabá a las laderas del suroeste. PROINCIVIL ha diseñado colegios, hoteles e infraestructura deportiva en Mutatá, Puerto Triunfo, Betulia y Puerto Perales, con coordinación remota y visitas técnicas."
+resumen: "PROINCIVIL ha diseñado en municipios de Antioquia más de 13.000 m² de colegios públicos, el colegio Pavarandó Grande en Mutatá (4.544 m², pórticos DES), el Hotel Aldea en Puerto Triunfo (+5.000 m²), la I.E. Puerto Perales (3.600 m²) y escenarios en Betulia e Hispania formulados ante el Sistema General de Regalías, con coordinación desde Envigado y visitas técnicas."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
-cuando:
-  - "Una alcaldía o entidad departamental contrata diseño de colegios, escenarios deportivos o equipamientos en un municipio de Antioquia"
-  - "Desarrollas un hotel, condominio o proyecto turístico en el Magdalena Medio, el suroeste o Urabá"
-  - "Tu proyecto está en zona de amenaza sísmica alta y el diseño convencional no aplica"
-  - "Necesitas estudio de suelos en un municipio sin laboratorios ni consultores locales"
-  - "Requieres interventoría o supervisión técnica de una obra fuera del Valle de Aburrá"
-entregables:
-  - "Diseño estructural con los parámetros sísmicos del municipio (amenaza alta o intermedia)"
-  - "Estudios de suelos con exploración adaptada a aluviones, laderas o suelos residuales"
-  - "Diseño de cimentaciones profundas cuando el suelo lo exige"
-  - "Documentación para curadurías u oficinas de planeación municipales y entidades contratantes"
-  - "Interventoría y supervisión técnica con visitas programadas"
-audiencias:
-  - { rol: "Alcaldías y gobernación", texto: "Infraestructura educativa y deportiva con soporte normativo y documental completo." }
-  - { rol: "Promotores turísticos", texto: "Hoteles y condominios en el Magdalena Medio, el suroeste y Urabá." }
-  - { rol: "Consorcios y constructoras", texto: "Componente estructural y geotécnico para licitaciones departamentales." }
-cuando_titulo: "Cuándo llamar a un ingeniero estructural en Antioquia"
-entregables_titulo: "Entregables para proyectos en Antioquia"
-proyectos_titulo: "Proyectos de PROINCIVIL en Antioquia"
-audiencias_titulo: "Para quién trabajamos en Antioquia"
-faqs_titulo: "Preguntas sobre proyectos en Antioquia"
-relacionados_titulo: "Servicios para proyectos en Antioquia"
-normativa_titulo: "Normas que aplicamos en Antioquia"
-proyectos: [ie-pavarando-grande-mutata, hotel-aldea-puerto-triunfo, infraestructura-deportiva-betulia, ie-puerto-perales, ie-yerbal-y-educacion-publica]
+dateModified: 2026-10-28
+
+ficha:
+  rotulo: "Ficha técnica"
+  titulo: "Antioquia en seis proyectos medidos en metros cuadrados"
+  items:
+    - etiqueta: "Colegios públicos"
+      valor: "+13.000 m²"
+      nota: "acumulados en la línea I.E. Yerbal, aprobados en primera radicación"
+      fuente: "Ficha del proyecto"
+      url: "/proyectos/ie-yerbal-y-educacion-publica/"
+    - etiqueta: "Mutatá, Urabá"
+      valor: "4.544 m²"
+      nota: "I.E. Pavarandó Grande: pórticos DES y pilas con campana en suelo tipo C"
+      fuente: "Ficha del proyecto"
+      url: "/proyectos/ie-pavarando-grande-mutata/"
+    - etiqueta: "Puerto Triunfo"
+      valor: "+5.000 m²"
+      nota: "Hotel Aldea en sistema mixto de concreto y acero"
+      fuente: "Ficha del proyecto"
+      url: "/proyectos/hotel-aldea-puerto-triunfo/"
+    - etiqueta: "Puerto Perales"
+      valor: "3.600 m²"
+      nota: "colegio de 3 niveles con cantidades dentro del presupuesto de la entidad"
+      fuente: "Ficha del proyecto"
+      url: "/proyectos/ie-puerto-perales/"
+    - etiqueta: "Betulia e Hispania"
+      valor: "3"
+      nota: "colegios con canchas y muros formulados ante Regalías"
+      fuente: "Ficha del proyecto"
+      url: "/proyectos/infraestructura-deportiva-betulia/"
+    - etiqueta: "Grupo de uso"
+      valor: "III"
+      nota: "el de los colegios en la NSR-10: más exigencia sísmica que una vivienda"
+      fuente: "NSR-10, A.2.5"
+  boton:
+    pregunta: "¿Tu municipio o tu entidad tiene un proyecto en Antioquia?"
+    texto: "Consultar por el proyecto"
+    variante: contorno
+    mensaje: "Hola, PROINCIVIL. Tenemos un proyecto en un municipio de Antioquia y queremos saber si lo pueden diseñar o revisar."
+
+protocolo:
+  rotulo: "Colegios y proyectos públicos"
+  titulo: "De la formulación al diseño aprobado: cinco pasos de un colegio público en Antioquia"
+  texto: "Así trabajamos los colegios de Mutatá, Puerto Perales, Betulia y la línea Yerbal, con la entidad o el formulador como cliente."
+  pasos:
+    - titulo: "Programa, lote y grupo de uso"
+      texto: "Revisamos módulos arquitectónicos, estudio de suelos y la clasificación del colegio en el grupo de uso III de la NSR-10."
+      boton:
+        texto: "Enviar el programa del colegio"
+        mensaje: "Hola, PROINCIVIL. Estamos formulando un colegio en Antioquia y queremos enviarles el programa y la información del lote."
+    - titulo: "Sistema estructural y cimentación"
+      texto: "Pórticos de concreto con la capacidad de disipación que exige la zona. En Mutatá, DES y pilas con campana sobre suelo tipo C."
+    - titulo: "Cantidades dentro del presupuesto"
+      texto: "Cantidades de obra ajustadas al presupuesto público, como en Puerto Perales."
+    - titulo: "Documentos para Regalías"
+      texto: "Memorias, planos y especificaciones para la formulación ante el Sistema General de Regalías, como en Betulia e Hispania."
+    - titulo: "Radicación y aprobación"
+      texto: "Diseños aprobados en primera radicación en Pavarandó Grande y en la línea Yerbal. La obra la ejecuta el contratista que adjudique la entidad."
+
+proyectos_titulo: "Cinco proyectos de PROINCIVIL en municipios de Antioquia"
+proyectos: [ie-pavarando-grande-mutata, hotel-aldea-puerto-triunfo, ie-puerto-perales, infraestructura-deportiva-betulia, ie-yerbal-y-educacion-publica]
+
+zoom:
+  palabra: "ANTIOQUIA"
+  textura: plano
+  foto: "ia-ladera-muro"
+  alt: "Muro de contención de concreto sobre una ladera verde con viviendas arriba (ilustración)"
+  rotulo: "Tu proyecto"
+  titulo: "¿Un colegio, un hotel o un escenario en un municipio de Antioquia?"
+  texto: "Envíanos la ubicación y lo que tienes: programa, planos o estudio de suelos. Te decimos qué falta para radicar."
+
+faqs_titulo: "Preguntas sobre proyectos en municipios de Antioquia"
+faqs:
+  - question: "¿Diseñan colegios públicos en municipios de Antioquia?"
+    answer: "Sí. PROINCIVIL ha diseñado más de 13.000 m² de infraestructura educativa pública en Antioquia, además de la I.E. Pavarandó Grande en Mutatá (4.544 m²) y la I.E. Puerto Perales (3.600 m²), con diseños aprobados en primera radicación."
+  - question: "¿Preparan los documentos para presentar un proyecto a Regalías?"
+    answer: "Sí. En Betulia e Hispania entregamos diseños de contenciones, canchas y cubiertas metálicas con la documentación técnica para la formulación ante el Sistema General de Regalías."
+  - question: "¿Qué cambia en el diseño de un colegio frente a una vivienda?"
+    answer: "La NSR-10 clasifica los colegios en el grupo de uso III, que aumenta las fuerzas sísmicas de diseño frente a una vivienda. El sistema estructural y el detallado del refuerzo se definen además según la zona de amenaza sísmica del municipio."
+  - question: "¿Cómo atienden un proyecto lejos de Envigado?"
+    answer: "El diseño y la revisión se hacen desde Envigado con modelo compartido y reuniones virtuales. Las visitas al lote, los ensayos y la supervisión se programan en el municipio cuando el servicio lo exige."
+  - question: "¿Trabajan con alcaldías y entidades públicas?"
+    answer: "Sí. Varios de nuestros proyectos en Antioquia son colegios públicos con cantidades ajustadas al presupuesto de la entidad. PROINCIVIL diseña y supervisa; la obra la ejecuta el contratista que adjudique la entidad."
+
+relacionados_titulo: "Servicios para proyectos en municipios de Antioquia"
 relacionados: [diseno-estructural, geotecnia-estudio-de-suelos, cimentaciones, interventoria-de-disenos, supervision-tecnica-independiente]
 normativa: [nsr-10, titulo-a, titulo-h, ley-1796-de-2016]
-faqs:
-  - question: "¿Qué zonas de Antioquia tienen amenaza sísmica alta?"
-    answer: "Según la NSR-10, los municipios de Urabá y del occidente del departamento —Mutatá entre ellos— están en amenaza sísmica alta; el Valle de Aburrá, el Oriente y el Magdalena Medio están en amenaza intermedia. Cada municipio tiene sus valores de Aa y Av en la tabla A.2.3-2, que verificamos en cada diseño."
-  - question: "¿Qué cambia en un diseño en zona de amenaza alta?"
-    answer: "Las fuerzas sísmicas de diseño son mayores y la norma exige sistemas con capacidad especial de disipación de energía (DES) para la mayoría de las edificaciones. En la I.E. Pavarandó Grande, en Mutatá, diseñamos pórticos especiales con chequeo de ductilidad y cimentación profunda sobre pilas con campana en suelo tipo C."
-  - question: "¿Qué suelos hay en Urabá y el Magdalena Medio?"
-    answer: "Urabá presenta extensos depósitos aluviales y suelos blandos con nivel freático alto que suelen exigir cimentaciones profundas. El Magdalena Medio combina terrazas aluviales y suelos residuales. En ambos casos el estudio de suelos con sondeos profundos define el proyecto."
-  - question: "¿Cómo atienden un proyecto lejos de Envigado?"
-    answer: "Con visitas técnicas programadas para exploración geotécnica, levantamientos y supervisión, y coordinación remota del diseño con modelo BIM compartido y reuniones virtuales. Así hemos trabajado en Mutatá, Puerto Triunfo, Betulia y Puerto Perales."
-  - question: "¿Han trabajado con entidades públicas de Antioquia?"
-    answer: "Sí. Hemos diseñado más de 13.000 m² de infraestructura educativa pública (I.E. Pavarandó Grande, I.E. Yerbal, I.E. Puerto Perales y otras) e infraestructura deportiva en Betulia, con documentación para curaduría y control fiscal."
 ---
-
-## Antioquia: un departamento, varias zonas sísmicas y muchos suelos
-
-Antioquia va desde el golfo de Urabá hasta el Magdalena Medio, con cordilleras, altiplanos y llanuras aluviales en medio. La NSR-10 clasifica sus municipios en amenaza sísmica alta (Urabá y occidente) e intermedia (Valle de Aburrá, Oriente, suroeste, norte y Magdalena Medio), y los suelos cambian tanto como el clima. Diseñar bien en el departamento significa tomar los parámetros de cada municipio y estudiar el suelo de cada predio.
-
-## Urabá y occidente: amenaza sísmica alta
-
-En Mutatá y los municipios de Urabá las fuerzas sísmicas de diseño son las mayores del departamento y la norma exige sistemas con capacidad especial de disipación de energía. Allí diseñamos la I.E. Pavarandó Grande: 4.544 m² en tres niveles con pórticos especiales de disipación de energía, chequeo de ductilidad y cimentación profunda sobre pilas con campana en suelo tipo C. Los suelos aluviales blandos de la región, con nivel freático alto, hacen de la cimentación el capítulo más delicado de cualquier proyecto.
-
-## Magdalena Medio: turismo e infraestructura
-
-Puerto Triunfo y Puerto Perales, sobre el Magdalena, combinan terrazas aluviales y suelos residuales en zona de amenaza intermedia. En Puerto Triunfo hicimos el diseño integral y estructural del Hotel Aldea (+5.000 m²) con optimización de cimentaciones y estructuras metálicas; en Puerto Perales, el diseño estructural de una institución educativa de tres niveles y 3.600 m².
-
-## Suroeste y municipios de ladera
-
-Betulia y el suroeste antioqueño presentan laderas pronunciadas y suelos residuales. Allí desarrollamos estudios geotécnicos, diseño de sistemas de contención y cubiertas metálicas para infraestructura deportiva. Los proyectos de equipamiento municipal en ladera exigen resolver contención, drenaje y cimentación antes que la estructura.
-
-## Trámites en los municipios
-
-La mayoría de los municipios de Antioquia licencian a través de su oficina de planeación; los más grandes cuentan con curaduría urbana. Las entidades públicas añaden requisitos de contratación y control fiscal. Preparamos memorias, planos, especificaciones y cantidades en el formato que exige cada entidad y acompañamos la revisión.
-
-## Cómo trabajamos en el departamento
-
-Visitas técnicas programadas para exploración de suelos, levantamientos y supervisión; diseño coordinado en BIM con reuniones virtuales; entregas por etapas para licitaciones. La obra la ejecuta el contratista que seleccione la entidad o el promotor: PROINCIVIL diseña, evalúa y supervisa, no construye.

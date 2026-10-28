@@ -1,86 +1,123 @@
 ---
+layout: zona
 titulo_corto: "Colombia"
+lugar: "otras ciudades de Colombia"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 7
 title: "Ingeniería estructural en toda Colombia con coordinación remota"
 description: "Diseño estructural, evaluación e interventoría en toda ciudad de Colombia: sedes comerciales, estructuras fotovoltaicas y proyectos en Bogotá con coordinación remota."
-h1: "Ingeniería estructural en toda Colombia: coordinación remota, criterio local"
+h1: "Ingeniería estructural en Bogotá, Barranquilla y el resto de Colombia: un criterio, parámetros locales"
 eyebrow: "Zonas · Colombia"
-excerpt: "Diseñamos sedes comerciales en varias ciudades para una misma marca y carports fotovoltaicos para empresas solares con proyectos en todo el país. El diseño y la revisión se coordinan de forma remota; las visitas se programan donde hacen falta."
-hero: "hero-estructura"
-hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
-image: "/img/fotos/hero-estructura-1200.jpg"
+excerpt: "Sedes de una cadena en varias ciudades, más de 8 proyectos solares para una misma empresa y una alianza con ARTICO en Barranquilla, Pereira y Bogotá. Diseñamos a distancia y visitamos donde hace falta."
+hero: "ia-mesa-planos"
+hero_alt: "Mesa de trabajo con planos estructurales y un modelo 3D en pantalla (ilustración)"
+image: "/img/fotos/ia-mesa-planos-1200.jpg"
 badges:
-  - "Sedes comerciales a nivel nacional"
   - "+8 proyectos solares en distintas ciudades"
-  - "Parámetros sísmicos de cada municipio"
+  - "Alianza en Barranquilla, Pereira y Bogotá"
   - "No ejecutamos obra"
 cta_texto: "Consultar por un proyecto fuera de Antioquia"
 serviceType: "Ingeniería estructural con cobertura nacional"
 categoria: "Zonas de cobertura"
 area_servida:
   - { "@type": "Country", "name": "Colombia" }
-resumen: "PROINCIVIL atiende proyectos en cualquier ciudad de Colombia mediante coordinación remota con modelo BIM compartido y visitas técnicas programadas. Ha diseñado sedes comerciales para una cadena con presencia nacional y carports fotovoltaicos en distintas ciudades, aplicando en cada caso los parámetros sísmicos y las exigencias de la curaduría local."
+  - { "@type": "City", "name": "Bogotá" }
+  - { "@type": "City", "name": "Barranquilla" }
+resumen: "PROINCIVIL atiende proyectos en cualquier ciudad de Colombia con coordinación remota y visitas técnicas programadas. Ha evaluado, repotenciado y diseñado sedes comerciales de Grupo Super Motos (Honda), más de 8 proyectos de carports fotovoltaicos para una misma empresa y, con ARTICO Arquitectura, diagnósticos y revisiones en Barranquilla, Pereira y Bogotá."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
-cuando:
-  - "Una cadena comercial o industrial abre sedes en varias ciudades y quiere un mismo criterio estructural"
-  - "Una empresa de energía solar necesita diseños de carports y cubiertas para proyectos en distintas regiones"
-  - "Un proyecto en Bogotá, la Costa, el Eje Cafetero o el Tolima necesita revisión independiente o interventoría de diseño"
-  - "La curaduría de otra ciudad exige un ajuste estructural y el diseñador original no responde"
-  - "Buscas una segunda opinión técnica independiente para un proyecto fuera de Antioquia"
-entregables:
-  - "Diseño estructural con los parámetros sísmicos y de viento del municipio del proyecto"
-  - "Diseños tipo replicables para cadenas y proyectos fotovoltaicos multi-sede"
-  - "Revisión independiente e interventoría de diseños de terceros"
-  - "Documentación en el formato de la curaduría u oficina de planeación local"
-  - "Visitas técnicas programadas para evaluaciones, levantamientos y supervisión"
-audiencias:
-  - { rol: "Cadenas con expansión nacional", texto: "Un solo interlocutor estructural para todas las sedes." }
-  - { rol: "Empresas EPC solares", texto: "Diseños de estructuras fotovoltaicas para cualquier ciudad, con viento y sismo locales." }
-  - { rol: "Promotores fuera de Antioquia", texto: "Revisión independiente y diseño con coordinación remota." }
-cuando_titulo: "Cuándo llamar a un ingeniero estructural en otras ciudades de Colombia"
-entregables_titulo: "Entregables para proyectos en otras ciudades de Colombia"
-proyectos_titulo: "Proyectos de PROINCIVIL en otras ciudades de Colombia"
-audiencias_titulo: "Para quién trabajamos en otras ciudades de Colombia"
-faqs_titulo: "Preguntas sobre proyectos en otras ciudades de Colombia"
-relacionados_titulo: "Servicios para proyectos en otras ciudades de Colombia"
-normativa_titulo: "Normas que aplicamos en otras ciudades de Colombia"
-proyectos: [super-motos-honda, carports-fotovoltaicos]
-relacionados: [diseno-estructural, estructuras-metalicas, revision-independiente-de-disenos, interventoria-de-disenos, evaluacion-estructural]
-normativa: [nsr-10, titulo-a, titulo-b, ley-1796-de-2016]
+dateModified: 2026-10-28
+
+ficha:
+  rotulo: "Ficha técnica"
+  titulo: "Fuera de Antioquia en cinco datos: ciudades, proyectos y amenaza sísmica"
+  items:
+    - etiqueta: "Proyectos solares"
+      valor: "+8"
+      nota: "carports y cubiertas para una misma empresa en distintas ciudades"
+      fuente: "Ficha del proyecto"
+      url: "/proyectos/carports-fotovoltaicos/"
+    - etiqueta: "Carport más grande"
+      valor: "1.366 m²"
+      nota: "en un centro comercial; otro de 715 m² en una terminal de transporte"
+      fuente: "Ficha del proyecto"
+      url: "/proyectos/carports-fotovoltaicos/"
+    - etiqueta: "Alianza con ARTICO"
+      valor: "3"
+      nota: "ciudades: Barranquilla, Pereira y Bogotá"
+      fuente: "Ficha del proyecto"
+      url: "/proyectos/artico-arquitectura/"
+    - etiqueta: "Bogotá"
+      valor: "Intermedia"
+      nota: "amenaza sísmica, con microzonificación propia"
+      fuente: "NSR-10, A.2.3"
+    - etiqueta: "Barranquilla"
+      valor: "Baja"
+      nota: "amenaza sísmica; el diseño sísmico sigue siendo obligatorio"
+      fuente: "NSR-10, A.2.3"
+  boton:
+    pregunta: "¿Tu proyecto está en otra ciudad?"
+    texto: "Consultar por mi ciudad"
+    variante: contorno
+    mensaje: "Hola, PROINCIVIL. Tengo un proyecto fuera de Antioquia y quiero saber si lo pueden atender."
+
+decision:
+  rotulo: "Un diseño, varias ciudades"
+  titulo: "El mismo diseño tipo cambia en cada ciudad: tres ajustes que hacemos siempre"
+  origen: "Diseño tipo de una sede o un carport"
+  ramas:
+    - resultado: "Barranquilla · amenaza baja"
+      sigue: "Espectro de la zona baja y suelo del predio. El diseño sísmico sigue siendo obligatorio."
+    - resultado: "Bogotá · amenaza intermedia"
+      sigue: "Espectro según la zona de la microzonificación sísmica de Bogotá y el estudio de suelos del predio."
+    - resultado: "Pereira · amenaza alta"
+      sigue: "Detallado DES y estudio de suelos sobre cenizas volcánicas de 6 a 20 m."
+  ejecuta: "Obra: el constructor local que elijas"
+  nota: "Para Grupo Super Motos, las sedes nuevas se diseñaron con un mismo estándar y se ajustaron a cada ciudad, lo que simplificó la contratación de la obra."
+  boton:
+    texto: "Enviar el diseño tipo"
+    mensaje: "Hola, PROINCIVIL. Tenemos un diseño tipo para sedes en varias ciudades y queremos adaptarlo a cada municipio."
+
+protocolo:
+  rotulo: "Coordinación remota"
+  titulo: "Cinco pasos para un proyecto en otra ciudad, sin que la distancia lo frene"
+  pasos:
+    - titulo: "Ubicación, planos y alcance"
+      texto: "Nos envías dónde está el proyecto, los planos disponibles y lo que necesitas: diseño, revisión o evaluación."
+      boton:
+        texto: "Enviar ubicación y planos"
+        mensaje: "Hola, PROINCIVIL. Tengo un proyecto en otra ciudad. Les envío la ubicación y los planos que tengo."
+    - titulo: "Parámetros del municipio"
+      texto: "Tomamos la amenaza sísmica del municipio en la NSR-10, la microzonificación si existe y el estudio de suelos del predio."
+    - titulo: "Diseño con modelo compartido"
+      texto: "Reuniones virtuales y modelo compartido con arquitectura e instalaciones; entregas por etapas."
+    - titulo: "Visitas solo donde hacen falta"
+      texto: "Evaluaciones, levantamientos y supervisión se programan en sitio. Una revisión de diseños no exige viaje."
+    - titulo: "Radicación en la curaduría local"
+      texto: "El expediente sale en el formato de la curaduría de la ciudad y respondemos sus observaciones por escrito."
+
+proyectos_titulo: "Sedes, carports y una alianza en tres ciudades"
+proyectos: [super-motos-honda, carports-fotovoltaicos, artico-arquitectura]
+
+zoom:
+  palabra: "COLOMBIA"
+  textura: acero
+  rotulo: "Tu proyecto"
+  titulo: "¿Tu proyecto está en Bogotá, la Costa u otra ciudad?"
+  texto: "Envíanos la ubicación y el alcance. Te decimos qué se resuelve a distancia y qué visita hace falta."
+
+faqs_titulo: "Preguntas sobre proyectos en Bogotá, la Costa y otras ciudades"
 faqs:
   - question: "¿Pueden diseñar un proyecto en Bogotá o en la Costa desde Envigado?"
-    answer: "Sí. La NSR-10 es nacional; lo que cambia por ciudad son los parámetros sísmicos (tabla A.2.3-2 y microzonificaciones locales como la de Bogotá), el viento y el suelo. Tomamos esos datos del municipio y del estudio geotécnico del predio, y radicamos en el formato de la curaduría local. Las visitas se programan cuando el servicio lo exige."
-  - question: "¿Cómo funciona la coordinación remota?"
-    answer: "Reuniones virtuales, modelo BIM compartido con arquitectura e instalaciones, entregas por etapas y comunicación directa con el constructor y la curaduría. Es el mismo esquema que usamos con las cadenas comerciales y las empresas solares con proyectos en varias ciudades."
+    answer: "Sí. La NSR-10 es nacional; lo que cambia por ciudad es la amenaza sísmica del municipio, la microzonificación si existe, el viento y el suelo del predio. Tomamos esos datos y radicamos en el formato de la curaduría local."
   - question: "¿Han trabajado fuera de Antioquia?"
-    answer: "Sí. Hemos realizado evaluaciones, repotenciaciones y diseños de sedes comerciales a nivel nacional para Grupo Super Motos (Honda), y más de ocho proyectos de estructuras fotovoltaicas en distintas ciudades para una misma empresa de soluciones energéticas."
+    answer: "Sí. Evaluamos, repotenciamos y diseñamos sedes comerciales de Grupo Super Motos (Honda) en distintas ciudades, hicimos más de 8 proyectos de carports fotovoltaicos para una misma empresa y, con ARTICO Arquitectura, diagnósticos y revisiones en Barranquilla, Pereira y Bogotá."
   - question: "¿Hacen estudios de suelos fuera de Antioquia?"
-    answer: "Coordinamos la exploración y el laboratorio con equipos locales cuando la distancia lo justifica, y elaboramos o revisamos el informe geotécnico. Para diseño estructural, aceptamos y verificamos estudios de suelos de consultores locales."
+    answer: "Coordinamos la exploración y el laboratorio con equipos locales cuando la distancia lo justifica, y elaboramos o revisamos el informe geotécnico. Para el diseño estructural también verificamos estudios de suelos de consultores locales."
   - question: "¿Las visitas tienen costo adicional?"
-    answer: "Los desplazamientos se incluyen en la propuesta según el número de visitas previstas. Para servicios que no requieren presencia física, como revisión de diseños o diseño de estructuras tipo, no hay costo de viaje."
+    answer: "Los desplazamientos se incluyen en la propuesta según el número de visitas previstas. Una revisión de diseños o un diseño tipo no exigen viaje."
+  - question: "¿Quién construye en mi ciudad?"
+    answer: "El constructor local que elijas. PROINCIVIL diseña, evalúa y supervisa; no ejecuta obra, así que no tiene interés en el contrato de construcción."
+
+relacionados_titulo: "Servicios para proyectos en otras ciudades de Colombia"
+relacionados: [diseno-estructural, estructuras-metalicas, revision-independiente-de-disenos, interventoria-de-disenos, evaluacion-estructural]
+normativa: [nsr-10, titulo-a, titulo-b, ley-1796-de-2016]
 ---
-
-## Un criterio, muchas ciudades
-
-Buena parte de nuestros clientes tienen proyectos en más de una ciudad: cadenas comerciales que abren sedes, empresas de energía solar que instalan carports en centros comerciales, terminales y plantas de distintas regiones, promotores con proyectos fuera de Antioquia. Lo que necesitan no es un consultor en cada ciudad sino un mismo criterio estructural aplicado con los parámetros de cada lugar.
-
-## La norma es nacional; los parámetros son locales
-
-La NSR-10 rige en todo Colombia, pero cada municipio tiene su zona de amenaza sísmica y sus valores de Aa y Av en la tabla A.2.3-2; ciudades como Bogotá cuentan además con microzonificación sísmica propia; el viento cambia por región y el suelo cambia por predio. Diseñar en otra ciudad exige tomar esos datos con cuidado y presentar el expediente en el formato de la curaduría local, que también varía. Es exactamente lo que hacemos en cada proyecto fuera de Antioquia.
-
-## Proyectos a nivel nacional
-
-Para Grupo Super Motos (Honda) hemos realizado evaluación diagnóstica, repotenciación estructural y diseño de nuevas sedes comerciales en distintas ciudades del país. Para una empresa de soluciones energéticas hemos desarrollado más de ocho proyectos de estructuras metálicas para paneles solares en varias ciudades, incluidos carports en un centro comercial y en una terminal de transporte. En cada caso, el diseño tipo se adapta al viento, al sismo y al suelo del sitio.
-
-## Cómo se coordina un proyecto remoto
-
-El diseño, la revisión de diseños y la interventoría de diseño se hacen sobre documentos y modelos, así que no dependen de la distancia: reuniones virtuales, modelo BIM compartido, entregas por etapas y comunicación directa con arquitectos, constructores y curadurías. Las evaluaciones de edificaciones existentes, los levantamientos y la supervisión técnica sí exigen presencia, y se programan como visitas incluidas en la propuesta.
-
-## Servicios más demandados fuera de Antioquia
-
-Diseño de sedes tipo para cadenas, diseño de estructuras fotovoltaicas, revisión independiente de diseños e interventoría de diseño para promotores que buscan una segunda opinión sin conflicto de interés, y evaluación de locales antes de arrendarlos.
-
-## Cómo trabajamos
-
-Envíanos la ubicación, los planos y el alcance; acordamos una llamada de diagnóstico y una propuesta que incluye las visitas necesarias. La obra la ejecuta el constructor que elijas en tu ciudad: PROINCIVIL diseña, evalúa y supervisa, no construye.
