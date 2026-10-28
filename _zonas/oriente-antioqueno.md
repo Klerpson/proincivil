@@ -1,18 +1,18 @@
 ---
+layout: zona
 titulo_corto: "Oriente antioqueño"
 lugar: "el Oriente antioqueño"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 4
 title: "Ingeniería estructural en Rionegro y el Oriente antioqueño"
 description: "Diseño estructural, estudios de suelos y evaluación en Rionegro, La Ceja, El Retiro, Marinilla y Guarne. Suelos del altiplano y curadurías del Oriente. Envigado."
-h1: "Ingeniería estructural en el Oriente antioqueño: Rionegro, La Ceja, El Retiro, Marinilla y Guarne"
+h1: "Ingeniería estructural en Rionegro, La Ceja y El Retiro: cenizas volcánicas sobre el batolito"
 eyebrow: "Zonas · Oriente antioqueño"
-excerpt: "El altiplano del Oriente es hoy el frente de crecimiento de Antioquia: vivienda campestre y multifamiliar, bodegas logísticas cerca del aeropuerto y equipamientos municipales. Sus suelos residuales y sus curadurías tienen particularidades que conviene conocer."
-hero: "carport-3"
-hero_alt: "Vista aérea de carport fotovoltaico sobre zona de parqueo"
-image: "/img/fotos/carport-3-440.jpg"
+excerpt: "En el altiplano del Oriente, una capa de cenizas volcánicas de uno a dos metros cubre el Batolito Antioqueño. Ese suelo decide la cimentación de una casa campestre, una bodega o un edificio."
+hero: "stock-nave-cerchas"
+hero_alt: "Interior de una nave industrial con cubierta de cerchas metálicas (fotografía de archivo)"
+image: "/img/fotos/stock-nave-cerchas-1200.jpg"
 badges:
-  - "Rionegro, La Ceja, El Retiro, Marinilla, Guarne"
-  - "Suelos residuales del altiplano"
+  - "Rionegro, La Ceja y El Retiro"
   - "Amenaza sísmica intermedia"
   - "No ejecutamos obra"
 cta_texto: "Consultar por mi proyecto en el Oriente"
@@ -24,67 +24,97 @@ area_servida:
   - { "@type": "City", "name": "El Retiro" }
   - { "@type": "City", "name": "Marinilla" }
   - { "@type": "City", "name": "Guarne" }
-resumen: "El Oriente antioqueño (Rionegro, La Ceja, El Retiro, Marinilla, Guarne) está en zona de amenaza sísmica intermedia y se asienta sobre suelos residuales del batolito antioqueño, de comportamiento muy distinto al de las laderas del Valle de Aburrá. PROINCIVIL diseña, hace estudios de suelos y acompaña trámites ante las curadurías y oficinas de planeación de la región."
+resumen: "Rionegro, La Ceja y El Retiro están en zona de amenaza sísmica intermedia, con Aa = 0,15 y Av = 0,20 según la NSR-10. En el altiplano, una capa de cenizas volcánicas de uno a dos metros cubre el Batolito Antioqueño. PROINCIVIL hace estudios de suelos, diseño estructural y evaluación de proyectos en el Oriente desde su sede en Envigado."
 datePublished: 2026-09-22
-dateModified: 2026-09-22
-cuando:
-  - "Construyes vivienda campestre, condominio o multifamiliar en Rionegro, La Ceja, El Retiro o Guarne"
-  - "Desarrollas una bodega o nave logística en el corredor del aeropuerto o la autopista Medellín-Bogotá"
-  - "Necesitas un estudio de suelos en Rionegro o municipios vecinos para licencia"
-  - "La curaduría de Rionegro u otra oficina del Oriente devolvió tu proyecto con observaciones"
-  - "Un municipio contrata diseño de infraestructura educativa, deportiva o de equipamiento"
-entregables:
-  - "Estudios de suelos con exploración adecuada a suelos residuales y perfiles profundos de meteorización"
-  - "Diseño estructural y de cimentaciones para vivienda, bodegas y equipamientos"
-  - "Documentación para las curadurías y oficinas de planeación del Oriente"
-  - "Evaluación de edificaciones existentes y verificación para ampliaciones"
-audiencias:
-  - { rol: "Constructoras y promotores del Oriente", texto: "Diseño estructural y geotécnico con visitas programadas y coordinación remota." }
-  - { rol: "Empresas logísticas", texto: "Bodegas y naves en el corredor del aeropuerto con cimentaciones bien resueltas." }
-  - { rol: "Alcaldías del Oriente", texto: "Infraestructura educativa y deportiva con soporte normativo completo." }
-cuando_titulo: "Cuándo llamar a un ingeniero estructural en el Oriente antioqueño"
-entregables_titulo: "Entregables para proyectos en el Oriente antioqueño"
-proyectos_titulo: "Proyectos de PROINCIVIL en el Oriente antioqueño"
-audiencias_titulo: "Para quién trabajamos en el Oriente antioqueño"
-faqs_titulo: "Preguntas sobre proyectos en el Oriente antioqueño"
+dateModified: 2026-10-28
+
+ficha:
+  rotulo: "Ficha técnica"
+  titulo: "El altiplano del Oriente en cuatro datos de suelo y sismo"
+  items:
+    - etiqueta: "Amenaza sísmica"
+      valor: "Intermedia"
+      nota: "Rionegro, La Ceja y El Retiro: Aa 0,15 · Av 0,20"
+      fuente: "NSR-10, apéndice A-4"
+      url: "https://www.unisdr.org/campaign/resilientcities/uploads/city/attachments/3871-10684.pdf"
+    - etiqueta: "Cenizas volcánicas en Rionegro"
+      valor: "≈ 1 m"
+      nota: "sobre el Batolito Antioqueño; la capa se engrosa hacia el sur"
+      fuente: "Hermelin, DYNA (UNAL)"
+      url: "https://revistas.unal.edu.co/index.php/dyna/article/view/113106"
+    - etiqueta: "Cenizas en Llanogrande"
+      valor: "≈ 2 m"
+      nota: "de espesor, medidas en un perfil de suelo de Rionegro"
+      fuente: "Boletín de Ciencias de la Tierra (UNAL)"
+      url: "https://revistas.unal.edu.co/index.php/rbct/article/view/95750"
+    - etiqueta: "Roca de base"
+      valor: "Batolito"
+      nota: "Antioqueño: debajo de las cenizas aparece su suelo residual"
+      fuente: "Hermelin, DYNA (UNAL)"
+      url: "https://revistas.unal.edu.co/index.php/dyna/article/view/113106"
+  boton:
+    pregunta: "¿Tu lote está en Rionegro, La Ceja o El Retiro?"
+    texto: "Consultar por mi lote"
+    variante: contorno
+    mensaje: "Hola, PROINCIVIL. Tengo un lote en el Oriente antioqueño y quiero cotizar un estudio de suelos."
+
+suelo:
+  rotulo: "Suelos del altiplano"
+  titulo: "Cenizas volcánicas de uno a dos metros: por qué en el Oriente el estudio de suelos va primero"
+  parrafos:
+    - "En el altiplano de Rionegro, una capa de cenizas volcánicas cubre el Batolito Antioqueño y su suelo residual. Es un suelo distinto al de las laderas del Valle de Aburrá."
+    - "El estudio de suelos define a qué profundidad apoyar la cimentación, qué perfil usar en el análisis sísmico y cómo manejar el agua en el lote."
+  estratos:
+    - { nombre: "Cenizas volcánicas", espesor: "1–2 m" }
+    - { nombre: "Suelo residual del Batolito Antioqueño" }
+  sondeo: "Corte esquemático, sin escala"
+  fuente: "Hermelin, DYNA (UNAL)"
+  url: "https://revistas.unal.edu.co/index.php/dyna/article/view/113106"
+  enlace: { texto: "Ver el servicio de estudio de suelos", url: "/servicios/geotecnia-estudio-de-suelos/" }
+  boton:
+    texto: "Cotizar estudio de suelos"
+    mensaje: "Hola, PROINCIVIL. Quiero cotizar un estudio de suelos para un lote en Rionegro, La Ceja o El Retiro."
+
+decision:
+  rotulo: "Tu proyecto en el Oriente"
+  titulo: "Casa campestre, bodega o edificio: qué necesita cada proyecto en el Oriente"
+  origen: "Tipo de proyecto en el altiplano"
+  ramas:
+    - resultado: "Vivienda campestre"
+      sigue: "Estudio de suelos del lote y diseño estructural NSR-10, aunque la casa sea de uno o dos pisos."
+    - resultado: "Bodega o nave industrial"
+      sigue: "Estructura metálica de gran luz, cimentación sobre el perfil de cenizas y cargas de cubierta."
+    - resultado: "Edificio multifamiliar"
+      sigue: "Estudio de suelos con el alcance que pide la altura, diseño estructural y acompañamiento en la licencia."
+  ejecuta: "Obra: el constructor que elijas"
+  nota: "PROINCIVIL diseña, evalúa y supervisa; no ejecuta obra en el Oriente ni en ninguna otra zona."
+  boton:
+    texto: "Contar mi proyecto"
+    mensaje: "Hola, PROINCIVIL. Tengo un proyecto en el Oriente antioqueño y quiero saber qué estudios y diseños necesita."
+
+zoom:
+  palabra: "ORIENTE"
+  textura: ladera
+  foto: "ia-ladera-muro"
+  alt: "Muro de contención de concreto sobre una ladera verde con viviendas arriba (ilustración)"
+  rotulo: "Tu proyecto"
+  titulo: "¿Una casa, una bodega o un edificio en Rionegro, La Ceja o El Retiro?"
+  texto: "Escríbenos con la ubicación del lote. Empezamos por el suelo, que en el Oriente decide la cimentación."
+
+faqs_titulo: "Preguntas sobre suelos y sismo en el Oriente antioqueño"
+faqs:
+  - question: "¿El Oriente antioqueño es zona de amenaza sísmica alta?"
+    answer: "No. Rionegro, La Ceja y El Retiro están en zona de amenaza sísmica intermedia, con Aa = 0,15 y Av = 0,20 en el apéndice A-4 de la NSR-10. El diseño sismorresistente es obligatorio."
+  - question: "¿Qué suelos tiene el altiplano de Rionegro?"
+    answer: "Una capa de cenizas volcánicas de aproximadamente un metro sobre el Batolito Antioqueño, que se engrosa hacia el sur; en Llanogrande se han medido cerca de dos metros. Debajo aparece el suelo residual del batolito."
+  - question: "¿Necesito estudio de suelos para una casa campestre?"
+    answer: "Sí. La NSR-10 exige estudio geotécnico para diseñar la cimentación, y en el Oriente el espesor de cenizas cambia de un lote a otro. Con la ubicación y el proyecto te enviamos una propuesta con el alcance exacto."
+  - question: "¿Atienden en Rionegro, La Ceja y El Retiro?"
+    answer: "Sí. Desde nuestra sede en Envigado atendemos el Oriente antioqueño: estudios de suelos, diseño estructural, evaluación y acompañamiento en la licencia."
+  - question: "¿Dónde se tramita la licencia en el Oriente?"
+    answer: "Depende del municipio: unos licencian con curaduría urbana y otros con la oficina de planeación. Confirmamos la entidad antes de preparar el expediente estructural."
+
 relacionados_titulo: "Servicios para proyectos en el Oriente antioqueño"
-normativa_titulo: "Normas que aplicamos en el Oriente antioqueño"
-proyectos: []
 relacionados: [geotecnia-estudio-de-suelos, diseno-estructural, cimentaciones, estructuras-metalicas, curadurias-y-licencias]
 normativa: [nsr-10, titulo-a, titulo-h, licencia-de-construccion-colombia]
-faqs:
-  - question: "¿Atienden en Rionegro?"
-    answer: "Sí. Rionegro y los municipios del altiplano están a menos de una hora de nuestra sede en Envigado. Programamos visitas técnicas y estudios de suelos y coordinamos el diseño de forma remota con modelo BIM."
-  - question: "¿Qué suelos tiene el Oriente antioqueño?"
-    answer: "En el altiplano predominan los suelos residuales del batolito antioqueño: perfiles de meteorización profundos, con horizontes de arcillas y limos sobre roca alterada, y en algunos sectores cenizas volcánicas y depósitos lacustres. Se comportan de forma distinta a los suelos de vertiente del Valle de Aburrá y exigen sondeos con profundidad suficiente."
-  - question: "¿El Oriente es zona de amenaza sísmica alta?"
-    answer: "No. Rionegro, La Ceja, El Retiro, Marinilla y Guarne están en amenaza sísmica intermedia según la NSR-10. Los valores de Aa y Av se toman por municipio de la tabla A.2.3-2 y se combinan con el tipo de suelo del estudio geotécnico."
-  - question: "¿Cuál es la curaduría de Rionegro?"
-    answer: "Rionegro cuenta con curaduría urbana; en otros municipios del Oriente la licencia se tramita ante la oficina de planeación. Verificamos el trámite vigente de cada municipio antes de radicar y preparamos el expediente en su formato."
-  - question: "¿Hacen estudio de suelos en Rionegro y La Ceja?"
-    answer: "Sí. Realizamos exploración, ensayos de laboratorio e informe geotécnico con recomendaciones de cimentación en todos los municipios del Oriente antioqueño."
 ---
-
-## El Oriente: el frente de crecimiento de Antioquia
-
-El altiplano del Oriente antioqueño concentra buena parte del crecimiento inmobiliario y logístico del departamento: vivienda campestre y condominios en El Retiro y La Ceja, multifamiliares y comercio en Rionegro, bodegas y naves en el corredor del aeropuerto José María Córdova y la autopista Medellín-Bogotá, equipamientos municipales en Marinilla y Guarne. Es una geografía distinta a la del Valle de Aburrá y exige criterio propio.
-
-## Amenaza sísmica y normativa
-
-Los municipios del altiplano están en zona de amenaza sísmica intermedia según la NSR-10. Los parámetros de diseño se toman por municipio de la tabla A.2.3-2 y los coeficientes de sitio dependen del tipo de suelo que arroje el estudio geotécnico del predio. Los verificamos en cada proyecto y los dejamos justificados en las memorias.
-
-## Suelos residuales del batolito
-
-El Oriente se asienta sobre el batolito antioqueño, una masa de roca ígnea que, bajo el clima del altiplano, ha desarrollado perfiles de meteorización profundos: arcillas y limos residuales, saprolitos y roca alterada a profundidades variables, con cenizas volcánicas en algunos sectores y depósitos lacustres en las zonas bajas. Son suelos que pueden tener buena capacidad en seco y comportarse de forma muy distinta saturados. Un estudio de suelos con sondeos poco profundos, copiado de la práctica del Valle de Aburrá, es la causa más frecuente de asentamientos en condominios y bodegas de la región.
-
-## Trámites en el Oriente
-
-Rionegro cuenta con curaduría urbana; en La Ceja, El Retiro, Marinilla y Guarne las licencias se tramitan según la organización de cada municipio, en curaduría o en la oficina de planeación. Los requisitos del componente estructural son los mismos en todos (planos, memorias y estudio de suelos firmados), pero los formatos y los tiempos cambian. Verificamos el trámite antes de radicar.
-
-## Servicios más demandados
-
-Estudios de suelos para vivienda y bodegas, diseño estructural de condominios y multifamiliares, diseño de naves logísticas con cimentaciones adecuadas a suelos residuales, diseño de infraestructura educativa y deportiva para municipios, y subsanación de observaciones de curaduría.
-
-## Cómo trabajamos en el Oriente
-
-Visita técnica y exploración geotécnica programadas, llamada de diagnóstico, diseño coordinado en BIM y radicación con acompañamiento. La obra la ejecuta el constructor que elijas: PROINCIVIL diseña, evalúa y supervisa, no construye.

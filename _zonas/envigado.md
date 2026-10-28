@@ -26,21 +26,21 @@ dateModified: 2026-10-28
 
 ficha:
   rotulo: "Ficha técnica"
-  titulo: "Envigado en cinco datos que cambian el diseño de un proyecto"
+  titulo: "Envigado en cuatro datos que cambian el diseño de un proyecto"
   items:
     - etiqueta: "Amenaza sísmica"
       valor: "Intermedia"
-      nota: "la misma del resto del Valle de Aburrá"
-      fuente: "NSR-10, A.2.3"
-    - etiqueta: "Curadurías urbanas"
-      valor: "2"
-      nota: "Primera y Segunda de Envigado; eliges dónde radicar"
+      nota: "Aa 0,15 · Av 0,20"
+      fuente: "NSR-10, apéndice A-4"
+      url: "https://www.unisdr.org/campaign/resilientcities/uploads/city/attachments/3871-10684.pdf"
     - etiqueta: "Sede de PROINCIVIL"
       valor: "Envigado"
       nota: "visitas técnicas y reuniones en curaduría con desplazamientos cortos"
-    - etiqueta: "Terreno"
-      valor: "Ladera"
-      nota: "buena parte de los lotes urbanizables suben hacia el oriente del municipio"
+    - etiqueta: "Microzonificación sísmica"
+      valor: "Detallada"
+      nota: "estudio del Área Metropolitana para Envigado y otros seis municipios del valle"
+      fuente: "Boletín de Geología, 2009"
+      url: "https://revistas.uis.edu.co/index.php/revistaboletindegeologia/article/download/347/610/1205"
     - etiqueta: "Equipo"
       valor: "7"
       nota: "personas en ingeniería, arquitectura y gestión"
@@ -70,6 +70,24 @@ protocolo:
       texto: "Memorias y planos con los parámetros sísmicos de Envigado y el perfil de suelo del predio."
     - titulo: "Radicación y observaciones"
       texto: "Preparamos el componente estructural para la curaduría que elijas y respondemos sus observaciones por escrito."
+
+suelo:
+  rotulo: "Suelos de ladera en Envigado"
+  titulo: "Flujos de lodo y escombros sobre suelo residual: por qué cada lote en pendiente necesita su estudio"
+  parrafos:
+    - "En las laderas de Envigado y El Poblado, los depósitos de vertiente son flujos de lodo o de escombros dispuestos en escalones. Debajo aparecen suelos residuales de la meteorización de rocas ígneas y metamórficas."
+    - "Por eso el suelo cambia de un extremo a otro del mismo lote: una esquina admite cimentación superficial y la otra pide pilas o un muro de contención."
+  estratos:
+    - { nombre: "Depósito de vertiente: flujo de lodos o escombros" }
+    - { nombre: "Suelo residual de roca ígnea o metamórfica" }
+  sondeo: "Corte esquemático, sin escala"
+  fuente: "Boletín de Ciencias de la Tierra (UNAL)"
+  url: "https://revistas.unal.edu.co/index.php/rbct/article/view/95934"
+  enlace: { texto: "Ver el servicio de muros de contención y taludes", url: "/servicios/muros-de-contencion-y-taludes/" }
+  boton:
+    texto: "Cotizar estudio de suelos"
+    variante: contorno
+    mensaje: "Hola, PROINCIVIL. Quiero cotizar un estudio de suelos para un lote en ladera en Envigado."
 
 curadurias:
   rotulo: "Curadurías Primera y Segunda de Envigado"

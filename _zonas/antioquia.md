@@ -35,7 +35,7 @@ ficha:
       url: "/proyectos/ie-yerbal-y-educacion-publica/"
     - etiqueta: "Mutatá, Urabá"
       valor: "4.544 m²"
-      nota: "I.E. Pavarandó Grande: pórticos DES y pilas con campana en suelo tipo C"
+      nota: "I.E. Pavarandó Grande en zona de amenaza alta: pórticos DES y pilas con campana"
       fuente: "Ficha del proyecto"
       url: "/proyectos/ie-pavarando-grande-mutata/"
     - etiqueta: "Puerto Triunfo"
@@ -53,10 +53,11 @@ ficha:
       nota: "colegios con canchas y muros formulados ante Regalías"
       fuente: "Ficha del proyecto"
       url: "/proyectos/infraestructura-deportiva-betulia/"
-    - etiqueta: "Grupo de uso"
-      valor: "III"
-      nota: "el de los colegios en la NSR-10: más exigencia sísmica que una vivienda"
-      fuente: "NSR-10, A.2.5"
+    - etiqueta: "Amenaza sísmica"
+      valor: "Alta e intermedia"
+      nota: "Mutatá y Betulia, alta; Puerto Triunfo, intermedia"
+      fuente: "NSR-10, apéndice A-4"
+      url: "https://www.unisdr.org/campaign/resilientcities/uploads/city/attachments/3871-10684.pdf"
   boton:
     pregunta: "¿Tu municipio o tu entidad tiene un proyecto en Antioquia?"
     texto: "Consultar por el proyecto"
@@ -82,6 +83,23 @@ protocolo:
     - titulo: "Radicación y aprobación"
       texto: "Diseños aprobados en primera radicación en Pavarandó Grande y en la línea Yerbal. La obra la ejecuta el contratista que adjudique la entidad."
 
+decision:
+  rotulo: "Un departamento, dos zonas sísmicas"
+  titulo: "Mutatá, Betulia y Puerto Triunfo: el municipio cambia el detallado del colegio"
+  origen: "Zona de amenaza del municipio (NSR-10, apéndice A-4)"
+  ramas:
+    - resultado: "Mutatá · alta · Aa 0,25"
+      sigue: "Pórticos de concreto con disipación especial (DES), como en la I.E. Pavarandó Grande."
+    - resultado: "Betulia · alta · Aa 0,20"
+      sigue: "Detallado DES para pórticos de concreto en colegios y escenarios."
+    - resultado: "Puerto Triunfo · intermedia · Aa 0,15"
+      sigue: "Disipación moderada (DMO) como mínimo; en el Hotel Aldea se optimizaron cimentación y acero."
+  ejecuta: "Obra: el contratista que adjudique la entidad"
+  nota: "El grupo de uso III de los colegios aumenta además las fuerzas sísmicas de diseño frente a una vivienda, en cualquiera de las tres zonas."
+  boton:
+    texto: "Consultar por mi municipio"
+    mensaje: "Hola, PROINCIVIL. Tenemos un proyecto en un municipio de Antioquia y queremos saber qué exige su zona sísmica."
+
 proyectos_titulo: "Cinco proyectos de PROINCIVIL en municipios de Antioquia"
 proyectos: [ie-pavarando-grande-mutata, hotel-aldea-puerto-triunfo, ie-puerto-perales, infraestructura-deportiva-betulia, ie-yerbal-y-educacion-publica]
 
@@ -101,7 +119,7 @@ faqs:
   - question: "¿Preparan los documentos para presentar un proyecto a Regalías?"
     answer: "Sí. En Betulia e Hispania entregamos diseños de contenciones, canchas y cubiertas metálicas con la documentación técnica para la formulación ante el Sistema General de Regalías."
   - question: "¿Qué cambia en el diseño de un colegio frente a una vivienda?"
-    answer: "La NSR-10 clasifica los colegios en el grupo de uso III, que aumenta las fuerzas sísmicas de diseño frente a una vivienda. El sistema estructural y el detallado del refuerzo se definen además según la zona de amenaza sísmica del municipio."
+    answer: "La NSR-10 clasifica los colegios en el grupo de uso III, que aumenta las fuerzas sísmicas de diseño frente a una vivienda. El detallado del refuerzo depende además de la zona del municipio: Mutatá y Betulia son de amenaza alta y Puerto Triunfo de amenaza intermedia."
   - question: "¿Cómo atienden un proyecto lejos de Envigado?"
     answer: "El diseño y la revisión se hacen desde Envigado con modelo compartido y reuniones virtuales. Las visitas al lote, los ensayos y la supervisión se programan en el municipio cuando el servicio lo exige."
   - question: "¿Trabajan con alcaldías y entidades públicas?"

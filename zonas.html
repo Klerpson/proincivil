@@ -35,7 +35,7 @@ dateModified: 2026-10-27
 <div class="encabezado">
   <p class="rotulo">Amenaza sísmica · NSR-10</p>
   <h2 class="encabezado__titulo">Alta, intermedia o baja: lo que exige la NSR-10 en cada ciudad donde trabajamos</h2>
-  <p class="encabezado__texto">La norma es nacional; la exigencia cambia con la zona de amenaza del municipio. Estas son las ciudades del mapa con la zona verificada en la tabla A.2.3-2.</p>
+  <p class="encabezado__texto">La norma es nacional; la exigencia cambia con la zona de amenaza del municipio. Estas son las ciudades del mapa con su zona verificada en la tabla A.2.3-2 o el apéndice A-4.</p>
 </div>
 <div class="rejilla rejilla--3">
   {%- assign _zonas_amenaza = "alta|intermedia|baja" | split: "|" -%}
@@ -44,7 +44,7 @@ dateModified: 2026-10-27
   <article class="pieza{% if z == 'alta' %} pieza--oscura{% endif %}">
     <div class="pieza__cuerpo flujo">
       <p class="rotulo{% if z == 'alta' %} rotulo--claro{% endif %}">Amenaza {{ z }}</p>
-      <h3 class="pieza__titulo">{% for c in _lista %}{{ c.nombre }}{% unless forloop.last %} · {% endunless %}{% endfor %}</h3>
+      <h3 class="pieza__titulo">{% for c in _lista %}{{ c.nombre_amenaza | default: c.nombre }}{% unless forloop.last %} · {% endunless %}{% endfor %}</h3>
       <p class="pieza__valor">{% case z %}{% when "alta" %}DES{% when "intermedia" %}DMO{% else %}DMI{% endcase %}</p>
       <p>{% case z %}{% when "alta" %}Capacidad especial de disipación de energía: el detallado más exigente para pórticos de concreto.{% when "intermedia" %}Capacidad moderada de disipación de energía como mínimo para pórticos de concreto.{% else %}Capacidad mínima de disipación de energía permitida; el diseño sísmico sigue siendo obligatorio.{% endcase %}</p>
     </div>

@@ -3,7 +3,9 @@
 # lat/lon: coordenadas aproximadas del casco urbano (grados decimales), solo para ubicar el punto.
 # zona: slug de _zonas/ al que enlaza · proyectos: slugs de _proyectos/ · tipo: sede | proyecto.
 # lado: posición de la etiqueta en el plano (derecha por defecto | izquierda | arriba | abajo).
-# amenaza: según la tabla A.2.3-2 de la NSR-10; se deja vacía si no está verificada.
+# nombre_amenaza: nombre que se muestra en la franja de amenaza del hub cuando solo una parte del punto está verificada.
+# amenaza: según la tabla A.2.3-2 o el apéndice A-4 de la NSR-10 (Título A, 2010), verificada fila por fila
+# el 2026-10-28; se deja vacía si no está verificada. Betulia (Antioquia, 05093) y Mutatá son alta.
 - nombre: "Envigado"
   depto: "Antioquia"
   lat: 6.17
@@ -24,13 +26,14 @@
   nota: "Interventoría al diseño del Hotel The One, 15 pisos"
   proyectos: [hotel-the-one-laureles]
 - nombre: "Betulia e Hispania"
+  nombre_amenaza: "Betulia"   # solo Betulia (05093) está verificada como alta; Hispania no
   lado: abajo
   depto: "Antioquia"
   lat: 6.11
   lon: -75.98
   tipo: proyecto
   zona: antioquia
-  amenaza: ""
+  amenaza: alta
   nota: "Diseños educativos y deportivos"
   proyectos: [infraestructura-deportiva-betulia]
 - nombre: "Mutatá"
@@ -39,7 +42,7 @@
   lon: -76.44
   tipo: proyecto
   zona: antioquia
-  amenaza: ""
+  amenaza: alta
   nota: "I.E. Pavarandó Grande, pórticos DES"
   proyectos: [ie-pavarando-grande-mutata]
 - nombre: "Puerto Triunfo"
@@ -48,7 +51,7 @@
   lon: -74.64
   tipo: proyecto
   zona: antioquia
-  amenaza: ""
+  amenaza: intermedia
   nota: "Hotel Aldea e I.E. Puerto Perales"
   proyectos: [hotel-aldea-puerto-triunfo, ie-puerto-perales]
 - nombre: "Pereira y Dosquebradas"

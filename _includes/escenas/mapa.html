@@ -28,7 +28,7 @@
   <g class="mapa__replanteo">
     <line x1="{{ _ax | minus: 120 }}" y1="{{ _ay }}" x2="{{ _ax | plus: 200 }}" y2="{{ _ay }}"/>
     <line x1="{{ _ax }}" y1="{{ _ay | minus: 190 }}" x2="{{ _ax }}" y2="{{ _ay | plus: 70 }}"/>
-    <text x="{{ _ax | plus: 8 }}" y="{{ _ay | plus: 22 }}">{{ _act.lat | replace: ".", "," }}°N · {{ _act.lon | abs | replace: ".", "," }}°O</text>
+    <text x="{{ _cx | plus: 10 }}" y="{{ _cy | plus: 18 }}">{{ _act.lat | replace: ".", "," }}°N · {{ _act.lon | abs | replace: ".", "," }}°O</text>
   </g>
   {%- endif %}
   <g class="mapa__reticula">
@@ -51,7 +51,7 @@
     <g class="mapa__punto{% if c.tipo == "sede" %} mapa__punto--sede{% endif %}{% if _activa %} mapa__punto--activo{% endif %}" data-ciudad="{{ forloop.index }}">
       <circle class="mapa__onda" r="16"/>
       <circle class="mapa__nucleo" r="{% if c.tipo == 'sede' %}6{% else %}4.5{% endif %}"/>
-      {%- assign _lado = c.lado -%}{%- if _activa -%}{%- assign _lado = "arriba" -%}{%- endif -%}
+      {%- assign _lado = c.lado -%}{%- if _activa and c.lado == "izquierda" -%}{%- assign _lado = "arriba" -%}{%- endif -%}
       {%- case _lado -%}
         {%- when "izquierda" -%}{%- assign _tx = -12 -%}{%- assign _ty = 4 -%}{%- assign _ancla = "end" -%}
         {%- when "arriba" -%}{%- assign _tx = 0 -%}{%- assign _ty = -18 -%}{%- assign _ancla = "middle" -%}

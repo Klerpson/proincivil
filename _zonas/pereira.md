@@ -31,8 +31,9 @@ ficha:
   items:
     - etiqueta: "Amenaza sísmica"
       valor: "Alta"
-      nota: "Pereira y Dosquebradas, la zona más exigente de la norma"
-      fuente: "NSR-10, A.2.3"
+      nota: "Pereira: Aa 0,25 · Av 0,25, la zona más exigente de la norma"
+      fuente: "NSR-10, tabla A.2.3-2"
+      url: "https://www.unisdr.org/campaign/resilientcities/uploads/city/attachments/3871-10684.pdf"
     - etiqueta: "Sismo de 2026"
       valor: "7,4 Mw"
       nota: "10 de agosto, epicentro en San José del Palmar (Chocó)"
@@ -146,7 +147,7 @@ zoom:
 faqs_titulo: "Preguntas sobre sismo, suelos y licencias en Pereira"
 faqs:
   - question: "¿Pereira es zona de amenaza sísmica alta?"
-    answer: "Sí. La NSR-10 clasifica a Pereira y a Dosquebradas en zona de amenaza sísmica alta. Los valores de diseño de Pereira están en la tabla A.2.3-2 de la norma, que lista las capitales de departamento, y los de Dosquebradas en su apéndice A-4."
+    answer: "Sí. La NSR-10 clasifica a Pereira y a Dosquebradas en zona de amenaza sísmica alta. Pereira tiene Aa = 0,25 y Av = 0,25 en la tabla A.2.3-2 de la norma; los valores de Dosquebradas están en su apéndice A-4 y se ajustan con el perfil de suelo del predio."
   - question: "¿Qué hago con mi edificio después del temblor en Pereira?"
     answer: "Si hay grietas en columnas, vigas o muros estructurales, puertas que no cierran o desprendimientos, pide una inspección de un ingeniero estructural antes de reparar. Si hay daño grave o dudas sobre la estabilidad, sigue las indicaciones de la oficina de gestión del riesgo de la Alcaldía de Pereira."
   - question: "¿Qué informe pide la aseguradora por daños del sismo?"
