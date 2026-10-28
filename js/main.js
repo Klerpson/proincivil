@@ -4,11 +4,17 @@
   var doc = document;
   var ultimo = window.scrollY;
 
-  /* 1. Evento de conversión en GA4 para cada enlace de WhatsApp (data-location identifica el CTA). */
+  /* 1. Evento de conversión para cada enlace de WhatsApp (data-location identifica el CTA). Con GTM se
+     envía al dataLayer como evento personalizado «whatsapp_click» (se dispara un activador en GTM); con
+     GA4 directo (ga4_id) va por gtag. */
   doc.addEventListener('click', function (e) {
     var a = e.target.closest('a.lead-whatsapp');
-    if (a && typeof window.gtag === 'function') {
-      window.gtag('event', 'whatsapp_click', { location: a.getAttribute('data-location') || 'sin-ubicacion', page_path: location.pathname });
+    if (!a) return;
+    var datos = { location: a.getAttribute('data-location') || 'sin-ubicacion', page_path: location.pathname };
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'whatsapp_click', datos);
+    } else if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({ event: 'whatsapp_click', whatsapp_location: datos.location, page_path: datos.page_path });
     }
   });
 

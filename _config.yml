@@ -27,7 +27,11 @@ lang: es-CO
 # Verificación de Search Console (solo el valor "content"). Vacío = no se imprime.
 google_site_verification: ""
 # GA4 (G-XXXXXXX). Vacío = no se carga analítica. Solo se inyecta con JEKYLL_ENV=production.
+# Con GTM activo, configurar GA4 dentro del contenedor y dejar este campo vacío (si no, se mide doble).
 ga4_id: ""
+# Google Tag Manager (GTM-XXXXXXX), entregado por el usuario el 2026-10-28. Vacío = no se carga.
+# Solo con JEKYLL_ENV=production (GitHub Pages compila así); en local no se carga.
+gtm_id: "GTM-TR894KS7"
 
 # Formulario: endpoint de Formspree/Web3Forms/Getform. GitHub Pages no procesa formularios.
 # Vacío = el formulario muestra el aviso y deriva a WhatsApp.

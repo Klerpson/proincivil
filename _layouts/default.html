@@ -7,6 +7,9 @@ layout: compress
     {% include head.html %}
   </head>
   <body data-layout="{{ page.layout | default: 'page' }}">
+    {%- if jekyll.environment == "production" and site.gtm_id != "" %}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm_id }}" height="0" width="0" hidden title="Google Tag Manager"></iframe></noscript>
+    {%- endif %}
     <a class="saltar" href="#contenido">Saltar al contenido</a>
     {% include nav.html %}
     <main id="contenido">
