@@ -27,7 +27,8 @@ lang: es-CO
 # Verificación de Search Console (solo el valor "content"). Vacío = no se imprime.
 google_site_verification: ""
 # GA4 (G-XXXXXXX). Vacío = no se carga analítica. Solo se inyecta con JEKYLL_ENV=production.
-# Con GTM activo, configurar GA4 dentro del contenedor y dejar este campo vacío (si no, se mide doble).
+# Decisión del usuario (2026-10-28): toda la analítica se mide desde GTM. No llenar este campo:
+# GA4 vive dentro del contenedor y cargarlo también aquí duplicaría las visitas.
 ga4_id: ""
 # Google Tag Manager (GTM-XXXXXXX), entregado por el usuario el 2026-10-28. Vacío = no se carga.
 # Solo con JEKYLL_ENV=production (GitHub Pages compila así); en local no se carga.
