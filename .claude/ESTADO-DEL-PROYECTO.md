@@ -68,7 +68,7 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 
 ### 2026-11-01 — Enlace de fuente preferida en Google al final de los posts
 **Contexto:** plan del usuario para 13 blogs de clientes: al final de cada post, un enlace al deeplink oficial de Google para que el lector marque el sitio como fuente preferida (sin JS de terceros).
-- Nuevo `_includes/fuente-preferida.html` (clase `.enlace-flecha`, flecha por `::after`; host desde `site.url` → `q=www.proincivil.com`). Llamado en `_layouts/post.html` tras `{{ content }}` dentro de `.flujo`, con `marca="PROINCIVIL"`. Sin CSS nuevo.
+- Nuevo `_includes/fuente-preferida.html` (clases `.enlace-flecha .enlace-flecha--texto`, flecha por `::after`; host desde `site.url` → `q=www.proincivil.com`). Llamado en `_layouts/post.html` tras `{{ content }}` dentro de `.flujo`, con `marca="PROINCIVIL"`. Variante nueva `.enlace-flecha--texto` en `critical-css/base.css`: el `inline-flex` de la base mandaba la flecha al borde derecho cuando el texto ocupa dos líneas; la variante deja el enlace `inline` y la flecha sigue a la última palabra. CSS crítico tras el cambio: 5067 B gzip de 5120.
 - Verificado: build OK, `validar-site.py` 0 problemas, `auditoria.py` sin cambios frente al estado previo; 3/3 posts con el enlace y ninguna otra página.
 - El deeplink solo mostrará el sitio en Google cuando `www.proincivil.com` exista e indexe (hoy `vista_previa: true`).
 

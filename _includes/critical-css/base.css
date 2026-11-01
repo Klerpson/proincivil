@@ -109,6 +109,8 @@
   .enlace-flecha::after { content: "→"; text-decoration: none; transition: transform 160ms var(--curva); }
   .enlace-flecha:hover::after { transform: translateX(4px); }
   .enlace-flecha--claro { color: var(--marfil); text-decoration-color: var(--trazo); }
+  .enlace-flecha--texto { display: inline; }
+  .enlace-flecha--texto::after { display: inline-block; margin-inline-start: 0.5rem; }
 
   .barra {
     position: sticky; inset-block-start: 0; z-index: 50;

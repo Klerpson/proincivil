@@ -5,6 +5,6 @@
 {%- endcomment -%}
 {%- assign fp_host = site.url | remove: 'https://' | remove: 'http://' | remove: '/' -%}
 {%- assign fp_lang = include.lang | default: site.lang -%}
-<p><a class="enlace-flecha" href="https://www.google.com/preferences/source?q={{ fp_host }}" rel="noopener" target="_blank">
+<p><a class="enlace-flecha enlace-flecha--texto" href="https://www.google.com/preferences/source?q={{ fp_host }}" rel="noopener" target="_blank">
   {%- if fp_lang == "en" -%}Add {{ include.marca }} as a preferred source on Google{%- else -%}Añade a {{ include.marca }} como fuente preferida en Google{%- endif -%}
 </a></p>
