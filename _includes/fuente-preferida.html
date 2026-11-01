@@ -1,0 +1,10 @@
+{%- comment -%}
+  fuente-preferida.html: enlace al final del post para que el lector marque el sitio como fuente
+  preferida en Google (deeplink oficial, sin JS de terceros). La flecha la pone .enlace-flecha::after.
+  Uso: {% include fuente-preferida.html marca="PROINCIVIL" lang=page.lang %}
+{%- endcomment -%}
+{%- assign fp_host = site.url | remove: 'https://' | remove: 'http://' | remove: '/' -%}
+{%- assign fp_lang = include.lang | default: site.lang -%}
+<p><a class="enlace-flecha" href="https://www.google.com/preferences/source?q={{ fp_host }}" rel="noopener" target="_blank">
+  {%- if fp_lang == "en" -%}Add {{ include.marca }} as a preferred source on Google{%- else -%}Añade a {{ include.marca }} como fuente preferida en Google{%- endif -%}
+</a></p>
