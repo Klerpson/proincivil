@@ -24,10 +24,5 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: MJ12bot
-Disallow: /
-User-agent: DotBot
-Disallow: /
-
 Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
 {%- endif -%}
