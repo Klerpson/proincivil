@@ -24,9 +24,12 @@
   <div class="marco cabecera__marco">
     <div class="cabecera__copy flujo">
       {%- if page.breadcrumb_enabled != false and page.url != "/" -%}{% include breadcrumb.html %}{%- endif -%}
-      {%- if page.eyebrow -%}<p class="rotulo">{{ page.eyebrow }}</p>{%- endif -%}
+      {%- comment -%} El rótulo solo aporta en las fichas de proyecto (sector · servicio); en las demás repite las migas. {%- endcomment -%}
+      {%- if page.eyebrow and page.layout == "project" -%}<p class="rotulo">{{ page.eyebrow }}</p>{%- endif -%}
       <h1 class="cabecera__titulo">{{ page.h1 | default: page.title }}</h1>
-      {%- if page.excerpt -%}<p class="cabecera__texto">{{ page.excerpt }}</p>{%- endif -%}
+      {%- comment -%} `entradilla`: una frase para el hero. `excerpt` sigue en tarjetas y casos. {%- endcomment -%}
+      {%- assign _entradilla = page.entradilla | default: page.excerpt -%}
+      {%- if _entradilla -%}<p class="cabecera__texto">{{ _entradilla }}</p>{%- endif -%}
       {%- unless page.sin_cta_cabecera -%}
       <div class="acciones">
         {% include button.html texto=page.cta_texto data_location="cabecera" %}

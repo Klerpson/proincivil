@@ -7,6 +7,7 @@ description: "Levantamiento topográfico planimétrico y altimétrico en Colombi
 h1: "Levantamiento topográfico para diseñar sobre el terreno real"
 eyebrow: "Servicio · Topografía y verticalidad"
 excerpt: "El terreno real casi nunca coincide con el plano del lote. Un levantamiento topográfico fija niveles, linderos, construcciones vecinas y redes antes de diseñar la cimentación, la vía o la ampliación."
+entradilla: "Niveles, linderos, construcciones vecinas y redes medidos antes de diseñar la cimentación, la vía o la ampliación."
 hero: "stock-plano-detalles"
 hero_alt: "Plano técnico histórico con detalles de una cercha de acero"
 image: "/img/fotos/stock-plano-detalles-1200.jpg"

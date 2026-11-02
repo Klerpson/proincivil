@@ -5,9 +5,10 @@ lugar: "el resto de Antioquia"   # forma para escribirla dentro de una frase: «
 orden: 5
 title: "Ingeniería estructural en Antioquia: Urabá, Magdalena Medio y municipios"
 description: "Diseño estructural, geotecnia e interventoría en todo Antioquia: Mutatá, Puerto Triunfo, Betulia y Puerto Perales. Colegios y hoteles en zonas de amenaza sísmica."
-h1: "Ingeniería estructural en Antioquia: colegios, hoteles y escenarios de Urabá al Magdalena Medio"
+h1: "Ingenieros estructurales en Antioquia"
 eyebrow: "Zonas · Antioquia"
 excerpt: "Colegios públicos aprobados en primera radicación, un hotel de más de 5.000 m² en Puerto Triunfo y escenarios formulados ante Regalías: así trabajamos fuera del Valle de Aburrá."
+entradilla: "Colegios aprobados en primera radicación, un hotel de más de 5.000 m² y escenarios formulados ante Regalías, de Urabá al Magdalena Medio."
 hero: "institucion-educativa"
 hero_alt: "Institución educativa de dos niveles en concreto reforzado"
 image: "/img/fotos/institucion-educativa-440.jpg"

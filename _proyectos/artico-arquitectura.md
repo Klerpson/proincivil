@@ -6,6 +6,7 @@ title: "ARTICO Arquitectura: diagnóstico y revisión estructural | PROINCIVIL"
 description: "Alianza con ARTICO Arquitectura en Barranquilla, Pereira y Bogotá: diagnósticos, vulnerabilidad y revisiones para cambios de uso y decisiones de intervención."
 h1: "ARTICO Arquitectura: soporte estructural para decidir"
 excerpt: "Una alianza técnica en tres ciudades para conocer el estado de edificaciones y sustentar decisiones de cambio de uso, repotenciación y nuevos proyectos."
+entradilla: "Una alianza técnica en tres ciudades para conocer el estado de edificaciones y decidir cambios de uso, repotenciación y nuevos proyectos."
 sin_cta_cabecera: true
 ficha:
   cliente: "ARTICO Arquitectura"

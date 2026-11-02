@@ -5,9 +5,10 @@ lugar: "otras ciudades de Colombia"   # forma para escribirla dentro de una fras
 orden: 7
 title: "Ingeniería estructural en toda Colombia con coordinación remota"
 description: "Diseño estructural, evaluación e interventoría en toda ciudad de Colombia: sedes comerciales, estructuras fotovoltaicas y proyectos en Bogotá con coordinación remota."
-h1: "Ingeniería estructural en Bogotá, Barranquilla y el resto de Colombia: un criterio, parámetros locales"
+h1: "Ingenieros estructurales en Bogotá, Barranquilla y Colombia"
 eyebrow: "Zonas · Colombia"
 excerpt: "Sedes de una cadena en varias ciudades, más de 8 proyectos solares para una misma empresa y una alianza con ARTICO en Barranquilla, Pereira y Bogotá. Diseñamos a distancia y visitamos donde hace falta."
+entradilla: "Diseñamos a distancia con parámetros locales y visitamos donde hace falta, como en las sedes de una cadena o con ARTICO."
 hero: "ia-mesa-planos"
 hero_alt: "Mesa de trabajo con planos estructurales y un modelo 3D en pantalla (ilustración)"
 image: "/img/fotos/ia-mesa-planos-1200.jpg"

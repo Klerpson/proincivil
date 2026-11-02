@@ -123,7 +123,7 @@
     .cabecera__media picture { animation: portada-foto-ventana 1300ms var(--curva) 150ms both; }
   }
   .cabecera__marco { display: grid; gap: 2.5rem; align-items: center; }
-  .cabecera__titulo { max-inline-size: 22ch; font-size: clamp(2rem, 2.8vw + 1rem, 3.5rem); line-height: 1.05; letter-spacing: -0.03em; }
+  .cabecera__titulo { max-inline-size: 22ch; text-wrap: balance; font-size: clamp(1.75rem, 2.8vw + 1rem, 3.5rem); line-height: 1.05; letter-spacing: -0.03em; }
   .cabecera__texto { max-inline-size: 42rem; font-size: 1.125rem; color: var(--tinta-suave); }
   .cabecera__copy { --flujo: 1.25rem; }
   .cabecera__media { position: relative; }

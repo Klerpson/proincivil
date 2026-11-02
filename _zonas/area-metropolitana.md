@@ -5,9 +5,10 @@ lugar: "el Área Metropolitana"   # forma para escribirla dentro de una frase: �
 orden: 3
 title: "Ingeniería estructural en el Área Metropolitana del Valle de Aburrá"
 description: "Diseño estructural, estudios de suelos e interventoría en Itagüí, Sabaneta, Bello, La Estrella, Caldas y Copacabana. Ingenieros de Envigado cerca de cada curaduría."
-h1: "Ingeniería estructural en el Valle de Aburrá: Itagüí, Sabaneta, Bello y los demás municipios"
+h1: "Ingenieros estructurales en el Valle de Aburrá"
 eyebrow: "Zonas · Área Metropolitana"
 excerpt: "Diez municipios comparten valle y norma, pero no microzonificación ni trámite. Antes de diseñar en Itagüí, Bello o Sabaneta revisamos lo que cambia de un municipio a otro."
+entradilla: "Itagüí, Bello, Sabaneta y los demás municipios comparten norma, pero no microzonificación ni trámite: revisamos qué cambia en cada uno."
 hero: "estructura-metalica"
 hero_alt: "Estructura metálica de una edificación en pórticos de acero"
 image: "/img/fotos/estructura-metalica-1200.jpg"

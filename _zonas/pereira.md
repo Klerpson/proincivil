@@ -5,9 +5,10 @@ lugar: "Pereira y Dosquebradas"   # forma para escribirla dentro de una frase: �
 orden: 6
 title: "Ingeniería estructural en Pereira: evaluación post-sismo y suelos"
 description: "Ingenieros estructurales para Pereira y Dosquebradas: evaluación después del temblor, informe para la aseguradora, vulnerabilidad, reforzamiento y estudio de suelos."
-h1: "Ingeniería estructural en Pereira y Dosquebradas: evaluar, reforzar o diseñar"
+h1: "Ingenieros estructurales en Pereira y Dosquebradas"
 eyebrow: "Zonas · Pereira y Dosquebradas"
 excerpt: "Después del sismo del 10 de agosto, medimos el daño de tu edificio, preparamos el informe para la aseguradora y diseñamos el reforzamiento. Sin ejecutar obra: sin interés en lo que se construya."
+entradilla: "Después del sismo del 10 de agosto medimos el daño, preparamos el informe para la aseguradora y diseñamos el reforzamiento."
 hero: "fachada-vidrio"
 hero_alt: "Fachada de concreto y vidrio de un edificio residencial (imagen de referencia)"
 image: "/img/fotos/fachada-vidrio-1024.jpg"

@@ -8,6 +8,7 @@ description: "Diseño estructural sismorresistente en Colombia y Perú (NSR-10 y
 h1: "Diseño estructural sismorresistente conforme a NSR-10 y E.030"
 eyebrow: "Servicio · Ingeniería estructural y sismorresistencia"
 excerpt: "Memorias de cálculo, planos estructurales y coordinación BIM para justificar la solución de tu proyecto, radicarlo en curaduría y evitar interferencias antes de construir. Sin sobredimensionar por costumbre."
+entradilla: "Memorias, planos y modelo BIM firmados para radicar en curaduría, sin sobredimensionar por costumbre."
 hero: "ia-mesa-planos"
 hero_alt: "Planos estructurales impresos, escalímetro y una tableta con el modelo 3D de una estructura"
 image: "/img/fotos/ia-mesa-planos-1200.jpg"

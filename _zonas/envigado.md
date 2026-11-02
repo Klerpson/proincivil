@@ -5,9 +5,10 @@ lugar: "Envigado"   # forma para escribirla dentro de una frase: «servicio en �
 orden: 1
 title: "Ingeniería estructural en Envigado: diseño, evaluación y curadurías"
 description: "Ingenieros estructurales con sede en Envigado: diseño sismorresistente NSR-10, estudios de suelos en ladera y trámite ante las curadurías Primera y Segunda de Envigado."
-h1: "Ingeniería estructural en Envigado: lotes en ladera, curadurías y visitas desde nuestra sede"
+h1: "Ingenieros estructurales en Envigado"
 eyebrow: "Zonas · Envigado, nuestra sede"
 excerpt: "Nuestra sede está en Envigado. Resolvemos suelo, contención y estructura de un lote en ladera en un solo diseño, y lo acompañamos en la curaduría Primera o Segunda."
+entradilla: "Desde nuestra sede resolvemos suelo, contención y estructura de lotes en ladera, y acompañamos el trámite en la curaduría Primera o Segunda."
 hero: "fachada-ancha"
 hero_alt: "Fachada de concreto reforzado de una edificación multinivel"
 image: "/img/fotos/fachada-ancha-1100.jpg"

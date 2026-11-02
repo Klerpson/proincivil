@@ -7,6 +7,7 @@ description: "Revisor independiente de diseños estructurales según la Ley 1796
 h1: "Revisor independiente de diseños estructurales"
 eyebrow: "Servicio · Control técnico"
 excerpt: "Antes de que tu proyecto llegue a la curaduría, un ingeniero que no lo diseñó ni lo va a construir verifica que cumple la NSR-10. Es lo que exige la Ley 1796 para las edificaciones de mayor exigencia y lo que conviene a cualquier proyecto."
+entradilla: "Un ingeniero que no diseñó ni construirá tu proyecto verifica que cumpla la NSR-10 antes de radicarlo en curaduría."
 hero: "fachada-ancha"
 hero_alt: "Fachada de concreto reforzado de una edificación multinivel"
 image: "/img/fotos/fachada-ancha-1100.jpg"

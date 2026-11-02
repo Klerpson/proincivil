@@ -4,9 +4,10 @@ orden: 2
 grupo: diseno
 title: "Diseño de estructuras metálicas para cubiertas, naves y edificios"
 description: "Diseño de estructuras metálicas conforme a NSR-10 Título F y AISC: cubiertas, cerchas, naves, mezanines y edificios en acero con conexiones precalificadas en Colombia."
-h1: "Diseño de estructuras metálicas: cubiertas, cerchas, naves y edificios en acero"
+h1: "Diseño de estructuras metálicas para cubiertas, naves y edificios"
 eyebrow: "Servicio · Diseño"
 excerpt: "Estructuras de acero con cantidades justificadas, conexiones y detalles coordinados para el fabricante. Diseño y documentación para acompañar la revisión ante curaduría."
+entradilla: "Acero con cantidades justificadas, y conexiones y detalles coordinados para el fabricante y la curaduría."
 hero: "cubierta-metalica"
 hero_alt: "Cubierta metálica de gran luz sobre estructura de acero"
 image: "/img/fotos/cubierta-metalica-440.jpg"

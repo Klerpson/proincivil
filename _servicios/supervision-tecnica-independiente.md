@@ -7,6 +7,7 @@ description: "Supervisión técnica independiente según la NSR-10 (Título I) y
 h1: "Supervisión técnica independiente de la construcción"
 eyebrow: "Servicio · Control técnico"
 excerpt: "Verificamos en obra que la estructura se construya como se diseñó: refuerzo, concreto, ensayos y tolerancias, con los registros que exige la NSR-10 para la certificación técnica de ocupación. Respondemos al propietario, nunca al constructor."
+entradilla: "Verificamos en obra refuerzo, concreto y ensayos con los registros que exige la NSR-10 para la certificación de ocupación."
 hero: "estructura-obra"
 hero_alt: "Edificación en construcción con supervisión técnica"
 image: "/img/fotos/estructura-obra-380.jpg"

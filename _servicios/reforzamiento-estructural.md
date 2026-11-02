@@ -7,6 +7,7 @@ description: "Diseño de reforzamiento y repotenciación estructural conforme a 
 h1: "Diseño de reforzamiento y repotenciación estructural"
 eyebrow: "Servicio · Evaluación"
 excerpt: "Cuando una edificación no cumple, no resiste una nueva carga o quedó dañada, el reforzamiento la lleva al nivel que exige la norma con la intervención mínima necesaria."
+entradilla: "Llevamos tu edificación al nivel que exige la norma con la intervención mínima necesaria."
 hero: "estructura-obra"
 hero_alt: "Edificación en construcción con supervisión técnica"
 image: "/img/fotos/estructura-obra-380.jpg"

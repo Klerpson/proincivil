@@ -5,9 +5,10 @@ lugar: "Medellín"   # forma para escribirla dentro de una frase: «servicio en 
 orden: 2
 title: "Ingeniería estructural en Medellín: diseño NSR-10 y curadurías"
 description: "Ingenieros estructurales para proyectos en Medellín: diseño sismorresistente, estudios de suelos, evaluación post-sismo e interventoría ante las cuatro curadurías."
-h1: "Ingeniería estructural en Medellín: diseño, interventoría y evaluación de edificios en altura"
+h1: "Ingenieros estructurales en Medellín"
 eyebrow: "Zonas · Medellín"
 excerpt: "Diseñamos, revisamos diseños ajenos y evaluamos edificios existentes en Medellín. En Laureles hicimos la interventoría al diseño de un hotel de 15 niveles, sin conflicto de interés porque no construimos."
+entradilla: "Diseñamos, revisamos diseños ajenos y evaluamos edificios en altura, como la interventoría al diseño de un hotel de 15 niveles en Laureles."
 hero: "ia-valle-aburra"
 hero_alt: "Vista del Valle de Aburrá al atardecer, con la ciudad entre montañas (ilustración)"
 image: "/img/fotos/ia-valle-aburra-1200.jpg"

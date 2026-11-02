@@ -17,7 +17,8 @@
       "ClaudeInChromeDomain(www.proincivil.com)",
       "PowerShell(& C:\\\\Users\\\\usuario\\\\Ruby33-x64\\\\bin\\\\bundle.bat exec jekyll build 2>&1)",
       "PowerShell(python _scripts/lint-frontmatter.py 2>&1)",
-      "Bash(python -m http.server 4012)"
+      "Bash(python -m http.server 4012)",
+      "ClaudeInChromeDomain(127.0.0.1:4013)"
     ],
     "additionalDirectories": [
       "C:\\Users\\usuario\\.claude\\skills\\metodo-web\\references"

@@ -7,6 +7,7 @@ description: "Evaluación estructural, patología y peritaje de edificaciones en
 h1: "Evaluación estructural de edificaciones"
 eyebrow: "Servicio · Patología y diagnóstico"
 excerpt: "Un informe que dice qué le pasa a tu edificación, qué tan grave es y qué hacer, firmado por un ingeniero que no va a venderte la reparación."
+entradilla: "Qué le pasa a tu edificación, qué tan grave es y qué hacer, firmado por un ingeniero que no te venderá la reparación."
 hero: "fachada-vidrio"
 hero_alt: "Fachada de concreto y vidrio de una edificación evaluada"
 image: "/img/fotos/fachada-vidrio-1024.jpg"

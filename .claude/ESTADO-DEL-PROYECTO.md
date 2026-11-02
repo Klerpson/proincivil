@@ -66,6 +66,14 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 
 ## Bitácora
 
+### 2026-11-02 — Heros interiores cortos: entradilla de una frase y H1 de 70 caracteres o menos
+**Contexto:** tras el hero de la home, el usuario pidió revisar el resto. En la cabecera interior el botón caía al borde de la pantalla (360×740: fondo del botón en 655-733 px; 1280×720: 623-670 px) y los H1 de zonas ocupaban 6 líneas en móvil.
+- `header.html` (cabecera): el rótulo `eyebrow` solo se pinta en fichas de proyecto (en el resto repetía las migas). El texto sale de `entradilla | default: excerpt`; `excerpt` no cambia porque alimenta tarjetas y la «Situación» de los casos.
+- `hero.css`: `.cabecera__titulo` con `text-wrap: balance` y mínimo móvil de 2rem a 1.75rem (escritorio igual).
+- Contenido: `entradilla` (14-23 palabras, condensada del texto aprobado, sin datos nuevos) en 17 servicios, 7 zonas, 9 proyectos, 3 posts, nosotros, equipo, contacto, cómo cotizar y los hubs de servicios, zonas y blog. H1 de zonas «Ingenieros estructurales en [lugar]» (keyword del 27-10; `title` sin cambios). H1 recortados en 8 proyectos, nosotros y 3 servicios (vías, estructuras metálicas, refracción). Ojo: el mensaje de WhatsApp por defecto se deriva del H1, así que cambió en esas páginas.
+- `lint-frontmatter.py`: `entradilla` ≤ 25 palabras y `h1` ≤ 70 caracteres en servicios, zonas y proyectos. Documentado en `frontmatter-variables.md` y en la skill `copywriter`.
+- Después (15 páginas): fondo del botón como máximo en 577 px a 360×740, 614 a 320×640, 531 a 390×844 y 604 a 1280×720. H1 de 4 líneas como máximo a 360 y 390 px. 0 px de desborde. Lint 71/0, build 50 páginas, `validar-site.py` 0, CSS crítico 4.474 B gzip. Sin commit.
+
 ### 2026-11-02 — Hero de la home más corto y menú «Cobertura»
 **Contexto:** el usuario sentía el hero con demasiado texto para convertir y preguntó si las zonas debían ser ítem principal del menú (ya lo eran desde el 27-10).
 - Medido en vivo antes: 64 palabras antes del botón, H1 de 4 líneas (5 en móvil), botón en y=694–760 a 360×740 (cortado) y foto fuera del primer pantallazo en escritorio.

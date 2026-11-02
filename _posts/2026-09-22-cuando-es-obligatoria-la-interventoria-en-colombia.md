@@ -3,6 +3,7 @@ title: "Qué es la interventoría y cuándo es obligatoria en Colombia"
 description: "Qué es la interventoría, qué tipos existen, cuándo la exige la ley en obra pública y privada, en qué se diferencia de la supervisión técnica y cómo elegir interventor."
 h1: "Qué es la interventoría de obra y cuándo es obligatoria en Colombia"
 excerpt: "Interventoría, supervisión técnica independiente y revisión independiente de diseños son tres figuras distintas que suelen confundirse. Esta guía explica qué hace cada una, cuándo la exige la ley y qué debe pedirle a quien la ejerza."
+entradilla: "Interventoría, supervisión técnica y revisión independiente de diseños suelen confundirse: qué hace cada una y cuándo la exige la ley."
 categories: [normativa]
 tags: [interventoría, interventoría de obras, supervisión técnica independiente, Ley 1796, contratación estatal, revisión de diseños]
 servicios: [interventoria-de-disenos, supervision-tecnica-independiente, revision-independiente-de-disenos]

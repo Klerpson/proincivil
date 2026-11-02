@@ -7,6 +7,7 @@ description: "Del estudio de suelos al diseño de la cimentación conforme a NSR
 h1: "Diseño de cimentaciones superficiales y profundas"
 eyebrow: "Servicio · Diseño"
 excerpt: "Zapatas, losas, pilas y pilotes dimensionados con el suelo real de tu lote y la carga real de tu estructura: ni la cimentación heroica que dispara el presupuesto ni la que se asienta a los dos años."
+entradilla: "Zapatas, losas, pilas y pilotes dimensionados con el suelo real de tu lote y la carga real de tu estructura."
 hero: "detalle-concreto"
 hero_alt: "Encuentro de viga y columna en concreto reforzado"
 image: "/img/fotos/detalle-concreto-440.jpg"

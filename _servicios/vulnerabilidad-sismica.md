@@ -7,6 +7,7 @@ description: "Estudio de vulnerabilidad sísmica conforme al Título A.10 de la 
 h1: "Estudio de vulnerabilidad sísmica de edificaciones existentes"
 eyebrow: "Servicio · Patología y diagnóstico"
 excerpt: "Saber si tu edificación resistiría el sismo de diseño antes de que ocurra, con un estudio conforme al Título A.10 de la NSR-10 y un plan de reforzamiento con prioridades."
+entradilla: "Saber si tu edificación resistiría el sismo de diseño, con un estudio conforme al Título A.10 y un plan de reforzamiento priorizado."
 hero: "institucion-educativa"
 hero_alt: "Institución educativa de dos niveles diseñada por PROINCIVIL"
 image: "/img/fotos/institucion-educativa-440.jpg"

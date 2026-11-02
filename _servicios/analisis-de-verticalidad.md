@@ -7,6 +7,7 @@ description: "Análisis de verticalidad de edificios y torres en Colombia: medic
 h1: "Análisis de verticalidad de edificios y torres existentes"
 eyebrow: "Servicio · Topografía y verticalidad"
 excerpt: "¿La torre está inclinada o solo lo parece? Medimos el desplome de fachadas, columnas y ejes, y lo interpretamos con la patología y el suelo para saber qué significa para la estructura."
+entradilla: "Medimos el desplome de fachadas, columnas y ejes, y lo leemos con la patología y el suelo para saber qué significa."
 hero: "fachada-ancha"
 hero_alt: "Fachada de concreto de una edificación de varios niveles"
 image: "/img/fotos/fachada-ancha-1100.jpg"

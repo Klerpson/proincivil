@@ -68,6 +68,11 @@ for p in sorted(archivos):
     if len(t) > 72: e(f"title de {len(t)} caracteres (máx. 72)")
     d = str(fm.get("description", ""))
     if d and not 120 <= len(d) <= 170: e(f"description de {len(d)} caracteres (ideal 150-160)")
+    # Hero corto: la entradilla es una frase y el H1 no pasa de 3 líneas en móvil (2026-11-02).
+    ent = str(fm.get("entradilla", ""))
+    if ent and len(ent.split()) > 25: e(f"entradilla de {len(ent.split())} palabras (máx. 25)")
+    h1 = re.sub(r"<[^>]+>", "", str(fm.get("h1", "")))
+    if col in ("servicios", "zonas", "proyectos") and len(h1) > 70: e(f"h1 de {len(h1)} caracteres (máx. 70)")
     # `hero` es el nombre base de una foto de /img/fotos (ver _data/fotos.yml), no una ruta.
     if fm.get("hero"):
         if not fm.get("hero_alt"): e("hero presente sin hero_alt")

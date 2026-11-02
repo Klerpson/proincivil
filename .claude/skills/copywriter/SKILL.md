@@ -19,7 +19,7 @@ administradores de P.H., aseguradoras y entidades públicas que necesitan un esp
   `_proyectos/tacuara-club-residencial.md`.
 
 ## Estructura de página de servicio (8 bloques, patrón Engical/Ingek)
-H1 por disparador → `resumen` citable (40-60 palabras) → cuerpo: qué es / cómo lo hacemos / tipos o tabla /
+H1 por disparador (máx. 70 caracteres; en zonas «Ingenieros estructurales en [lugar]») → `entradilla` de una frase (≤ 22 palabras, diferencial, sin datos nuevos) → `resumen` citable (40-60 palabras) → cuerpo: qué es / cómo lo hacemos / tipos o tabla /
 qué nos diferencia → `cuando` (5-7 disparadores) → `entregables` → `despues` (+ nota de independencia) →
 `factores` (+ enlace a `cuanto_cuesta`) → `audiencias` → casos (`proyectos`) → `faqs` (6-8, respondiendo
 preguntas reales del autocompletado) → CTA → `relacionados` y `normativa`.

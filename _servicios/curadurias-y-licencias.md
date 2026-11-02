@@ -7,6 +7,7 @@ description: "Acompañamiento ante curadurías urbanas de Colombia: revisión de
 h1: "Acompañamiento técnico ante curadurías y entidades públicas"
 eyebrow: "Servicio · Trámites"
 excerpt: "La curaduría devolvió tu proyecto con observaciones estructurales o quieres radicar sin devoluciones. Revisamos, corregimos y sustentamos el componente técnico de la licencia de construcción hasta que quede aprobada."
+entradilla: "Revisamos, corregimos y sustentamos el componente técnico de tu licencia de construcción hasta que la curaduría la apruebe."
 hero: "institucion-educativa"
 hero_alt: "Institución educativa de dos niveles diseñada por PROINCIVIL"
 image: "/img/fotos/institucion-educativa-440.jpg"

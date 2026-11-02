@@ -4,9 +4,10 @@ orden: 10
 grupo: suelos
 title: "Líneas de refracción sísmica y MASW para estudios de suelos | PROINCIVIL"
 description: "Líneas de refracción sísmica y ensayos MASW para medir la velocidad de onda de cortante (Vs30) y clasificar el perfil de suelo A a F de la NSR-10 en Colombia."
-h1: "Líneas de refracción sísmica para clasificar el suelo según la NSR-10"
+h1: "Líneas de refracción sísmica para clasificar el suelo (NSR-10)"
 eyebrow: "Servicio · Suelos"
 excerpt: "La línea sísmica mide cómo viajan las ondas por el subsuelo para obtener la velocidad de onda de cortante, el dato con el que la NSR-10 clasifica el perfil de suelo y fija el espectro de diseño."
+entradilla: "Medimos la velocidad de onda de cortante con la que la NSR-10 clasifica el suelo y fija el espectro de diseño."
 hero: "ia-ladera-muro"
 hero_alt: "Muro de contención de concreto sobre una ladera verde con viviendas arriba"
 image: "/img/fotos/ia-ladera-muro-1200.jpg"

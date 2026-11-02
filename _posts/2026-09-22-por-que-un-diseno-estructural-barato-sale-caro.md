@@ -3,6 +3,7 @@ title: "Por qué un diseño estructural barato sale caro"
 description: "Sobrecostos en obra, devoluciones de curaduría y reprocesos: dónde se esconde el costo real de un diseño estructural económico y qué debe incluir una propuesta seria."
 h1: "Por qué un diseño estructural barato sale caro"
 excerpt: "El honorario de diseño es una fracción pequeña del costo de una obra; la estructura, la más grande. Un diseño que ahorra en lo primero suele gastar de más en lo segundo: concreto y acero sobrantes, devoluciones de curaduría y reprocesos en obra."
+entradilla: "El diseño es una fracción del costo de la obra; ahorrar en él suele pagarse en concreto, acero y reprocesos."
 categories: [costos]
 tags: [costo diseño estructural, sobrecostos, curaduría, optimización estructural, cuánto vale un diseño estructural]
 servicios: [diseno-estructural, curadurias-y-licencias, revision-independiente-de-disenos]

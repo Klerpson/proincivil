@@ -5,9 +5,10 @@ lugar: "el Oriente antioqueño"   # forma para escribirla dentro de una frase: �
 orden: 4
 title: "Ingeniería estructural en Rionegro y el Oriente antioqueño"
 description: "Diseño estructural, estudios de suelos y evaluación en Rionegro, La Ceja, El Retiro, Marinilla y Guarne. Suelos del altiplano y curadurías del Oriente. Envigado."
-h1: "Ingeniería estructural en Rionegro, La Ceja y El Retiro: cenizas volcánicas sobre el batolito"
+h1: "Ingenieros estructurales en Rionegro, La Ceja y El Retiro"
 eyebrow: "Zonas · Oriente antioqueño"
 excerpt: "En el altiplano del Oriente, una capa de cenizas volcánicas de uno a dos metros cubre el Batolito Antioqueño. Ese suelo decide la cimentación de una casa campestre, una bodega o un edificio."
+entradilla: "Una capa de cenizas volcánicas sobre el Batolito Antioqueño decide la cimentación de cada casa, bodega o edificio del altiplano."
 hero: "stock-nave-cerchas"
 hero_alt: "Interior de una nave industrial con cubierta de cerchas metálicas (fotografía de archivo)"
 image: "/img/fotos/stock-nave-cerchas-1200.jpg"

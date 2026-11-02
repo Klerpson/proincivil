@@ -7,6 +7,7 @@ description: "Evaluación post-sismo con metodología ATC-20 para propiedad hori
 h1: "Evaluación post-sismo: ¿tu edificación puede seguir ocupándose?"
 eyebrow: "Servicio · Patología y diagnóstico"
 excerpt: "Inspección de seguridad con metodología ATC-20 para saber si tu edificio puede seguir ocupándose, y un informe con respaldo normativo para la gestión ante la aseguradora."
+entradilla: "Inspección ATC-20 para saber si tu edificio puede seguir ocupándose, e informe con respaldo normativo para la aseguradora."
 hero: "hero-estructura"
 hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 image: "/img/fotos/hero-estructura-1200.jpg"

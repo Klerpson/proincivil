@@ -11,7 +11,8 @@ Referencia de las variables que leen `head.html`, `header.html`, los layouts y l
 | `h1` | H1 visible y og:title; admite `<em>` para el acento en itálica | Sí |
 | `titulo_corto` | Migas de pan, tarjetas, breadcrumb schema | Recomendado |
 | `eyebrow` | Rótulo sobre el H1 (mono, mayúsculas) | No |
-| `excerpt` | Párrafo bajo el H1; en tarjetas si no hay `description` | Recomendado |
+| `excerpt` | Texto de tarjetas (`tarjeta.html`, `proyectos-relacionados.html`) y «Situación» de los casos; bajo el H1 solo si no hay `entradilla` | Recomendado |
+| `entradilla` | Frase única bajo el H1 de la cabecera (máx. 25 palabras, lo valida el lint). El rótulo `eyebrow` solo se pinta en fichas de proyecto | Recomendado |
 | `hero` | **Nombre base** de una foto de `/img/fotos` (p. ej. `estructura-metalica`), no una ruta. Los anchos disponibles están en `_data/fotos.yml`; `picture.html` elige el que existe | Según layout |
 | `hero_alt` | Alt de la foto de cabecera | Con `hero` |
 | `image` / `og_image` | Imagen OG (ruta completa, p. ej. `/img/fotos/estructura-metalica-1200.jpg`) | No |

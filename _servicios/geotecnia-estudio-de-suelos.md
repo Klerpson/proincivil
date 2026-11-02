@@ -7,6 +7,7 @@ description: "Estudios de suelos y geotecnia conforme al Título H de la NSR-10 
 h1: "Estudios de suelos y geotecnia para cimentaciones seguras"
 eyebrow: "Servicio · Suelos"
 excerpt: "El estudio que la curaduría exige y que decide cuánto cuesta tu cimentación: exploración, laboratorio e informe conforme al Título H de la NSR-10, con la recomendación de cimentación que tu estructura necesita."
+entradilla: "Exploración, laboratorio e informe conforme al Título H de la NSR-10, con la cimentación que tu estructura necesita."
 hero: "detalle-concreto"
 hero_alt: "Encuentro de viga y columna en concreto reforzado"
 image: "/img/fotos/detalle-concreto-440.jpg"

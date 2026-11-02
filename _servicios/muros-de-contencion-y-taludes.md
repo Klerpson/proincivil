@@ -7,6 +7,7 @@ description: "Diseño de muros de contención en concreto, gaviones, pantallas a
 h1: "Muros de contención y estabilidad de taludes en laderas"
 eyebrow: "Servicio · Diseño"
 excerpt: "Análisis de empujes, estabilidad y diseño de contenciones para lotes en ladera, vías y urbanizaciones. Un muro mal calculado se agrieta o se vuelca; uno sobredimensionado cuesta el doble. Diseñamos el que corresponde al suelo y a la carga real."
+entradilla: "Muros y taludes diseñados para el suelo y la carga real de lotes en ladera, vías y urbanizaciones."
 hero: "fachada-ancha"
 hero_alt: "Fachada de concreto reforzado de una edificación multinivel"
 image: "/img/fotos/fachada-ancha-1100.jpg"

@@ -7,6 +7,7 @@ description: "Interventoría de diseños estructurales y geotécnicos e interven
 h1: "Interventoría técnica de diseños y proyectos"
 eyebrow: "Servicio · Control técnico"
 excerpt: "Revisamos y verificamos diseños, estudios de suelo y resultados de laboratorio antes de que se conviertan en obra, y vigilamos el cumplimiento técnico y contractual durante la construcción. Respondemos al dueño del proyecto, no al contratista."
+entradilla: "Verificamos diseños, suelos y laboratorio antes de la obra, y el cumplimiento técnico durante ella. Respondemos al dueño, no al contratista."
 hero: "carport-metalico"
 hero_alt: "Cubierta metálica inclinada para paneles solares"
 image: "/img/fotos/carport-metalico-330.jpg"
