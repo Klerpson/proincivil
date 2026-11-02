@@ -7,7 +7,12 @@
       "Bash(python _scripts/lint-frontmatter.py*)",
       "Bash(git status*)",
       "Bash(git diff*)",
-      "Bash(git log*)"
+      "Bash(git log*)",
+      "PowerShell($env:JEKYLL_ENV='production'; python _scripts/lint-frontmatter.py 2>&1 | Select-Object -Last 3; & C:\\\\Ruby33-x64\\\\bin\\\\bundle.bat exec jekyll build 2>&1 | Select-Object -Last 5; python _scripts/validar-site.py 2>&1 | Select-Object -Last 5)",
+      "PowerShell(foreach \\($u in @\\('https://proincivil.com/','https://www.proincivil.com/','https://www.proincivil.com/CNAME'\\)\\) { try { $r = Invoke-WebRequest -Uri $u -MaximumRedirection 0 -UseBasicParsing -TimeoutSec 20 -ErrorAction Stop; \"$u -> $\\($r.StatusCode\\) $\\($r.Headers['Location']\\)\" } catch { $resp = $_.Exception.Response; if \\($resp\\) { \"$u -> $\\([int]$resp.StatusCode\\) $\\($resp.Headers['Location']\\)\" } else { \"$u -> ERROR $\\($_.Exception.Message\\)\" } } })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri 'http://proincivil.com/' -MaximumRedirection 0 -UseBasicParsing -TimeoutSec 20 -ErrorAction Stop; \"http -> $\\($r.StatusCode\\)\" } catch { $resp=$_.Exception.Response; if \\($resp\\) { \"http -> $\\([int]$resp.StatusCode\\) Location: $\\($resp.Headers['Location']\\)\" } else { \"http -> $\\($_.Exception.Message\\)\" } }; try { $r2 = Invoke-WebRequest -Uri 'https://proincivil.com/' -UseBasicParsing -TimeoutSec 20; \"https apex final -> $\\($r2.StatusCode\\) $\\($r2.BaseResponse.ResponseUri\\)\" } catch { \"https apex -> $\\($_.Exception.Message\\)\" })",
+      "PowerShell($env:JEKYLL_ENV='production'; $env:JEKYLL_NO_BUNDLER_REQUIRE='1'; & C:\\\\Users\\\\usuario\\\\Ruby33-x64\\\\bin\\\\ruby.exe -S jekyll build 2>&1 | Select-Object -Last 1; python _scripts/validar-site.py 2>&1 | Select-Object -Last 1; Get-Content _site/robots.txt)",
+      "PowerShell($env:JEKYLL_ENV='production'; $env:JEKYLL_NO_BUNDLER_REQUIRE='1'; & C:\\\\Users\\\\usuario\\\\Ruby33-x64\\\\bin\\\\ruby.exe -S jekyll build 2>&1 | Select-Object -Last 1; python _scripts/validar-site.py 2>&1 | Select-Object -Last 1; Get-Content _site/robots.txt -Encoding UTF8)"
     ]
   }
 }
