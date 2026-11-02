@@ -11,10 +11,8 @@ Disallow: /
 {%- else -%}
 User-agent: *
 Allow: /
-Disallow: /_site/
-Disallow: /.jekyll-cache/
 
-# Bots de IA: acceso completo (citas en AI Overviews, ChatGPT, Perplexity)
+# Bots de IA: acceso explícito (ChatGPT, Claude, Perplexity y Gemini). AI Overviews usa Googlebot.
 User-agent: GPTBot
 Allow: /
 User-agent: ClaudeBot
