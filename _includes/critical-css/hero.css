@@ -1,6 +1,6 @@
-/* Portada (home) y cabecera (interiores). Crítico: lo primero que se pinta.
+{% comment %} Portada (home) y cabecera (interiores). Crítico: lo primero que se pinta.
    Interacción firma de la home: los ejes del plano se trazan al cargar (transform) y el plano
-   se desplaza con el scroll (animation-timeline). El H1, el texto y el CTA nunca se animan. */
+   se desplaza con el scroll (animation-timeline). El H1, el texto y el CTA nunca se animan. {% endcomment %}
 @layer componentes {
   .portada {
     position: relative; isolation: isolate; overflow: hidden;
@@ -42,11 +42,10 @@
   .portada__titulo { max-inline-size: 18ch; font-size: clamp(2.375rem, 4.6vw + 1rem, 4.75rem); line-height: 1.02; letter-spacing: -0.035em; }
   .portada__titulo em { font-style: normal; color: var(--trazo); }
   .portada__texto { max-inline-size: 40rem; font-size: clamp(1.0625rem, 0.5vw + 1rem, 1.25rem); color: rgb(232 232 232 / 0.82); }
-  .portada__garantia {
-    display: flex; align-items: center; gap: 0.625rem;
-    font-family: var(--fuente-mono); font-size: 0.8125rem; color: var(--trazo);
-  }
-  .portada__garantia::before { content: ""; inline-size: 0.5rem; block-size: 0.5rem; border: 1.5px solid currentColor; rotate: 45deg; flex: none; }
+  {% comment %} Frase, CTA y microgarantía: bajo el H1 en móvil; columna derecha en escritorio (8/4 del método). {% endcomment %}
+  .portada__accion { display: grid; gap: 1.25rem; justify-items: start; }
+  .portada__garantia { display: flex; align-items: center; gap: 0.625rem; font-size: 0.9375rem; color: var(--marfil); }
+  .portada__garantia::before { content: ""; inline-size: 0.5rem; block-size: 0.5rem; background: var(--ambar); rotate: 45deg; flex: none; }
 
   .portada__foto { position: relative; margin-block-start: clamp(3rem, 6vw, 4.5rem); }
   .portada__foto img { inline-size: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--linea-clara); }
@@ -62,6 +61,10 @@
   }
   .portada__cota span { position: relative; padding-inline: 0.75rem; background: var(--azul); }
 
+  @media (min-width: 60em) {
+    .portada__copy { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: clamp(2.5rem, 5vw, 5rem); align-items: end; }
+    .portada__copy > .rotulo { grid-column: 1 / -1; }
+  }
   @media (max-width: 47.99em) {
     .portada .plano__eje--v:nth-child(1), .portada .plano__eje--v:nth-child(2) { display: none; }
     .plano__eje--h .plano__marca { inset-inline-start: auto; inset-inline-end: 0.5rem; }
@@ -106,7 +109,7 @@
     background-color: var(--marfil); background-image: var(--cuadricula-clara); background-size: var(--cuadricula-medida);
     border-block-end: 1px solid var(--linea);
   }
-  /* Ejes del plano en la cabecera interior: los mismos de la portada, en tono claro y detrás del texto. */
+  {% comment %} Ejes del plano en la cabecera interior: los mismos de la portada, en tono claro y detrás del texto. {% endcomment %}
   .cabecera .plano { --plano-fondo: var(--marfil); opacity: 0.7; }
   .cabecera .plano__eje--v:nth-child(1) { inset-inline-start: 3%; }
   .cabecera .plano__eje--v:nth-child(2) { inset-inline-start: 97%; }

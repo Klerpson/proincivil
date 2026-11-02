@@ -34,10 +34,16 @@ principal:
           - { texto: "¿Cuánto cuesta?", url: /cuanto-cuesta/ }
   - texto: Proyectos
     url: /proyectos/
-  - texto: Zonas
+  # «Cobertura» responde «¿trabajan en mi ciudad?». La URL sigue en /zonas/. Bogotá y Barranquilla
+  # entran aquí cuando tengan página propia.
+  - texto: Cobertura
     url: /zonas/
-    ver_todo: Mapa de proyectos y zonas
+    ver_todo: Mapa de proyectos y ciudades
     grupos:
+      - titulo: Fuera de Antioquia
+        enlaces:
+          - { texto: "Pereira y Dosquebradas", url: /zonas/pereira/ }
+          - { texto: "Otras ciudades de Colombia", url: /zonas/colombia/ }
       - titulo: Antioquia
         enlaces:
           - { texto: "Envigado (sede)", url: /zonas/envigado/ }
@@ -45,10 +51,6 @@ principal:
           - { texto: "Área Metropolitana", url: /zonas/area-metropolitana/ }
           - { texto: "Oriente antioqueño", url: /zonas/oriente-antioqueno/ }
           - { texto: "Resto de Antioquia", url: /zonas/antioquia/ }
-      - titulo: Resto del país
-        enlaces:
-          - { texto: "Pereira y Dosquebradas", url: /zonas/pereira/ }
-          - { texto: "Otras ciudades de Colombia", url: /zonas/colombia/ }
   - texto: Edificaciones
     url: /edificaciones/
     ver_todo: Todos los tipos de edificación

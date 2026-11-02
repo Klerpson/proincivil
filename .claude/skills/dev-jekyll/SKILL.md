@@ -44,6 +44,8 @@ _includes/css/motion.css          todo el movimiento (animation-timeline dentro 
 css/style.css                     compilador ({% include %} de los módulos), layout: compress
 ```
 No hay carga condicional por layout. No usar `@import`. `{% render %}` no existe en Jekyll: `{% include %}`.
+En `critical-css/*.css` los comentarios van como `{% comment %}…{% endcomment %}`, no `/* */`: ese CSS se
+inyecta en cada página y el presupuesto es de 5.120 B gzip (2026-11-02: 4.469 B tras el cambio).
 
 ## Tokens (usar estos, no inventar)
 `--azul --azul-2 --marfil --papel --tinta --tinta-suave --trazo --ambar --linea --linea-fuerte

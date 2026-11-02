@@ -1,8 +1,8 @@
-/* Plano vivo — CSS crítico (inline). Tokens, reset, barra, menú, botones y primitivas de base.
-   Dirección: _plans/direccion-diseno-plano-vivo-2026-10-21.md */
+{% comment %} Plano vivo — CSS crítico (inline). Tokens, reset, barra, menú, botones y primitivas de base.
+   Dirección: _plans/direccion-diseno-plano-vivo-2026-10-21.md {% endcomment %}
 @layer reset, primitivas, componentes, utilidades;
 
-/* Identidad 2026-10: fuentes de marca autoalojadas (Manrope principal, Garet Book secundaria) y respaldos con métricas ajustadas para evitar el salto de diseño (CLS). */
+{% comment %} Identidad 2026-10: fuentes de marca autoalojadas (Manrope principal, Garet Book secundaria) y respaldos con métricas ajustadas para evitar el salto de diseño (CLS). {% endcomment %}
 @font-face { font-family: "Manrope"; src: url("{{ '/fonts/manrope-var.woff2' | relative_url }}") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
 @font-face { font-family: "Garet"; src: url("{{ '/fonts/garet-book.woff2' | relative_url }}") format("woff2"); font-weight: 400 800; font-style: normal; font-display: swap; }
 @font-face { font-family: "Manrope respaldo"; src: local("Arial"); size-adjust: 105.3%; ascent-override: 101.22%; descent-override: 28.49%; line-gap-override: 0%; }
@@ -10,14 +10,14 @@
 
 @layer reset {
   :root {
-    --azul: #1E2221;      /* negro verdoso (marca) */
-    --azul-2: #2A2F2D;    /* negro verdoso aclarado, para superficies oscuras */
-    --marfil: #E8E8E8;    /* blanco grisáceo (marca) */
-    --papel: #F4F5F4;     /* tinte claro del blanco grisáceo, para tarjetas */
+    --azul: #1E2221;      {% comment %} negro verdoso (marca) {% endcomment %}
+    --azul-2: #2A2F2D;    {% comment %} negro verdoso aclarado, para superficies oscuras {% endcomment %}
+    --marfil: #E8E8E8;    {% comment %} blanco grisáceo (marca) {% endcomment %}
+    --papel: #F4F5F4;     {% comment %} tinte claro del blanco grisáceo, para tarjetas {% endcomment %}
     --tinta: #1E2221;
-    --tinta-suave: #565955;   /* 5,8:1 sobre blanco grisáceo */
-    --trazo: #929C93;     /* verde grisáceo (marca) */
-    --ambar: #25D366;     /* acento de conversión: verde WhatsApp (fuera de la paleta de marca, elegido por el usuario 2026-10-21); texto #1E2221 encima (8,5:1) */
+    --tinta-suave: #565955;   {% comment %} 5,8:1 sobre blanco grisáceo {% endcomment %}
+    --trazo: #929C93;     {% comment %} verde grisáceo (marca) {% endcomment %}
+    --ambar: #25D366;     {% comment %} acento de conversión: verde WhatsApp (fuera de la paleta de marca, elegido por el usuario 2026-10-21); texto #1E2221 encima (8,5:1) {% endcomment %}
     --linea: rgb(30 34 33 / 0.16);
     --linea-fuerte: rgb(30 34 33 / 0.42);
     --linea-clara: rgb(232 232 232 / 0.18);
@@ -149,7 +149,7 @@
   .menu__panel a { text-decoration: none; font-size: 0.9375rem; }
   .menu__panel a:hover, .menu__panel a[aria-current="page"] { text-decoration: underline; }
   .menu__panel > .enlace-flecha { grid-column: 1 / -1; justify-self: start; }
-  /* Grupos de alturas desiguales: columnas que se llenan por altura, sin celdas vacías. */
+  {% comment %} Grupos de alturas desiguales: columnas que se llenan por altura, sin celdas vacías. {% endcomment %}
   .menu__panel--columnas { display: block; columns: 4 13rem; column-gap: 2rem; }
   .menu__panel--columnas > .menu__grupo { break-inside: avoid; margin-block-end: 1.5rem; }
   .menu__panel--columnas > .enlace-flecha { display: flex; inline-size: fit-content; column-span: all; margin-block-start: 1rem; }

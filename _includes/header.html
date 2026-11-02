@@ -5,12 +5,13 @@
   <div class="marco portada__copy">
     <p class="rotulo rotulo--claro">{{ page.eyebrow | default: "Ingeniería estructural · Colombia y Perú" }}</p>
     <h1 class="portada__titulo">{{ page.h1 }}</h1>
-    <p class="portada__texto">{{ page.excerpt }}</p>
-    <div class="acciones">
-      {% include button.html texto="Conversemos sobre tu proyecto" data_location="hero" %}
-      <a href="{{ '/servicios/' | relative_url }}" class="enlace-flecha enlace-flecha--claro">Ver los servicios</a>
+    <div class="portada__accion">
+      <p class="portada__texto">{{ page.excerpt }}</p>
+      <div class="acciones">
+        {% include button.html texto="Conversemos sobre tu proyecto" data_location="hero" %}
+      </div>
+      {%- if page.garantia -%}<p class="portada__garantia">{% if page.garantia_cifra %}{{ site.cifras[page.garantia_cifra] }} {% endif %}{{ page.garantia }}</p>{%- endif -%}
     </div>
-    {%- if page.garantia -%}<p class="portada__garantia">{% if page.garantia_cifra %}{{ site.cifras[page.garantia_cifra] }} {% endif %}{{ page.garantia }}</p>{%- endif -%}
   </div>
   <div class="marco portada__foto">
     {% include picture.html nombre=page.hero alt=page.hero_alt ratio="16x10" sizes="(max-width: 1240px) 100vw, 1200px" eager=true %}

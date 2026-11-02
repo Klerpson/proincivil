@@ -66,6 +66,16 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 
 ## Bitácora
 
+### 2026-11-02 — Hero de la home más corto y menú «Cobertura»
+**Contexto:** el usuario sentía el hero con demasiado texto para convertir y preguntó si las zonas debían ser ítem principal del menú (ya lo eran desde el 27-10).
+- Medido en vivo antes: 64 palabras antes del botón, H1 de 4 líneas (5 en móvil), botón en y=694–760 a 360×740 (cortado) y foto fuera del primer pantallazo en escritorio.
+- `index.html`: H1 «Ingenieros estructurales <em>en Colombia</em>» (el eslogan sale del H1), rótulo «Desde 2019 · Colombia y Perú», frase única de 19 palabras. `header.html`: fuera el enlace «Ver los servicios»; frase + botón + garantía en `.portada__accion`, columna derecha desde 60em (7fr/5fr en `hero.css`). Microgarantía en marfil a 15 px con rombo en `--ambar`.
+- Después: botón en y=402 en escritorio (antes 732) y foto visible desde y=539; en móvil, H1 de 3 líneas y botón a 533–564 px en 320, 360 y 390, sin desborde.
+- Se mantuvo el «Conversemos» verde de la barra (decisión del usuario del 27-10), aunque el método pide un solo botón sólido por pantalla.
+- Menú: «Zonas» pasa a «Cobertura» (URL `/zonas/` sin cambios), con «Fuera de Antioquia» primero; se conservan los 7 enlaces.
+- CSS crítico: los comentarios `/* */` de `base.css` y `hero.css` pasan a `{% comment %}` porque se enviaban inline en cada página. 5.181 → 4.469 B gzip (presupuesto 5.120). Documentado en la skill `dev-jekyll`.
+- Verificado: build 50 páginas, `validar-site.py` 0, lint 71/0, 0 `style=`. Sin commit.
+
 ### 2026-11-02 — Paso a producción en www.proincivil.com
 **Contexto:** GSC reportaba «No se ha podido leer el sitemap» (error general de HTTP) en `/sitemap.xml`.
 - Causas: robots.txt con `Disallow: /` por `vista_previa: true`, y CNAME `proincivil.com` (sin www) mientras `url`, canonicals y las 48 `<loc>` del sitemap usaban www, que redirigía con 301 al dominio sin www.
