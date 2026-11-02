@@ -1,6 +1,6 @@
 # Estado del proyecto — PROINCIVIL
 
-**Última actualización:** 2026-11-01
+**Última actualización:** 2026-11-02
 
 ## Iniciativas activas
 
@@ -13,7 +13,7 @@
 | Validación SEO de prioridades y solapamientos | 🟡 Auditada 2026-10-16, implementación pendiente | Ranki: 31 keywords CO, 9 PE y 5 SERP; mapa de intenciones y competencia en `_plans/seo-prioridades-2026-10-16/estrategia-seo.md` |
 | Aprobación de contenido por el cliente | ⏳ No iniciada | Todo el contenido es borrador hasta aprobación escrita (contrato) |
 | Publicación en GitHub Pages | ✅ 2026-09-22 | https://klerpson.github.io/proincivil/ · repo https://github.com/Klerpson/proincivil (público) |
-| Dominio propio + indexación | ⏳ Bloqueada | Falta que PROINCIVIL compre `proincivil.com`; hasta entonces `vista_previa: true` |
+| Dominio propio + indexación | ✅ 2026-11-02 | `https://www.proincivil.com` en GitHub Pages, `vista_previa: false`; falta reenviar el sitemap en GSC |
 | Entrega de pendientes al cliente | ✅ 2026-09-22 | `_plans/PENDIENTES-Y-PREGUNTAS-PROINCIVIL.md` y `.pdf` (5 páginas, 11 preguntas) |
 | Fase SEO mensual | ⏳ Arranca al entregar el sitio | Plan de 12 meses en la sección 13 de la investigación |
 | Nueva identidad de marca (Estudio dositres) sobre «Plano vivo» | 🟡 Aplicada local 2026-10-21, compila y valida, sin commitear | Paleta, Manrope/Garet y logos en tokens y archivos, sin tocar reglas CSS/JS. Falta aprobación visual. Ver bitácora |
@@ -65,6 +65,13 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-11-02 — Paso a producción en www.proincivil.com
+**Contexto:** GSC reportaba «No se ha podido leer el sitemap» (error general de HTTP) en `/sitemap.xml`.
+- Causas: robots.txt con `Disallow: /` por `vista_previa: true`, y CNAME `proincivil.com` (sin www) mientras `url`, canonicals y las 48 `<loc>` del sitemap usaban www, que redirigía con 301 al dominio sin www.
+- La clienta aprobó el contenido (confirmado por el usuario). `vista_previa: false` y CNAME `www.proincivil.com`: GitHub Pages pasa a redirigir el dominio sin www hacia www.
+- Verificado con build de producción: robots.txt real con `Sitemap: https://www.proincivil.com/sitemap.xml`, 48 URLs en el sitemap, `index, follow` en las páginas (noindex solo en 404 y la redirección de BIM), `validar-site.py` 50/0, lint 71/0.
+- Pendiente: reenviar el sitemap en GSC y pedir indexación de la home; `google_site_verification` sigue vacío (la propiedad ya está verificada por otro método).
 
 ### 2026-11-01 — Enlace de fuente preferida en Google al final de los posts
 **Contexto:** plan del usuario para 13 blogs de clientes: al final de cada post, un enlace al deeplink oficial de Google para que el lector marque el sitio como fuente preferida (sin JS de terceros).

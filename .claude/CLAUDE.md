@@ -25,8 +25,8 @@ investigación de mercado, pendientes del cliente) viven en `_plans/`, **fuera d
 **Alcance publicado hoy:** home, servicios, proyectos, páginas corporativas y blog. Normativa,
 glosario, zonas, edificaciones y «cuánto cuesta» están escritos y versionados pero **retenidos para la
 fase SEO**: se controlan con `secciones_publicadas` en `_config.yml` (añadir la sección y recompilar
-los devuelve al menú, al pie y a los CTA). El sitio corre con `vista_previa: true` (noindex + robots
-bloqueado) hasta que el cliente apruebe el contenido y exista el dominio.
+los devuelve al menú, al pie y a los CTA). En producción e indexable desde el 2026-11-02
+(`vista_previa: false`, CNAME `www.proincivil.com`).
 
 ### Regla contractual innegociable
 

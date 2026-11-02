@@ -2,11 +2,10 @@
 # Sitio estático Jekyll alojado en GitHub Pages (solo plugins de la lista blanca).
 #
 # ── MODO VISTA PREVIA ────────────────────────────────────────────────────────
-# Mientras el cliente no apruebe el contenido y no exista el dominio, el sitio vive en
-# GitHub Pages con `vista_previa: true`: todas las páginas salen con noindex y robots.txt
-# bloquea el rastreo. AL PASAR A PRODUCCIÓN: poner `vista_previa: false`, cambiar `url` a
-# https://www.proincivil.com, dejar `baseurl` vacío y restaurar el archivo CNAME.
-vista_previa: true
+# `vista_previa: true` pone noindex en todas las páginas y hace que robots.txt bloquee el
+# rastreo. En producción desde el 2026-11-02 (contenido aprobado por la clienta): `false`,
+# `url` con www y el archivo CNAME con www.proincivil.com (GitHub redirige el dominio sin www).
+vista_previa: false
 url: "https://www.proincivil.com"
 baseurl: ""
 
