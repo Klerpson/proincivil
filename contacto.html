@@ -26,8 +26,8 @@ schemaType: "ContactPage"
         <ul class="lista">
           <li>WhatsApp: {% include button.html texto=site.contact.whatsapp_display variante="texto" data_location="contacto-lista" %} (Kateryn Andrea Palacio, gerencia)</li>
           <li>Dirección técnica: {% include button.html texto=site.contact.whatsapp_2_display numero=site.contact.whatsapp_2 mensaje="Hola, Ing. Camilo. Escribo desde el sitio de PROINCIVIL por una consulta técnica sobre mi proyecto." variante="texto" data_location="contacto-tecnico" %} (Ing. Camilo Tamayo)</li>
-          <li>Proyectos: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
-          <li>Gerencia: <a href="mailto:{{ site.contact.email_gerencia }}">{{ site.contact.email_gerencia }}</a></li>
+          <li>Proyectos: {% include correo.html %}</li>
+          <li>Gerencia: {% include correo.html correo=site.contact.email_gerencia %}</li>
           <li>{{ site.empresa.direccion }}, {{ site.empresa.ciudad }}, {{ site.empresa.departamento }}, {{ site.empresa.pais }}</li>
           <li>{{ site.empresa.horario }}</li>
         </ul>

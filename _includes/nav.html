@@ -28,9 +28,22 @@
             {%- if site.secciones_publicadas contains _s -%}{%- assign _hay = true -%}{%- endif -%}
           {%- endfor -%}{%- endfor -%}
           {%- if _hay -%}
+          {%- comment -%} Sección activa: hijo exacto (page); si no, hijo cuyo prefijo contiene la URL (p. ej. /blog/ en un post) o el hub del ítem (true). {%- endcomment -%}
+          {%- assign _exacto = false -%}
+          {%- assign _prefijo = "" -%}
+          {%- for grupo in item.grupos -%}{%- for e in grupo.enlaces -%}
+            {%- assign _s = e.url | remove_first: "/" | split: "/" | first -%}
+            {%- if site.secciones_publicadas contains _s -%}
+              {%- assign _ini = page.url | slice: 0, e.url.size -%}
+              {%- if e.url == page.url -%}{%- assign _exacto = true -%}
+              {%- elsif _ini == e.url and e.url != item.url and e.url.size > _prefijo.size -%}{%- assign _prefijo = e.url -%}{%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}{%- endfor -%}
+          {%- assign _hub = false -%}
+          {%- if item.url and _item_ok -%}{%- assign _ini = page.url | slice: 0, item.url.size -%}{%- if _ini == item.url -%}{%- assign _hub = true -%}{%- endif -%}{%- endif -%}
       <li>
         <details class="menu__desplegable">
-          <summary class="menu__enlace">{{ item.texto }}</summary>
+          <summary class="menu__enlace"{% if _exacto or _hub or _prefijo != "" %} aria-current="true"{% endif %}>{{ item.texto }}</summary>
           <div class="menu__panel{% if item.disposicion == 'columnas' %} menu__panel--columnas{% endif %}">
             {%- for grupo in item.grupos -%}
               {%- assign _grupo_hay = false -%}
@@ -42,20 +55,21 @@
               {%- for enlace in grupo.enlaces -%}
                 {%- assign _s = enlace.url | remove_first: "/" | split: "/" | first -%}
                 {%- if site.secciones_publicadas contains _s -%}
-                <li><a href="{{ enlace.url | relative_url }}"{% if enlace.url == page.url %} aria-current="page"{% endif %}>{{ enlace.texto }}</a></li>
+                <li><a href="{{ enlace.url | relative_url }}"{% if enlace.url == page.url %} aria-current="page"{% elsif _exacto == false and enlace.url == _prefijo %} aria-current="true"{% endif %}>{{ enlace.texto }}</a></li>
                 {%- endif -%}
               {%- endfor -%}
               </ul>
             </div>
               {%- endif -%}
             {%- endfor -%}
-            {%- if item.url and _item_ok -%}<a href="{{ item.url | relative_url }}" class="enlace-flecha">{{ item.ver_todo | default: "Ver todo" }}</a>{%- endif -%}
+            {%- if item.url and _item_ok -%}<a href="{{ item.url | relative_url }}" class="enlace-flecha"{% unless _exacto or _prefijo != "" %}{% if item.url == page.url %} aria-current="page"{% elsif _hub %} aria-current="true"{% endif %}{% endunless %}>{{ item.ver_todo | default: "Ver todo" }}</a>{%- endif -%}
           </div>
         </details>
       </li>
           {%- endif -%}
         {%- elsif _item_ok -%}
-      <li><a href="{{ item.url | relative_url }}" class="menu__enlace"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.texto }}</a></li>
+        {%- assign _ini = page.url | slice: 0, item.url.size -%}
+      <li><a href="{{ item.url | relative_url }}" class="menu__enlace"{% if item.url == page.url %} aria-current="page"{% elsif _ini == item.url %} aria-current="true"{% endif %}>{{ item.texto }}</a></li>
         {%- endif -%}
       {%- endfor -%}
     </ul>

@@ -1,6 +1,6 @@
 # Estado del proyecto — PROINCIVIL
 
-**Última actualización:** 2026-11-02
+**Última actualización:** 2026-11-06
 
 ## Iniciativas activas
 
@@ -65,6 +65,13 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-11-06 — Contacto solo desde _config.yml e includes
+**Contexto:** regla del usuario: todo número y todo enlace de contacto (wa.me, tel:, mailto:) sale de `_config.yml` por un include, nunca a mano.
+- Teléfonos: la auditoría ya daba 0 números escritos a mano y 0 enlaces wa.me/tel fuera de `_includes`; no hubo cambios.
+- Nuevo `_includes/correo.html` (parámetros `correo`, `clase`); `contacto.html` lo usa para los dos mailto (proyectos y gerencia). Los `href` compilados no cambian.
+- `.well-known/security.txt`: tenía a mano `gerenciaproincivil@gmail.com` (el correo personal con el que se llenó el formulario del 14-10). Ahora lleva front matter y sale de `{{ site.contact.email_gerencia }}` (gerencia@proincivil.com). Confirmar con la clienta si los reportes de seguridad deben ir a gerencia@ o a proyectos@.
+- Mismo lote: indicador de sección activa del nav (`_includes/nav.html`, `_includes/critical-css/base.css`). Sin commitear.
 
 ### 2026-11-02 — Heros interiores cortos: entradilla de una frase y H1 de 70 caracteres o menos
 **Contexto:** tras el hero de la home, el usuario pidió revisar el resto. En la cabecera interior el botón caía al borde de la pantalla (360×740: fondo del botón en 655-733 px; 1280×720: 623-670 px) y los H1 de zonas ocupaban 6 líneas en móvil.

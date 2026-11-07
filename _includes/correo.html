@@ -1,0 +1,6 @@
+{%- comment -%}
+  Enlace mailto: con un correo de _config.yml. Nunca escribir mailto: a mano.
+  Parámetros (opcionales): correo (por defecto site.contact.email; p. ej. site.contact.email_gerencia), clase.
+{%- endcomment -%}
+{%- assign _correo = include.correo | default: site.contact.email -%}
+<a href="mailto:{{ _correo }}"{% if include.clase %} class="{{ include.clase }}"{% endif %}>{{ _correo }}</a>

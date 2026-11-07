@@ -1,3 +1,7 @@
-Contact: mailto:gerenciaproincivil@gmail.com
+---
+layout: null
+sitemap: false
+---
+Contact: mailto:{{ site.contact.email_gerencia }}
 Preferred-Languages: es
 Canonical: https://www.proincivil.com/.well-known/security.txt
