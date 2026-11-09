@@ -66,6 +66,12 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 
 ## Bitácora
 
+### 2026-11-07 — Encabezados con keyword en cada H1–H3 publicado
+**Contexto:** regla de Juli: cada H1–H3 lleva una keyword real y distinta dentro de la URL; sin fórmulas genéricas.
+- 6 H1 de páginas (contacto, cómo cotizar, proyectos, equipo, independencia técnica, blog), 12 H2/H3 del cuerpo de home, cómo cotizar, contacto e independencia, 12 H2 de los 3 posts y 1 de Tacuara.
+- `cta_titulo` propio en home, páginas, hubs publicados y posts para que el cierre no repita «Conversemos sobre tu proyecto» en todas.
+- Detalle antes → después en `_plans/encabezados-keywords-2026-11-07.md`. Sin commitear.
+
 ### 2026-11-06 — Contacto solo desde _config.yml e includes
 **Contexto:** regla del usuario: todo número y todo enlace de contacto (wa.me, tel:, mailto:) sale de `_config.yml` por un include, nunca a mano.
 - Teléfonos: la auditoría ya daba 0 números escritos a mano y 0 enlaces wa.me/tel fuera de `_includes`; no hubo cambios.

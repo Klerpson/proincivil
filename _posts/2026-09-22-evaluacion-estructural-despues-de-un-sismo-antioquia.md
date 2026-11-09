@@ -2,6 +2,7 @@
 title: "Qué revisar en tu edificio después de un sismo en Antioquia (ATC-20)"
 description: "Señales de alarma tras un sismo, qué no hacer, cuándo llamar a un ingeniero estructural y cómo funciona la evaluación de seguridad post-sismo ATC-20 en Antioquia."
 h1: "Qué revisar en tu edificio después de un sismo en Antioquia: guía de evaluación ATC-20"
+cta_titulo: "Solicita la evaluación estructural de tu edificio"
 excerpt: "Tras un sismo sentido en Medellín o Antioquia, la pregunta no es si el edificio se movió, sino si puede seguir habitándose. Esta guía explica qué señales importan, qué no hacer y cómo un ingeniero decide con la metodología ATC-20."
 entradilla: "La pregunta después de un sismo es si el edificio puede seguir habitándose: qué señales importan y cómo decide un ingeniero."
 categories: [sismos]
@@ -38,7 +39,7 @@ Un sismo sentido en Medellín, Envigado o cualquier municipio de Antioquia deja 
 
 Antioquia está en zona de amenaza sísmica intermedia en el Valle de Aburrá y alta en el Urabá y buena parte del occidente. Un estudio del ITM estimó que cerca de la mitad de las viviendas del departamento tienen alta vulnerabilidad sísmica por su sistema estructural. Eso no significa que todas vayan a fallar, pero sí que después de un evento la pregunta de la habitabilidad no puede responderse a ojo.
 
-## Las primeras horas {#primeras-horas}
+## Qué hacer en las primeras horas después de un sismo {#primeras-horas}
 
 Lo que se hace en las primeras horas determina el resto del proceso. Antes de cualquier inspección, la prioridad es la seguridad de las personas: salir de la edificación si hay señales evidentes de daño grave, cortar el gas si se percibe olor y no usar ascensores hasta que un técnico los revise.
 
@@ -46,7 +47,7 @@ Una vez pasado el momento inmediato, conviene documentar. Fotografías de cada f
 
 > **Regla práctica:** una fisura que estaba antes del sismo y no cambió no es un daño del sismo. Por eso el registro previo —fotos de la entrega del apartamento, actas de asamblea con reportes de humedades— vale tanto como el registro posterior.
 
-## Señales de alarma {#senales}
+## Señales de daño estructural tras un sismo {#senales}
 
 No todas las fisuras significan lo mismo. La tabla siguiente resume lo que un ingeniero estructural busca primero y lo que suele descartar rápido.
 
@@ -62,7 +63,7 @@ No todas las fisuras significan lo mismo. La tabla siguiente resume lo que un in
 
 Las señales de la mitad inferior de la tabla justifican una llamada al ingeniero el mismo día. Las de la parte superior justifican una evaluación programada, sin urgencia, para descartar que algo más esté ocurriendo detrás del acabado.
 
-## Qué no hacer {#no-hacer}
+## Qué no hacer en un edificio afectado por el sismo {#no-hacer}
 
 Los errores más frecuentes después de un sismo no los comete la estructura, los comete la prisa.
 
@@ -74,7 +75,7 @@ Los errores más frecuentes después de un sismo no los comete la estructura, lo
 
 **No esperar a la réplica.** Si hay señales de la mitad inferior de la tabla, la siguiente réplica encuentra la estructura ya debilitada.
 
-## Cómo funciona la evaluación ATC-20 {#atc-20}
+## Evaluación ATC-20: inspección rápida, detallada y de ingeniería {#atc-20}
 
 La metodología **ATC-20** (Applied Technology Council) es el estándar internacional de evaluación rápida de seguridad post-sismo y el que aplican en Colombia las entidades de gestión del riesgo y los ingenieros estructurales. Su objetivo no es diseñar la reparación sino decidir el uso de la edificación en las horas y días siguientes al evento.
 
@@ -107,7 +108,7 @@ El caso no está en Antioquia sino en Dosquebradas (Risaralda), pero muestra el 
 
 El diagnóstico patológico quedó completo y con respaldo técnico suficiente para la gestión ante la aseguradora; el estudio de vulnerabilidad sísmica para el plan de repotenciación está en curso. El [caso completo]({{ site.baseurl }}/proyectos/tacuara-club-residencial/) está en nuestra sección de proyectos.
 
-## Cuándo llamar y qué preparar
+## Cuándo pedir una evaluación post-sismo y qué preparar
 
 Si tu edificación muestra cualquiera de las señales de alarma estructural, contacta a un ingeniero el mismo día. Si solo ves fisuras en acabados, programa la evaluación en los días siguientes; no es urgente, pero sí conveniente para dejar constancia. En ambos casos ten a mano las fotos, los planos si existen y el número de la póliza.
 
