@@ -2,7 +2,7 @@
 titulo_corto: "Evaluación post-sismo"
 orden: 7
 grupo: evaluacion
-title: "Evaluación post-sismo de edificaciones (ATC-20) en Colombia | PROINCIVIL"
+title: "Evaluación post-sismo de edificaciones (ATC-20) en Colombia"
 description: "Evaluación post-sismo con metodología ATC-20 para propiedad horizontal, colegios y hoteles en Colombia: concepto de seguridad e informe técnico para la aseguradora."
 h1: "Evaluación post-sismo: ¿tu edificación puede seguir ocupándose?"
 eyebrow: "Servicio · Patología y diagnóstico"

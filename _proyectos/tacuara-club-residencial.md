@@ -3,7 +3,7 @@
 titulo_corto: "Tacuara Club Residencial"
 orden: 1
 eyebrow: "Propiedad horizontal · Diagnóstico patológico"
-title: "Tacuara en Dosquebradas: diagnóstico de seis torres | PROINCIVIL"
+title: "Tacuara en Dosquebradas: diagnóstico de seis torres"
 description: "Diagnóstico patológico de Tacuara en Dosquebradas, Risaralda: seis torres y más de 780 apartamentos. Diagnóstico concluido y vulnerabilidad sísmica en proceso."
 h1: "Tacuara Club Residencial P.H.: diagnóstico de seis torres"
 excerpt: "Diagnóstico patológico concluido tras afectaciones sísmicas. El estudio de vulnerabilidad está en proceso como base para el plan de repotenciación."

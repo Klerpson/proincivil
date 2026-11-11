@@ -2,7 +2,7 @@
 titulo_corto: "Curadurías y licencias"
 orden: 15
 grupo: tramites
-title: "Subsanación de observaciones y licencias ante curadurías | PROINCIVIL"
+title: "Subsanación de observaciones y licencias ante curadurías"
 description: "Acompañamiento ante curadurías urbanas de Colombia: revisión del expediente estructural y geotécnico, radicación y respuesta a observaciones de la licencia."
 h1: "Acompañamiento técnico ante curadurías y entidades públicas"
 eyebrow: "Servicio · Trámites"

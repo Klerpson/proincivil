@@ -2,7 +2,7 @@
 titulo_corto: "ARTICO Arquitectura"
 orden: 10
 eyebrow: "Arquitectura · Consultoría estructural"
-title: "ARTICO Arquitectura: diagnóstico y revisión estructural | PROINCIVIL"
+title: "ARTICO Arquitectura: diagnóstico y revisión estructural"
 description: "Alianza con ARTICO Arquitectura en Barranquilla, Pereira y Bogotá: diagnósticos, vulnerabilidad y revisiones para cambios de uso y decisiones de intervención."
 h1: "ARTICO Arquitectura: soporte estructural para decidir"
 excerpt: "Una alianza técnica en tres ciudades para conocer el estado de edificaciones y sustentar decisiones de cambio de uso, repotenciación y nuevos proyectos."

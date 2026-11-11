@@ -8,7 +8,10 @@
         <p class="rotulo rotulo--claro">{{ p.ficha.sector }} · {{ p.ficha.ubicacion }}</p>
         <h3 class="pieza__titulo"><a href="{{ p.url | relative_url }}">{{ p.titulo_corto | default: p.h1 }}</a></h3>
         <p>{{ p.excerpt | strip_html | truncate: 150 }}</p>
-        {%- if p.ficha.area -%}<p class="pieza__dato">{{ p.ficha.area }}{% if p.ficha.niveles %} · {{ p.ficha.niveles }}{% endif %}</p>{%- endif -%}
+        {%- assign _area = p.ficha.area | append: "" -%}{%- assign _niv = p.ficha.niveles | append: "" -%}
+        {%- if _area != "" and _area contains "PENDIENTE" -%}{%- assign _area = "" -%}{%- endif -%}
+        {%- if _niv contains "PENDIENTE" -%}{%- assign _niv = "" -%}{%- endif -%}
+        {%- if _area != "" -%}<p class="pieza__dato">{{ _area }}{% if _niv != "" %} · {{ _niv }}{% endif %}</p>{%- endif -%}
         <span class="pieza__flecha" aria-hidden="true">Ver el caso</span>
       </div>
     </article>

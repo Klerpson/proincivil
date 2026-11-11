@@ -2,7 +2,7 @@
 titulo_corto: "Grupo Super Motos (Honda)"
 orden: 8
 eyebrow: "Sedes comerciales · Evaluación y diseño"
-title: "Grupo Super Motos (Honda): evaluación, repotenciación y diseño de sedes"
+title: "Super Motos (Honda): evaluación, repotenciación y sedes"
 description: "Caso: evaluación diagnóstica, repotenciación estructural y diseño de nuevas sedes comerciales a nivel nacional para Grupo Super Motos, concesionario Honda."
 h1: "Super Motos (Honda): evaluación, repotenciación y diseño de sedes"
 excerpt: "Un concesionario con sedes en varias ciudades necesitaba saber qué locales existentes podían recibir su nueva operación, cuáles había que reforzar y cómo diseñar las sedes nuevas con el mismo estándar."

@@ -3,8 +3,8 @@ layout: zona
 titulo_corto: "Envigado"
 lugar: "Envigado"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 1
-title: "Ingeniería estructural en Envigado: diseño, evaluación y curadurías"
-description: "Ingenieros estructurales con sede en Envigado: diseño sismorresistente NSR-10, estudios de suelos en ladera y trámite ante las curadurías Primera y Segunda de Envigado."
+title: "Ingeniería estructural en Envigado: diseño y curadurías"
+description: "Ingenieros estructurales con sede en Envigado: diseño sismorresistente NSR-10, estudios de suelos en ladera y trámite ante las curadurías Primera y Segunda."
 h1: "Ingenieros estructurales en Envigado"
 eyebrow: "Zonas · Envigado, nuestra sede"
 excerpt: "Nuestra sede está en Envigado. Resolvemos suelo, contención y estructura de un lote en ladera en un solo diseño, y lo acompañamos en la curaduría Primera o Segunda."

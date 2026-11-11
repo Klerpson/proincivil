@@ -3,7 +3,7 @@ titulo_corto: "Análisis de verticalidad"
 orden: 17
 grupo: medicion
 title: "Análisis de verticalidad de edificios y torres | PROINCIVIL"
-description: "Análisis de verticalidad de edificios y torres en Colombia: medición del desplome, lectura con la patología y el suelo, e informe para la copropiedad o la aseguradora."
+description: "Análisis de verticalidad de edificios y torres en Colombia: medición del desplome, lectura con la patología y el suelo, e informe para la copropiedad o aseguradora."
 h1: "Análisis de verticalidad de edificios y torres existentes"
 eyebrow: "Servicio · Topografía y verticalidad"
 excerpt: "¿La torre está inclinada o solo lo parece? Medimos el desplome de fachadas, columnas y ejes, y lo interpretamos con la patología y el suelo para saber qué significa para la estructura."

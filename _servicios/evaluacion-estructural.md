@@ -2,7 +2,7 @@
 titulo_corto: "Evaluación y patología estructural"
 orden: 6
 grupo: evaluacion
-title: "Evaluación y patología estructural de edificaciones | PROINCIVIL"
+title: "Evaluación y patología estructural de edificaciones"
 description: "Evaluación estructural, patología y peritaje de edificaciones en Colombia: fisuras, asentamientos, cambio de uso y reclamaciones. Informe firmado."
 h1: "Evaluación estructural de edificaciones"
 eyebrow: "Servicio · Patología y diagnóstico"

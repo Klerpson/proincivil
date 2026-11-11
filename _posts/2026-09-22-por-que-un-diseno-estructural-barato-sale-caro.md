@@ -1,7 +1,8 @@
 ---
 title: "Por qué un diseño estructural barato sale caro"
-description: "Sobrecostos en obra, devoluciones de curaduría y reprocesos: dónde se esconde el costo real de un diseño estructural económico y qué debe incluir una propuesta seria."
+description: "Sobrecostos en obra, devoluciones de curaduría y reprocesos: dónde se esconde el costo real de un diseño estructural económico y qué debe traer una propuesta."
 h1: "Por qué un diseño estructural barato sale caro"
+faqs_titulo: "Preguntas sobre el costo de un diseño estructural"
 excerpt: "El honorario de diseño es una fracción pequeña del costo de una obra; la estructura, la más grande. Un diseño que ahorra en lo primero suele gastar de más en lo segundo: concreto y acero sobrantes, devoluciones de curaduría y reprocesos en obra."
 entradilla: "El diseño es una fracción del costo de la obra; ahorrar en él suele pagarse en concreto, acero y reprocesos."
 categories: [costos]
@@ -22,7 +23,7 @@ indice:
 faqs:
   - question: "¿Cuánto vale un diseño estructural en Colombia?"
     answer: "Se cotiza por metro cuadrado construido, ajustado por sistema estructural, número de niveles, regularidad de la planta, grupo de uso, tipo de suelo y plazo. No hay una tarifa única porque dos edificios de igual área pueden exigir cantidades de trabajo muy distintas. Lo relevante no es el honorario aislado sino su relación con las cantidades de obra que ese diseño produce."
-  - question: "¿Cómo se cobra un diseño estructural?"
+  - question: "¿Cómo se paga un diseño estructural?"
     answer: "Lo habitual es un valor por metro cuadrado o un valor global por proyecto, con un anticipo al aceptar la propuesta y el saldo contra entregables. Los diseños que incluyen modelo BIM, coordinación con otras disciplinas y acompañamiento en curaduría suelen cotizarse como paquete."
   - question: "¿Un diseño más caro garantiza menos concreto y acero?"
     answer: "No por sí solo. Lo que reduce cantidades es el tiempo de ingeniería dedicado a elegir el sistema, modelar la estructura completa y ajustar cada elemento, y la ausencia de incentivo para especificar de más. Un diseñador que también construye o vende materiales tiene ese incentivo; uno independiente, no."

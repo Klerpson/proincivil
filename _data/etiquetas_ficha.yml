@@ -1,0 +1,14 @@
+# Etiquetas visibles de la ficha de proyecto (_layouts/project.html).
+# La clave es la del front matter `ficha:`; las que no estén aquí no se muestran.
+# Los valores que contengan PENDIENTE tampoco se muestran (siguen en el front matter).
+cliente: "Cliente"
+ubicacion: "Ubicación"
+anio: "Año"
+sector: "Sector"
+servicio: "Servicio"
+sistema: "Sistema estructural"
+area: "Área"
+niveles: "Niveles"
+normativa: "Normativa"
+plazo: "Plazo"
+rol: "Rol de PROINCIVIL"

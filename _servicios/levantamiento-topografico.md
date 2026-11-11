@@ -2,7 +2,7 @@
 titulo_corto: "Topografía"
 orden: 16
 grupo: medicion
-title: "Levantamiento topográfico para diseño, licencias y edificaciones"
+title: "Levantamiento topográfico para diseño y licencias"
 description: "Levantamiento topográfico planimétrico y altimétrico en Colombia para diseño estructural, licencias, vías y edificaciones existentes, con curvas de nivel."
 h1: "Levantamiento topográfico para diseñar sobre el terreno real"
 eyebrow: "Servicio · Topografía y verticalidad"

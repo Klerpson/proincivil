@@ -2,8 +2,8 @@
 titulo_corto: "Revisión independiente de diseños"
 orden: 13
 grupo: control
-title: "Revisión independiente de diseños estructurales (Ley 1796) | PROINCIVIL"
-description: "Revisor independiente de diseños estructurales según la Ley 1796 y la NSR-10: verificamos memorias, planos y estudio de suelos antes de la licencia. No ejecutamos obra."
+title: "Revisión independiente de diseños estructurales (Ley 1796)"
+description: "Revisor independiente de diseños estructurales según la Ley 1796 y la NSR-10: verificamos memorias, planos y estudio de suelos antes de la licencia. No hacemos obra."
 h1: "Revisor independiente de diseños estructurales"
 eyebrow: "Servicio · Control técnico"
 excerpt: "Antes de que tu proyecto llegue a la curaduría, un ingeniero que no lo diseñó ni lo va a construir verifica que cumple la NSR-10. Es lo que exige la Ley 1796 para las edificaciones de mayor exigencia y lo que conviene a cualquier proyecto."

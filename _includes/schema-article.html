@@ -9,7 +9,7 @@
   "url": "{{ page.url | absolute_url }}",
   "mainEntityOfPage": "{{ page.url | absolute_url }}",
   "inLanguage": "es-CO",
-  "image": "{{ page.image | default: '/img/og-proincivil.jpg' | absolute_url }}",
+  "image": { "@type": "ImageObject", "url": "{{ _og_image | default: '/img/og-proincivil.jpg' | absolute_url }}", "width": 1200, "height": 630 },
   "datePublished": "{{ page.datePublished | default: page.date | date: '%Y-%m-%d' }}",
   "dateModified": "{{ page.dateModified | default: page.datePublished | default: page.date | date: '%Y-%m-%d' }}",
   "author": {% if _autor %}{ "@type": "Person", "@id": "{{ site.url }}/nosotros/equipo/#{{ _autor.ancla }}", "name": "{{ _autor.nombre }}", "jobTitle": "{{ _autor.cargo }}" }{% else %}{ "@id": "{{ site.url }}/#organization" }{% endif %},

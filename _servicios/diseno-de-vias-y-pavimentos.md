@@ -2,7 +2,7 @@
 titulo_corto: "Diseño de vías y pavimentos"
 orden: 5
 grupo: diseno
-title: "Diseño de placa huella, vías y pavimentos en Colombia | PROINCIVIL"
+title: "Diseño de placa huella, vías y pavimentos en Colombia"
 description: "Diseño de vías y pavimentos en Colombia: placa huella con la guía del INVÍAS, pavimento rígido y flexible, geotecnia vial y drenaje. No ejecutamos obra."
 h1: "Diseño de vías y pavimentos: placa huella, rígido y flexible"
 eyebrow: "Servicio · Diseño"

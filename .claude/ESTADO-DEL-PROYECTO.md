@@ -1,6 +1,6 @@
 # Estado del proyecto — PROINCIVIL
 
-**Última actualización:** 2026-11-06
+**Última actualización:** 2026-11-10
 
 ## Iniciativas activas
 
@@ -65,6 +65,23 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-11-10 (tarde) — Correcciones de la auditoría SEO aplicadas
+**Contexto:** el usuario pidió implementar los hallazgos de `_plans/auditoria-seo-2026-11-10.md`. Hecho en una copia del commit `b536f3c`, compilado y validado allí, y aplicado aquí con `_plans/seo-fixes-2026-11-10.patch` (61 archivos). Sin commit.
+- Fichas de proyecto: etiquetas desde `_data/etiquetas_ficha.yml` (Año, Ubicación, Área, Rol de PROINCIVIL); las filas con `PENDIENTE` no se pintan y «Resultado» ya no se repite en la ficha. Mismo filtro en `proyectos-relacionados.html`. Tabla de carports sin la columna Ubicación (estaba en PENDIENTE). 0 «PENDIENTE» en el build.
+- Schema: `dateCreated` solo con año de 4 dígitos; `areaServed` de zonas sin array anidado; fuera `termsOfService` (Service) y `additionalType: Project`. Nuevo `schema-webpage.html` en todas las páginas indexables: WebPage / CollectionPage con ItemList (hubs y blog) / ContactPage / AboutPage, con `isPartOf`, `breadcrumb`, `primaryImageOfPage` y `speakable` donde existe `#en-resumen`. Service con `image` y `mainEntityOfPage`.
+- OG: recortes 1200×630 en `img/og/` (10 fotos con original de 1.000 px o más); `head.html` los usa si existen y, si no, `og-proincivil.jpg`. BlogPosting con ImageObject 1200×630.
+- Jerarquía: H2 nuevo en `/blog/` («Últimos artículos…») y `/como-cotizar/` («Tres pasos…»); `faqs_titulo` en los 3 posts; CTA de proyectos «¿Tienes un proyecto como X?».
+- Contenido (sin datos nuevos, requiere visto bueno de la clienta): 36 titles a 60 caracteres o menos (casi todos solo pierden « | PROINCIVIL»), 18 descriptions a 165 o menos, 3 FAQ repetidas reformuladas (post de interventoría, post de diseño barato, zonas/colombia).
+- Verificado: build 50 páginas, `validar-site.py` 0, lint 71/0, JSON-LD 100 % válido, todas las og:image de 1200×630, 0 saltos de encabezado.
+- Pendiente: H2 en forma de pregunta según queries de GSC (no hay datos de GSC en esta sesión); H2 largos del cuerpo (editorial); fotos reales, apellidos y matrículas del equipo, Google Business y LinkedIn de empresa (cliente); aprobación escrita de las zonas.
+
+### 2026-11-10 — Auditoría SEO completa (schema, jerarquía, FAQs, snippets, estilos inline)
+**Contexto:** el usuario pidió confirmar si el sitio está listo para la fase de optimización SEO. Informe en `_plans/auditoria-seo-2026-11-10.md` (build de producción del commit `b536f3c`).
+- Correcto: 0 `style=`, JSON-LD válido en 50/50, FAQs visibles = schema en 31/31, 1 H1 por página, «En resumen» en 27 páginas, sitemap/robots/llms.txt bien.
+- Críticos en producción: «PENDIENTE» visible y etiquetas sin tilde («Anio», «Ubicacion») en las fichas de proyecto; `dateCreated: "PENDIENTE"` en 7 schemas de proyecto; `areaServed` anidado (`[[…]]`) en las 7 zonas.
+- Medios: OG declarada 1200×630 con fotos de 380–1.100 px; H1→H3 en /blog/ y /como-cotizar/; H2 de FAQ en minúsculas en 2 posts; H2-CTA de proyectos de hasta 121 caracteres; 6 descriptions > 170; 3 FAQ repetidas entre páginas; pocas H2 en forma de pregunta.
+- Por confirmar: zonas publicadas sin aprobación escrita registrada. Sin cambios en el código. Próxima auditoría: 2027-01-09.
 
 ### 2026-11-06 — Contacto solo desde _config.yml e includes
 **Contexto:** regla del usuario: todo número y todo enlace de contacto (wa.me, tel:, mailto:) sale de `_config.yml` por un include, nunca a mano.

@@ -1,6 +1,21 @@
 {%- assign _title = page.title | default: site.site_meta.title -%}
 {%- assign _desc = page.description | default: site.site_meta.description | strip_html | strip_newlines -%}
-{%- assign _og_image = page.image | default: "/img/og-proincivil.jpg" -%}
+{%- comment -%}
+  Imagen social siempre de 1200×630: si la foto de la página (`image`) tiene recorte en /img/og/<base>.jpg
+  se usa ese; si no (fotos de menos de 1.000 px), la imagen por defecto. `og_image` fuerza una ruta propia
+  (debe ser 1200×630). Recortes generados desde la variante más grande de /img/fotos/.
+{%- endcomment -%}
+{%- assign _og_image = "/img/og-proincivil.jpg" -%}
+{%- if page.image -%}
+  {%- assign _og_base = page.image | split: "/" | last | split: "." | first -%}
+  {%- assign _og_partes = _og_base | split: "-" -%}
+  {%- assign _og_ultimo = _og_partes | last -%}
+  {%- assign _og_num = _og_ultimo | plus: 0 | append: "" -%}
+  {%- if _og_num == _og_ultimo -%}{%- assign _og_base = _og_partes | pop | join: "-" -%}{%- endif -%}
+  {%- assign _og_ruta = "/img/og/" | append: _og_base | append: ".jpg" -%}
+  {%- assign _og_existe = site.static_files | where: "path", _og_ruta | first -%}
+  {%- if _og_existe -%}{%- assign _og_image = _og_ruta -%}{%- endif -%}
+{%- endif -%}
 {%- if page.og_image -%}{%- assign _og_image = page.og_image -%}{%- endif -%}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -50,6 +65,7 @@
 {%- comment %} El hero no se precarga aquí: picture.html ya lo emite con fetchpriority="high". {% endcomment -%}
 {% include schema-organization.html %}
 {% include schema-website.html %}
+{%- unless page.noindex %}{% include schema-webpage.html %}{% endunless %}
 {% include schema-breadcrumb.html %}
 {%- if page.schemaType == "Service" %}{% include schema-service.html %}{% endif %}
 {%- if page.schemaType == "Article" %}{% include schema-article.html %}{% endif %}

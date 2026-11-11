@@ -1,0 +1,46 @@
+{%- comment -%}
+  Nodo WebPage de cada página: tipo según la página, enlace al WebSite, a la organización, a las migas y a la
+  imagen social. CollectionPage + ItemList en los hubs (`coleccion:` o el blog), ContactPage en contacto,
+  AboutPage en nosotros (o `webPageType` en el front matter). `speakable` donde se pinta #en-resumen
+  (`page.resumen`). Usa `_og_image` calculada en head.html.
+{%- endcomment -%}
+{%- assign _wp_tipo = page.webPageType -%}
+{%- unless _wp_tipo -%}
+  {%- if page.coleccion or page.url == "/blog/" -%}{%- assign _wp_tipo = "CollectionPage" -%}
+  {%- elsif page.url == "/contacto/" -%}{%- assign _wp_tipo = "ContactPage" -%}
+  {%- elsif page.url contains "/nosotros/" -%}{%- assign _wp_tipo = "AboutPage" -%}
+  {%- else -%}{%- assign _wp_tipo = "WebPage" -%}{%- endif -%}
+{%- endunless -%}
+{%- if page.coleccion -%}{%- assign _wp_items = site[page.coleccion] | sort: "orden" -%}
+{%- elsif page.url == "/blog/" -%}{%- assign _wp_items = site.posts -%}
+{%- else -%}{%- assign _wp_items = nil -%}{%- endif -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ _wp_tipo }}",
+  "@id": "{{ page.url | absolute_url }}#webpage",
+  "url": "{{ page.url | absolute_url }}",
+  "name": {{ page.title | default: site.site_meta.title | strip_html | jsonify }},
+  "description": {{ page.description | default: site.site_meta.description | strip_html | strip_newlines | jsonify }},
+  "inLanguage": "es-CO",
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "primaryImageOfPage": { "@type": "ImageObject", "url": "{{ _og_image | default: '/img/og-proincivil.jpg' | absolute_url }}", "width": 1200, "height": 630 }
+  {%- if page.url != "/" %},
+  "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumb" }{% endif %}
+  {%- if page.resumen %},
+  "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", "#en-resumen"] }{% endif %}
+  {%- if page.dateModified %},
+  "dateModified": "{{ page.dateModified | date: '%Y-%m-%d' }}"{% endif %}
+  {%- if _wp_items and _wp_items.size > 0 %},
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ _wp_items.size }},
+    "itemListElement": [
+      {%- for it in _wp_items %}
+      { "@type": "ListItem", "position": {{ forloop.index }}, "url": "{{ it.url | absolute_url }}", "name": {{ it.titulo_corto | default: it.h1 | default: it.title | strip_html | jsonify }} }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  }{% endif %}
+}
+</script>

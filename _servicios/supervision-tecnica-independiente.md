@@ -2,8 +2,8 @@
 titulo_corto: "Supervisión técnica independiente"
 orden: 14
 grupo: control
-title: "Supervisión técnica independiente NSR-10 Título I | PROINCIVIL"
-description: "Supervisión técnica independiente según la NSR-10 (Título I) y la Ley 1796: verificación de estructura, ensayos y registros para la certificación técnica de ocupación."
+title: "Supervisión técnica independiente NSR-10 Título I"
+description: "Supervisión técnica independiente según la NSR-10 (Título I) y la Ley 1796: verificación de estructura, ensayos y registros para la certificación de ocupación."
 h1: "Supervisión técnica independiente de la construcción"
 eyebrow: "Servicio · Control técnico"
 excerpt: "Verificamos en obra que la estructura se construya como se diseñó: refuerzo, concreto, ensayos y tolerancias, con los registros que exige la NSR-10 para la certificación técnica de ocupación. Respondemos al propietario, nunca al constructor."

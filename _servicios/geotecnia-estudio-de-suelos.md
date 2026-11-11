@@ -2,7 +2,7 @@
 titulo_corto: "Geotecnia (estudio de suelos)"
 orden: 9
 grupo: suelos
-title: "Estudio de suelos y geotecnia para construcción en Colombia | PROINCIVIL"
+title: "Estudio de suelos y geotecnia para construcción en Colombia"
 description: "Estudios de suelos y geotecnia conforme al Título H de la NSR-10 para cimentaciones y licencias en Colombia: exploración, laboratorio, refracción sísmica e informe."
 h1: "Estudios de suelos y geotecnia para cimentaciones seguras"
 eyebrow: "Servicio · Suelos"

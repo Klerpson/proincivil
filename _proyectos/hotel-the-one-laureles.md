@@ -2,7 +2,7 @@
 titulo_corto: "Hotel The One Laureles"
 orden: 6
 eyebrow: "Hotelería · Interventoría de diseños"
-title: "Hotel The One Laureles: interventoría al diseño de un hotel de 15 pisos"
+title: "Hotel The One Laureles: interventoría al diseño de 15 pisos"
 description: "Caso: interventoría independiente al diseño estructural de un hotel boutique de 15 niveles con sistemas combinados de pórticos en Laureles, Medellín."
 h1: "Hotel The One Laureles: interventoría al diseño de 15 niveles"
 excerpt: "Revisión independiente, sin conflicto de interés, del diseño estructural en concreto reforzado de un hotel de 15 niveles con sistemas combinados de pórticos en Medellín. Parte de los más de 20.000 m² supervisados por PROINCIVIL."

@@ -4,7 +4,7 @@ layout: default
 {%- comment -%}
   Ficha de proyecto con los datos que pide un comité de compras.
   Front matter: ficha{cliente, ubicacion, anio, sector, servicio, sistema, area, niveles, normativa, plazo, rol, resultado},
-  galeria[{src,alt,pie}], testimonio{texto,autor,cargo}, servicios[slugs], edificacion (slug).
+  galeria[{src,alt,pie}]. Etiquetas en _data/etiquetas_ficha.yml; los valores PENDIENTE no se pintan, testimonio{texto,autor,cargo}, servicios[slugs], edificacion (slug).
 {%- endcomment -%}
 <section class="seccion seccion--compacta">
   <div class="marco flujo">
@@ -15,9 +15,14 @@ layout: default
     </div>
     {%- endif %}
     <dl class="datos">
-      {% for par in page.ficha %}
-      <div class="datos__item"><dt>{{ par[0] | replace: "_", " " | capitalize }}</dt><dd>{{ par[1] }}</dd></div>
-      {% endfor %}
+      {%- for par in page.ficha %}
+      {%- assign _clave = par[0] -%}
+      {%- assign _etiqueta = site.data.etiquetas_ficha[_clave] -%}
+      {%- assign _valor = par[1] | append: "" -%}
+      {%- if _etiqueta and _valor != "" -%}{%- unless _valor contains "PENDIENTE" %}
+      <div class="datos__item"><dt>{{ _etiqueta }}</dt><dd>{{ _valor }}</dd></div>
+      {%- endunless -%}{%- endif -%}
+      {%- endfor %}
     </dl>
   </div>
 </section>
@@ -62,8 +67,8 @@ layout: default
 {%- assign _t_otros = _otros | append: " proyectos más de ingeniería estructural, patología e interventoría" %}
 {% include escenas/galeria.html titulo=_t_otros rotulo="Otros proyectos" excluir=page.slug id="otros-proyectos" %}
 
-{%- assign _servicio_min = page.ficha.servicio | downcase -%}
-{%- assign _cta_proy = "¿Necesitas " | append: _servicio_min | append: " como en " | append: page.titulo_corto | append: "?" -%}
+{%- comment -%} H2 corto: el servicio ya está en el cuerpo y en «Servicios aplicados». {%- endcomment -%}
+{%- assign _cta_proy = "¿Tienes un proyecto como " | append: page.titulo_corto | append: "?" -%}
 {% include cta-final.html titulo=_cta_proy texto="Cuéntanos tu necesidad y la información disponible. Acordamos una llamada de diagnóstico para definir el alcance, los entregables y el plazo." %}
 
 {% if page.servicios or page.edificacion %}

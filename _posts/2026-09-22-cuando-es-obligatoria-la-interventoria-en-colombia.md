@@ -1,7 +1,8 @@
 ---
 title: "Qué es la interventoría y cuándo es obligatoria en Colombia"
-description: "Qué es la interventoría, qué tipos existen, cuándo la exige la ley en obra pública y privada, en qué se diferencia de la supervisión técnica y cómo elegir interventor."
+description: "Qué es la interventoría, qué tipos existen, cuándo la exige la ley en obra pública y privada, cómo se diferencia de la supervisión técnica y cómo elegirla."
 h1: "Qué es la interventoría de obra y cuándo es obligatoria en Colombia"
+faqs_titulo: "Preguntas sobre la interventoría de obra en Colombia"
 excerpt: "Interventoría, supervisión técnica independiente y revisión independiente de diseños son tres figuras distintas que suelen confundirse. Esta guía explica qué hace cada una, cuándo la exige la ley y qué debe pedirle a quien la ejerza."
 entradilla: "Interventoría, supervisión técnica y revisión independiente de diseños suelen confundirse: qué hace cada una y cuándo la exige la ley."
 categories: [normativa]
@@ -28,7 +29,7 @@ faqs:
     answer: "No. La supervisión técnica independiente es una figura de la Ley 400 de 1997 y el Título I de la NSR-10, limitada al aspecto estructural: verificar que la estructura se construya según los planos y con los materiales especificados, mediante ensayos y registros. La interventoría abarca todo el contrato. Una obra puede tener ambas, y a veces las ejerce la misma firma."
   - question: "¿Puede el mismo ingeniero diseñar y hacer la interventoría de la obra?"
     answer: "Para la supervisión técnica independiente y la revisión independiente de diseños, la Ley 1796 de 2016 exige que el profesional sea independiente del diseñador y del constructor. Para la interventoría de obra privada no hay una prohibición legal general, pero contratar como interventor a quien diseñó o a quien construye elimina el control que la figura pretende dar."
-  - question: "¿Cuánto cuesta una interventoría de obra civil?"
+  - question: "¿De qué depende el costo de una interventoría?"
     answer: "Depende del valor y la duración de la obra, de la dedicación del equipo (residente permanente o visitas), de las especialidades que cubra y de si incluye ensayos de laboratorio. Suele expresarse como porcentaje del valor de la obra o como honorario mensual por dedicación. PROINCIVIL revisa los documentos y acuerda el alcance antes de preparar la propuesta por escrito."
 ---
 

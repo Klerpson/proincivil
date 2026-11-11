@@ -2,7 +2,7 @@
 titulo_corto: "Línea sísmica (refracción sísmica)"
 orden: 10
 grupo: suelos
-title: "Líneas de refracción sísmica y MASW para estudios de suelos | PROINCIVIL"
+title: "Líneas de refracción sísmica y MASW para estudios de suelos"
 description: "Líneas de refracción sísmica y ensayos MASW para medir la velocidad de onda de cortante (Vs30) y clasificar el perfil de suelo A a F de la NSR-10 en Colombia."
 h1: "Líneas de refracción sísmica para clasificar el suelo (NSR-10)"
 eyebrow: "Servicio · Suelos"

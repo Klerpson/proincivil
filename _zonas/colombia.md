@@ -3,8 +3,8 @@ layout: zona
 titulo_corto: "Colombia"
 lugar: "otras ciudades de Colombia"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 7
-title: "Ingeniería estructural en toda Colombia con coordinación remota"
-description: "Diseño estructural, evaluación e interventoría en toda ciudad de Colombia: sedes comerciales, estructuras fotovoltaicas y proyectos en Bogotá con coordinación remota."
+title: "Ingeniería estructural en toda Colombia"
+description: "Diseño estructural, evaluación e interventoría en toda Colombia: sedes comerciales, estructuras fotovoltaicas y proyectos en Bogotá, con coordinación remota."
 h1: "Ingenieros estructurales en Bogotá, Barranquilla y Colombia"
 eyebrow: "Zonas · Colombia"
 excerpt: "Sedes de una cadena en varias ciudades, más de 8 proyectos solares para una misma empresa y una alianza con ARTICO en Barranquilla, Pereira y Bogotá. Diseñamos a distancia y visitamos donde hace falta."
@@ -113,7 +113,7 @@ faqs:
     answer: "Sí. La NSR-10 es nacional; lo que cambia por ciudad es la amenaza sísmica del municipio, la microzonificación si existe, el viento y el suelo del predio. Tomamos esos datos y radicamos en el formato de la curaduría local."
   - question: "¿Han trabajado fuera de Antioquia?"
     answer: "Sí. Evaluamos, repotenciamos y diseñamos sedes comerciales de Grupo Super Motos (Honda) en distintas ciudades, hicimos más de 8 proyectos de carports fotovoltaicos para una misma empresa y, con ARTICO Arquitectura, diagnósticos y revisiones en Barranquilla, Pereira y Bogotá."
-  - question: "¿Hacen estudios de suelos fuera de Antioquia?"
+  - question: "¿Cómo hacen el estudio de suelos en otras ciudades?"
     answer: "Coordinamos la exploración y el laboratorio con equipos locales cuando la distancia lo justifica, y elaboramos o revisamos el informe geotécnico. Para el diseño estructural también verificamos estudios de suelos de consultores locales."
   - question: "¿Las visitas tienen costo adicional?"
     answer: "Los desplazamientos se incluyen en la propuesta según el número de visitas previstas. Una revisión de diseños o un diseño tipo no exigen viaje."

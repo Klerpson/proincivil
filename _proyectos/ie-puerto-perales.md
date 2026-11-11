@@ -2,8 +2,8 @@
 titulo_corto: "I.E. Puerto Perales"
 orden: 3
 eyebrow: "Educación pública · Diseño estructural"
-title: "I.E. Puerto Perales: diseño estructural de un colegio de 3.600 m²"
-description: "Caso: diseño estructural en concreto reforzado de una institución educativa de 3 niveles y 3.600 m² en Puerto Perales, Antioquia, para el grupo de uso III de la NSR-10."
+title: "I.E. Puerto Perales: diseño estructural de 3.600 m²"
+description: "Caso: diseño estructural en concreto reforzado de una institución educativa de 3 niveles y 3.600 m² en Puerto Perales, Antioquia, grupo de uso III (NSR-10)."
 h1: "I.E. Puerto Perales: diseño estructural de un colegio de 3 niveles"
 excerpt: "3.600 m² de aulas y espacios comunes diseñados en concreto reforzado para el grupo de uso III de la NSR-10, con radicación aprobada y cantidades ajustadas al presupuesto público."
 entradilla: "3.600 m² de aulas en concreto reforzado para el grupo de uso III, con radicación aprobada y cantidades ajustadas al presupuesto."

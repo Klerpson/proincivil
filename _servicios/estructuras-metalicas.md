@@ -2,8 +2,8 @@
 titulo_corto: "Estructuras metálicas"
 orden: 2
 grupo: diseno
-title: "Diseño de estructuras metálicas para cubiertas, naves y edificios"
-description: "Diseño de estructuras metálicas conforme a NSR-10 Título F y AISC: cubiertas, cerchas, naves, mezanines y edificios en acero con conexiones precalificadas en Colombia."
+title: "Diseño de estructuras metálicas para cubiertas y naves"
+description: "Diseño de estructuras metálicas con NSR-10 Título F y AISC: cubiertas, cerchas, naves, mezanines y edificios en acero con conexiones precalificadas en Colombia."
 h1: "Diseño de estructuras metálicas para cubiertas, naves y edificios"
 eyebrow: "Servicio · Diseño"
 excerpt: "Estructuras de acero con cantidades justificadas, conexiones y detalles coordinados para el fabricante. Diseño y documentación para acompañar la revisión ante curaduría."

@@ -3,7 +3,7 @@
 titulo_corto: "Diseño estructural"
 orden: 1
 grupo: diseno
-title: "Diseño estructural sismorresistente NSR-10 en Colombia | PROINCIVIL"
+title: "Diseño estructural sismorresistente NSR-10 en Colombia"
 description: "Diseño estructural sismorresistente en Colombia y Perú (NSR-10 y E.030): concreto, acero con conexiones AISC 358, memorias, planos y BIM listos para curaduría."
 h1: "Diseño estructural sismorresistente conforme a NSR-10 y E.030"
 eyebrow: "Servicio · Ingeniería estructural y sismorresistencia"

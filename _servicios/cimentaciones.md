@@ -2,7 +2,7 @@
 titulo_corto: "Cimentaciones"
 orden: 11
 grupo: diseno
-title: "Diseño de cimentaciones: zapatas, pilotes, losas y pilas | PROINCIVIL"
+title: "Diseño de cimentaciones: zapatas, pilotes, losas y pilas"
 description: "Del estudio de suelos al diseño de la cimentación conforme a NSR-10: zapatas, losas, pilas con campana, pilotes y micropilotes para edificaciones en Colombia."
 h1: "Diseño de cimentaciones superficiales y profundas"
 eyebrow: "Servicio · Diseño"

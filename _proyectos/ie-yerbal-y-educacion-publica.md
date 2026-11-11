@@ -2,7 +2,7 @@
 titulo_corto: "I.E. Yerbal y educación pública"
 orden: 4
 eyebrow: "Educación pública · Diseño estructural"
-title: "I.E. Yerbal y otras: +13.000 m² de infraestructura educativa pública"
+title: "I.E. Yerbal y otras: +13.000 m² de infraestructura educativa"
 description: "Caso: más de 13.000 m² de colegios públicos diseñados en Antioquia, entre ellos la I.E. Yerbal, para grupo de uso III de la NSR-10 y aprobados en primera radicación."
 h1: "I.E. Yerbal y otros colegios: más de 13.000 m² de educación pública"
 excerpt: "Experiencia acumulada en colegios públicos de Antioquia: diseño estructural para grupo de uso III, coordinación con módulos arquitectónicos normalizados y radicaciones aprobadas sin devoluciones."

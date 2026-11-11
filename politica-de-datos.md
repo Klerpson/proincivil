@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /politica-de-datos/
-title: "Política de tratamiento de datos personales | PROINCIVIL S.A.S."
+title: "Política de tratamiento de datos personales | PROINCIVIL"
 description: "Política de tratamiento de datos personales de PROINCIVIL S.A.S. conforme a la Ley 1581 de 2012: finalidades, derechos del titular y canales de atención."
 h1: "Política de tratamiento de datos personales"
 titulo_corto: "Política de datos"

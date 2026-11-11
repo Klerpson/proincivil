@@ -2,7 +2,7 @@
 titulo_corto: "Reforzamiento estructural"
 orden: 3
 grupo: evaluacion
-title: "Diseño de reforzamiento estructural de edificaciones | PROINCIVIL"
+title: "Diseño de reforzamiento estructural de edificaciones"
 description: "Diseño de reforzamiento y repotenciación estructural conforme a NSR-10: encamisados, muros, arriostramientos y fibras de carbono para edificios en Colombia."
 h1: "Diseño de reforzamiento y repotenciación estructural"
 eyebrow: "Servicio · Evaluación"

@@ -2,8 +2,8 @@
 titulo_corto: "Carports fotovoltaicos"
 orden: 7
 eyebrow: "Energía solar · Estructuras metálicas"
-title: "Carports fotovoltaicos: +3.000 m² de estructuras metálicas solares"
-description: "Caso: más de 3.000 m² de carports y cubiertas metálicas para paneles solares, entre ellos uno de 1.366 m² en centro comercial y uno de 715 m² en terminal de transporte."
+title: "Carports fotovoltaicos: +3.000 m² en estructura metálica"
+description: "Caso: más de 3.000 m² de carports y cubiertas metálicas para paneles solares, entre ellos uno de 1.366 m² en centro comercial y otro de 715 m² en una terminal."
 h1: "Carports fotovoltaicos: más de 3.000 m² en estructura metálica"
 excerpt: "Carports de 1.366 m² en un centro comercial y de 715 m² en una terminal de transporte terrestre, diseñados en estructura metálica con conexiones precalificadas para soportar paneles solares, viento y sismo."
 entradilla: "Carports de 1.366 m² en un centro comercial y 715 m² en una terminal, con conexiones precalificadas para paneles, viento y sismo."
@@ -48,11 +48,11 @@ PROINCIVIL diseñó las estructuras en **acero**, aplicando el Título F de la N
 - **Conexiones precalificadas** (AISC 358) en los nudos que participan del sistema de resistencia sísmica, lo que garantiza un comportamiento dúctil probado y evita conexiones a la medida difíciles de fabricar y de revisar.
 - **Perfiles y detalles pensados para fabricar en taller y montar en campo** en pocos días, con cimentación individual por columna dimensionada según el estudio de suelos de cada sitio.
 
-| Proyecto | Ubicación | Área | Particularidad |
-|---|---|---|---|
-| Carport en centro comercial | PENDIENTE | 1.366 m² | Luces amplias para circulación vehicular |
-| Carport en terminal de transporte terrestre | PENDIENTE | 715 m² | Cargas de viento en zona abierta |
-| Otras cubiertas y carports | Varias ciudades | Hasta completar +3.000 m² | Diseño replicable por sitio |
+| Proyecto | Área | Particularidad |
+|---|---|---|
+| Carport en centro comercial | 1.366 m² | Luces amplias para circulación vehicular |
+| Carport en terminal de transporte terrestre | 715 m² | Cargas de viento en zona abierta |
+| Otras cubiertas y carports en varias ciudades | Hasta completar +3.000 m² | Diseño replicable por sitio |
 
 ## El resultado: más de 3.000 m² y una relación de largo plazo
 

@@ -3,7 +3,7 @@ layout: zona
 titulo_corto: "Antioquia"
 lugar: "el resto de Antioquia"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 5
-title: "Ingeniería estructural en Antioquia: Urabá, Magdalena Medio y municipios"
+title: "Ingeniería estructural en Antioquia: Urabá y Magdalena Medio"
 description: "Diseño estructural, geotecnia e interventoría en todo Antioquia: Mutatá, Puerto Triunfo, Betulia y Puerto Perales. Colegios y hoteles en zonas de amenaza sísmica."
 h1: "Ingenieros estructurales en Antioquia"
 eyebrow: "Zonas · Antioquia"

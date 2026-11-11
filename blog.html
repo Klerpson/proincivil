@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /blog/
-title: "Blog de ingeniería estructural: NSR-10, sismos, suelos y curadurías | PROINCIVIL"
-description: "Artículos de PROINCIVIL sobre NSR-10, evaluación después de sismos en Antioquia, estudios de suelos, licencias de construcción, costos de diseño estructural y casos reales."
+title: "Blog de ingeniería estructural: NSR-10, sismos y suelos"
+description: "Artículos de PROINCIVIL sobre NSR-10, evaluación después de sismos en Antioquia, estudios de suelos, licencias, costos de diseño estructural y casos reales."
 h1: "Blog: criterio de ingeniería, sin relleno"
 titulo_corto: "Blog"
 eyebrow: "Blog"
@@ -20,11 +20,15 @@ dateModified: 2026-09-22
       {% for c in _cats %}<li><a href="#cat-{{ c }}">{{ c | capitalize }}</a></li>{% endfor %}
     </ul>
     {% if site.posts.size > 0 %}
+    <div class="encabezado">
+      <p class="rotulo">Artículos</p>
+      <h2 class="encabezado__titulo">Últimos artículos de ingeniería estructural</h2>
+    </div>
     <div class="rejilla rejilla--3">
       {% for post in site.posts %}{% include tarjeta.html item=post %}{% endfor %}
     </div>
     {% else %}
-    <p>Estamos preparando los primeros artículos. Mientras tanto, puede ver los <a href="{{ '/servicios/' | relative_url }}">servicios</a> y los <a href="{{ '/proyectos/' | relative_url }}">proyectos</a>.</p>
+    <p>Estamos preparando los primeros artículos. Mientras tanto, puedes ver los <a href="{{ '/servicios/' | relative_url }}">servicios</a> y los <a href="{{ '/proyectos/' | relative_url }}">proyectos</a>.</p>
     {% endif %}
     {% for c in _cats %}
       {% assign _pc = site.posts | where_exp: "p", "p.categories contains c" %}

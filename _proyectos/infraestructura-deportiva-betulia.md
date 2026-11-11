@@ -2,7 +2,7 @@
 titulo_corto: "Betulia e Hispania"
 orden: 9
 eyebrow: "Infraestructura pública · Diseños y formulación"
-title: "Betulia e Hispania: diseños educativos y deportivos | PROINCIVIL"
+title: "Betulia e Hispania: diseños educativos y deportivos"
 description: "Diseños para infraestructura educativa y deportiva en Betulia e Hispania, Antioquia: contenciones, canchas, cubiertas y formulación técnica presentada al SGR."
 h1: "Betulia e Hispania: diseños para educación y deporte"
 excerpt: "Diseños de contenciones, canchas y cubiertas metálicas, con documentación técnica para la formulación de proyectos ante el Sistema General de Regalías."

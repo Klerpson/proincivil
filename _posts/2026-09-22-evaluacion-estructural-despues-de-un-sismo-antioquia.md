@@ -1,7 +1,8 @@
 ---
-title: "Qué revisar en tu edificio después de un sismo en Antioquia (ATC-20)"
+title: "Qué revisar en tu edificio tras un sismo en Antioquia"
 description: "Señales de alarma tras un sismo, qué no hacer, cuándo llamar a un ingeniero estructural y cómo funciona la evaluación de seguridad post-sismo ATC-20 en Antioquia."
 h1: "Qué revisar en tu edificio después de un sismo en Antioquia: guía de evaluación ATC-20"
+faqs_titulo: "Preguntas sobre la evaluación de un edificio después de un sismo"
 excerpt: "Tras un sismo sentido en Medellín o Antioquia, la pregunta no es si el edificio se movió, sino si puede seguir habitándose. Esta guía explica qué señales importan, qué no hacer y cómo un ingeniero decide con la metodología ATC-20."
 entradilla: "La pregunta después de un sismo es si el edificio puede seguir habitándose: qué señales importan y cómo decide un ingeniero."
 categories: [sismos]

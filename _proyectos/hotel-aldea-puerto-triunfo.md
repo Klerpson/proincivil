@@ -2,8 +2,8 @@
 titulo_corto: "Hotel Aldea"
 orden: 5
 eyebrow: "Hotelería · Diseño integral y estructural"
-title: "Hotel Aldea (Puerto Triunfo): diseño integral y estructural de +5.000 m²"
-description: "Caso: diseño integral y estructural de más de 5.000 m² de hotel en Puerto Triunfo, con cimentaciones y estructuras metálicas optimizadas sin comprometer la seguridad."
+title: "Hotel Aldea, Puerto Triunfo: diseño estructural de +5.000 m²"
+description: "Caso: diseño estructural de más de 5.000 m² de hotel en Puerto Triunfo, con cimentaciones y estructuras metálicas optimizadas sin comprometer la seguridad."
 h1: "Hotel Aldea (Puerto Triunfo): cimentación y acero optimizados"
 excerpt: "Más de 5.000 m² de hotel diseñados con un sistema mixto de concreto y acero, en el que la optimización de la cimentación y de las estructuras metálicas se tradujo en menos concreto, menos acero y menos días de obra."
 entradilla: "Más de 5.000 m² de hotel en concreto y acero, diseñados con menos concreto, menos acero y menos días de obra."

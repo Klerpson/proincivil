@@ -3,7 +3,7 @@ layout: zona
 titulo_corto: "Medellín"
 lugar: "Medellín"   # forma para escribirla dentro de una frase: «servicio en …»
 orden: 2
-title: "Ingeniería estructural en Medellín: diseño NSR-10 y curadurías"
+title: "Ingeniería estructural en Medellín: NSR-10 y curadurías"
 description: "Ingenieros estructurales para proyectos en Medellín: diseño sismorresistente, estudios de suelos, evaluación post-sismo e interventoría ante las cuatro curadurías."
 h1: "Ingenieros estructurales en Medellín"
 eyebrow: "Zonas · Medellín"

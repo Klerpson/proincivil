@@ -2,7 +2,7 @@
 titulo_corto: "I.E. Pavarandó Grande"
 orden: 2
 eyebrow: "Educación pública · Diseño estructural"
-title: "I.E. Pavarandó Grande (Mutatá): diseño estructural con pórticos DES"
+title: "I.E. Pavarandó Grande (Mutatá): diseño con pórticos DES"
 description: "Caso: diseño estructural de un colegio de 3 niveles y 4.544 m² en Mutatá, con pórticos DES, chequeo de ductilidad y pilas con campana en suelo tipo C."
 h1: "I.E. Pavarandó Grande (Mutatá): colegio en suelo tipo C"
 excerpt: "4.544 m² de infraestructura educativa pública diseñados con pórticos especiales de disipación de energía (DES), chequeo de ductilidad y cimentación profunda sobre pilas con campana."
