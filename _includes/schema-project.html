@@ -10,6 +10,10 @@
   "locationCreated": { "@type": "Place", "name": {{ page.ficha.ubicacion | jsonify }} },
   {%- assign _anio = page.ficha.anio | append: "" %}
   {% if _anio != "" and _anio != "PENDIENTE" and _anio.size == 4 %}"dateCreated": "{{ _anio }}",{% endif %}
+  {%- comment -%} Imagen solo si la foto es del propio proyecto (`foto_propia: true` en el front matter).
+    Muchas fichas usan fotos referenciales de otros proyectos: declararlas como imagen del proyecto
+    sería un dato falso para Google y las IAs. {%- endcomment -%}
+  {% if page.foto_propia and page.image %}"image": { "@type": "ImageObject", "url": "{{ page.image | absolute_url }}"{% if page.hero_alt %}, "caption": {{ page.hero_alt | strip_html | jsonify }}{% endif %} },{% endif %}
   "keywords": {{ page.ficha.servicio | jsonify }},
   "inLanguage": "es-CO"
 }

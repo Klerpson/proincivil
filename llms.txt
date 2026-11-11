@@ -11,8 +11,15 @@ permalink: /llms.txt
 {% for s in site.servicios %}- [{{ s.titulo_corto | default: s.h1 }}]({{ s.url | absolute_url }}): {{ s.description | strip_html }}
 {% endfor %}
 ## Proyectos
-{% for p in site.proyectos %}- [{{ p.titulo_corto | default: p.h1 }}]({{ p.url | absolute_url }})
+{% for p in site.proyectos %}- [{{ p.titulo_corto | default: p.h1 }}]({{ p.url | absolute_url }}): {{ p.description | strip_html }}
 {% endfor %}
+## Zonas de servicio
+- [Zonas donde trabajamos]({{ '/zonas/' | absolute_url }})
+{% assign _zonas = site.zonas | sort: "orden" %}{% for z in _zonas %}- [{{ z.titulo_corto | default: z.h1 }}]({{ z.url | absolute_url }}): {{ z.description | strip_html }}
+{% endfor %}
+## Sobre PROINCIVIL
+{% assign _sobre = "/nosotros/,/nosotros/equipo/,/nosotros/independencia-tecnica/" | split: "," %}{% for u in _sobre %}{% assign _pg = site.pages | where: "url", u | first %}{% if _pg %}- [{{ _pg.h1 | strip_html }}]({{ _pg.url | absolute_url }}): {{ _pg.description | strip_html }}
+{% endif %}{% endfor %}
 ## Blog
 {% for post in site.posts %}- [{{ post.title }}]({{ post.url | absolute_url }})
 {% endfor %}
@@ -20,3 +27,4 @@ permalink: /llms.txt
 - WhatsApp: {{ site.contact.whatsapp_display }}
 - Correo: {{ site.contact.email }}
 - [Cómo cotizar]({{ '/como-cotizar/' | absolute_url }})
+- [Contacto]({{ '/contacto/' | absolute_url }})

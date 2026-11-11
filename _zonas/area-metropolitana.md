@@ -10,7 +10,7 @@ eyebrow: "Zonas · Área Metropolitana"
 excerpt: "Diez municipios comparten valle y norma, pero no microzonificación ni trámite. Antes de diseñar en Itagüí, Bello o Sabaneta revisamos lo que cambia de un municipio a otro."
 entradilla: "Itagüí, Bello, Sabaneta y los demás municipios comparten norma, pero no microzonificación ni trámite: revisamos qué cambia en cada uno."
 hero: "estructura-metalica"
-hero_alt: "Estructura metálica de una edificación en pórticos de acero"
+hero_alt: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 image: "/img/fotos/estructura-metalica-1200.jpg"
 badges:
   - "10 municipios del valle"

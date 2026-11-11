@@ -15,11 +15,12 @@ carport-aereo-ancho: "Hilera de carports fotovoltaicos vista desde el aire"
 carport-metalico: "Cubierta metálica inclinada de soporte para paneles solares"
 cubierta-metalica: "Cubierta metálica de gran luz sobre estructura de acero"
 detalle-concreto: "Encuentro de viga y columna en concreto reforzado"
-estructura-metalica: "Estructura metálica de una edificación en pórticos de acero"
+# Ojo: pese al nombre del archivo, la foto muestra pórticos de CONCRETO (es la misma toma que hero-estructura).
+estructura-metalica: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 estructura-obra: "Edificación en construcción con la estructura a la vista"
 fachada-ancha: "Fachada de concreto reforzado de una edificación multinivel"
 fachada-vidrio: "Fachada de concreto y vidrio de una edificación multinivel"
-hero-estructura: "Estructura metálica de una edificación en pórticos de acero"
+hero-estructura: "Pórticos de concreto de una edificación en construcción vistos desde abajo"
 institucion-educativa: "Institución educativa de dos niveles en concreto reforzado"
 
 # Archivo histórico de ingeniería (dominio público): describen la imagen, no la atribuyen a PROINCIVIL.
