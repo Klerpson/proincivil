@@ -3,6 +3,7 @@ title: "Por qué un diseño estructural barato sale caro"
 description: "Sobrecostos en obra, devoluciones de curaduría y reprocesos: dónde se esconde el costo real de un diseño estructural económico y qué debe traer una propuesta."
 h1: "Por qué un diseño estructural barato sale caro"
 faqs_titulo: "Preguntas sobre el costo de un diseño estructural"
+cta_titulo: "Pide una propuesta de cálculo estructural optimizado"
 excerpt: "El honorario de diseño es una fracción pequeña del costo de una obra; la estructura, la más grande. Un diseño que ahorra en lo primero suele gastar de más en lo segundo: concreto y acero sobrantes, devoluciones de curaduría y reprocesos en obra."
 entradilla: "El diseño es una fracción del costo de la obra; ahorrar en él suele pagarse en concreto, acero y reprocesos."
 categories: [costos]
@@ -37,7 +38,7 @@ Cuando un promotor compara dos propuestas de **diseño estructural**, la diferen
 
 Esto no es una defensa del honorario alto. Es una descripción de dónde se esconde el costo cuando el diseño se hace con menos horas de ingeniería de las que el proyecto necesita.
 
-## La proporción que nadie calcula {#proporcion}
+## Honorario de diseño frente al costo de la estructura {#proporcion}
 
 En una edificación convencional, la estructura —cimentación, columnas, vigas, losas, muros— representa una porción grande del costo directo de obra; en proyectos de varios niveles puede acercarse a un tercio o más. El honorario del diseño estructural, en cambio, es una fracción pequeña de ese costo total.
 
@@ -45,7 +46,7 @@ La consecuencia aritmética es simple: una reducción modesta en las cantidades 
 
 > **La pregunta correcta** al comparar propuestas no es "¿cuánto cobra?" sino "¿cuánto concreto y acero va a producir, y cuántas veces voy a tener que volver a la curaduría?".
 
-## Sobredimensionar es lo fácil {#sobredimension}
+## Sobredimensionar concreto y acero es lo fácil {#sobredimension}
 
 Diseñar una estructura que cumpla la NSR-10 es relativamente sencillo si se acepta poner secciones grandes y cuantías altas. La norma fija mínimos, no máximos: nada impide especificar una columna de 60 × 60 donde una de 45 × 45 bien detallada cumple con holgura.
 
@@ -71,7 +72,7 @@ Cada ronda de observaciones cuesta entre dos semanas y dos meses, según la cura
 
 Un diseño coordinado reduce las causas evitables de devolución. El histórico de aprobación en primera radicación comunicado por PROINCIVIL es del {{ site.cifras.aprobacion_curadurias }}; no garantiza la decisión de una curaduría en cada expediente.
 
-## Reprocesos en obra {#obra}
+## Reprocesos en obra por un diseño deficiente {#obra}
 
 La tercera fuente de costo aparece cuando la obra ya arrancó. Un plano sin detalles obliga al residente a decidir en el sitio cómo resolver un nudo, un traslapo o el paso de una instalación por una viga. A veces decide bien; a veces la instalación termina cortando el refuerzo, la viga se funde con un despiece improvisado y la columna se arma con longitudes de desarrollo insuficientes.
 
@@ -101,7 +102,7 @@ Comparar propuestas de diseño estructural por precio es comparar dos cifras que
 
 Si una propuesta no dice cuál de esos puntos incluye, asuma que no lo incluye. Y si el diseñador va a construir la obra, pregúntate quién revisará su diseño; la ley, para ciertos proyectos, ya lo respondió con la [revisión independiente de diseños]({{ site.baseurl }}/servicios/revision-independiente-de-disenos/).
 
-## Lo que cuesta de verdad
+## El costo real de elegir diseñador estructural por precio
 
 El diseño estructural es la decisión que más pesa en el costo de una obra y la que menos cuesta tomar bien. Un honorario razonable, pagado a un diseñador independiente que dedique las horas que el proyecto exige, se recupera en la primera radicación aprobada y en cada metro cúbico que no se fundió de más.
 

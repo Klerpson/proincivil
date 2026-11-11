@@ -3,6 +3,7 @@ title: "Qué es la interventoría y cuándo es obligatoria en Colombia"
 description: "Qué es la interventoría, qué tipos existen, cuándo la exige la ley en obra pública y privada, cómo se diferencia de la supervisión técnica y cómo elegirla."
 h1: "Qué es la interventoría de obra y cuándo es obligatoria en Colombia"
 faqs_titulo: "Preguntas sobre la interventoría de obra en Colombia"
+cta_titulo: "Cotiza la interventoría de diseños de tu proyecto"
 excerpt: "Interventoría, supervisión técnica independiente y revisión independiente de diseños son tres figuras distintas que suelen confundirse. Esta guía explica qué hace cada una, cuándo la exige la ley y qué debe pedirle a quien la ejerza."
 entradilla: "Interventoría, supervisión técnica y revisión independiente de diseños suelen confundirse: qué hace cada una y cuándo la exige la ley."
 categories: [normativa]
@@ -60,7 +61,7 @@ La interventoría se clasifica según el objeto que vigila y según el alcance d
 
 La **interventoría de diseños** es la menos conocida y una de las más rentables para el dueño del proyecto: un error detectado en planos cuesta horas de ingeniería; el mismo error detectado en obra cuesta demoliciones. Es el servicio que PROINCIVIL prestó en el [Hotel The One Laureles]({{ site.baseurl }}/proyectos/hotel-the-one-laureles/), un hotel boutique de quince niveles cuyo diseño estructural se verificó antes de la primera fundida.
 
-## Cuándo es obligatoria {#obligatoria}
+## Interventoría obligatoria en obra pública y exigida en obra privada {#obligatoria}
 
 Hay que distinguir dos mundos.
 
@@ -88,7 +89,7 @@ La **interventoría** abarca todo lo demás: cantidades, pagos, cronograma, espe
 
 > **La regla que resuelve el 90 % de los casos:** si la pregunta es "¿esta estructura se está construyendo como dicen los planos?", la respuesta es supervisión técnica. Si la pregunta es "¿este contrato se está cumpliendo?", es interventoría. Si la pregunta es "¿estos planos están bien antes de radicarlos?", es revisión independiente de diseños.
 
-## De qué depende el costo {#costo}
+## De qué depende el costo de una interventoría {#costo}
 
 El costo de una interventoría no tiene tarifa fija; la Sociedad Colombiana de Ingenieros publica referencias de honorarios, pero cada caso se cotiza. Los factores que más pesan son:
 
@@ -112,7 +113,7 @@ Cuatro criterios separan una interventoría que protege al dueño de una que sol
 
 **Presencia en los momentos que importan.** Fundidas de elementos estructurales, pruebas de carga, recepción de acero. Una interventoría que solo visita los viernes no vio la columna que se fundió el martes.
 
-## Antes de contratar
+## Antes de contratar un interventor de obra
 
 Si tu proyecto es una obra privada, pregúntate primero qué figura necesita: revisión independiente de diseños antes de la licencia, supervisión técnica durante la estructura, interventoría integral del contrato, o las tres. Si es un contrato estatal, la ley y el pliego ya lo definen; lo que queda por elegir es quién la ejerce.
 

@@ -58,7 +58,7 @@ El estudio de vulnerabilidad sísmica continúa en desarrollo como base para un 
 
 La página de [vulnerabilidad sísmica]({{ site.baseurl }}/servicios/vulnerabilidad-sismica/) explica el alcance de ese análisis y su relación con el diseño de una intervención. Separar las fases permite a la administración entender qué información recibió y qué conclusiones aún dependen del estudio en curso.
 
-## Nuestro papel
+## Consultor estructural de la copropiedad, sin ejecutar obra
 
 PROINCIVIL diseña, evalúa y supervisa; **no ejecuta obra**. En este caso actuamos como consultor estructural para aportar evidencia al diagnóstico y a las decisiones de la copropiedad. La construcción de una eventual intervención corresponde al contratista que se seleccione.
 

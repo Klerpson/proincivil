@@ -83,6 +83,12 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Medios: OG declarada 1200×630 con fotos de 380–1.100 px; H1→H3 en /blog/ y /como-cotizar/; H2 de FAQ en minúsculas en 2 posts; H2-CTA de proyectos de hasta 121 caracteres; 6 descriptions > 170; 3 FAQ repetidas entre páginas; pocas H2 en forma de pregunta.
 - Por confirmar: zonas publicadas sin aprobación escrita registrada. Sin cambios en el código. Próxima auditoría: 2027-01-09.
 
+### 2026-11-07 — Encabezados con keyword en cada H1–H3 publicado
+**Contexto:** regla de Juli: cada H1–H3 lleva una keyword real y distinta dentro de la URL; sin fórmulas genéricas.
+- 6 H1 de páginas (contacto, cómo cotizar, proyectos, equipo, independencia técnica, blog), 12 H2/H3 del cuerpo de home, cómo cotizar, contacto e independencia, 12 H2 de los 3 posts y 1 de Tacuara.
+- `cta_titulo` propio en home, páginas, hubs publicados y posts para que el cierre no repita «Conversemos sobre tu proyecto» en todas.
+- Detalle antes → después en `_plans/encabezados-keywords-2026-11-07.md`. Sin commitear.
+
 ### 2026-11-06 — Contacto solo desde _config.yml e includes
 **Contexto:** regla del usuario: todo número y todo enlace de contacto (wa.me, tel:, mailto:) sale de `_config.yml` por un include, nunca a mano.
 - Teléfonos: la auditoría ya daba 0 números escritos a mano y 0 enlaces wa.me/tel fuera de `_includes`; no hubo cambios.
