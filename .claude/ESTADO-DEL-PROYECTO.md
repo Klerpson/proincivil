@@ -1,6 +1,6 @@
 # Estado del proyecto — PROINCIVIL
 
-**Última actualización:** 2026-11-10
+**Última actualización:** 2026-11-12
 
 ## Iniciativas activas
 
@@ -65,6 +65,28 @@ Consolidado en `_plans/pendientes/*.md` (cada redactor deja los suyos). Los crí
 - Página de empresa en LinkedIn y perfil de Google Business (NAP idéntico al de `_config.yml`).
 
 ## Bitácora
+
+### 2026-11-12 (cierre) — Pendientes al día
+- GA4: conservación de datos de eventos de 2 a 14 meses (usuarios ya estaba en 14).
+- Propiedad de dominio en GSC retirada; queda como recomendación para Julián (mensaje enviado por Camilo).
+- Copia local sincronizada con `origin/main` (`bc8e861`, clave IndexNow).
+- **Siguiente (no se puede hoy):** 13-11 y días siguientes, pedir indexación en GSC (~10/día) de vías, topografía, refracción, zonas/area-metropolitana, zonas/colombia, zonas/pereira, contacto, independencia técnica, posts de sismo y de diseño barato; luego blog, proyectos (hub, carports, Aldea, Yerbal, Super Motos, ARTICO, Pavarandó, Betulia). 14-11: comprobar que llega `whatsapp_click` en GA4. 15-12: repetir el cruce GSC + GA4 para H2 por intención. 2027-01-09: auditoría completa.
+- **Depende de otros:** Julián (propiedad de dominio, acceso a GTM si quieren `whatsapp_location`, IP de la oficina para el filtro de tráfico interno). Clienta (aprobación de titles, descriptions y FAQ del 10-11 y de las zonas, fotos reales, apellidos y matrículas, Google Business, LinkedIn de empresa, `form_endpoint`).
+
+### 2026-11-12 (tarde) — Indexación, conversión de WhatsApp, GA4 y Bing desde el navegador
+**Contexto:** el usuario pidió aplicar lo recomendado en `_plans/gsc-ga4-2026-11-12.md` y revisar Bing Webmaster Tools. Detalle al final de ese informe. Sin cambios en el código.
+- GSC: indexación solicitada para 10 URL comerciales (cuota diaria agotada en la 11.ª). Mañana: vías, topografía, refracción, Área Metropolitana, Colombia, Pereira, contacto, independencia y 2 posts.
+- GA4: sin acceso a GTM-TR894KS7 desde camilocuspianseo@gmail.com. Modificación de evento `click` + `link_url` con `wa.me` → `whatsapp_click`, marcado como evento clave. Si se crea la etiqueta en GTM, borrar la modificación. Referencias no deseadas: klerpson.github.io y proincivilingenieria.netlify.app.
+- Propiedad de dominio `proincivil.com`: creada y retirada el mismo día (decisión de Camilo: le corresponde a Julián). Queda como recomendación para Julián: crearla él y verificarla con TXT en Wix (DNS en wixdns.net). Opcional: la propiedad con www ya cubre la versión canónica.
+- Bing: IndexNow activo (48 URL enviadas hoy); solo 3 URL indexadas; avisos de title y H1 de la home son de un rastreo viejo.
+- H2 de vulnerabilidad sin cambio: chocaría con la regla de encabezados del 2026-11-07.
+
+### 2026-11-12 — Primera lectura de Search Console y GA4 (Composio)
+**Contexto:** el usuario dio acceso a GSC y GA4 para decidir H2 por intención. Informe en `_plans/gsc-ga4-2026-11-12.md`. Sin cambios en el código.
+- GSC: propiedades `https://www.proincivil.com/` y `https://proincivil.com/` (sin propiedad de dominio). Datos solo del 11-11: 23 impresiones, 0 clics. Queries visibles: «proincivil» y «que es un estudio de vulnerabilidad sismica» (pos. 10). Sitemap enviado el 11-12, 48 URL.
+- Indexación: 15/48 indexadas, 11 descubiertas sin indexar, 22 desconocidas (entre ellas diseño estructural, Medellín y Envigado).
+- GA4 (`properties/561177859`) desde el 10-28: 48 sesiones orgánicas, 6 de ChatGPT; 23 sesiones de `klerpson.github.io` a /proyectos con 0 % de engagement (filtrar). `whatsapp_click` no llega a GA4: falta la etiqueta en GTM; la medición mejorada registra 5 clics a wa.me.
+- Decisión: no mover H2 hasta tener 4-5 semanas de GSC (revisar el 2026-12-15). Prioridades: solicitar indexación de las URL comerciales, evento de WhatsApp en GTM, propiedad de dominio.
 
 ### 2026-11-10 (tarde) — Correcciones de la auditoría SEO aplicadas
 **Contexto:** el usuario pidió implementar los hallazgos de `_plans/auditoria-seo-2026-11-10.md`. Hecho en una copia del commit `b536f3c`, compilado y validado allí, y aplicado aquí con `_plans/seo-fixes-2026-11-10.patch` (61 archivos). Sin commit.
